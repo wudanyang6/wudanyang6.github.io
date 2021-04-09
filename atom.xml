@@ -4,15 +4,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">吴丹阳</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2021-04-09T19:23:25&#43;08:00</updated>
+    <updated>2021-04-09T20:03:07&#43;08:00</updated>
     <id>https://wudanyang6.github.io/</id>
     <link rel="alternate" type="text/html" href="https://wudanyang6.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://wudanyang6.github.io/atom.xml" />
     <author>
-            <name>reuixiy</name>
+            <name>吴丹阳</name>
             <uri>https://wudanyang6.github.io/</uri>
             
-                <email>reuixiy@gmail.com</email>
+                <email>wu.danyang@qq.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.68.3">Hugo</generator>
@@ -23,9 +23,9 @@
             <updated>2021-04-09T19:16:42&#43;08:00</updated>
             <published>2021-04-09T17:08:27&#43;08:00</published>
             <author>
-                    <name>reuixiy</name>
-                    <uri>https://io-oi.me/</uri>
-                    <email>reuixiy@gmail.com</email>
+                    <name>吴丹阳</name>
+                    <uri>https://wudanyang.top/</uri>
+                    <email>wu.danyang@qq.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html"></summary>
             
@@ -50,9 +50,9 @@
             <updated>2021-04-09T19:16:42&#43;08:00</updated>
             <published>2021-04-09T13:53:56&#43;08:00</published>
             <author>
-                    <name>reuixiy</name>
-                    <uri>https://io-oi.me/</uri>
-                    <email>reuixiy@gmail.com</email>
+                    <name>吴丹阳</name>
+                    <uri>https://wudanyang.top/</uri>
+                    <email>wu.danyang@qq.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html"></summary>
             
