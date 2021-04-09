@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 吴丹阳</title>
-    <link>https://wudanyang6.github.io/tags/</link>
+    <link>https://wudanyang.top/tags/</link>
     <description>Recent content in Tags on 吴丹阳</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -10,7 +10,7 @@
     <webMaster>wu.danyang@qq.com (吴丹阳)</webMaster>
     <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
     
-	<atom:link href="https://wudanyang6.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wudanyang.top/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -8,7 +8,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>吴丹阳</title>
-        <link>https://wudanyang6.github.io/</link>
+        <link>https://wudanyang.top/</link>
         <description>MemE is a powerful and highly customizable GoHugo theme for personal blogs.</description>
         <generator>Hugo 0.68.3 https://gohugo.io/</generator>
         
@@ -23,15 +23,15 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Fri, 09 Apr 2021 20:03:07 &#43;0800</lastBuildDate>
+        <lastBuildDate>Fri, 09 Apr 2021 20:17:17 &#43;0800</lastBuildDate>
         
-            <atom:link rel="self" type="application/rss&#43;xml" href="https://wudanyang6.github.io/rss.xml" />
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://wudanyang.top/rss.xml" />
         
         
             <item>
                 <title>Hello World</title>
-                <link>https://wudanyang6.github.io/posts/hello-world/</link>
-                <guid isPermaLink="true">https://wudanyang6.github.io/posts/hello-world/</guid>
+                <link>https://wudanyang.top/posts/hello-world/</link>
+                <guid isPermaLink="true">https://wudanyang.top/posts/hello-world/</guid>
                 <pubDate>Fri, 09 Apr 2021 17:08:27 &#43;0800</pubDate>
                 
                     <author>wu.danyang@qq.com (吴丹阳)</author>
@@ -54,8 +54,8 @@
         
             <item>
                 <title>My First Post</title>
-                <link>https://wudanyang6.github.io/posts/my-first-post/</link>
-                <guid isPermaLink="true">https://wudanyang6.github.io/posts/my-first-post/</guid>
+                <link>https://wudanyang.top/posts/my-first-post/</link>
+                <guid isPermaLink="true">https://wudanyang.top/posts/my-first-post/</guid>
                 <pubDate>Fri, 09 Apr 2021 13:53:56 &#43;0800</pubDate>
                 
                     <author>wu.danyang@qq.com (吴丹阳)</author>
