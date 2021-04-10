@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>吴丹阳</title>
-    <link>https://wudanyang.top/</link>
-    <description>Recent content on 吴丹阳</description>
+    <title>Posts on 吴丹阳</title>
+    <link>https://wudanyang.top/post/</link>
+    <description>Recent content in Posts on 吴丹阳</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY-NC-ND 4.0</copyright>
     <lastBuildDate>Sat, 10 Apr 2021 14:26:32 +0800</lastBuildDate>
     
-	<atom:link href="https://wudanyang.top/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wudanyang.top/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>吴丹阳</title>
+  <title>Nginx 进程模型 - 吴丹阳</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="吴丹阳" /><meta name="description" content="吴丹阳的技术博客" /><meta name="keywords" content="博客, 技术, 吴丹阳, 计算机" />
+<meta name="author" content="吴丹阳" /><meta name="description" content="从网上找了一个图示非常好的图片 从图中我们可以看到很多东西，下面我来一一介绍 nginx 启动时会启动三个进程 分别是 master 、 worker 和 cache 进程 master 进程 master 进程的作用主要是" /><meta name="keywords" content="博客, 技术, 吴丹阳, 计算机" />
 
 
 
@@ -26,9 +26,7 @@
 <meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
-<link rel="canonical" href="https://wudanyang.top/" />
-  <link href="https://wudanyang.top/index.xml" rel="alternate" type="application/rss+xml" title="吴丹阳" />
-  <link href="https://wudanyang.top/index.xml" rel="feed" type="application/rss+xml" title="吴丹阳" />
+<link rel="canonical" href="https://wudanyang.top/post/nginx-process/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,15 +39,23 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="吴丹阳" />
-<meta property="og:description" content="吴丹阳的技术博客" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://wudanyang.top/" />
-<meta property="og:updated_time" content="2021-04-10T14:26:32+08:00" />
-<meta itemprop="name" content="吴丹阳">
-<meta itemprop="description" content="吴丹阳的技术博客"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="吴丹阳"/>
-<meta name="twitter:description" content="吴丹阳的技术博客"/>
+<meta property="og:title" content="Nginx 进程模型" />
+<meta property="og:description" content="从网上找了一个图示非常好的图片 从图中我们可以看到很多东西，下面我来一一介绍 nginx 启动时会启动三个进程 分别是 master 、 worker 和 cache 进程 master 进程 master 进程的作用主要是" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wudanyang.top/post/nginx-process/" />
+<meta property="article:published_time" content="2021-04-10T14:26:32+08:00" />
+<meta property="article:modified_time" content="2021-04-10T23:40:34+08:00" />
+<meta itemprop="name" content="Nginx 进程模型">
+<meta itemprop="description" content="从网上找了一个图示非常好的图片 从图中我们可以看到很多东西，下面我来一一介绍 nginx 启动时会启动三个进程 分别是 master 、 worker 和 cache 进程 master 进程 master 进程的作用主要是">
+<meta itemprop="datePublished" content="2021-04-10T14:26:32&#43;08:00" />
+<meta itemprop="dateModified" content="2021-04-10T23:40:34&#43;08:00" />
+<meta itemprop="wordCount" content="92">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Nginx 进程模型"/>
+<meta name="twitter:description" content="从网上找了一个图示非常好的图片 从图中我们可以看到很多东西，下面我来一一介绍 nginx 启动时会启动三个进程 分别是 master 、 worker 和 cache 进程 master 进程 master 进程的作用主要是"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -119,57 +125,98 @@
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
-          <section id="posts" class="posts">
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/nginx-process/">Nginx 进程模型</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2021-04-10 </span>
-      
-        <span class="more-meta"> 约 92 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      从网上找了一个图示非常好的图片 从图中我们可以看到很多东西，下面我来一一介绍 nginx 启动时会启动三个进程 分别是 master 、 worker 和 cache 进程 master 进程 master 进程的作用主要是
-    </div>
-    <div class="read-more">
-      <a href="/post/nginx-process/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/hello-world/">Hello World</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2021-04-09 </span>
-      
-        <span class="more-meta"> 约 0 字 </span>
-        <span class="more-meta"> 预计阅读 0 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/hello-world/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    </section>
-  
-  <nav class="pagination">
+          <article class="post">
     
-    
-  </nav>
+    <header class="post-header">
+      <h1 class="post-title">Nginx 进程模型</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-04-10 </span>
+        
+          <span class="more-meta"> 约 92 字 </span>
+          <span class="more-meta"> 预计阅读 1 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#nginx-启动时会启动三个进程"><code>nginx</code> 启动时会启动三个进程</a>
+      <ul>
+        <li><a href="#master-进程">master 进程</a></li>
+      </ul>
+    </li>
+    <li><a href="#nginx-怎么解决惊群效应"><code>nginx</code> 怎么解决惊群效应</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>从网上找了一个图示非常好的图片
+<img src="https://wudanyang.top/static/20210410155033.png" alt="进程模型图示"></p>
+<p>从图中我们可以看到很多东西，下面我来一一介绍</p>
+<h1 id="nginx-启动时会启动三个进程"><code>nginx</code> 启动时会启动三个进程</h1>
+<p>分别是 master 、 worker 和 cache 进程</p>
+<h2 id="master-进程">master 进程</h2>
+<p>master 进程的作用主要是</p>
+<h1 id="nginx-怎么解决惊群效应"><code>nginx</code> 怎么解决惊群效应</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="n">blog</span><span class="o">-</span><span class="n">backup</span> <span class="o">-</span><span class="n">w</span> <span class="n">ljc</span> <span class="o">-</span><span class="n">o</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">blog</span> <span class="o">-</span><span class="n">v</span>
+<span class="n">java</span> <span class="o">-</span><span class="n">jar</span> <span class="n">target</span><span class="o">/</span><span class="n">pdfmerger</span><span class="o">-</span><span class="mf">1.2.2</span><span class="o">-</span><span class="n">jar</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">dependencies</span><span class="p">.</span><span class="n">jar</span>  <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">blog</span><span class="cm">/*pdf ljc-backup.pdf
+</span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">吴丹阳</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-04-10
+        <a href="https://github.com/wudanyang6/blog/commit/977f3f59d3db4c706f47c106ec1a1060506189fe" title="update">(977f3f5)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/hello-world/">
+            <span class="next-text nav-default">Hello World</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
         </div>
         
+
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="wudanyang6/blog-comments"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
 
       </div>
     </main>
