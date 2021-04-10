@@ -23,22 +23,41 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Fri, 09 Apr 2021 21:29:48 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sat, 10 Apr 2021 16:02:20 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://wudanyang.top/rss.xml" />
         
         
             <item>
-                <title>Hello World</title>
-                <link>https://wudanyang.top/posts/hello-world/</link>
-                <guid isPermaLink="true">https://wudanyang.top/posts/hello-world/</guid>
-                <pubDate>Fri, 09 Apr 2021 17:08:27 &#43;0800</pubDate>
+                <title>Nginx 进程模型</title>
+                <link>https://wudanyang.top/posts/nginx-process/</link>
+                <guid isPermaLink="true">https://wudanyang.top/posts/nginx-process/</guid>
+                <pubDate>Sat, 10 Apr 2021 14:26:32 &#43;0800</pubDate>
                 
                     <author>wu.danyang@qq.com (吴丹阳)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
-                    <description></description>
+                    <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://wudanyang.top/posts/nginx-process/#1-%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B&#34;&gt;1. 进程模型&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://wudanyang.top/posts/nginx-process/#11-nginx-%E5%90%AF%E5%8A%A8%E6%97%B6%E4%BC%9A%E5%90%AF%E5%8A%A8%E4%B8%89%E4%B8%AA%E8%BF%9B%E7%A8%8B&#34;&gt;1.1. &lt;code&gt;nginx&lt;/code&gt; 启动时会启动三个进程&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://wudanyang.top/posts/nginx-process/#111-master-%E8%BF%9B%E7%A8%8B&#34;&gt;1.1.1. master 进程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;1-进程模型&#34;&gt;1. 进程模型&lt;/h1&gt;
+&lt;p&gt;从网上找了一个图示非常好的图片
+&lt;img src=&#34;https://wudanyang.top/static/20210410155033.png&#34; alt=&#34;进程模型图示&#34;&gt;&lt;/p&gt;
+&lt;p&gt;从图中我们可以看到很多东西，下面我来一一介绍&lt;/p&gt;
+&lt;h2 id=&#34;11-nginx-启动时会启动三个进程&#34;&gt;1.1. &lt;code&gt;nginx&lt;/code&gt; 启动时会启动三个进程&lt;/h2&gt;
+&lt;p&gt;分别是 master 、 worker 和 cache 进程&lt;/p&gt;
+&lt;h3 id=&#34;111-master-进程&#34;&gt;1.1.1. master 进程&lt;/h3&gt;
+&lt;p&gt;master 进程的作用主要是&lt;/p&gt;
+</description>
                 
                 
                 
@@ -53,10 +72,10 @@
             </item>
         
             <item>
-                <title>My First Post</title>
-                <link>https://wudanyang.top/posts/my-first-post/</link>
-                <guid isPermaLink="true">https://wudanyang.top/posts/my-first-post/</guid>
-                <pubDate>Fri, 09 Apr 2021 13:53:56 &#43;0800</pubDate>
+                <title>Hello World</title>
+                <link>https://wudanyang.top/posts/hello-world/</link>
+                <guid isPermaLink="true">https://wudanyang.top/posts/hello-world/</guid>
+                <pubDate>Fri, 09 Apr 2021 17:08:27 &#43;0800</pubDate>
                 
                     <author>wu.danyang@qq.com (吴丹阳)</author>
                 

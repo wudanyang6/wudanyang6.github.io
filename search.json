@@ -1,1 +1,1 @@
-[{"categories":null,"content":"吴丹阳\n","description":"","tags":null,"title":"About","uri":"/about/"}]
+[{"categories":null,"content":" 1. 进程模型  1.1. nginx 启动时会启动三个进程  1.1.1. master 进程      1. 进程模型 从网上找了一个图示非常好的图片 从图中我们可以看到很多东西，下面我来一一介绍\n1.1. nginx 启动时会启动三个进程 分别是 master 、 worker 和 cache 进程\n1.1.1. master 进程 master 进程的作用主要是\n","description":"","tags":null,"title":"Nginx 进程模型","uri":"/posts/nginx-process/"},{"categories":null,"content":"吴丹阳\n","description":"","tags":null,"title":"About","uri":"/about/"}]

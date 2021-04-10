@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">吴丹阳</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2021-04-09T21:29:48&#43;08:00</updated>
+    <updated>2021-04-10T16:02:20&#43;08:00</updated>
     <id>https://wudanyang.top/</id>
     <link rel="alternate" type="text/html" href="https://wudanyang.top/" />
     <link rel="self" type="application/atom&#43;xml" href="https://wudanyang.top/atom.xml" />
@@ -17,19 +17,38 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.68.3">Hugo</generator>
         <entry>
-            <title type="text">Hello World</title>
-            <link rel="alternate" type="text/html" href="https://wudanyang.top/posts/hello-world/" />
-            <id>https://wudanyang.top/posts/hello-world/</id>
-            <updated>2021-04-09T19:16:42&#43;08:00</updated>
-            <published>2021-04-09T17:08:27&#43;08:00</published>
+            <title type="text">Nginx 进程模型</title>
+            <link rel="alternate" type="text/html" href="https://wudanyang.top/posts/nginx-process/" />
+            <id>https://wudanyang.top/posts/nginx-process/</id>
+            <updated>2021-04-10T16:00:18&#43;08:00</updated>
+            <published>2021-04-10T14:26:32&#43;08:00</published>
             <author>
                     <name>吴丹阳</name>
                     <uri>https://wudanyang.top/</uri>
                     <email>wu.danyang@qq.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html"></summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">1. 进程模型 1.1. nginx 启动时会启动三个进程 1.1.1. master 进程 1. 进程模型 从网上找了一个图示非常好的图片 从…</summary>
             
-                <content type="html"></content>
+                <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://wudanyang.top/posts/nginx-process/#1-%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B&#34;&gt;1. 进程模型&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://wudanyang.top/posts/nginx-process/#11-nginx-%E5%90%AF%E5%8A%A8%E6%97%B6%E4%BC%9A%E5%90%AF%E5%8A%A8%E4%B8%89%E4%B8%AA%E8%BF%9B%E7%A8%8B&#34;&gt;1.1. &lt;code&gt;nginx&lt;/code&gt; 启动时会启动三个进程&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://wudanyang.top/posts/nginx-process/#111-master-%E8%BF%9B%E7%A8%8B&#34;&gt;1.1.1. master 进程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;1-进程模型&#34;&gt;1. 进程模型&lt;/h1&gt;
+&lt;p&gt;从网上找了一个图示非常好的图片
+&lt;img src=&#34;https://wudanyang.top/static/20210410155033.png&#34; alt=&#34;进程模型图示&#34;&gt;&lt;/p&gt;
+&lt;p&gt;从图中我们可以看到很多东西，下面我来一一介绍&lt;/p&gt;
+&lt;h2 id=&#34;11-nginx-启动时会启动三个进程&#34;&gt;1.1. &lt;code&gt;nginx&lt;/code&gt; 启动时会启动三个进程&lt;/h2&gt;
+&lt;p&gt;分别是 master 、 worker 和 cache 进程&lt;/p&gt;
+&lt;h3 id=&#34;111-master-进程&#34;&gt;1.1.1. master 进程&lt;/h3&gt;
+&lt;p&gt;master 进程的作用主要是&lt;/p&gt;
+</content>
             
             
             
@@ -44,11 +63,11 @@
         </entry>
     
         <entry>
-            <title type="text">My First Post</title>
-            <link rel="alternate" type="text/html" href="https://wudanyang.top/posts/my-first-post/" />
-            <id>https://wudanyang.top/posts/my-first-post/</id>
-            <updated>2021-04-09T19:16:42&#43;08:00</updated>
-            <published>2021-04-09T13:53:56&#43;08:00</published>
+            <title type="text">Hello World</title>
+            <link rel="alternate" type="text/html" href="https://wudanyang.top/posts/hello-world/" />
+            <id>https://wudanyang.top/posts/hello-world/</id>
+            <updated>2021-04-10T16:02:16&#43;08:00</updated>
+            <published>2021-04-09T17:08:27&#43;08:00</published>
             <author>
                     <name>吴丹阳</name>
                     <uri>https://wudanyang.top/</uri>
