@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Nginx 进程模型 - 吴丹阳</title>
+  <title>Nginx 进程模型-整体架构 - 吴丹阳</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="吴丹阳" /><meta name="description" content="Nginx 进程模型 从网上找了一个图示非常好的图片 从图中我们可以看到很多东西，下面我来一一介绍 nginx 启动时会启动三个进程 分别是 master 、 worker 和 cache 进程 master 进程 master 进程的" /><meta name="keywords" content="博客, 技术, 吴丹阳, 计算机" />
+<meta name="author" content="吴丹阳" /><meta name="description" content="从网上找了一个非常好的图片，从图中可以看到很多东西 Nginx 会生成多个进程 worker 使用了 io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘 I/O 时，使用了标准" /><meta name="keywords" content="博客, 技术, 吴丹阳, 计算机" />
 
 
 
@@ -41,23 +41,23 @@
 <link rel="stylesheet" href="/css/contenthover.css">
 
 
-<meta property="og:title" content="Nginx 进程模型" />
-<meta property="og:description" content="Nginx 进程模型 从网上找了一个图示非常好的图片 从图中我们可以看到很多东西，下面我来一一介绍 nginx 启动时会启动三个进程 分别是 master 、 worker 和 cache 进程 master 进程 master 进程的" />
+<meta property="og:title" content="Nginx 进程模型-整体架构" />
+<meta property="og:description" content="从网上找了一个非常好的图片，从图中可以看到很多东西 Nginx 会生成多个进程 worker 使用了 io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘 I/O 时，使用了标准" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wudanyang.top/post/nginx-process/" />
 <meta property="article:published_time" content="2021-04-10T14:26:32+08:00" />
-<meta property="article:modified_time" content="2021-04-12T17:13:57+08:00" />
-<meta itemprop="name" content="Nginx 进程模型">
-<meta itemprop="description" content="Nginx 进程模型 从网上找了一个图示非常好的图片 从图中我们可以看到很多东西，下面我来一一介绍 nginx 启动时会启动三个进程 分别是 master 、 worker 和 cache 进程 master 进程 master 进程的">
+<meta property="article:modified_time" content="2021-04-12T21:00:24+08:00" />
+<meta itemprop="name" content="Nginx 进程模型-整体架构">
+<meta itemprop="description" content="从网上找了一个非常好的图片，从图中可以看到很多东西 Nginx 会生成多个进程 worker 使用了 io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘 I/O 时，使用了标准">
 <meta itemprop="datePublished" content="2021-04-10T14:26:32&#43;08:00" />
-<meta itemprop="dateModified" content="2021-04-12T17:13:57&#43;08:00" />
-<meta itemprop="wordCount" content="574">
+<meta itemprop="dateModified" content="2021-04-12T21:00:24&#43;08:00" />
+<meta itemprop="wordCount" content="107">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Nginx 进程模型"/>
-<meta name="twitter:description" content="Nginx 进程模型 从网上找了一个图示非常好的图片 从图中我们可以看到很多东西，下面我来一一介绍 nginx 启动时会启动三个进程 分别是 master 、 worker 和 cache 进程 master 进程 master 进程的"/>
+<meta name="twitter:title" content="Nginx 进程模型-整体架构"/>
+<meta name="twitter:description" content="从网上找了一个非常好的图片，从图中可以看到很多东西 Nginx 会生成多个进程 worker 使用了 io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘 I/O 时，使用了标准"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -134,13 +134,13 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Nginx 进程模型</h1>
+      <h1 class="post-title">Nginx 进程模型-整体架构</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2021-04-10 </span>
         
-          <span class="more-meta"> 约 574 字 </span>
-          <span class="more-meta"> 预计阅读 2 分钟 </span>
+          <span class="more-meta"> 约 107 字 </span>
+          <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -148,66 +148,20 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#nginx-进程模型">Nginx 进程模型</a></li>
-    <li><a href="#nginx-启动时会启动三个进程"><code>nginx</code> 启动时会启动三个进程</a>
-      <ul>
-        <li><a href="#master-进程">master 进程</a></li>
-      </ul>
-    </li>
-    <li><a href="#nginx-是怎么解决惊群效应的"><code>nginx</code> 是怎么解决惊群效应的</a></li>
-  </ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
     <div class="post-content autonumbering">
-      <h1 id="nginx-进程模型">Nginx 进程模型</h1>
-<p>从网上找了一个图示非常好的图片
-<img src="https://wudanyang.top/static/20210410155033.png" alt="进程模型图示"></p>
-<p>从图中我们可以看到很多东西，下面我来一一介绍</p>
-<h1 id="nginx-启动时会启动三个进程"><code>nginx</code> 启动时会启动三个进程</h1>
-<p>分别是 master 、 worker 和 cache 进程</p>
-<h2 id="master-进程">master 进程</h2>
-<p>master 进程的作用主要是</p>
-<h1 id="nginx-是怎么解决惊群效应的"><code>nginx</code> 是怎么解决惊群效应的</h1>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c"><span class="c1">//ngx_use_accept_mutex表示是否需要通过对accept加锁来解决惊群问题。当nginx worker进程数&gt;1时且配置文件中打开accept_mutex时，这个标志置为1
-</span><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="n">ngx_use_accept_mutex</span><span class="p">)</span> <span class="p">{</span>
-    <span class="cm">/*
-</span><span class="cm">            ngx_accept_disabled表示此时满负荷，没必要再处理新连接了，我们在nginx.conf曾经配置了每一个nginx worker进程能够处理的最大连接数，
-</span><span class="cm">        当达到最大数的7/8时，ngx_accept_disabled为正，说明本nginx worker进程非常繁忙，将不再去处理新连接，这也是个简单的负载均衡
-</span><span class="cm">            在当前使用的连接到达总连接数的7/8时，就不会再处理新连接了，同时，在每次调用process_events时都会将ngx_accept_disabled减1，
-</span><span class="cm">        直到ngx_accept_disabled降到总连接数的7/8以下时，才会调用ngx_trylock_accept_mutex试图去处理新连接事件。
-</span><span class="cm">        */</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">ngx_accept_disabled</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//为正说明可用连接用了超过八分之七,则让其他的进程在下面的else中来accept
-</span><span class="c1"></span>        <span class="n">ngx_accept_disabled</span><span class="o">--</span><span class="p">;</span>
-
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="c1">// ...
-</span><span class="c1"></span>    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>未完待续</p>
+      <p><img src="https://wudanyang.top/static/20210410155033.png" alt="进程模型图示"></p>
+<p>从网上找了一个非常好的图片，从图中可以看到很多东西</p>
+<ol>
+<li><code>Nginx</code> 会生成多个进程</li>
+<li><code>worker</code> 使用了 <code>io</code> 多路复用的事件驱动框架</li>
+<li><code>worker</code> 内部有很多模块</li>
+<li><code>worker</code> 处理磁盘 <code>I/O</code> 时，使用了标准 <code>I/O</code> ， <code>sendfile</code> ， <code>AIO</code> ，<code>mmap</code> 等 <code>I/O</code> 技术</li>
+<li><code>Cache loader</code> 和 <code>Cache manager</code> 操作 proxy cache</li>
+<li>后端支持多种基于 <code>tcp</code> 的网络协议</li>
+</ol>
 
     </div>
 
@@ -220,7 +174,7 @@
     <span class="item-title">上次更新</span>
     <span class="item-content">
         2021-04-12
-        <a href="https://github.com/wudanyang6/blog-hugo/commit/d98a7f900ffdc15f84a8dba0d060ca407ea3a338" title="update">(d98a7f9)</a>
+        <a href="https://github.com/wudanyang6/blog-hugo/commit/3e019cff4bc02d545ff64b7c1ccc01a3f769967d" title="update">(3e019cf)</a>
     </span>
   </p>
   
