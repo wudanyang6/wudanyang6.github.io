@@ -20,15 +20,6 @@
     </item>
     
     <item>
-      <title>Nginx 进程模型</title>
-      <link>https://wudanyang.top/post/nginx-process/</link>
-      <pubDate>Sat, 10 Apr 2021 14:26:32 +0800</pubDate>
-      
-      <guid>https://wudanyang.top/post/nginx-process/</guid>
-      <description>Nginx 进程模型 从网上找了一个图示非常好的图片 从图中我们可以看到很多东西，下面我来一一介绍 nginx 启动时会启动三个进程 分别是 master 、 worker 和 cache 进程 master 进程 master 进程的</description>
-    </item>
-    
-    <item>
       <title>Hello World</title>
       <link>https://wudanyang.top/post/hello-world/</link>
       <pubDate>Fri, 09 Apr 2021 09:08:27 +0000</pubDate>
