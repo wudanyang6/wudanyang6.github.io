@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>吴丹阳</title>
-    <link>https://wudanyang.top/</link>
-    <description>Recent content on 吴丹阳</description>
+    <title>经验 on 吴丹阳</title>
+    <link>https://wudanyang.top/categories/%E7%BB%8F%E9%AA%8C/</link>
+    <description>Recent content in 经验 on 吴丹阳</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Apr 2021 17:40:15 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Apr 2021 12:26:32 +0800</lastBuildDate>
     
-	<atom:link href="https://wudanyang.top/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wudanyang.top/categories/%E7%BB%8F%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -17,15 +17,6 @@
       
       <guid>https://wudanyang.top/post/locate-online-error/</guid>
       <description>原则 止损优先 不能先追查问题根源， 首先应该止损，不让问题进一步扩大，代码回滚、服务降级等都可以起到止损的效果。 对于止损有一个比较好的实践，新业</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://wudanyang.top/post/hello-world/</link>
-      <pubDate>Fri, 09 Apr 2021 09:08:27 +0000</pubDate>
-      
-      <guid>https://wudanyang.top/post/hello-world/</guid>
-      <description>回到使用 github pages ，站点基本可用了。 原来的博客依然保留，但不做更新了。</description>
     </item>
     
   </channel>
