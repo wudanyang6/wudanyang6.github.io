@@ -5,10 +5,19 @@
     <link>https://wudanyang.top/</link>
     <description>Recent content on 吴丹阳</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 10 Apr 2021 14:26:32 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Apr 2021 12:26:32 +0800</lastBuildDate>
     
 	<atom:link href="https://wudanyang.top/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何追查线上问题</title>
+      <link>https://wudanyang.top/post/locate-online-error/</link>
+      <pubDate>Mon, 12 Apr 2021 12:26:32 +0800</pubDate>
+      
+      <guid>https://wudanyang.top/post/locate-online-error/</guid>
+      <description>原则 止损优先 不能先追查问题根源， 首先应该止损，不让问题进一步扩大，代码回滚、服务降级等都可以起到止损的效果。 对于止损有一个比较好的实践，新业</description>
+    </item>
     
     <item>
       <title>Nginx 进程模型</title>

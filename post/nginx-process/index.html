@@ -38,6 +38,7 @@
 <link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/autonumbering.css">
+<link rel="stylesheet" href="/css/contenthover.css">
 
 
 <meta property="og:title" content="Nginx 进程模型" />
@@ -45,11 +46,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wudanyang.top/post/nginx-process/" />
 <meta property="article:published_time" content="2021-04-10T14:26:32+08:00" />
-<meta property="article:modified_time" content="2021-04-11T23:07:15+08:00" />
+<meta property="article:modified_time" content="2021-04-12T17:13:57+08:00" />
 <meta itemprop="name" content="Nginx 进程模型">
 <meta itemprop="description" content="Nginx 进程模型 从网上找了一个图示非常好的图片 从图中我们可以看到很多东西，下面我来一一介绍 nginx 启动时会启动三个进程 分别是 master 、 worker 和 cache 进程 master 进程 master 进程的">
 <meta itemprop="datePublished" content="2021-04-10T14:26:32&#43;08:00" />
-<meta itemprop="dateModified" content="2021-04-11T23:07:15&#43;08:00" />
+<meta itemprop="dateModified" content="2021-04-12T17:13:57&#43;08:00" />
 <meta itemprop="wordCount" content="574">
 
 
@@ -146,7 +147,7 @@
 
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">文章目录</h2>
-  <div class="post-toc-content">
+  <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
     <li><a href="#nginx-进程模型">Nginx 进程模型</a></li>
@@ -189,7 +190,7 @@
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c"><span class="c1">//ngx_use_accept_mutex表示是否需要通过对accept加锁来解决惊群问题。当nginx worker进程数&gt;1时且配置文件中打开accept_mutex时，这个标志置为1   
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="c1">//ngx_use_accept_mutex表示是否需要通过对accept加锁来解决惊群问题。当nginx worker进程数&gt;1时且配置文件中打开accept_mutex时，这个标志置为1
 </span><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="n">ngx_use_accept_mutex</span><span class="p">)</span> <span class="p">{</span>
     <span class="cm">/*
 </span><span class="cm">            ngx_accept_disabled表示此时满负荷，没必要再处理新连接了，我们在nginx.conf曾经配置了每一个nginx worker进程能够处理的最大连接数，
@@ -218,8 +219,8 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2021-04-11
-        <a href="https://github.com/wudanyang6/blog-hugo/commit/89218127e9fcda1fab104e3a03f8f617140bdb26" title="update">(8921812)</a>
+        2021-04-12
+        <a href="https://github.com/wudanyang6/blog-hugo/commit/d98a7f900ffdc15f84a8dba0d060ca407ea3a338" title="update">(d98a7f9)</a>
     </span>
   </p>
   
@@ -231,7 +232,11 @@
 <footer class="post-footer">
       
       <nav class="post-nav">
-        
+        <a class="prev" href="/post/locate-online-error/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">如何追查线上问题</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
         <a class="next" href="/post/hello-world/">
             <span class="next-text nav-default">Hello World</span>
             <span class="next-text nav-mobile">下一篇</span>
