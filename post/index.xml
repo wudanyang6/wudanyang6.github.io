@@ -5,10 +5,19 @@
     <link>https://wudanyang.top/post/</link>
     <description>Recent content in Posts on 吴丹阳</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Apr 2021 12:26:32 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 13 Apr 2021 11:25:18 +0800</lastBuildDate>
     
 	<atom:link href="https://wudanyang.top/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>文件描述符</title>
+      <link>https://wudanyang.top/post/os/fd/</link>
+      <pubDate>Tue, 13 Apr 2021 11:25:18 +0800</pubDate>
+      
+      <guid>https://wudanyang.top/post/os/fd/</guid>
+      <description>什么是文件描述符 对于内核而言，所有打开的文件都通过文件描述符（file descriptor）引用。通常也写作 fd。 文件描述符是一个非负整数。</description>
+    </item>
     
     <item>
       <title>如何追查线上问题</title>
