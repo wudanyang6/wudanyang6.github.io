@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nginx on 吴丹阳</title>
+    <link>https://wudanyang.top/tags/nginx/</link>
+    <description>Recent content in nginx on 吴丹阳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 10 Apr 2021 14:26:32 +0800</lastBuildDate>
+    
+	<atom:link href="https://wudanyang.top/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nginx 进程模型-整体架构</title>
+      <link>https://wudanyang.top/post/nginx/nginx-process/</link>
+      <pubDate>Sat, 10 Apr 2021 14:26:32 +0800</pubDate>
+      
+      <guid>https://wudanyang.top/post/nginx/nginx-process/</guid>
+      <description>从网上找了一个非常好的图片，从图中可以看到很多东西 Nginx 会生成多个进程 worker 使用了 io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘 I/O 时，使用了标准</description>
+    </item>
+    
+  </channel>
+</rss>
