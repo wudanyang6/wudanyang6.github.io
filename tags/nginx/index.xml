@@ -16,7 +16,7 @@
       <pubDate>Sat, 10 Apr 2021 14:26:32 +0800</pubDate>
       
       <guid>https://wudanyang.top/post/nginx/nginx-process/</guid>
-      <description>从网上找了一个非常好的图片，从图中可以看到很多东西 Nginx 会生成多个进程 worker 使用了 io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘 I/O 时，使用了标准</description>
+      <description>从网上找了一个非常好的图片，从图中可以看到很多东西 Nginx 会生成多个进程 worker 使用了io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘I/O 时，使用</description>
     </item>
     
   </channel>

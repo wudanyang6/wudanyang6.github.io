@@ -16,7 +16,7 @@
       <pubDate>Tue, 13 Apr 2021 11:25:18 +0800</pubDate>
       
       <guid>https://wudanyang.top/post/os/fd/</guid>
-      <description>什么是文件描述符 对于内核而言，所有打开的文件都通过文件描述符（file descriptor）引用。通常也写作 fd。 文件描述符是一个非负整数。</description>
+      <description>什么是文件描述符 对于内核而言，所有打开的文件都通过 文件描述符（file descriptor）引用。通常也写作 fd。 文件描述符是一个非负整数。</description>
     </item>
     
   </channel>

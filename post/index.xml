@@ -16,7 +16,7 @@
       <pubDate>Tue, 13 Apr 2021 11:25:18 +0800</pubDate>
       
       <guid>https://wudanyang.top/post/os/fd/</guid>
-      <description>什么是文件描述符 对于内核而言，所有打开的文件都通过文件描述符（file descriptor）引用。通常也写作 fd。 文件描述符是一个非负整数。</description>
+      <description>什么是文件描述符 对于内核而言，所有打开的文件都通过 文件描述符（file descriptor）引用。通常也写作 fd。 文件描述符是一个非负整数。</description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@
       <pubDate>Sat, 10 Apr 2021 14:26:32 +0800</pubDate>
       
       <guid>https://wudanyang.top/post/nginx/nginx-process/</guid>
-      <description>从网上找了一个非常好的图片，从图中可以看到很多东西 Nginx 会生成多个进程 worker 使用了 io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘 I/O 时，使用了标准</description>
+      <description>从网上找了一个非常好的图片，从图中可以看到很多东西 Nginx 会生成多个进程 worker 使用了io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘I/O 时，使用</description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@
       <pubDate>Fri, 09 Apr 2021 09:08:27 +0000</pubDate>
       
       <guid>https://wudanyang.top/post/hello-world/</guid>
-      <description>回到使用 github pages ，站点基本可用了。 原来的博客依然保留，但不做更新了。</description>
+      <description>回到使用 github pages ，站点基本可用了。 原来的博客依然保留，但不做更新了。 1 include &amp;lt;stdio.h&amp;gt;</description>
     </item>
     
   </channel>
