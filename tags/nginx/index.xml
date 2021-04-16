@@ -5,10 +5,19 @@
     <link>https://wudanyang.top/tags/nginx/</link>
     <description>Recent content in nginx on 吴丹阳</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 10 Apr 2021 14:26:32 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 13 Apr 2021 21:07:19 +0800</lastBuildDate>
     
 	<atom:link href="https://wudanyang.top/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nginx Master 进程主流程</title>
+      <link>https://wudanyang.top/post/nginx/nginx-master/</link>
+      <pubDate>Tue, 13 Apr 2021 21:07:19 +0800</pubDate>
+      
+      <guid>https://wudanyang.top/post/nginx/nginx-master/</guid>
+      <description>nginx master 进程主流程 之前有说到 nginx 进程模型-整体架构，下面来看一下 nginx master 进程的主要工作 nginx 的入口 main 函数在 nginx.c 文件中 函数原型为： 1 2 int ngx_cdecl main(int argc, char *const *argv) 在这个函数</description>
+    </item>
     
     <item>
       <title>Nginx 进程模型-整体架构</title>
