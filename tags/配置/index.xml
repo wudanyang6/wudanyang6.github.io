@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>配置 on 吴丹阳</title>
+    <link>https://wudanyang.top/tags/%E9%85%8D%E7%BD%AE/</link>
+    <description>Recent content in 配置 on 吴丹阳</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 23 Apr 2021 14:58:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://wudanyang.top/tags/%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何调试nginx的rewrite规则?</title>
+      <link>https://wudanyang.top/post/nginx/how-debug-nginx-rewrite/</link>
+      <pubDate>Fri, 23 Apr 2021 14:58:47 +0800</pubDate>
+      
+      <guid>https://wudanyang.top/post/nginx/how-debug-nginx-rewrite/</guid>
+      <description>如何调试nginx的rewrite规则？ 设置 rewrite_log on; 并且将error_log 的报错等级改成 notice; 官网对 rewrite_log 的解释： 1 2 3 4 5 Syntax: rewrite_log on | off; Default: rewrite_log off; Context: http, server, location, if</description>
+    </item>
+    
+  </channel>
+</rss>
