@@ -1,143 +1,15 @@
-<!doctype html><html lang=zh-cn>
-<head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
-<title>Nginx Master 进程主流程 - 吴丹阳</title>
-<meta name=renderer content="webkit">
-<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
-<meta http-equiv=cache-control content="no-transform">
-<meta http-equiv=cache-control content="no-siteapp">
-<meta name=theme-color content="#f8f5ec">
-<meta name=msapplication-navbutton-color content="#f8f5ec">
-<meta name=apple-mobile-web-app-capable content="yes">
-<meta name=apple-mobile-web-app-status-bar-style content="#f8f5ec">
-<meta name=author content="吴丹阳"><meta name=description content="nginx master 进程主流程 之前有说到 nginx 进程模型-整体架构，下面来看一下 nginx master 进程的主要工作 nginx 的入口 main 函数在 nginx.c 文件中 函数原型为： 1 2 int ngx_cdecl main(int argc, char *const *argv) 在这个函数"><meta name=keywords content="博客,技术,吴丹阳,计算机">
-<meta name=generator content="Hugo 0.92.2 with theme even">
-<link rel=canonical href=https://wudanyang.top/post/nginx/nginx-master/>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=manifest href=/manifest.json>
-<link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5>
-<script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script>
-<link href=/sass/main.min.39a3e01cac9473be1356f3572fcfe34b2e363efabad244a99a40f28a812c837e.css rel=stylesheet>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin=anonymous>
-<link rel=stylesheet href=/css/autonumbering.css>
-<link rel=stylesheet href=/css/contenthover.css>
-<meta property="og:title" content="Nginx Master 进程主流程">
-<meta property="og:description" content="nginx master 进程主流程 之前有说到 nginx 进程模型-整体架构，下面来看一下 nginx master 进程的主要工作 nginx 的入口 main 函数在 nginx.c 文件中 函数原型为： 1 2 int ngx_cdecl main(int argc, char *const *argv) 在这个函数">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://wudanyang.top/post/nginx/nginx-master/"><meta property="article:section" content="post">
-<meta property="article:published_time" content="2021-04-13T21:07:19+08:00">
-<meta property="article:modified_time" content="2021-04-16T19:23:44+08:00">
-<meta itemprop=name content="Nginx Master 进程主流程">
-<meta itemprop=description content="nginx master 进程主流程 之前有说到 nginx 进程模型-整体架构，下面来看一下 nginx master 进程的主要工作 nginx 的入口 main 函数在 nginx.c 文件中 函数原型为： 1 2 int ngx_cdecl main(int argc, char *const *argv) 在这个函数"><meta itemprop=datePublished content="2021-04-13T21:07:19+08:00">
-<meta itemprop=dateModified content="2021-04-16T19:23:44+08:00">
-<meta itemprop=wordCount content="1413">
-<meta itemprop=keywords content="nginx,进程,源码分析,"><meta name=twitter:card content="summary">
-<meta name=twitter:title content="Nginx Master 进程主流程">
-<meta name=twitter:description content="nginx master 进程主流程 之前有说到 nginx 进程模型-整体架构，下面来看一下 nginx master 进程的主要工作 nginx 的入口 main 函数在 nginx.c 文件中 函数原型为： 1 2 int ngx_cdecl main(int argc, char *const *argv) 在这个函数"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script>
-<script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]-->
-</head>
-<body>
-<div id=mobile-navbar class=mobile-navbar>
-<div class=mobile-header-logo>
-<a href=/ class=logo>少侠</a>
-</div>
-<div class=mobile-navbar-icon>
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>Nginx Master 进程主流程 - 吴丹阳</title><meta name=renderer content="webkit"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv=cache-control content="no-transform"><meta http-equiv=cache-control content="no-siteapp"><meta name=theme-color content="#f8f5ec"><meta name=msapplication-navbutton-color content="#f8f5ec"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="#f8f5ec"><meta name=author content="吴丹阳"><meta name=description content="nginx master 进程主流程 之前有说到 nginx 进程模型-整体架构，下面来看一下 nginx master 进程的主要工作 nginx 的入口 main 函数在 nginx.c 文件中 函数原型为： 1 2 int ngx_cdecl main(int argc, char *const *argv) 在这个函数"><meta name=keywords content="博客,技术,吴丹阳,计算机"><meta name=generator content="Hugo 0.94.1 with theme even"><link rel=canonical href=https://wudanyang.top/post/nginx/nginx-master/><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script>
+<link href=/sass/main.min.39a3e01cac9473be1356f3572fcfe34b2e363efabad244a99a40f28a812c837e.css rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin=anonymous><link rel=stylesheet href=/css/autonumbering.css><link rel=stylesheet href=/css/contenthover.css><meta property="og:title" content="Nginx Master 进程主流程"><meta property="og:description" content="nginx master 进程主流程 之前有说到 nginx 进程模型-整体架构，下面来看一下 nginx master 进程的主要工作 nginx 的入口 main 函数在 nginx.c 文件中 函数原型为： 1 2 int ngx_cdecl main(int argc, char *const *argv) 在这个函数"><meta property="og:type" content="article"><meta property="og:url" content="https://wudanyang.top/post/nginx/nginx-master/"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-04-13T21:07:19+08:00"><meta property="article:modified_time" content="2021-04-16T19:23:44+08:00"><meta itemprop=name content="Nginx Master 进程主流程"><meta itemprop=description content="nginx master 进程主流程 之前有说到 nginx 进程模型-整体架构，下面来看一下 nginx master 进程的主要工作 nginx 的入口 main 函数在 nginx.c 文件中 函数原型为： 1 2 int ngx_cdecl main(int argc, char *const *argv) 在这个函数"><meta itemprop=datePublished content="2021-04-13T21:07:19+08:00"><meta itemprop=dateModified content="2021-04-16T19:23:44+08:00"><meta itemprop=wordCount content="1413"><meta itemprop=keywords content="nginx,进程,源码分析,"><meta name=twitter:card content="summary"><meta name=twitter:title content="Nginx Master 进程主流程"><meta name=twitter:description content="nginx master 进程主流程 之前有说到 nginx 进程模型-整体架构，下面来看一下 nginx master 进程的主要工作 nginx 的入口 main 函数在 nginx.c 文件中 函数原型为： 1 2 int ngx_cdecl main(int argc, char *const *argv) 在这个函数"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body><div id=mobile-navbar class=mobile-navbar><div class=mobile-header-logo><a href=/ class=logo>少侠</a></div><div class=mobile-navbar-icon><span></span>
 <span></span>
-<span></span>
-<span></span>
-</div>
-</div>
-<nav id=mobile-menu class="mobile-menu slideout-menu">
-<ul class=mobile-menu-list>
-<a href=/>
-<li class=mobile-menu-item>首页</li>
-</a><a href=/post/>
-<li class=mobile-menu-item>归档</li>
-</a><a href=/tags/>
-<li class=mobile-menu-item>标签</li>
-</a><a href=https://www.cnblogs.com/wudanyang>
-<li class=mobile-menu-item>博客园</li>
-</a>
-</ul>
-</nav>
-<div class=container id=mobile-panel>
-<header id=header class=header>
-<div class=logo-wrapper>
-<a href=/ class=logo>少侠</a>
-</div>
-<nav class=site-navbar>
-<ul id=menu class=menu>
-<li class=menu-item>
-<a class=menu-item-link href=/>首页</a>
-</li><li class=menu-item>
-<a class=menu-item-link href=/post/>归档</a>
-</li><li class=menu-item>
-<a class=menu-item-link href=/tags/>标签</a>
-</li><li class=menu-item>
-<a class=menu-item-link href=https://www.cnblogs.com/wudanyang>博客园</a>
-</li>
-</ul>
-</nav>
-</header>
-<main id=main class=main>
-<div class=content-wrapper>
-<div id=content class=content>
-<article class=post>
-<header class=post-header>
-<h1 class=post-title>Nginx Master 进程主流程</h1>
-<div class=post-meta>
-<span class=post-time> 2021-04-13 </span>
-<span class=more-meta> 约 1413 字 </span>
-<span class=more-meta> 预计阅读 3 分钟 </span>
-<span id=busuanzi_container_page_pv class=more-meta> <span id=busuanzi_value_page_pv><img src=/img/spinner.svg alt=spinner.svg></span> 次阅读 </span>
-</div>
-</header>
-<div class=post-toc id=post-toc>
-<h2 class=post-toc-title>文章目录</h2>
-<div class="post-toc-content always-active">
-<nav id=TableOfContents>
-<ul>
-<li><a href=#nginx-master-进程主流程>nginx master 进程主流程</a>
-<ul>
-<li><a href=#设置信号屏蔽字防止创建子进程过程中被信号中断>设置信号屏蔽字，防止创建子进程过程中被信号中断</a></li>
-<li><a href=#设置-master-进程的-title>设置 master 进程的 title</a></li>
-<li><a href=#根据配置启动相应数量的-worker-和-cache-管理进程>根据配置启动相应数量的 <code>worker</code> 和 <code>cache</code> 管理进程</a></li>
-<li><a href=#监听信号并作出响应>监听信号，并作出响应</a></li>
-</ul>
-</li>
-<li><a href=#参考>参考</a></li>
-</ul>
-</nav>
-</div>
-</div>
-<div class=post-outdated>
-<div class=hint>
-<p>【注意】最后更新于 <span class=timeago datetime=2021-04-16T19:23:44 title="April 16, 2021">April 16, 2021</span>，文中内容可能已过时，请谨慎使用。</p>
-</div>
-</div>
-<div class=post-content>
-<h1 id=nginx-master-进程主流程>nginx master 进程主流程</h1>
-<p>之前有说到 <a href=https://wudanyang.top/post/nginx/nginx-process/>nginx 进程模型-整体架构</a>，下面来看一下 <code>nginx master</code> 进程的主要工作</p>
-<p><code>nginx</code> 的入口 <code>main</code> 函数在 <code>nginx.c</code> 文件中</p>
-<p>函数原型为：</p>
-<div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
+<span></span></div></div><nav id=mobile-menu class="mobile-menu slideout-menu"><ul class=mobile-menu-list><a href=/><li class=mobile-menu-item>首页</li></a><a href=/post/><li class=mobile-menu-item>归档</li></a><a href=/tags/><li class=mobile-menu-item>标签</li></a><a href=https://www.cnblogs.com/wudanyang><li class=mobile-menu-item>博客园</li></a></ul></nav><div class=container id=mobile-panel><header id=header class=header><div class=logo-wrapper><a href=/ class=logo>少侠</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=/>首页</a></li><li class=menu-item><a class=menu-item-link href=/post/>归档</a></li><li class=menu-item><a class=menu-item-link href=/tags/>标签</a></li><li class=menu-item><a class=menu-item-link href=https://www.cnblogs.com/wudanyang>博客园</a></li></ul></nav></header><main id=main class=main><div class=content-wrapper><div id=content class=content><article class=post><header class=post-header><h1 class=post-title>Nginx Master 进程主流程</h1><div class=post-meta><span class=post-time>2021-04-13</span>
+<span class=more-meta>约 1413 字</span>
+<span class=more-meta>预计阅读 3 分钟</span>
+<span id=busuanzi_container_page_pv class=more-meta><span id=busuanzi_value_page_pv><img src=/img/spinner.svg alt=spinner.svg></span> 次阅读</span></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title>文章目录</h2><div class="post-toc-content always-active"><nav id=TableOfContents><ul><li><a href=#nginx-master-进程主流程>nginx master 进程主流程</a><ul><li><a href=#设置信号屏蔽字防止创建子进程过程中被信号中断>设置信号屏蔽字，防止创建子进程过程中被信号中断</a></li><li><a href=#设置-master-进程的-title>设置 master 进程的 title</a></li><li><a href=#根据配置启动相应数量的-worker-和-cache-管理进程>根据配置启动相应数量的 <code>worker</code> 和 <code>cache</code> 管理进程</a></li><li><a href=#监听信号并作出响应>监听信号，并作出响应</a></li></ul></li><li><a href=#参考>参考</a></li></ul></nav></div></div><div class=post-outdated><div class=hint><p>【注意】最后更新于 <span class=timeago datetime=2021-04-16T19:23:44 title="April 16, 2021">April 16, 2021</span>，文中内容可能已过时，请谨慎使用。</p></div></div><div class=post-content><h1 id=nginx-master-进程主流程>nginx master 进程主流程</h1><p>之前有说到 <a href=https://wudanyang.top/post/nginx/nginx-process/>nginx 进程模型-整体架构</a>，下面来看一下 <code>nginx master</code> 进程的主要工作</p><p><code>nginx</code> 的入口 <code>main</code> 函数在 <code>nginx.c</code> 文件中</p><p>函数原型为：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=kt>int</span> <span class=n>ngx_cdecl</span>
-<span class=n>main</span><span class=p>(</span><span class=kt>int</span> <span class=n>argc</span><span class=p>,</span> <span class=kt>char</span> <span class=o>*</span><span class=k>const</span> <span class=o>*</span><span class=n>argv</span><span class=p>)</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>在这个函数中，<code>master</code> 做了一系列的初始化操作</p>
-<p>最终在下面这个地方进入了主流程中：</p>
-<div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=kt>int</span> <span class=n>ngx_cdecl</span>
+</span></span><span class=line><span class=cl><span class=n>main</span><span class=p>(</span><span class=kt>int</span> <span class=n>argc</span><span class=p>,</span> <span class=kt>char</span> <span class=o>*</span><span class=k>const</span> <span class=o>*</span><span class=n>argv</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>在这个函数中，<code>master</code> 做了一系列的初始化操作</p><p>最终在下面这个地方进入了主流程中：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
 </span><span class=lnt>4
@@ -145,23 +17,15 @@
 </span><span class=lnt>6
 </span><span class=lnt>7
 </span><span class=lnt>8
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=c1>//...
-</span><span class=c1></span>    <span class=k>if</span> <span class=p>(</span><span class=n>ngx_process</span> <span class=o>==</span> <span class=n>NGX_PROCESS_SINGLE</span><span class=p>)</span> <span class=p>{</span>
-        <span class=n>ngx_single_process_cycle</span><span class=p>(</span><span class=n>cycle</span><span class=p>);</span>
-
-    <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
-        <span class=n>ngx_master_process_cycle</span><span class=p>(</span><span class=n>cycle</span><span class=p>);</span>
-    <span class=p>}</span>
-<span class=c1>//...
-</span></code></pre></td></tr></table>
-</div>
-</div><p>因为我们主要看 <code>master-worker</code> 这种进程模型，所以进入 <code>ngx_master_process_cycle</code></p>
-<h2 id=设置信号屏蔽字防止创建子进程过程中被信号中断>设置信号屏蔽字，防止创建子进程过程中被信号中断</h2>
-<div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>//...
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>if</span> <span class=p>(</span><span class=n>ngx_process</span> <span class=o>==</span> <span class=n>NGX_PROCESS_SINGLE</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>ngx_single_process_cycle</span><span class=p>(</span><span class=n>cycle</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>ngx_master_process_cycle</span><span class=p>(</span><span class=n>cycle</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=c1>//...
+</span></span></span></code></pre></td></tr></table></div></div><p>因为我们主要看 <code>master-worker</code> 这种进程模型，所以进入 <code>ngx_master_process_cycle</code></p><h2 id=设置信号屏蔽字防止创建子进程过程中被信号中断>设置信号屏蔽字，防止创建子进程过程中被信号中断</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -182,45 +46,28 @@
 </span><span class=lnt>19
 </span><span class=lnt>20
 </span><span class=lnt>21
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=c1>// 先清空信号集
-</span><span class=c1></span>    <span class=n>sigemptyset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>);</span>
-    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>SIGCHLD</span><span class=p>);</span>
-    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>SIGALRM</span><span class=p>);</span>
-    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>SIGIO</span><span class=p>);</span>
-    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>SIGINT</span><span class=p>);</span>
-    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>ngx_signal_value</span><span class=p>(</span><span class=n>NGX_RECONFIGURE_SIGNAL</span><span class=p>));</span>
-    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>ngx_signal_value</span><span class=p>(</span><span class=n>NGX_REOPEN_SIGNAL</span><span class=p>));</span>
-    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>ngx_signal_value</span><span class=p>(</span><span class=n>NGX_NOACCEPT_SIGNAL</span><span class=p>));</span>
-    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>ngx_signal_value</span><span class=p>(</span><span class=n>NGX_TERMINATE_SIGNAL</span><span class=p>));</span>
-    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>ngx_signal_value</span><span class=p>(</span><span class=n>NGX_SHUTDOWN_SIGNAL</span><span class=p>));</span>
-    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>ngx_signal_value</span><span class=p>(</span><span class=n>NGX_CHANGEBIN_SIGNAL</span><span class=p>));</span>
-
-<span class=c1>// 设置信号屏蔽字，将 set 中的信号设置为阻塞状态，防止创建worker 的过程中，被进来的信号打断
-</span><span class=c1></span>    <span class=k>if</span> <span class=p>(</span><span class=n>sigprocmask</span><span class=p>(</span><span class=n>SIG_BLOCK</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=nb>NULL</span><span class=p>)</span> <span class=o>==</span> <span class=o>-</span><span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
-        <span class=n>ngx_log_error</span><span class=p>(</span><span class=n>NGX_LOG_ALERT</span><span class=p>,</span> <span class=n>cycle</span><span class=o>-&gt;</span><span class=n>log</span><span class=p>,</span> <span class=n>ngx_errno</span><span class=p>,</span>
-                      <span class=s>&#34;sigprocmask() failed&#34;</span><span class=p>);</span>
-    <span class=p>}</span>
-
-<span class=c1>// 将 set 清空
-</span><span class=c1></span>    <span class=n>sigemptyset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>);</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>设置信号屏蔽字，防止在创建子进程的过程中被信号处理程序中断</p>
-<p>关于信号屏蔽字，引用 <code>《UNIX 环境高级编程》 </code>中信号一节的部分内容：</p>
-<blockquote>
-<p>进程可以选用<code>“阻塞信号递送”</code>。如果为进程产生了一个<code>阻塞</code>的信号,而且对该信号的动作是系统默认动作或捕捉该信号, 则为该进程将此信号保持为<code>未决状态</code>,直到该进程对此信号解除了阻塞, 或者将对此信号的动作更改为忽略。内核在<code>递送</code>一个原来被阻塞的信号给进程时(而不是在产生该信号时),才决定对它的处理方式。于是进程在信号递送给它之前仍可改变对该信号的动作。进程调用 <code>sigpending</code> 函数(见10.13节)来判定哪些信号是设置为阻塞并处于未决状态的。</p>
-</blockquote>
-<blockquote>
-<p>每个进程都有一个<code>信号屏蔽字( signal mask)</code>,它规定了当前要阻塞递送到该进程的<code>信号集</code>。对于每种可能的信号,该屏蔽字中都有一位与之对应。对于某种信号,若其对应位已设置,则它当前是被阻塞的。进程可以调用 <code>sigprocmask</code>(在10.12节中说明)来检测和更改其当前信号屏蔽字。</p>
-</blockquote>
-<p>当然，在下面创建完子进程之后，会使用 <code>sigsuspend</code> 解除信号屏蔽，并使 master 进程进入休眠</p>
-<p>关于 <code>sigsuspend</code> 函数，简单来说，它是一个 <code>sigprocmask(SIG_SETMASK, &emptyset, NULL)</code> 和 <code>pause()</code> 函数的结合体，不过相对于使用两个函数完成上述操作，<code>sigsuspend</code> 是 <code>原子操作</code>。</p>
-<h2 id=设置-master-进程的-title>设置 master 进程的 title</h2>
-<div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=c1>// 先清空信号集
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>sigemptyset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>SIGCHLD</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>SIGALRM</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>SIGIO</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>SIGINT</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>ngx_signal_value</span><span class=p>(</span><span class=n>NGX_RECONFIGURE_SIGNAL</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>ngx_signal_value</span><span class=p>(</span><span class=n>NGX_REOPEN_SIGNAL</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>ngx_signal_value</span><span class=p>(</span><span class=n>NGX_NOACCEPT_SIGNAL</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>ngx_signal_value</span><span class=p>(</span><span class=n>NGX_TERMINATE_SIGNAL</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>ngx_signal_value</span><span class=p>(</span><span class=n>NGX_SHUTDOWN_SIGNAL</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>sigaddset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=n>ngx_signal_value</span><span class=p>(</span><span class=n>NGX_CHANGEBIN_SIGNAL</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// 设置信号屏蔽字，将 set 中的信号设置为阻塞状态，防止创建worker 的过程中，被进来的信号打断
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>if</span> <span class=p>(</span><span class=n>sigprocmask</span><span class=p>(</span><span class=n>SIG_BLOCK</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>set</span><span class=p>,</span> <span class=nb>NULL</span><span class=p>)</span> <span class=o>==</span> <span class=o>-</span><span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>ngx_log_error</span><span class=p>(</span><span class=n>NGX_LOG_ALERT</span><span class=p>,</span> <span class=n>cycle</span><span class=o>-&gt;</span><span class=n>log</span><span class=p>,</span> <span class=n>ngx_errno</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                      <span class=s>&#34;sigprocmask() failed&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// 将 set 清空
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>sigemptyset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>set</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><p>设置信号屏蔽字，防止在创建子进程的过程中被信号处理程序中断</p><p>关于信号屏蔽字，引用 <code>《UNIX 环境高级编程》 </code>中信号一节的部分内容：</p><blockquote><p>进程可以选用<code>“阻塞信号递送”</code>。如果为进程产生了一个<code>阻塞</code>的信号,而且对该信号的动作是系统默认动作或捕捉该信号, 则为该进程将此信号保持为<code>未决状态</code>,直到该进程对此信号解除了阻塞, 或者将对此信号的动作更改为忽略。内核在<code>递送</code>一个原来被阻塞的信号给进程时(而不是在产生该信号时),才决定对它的处理方式。于是进程在信号递送给它之前仍可改变对该信号的动作。进程调用 <code>sigpending</code> 函数(见10.13节)来判定哪些信号是设置为阻塞并处于未决状态的。</p></blockquote><blockquote><p>每个进程都有一个<code>信号屏蔽字( signal mask)</code>,它规定了当前要阻塞递送到该进程的<code>信号集</code>。对于每种可能的信号,该屏蔽字中都有一位与之对应。对于某种信号,若其对应位已设置,则它当前是被阻塞的。进程可以调用 <code>sigprocmask</code>(在10.12节中说明)来检测和更改其当前信号屏蔽字。</p></blockquote><p>当然，在下面创建完子进程之后，会使用 <code>sigsuspend</code> 解除信号屏蔽，并使 master 进程进入休眠</p><p>关于 <code>sigsuspend</code> 函数，简单来说，它是一个 <code>sigprocmask(SIG_SETMASK, &emptyset, NULL)</code> 和 <code>pause()</code> 函数的结合体，不过相对于使用两个函数完成上述操作，<code>sigsuspend</code> 是 <code>原子操作</code>。</p><h2 id=设置-master-进程的-title>设置 master 进程的 title</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -241,214 +88,69 @@
 </span><span class=lnt>19
 </span><span class=lnt>20
 </span><span class=lnt>21
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=k>static</span> <span class=n>u_char</span>  <span class=n>master_process</span><span class=p>[]</span> <span class=o>=</span> <span class=s>&#34;master process&#34;</span><span class=p>;</span>
-
-    <span class=n>size</span> <span class=o>=</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>master_process</span><span class=p>);</span>
-
-    <span class=k>for</span> <span class=p>(</span><span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>ngx_argc</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
-        <span class=n>size</span> <span class=o>+=</span> <span class=n>ngx_strlen</span><span class=p>(</span><span class=n>ngx_argv</span><span class=p>[</span><span class=n>i</span><span class=p>])</span> <span class=o>+</span> <span class=mi>1</span><span class=p>;</span>
-    <span class=p>}</span>
-
-    <span class=n>title</span> <span class=o>=</span> <span class=n>ngx_pnalloc</span><span class=p>(</span><span class=n>cycle</span><span class=o>-&gt;</span><span class=n>pool</span><span class=p>,</span> <span class=n>size</span><span class=p>);</span>
-    <span class=k>if</span> <span class=p>(</span><span class=n>title</span> <span class=o>==</span> <span class=nb>NULL</span><span class=p>)</span> <span class=p>{</span>
-        <span class=cm>/* fatal */</span>
-        <span class=n>exit</span><span class=p>(</span><span class=mi>2</span><span class=p>);</span>
-    <span class=p>}</span>
-
-    <span class=n>p</span> <span class=o>=</span> <span class=n>ngx_cpymem</span><span class=p>(</span><span class=n>title</span><span class=p>,</span> <span class=n>master_process</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>master_process</span><span class=p>)</span> <span class=o>-</span> <span class=mi>1</span><span class=p>);</span>
-    <span class=k>for</span> <span class=p>(</span><span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>ngx_argc</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
-        <span class=o>*</span><span class=n>p</span><span class=o>++</span> <span class=o>=</span> <span class=sc>&#39; &#39;</span><span class=p>;</span>
-        <span class=n>p</span> <span class=o>=</span> <span class=n>ngx_cpystrn</span><span class=p>(</span><span class=n>p</span><span class=p>,</span> <span class=p>(</span><span class=n>u_char</span> <span class=o>*</span><span class=p>)</span> <span class=n>ngx_argv</span><span class=p>[</span><span class=n>i</span><span class=p>],</span> <span class=n>size</span><span class=p>);</span>
-    <span class=p>}</span>
-
-    <span class=n>ngx_setproctitle</span><span class=p>(</span><span class=n>title</span><span class=p>);</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>将title设置成：</p>
-<ol>
-<li>固定字符：<code>nginx:</code></li>
-<li>主进程标志: <code>master process</code></li>
-<li>命令行启动的命令，如：<code>/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx</code></li>
-</ol>
-<p>所以进程刚开始是这样显示的：</p>
-<div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=k>static</span> <span class=n>u_char</span>  <span class=n>master_process</span><span class=p>[]</span> <span class=o>=</span> <span class=s>&#34;master process&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>size</span> <span class=o>=</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>master_process</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=p>(</span><span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>ngx_argc</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>size</span> <span class=o>+=</span> <span class=n>ngx_strlen</span><span class=p>(</span><span class=n>ngx_argv</span><span class=p>[</span><span class=n>i</span><span class=p>])</span> <span class=o>+</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>title</span> <span class=o>=</span> <span class=n>ngx_pnalloc</span><span class=p>(</span><span class=n>cycle</span><span class=o>-&gt;</span><span class=n>pool</span><span class=p>,</span> <span class=n>size</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>title</span> <span class=o>==</span> <span class=nb>NULL</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=cm>/* fatal */</span>
+</span></span><span class=line><span class=cl>        <span class=n>exit</span><span class=p>(</span><span class=mi>2</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>p</span> <span class=o>=</span> <span class=n>ngx_cpymem</span><span class=p>(</span><span class=n>title</span><span class=p>,</span> <span class=n>master_process</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>master_process</span><span class=p>)</span> <span class=o>-</span> <span class=mi>1</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=p>(</span><span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>ngx_argc</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=o>*</span><span class=n>p</span><span class=o>++</span> <span class=o>=</span> <span class=sc>&#39; &#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>p</span> <span class=o>=</span> <span class=n>ngx_cpystrn</span><span class=p>(</span><span class=n>p</span><span class=p>,</span> <span class=p>(</span><span class=n>u_char</span> <span class=o>*</span><span class=p>)</span> <span class=n>ngx_argv</span><span class=p>[</span><span class=n>i</span><span class=p>],</span> <span class=n>size</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>ngx_setproctitle</span><span class=p>(</span><span class=n>title</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><p>将title设置成：</p><ol><li>固定字符：<code>nginx:</code></li><li>主进程标志: <code>master process</code></li><li>命令行启动的命令，如：<code>/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx</code></li></ol><p>所以进程刚开始是这样显示的：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ ps aux <span class=p>|</span> grep nginx <span class=p>|</span> grep -v grep
-root      <span class=m>183117</span>  0.0  0.0   <span class=m>4324</span>  <span class=m>2680</span> ?        ts   17:07   0:00 /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
-</code></pre></td></tr></table>
-</div>
-</div><p>设置了 title 之后，变成了下面这样：</p>
-<div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>$ ps aux <span class=p>|</span> grep nginx <span class=p>|</span> grep -v grep
+</span></span><span class=line><span class=cl>root      <span class=m>183117</span>  0.0  0.0   <span class=m>4324</span>  <span class=m>2680</span> ?        ts   17:07   0:00 /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
+</span></span></code></pre></td></tr></table></div></div><p>设置了 title 之后，变成了下面这样：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ ps aux <span class=p>|</span> grep nginx <span class=p>|</span> grep -v grep
-root      <span class=m>183117</span>  0.0  0.0   <span class=m>4324</span>  <span class=m>2680</span> ?        ts   17:07   0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
-</code></pre></td></tr></table>
-</div>
-</div><h2 id=根据配置启动相应数量的-worker-和-cache-管理进程>根据配置启动相应数量的 <code>worker</code> 和 <code>cache</code> 管理进程</h2>
-<div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>$ ps aux <span class=p>|</span> grep nginx <span class=p>|</span> grep -v grep
+</span></span><span class=line><span class=cl>root      <span class=m>183117</span>  0.0  0.0   <span class=m>4324</span>  <span class=m>2680</span> ?        ts   17:07   0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
+</span></span></code></pre></td></tr></table></div></div><h2 id=根据配置启动相应数量的-worker-和-cache-管理进程>根据配置启动相应数量的 <code>worker</code> 和 <code>cache</code> 管理进程</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
 </span><span class=lnt>4
 </span><span class=lnt>5
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=n>ccf</span> <span class=o>=</span> <span class=p>(</span><span class=n>ngx_core_conf_t</span> <span class=o>*</span><span class=p>)</span> <span class=n>ngx_get_conf</span><span class=p>(</span><span class=n>cycle</span><span class=o>-&gt;</span><span class=n>conf_ctx</span><span class=p>,</span> <span class=n>ngx_core_module</span><span class=p>);</span>
-
-<span class=n>ngx_start_worker_processes</span><span class=p>(</span><span class=n>cycle</span><span class=p>,</span> <span class=n>ccf</span><span class=o>-&gt;</span><span class=n>worker_processes</span><span class=p>,</span>
-                           <span class=n>NGX_PROCESS_RESPAWN</span><span class=p>);</span>
-<span class=n>ngx_start_cache_manager_processes</span><span class=p>(</span><span class=n>cycle</span><span class=p>,</span> <span class=mi>0</span><span class=p>);</span>
-</code></pre></td></tr></table>
-</div>
-</div><h2 id=监听信号并作出响应>监听信号，并作出响应</h2>
-<p>在 <code>ngx_init_signals</code> 函数中，对原始信号做了变量名映射，具体映射如下：</p>
-<table>
-<thead>
-<tr>
-<th>信号</th>
-<th>对应进程中的标志位变量</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>QUIT</td>
-<td>ngx_quit</td>
-<td>优雅关闭服务</td>
-</tr>
-<tr>
-<td>TERM 或 INT</td>
-<td>ngx_terminate</td>
-<td>强制关闭服务</td>
-</tr>
-<tr>
-<td>USR1</td>
-<td>ngx_reopen</td>
-<td>重新打开服务中的所有文件</td>
-</tr>
-<tr>
-<td>WINCH</td>
-<td>ngx_noaccept</td>
-<td>所有子进程不再接受处理新的连接，实际相当于对所有的子进程发送 QUIT 信号</td>
-</tr>
-<tr>
-<td>USR2</td>
-<td>ngx_change_binary</td>
-<td>平滑升级到新版本的 Nginx 程序</td>
-</tr>
-<tr>
-<td>HUP</td>
-<td>ngx_reconfigure</td>
-<td>重新读取配置文件并使服务对新配置项生效</td>
-</tr>
-<tr>
-<td>CHLD</td>
-<td>ngx_reap</td>
-<td>有子进程意外结束<br>master 会监控所有子进程，并在子进程意外退出时调用 ngx_reap_children 方法重启子进程</td>
-</tr>
-</tbody>
-</table>
-<p>master 并不是时刻不停的执行循环检测这些标志位，而是通过 <code>sigsuspend</code> 进入休眠，等待有信号唤醒进程时，再循环检测所有信号并处理。</p>
-<h1 id=参考>参考</h1>
-<p><a href=https://blog.csdn.net/midion9/article/details/50605337>nginx中的ngx_cdecl</a></p>
-<p><a href=https://www.jianshu.com/p/33a7502de6e6>Nginx源码|Nginx信号处理</a></p>
-<p><a href=https://knifefly.cn/2017/09/15/nginx-%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/>nginx 信号处理</a></p>
-<p><a href=https://blog.csdn.net/ShaoLiang_Ge/article/details/57984123>LINUX C中sigprocmask()函数用法</a></p>
-<p><a href=https://blog.csdn.net/linux_ever/article/details/50344837>linux信号的阻塞和未决</a></p>
-<p>《UNIX 环境高级编程》</p>
-</div>
-<div class=post-copyright>
-<p class=copyright-item>
-<span class=item-title>文章作者</span>
-<span class=item-content>吴丹阳</span>
-</p>
-<p class=copyright-item>
-<span class=item-title>上次更新</span>
-<span class=item-content>
-2021-04-16
-<a href=https://github.com/wudanyang6/blog-hugo/commit/8e4b0f22a21009ed0f98c142a2097478cd9f7909 title=update>(8e4b0f2)</a>
-</span>
-</p>
-<p class=copyright-item>
-<span class=item-title>许可协议</span>
-<span class=item-content><a rel="license noopener" href=https://creativecommons.org/licenses/by-nc-nd/4.0/ target=_blank>CC BY-NC-ND 4.0</a></span>
-</p>
-</div>
-<footer class=post-footer>
-<div class=post-tags>
-<a href=/tags/nginx/>nginx</a>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=n>ccf</span> <span class=o>=</span> <span class=p>(</span><span class=n>ngx_core_conf_t</span> <span class=o>*</span><span class=p>)</span> <span class=n>ngx_get_conf</span><span class=p>(</span><span class=n>cycle</span><span class=o>-&gt;</span><span class=n>conf_ctx</span><span class=p>,</span> <span class=n>ngx_core_module</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>ngx_start_worker_processes</span><span class=p>(</span><span class=n>cycle</span><span class=p>,</span> <span class=n>ccf</span><span class=o>-&gt;</span><span class=n>worker_processes</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                           <span class=n>NGX_PROCESS_RESPAWN</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>ngx_start_cache_manager_processes</span><span class=p>(</span><span class=n>cycle</span><span class=p>,</span> <span class=mi>0</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=监听信号并作出响应>监听信号，并作出响应</h2><p>在 <code>ngx_init_signals</code> 函数中，对原始信号做了变量名映射，具体映射如下：</p><table><thead><tr><th>信号</th><th>对应进程中的标志位变量</th><th>含义</th></tr></thead><tbody><tr><td>QUIT</td><td>ngx_quit</td><td>优雅关闭服务</td></tr><tr><td>TERM 或 INT</td><td>ngx_terminate</td><td>强制关闭服务</td></tr><tr><td>USR1</td><td>ngx_reopen</td><td>重新打开服务中的所有文件</td></tr><tr><td>WINCH</td><td>ngx_noaccept</td><td>所有子进程不再接受处理新的连接，实际相当于对所有的子进程发送 QUIT 信号</td></tr><tr><td>USR2</td><td>ngx_change_binary</td><td>平滑升级到新版本的 Nginx 程序</td></tr><tr><td>HUP</td><td>ngx_reconfigure</td><td>重新读取配置文件并使服务对新配置项生效</td></tr><tr><td>CHLD</td><td>ngx_reap</td><td>有子进程意外结束<br>master 会监控所有子进程，并在子进程意外退出时调用 ngx_reap_children 方法重启子进程</td></tr></tbody></table><p>master 并不是时刻不停的执行循环检测这些标志位，而是通过 <code>sigsuspend</code> 进入休眠，等待有信号唤醒进程时，再循环检测所有信号并处理。</p><h1 id=参考>参考</h1><p><a href=https://blog.csdn.net/midion9/article/details/50605337>nginx中的ngx_cdecl</a></p><p><a href=https://www.jianshu.com/p/33a7502de6e6>Nginx源码|Nginx信号处理</a></p><p><a href=https://knifefly.cn/2017/09/15/nginx-%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/>nginx 信号处理</a></p><p><a href=https://blog.csdn.net/ShaoLiang_Ge/article/details/57984123>LINUX C中sigprocmask()函数用法</a></p><p><a href=https://blog.csdn.net/linux_ever/article/details/50344837>linux信号的阻塞和未决</a></p><p>《UNIX 环境高级编程》</p></div><div class=post-copyright><p class=copyright-item><span class=item-title>文章作者</span>
+<span class=item-content>吴丹阳</span></p><p class=copyright-item><span class=item-title>上次更新</span>
+<span class=item-content>2021-04-16
+<a href=https://github.com/wudanyang6/blog-hugo/commit/8e4b0f22a21009ed0f98c142a2097478cd9f7909 title=update>(8e4b0f2)</a></span></p><p class=copyright-item><span class=item-title>许可协议</span>
+<span class=item-content><a rel="license noopener" href=https://creativecommons.org/licenses/by-nc-nd/4.0/ target=_blank>CC BY-NC-ND 4.0</a></span></p></div><footer class=post-footer><div class=post-tags><a href=/tags/nginx/>nginx</a>
 <a href=/tags/%E8%BF%9B%E7%A8%8B/>进程</a>
-<a href=/tags/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/>源码分析</a>
-</div>
-<nav class=post-nav>
-<a class=prev href=/post/nginx/how-debug-nginx-rewrite/>
-<i class="iconfont icon-left"></i>
+<a href=/tags/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/>源码分析</a></div><nav class=post-nav><a class=prev href=/post/nginx/how-debug-nginx-rewrite/><i class="iconfont icon-left"></i>
 <span class="prev-text nav-default">如何调试nginx的rewrite规则?</span>
-<span class="prev-text nav-mobile">上一篇</span>
-</a>
-<a class=next href=/post/os/fd/>
-<span class="next-text nav-default">文件描述符</span>
+<span class="prev-text nav-mobile">上一篇</span></a>
+<a class=next href=/post/os/fd/><span class="next-text nav-default">文件描述符</span>
 <span class="next-text nav-mobile">下一篇</span>
-<i class="iconfont icon-right"></i>
-</a>
-</nav>
-</footer>
-</article>
-</div>
-<script src=https://utteranc.es/client.js repo=wudanyang6/blog-comments issue-term=pathname theme=github-light crossorigin=anonymous async></script>
-<noscript>Please enable JavaScript to view the <a href=https://github.com/utterance>comments powered by utterances.</a></noscript>
-</div>
-</main>
-<footer id=footer class=footer>
-<div class=social-links>
-<a href=mailto:wu.danyang@qq.com class="iconfont icon-email" title=email></a>
+<i class="iconfont icon-right"></i></a></nav></footer></article></div><script src=https://utteranc.es/client.js repo=wudanyang6/blog-comments issue-term=pathname theme=github-light crossorigin=anonymous async></script><noscript>Please enable JavaScript to view the <a href=https://github.com/utterance>comments powered by utterances.</a></noscript></div></main><footer id=footer class=footer><div class=social-links><a href=mailto:wu.danyang@qq.com class="iconfont icon-email" title=email></a>
 <a href=https://github.com/wudanyang6 class="iconfont icon-github" title=github></a>
-<a href=https://wudanyang.top/index.xml type=application/rss+xml class="iconfont icon-rss" title=rss></a>
-</div>
-<div class=copyright>
-<span class=power-by>
-由 <a class=hexo-link href=https://gohugo.io>Hugo</a> 强力驱动
-</span>
+<a href=https://wudanyang.top/index.xml type=application/rss+xml class="iconfont icon-rss" title=rss></a></div><div class=copyright><span class=power-by>由 <a class=hexo-link href=https://gohugo.io>Hugo</a> 强力驱动</span>
 <span class=division>|</span>
-<span class=theme-info>
-主题 -
-<a class=theme-link href=https://github.com/olOwOlo/hugo-theme-even>Even</a>
-</span>
-<div class=busuanzi-footer>
-<span id=busuanzi_container_site_pv> 本站总访问量 <span id=busuanzi_value_site_pv><img src=/img/spinner.svg alt=spinner.svg></span> 次 </span>
+<span class=theme-info>主题 -
+<a class=theme-link href=https://github.com/olOwOlo/hugo-theme-even>Even</a></span><div class=busuanzi-footer><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><img src=/img/spinner.svg alt=spinner.svg></span> 次</span>
 <span class=division>|</span>
-<span id=busuanzi_container_site_uv> 本站总访客数 <span id=busuanzi_value_site_uv><img src=/img/spinner.svg alt=spinner.svg></span> 人 </span>
-</div>
-<span class=copyright-year>
-&copy;
+<span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><img src=/img/spinner.svg alt=spinner.svg></span> 人</span></div><span class=copyright-year>&copy;
 2019 -
-2022<span class=heart><i class="iconfont icon-heart"></i></span><span>吴丹阳</span>
-</span>
-</div>
-</footer>
-<div class=back-to-top id=back-to-top>
-<i class="iconfont icon-up"></i>
-</div>
-</div>
-<script src=https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=anonymous></script>
+2022<span class=heart><i class="iconfont icon-heart"></i></span><span>吴丹阳</span></span></div></footer><div class=back-to-top id=back-to-top><i class="iconfont icon-up"></i></div></div><script src=https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=anonymous></script>
 <script src=https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin=anonymous></script>
 <script src=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin=anonymous></script>
 <script src=https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin=anonymous></script>
 <script src=https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin=anonymous></script>
-<script>var languageCode="".replace(/-/g,'_').replace(/_(.*)/,function(b,a){return b.replace(a,a.toUpperCase())});timeago().render(document.querySelectorAll('.timeago'),languageCode),timeago.cancel()</script>
-<script type=text/javascript src=/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js></script>
-<script id=baidu_analytics>var _hmt=_hmt||[];(function(){var a,b;if(window.location.hostname==='localhost')return;a=document.createElement("script"),a.async=!0,a.src="https://hm.baidu.com/hm.js?96040a435495719de95c25291933587e",b=document.getElementsByTagName("script")[0],b.parentNode.insertBefore(a,b)})()</script>
-<script id=baidu_push>(function(){var a,c,b;if(window.location.hostname==='localhost')return;a=document.createElement('script'),a.async=!0,c=window.location.protocol.split(':')[0],c==='https'?a.src='https://zz.bdstatic.com/linksubmit/push.js':a.src='http://push.zhanzhang.baidu.com/push.js',b=document.getElementsByTagName("script")[0],b.parentNode.insertBefore(a,b)})()</script>
-</body>
-</html>
+<script>var languageCode="".replace(/-/g,"_").replace(/_(.*)/,function(t,e){return t.replace(e,e.toUpperCase())});timeago().render(document.querySelectorAll(".timeago"),languageCode),timeago.cancel()</script><script type=text/javascript src=/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js></script>
+<script id=baidu_analytics>var _hmt=_hmt||[];(function(){if(window.location.hostname==="localhost")return;var e=document.createElement("script"),t;e.async=!0,e.src="https://hm.baidu.com/hm.js?96040a435495719de95c25291933587e",t=document.getElementsByTagName("script")[0],t.parentNode.insertBefore(e,t)})()</script><script id=baidu_push>(function(){if(window.location.hostname==="localhost")return;var e=document.createElement("script"),n,t;e.async=!0,n=window.location.protocol.split(":")[0],n==="https"?e.src="https://zz.bdstatic.com/linksubmit/push.js":e.src="http://push.zhanzhang.baidu.com/push.js",t=document.getElementsByTagName("script")[0],t.parentNode.insertBefore(e,t)})()</script></body></html>
