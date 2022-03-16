@@ -2,18 +2,11 @@
     font-family: "" !important;
 } */
 body {
-    font-family: "" !important;
+    // font-family: "" !important;
 }
 
-
 .post-content > h1, h2, h3, h4, h5, h6 {
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 5px 10px;
-    border-left: 4px solid #42acf3;
-    background-color: #eff5ff;
-    border-color: #42acf3;
+    border-bottom: 1px solid ;
 }
 
 .post-content > h1 {
@@ -67,4 +60,16 @@ h3 {
     font-size: 10px;
     font-family: "";
     margin-left: -15px;
+}
+
+/**
+ * 图片
+ */
+
+.post-content > img {
+    border-left: 2px solid grey;
+}
+
+body {
+    background-color: grey;
 }
