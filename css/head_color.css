@@ -66,8 +66,9 @@ h3 {
  * 图片
  */
 
-.post-content > img {
-    border-left: 2px solid grey;
+#content > article > div.post-content > p > a > img {
+    border-left: 4px solid #f7f5ec;
+    background-color: #f7f5ec;
 }
 
 body {
