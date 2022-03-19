@@ -1,12 +1,10 @@
 /* body,h1,h2,::before {
     font-family: "" !important;
 } */
-body {
-    // font-family: "" !important;
-}
 
 .post-content > h1, h2, h3, h4, h5, h6 {
-    border-bottom: 1px solid ;
+    // border-bottom: 1px solid ;
+    font-family: "" !important;
 }
 
 .post-content > h1 {
@@ -70,10 +68,6 @@ img {
     border-left: 2px solid #B73650;
 }
 
-//body {
-//    background-color: grey;
-//}
-
-.container {
-    padding-right: 30px;
+body {
+    background-color: #F5F5FA;
 }
