@@ -1,0 +1,138 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>gdb 基本使用 - 少侠</title><meta name=renderer content="webkit"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv=cache-control content="no-transform"><meta http-equiv=cache-control content="no-siteapp"><meta name=theme-color content="#f8f5ec"><meta name=msapplication-navbutton-color content="#f8f5ec"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="#f8f5ec"><meta name=author content="吴丹阳"><meta name=description content="1 什么是 gdb gdb 全称：&amp;quot;GNU symbolic debugger&amp;quot; 是一个 gnu 项目孵化出来的调试工具 最常用来调试 c、c++ 程序 2 基本使用 2.1 生成调试信息 在使用 gdb 之前，可执行程序需要生成调试信息 1 g++ test.c -g -o test -g 会在可执行文件中生成一个用于调试的符号表 2.2 启动 gdb 直接后面参数是可执行文件就可以启动调试 1 gdb test 如果要debug一个正在运行的程序"><meta name=keywords content="博客,技术,吴丹阳,计算机"><meta name=generator content="Hugo 0.96.0 with theme even"><link rel=canonical href=https://wudanyang.top/post/c/gdb-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script>
+<link href=/sass/main.min.0c009d642cfdbb73824124328823d239fd33413d8d605ecf4acc56f24b0526aa.css rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin=anonymous><link rel=stylesheet href=/css/autonumbering.css><link rel=stylesheet href=/css/contenthover.css><link rel=stylesheet href=/css/head_color.css><meta property="og:title" content="gdb 基本使用"><meta property="og:description" content="1 什么是 gdb gdb 全称：&#34;GNU symbolic debugger&#34; 是一个 gnu 项目孵化出来的调试工具 最常用来调试 c、c++ 程序 2 基本使用 2.1 生成调试信息 在使用 gdb 之前，可执行程序需要生成调试信息 1 g++ test.c -g -o test -g 会在可执行文件中生成一个用于调试的符号表 2.2 启动 gdb 直接后面参数是可执行文件就可以启动调试 1 gdb test 如果要debug一个正在运行的程序"><meta property="og:type" content="article"><meta property="og:url" content="https://wudanyang.top/post/c/gdb-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"><meta property="article:section" content="post"><meta property="article:published_time" content="2022-03-27T22:28:47+08:00"><meta property="article:modified_time" content="2022-03-27T22:28:47+08:00"><meta itemprop=name content="gdb 基本使用"><meta itemprop=description content="1 什么是 gdb gdb 全称：&#34;GNU symbolic debugger&#34; 是一个 gnu 项目孵化出来的调试工具 最常用来调试 c、c++ 程序 2 基本使用 2.1 生成调试信息 在使用 gdb 之前，可执行程序需要生成调试信息 1 g++ test.c -g -o test -g 会在可执行文件中生成一个用于调试的符号表 2.2 启动 gdb 直接后面参数是可执行文件就可以启动调试 1 gdb test 如果要debug一个正在运行的程序"><meta itemprop=datePublished content="2022-03-27T22:28:47+08:00"><meta itemprop=dateModified content="2022-03-27T22:28:47+08:00"><meta itemprop=wordCount content="855"><meta itemprop=keywords content="gdb,c,"><meta name=twitter:card content="summary"><meta name=twitter:title content="gdb 基本使用"><meta name=twitter:description content="1 什么是 gdb gdb 全称：&#34;GNU symbolic debugger&#34; 是一个 gnu 项目孵化出来的调试工具 最常用来调试 c、c++ 程序 2 基本使用 2.1 生成调试信息 在使用 gdb 之前，可执行程序需要生成调试信息 1 g++ test.c -g -o test -g 会在可执行文件中生成一个用于调试的符号表 2.2 启动 gdb 直接后面参数是可执行文件就可以启动调试 1 gdb test 如果要debug一个正在运行的程序"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body><div id=mobile-navbar class=mobile-navbar><div class=mobile-header-logo><a href=/ class=logo>少侠</a></div><div class=mobile-navbar-icon><span></span>
+<span></span>
+<span></span></div></div><nav id=mobile-menu class="mobile-menu slideout-menu"><ul class=mobile-menu-list><a href=/><li class=mobile-menu-item>首页</li></a><a href=/post/><li class=mobile-menu-item>归档</li></a><a href=/tags/><li class=mobile-menu-item>标签</li></a><a href=https://www.cnblogs.com/wudanyang><li class=mobile-menu-item>博客园</li></a></ul></nav><div class=container id=mobile-panel><header id=header class=header><div class=logo-wrapper><a href=/ class=logo>少侠</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=/>首页</a></li><li class=menu-item><a class=menu-item-link href=/post/>归档</a></li><li class=menu-item><a class=menu-item-link href=/tags/>标签</a></li><li class=menu-item><a class=menu-item-link href=https://www.cnblogs.com/wudanyang>博客园</a></li></ul></nav></header><main id=main class=main><div class=content-wrapper><div id=content class=content><article class=post><header class=post-header><h1 class=post-title>gdb 基本使用</h1><div class=post-meta><span class=post-time>2022-03-27 22:28:47</span>
+<span class=more-meta>约 855 字</span>
+<span class=more-meta>预计阅读 2 分钟</span></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title>文章目录</h2><div class="post-toc-content always-active"><nav id=TableOfContents><ul><li><a href=#1-什么是-gdb>1 什么是 gdb</a></li><li><a href=#2-基本使用>2 基本使用</a><ul><li><a href=#21-生成调试信息>2.1 生成调试信息</a></li><li><a href=#22-启动-gdb>2.2 启动 gdb</a></li><li><a href=#23-调试程序>2.3 调试程序</a></li></ul></li><li><a href=#参考>参考</a></li></ul></nav></div></div><div class=post-content><h1 id=1-什么是-gdb>1 什么是 gdb</h1><p>gdb 全称：<code>"GNU symbolic debugger"</code></p><p>是一个 gnu 项目孵化出来的调试工具</p><p>最常用来调试 c、c++ 程序</p><h1 id=2-基本使用>2 基本使用</h1><h2 id=21-生成调试信息>2.1 生成调试信息</h2><p>在使用 gdb 之前，可执行程序需要生成调试信息</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>g++ test.c -g -o <span class=nb>test</span>
+</span></span></code></pre></td></tr></table></div></div><p>-g 会在可执行文件中生成一个用于调试的符号表</p><h2 id=22-启动-gdb>2.2 启动 gdb</h2><p>直接后面参数是可执行文件就可以启动调试</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>gdb <span class=nb>test</span>
+</span></span></code></pre></td></tr></table></div></div><p>如果要debug一个正在运行的程序，可以使用 -p 参数指定进程id</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>gdb -p $PID
+</span></span></code></pre></td></tr></table></div></div><p>效果如下图所示
+<img src=Pasted%20image%2020220327233801.png alt></p><h2 id=23-调试程序>2.3 调试程序</h2><p>几个基本指令：</p><ul><li>file：从文件导入调试信息符号表</li><li>start：从头开始并在首行进入断点执行</li><li>r(un)：执行</li><li>n(ext)：单步跳过</li><li>s(tep)：单步进入</li><li>fin(ish)：单步跳出</li><li>c(ontinue)：继续，执行到下一个断点</li><li>b(reak)：行号，在第几行打断点；function_name，在函数开始断点</li><li>p(rint)：打印变量值</li><li>ptype：打印变量类型</li><li>quit：退出当前调试</li><li>display：跟踪变量（相当于其他工具的监视 watch）</li><li>bt：栈信息</li><li>frame：激活栈，默认显示当前栈帧</li></ul><p>一般的工作流是：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>gdb 【带有调试信息的可执行程序】
+</span></span></code></pre></td></tr></table></div></div><p>【列出当前执行位置后面的代码】</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>(gdb) l
+</span></span><span class=line><span class=cl>795	    /* NGX_TIMER_INFINITE == INFTIM */
+</span></span><span class=line><span class=cl>796
+</span></span><span class=line><span class=cl>797	    ngx_log_debug1(NGX_LOG_DEBUG_EVENT, cycle-&gt;log, 0,
+</span></span><span class=line><span class=cl>798	                   &#34;epoll timer: %M&#34;, timer);
+</span></span><span class=line><span class=cl>799
+</span></span><span class=line><span class=cl>800	    events = epoll_wait(ep, event_list, (int) nevents, timer);
+</span></span><span class=line><span class=cl>801
+</span></span><span class=line><span class=cl>802	    err = (events == -1) ? ngx_errno : 0;
+</span></span><span class=line><span class=cl>803
+</span></span><span class=line><span class=cl>804	    if (flags &amp; NGX_UPDATE_TIME || ngx_event_timer_alarm) {
+</span></span></code></pre></td></tr></table></div></div><p>【在第 800 行设置断点】</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>(gdb) b 800  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>(gdb) c
+</span></span><span class=line><span class=cl>Continuing.
+</span></span><span class=line><span class=cl>【这里程序会运行到800行断点处】
+</span></span><span class=line><span class=cl>Breakpoint 1, ngx_epoll_process_events (cycle=0xaaaab5a70700, timer=60000, flags=1) at src/event/modules/ngx_epoll_module.c:800
+</span></span><span class=line><span class=cl>800	    events = epoll_wait(ep, event_list, (int) nevents, timer);
+</span></span></code></pre></td></tr></table></div></div><p>【看一下刚才设置的断点信息】</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>(gdb) info b
+</span></span><span class=line><span class=cl>Num     Type           Disp Enb Address            What
+</span></span><span class=line><span class=cl>1       breakpoint     keep y   0x0000aaaab0f35414 in ngx_epoll_process_events at src/event/modules/ngx_epoll_module.c:800
+</span></span><span class=line><span class=cl>	breakpoint already hit 2 times
+</span></span></code></pre></td></tr></table></div></div><p>【看下当前在什么函数中】</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>(gdb) bt
+</span></span><span class=line><span class=cl>#0  ngx_epoll_process_events (cycle=0xaaaab5a70700, timer=60000, flags=1) at src/event/modules/ngx_epoll_module.c:800
+</span></span><span class=line><span class=cl>#1  0x0000aaaab0f29c58 in ngx_process_events_and_timers (cycle=cycle@entry=0xaaaab5a70700) at src/event/ngx_event.c:248
+</span></span><span class=line><span class=cl>#2  0x0000aaaab0f3268c in ngx_worker_process_cycle (cycle=0xaaaab5a70700, data=&lt;optimized out&gt;) at src/os/unix/ngx_process_cycle.c:721
+</span></span><span class=line><span class=cl>#3  0x0000aaaab0f30a80 in ngx_spawn_process (cycle=cycle@entry=0xaaaab5a70700, proc=0xaaaab0f32568 &lt;ngx_worker_process_cycle&gt;, data=0x0,
+</span></span><span class=line><span class=cl>    name=0xaaaab0f8d7d8 &#34;worker process&#34;, respawn=respawn@entry=0) at src/os/unix/ngx_process.c:199
+</span></span><span class=line><span class=cl>#4  0x0000aaaab0f330a0 in ngx_reap_children (cycle=0xaaaab5a70700) at src/os/unix/ngx_process_cycle.c:598
+</span></span><span class=line><span class=cl>#5  ngx_master_process_cycle (cycle=0xaaaab5a70700) at src/os/unix/ngx_process_cycle.c:174
+</span></span><span class=line><span class=cl>#6  0x0000aaaab0f08574 in main (argc=&lt;optimized out&gt;, argv=&lt;optimized out&gt;) at src/core/nginx.c:383
+</span></span></code></pre></td></tr></table></div></div><p>【监视变量：events 与 event_list】</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>(gdb) display events
+</span></span><span class=line><span class=cl>1: events = &lt;optimized out&gt;
+</span></span><span class=line><span class=cl>(gdb) display event_list
+</span></span><span class=line><span class=cl>2: event_list = (struct epoll_event *) 0xaaaab5a7d6f0
+</span></span><span class=line><span class=cl>(gdb) n
+</span></span><span class=line><span class=cl>802	    err = (events == -1) ? ngx_errno : 0;
+</span></span><span class=line><span class=cl>1: events = 2
+</span></span><span class=line><span class=cl>2: event_list = (struct epoll_event *) 0xaaaab5a7d6f0
+</span></span></code></pre></td></tr></table></div></div><p>【取消监视变量】</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>(gdb) undisplay 1
+</span></span><span class=line><span class=cl>(gdb) n
+</span></span><span class=line><span class=cl>802	    err = (events == -1) ? ngx_errno : 0;
+</span></span><span class=line><span class=cl>2: event_list = (struct epoll_event *) 0xaaaab5a7d6f0
+</span></span><span class=line><span class=cl>(gdb) undisplay 2
+</span></span><span class=line><span class=cl>(gdb) n
+</span></span><span class=line><span class=cl>804	    if (flags &amp; NGX_UPDATE_TIME || ngx_event_timer_alarm) {
+</span></span></code></pre></td></tr></table></div></div><p>【查看变量值】</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>(gdb) p flags
+</span></span><span class=line><span class=cl>$2 = 1
+</span></span><span class=line><span class=cl>(gdb) p ngx_event_timer_alarm
+</span></span><span class=line><span class=cl>$3 = 0
+</span></span></code></pre></td></tr></table></div></div><h1 id=参考>参考</h1><ul><li><a href=https://gcc.gnu.org/onlinedocs/gcc-4.6.4/gcc/Debugging-Options.html>3.9 Options for Debugging Your Program or GCC</a></li><li><a href=https://www.sourceware.org/gdb/documentation/>GDB: The GNU Project Debugger</a></li></ul></div><div class=post-copyright><p class=copyright-item><span class=item-title>文章作者</span>
+<span class=item-content>吴丹阳</span></p><p class=copyright-item><span class=item-title>上次更新</span>
+<span class=item-content>2022-03-27 22:28:47</span></p><p class=copyright-item><span class=item-title>许可协议</span>
+<span class=item-content><a rel="license noopener" href=https://creativecommons.org/licenses/by-nc-nd/4.0/ target=_blank>CC BY-NC-ND 4.0</a></span></p></div><footer class=post-footer><div class=post-tags><a href=/tags/gdb/>gdb</a>
+<a href=/tags/c/>c</a></div><nav class=post-nav><a class=next href=/post/c/gcc%E7%BC%96%E8%AF%91%E7%9A%84%E5%87%A0%E4%B8%AA%E8%BF%87%E7%A8%8B/><span class="next-text nav-default">gcc编译的几个过程</span>
+<span class="next-text nav-mobile">下一篇</span>
+<i class="iconfont icon-right"></i></a></nav></footer></article></div><script src=https://utteranc.es/client.js repo=wudanyang6/blog-comments issue-term=pathname theme=github-light crossorigin=anonymous async></script><noscript>Please enable JavaScript to view the <a href=https://github.com/utterance>comments powered by utterances.</a></noscript></div></main><footer id=footer class=footer><div class=social-links><a href=mailto:wu.danyang@qq.com class="iconfont icon-email" title=email></a>
+<a href=https://github.com/wudanyang6 class="iconfont icon-github" title=github></a>
+<a href=https://wudanyang.top/index.xml type=application/rss+xml class="iconfont icon-rss" title=rss></a></div><div class=copyright><span class=power-by>由 <a class=hexo-link href=https://gohugo.io>Hugo</a> 强力驱动</span>
+<span class=division>|</span>
+<span class=theme-info>主题 -
+<a class=theme-link href=https://github.com/olOwOlo/hugo-theme-even>Even</a></span><div class=busuanzi-footer><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><img src=/img/spinner.svg alt=spinner.svg></span> 次</span>
+<span class=division>|</span>
+<span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><img src=/img/spinner.svg alt=spinner.svg></span> 人</span></div><span class=copyright-year>&copy;
+2019 -
+2022<span class=heart><i class="iconfont icon-heart"></i></span><span>吴丹阳</span></span></div></footer><div class=back-to-top id=back-to-top><i class="iconfont icon-up"></i></div></div><script src=https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin=anonymous></script>
+<script>var languageCode="".replace(/-/g,"_").replace(/_(.*)/,function(t,e){return t.replace(e,e.toUpperCase())});timeago().render(document.querySelectorAll(".timeago"),languageCode),timeago.cancel()</script><script type=text/javascript src=/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js></script>
+<script type=text/javascript>window.MathJax={tex:{}}</script><script async src=https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin=anonymous></script>
+<script id=baidu_analytics>var _hmt=_hmt||[];(function(){if(window.location.hostname==="localhost")return;var e=document.createElement("script"),t;e.async=!0,e.src="https://hm.baidu.com/hm.js?96040a435495719de95c25291933587e",t=document.getElementsByTagName("script")[0],t.parentNode.insertBefore(e,t)})()</script><script id=baidu_push>(function(){if(window.location.hostname==="localhost")return;var e=document.createElement("script"),n,t;e.async=!0,n=window.location.protocol.split(":")[0],n==="https"?e.src="https://zz.bdstatic.com/linksubmit/push.js":e.src="http://push.zhanzhang.baidu.com/push.js",t=document.getElementsByTagName("script")[0],t.parentNode.insertBefore(e,t)})()</script><script src=/js/img_trick.js></script></body></html>
