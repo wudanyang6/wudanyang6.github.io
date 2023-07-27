@@ -1,1 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>debug on 少侠的技术博客</title><link>https://wudanyang.top/tags/debug/</link><description>Recent content in debug on 少侠的技术博客</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 18 Mar 2022 23:32:05 +0800</lastBuildDate><atom:link href="https://wudanyang.top/tags/debug/index.xml" rel="self" type="application/rss+xml"/><item><title>vscode debug nginx 源码</title><link>https://wudanyang.top/post/nginx/vscode-nginx-debug/</link><pubDate>Fri, 18 Mar 2022 23:32:05 +0800</pubDate><guid>https://wudanyang.top/post/nginx/vscode-nginx-debug/</guid><description>1 通过源码安装 nginx 1.1 下载源码 1 git clone https://github.com/nginx/nginx 1.2 编译并安装 nginx 修改 nginx 源码中的配置文件：auto/cc/conf 将第 12 行修改一下 ngx_compile_opt=&amp;quot;-c&amp;quot; 改成： ngx_compile_opt=&amp;quot;-c -g&amp;quot; -g 选项会让编译器产生调试信息 执行配置并安装： 1 2 cd nginx auto/configure 默认被安装在 /usr/local/nginx ，可以通过 --prefix 选项修改 继续执行 make &amp;amp;&amp;amp; make install 到这里，nginx 就安装完毕了 1.3 启动 nginx 1 /usr/local/nginx 默认监听本机 80 端口 完成设置后会</description></item><item><title>如何调试nginx的rewrite规则?</title><link>https://wudanyang.top/post/nginx/how-debug-nginx-rewrite/</link><pubDate>Fri, 23 Apr 2021 14:58:47 +0800</pubDate><guid>https://wudanyang.top/post/nginx/how-debug-nginx-rewrite/</guid><description>如何调试nginx的rewrite规则？ 设置 rewrite_log on; 并且将error_log 的报错等级改成 notice; 官网对 rewrite_log 的解释： 1 2 3 4 5 Syntax: rewrite_log on | off; Default: rewrite_log off; Context: http, server, location, if Enables or disables logging of ngx_http_rewrite_module module directives processing results into the error_log at the notice level. 可以看到，这个指令只能在 http server location if 配置指令中使用，日志等级是 notice 写入到 error_log 配置的文件中。 示例 url： /q?someparams 1 2 3 4 5 6 2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;#34;^/+m/question(.*)?qid=\d+(.*)?$&amp;#34; does not match</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>debug on 吴丹阳的站点</title>
+    <link>https://wudanyang6.github.io/tags/debug/</link>
+    <description>Recent content in debug on 吴丹阳的站点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Mar 2022 23:32:05 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/debug/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vscode debug nginx 源码</title>
+      <link>https://wudanyang6.github.io/post/nginx/vscode-nginx-debug/</link>
+      <pubDate>Fri, 18 Mar 2022 23:32:05 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/nginx/vscode-nginx-debug/</guid>
+      <description>1 通过源码安装 nginx 1.1 下载源码 git clone https://github.com/nginx/nginx 1.2 编译并安装 nginx 修改 nginx 源码中的配置文件：auto/cc/conf
+将第 12 行修改一下
+ngx_compile_opt=&amp;quot;-c&amp;quot; 改成： ngx_compile_opt=&amp;quot;-c -g&amp;quot;
+-g 选项会让编译器产生调试信息
+执行配置并安装：
+cd nginx auto/configure 默认被安装在 /usr/local/nginx ，可以通过 --prefix 选项修改
+继续执行 make &amp;amp;&amp;amp; make install
+到这里，nginx 就安装完毕了
+1.3 启动 nginx /usr/local/nginx 默认监听本机 80 端口
+完成设置后会出现下面的图片：
+Welcome to nginx!
+2 配置 vscode 2.1 打开项目 使用 vscode 打开下载下来的源码文件夹
+2.2 安装调试插件 名称: CodeLLDB ID: vadimcn.vscode-lldb 说明: A native debugger powered by LLDB.</description>
+    </item>
+    
+    <item>
+      <title>如何调试nginx的rewrite规则?</title>
+      <link>https://wudanyang6.github.io/post/nginx/how-debug-nginx-rewrite/</link>
+      <pubDate>Fri, 23 Apr 2021 14:58:47 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/nginx/how-debug-nginx-rewrite/</guid>
+      <description>如何调试nginx的rewrite规则？ 设置 rewrite_log on;
+并且将error_log 的报错等级改成 notice;
+官网对 rewrite_log 的解释：
+Syntax:	rewrite_log on | off; Default:	rewrite_log off; Context:	http, server, location, if Enables or disables logging of ngx_http_rewrite_module module directives processing results into the error_log at the notice level. 可以看到，这个指令只能在 http server location if 配置指令中使用，日志等级是 notice 写入到 error_log 配置的文件中。
+示例 url： /q?someparams
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;#34;^/+m/question(.*)?qid=\d+(.*)?$&amp;#34; does not match ... ... 中间省略一些日志 2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;#34;^/+question/(\w+.</description>
+    </item>
+    
+  </channel>
+</rss>

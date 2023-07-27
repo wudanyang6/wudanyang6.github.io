@@ -1,1 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>c语言 on 少侠的技术博客</title><link>https://wudanyang.top/tags/c%E8%AF%AD%E8%A8%80/</link><description>Recent content in c语言 on 少侠的技术博客</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 05 Apr 2022 22:09:07 +0800</lastBuildDate><atom:link href="https://wudanyang.top/tags/c%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml"/><item><title>make 基本使用</title><link>https://wudanyang.top/post/c/make-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link><pubDate>Tue, 05 Apr 2022 22:09:07 +0800</pubDate><guid>https://wudanyang.top/post/c/make-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid><description>什么是 make ？ 什么是 make: Introduction The make utility automatically determines which pieces of a large program need to be recompiled, and issues commands to recompile them. make 指令自动化地决定一个大型程序的哪部分需要重新编译，并且发出指令重新编译。 简单理解就是，gcc 的编译指令太繁琐并且手写不方便，需要几个工具来管理。这就是 make 工具干的事儿 什么是 makefile ？ Introduction You need a file called a makefile to tell make what to do. Most often, the makefile tells make how to compile and link a program. 需要使用</description></item><item><title>gdb 基本使用</title><link>https://wudanyang.top/post/c/gdb-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link><pubDate>Sun, 27 Mar 2022 22:28:47 +0800</pubDate><guid>https://wudanyang.top/post/c/gdb-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid><description>1 什么是 gdb gdb 全称：&amp;quot;GNU symbolic debugger&amp;quot; 是一个 gnu 项目孵化出来的调试工具 最常用来调试 c、c++ 程序 2 基本使用 2.1 生成调试信息 在使用 gdb 之前，可执行程序需要生成调试信息 1 g++ test.c -g -o test -g 会在可执行文件中生成一个用于调试的符号表 2.2 启动 gdb 直接后面参数是可执行文件就可以启动调试 1 gdb test 如果要debug一个正在运行的程序</description></item><item><title>gcc编译的几个过程</title><link>https://wudanyang.top/post/c/gcc%E7%BC%96%E8%AF%91%E7%9A%84%E5%87%A0%E4%B8%AA%E8%BF%87%E7%A8%8B/</link><pubDate>Sat, 26 Mar 2022 22:22:18 +0800</pubDate><guid>https://wudanyang.top/post/c/gcc%E7%BC%96%E8%AF%91%E7%9A%84%E5%87%A0%E4%B8%AA%E8%BF%87%E7%A8%8B/</guid><description>一段普通的 c++ 代码是如何变成可执行程序的 (使用 g++ 命令编译 c++ 代码) 1 2 3 4 5 6 using namespace std; int main() { cout &amp;lt;&amp;lt; &amp;#34;hello, world&amp;#34; &amp;lt;&amp;lt; endl; return 0; } 会经过4个步骤 预处理 编译 汇编 链接 预处理 作用：宏替换（展开文本，include 文本替换），删除空格等文本处理 相关语句 -E 仅生成 .i 预处理后的文件 编译 -S 仅生成 .s 编译后 .s 后缀文件 将c代码解析后生成汇编语句 下</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>c语言 on 吴丹阳的站点</title>
+    <link>https://wudanyang6.github.io/tags/c%E8%AF%AD%E8%A8%80/</link>
+    <description>Recent content in c语言 on 吴丹阳的站点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Apr 2022 22:09:07 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/c%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>make 基本使用</title>
+      <link>https://wudanyang6.github.io/post/c/make-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Tue, 05 Apr 2022 22:09:07 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/c/make-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
+      <description>什么是 make ？ 什么是 make: Introduction
+The make utility automatically determines which pieces of a large program need to be recompiled, and issues commands to recompile them. make 指令自动化地决定一个大型程序的哪部分需要重新编译，并且发出指令重新编译。
+简单理解就是，gcc 的编译指令太繁琐并且手写不方便，需要几个工具来管理。这就是 make 工具干的事儿
+什么是 makefile ？ Introduction
+You need a file called a makefile to tell make what to do. Most often, the makefile tells make how to compile and link a program. 需要使用 makefile 这个文件，来告诉 make 需要做什么。常见的用法是描述如何编译以及链接程序
+makefile 就是编译链接的描述文件。</description>
+    </item>
+    
+    <item>
+      <title>gdb 基本使用</title>
+      <link>https://wudanyang6.github.io/post/c/gdb-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 27 Mar 2022 22:28:47 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/c/gdb-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
+      <description>1 什么是 gdb gdb 全称：&amp;quot;GNU symbolic debugger&amp;quot;
+是一个 gnu 项目孵化出来的调试工具
+最常用来调试 c、c++ 程序
+2 基本使用 2.1 生成调试信息 在使用 gdb 之前，可执行程序需要生成调试信息
+g++ test.c -g -o test -g 会在可执行文件中生成一个用于调试的符号表
+2.2 启动 gdb 直接后面参数是可执行文件就可以启动调试
+gdb test 如果要debug一个正在运行的程序，可以使用 -p 参数指定进程id
+gdb -p $PID 效果如下图所示 2.3 调试程序 几个基本指令：
+file：从文件导入调试信息符号表 start：从头开始并在首行进入断点执行 r(un)：执行 n(ext)：单步跳过 s(tep)：单步进入 fin(ish)：单步跳出 c(ontinue)：继续，执行到下一个断点 b(reak)：行号，在第几行打断点；function_name，在函数开始断点 p(rint)：打印变量值 ptype：打印变量类型 quit：退出当前调试 display：跟踪变量（相当于其他工具的监视 watch） bt：栈信息 frame：激活栈，默认显示当前栈帧 一般的工作流是：
+gdb 【带有调试信息的可执行程序】 【列出当前执行位置后面的代码】
+(gdb) l 795	/* NGX_TIMER_INFINITE == INFTIM */ 796 797	ngx_log_debug1(NGX_LOG_DEBUG_EVENT, cycle-&amp;gt;log, 0, 798	&amp;#34;epoll timer: %M&amp;#34;, timer); 799 800	events = epoll_wait(ep, event_list, (int) nevents, timer); 801 802	err = (events == -1) ?</description>
+    </item>
+    
+    <item>
+      <title>gcc编译的几个过程</title>
+      <link>https://wudanyang6.github.io/post/c/gcc%E7%BC%96%E8%AF%91%E7%9A%84%E5%87%A0%E4%B8%AA%E8%BF%87%E7%A8%8B/</link>
+      <pubDate>Sat, 26 Mar 2022 22:22:18 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/c/gcc%E7%BC%96%E8%AF%91%E7%9A%84%E5%87%A0%E4%B8%AA%E8%BF%87%E7%A8%8B/</guid>
+      <description>一段普通的 c++ 代码是如何变成可执行程序的 (使用 g++ 命令编译 c++ 代码)
+using namespace std; int main() { cout &amp;lt;&amp;lt; &amp;#34;hello, world&amp;#34; &amp;lt;&amp;lt; endl; return 0; } 会经过4个步骤
+预处理 编译 汇编 链接 预处理 作用：宏替换（展开文本，include 文本替换），删除空格等文本处理
+相关语句 -E 仅生成 .i 预处理后的文件
+编译 -S 仅生成 .s 编译后 .s 后缀文件
+将c代码解析后生成汇编语句
+下面代码是一部分汇编语句
+ubuntu@foo:~/test$ cat test.s .arch armv8-a .file	&amp;#34;test.c&amp;#34; .text .section	.rodata .align	3 .type	_ZStL19piecewise_construct, %object .size	_ZStL19piecewise_construct, 1 _ZStL19piecewise_construct: .zero	1 .local	_ZStL8__ioinit .comm	_ZStL8__ioinit,1,8 .</description>
+    </item>
+    
+  </channel>
+</rss>

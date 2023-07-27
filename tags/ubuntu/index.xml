@@ -1,1 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ubuntu on 少侠的技术博客</title><link>https://wudanyang.top/tags/ubuntu/</link><description>Recent content in ubuntu on 少侠的技术博客</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 28 Apr 2021 10:18:04 +0800</lastBuildDate><atom:link href="https://wudanyang.top/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>树莓派 ubuntu 配置网络</title><link>https://wudanyang.top/post/raspberry/ubuntu-network/</link><pubDate>Wed, 28 Apr 2021 10:18:04 +0800</pubDate><guid>https://wudanyang.top/post/raspberry/ubuntu-network/</guid><description>树莓派 ubuntu 配置网络 树莓派现在可以安装很多操作系统，其中 ubuntu 也提供了树莓派版本，因为对 ubuntu 更加熟悉，所以就往 SD 卡中烧录了 ubuntu 的 20.04 lts 64位 版本。这里有可供选择的操作系统。 简单提一嘴烧录操作系统到 SD 卡上面的方法，树莓派提供了一个傻瓜式的软件给大家使用，直接打开之后选择系统，就可以烧录了，烧录过程大概会有几分钟。 烧</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ubuntu on 吴丹阳的站点</title>
+    <link>https://wudanyang6.github.io/tags/ubuntu/</link>
+    <description>Recent content in ubuntu on 吴丹阳的站点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 28 Apr 2021 10:18:04 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>树莓派 ubuntu 配置网络</title>
+      <link>https://wudanyang6.github.io/post/raspberry/ubuntu-network/</link>
+      <pubDate>Wed, 28 Apr 2021 10:18:04 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/raspberry/ubuntu-network/</guid>
+      <description>树莓派 ubuntu 配置网络 树莓派现在可以安装很多操作系统，其中 ubuntu 也提供了树莓派版本，因为对 ubuntu 更加熟悉，所以就往 SD 卡中烧录了 ubuntu 的 20.04 lts 64位 版本。这里有可供选择的操作系统。
+简单提一嘴烧录操作系统到 SD 卡上面的方法，树莓派提供了一个傻瓜式的软件给大家使用，直接打开之后选择系统，就可以烧录了，烧录过程大概会有几分钟。
+烧录完成之后，如果你按照树莓派官网的教程进行操作，肯定都行不通，因为树莓派的官方操作系统 Raspberry Pi OS 和 Ubuntu For Raspberry 上面的网络配置方式完全不一样。
+安装了 ubuntu 的树莓派怎么配置网络？ 打开你烧录好的 SD 卡
+找到 network-config 文件
+写入如下配置：
+wifis: wlan0: dhcp4: true optional: true access-points: &amp;lt;wifi network name&amp;gt;: password: &amp;#34;&amp;lt;wifi password&amp;gt;&amp;#34; 如果是企业网络：
+wifis: wlan0: dhcp4: true optional: true access-points: &amp;lt;wifi network name&amp;gt;: auth: key-management: eap method: peap identity: &amp;#34;wudanyang&amp;#34; password: &amp;#34;&amp;#34; 配置文件的格式</description>
+    </item>
+    
+  </channel>
+</rss>

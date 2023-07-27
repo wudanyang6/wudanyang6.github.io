@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>瞎想 on 少侠的技术博客</title><link>https://wudanyang.top/tags/%E7%9E%8E%E6%83%B3/</link><description>Recent content in 瞎想 on 少侠的技术博客</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 13 Mar 2022 21:43:43 +0800</lastBuildDate><atom:link href="https://wudanyang.top/tags/%E7%9E%8E%E6%83%B3/index.xml" rel="self" type="application/rss+xml"/><item><title>软件选择</title><link>https://wudanyang.top/post/others/software-choose/</link><pubDate>Sun, 13 Mar 2022 21:43:43 +0800</pubDate><guid>https://wudanyang.top/post/others/software-choose/</guid><description>最近看到很多计算机企业在制裁俄罗斯，制裁手段包括软件禁止俄罗斯使用，云服务停止等等。 网络上确实也充斥着很多公众号的推文，说俄罗斯的现在很可能就是以后的中国。不过这个以后正在到来，而且也发生了，Figma 禁止大疆使用服务。 未雨绸缪，回想一下自己常用的一些软件，以及替代方案。 phpstorm 本地软件 即使不更新也可以继</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>瞎想 on 吴丹阳的站点</title>
+    <link>https://wudanyang6.github.io/tags/%E7%9E%8E%E6%83%B3/</link>
+    <description>Recent content in 瞎想 on 吴丹阳的站点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Mar 2022 21:43:43 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/%E7%9E%8E%E6%83%B3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>软件选择</title>
+      <link>https://wudanyang6.github.io/post/others/software-choose/</link>
+      <pubDate>Sun, 13 Mar 2022 21:43:43 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/others/software-choose/</guid>
+      <description>最近看到很多计算机企业在制裁俄罗斯，制裁手段包括软件禁止俄罗斯使用，云服务停止等等。
+网络上确实也充斥着很多公众号的推文，说俄罗斯的现在很可能就是以后的中国。不过这个以后正在到来，而且也发生了，Figma 禁止大疆使用服务。
+未雨绸缪，回想一下自己常用的一些软件，以及替代方案。
+phpstorm 本地软件 即使不更新也可以继续使用旧版本，但是不能保证后续不会被远程限制使用 obsidian 本地软件 软件是个本地软件，开发者看着也是中国人，如果被封，还能继续使用现有版本 苹果系统 如果真有一天苹果系统被停止服务，我们应该也可以继续使用现有版本，只不过不能使用 icloud。是在不行就迁移到深度系统 替代品：深度操作系统 icloud 替代品：坚果云，应该是我知道的国内唯一比较好用的替代方案了 chrome firefox 360 浏览器等一系列国产套壳浏览器 iTerm 系统默认终端也能用，只不过没有这个这么方便 最担心的还是苹果电脑和系统，万一哪天漂亮国发疯，全封了，那就是不死不休了。</description>
+    </item>
+    
+  </channel>
+</rss>

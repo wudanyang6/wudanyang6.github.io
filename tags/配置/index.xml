@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>配置 on 少侠的技术博客</title><link>https://wudanyang.top/tags/%E9%85%8D%E7%BD%AE/</link><description>Recent content in 配置 on 少侠的技术博客</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 23 Apr 2021 14:58:47 +0800</lastBuildDate><atom:link href="https://wudanyang.top/tags/%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>如何调试nginx的rewrite规则?</title><link>https://wudanyang.top/post/nginx/how-debug-nginx-rewrite/</link><pubDate>Fri, 23 Apr 2021 14:58:47 +0800</pubDate><guid>https://wudanyang.top/post/nginx/how-debug-nginx-rewrite/</guid><description>如何调试nginx的rewrite规则？ 设置 rewrite_log on; 并且将error_log 的报错等级改成 notice; 官网对 rewrite_log 的解释： 1 2 3 4 5 Syntax: rewrite_log on | off; Default: rewrite_log off; Context: http, server, location, if Enables or disables logging of ngx_http_rewrite_module module directives processing results into the error_log at the notice level. 可以看到，这个指令只能在 http server location if 配置指令中使用，日志等级是 notice 写入到 error_log 配置的文件中。 示例 url： /q?someparams 1 2 3 4 5 6 2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;#34;^/+m/question(.*)?qid=\d+(.*)?$&amp;#34; does not match</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>配置 on 吴丹阳的站点</title>
+    <link>https://wudanyang6.github.io/tags/%E9%85%8D%E7%BD%AE/</link>
+    <description>Recent content in 配置 on 吴丹阳的站点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 23 Apr 2021 14:58:47 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何调试nginx的rewrite规则?</title>
+      <link>https://wudanyang6.github.io/post/nginx/how-debug-nginx-rewrite/</link>
+      <pubDate>Fri, 23 Apr 2021 14:58:47 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/nginx/how-debug-nginx-rewrite/</guid>
+      <description>如何调试nginx的rewrite规则？ 设置 rewrite_log on;
+并且将error_log 的报错等级改成 notice;
+官网对 rewrite_log 的解释：
+Syntax:	rewrite_log on | off; Default:	rewrite_log off; Context:	http, server, location, if Enables or disables logging of ngx_http_rewrite_module module directives processing results into the error_log at the notice level. 可以看到，这个指令只能在 http server location if 配置指令中使用，日志等级是 notice 写入到 error_log 配置的文件中。
+示例 url： /q?someparams
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;#34;^/+m/question(.*)?qid=\d+(.*)?$&amp;#34; does not match ... ... 中间省略一些日志 2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;#34;^/+question/(\w+.</description>
+    </item>
+    
+  </channel>
+</rss>
