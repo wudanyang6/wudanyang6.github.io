@@ -28,7 +28,8 @@ int ngx_cdecl main(int argc, char *const *argv) 在这个函数中，master 做�
       <pubDate>Sat, 10 Apr 2021 14:26:32 +0800</pubDate>
       
       <guid>https://wudanyang6.github.io/post/nginx/nginx-process/</guid>
-      <description> 从网上找了一个非常好的图片，从图中可以看到很多东西
+      <description>
+从网上找了一个非常好的图片，从图中可以看到很多东西
 Nginx 会生成多个进程 worker 使用了io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘I/O 时，使用了标准I/O ，sendfile ，AIO ，mmap 等I/O 技术 Cache loader 和Cache manager 操作 proxy cache 后端支持多种基于tcp 的网络协议 </description>
     </item>
     
