@@ -4,15 +4,13 @@ const exec = util.promisify(child_process.exec);
 
   
 function getCreateTimeAsFileName() {
-     var d = new Date();
-     var year = d.getFullYear();
-     var month = d.getMonth()+1;
-     var day = d.getDate();
-     var hour = d.getHours();
-     var minute = d.getMinutes();
-     var second = d.getSeconds();
-     var time = year+"m"+month+"d"+day+"h"+hour+"m"+minute+"s"+second;
-     return time;
+     const currentDate = new Date();
+
+     const year = currentDate.getFullYear();
+     const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+     const day = String(currentDate.getDate()).padStart(2, '0');
+
+     return `${year}-${month}-${day}-`;
 }
 
   
@@ -21,7 +19,7 @@ function getCreateTimeAsFileName() {
 
 async function executeCommand() {
      const fileName = getCreateTimeAsFileName()+".md";
-     const { stdout, stderr } = await exec('hugo new posts/' +fileName,{cwd: app.fileManager.vault.adapter.basePath});
+     const { stdout, stderr } = await exec('/opt/homebrew/bin/hugo new post/' +fileName,{cwd: app.fileManager.vault.adapter.basePath});
      console.log('stdout:', stdout);
      console.log('stderr:', stderr);
      if (stdout) {
