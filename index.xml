@@ -6,7 +6,7 @@
     <description>Recent content on 吴丹阳的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 28 Jul 2023 22:54:28 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jul 2023 11:49:00 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于我</title>
       <link>https://wudanyang6.github.io/about/</link>
@@ -15,6 +15,24 @@
       <guid>https://wudanyang6.github.io/about/</guid>
       <description>日拱一卒
 宁静致远</description>
+    </item>
+    
+    <item>
+      <title>数据量级较大的实时排行榜</title>
+      <link>https://wudanyang6.github.io/post/2023-07-30-redis-zset-%E6%8E%92%E8%A1%8C%E6%A6%9C/</link>
+      <pubDate>Sun, 30 Jul 2023 11:49:00 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/2023-07-30-redis-zset-%E6%8E%92%E8%A1%8C%E6%A6%9C/</guid>
+      <description>一、问题 数据量级上亿，如何在客户端实时显示一个天级实时排行榜？
+数据格式为：
+key:value
+根据 value 的值显示 key 的排行榜，如：
+id1 =&amp;gt; 10 id2 =&amp;gt; 9 id3 =&amp;gt; 8 id4 =&amp;gt; 7 id5 =&amp;gt; 6 ... 要求这个排行榜随着用户操作 value 变化时，可以做到实时变化，但是排行榜可以只显示前10000条
+二、解决方案 我们都知道 redis 的 zset 方法，可以将数据串成一个跳表，可以获取数据的排行榜数据
+如下面在 redis-cli 中的操作：
+# 在redis中添加一个元素board，类型为zset，key：id1，value：10 ZADD board 10 id1 ZADD board 9 id2 ZADD board 8 id3 ... 继续添加 # 取出前1万条 ZREVRANGE board 0 10000 2.1 暴力存储 我们可以利用上面的 zset 将一亿条数据全都存起来，然后每次 ZREVRANGE board 即可获取排行榜前一万名
+这样的优点是：
+程序逻辑简单，维护简单，只需要写两个函数，一个是修改数据的函数，一个是获取排行榜的函数 如果数据量级比较小的话，这样做是没问题的，但是如果量级上亿的话，就会出现几个缺点：</description>
     </item>
     
     <item>
