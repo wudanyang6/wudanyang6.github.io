@@ -8,6 +8,42 @@
     <language>zh</language>
     <lastBuildDate>Mon, 12 Apr 2021 17:39:57 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>linux</title>
+      <link>https://wudanyang6.github.io/tags/linux/</link>
+      <pubDate>Sun, 30 Jul 2023 16:32:20 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OOM</title>
+      <link>https://wudanyang6.github.io/tags/oom/</link>
+      <pubDate>Sun, 30 Jul 2023 16:32:20 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/tags/oom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>操作系统</title>
+      <link>https://wudanyang6.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Sun, 30 Jul 2023 16:32:20 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>内存管理</title>
+      <link>https://wudanyang6.github.io/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Sun, 30 Jul 2023 16:32:20 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>redis</title>
       <link>https://wudanyang6.github.io/tags/redis/</link>
       <pubDate>Sun, 30 Jul 2023 11:49:00 +0800</pubDate>
@@ -301,15 +337,6 @@
       <pubDate>Tue, 13 Apr 2021 21:07:19 +0800</pubDate>
       
       <guid>https://wudanyang6.github.io/tags/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>操作系统</title>
-      <link>https://wudanyang6.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
-      <pubDate>Tue, 13 Apr 2021 11:25:18 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
       <description></description>
     </item>
     

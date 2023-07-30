@@ -6,7 +6,16 @@
     <description>Recent content in 操作系统 on 吴丹阳的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 13 Apr 2021 11:25:18 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jul 2023 16:32:20 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>操作系统OOM</title>
+      <link>https://wudanyang6.github.io/post/2023-07-30-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Foom/</link>
+      <pubDate>Sun, 30 Jul 2023 16:32:20 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/2023-07-30-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Foom/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>文件描述符</title>
       <link>https://wudanyang6.github.io/post/os/fd/</link>

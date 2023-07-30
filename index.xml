@@ -6,7 +6,7 @@
     <description>Recent content on 吴丹阳的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 30 Jul 2023 11:49:00 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jul 2023 16:32:20 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于我</title>
       <link>https://wudanyang6.github.io/about/</link>
@@ -15,6 +15,15 @@
       <guid>https://wudanyang6.github.io/about/</guid>
       <description>日拱一卒
 宁静致远</description>
+    </item>
+    
+    <item>
+      <title>操作系统OOM</title>
+      <link>https://wudanyang6.github.io/post/2023-07-30-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Foom/</link>
+      <pubDate>Sun, 30 Jul 2023 16:32:20 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/2023-07-30-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Foom/</guid>
+      <description></description>
     </item>
     
     <item>
