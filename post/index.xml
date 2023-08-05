@@ -6,7 +6,17 @@
     <description>Recent content in Posts on 吴丹阳的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 02 Aug 2023 11:21:03 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Aug 2023 16:44:22 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>树莓派买了个新SD卡</title>
+      <link>https://wudanyang6.github.io/post/2023-08-05-%E6%96%B0%E6%90%9E%E4%BA%86%E4%B8%80%E4%B8%AAsd%E5%8D%A1/</link>
+      <pubDate>Sat, 05 Aug 2023 16:44:22 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/2023-08-05-%E6%96%B0%E6%90%9E%E4%BA%86%E4%B8%80%E4%B8%AAsd%E5%8D%A1/</guid>
+      <description>给树莓派搞了个128GB的MicroSD存储卡，才30块钱，到下周一晚上拿回家试试是不是能速度快一些
+https://item.jd.com/100035678436.html</description>
+    </item>
+    
     <item>
       <title>树莓派gpu内存分配踩坑</title>
       <link>https://wudanyang6.github.io/post/2023-08-02-%E6%A0%91%E8%8E%93%E6%B4%BEgpu%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E8%B8%A9%E5%9D%91/</link>
@@ -51,11 +61,30 @@
     </item>
     
     <item>
+      <title>学会如何学习</title>
+      <link>https://wudanyang6.github.io/post/2023-07-30-%E5%AD%A6%E4%BC%9A%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Sun, 30 Jul 2023 20:25:19 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/2023-07-30-%E5%AD%A6%E4%BC%9A%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0/</guid>
+      <description>《学会如何学习》 作者：芭芭拉·奥克利 特伦斯·谢诺夫斯基 阿利斯泰尔·麦康维尔
+专注与发散模式</description>
+    </item>
+    
+    <item>
       <title>金铲铲之战-绝境逆袭</title>
       <link>https://wudanyang6.github.io/post/2023-07-30-%E9%87%91%E9%93%B2%E9%93%B2%E4%B9%8B%E6%88%98-%E7%BB%9D%E5%A2%83%E9%80%86%E8%A2%AD/</link>
       <pubDate>Sun, 30 Jul 2023 17:12:46 +0800</pubDate>
       
       <guid>https://wudanyang6.github.io/post/2023-07-30-%E9%87%91%E9%93%B2%E9%93%B2%E4%B9%8B%E6%88%98-%E7%BB%9D%E5%A2%83%E9%80%86%E8%A2%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>操作系统OOM</title>
+      <link>https://wudanyang6.github.io/post/2023-07-30-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Foom/</link>
+      <pubDate>Sun, 30 Jul 2023 16:32:20 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/2023-07-30-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Foom/</guid>
       <description></description>
     </item>
     
@@ -271,6 +300,15 @@ hugo 的安装就不说了，如果这一步觉得很困难，就可以放弃了
 元数据仓库设置成了私有，因为里面有可能有一些敏感信息 网站仓库设置为公开，开启 GitHub pages 服务 当然，你也可以设置成公开并且都使用一个仓库。
 网站仓库打开 Settings 选择 Pages 选项，选择数据源分支
 示例 如下图所示，我这里分支设置成了 gh-pages 分支的根目录，并且使用了一个自定义域名，而且开启了强制 https 访问。自定义域名和 https 第一次使用完全可以不理会，咱们接着往下看。</description>
+    </item>
+    
+    <item>
+      <title>多进程的rust</title>
+      <link>https://wudanyang6.github.io/post/rust/%E5%A4%9A%E8%BF%9B%E7%A8%8B%E7%9A%84rust/</link>
+      <pubDate>Sat, 12 Mar 2022 23:17:55 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/rust/%E5%A4%9A%E8%BF%9B%E7%A8%8B%E7%9A%84rust/</guid>
+      <description></description>
     </item>
     
     <item>
