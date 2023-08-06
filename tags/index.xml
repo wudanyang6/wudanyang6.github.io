@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on 吴丹阳的站点</title>
+    <title>Tags on 少侠的站点</title>
     <link>https://wudanyang6.github.io/tags/</link>
-    <description>Recent content in Tags on 吴丹阳的站点</description>
+    <description>Recent content in Tags on 少侠的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Mon, 12 Apr 2021 17:39:57 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -35,20 +35,20 @@
     </item>
     
     <item>
+      <title>科技</title>
+      <link>https://wudanyang6.github.io/tags/%E7%A7%91%E6%8A%80/</link>
+      <pubDate>Tue, 01 Aug 2023 18:23:06 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/tags/%E7%A7%91%E6%8A%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>docker</title>
       <link>https://wudanyang6.github.io/tags/docker/</link>
       <pubDate>Mon, 31 Jul 2023 23:30:02 +0800</pubDate>
       
       <guid>https://wudanyang6.github.io/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>金铲铲</title>
-      <link>https://wudanyang6.github.io/tags/%E9%87%91%E9%93%B2%E9%93%B2/</link>
-      <pubDate>Mon, 31 Jul 2023 22:46:20 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E9%87%91%E9%93%B2%E9%93%B2/</guid>
       <description></description>
     </item>
     
@@ -62,11 +62,11 @@
     </item>
     
     <item>
-      <title>学习方法</title>
-      <link>https://wudanyang6.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
+      <title>学习</title>
+      <link>https://wudanyang6.github.io/tags/%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Sun, 30 Jul 2023 20:25:19 +0800</pubDate>
       
-      <guid>https://wudanyang6.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://wudanyang6.github.io/tags/%E5%AD%A6%E4%B9%A0/</guid>
       <description></description>
     </item>
     
@@ -116,33 +116,6 @@
     </item>
     
     <item>
-      <title>zset</title>
-      <link>https://wudanyang6.github.io/tags/zset/</link>
-      <pubDate>Sun, 30 Jul 2023 11:49:00 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/zset/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>大数据量</title>
-      <link>https://wudanyang6.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE%E9%87%8F/</link>
-      <pubDate>Sun, 30 Jul 2023 11:49:00 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE%E9%87%8F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>排行榜</title>
-      <link>https://wudanyang6.github.io/tags/%E6%8E%92%E8%A1%8C%E6%A6%9C/</link>
-      <pubDate>Sun, 30 Jul 2023 11:49:00 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E6%8E%92%E8%A1%8C%E6%A6%9C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>音乐</title>
       <link>https://wudanyang6.github.io/tags/%E9%9F%B3%E4%B9%90/</link>
       <pubDate>Fri, 28 Jul 2023 22:54:28 +0800</pubDate>
@@ -152,38 +125,20 @@
     </item>
     
     <item>
+      <title>电视剧</title>
+      <link>https://wudanyang6.github.io/tags/%E7%94%B5%E8%A7%86%E5%89%A7/</link>
+      <pubDate>Thu, 27 Jul 2023 09:08:27 +0000</pubDate>
+      
+      <guid>https://wudanyang6.github.io/tags/%E7%94%B5%E8%A7%86%E5%89%A7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>c</title>
       <link>https://wudanyang6.github.io/tags/c/</link>
       <pubDate>Sat, 23 Apr 2022 15:35:24 +0800</pubDate>
       
       <guid>https://wudanyang6.github.io/tags/c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>动态库</title>
-      <link>https://wudanyang6.github.io/tags/%E5%8A%A8%E6%80%81%E5%BA%93/</link>
-      <pubDate>Sat, 23 Apr 2022 15:35:24 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>静态库</title>
-      <link>https://wudanyang6.github.io/tags/%E9%9D%99%E6%80%81%E5%BA%93/</link>
-      <pubDate>Fri, 08 Apr 2022 22:53:28 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E9%9D%99%E6%80%81%E5%BA%93/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>c语言</title>
-      <link>https://wudanyang6.github.io/tags/c%E8%AF%AD%E8%A8%80/</link>
-      <pubDate>Tue, 05 Apr 2022 22:09:07 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/c%E8%AF%AD%E8%A8%80/</guid>
       <description></description>
     </item>
     
@@ -224,24 +179,6 @@
     </item>
     
     <item>
-      <title>debug</title>
-      <link>https://wudanyang6.github.io/tags/debug/</link>
-      <pubDate>Fri, 18 Mar 2022 23:32:05 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/debug/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nginx</title>
-      <link>https://wudanyang6.github.io/tags/nginx/</link>
-      <pubDate>Fri, 18 Mar 2022 23:32:05 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/nginx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>vscode</title>
       <link>https://wudanyang6.github.io/tags/vscode/</link>
       <pubDate>Fri, 18 Mar 2022 23:32:05 +0800</pubDate>
@@ -260,56 +197,11 @@
     </item>
     
     <item>
-      <title>编程语言</title>
-      <link>https://wudanyang6.github.io/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
-      <pubDate>Tue, 15 Mar 2022 19:26:50 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://wudanyang6.github.io/tags/%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Tue, 15 Mar 2022 19:26:50 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E6%95%99%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>game</title>
-      <link>https://wudanyang6.github.io/tags/game/</link>
-      <pubDate>Tue, 15 Mar 2022 08:51:18 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/game/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>原神</title>
-      <link>https://wudanyang6.github.io/tags/%E5%8E%9F%E7%A5%9E/</link>
-      <pubDate>Tue, 15 Mar 2022 08:51:18 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E5%8E%9F%E7%A5%9E/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>软件</title>
       <link>https://wudanyang6.github.io/tags/%E8%BD%AF%E4%BB%B6/</link>
       <pubDate>Sun, 13 Mar 2022 21:43:43 +0800</pubDate>
       
       <guid>https://wudanyang6.github.io/tags/%E8%BD%AF%E4%BB%B6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>瞎想</title>
-      <link>https://wudanyang6.github.io/tags/%E7%9E%8E%E6%83%B3/</link>
-      <pubDate>Sun, 13 Mar 2022 21:43:43 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E7%9E%8E%E6%83%B3/</guid>
       <description></description>
     </item>
     
@@ -323,92 +215,11 @@
     </item>
     
     <item>
-      <title>obsidian</title>
-      <link>https://wudanyang6.github.io/tags/obsidian/</link>
-      <pubDate>Sat, 12 Mar 2022 23:17:55 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/obsidian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pages</title>
-      <link>https://wudanyang6.github.io/tags/pages/</link>
-      <pubDate>Sat, 12 Mar 2022 23:17:55 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/pages/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ubuntu</title>
-      <link>https://wudanyang6.github.io/tags/ubuntu/</link>
-      <pubDate>Wed, 28 Apr 2021 10:18:04 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>网络</title>
-      <link>https://wudanyang6.github.io/tags/%E7%BD%91%E7%BB%9C/</link>
-      <pubDate>Wed, 28 Apr 2021 10:18:04 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E7%BD%91%E7%BB%9C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rewrite log</title>
-      <link>https://wudanyang6.github.io/tags/rewrite-log/</link>
+      <title>nginx</title>
+      <link>https://wudanyang6.github.io/tags/nginx/</link>
       <pubDate>Fri, 23 Apr 2021 14:58:47 +0800</pubDate>
       
-      <guid>https://wudanyang6.github.io/tags/rewrite-log/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>配置</title>
-      <link>https://wudanyang6.github.io/tags/%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Fri, 23 Apr 2021 14:58:47 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E9%85%8D%E7%BD%AE/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>进程</title>
-      <link>https://wudanyang6.github.io/tags/%E8%BF%9B%E7%A8%8B/</link>
-      <pubDate>Tue, 13 Apr 2021 21:07:19 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E8%BF%9B%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>源码分析</title>
-      <link>https://wudanyang6.github.io/tags/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/</link>
-      <pubDate>Tue, 13 Apr 2021 21:07:19 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>描述符</title>
-      <link>https://wudanyang6.github.io/tags/%E6%8F%8F%E8%BF%B0%E7%AC%A6/</link>
-      <pubDate>Tue, 13 Apr 2021 11:25:18 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E6%8F%8F%E8%BF%B0%E7%AC%A6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>文件</title>
-      <link>https://wudanyang6.github.io/tags/%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Tue, 13 Apr 2021 11:25:18 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E6%96%87%E4%BB%B6/</guid>
+      <guid>https://wudanyang6.github.io/tags/nginx/</guid>
       <description></description>
     </item>
     
@@ -427,15 +238,6 @@
       <pubDate>Mon, 12 Apr 2021 12:26:32 +0800</pubDate>
       
       <guid>https://wudanyang6.github.io/tags/%E7%BB%8F%E9%AA%8C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>问题处理</title>
-      <link>https://wudanyang6.github.io/tags/%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/</link>
-      <pubDate>Mon, 12 Apr 2021 12:26:32 +0800</pubDate>
-      
-      <guid>https://wudanyang6.github.io/tags/%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/</guid>
       <description></description>
     </item>
     
