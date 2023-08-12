@@ -27,11 +27,11 @@
     
     <item>
       <title>2023-08-11-untitled</title>
-      <link>https://wudanyang6.github.io/post/2023-08-11-untitled/</link>
+      <link>https://wudanyang6.github.io/post/untitled/</link>
       <pubDate>Fri, 11 Aug 2023 23:16:25 +0800</pubDate>
       
-      <guid>https://wudanyang6.github.io/post/2023-08-11-untitled/</guid>
-      <description></description>
+      <guid>https://wudanyang6.github.io/post/untitled/</guid>
+      <description> </description>
     </item>
     
     <item>
@@ -170,7 +170,7 @@ https://item.jd.com/100035678436.html</description>
       <pubDate>Sun, 30 Jul 2023 17:12:46 +0800</pubDate>
       
       <guid>https://wudanyang6.github.io/post/2023-07-30-%E9%87%91%E9%93%B2%E9%93%B2%E4%B9%8B%E6%88%98-%E7%BB%9D%E5%A2%83%E9%80%86%E8%A2%AD/</guid>
-      <description></description>
+      <description> </description>
     </item>
     
     <item>
@@ -206,7 +206,7 @@ id1 =&amp;gt; 10 id2 =&amp;gt; 9 id3 =&amp;gt; 8 id4 =&amp;gt; 7 id5 =&amp;gt; 6
       <pubDate>Fri, 28 Jul 2023 22:54:28 +0800</pubDate>
       
       <guid>https://wudanyang6.github.io/post/2023-07-28-music-tags/</guid>
-      <description></description>
+      <description> </description>
     </item>
     
     <item>
@@ -485,8 +485,7 @@ NAME open, openat -- open or create a file for reading or writing SYNOPSIS #incl
       <pubDate>Sat, 10 Apr 2021 14:26:32 +0800</pubDate>
       
       <guid>https://wudanyang6.github.io/post/nginx/nginx-process/</guid>
-      <description>
-从网上找了一个非常好的图片，从图中可以看到很多东西
+      <description> 从网上找了一个非常好的图片，从图中可以看到很多东西
 Nginx 会生成多个进程 worker 使用了io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘I/O 时，使用了标准I/O ，sendfile ，AIO ，mmap 等I/O 技术 Cache loader 和Cache manager 操作 proxy cache 后端支持多种基于tcp 的网络协议 </description>
     </item>
     
