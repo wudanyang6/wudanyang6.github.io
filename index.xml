@@ -6,7 +6,7 @@
     <description>Recent content on 少侠的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 09 Aug 2023 20:39:31 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Aug 2023 17:18:50 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我喜欢的歌</title>
       <link>https://wudanyang6.github.io/music/</link>
@@ -23,6 +23,15 @@
       
       <guid>https://wudanyang6.github.io/about/</guid>
       <description>千里之行，始于足下</description>
+    </item>
+    
+    <item>
+      <title>hugo 发布时将图片转成 webp 以及缩小图片质量</title>
+      <link>https://wudanyang6.github.io/post/2023-08-13-hugo-webp/</link>
+      <pubDate>Sun, 13 Aug 2023 17:18:50 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/2023-08-13-hugo-webp/</guid>
+      <description></description>
     </item>
     
     <item>
