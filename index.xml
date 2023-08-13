@@ -31,7 +31,7 @@
       <pubDate>Sun, 13 Aug 2023 17:18:50 +0800</pubDate>
       
       <guid>https://wudanyang6.github.io/post/2023-08-13-hugo-webp/</guid>
-      <description></description>
+      <description>将 layouts/_default/_markup/render-image.html 内容替换成下面的 html {{- $url := urls.Parse .Destination -}} {{- $scheme := $url.Scheme -}} {{ $img := .Page.Resources.GetMatch $url.Path }} &amp;lt;!-- 如果页面中没有找到，则去找post文件夹的资源，必须放一个 _index.md 在 post 文件夹中 --&amp;gt; {{ if not $img }} {{ with .Page.Site.GetPage &amp;#34;section&amp;#34; &amp;#34;post&amp;#34; }} {{ $resources := index (.Resources.Match $url.Path) 0 }} {{ with $resources }} {{ $img = $resources }} {{ end }} {{ end }} {{end}} {{ with $img }} {{ if eq $img.</description>
     </item>
     
     <item>
