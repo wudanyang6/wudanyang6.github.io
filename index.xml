@@ -6,7 +6,7 @@
     <description>Recent content on 少侠的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 13 Aug 2023 17:18:50 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Aug 2023 22:13:24 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我喜欢的歌</title>
       <link>https://wudanyang6.github.io/music/</link>
@@ -23,6 +23,18 @@
       
       <guid>https://wudanyang6.github.io/about/</guid>
       <description>千里之行，始于足下</description>
+    </item>
+    
+    <item>
+      <title>obsidian-things3-today-plugin</title>
+      <link>https://wudanyang6.github.io/post/2023-08-17-obsidian-things3-today-plugin/</link>
+      <pubDate>Thu, 17 Aug 2023 22:13:24 +0800</pubDate>
+      
+      <guid>https://wudanyang6.github.io/post/2023-08-17-obsidian-things3-today-plugin/</guid>
+      <description>实现功能：
+显示 things3 今天列表 每 30 秒刷新一次，可点击按钮手动刷新 在 obsidian 中可以点击将任务置为已完成 示例：
+github 地址：https://github.com/wudanyang6/obsidian-things3
+install: 暂时还没准备发布出去</description>
     </item>
     
     <item>
