@@ -22,8 +22,7 @@
       <pubDate>Sat, 12 Mar 2022 23:17:55 +0800</pubDate>
       
       <guid>https://wudanyang6.github.io/post/hugo-%E4%B8%80%E9%94%AE%E5%8F%91%E5%B8%83/</guid>
-      <description>f
-使用 Hugo 创建站点 首先打开 Hugo 官网 Quick start
+      <description>使用 Hugo 创建站点 首先打开 Hugo 官网 Quick start
 hugo 的安装就不说了，如果这一步觉得很困难，就可以放弃了。
 新建站点new hugo new site quickstart cd quickstart git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke echo theme = \&amp;#34;ananke\&amp;#34; &amp;gt;&amp;gt; config.toml 上述做完之后，可以先别急着玩主题，咱们可以后面慢慢探索
 添加内容 hugo new posts/my-first-post.md 这时，我们可以打开 posts/my-first-post.md ，在里面使用 markdown 语法写一写文字。
