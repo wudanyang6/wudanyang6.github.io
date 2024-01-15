@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>游戏 on 少侠的站点</title>
     <link>https://wudanyang6.github.io/tags/%E6%B8%B8%E6%88%8F/</link>
     <description>Recent content in 游戏 on 少侠的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 31 Jul 2023 22:46:20 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/%E6%B8%B8%E6%88%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Jul 2023 22:46:20 +0800</lastBuildDate>
+    <atom:link href="https://wudanyang6.github.io/tags/%E6%B8%B8%E6%88%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>金铲铲-裁决之力</title>
       <link>https://wudanyang6.github.io/post/2023-07-31-%E9%87%91%E9%93%B2%E9%93%B2-%E8%A3%81%E5%86%B3%E4%B9%8B%E5%8A%9B/</link>
       <pubDate>Mon, 31 Jul 2023 22:46:20 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-07-31-%E9%87%91%E9%93%B2%E9%93%B2-%E8%A3%81%E5%86%B3%E4%B9%8B%E5%8A%9B/</guid>
       <description>代表月亮消灭你</description>
     </item>
-    
     <item>
       <title>金铲铲之战-绝境逆袭</title>
       <link>https://wudanyang6.github.io/post/2023-07-30-%E9%87%91%E9%93%B2%E9%93%B2%E4%B9%8B%E6%88%98-%E7%BB%9D%E5%A2%83%E9%80%86%E8%A2%AD/</link>
       <pubDate>Sun, 30 Jul 2023 17:12:46 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-07-30-%E9%87%91%E9%93%B2%E9%93%B2%E4%B9%8B%E6%88%98-%E7%BB%9D%E5%A2%83%E9%80%86%E8%A2%AD/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>原神挺好玩</title>
       <link>https://wudanyang6.github.io/post/games/%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/</link>
       <pubDate>Tue, 15 Mar 2022 08:51:18 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/games/%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/</guid>
       <description>最近游戏一直在玩原神，一个开放的大世界。主线剧情刚刚做完，确实是我想象中的角色扮演（RPG）游戏。
 记得高中在塞班手机上玩的一款RPG游戏，一个周末都在刷怪。后来重新练了个号，结果跟大师傅打架的时候，他的70级宠物不知道为什么变成我的了。我就带着一个70级将近满级的宠物一路过关斩将玩通关了。
@@ -42,6 +38,5 @@
 最后一点，原神不花钱氪金也可以玩的很舒服，每天做做每日任务，开开宝箱，欣赏欣赏美景，然后读一读角色的背景故事。
 对了，游戏社区里的前辈忠告，当深渊不存在，能打到哪里就打到哪里。</description>
     </item>
-    
   </channel>
 </rss>

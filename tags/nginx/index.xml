@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nginx on 少侠的站点</title>
     <link>https://wudanyang6.github.io/tags/nginx/</link>
     <description>Recent content in nginx on 少侠的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 23 Apr 2021 14:58:47 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Apr 2021 14:58:47 +0800</lastBuildDate>
+    <atom:link href="https://wudanyang6.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何调试nginx的rewrite规则?</title>
       <link>https://wudanyang6.github.io/post/nginx/how-debug-nginx-rewrite/</link>
       <pubDate>Fri, 23 Apr 2021 14:58:47 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/nginx/how-debug-nginx-rewrite/</guid>
       <description>如何调试nginx的rewrite规则？ 设置 rewrite_log on;
 并且将error_log 的报错等级改成 notice;
@@ -20,12 +20,10 @@ Syntax:	rewrite_log on | off; Default:	rewrite_log off; Context:	http, server, l
 示例 url： /q?someparams
 2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;#34;^/+m/question(.*)?qid=\d+(.*)?$&amp;#34; does not match ... ... 中间省略一些日志 2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;#34;^/+question/(\w+.</description>
     </item>
-    
     <item>
       <title>Nginx Master 进程主流程</title>
       <link>https://wudanyang6.github.io/post/nginx/nginx-master/</link>
       <pubDate>Tue, 13 Apr 2021 21:07:19 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/nginx/nginx-master/</guid>
       <description>nginx master 进程主流程 之前有说到 nginx 进程模型-整体架构，下面来看一下 nginx master 进程的主要工作
 nginx 的入口 main 函数在 nginx.c 文件中
@@ -35,16 +33,13 @@ int ngx_cdecl main(int argc, char *const *argv) 在这个函数中，master 做�
 //... if (ngx_process == NGX_PROCESS_SINGLE) { ngx_single_process_cycle(cycle); } else { ngx_master_process_cycle(cycle); } //... 因为我们主要看 master-worker 这种进程模型，所以进入 ngx_master_process_cycle
 设置信号屏蔽字，防止创建子进程过程中被信号中断 // 先清空信号集 sigemptyset(&amp;amp;set); sigaddset(&amp;amp;set, SIGCHLD); sigaddset(&amp;amp;set, SIGALRM); sigaddset(&amp;amp;set, SIGIO); sigaddset(&amp;amp;set, SIGINT); sigaddset(&amp;amp;set, ngx_signal_value(NGX_RECONFIGURE_SIGNAL)); sigaddset(&amp;amp;set, ngx_signal_value(NGX_REOPEN_SIGNAL)); sigaddset(&amp;amp;set, ngx_signal_value(NGX_NOACCEPT_SIGNAL)); sigaddset(&amp;amp;set, ngx_signal_value(NGX_TERMINATE_SIGNAL)); sigaddset(&amp;amp;set, ngx_signal_value(NGX_SHUTDOWN_SIGNAL)); sigaddset(&amp;amp;set, ngx_signal_value(NGX_CHANGEBIN_SIGNAL)); // 设置信号屏蔽字，将 set 中的信号设置为阻塞状态，防止创建worker 的过程中，被进来的信号打断 if (sigprocmask(SIG_BLOCK, &amp;amp;set, NULL) == -1) { ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, ngx_errno, &amp;#34;sigprocmask() failed&amp;#34;); } // 将 set 清空 sigemptyset(&amp;amp;set); 设置信号屏蔽字，防止在创建子进程的过程中被信号处理程序中断</description>
     </item>
-    
     <item>
       <title>Nginx 进程模型-整体架构</title>
       <link>https://wudanyang6.github.io/post/nginx/nginx-process/</link>
       <pubDate>Sat, 10 Apr 2021 14:26:32 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/nginx/nginx-process/</guid>
       <description> 从网上找了一个非常好的图片，从图中可以看到很多东西
 Nginx 会生成多个进程 worker 使用了io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘I/O 时，使用了标准I/O ，sendfile ，AIO ，mmap 等I/O 技术 Cache loader 和Cache manager 操作 proxy cache 后端支持多种基于tcp 的网络协议 </description>
     </item>
-    
   </channel>
 </rss>

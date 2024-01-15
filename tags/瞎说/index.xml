@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>瞎说 on 少侠的站点</title>
     <link>https://wudanyang6.github.io/tags/%E7%9E%8E%E8%AF%B4/</link>
     <description>Recent content in 瞎说 on 少侠的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 03 Apr 2022 23:10:57 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/%E7%9E%8E%E8%AF%B4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Apr 2022 23:10:57 +0800</lastBuildDate>
+    <atom:link href="https://wudanyang6.github.io/tags/%E7%9E%8E%E8%AF%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于职业生涯的思考</title>
       <link>https://wudanyang6.github.io/post/2022-04-03-%E5%85%B3%E4%BA%8E%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF%E7%9A%84%E6%80%9D%E8%80%83/</link>
       <pubDate>Sun, 03 Apr 2022 23:10:57 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2022-04-03-%E5%85%B3%E4%BA%8E%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF%E7%9A%84%E6%80%9D%E8%80%83/</guid>
       <description>媳妇儿公司是做政府项目外包的，平时接待的大多是五十往上的老年人。
 前天媳妇儿跟我说，她接到了一个简历，简历上的人是之前的工作是个程序员，因为上个项目结束，被辞退了，最近大环境不好在家呆了很长时间没找到工作，投了他们公司。
@@ -23,6 +23,5 @@
 公司的业务更熟悉一些，毕竟是生活之本 学习 go 语言，随时做好语言的切换准备，摸透公司里面一个叫 qta 的微服务 长期来看
 把身体调养好，毕竟是革命的本钱 按时睡觉，感觉比较困难，每天回家的时间不固定 不吃辛辣、油腻的食品。这个比较好控制，辛辣基本不吃了，油腻的也刻意在控制 不喝碳酸饮料。 每周至少做一个小时的有氧运动 把学校里没学好的基础部分补足 Linux 系统编程，正在学习 Linux 网络编程 算法也需要常常练习，不能变得生疏，能锻炼自己的思维能力 学习 rust 语言，觉得 rust 语言会是以后的主要语言之一，学习过程中，确实能感觉到在使用 PHP 编程时觉得会出现坑的点（不判断返回值，返回值是 null 等等），以及多线程等方式不方便的地方，rust 都有比较好的解决方案。只不过这个语言对安全管控的很严格，越到后面学习起来越难，甚至讲到 Box 的时候，都不知道应该往里面传什么参数了，怪不得有人说，rust 最大的困难是通过编译。 </description>
     </item>
-    
   </channel>
 </rss>

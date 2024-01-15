@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>makefile on 少侠的站点</title>
     <link>https://wudanyang6.github.io/tags/makefile/</link>
     <description>Recent content in makefile on 少侠的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 05 Apr 2022 22:09:07 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/tags/makefile/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Apr 2022 22:09:07 +0800</lastBuildDate>
+    <atom:link href="https://wudanyang6.github.io/tags/makefile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>make 基本使用</title>
       <link>https://wudanyang6.github.io/post/c/make-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Tue, 05 Apr 2022 22:09:07 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/c/make-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
       <description>什么是 make ？ 什么是 make: Introduction
 The make utility automatically determines which pieces of a large program need to be recompiled, and issues commands to recompile them. make 指令自动化地决定一个大型程序的哪部分需要重新编译，并且发出指令重新编译。
@@ -20,6 +20,5 @@ The make utility automatically determines which pieces of a large program need t
 You need a file called a makefile to tell make what to do. Most often, the makefile tells make how to compile and link a program. 需要使用 makefile 这个文件，来告诉 make 需要做什么。常见的用法是描述如何编译以及链接程序
 makefile 就是编译链接的描述文件。</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,47 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 少侠的站点</title>
     <link>https://wudanyang6.github.io/post/</link>
     <description>Recent content in Posts on 少侠的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 10 Jan 2024 11:52:07 +0800</lastBuildDate><atom:link href="https://wudanyang6.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jan 2024 11:52:07 +0800</lastBuildDate>
+    <atom:link href="https://wudanyang6.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>分享一个力扣刷题插件</title>
       <link>https://wudanyang6.github.io/post/2024-01-10-%E5%88%86%E4%BA%AB%E4%B8%80%E4%B8%AA%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E6%8F%92%E4%BB%B6/</link>
       <pubDate>Wed, 10 Jan 2024 11:52:07 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2024-01-10-%E5%88%86%E4%BA%AB%E4%B8%80%E4%B8%AA%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E6%8F%92%E4%BB%B6/</guid>
       <description>https://github.com/XYShaoKang/refined-leetcode</description>
     </item>
-    
     <item>
       <title>《你的第一本哲学书》</title>
       <link>https://wudanyang6.github.io/post/2023-10-08-%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9C%AC%E5%93%B2%E5%AD%A6%E4%B9%A6/</link>
       <pubDate>Sun, 08 Oct 2023 10:21:33 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-10-08-%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9C%AC%E5%93%B2%E5%AD%A6%E4%B9%A6/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>超异能族真的很不错</title>
       <link>https://wudanyang6.github.io/post/2023-09-08-%E8%B6%85%E5%BC%82%E8%83%BD%E6%97%8F%E7%9C%9F%E7%9A%84%E5%BE%88%E4%B8%8D%E9%94%99/</link>
       <pubDate>Fri, 08 Sep 2023 22:58:34 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-09-08-%E8%B6%85%E5%BC%82%E8%83%BD%E6%97%8F%E7%9C%9F%E7%9A%84%E5%BE%88%E4%B8%8D%E9%94%99/</guid>
       <description>最近在看超异能族这部韩国的电视剧，真的很明显能感觉到国内的电视剧没有哪个能与之媲美的
 当然，我只能说是在某些方面，比如特效、爱情表达等方面
 超异能族_百度百科
 这几个人的演技真的特别顶尖，特别是女主的老爸，就是上图中间位置的大叔</description>
     </item>
-    
     <item>
       <title>obsidian-things3-today-plugin</title>
       <link>https://wudanyang6.github.io/post/2023-08-17-obsidian-things3-today-plugin/</link>
       <pubDate>Thu, 17 Aug 2023 22:13:24 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-08-17-obsidian-things3-today-plugin/</guid>
       <description>实现功能：
 显示 things3 今天列表 每 30 秒刷新一次，可点击按钮手动刷新 在 obsidian 中可以点击将任务置为已完成 示例：
@@ -49,51 +43,41 @@
 github 地址：https://github.com/wudanyang6/obsidian-things3
 Install: 见 github README.md Install 部分</description>
     </item>
-    
     <item>
       <title>hugo 发布时将图片转成 webp 以及缩小图片质量</title>
       <link>https://wudanyang6.github.io/post/2023-08-13-hugo-webp/</link>
       <pubDate>Sun, 13 Aug 2023 17:18:50 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-08-13-hugo-webp/</guid>
       <description>将 layouts/_default/_markup/render-image.html 内容替换成下面的 html {{- $url := urls.Parse .Destination -}} {{- $scheme := $url.Scheme -}} {{ $img := .Page.Resources.GetMatch $url.Path }} &amp;lt;!-- 如果页面中没有找到，则去找post文件夹的资源，必须放一个 _index.md 在 post 文件夹中 --&amp;gt; {{ if not $img }} {{ with .Page.Site.GetPage &amp;#34;section&amp;#34; &amp;#34;post&amp;#34; }} {{ $resources := index (.Resources.Match $url.Path) 0 }} {{ with $resources }} {{ $img = $resources }} {{ end }} {{ end }} {{end}} {{ with $img }} {{ if eq $img.</description>
     </item>
-    
     <item>
       <title>lxde桌面很流畅</title>
       <link>https://wudanyang6.github.io/post/2023-08-09-%E5%AE%89%E8%A3%85%E4%BA%86%E4%B8%80%E4%B8%AAlxde%E6%A1%8C%E9%9D%A2/</link>
       <pubDate>Wed, 09 Aug 2023 20:39:31 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-08-09-%E5%AE%89%E8%A3%85%E4%BA%86%E4%B8%80%E4%B8%AAlxde%E6%A1%8C%E9%9D%A2/</guid>
       <description>树莓派使用 lxde 桌面是真的流畅啊，发个图片
 使用 vscode 的时候完全不卡了，泪目啊</description>
     </item>
-    
     <item>
       <title>睡个好觉</title>
       <link>https://wudanyang6.github.io/post/2023-08-09-%E7%9D%A1%E4%B8%AA%E5%A5%BD%E8%A7%89/</link>
       <pubDate>Wed, 09 Aug 2023 20:39:31 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-08-09-%E7%9D%A1%E4%B8%AA%E5%A5%BD%E8%A7%89/</guid>
       <description>怎么才能拥有一个好的睡眠呢
 从明天开始，我要开始研究起来了</description>
     </item>
-    
     <item>
       <title>凡人修仙传-星海飞驰-74</title>
       <link>https://wudanyang6.github.io/post/2023-08-06-%E5%87%A1%E4%BA%BA%E4%BF%AE%E4%BB%99%E4%BC%A0-%E6%98%9F%E6%B5%B7%E9%A3%9E%E9%A9%B0-74/</link>
       <pubDate>Sun, 06 Aug 2023 22:51:41 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-08-06-%E5%87%A1%E4%BA%BA%E4%BF%AE%E4%BB%99%E4%BC%A0-%E6%98%9F%E6%B5%B7%E9%A3%9E%E9%A9%B0-74/</guid>
       <description>念头通达了
 【凡人修仙传：第74话 星海飞驰序章2】 https://www.bilibili.com/bangumi/play/ep762896/?share_source=copy_web</description>
     </item>
-    
     <item>
       <title>《热烈》电影</title>
       <link>https://wudanyang6.github.io/post/2023-08-06-%E7%83%AD%E7%83%88/</link>
       <pubDate>Sun, 06 Aug 2023 20:39:31 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-08-06-%E7%83%AD%E7%83%88/</guid>
       <description>今天看了部电影，《热烈》
 黄渤还是这么会，让人能感受到情绪
@@ -101,24 +85,20 @@ Install: 见 github README.md Install 部分</description>
 能支撑你热烈一场的，是枯燥的练习和努力，还有天分
 其中有一个特别热爱街舞的哥们，就因为没有天分回家了</description>
     </item>
-    
     <item>
       <title>VIM作者去世了</title>
       <link>https://wudanyang6.github.io/post/2023-08-06-vim%E4%BD%9C%E8%80%85%E5%8E%BB%E4%B8%96%E4%BA%86/</link>
       <pubDate>Sun, 06 Aug 2023 13:07:36 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-08-06-vim%E4%BD%9C%E8%80%85%E5%8E%BB%E4%B8%96%E4%BA%86/</guid>
       <description>伤心，几乎每天都有在使用vim，才62岁的一个大神
 https://groups.google.com/g/vim_announce/c/tWahca9zkt4?pli=1
 https://www.v2ex.com/t/962692?p=2
 https://mp.weixin.qq.com/s/VJkakz8GoyNLefS_vl37mA</description>
     </item>
-    
     <item>
       <title>树莓派买了个新SD卡</title>
       <link>https://wudanyang6.github.io/post/2023-08-05-%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B9%B0%E4%BA%86%E4%B8%AA%E6%96%B0sd%E5%8D%A1/</link>
       <pubDate>Sat, 05 Aug 2023 16:44:22 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-08-05-%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B9%B0%E4%BA%86%E4%B8%AA%E6%96%B0sd%E5%8D%A1/</guid>
       <description>给树莓派搞了个128GB的 MicroSD 存储卡，才30块钱，到下周一晚上拿回家试试是不是能速度快一些
 速度还是挺不错的
@@ -126,12 +106,10 @@ https://mp.weixin.qq.com/s/VJkakz8GoyNLefS_vl37mA</description>
 读取速度 948MB/s
 https://item.jd.com/100035678436.html</description>
     </item>
-    
     <item>
       <title>树莓派gpu内存分配踩坑</title>
       <link>https://wudanyang6.github.io/post/2023-08-02-%E6%A0%91%E8%8E%93%E6%B4%BEgpu%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E8%B8%A9%E5%9D%91/</link>
       <pubDate>Wed, 02 Aug 2023 11:21:03 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-08-02-%E6%A0%91%E8%8E%93%E6%B4%BEgpu%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E8%B8%A9%E5%9D%91/</guid>
       <description>昨天看了个文章： 树莓派之64位系统设置GPU显存_树莓派 64位 系统显存可以设置多大_唐剑仙的博客-CSDN博客 ，文章中让把 gpu memory 设置成512M
 然后重启之后树莓派就显示：failed to allocate memory for node &#39;linux,cma&#39; 无法启动了
@@ -142,67 +120,53 @@ https://item.jd.com/100035678436.html</description>
 把 gpu_memory 改成 256 之后并没有感受到系统变得很流畅或者怎么着
 瞅一眼：</description>
     </item>
-    
     <item>
       <title>室温超导要来了吗？</title>
       <link>https://wudanyang6.github.io/post/2023-08-01-%E5%AE%A4%E6%B8%A9%E8%B6%85%E5%AF%BC%E8%A6%81%E6%9D%A5%E4%BA%86%E5%90%97/</link>
       <pubDate>Tue, 01 Aug 2023 18:23:06 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-08-01-%E5%AE%A4%E6%B8%A9%E8%B6%85%E5%AF%BC%E8%A6%81%E6%9D%A5%E4%BA%86%E5%90%97/</guid>
       <description>很激动啊，这件事情可以说是跨时代的了</description>
     </item>
-    
     <item>
       <title>docker源码分析ppt分享</title>
       <link>https://wudanyang6.github.io/post/2023-07-31-docker%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90ppt%E5%88%86%E4%BA%AB/</link>
       <pubDate>Mon, 31 Jul 2023 23:30:02 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-07-31-docker%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90ppt%E5%88%86%E4%BA%AB/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>金铲铲-裁决之力</title>
       <link>https://wudanyang6.github.io/post/2023-07-31-%E9%87%91%E9%93%B2%E9%93%B2-%E8%A3%81%E5%86%B3%E4%B9%8B%E5%8A%9B/</link>
       <pubDate>Mon, 31 Jul 2023 22:46:20 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-07-31-%E9%87%91%E9%93%B2%E9%93%B2-%E8%A3%81%E5%86%B3%E4%B9%8B%E5%8A%9B/</guid>
       <description>代表月亮消灭你</description>
     </item>
-    
     <item>
       <title>学会如何学习</title>
       <link>https://wudanyang6.github.io/post/2023-07-30-%E5%AD%A6%E4%BC%9A%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Sun, 30 Jul 2023 20:25:19 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-07-30-%E5%AD%A6%E4%BC%9A%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0/</guid>
       <description>《学会如何学习》 作者：芭芭拉·奥克利 特伦斯·谢诺夫斯基 阿利斯泰尔·麦康维尔
 专注与发散模式</description>
     </item>
-    
     <item>
       <title>金铲铲之战-绝境逆袭</title>
       <link>https://wudanyang6.github.io/post/2023-07-30-%E9%87%91%E9%93%B2%E9%93%B2%E4%B9%8B%E6%88%98-%E7%BB%9D%E5%A2%83%E9%80%86%E8%A2%AD/</link>
       <pubDate>Sun, 30 Jul 2023 17:12:46 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-07-30-%E9%87%91%E9%93%B2%E9%93%B2%E4%B9%8B%E6%88%98-%E7%BB%9D%E5%A2%83%E9%80%86%E8%A2%AD/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>操作系统OOM</title>
       <link>https://wudanyang6.github.io/post/2023-07-30-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Foom/</link>
       <pubDate>Sun, 30 Jul 2023 16:32:20 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-07-30-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Foom/</guid>
       <description>什么是OOM </description>
     </item>
-    
     <item>
       <title>数据量级较大的实时排行榜</title>
       <link>https://wudanyang6.github.io/post/2023-07-30-redis-zset-%E6%8E%92%E8%A1%8C%E6%A6%9C/</link>
       <pubDate>Sun, 30 Jul 2023 11:49:00 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-07-30-redis-zset-%E6%8E%92%E8%A1%8C%E6%A6%9C/</guid>
       <description>一、问题 数据量级上亿，如何在客户端实时显示一个天级实时排行榜？
 数据格式为：
@@ -215,30 +179,24 @@ id1 =&amp;gt; 10 id2 =&amp;gt; 9 id3 =&amp;gt; 8 id4 =&amp;gt; 7 id5 =&amp;gt; 6
 这样的优点是：
 程序逻辑简单，维护简单，只需要写两个函数，一个是修改数据的函数，一个是获取排行榜的函数 如果数据量级比较小的话，这样做是没问题的，但是如果量级上亿的话，就会出现几个缺点：</description>
     </item>
-    
     <item>
       <title>我的网易云音乐喜欢的歌手</title>
       <link>https://wudanyang6.github.io/post/2023-07-28-music-tags/</link>
       <pubDate>Fri, 28 Jul 2023 22:54:28 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-07-28-music-tags/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>犬夜叉</title>
       <link>https://wudanyang6.github.io/post/2023-07-27-%E7%8A%AC%E5%A4%9C%E5%8F%89/</link>
       <pubDate>Thu, 27 Jul 2023 09:08:27 +0000</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2023-07-27-%E7%8A%AC%E5%A4%9C%E5%8F%89/</guid>
       <description>正在追剧，《犬夜叉》</description>
     </item>
-    
     <item>
       <title>制作动态库</title>
       <link>https://wudanyang6.github.io/post/c/%E5%88%B6%E4%BD%9C%E5%8A%A8%E6%80%81%E5%BA%93/</link>
       <pubDate>Sat, 23 Apr 2022 15:35:24 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/c/%E5%88%B6%E4%BD%9C%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
       <description>1 什么是动态库 与静态库相反，动态库在链接时不会被编译进可执行文件中。
 其在执行阶段加载到内存，并且多个程序使用同一个动态库时，只需要在内存中存在一份拷贝即可。
@@ -246,12 +204,10 @@ id1 =&amp;gt; 10 id2 =&amp;gt; 9 id3 =&amp;gt; 8 id4 =&amp;gt; 7 id5 =&amp;gt; 6
 1.1 如何制作动态库 来个小函数
 int add(int a, int b) { return a + b; } # 1. 生成 .o 文件 gcc -c add.c -o add.o -fPIC # 2. 制作 .so 文件, 注意，这里 lib 前缀是必须带的 gcc -shared -o libadd.so add.o # 3. 编译成可执行程序时 指定一下要使用的 .so 文件，-l 后面是 add 代表 libadd.so 这个文件 gcc add_test.c -o add_test -l add -L ./ # 4. 将 libadd.so 放到动态库目录下 sudo cp libadd.so /usr/local/lib/ # 5.</description>
     </item>
-    
     <item>
       <title>制作静态库</title>
       <link>https://wudanyang6.github.io/post/c/%E5%88%B6%E4%BD%9C%E9%9D%99%E6%80%81%E5%BA%93/</link>
       <pubDate>Fri, 08 Apr 2022 22:53:28 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/c/%E5%88%B6%E4%BD%9C%E9%9D%99%E6%80%81%E5%BA%93/</guid>
       <description>这里所说的静态库与动态库是什么呢？
 一般来说是指可以复用的代码。之前使用 PHP 或者 Go 的时候，就没有静态库或者动态库的概念。
@@ -264,12 +220,10 @@ c 语言的静态库是什么呢？
 int add(int a, int b) { return a + b; } 执行命令
 # 先生成 .o 文件 gcc -c add.c -o add.o # 将 .o 文件打包成 .a 文件 ar rcs add.</description>
     </item>
-    
     <item>
       <title>make 基本使用</title>
       <link>https://wudanyang6.github.io/post/c/make-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Tue, 05 Apr 2022 22:09:07 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/c/make-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
       <description>什么是 make ？ 什么是 make: Introduction
 The make utility automatically determines which pieces of a large program need to be recompiled, and issues commands to recompile them. make 指令自动化地决定一个大型程序的哪部分需要重新编译，并且发出指令重新编译。
@@ -278,12 +232,10 @@ The make utility automatically determines which pieces of a large program need t
 You need a file called a makefile to tell make what to do. Most often, the makefile tells make how to compile and link a program. 需要使用 makefile 这个文件，来告诉 make 需要做什么。常见的用法是描述如何编译以及链接程序
 makefile 就是编译链接的描述文件。</description>
     </item>
-    
     <item>
       <title>关于职业生涯的思考</title>
       <link>https://wudanyang6.github.io/post/2022-04-03-%E5%85%B3%E4%BA%8E%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF%E7%9A%84%E6%80%9D%E8%80%83/</link>
       <pubDate>Sun, 03 Apr 2022 23:10:57 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/2022-04-03-%E5%85%B3%E4%BA%8E%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF%E7%9A%84%E6%80%9D%E8%80%83/</guid>
       <description>媳妇儿公司是做政府项目外包的，平时接待的大多是五十往上的老年人。
 前天媳妇儿跟我说，她接到了一个简历，简历上的人是之前的工作是个程序员，因为上个项目结束，被辞退了，最近大环境不好在家呆了很长时间没找到工作，投了他们公司。
@@ -295,12 +247,10 @@ makefile 就是编译链接的描述文件。</description>
 公司的业务更熟悉一些，毕竟是生活之本 学习 go 语言，随时做好语言的切换准备，摸透公司里面一个叫 qta 的微服务 长期来看
 把身体调养好，毕竟是革命的本钱 按时睡觉，感觉比较困难，每天回家的时间不固定 不吃辛辣、油腻的食品。这个比较好控制，辛辣基本不吃了，油腻的也刻意在控制 不喝碳酸饮料。 每周至少做一个小时的有氧运动 把学校里没学好的基础部分补足 Linux 系统编程，正在学习 Linux 网络编程 算法也需要常常练习，不能变得生疏，能锻炼自己的思维能力 学习 rust 语言，觉得 rust 语言会是以后的主要语言之一，学习过程中，确实能感觉到在使用 PHP 编程时觉得会出现坑的点（不判断返回值，返回值是 null 等等），以及多线程等方式不方便的地方，rust 都有比较好的解决方案。只不过这个语言对安全管控的很严格，越到后面学习起来越难，甚至讲到 Box 的时候，都不知道应该往里面传什么参数了，怪不得有人说，rust 最大的困难是通过编译。 </description>
     </item>
-    
     <item>
       <title>gdb 基本使用</title>
       <link>https://wudanyang6.github.io/post/c/gdb-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sun, 27 Mar 2022 22:28:47 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/c/gdb-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
       <description>1 什么是 gdb gdb 全称：&amp;quot;GNU symbolic debugger&amp;quot;
 是一个 gnu 项目孵化出来的调试工具
@@ -314,12 +264,10 @@ file：从文件导入调试信息符号表 start：从头开始并在首行进�
 gdb 【带有调试信息的可执行程序】 【列出当前执行位置后面的代码】
 (gdb) l 795	/* NGX_TIMER_INFINITE == INFTIM */ 796 797	ngx_log_debug1(NGX_LOG_DEBUG_EVENT, cycle-&amp;gt;log, 0, 798	&amp;#34;epoll timer: %M&amp;#34;, timer); 799 800	events = epoll_wait(ep, event_list, (int) nevents, timer); 801 802	err = (events == -1) ?</description>
     </item>
-    
     <item>
       <title>gcc编译的几个过程</title>
       <link>https://wudanyang6.github.io/post/c/gcc%E7%BC%96%E8%AF%91%E7%9A%84%E5%87%A0%E4%B8%AA%E8%BF%87%E7%A8%8B/</link>
       <pubDate>Sat, 26 Mar 2022 22:22:18 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/c/gcc%E7%BC%96%E8%AF%91%E7%9A%84%E5%87%A0%E4%B8%AA%E8%BF%87%E7%A8%8B/</guid>
       <description>一段普通的 c++ 代码是如何变成可执行程序的 (使用 g++ 命令编译 c++ 代码)
 using namespace std; int main() { cout &amp;lt;&amp;lt; &amp;#34;hello, world&amp;#34; &amp;lt;&amp;lt; endl; return 0; } 会经过4个步骤
@@ -330,12 +278,10 @@ using namespace std; int main() { cout &amp;lt;&amp;lt; &amp;#34;hello, world&am
 下面代码是一部分汇编语句
 ubuntu@foo:~/test$ cat test.s .arch armv8-a .file	&amp;#34;test.c&amp;#34; .text .section	.rodata .align	3 .type	_ZStL19piecewise_construct, %object .size	_ZStL19piecewise_construct, 1 _ZStL19piecewise_construct: .zero	1 .local	_ZStL8__ioinit .comm	_ZStL8__ioinit,1,8 .</description>
     </item>
-    
     <item>
       <title>vscode debug nginx 源码</title>
       <link>https://wudanyang6.github.io/post/nginx/vscode-nginx-debug/</link>
       <pubDate>Fri, 18 Mar 2022 23:32:05 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/nginx/vscode-nginx-debug/</guid>
       <description>1 通过源码安装 nginx 1.1 下载源码 git clone https://github.com/nginx/nginx 1.2 编译并安装 nginx 修改 nginx 源码中的配置文件：auto/cc/conf
 将第 12 行修改一下
@@ -351,22 +297,18 @@ Welcome to nginx!
 2 配置 vscode 2.1 打开项目 使用 vscode 打开下载下来的源码文件夹
 2.2 安装调试插件 名称: CodeLLDB ID: vadimcn.vscode-lldb 说明: A native debugger powered by LLDB.</description>
     </item>
-    
     <item>
       <title>rust 教程推荐</title>
       <link>https://wudanyang6.github.io/post/rust/rust-%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</link>
       <pubDate>Tue, 15 Mar 2022 19:26:50 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/rust/rust-%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</guid>
       <description>b 站 up 主，软件工艺师 杨旭
 全篇基本没废话，干货一路通到底</description>
     </item>
-    
     <item>
       <title>原神挺好玩</title>
       <link>https://wudanyang6.github.io/post/games/%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/</link>
       <pubDate>Tue, 15 Mar 2022 08:51:18 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/games/%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/</guid>
       <description>最近游戏一直在玩原神，一个开放的大世界。主线剧情刚刚做完，确实是我想象中的角色扮演（RPG）游戏。
 记得高中在塞班手机上玩的一款RPG游戏，一个周末都在刷怪。后来重新练了个号，结果跟大师傅打架的时候，他的70级宠物不知道为什么变成我的了。我就带着一个70级将近满级的宠物一路过关斩将玩通关了。
@@ -379,24 +321,20 @@ Welcome to nginx!
 最后一点，原神不花钱氪金也可以玩的很舒服，每天做做每日任务，开开宝箱，欣赏欣赏美景，然后读一读角色的背景故事。
 对了，游戏社区里的前辈忠告，当深渊不存在，能打到哪里就打到哪里。</description>
     </item>
-    
     <item>
       <title>软件选择</title>
       <link>https://wudanyang6.github.io/post/others/software-choose/</link>
       <pubDate>Sun, 13 Mar 2022 21:43:43 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/others/software-choose/</guid>
       <description>最近看到很多计算机企业在制裁俄罗斯，制裁手段包括软件禁止俄罗斯使用，云服务停止等等。
 网络上确实也充斥着很多公众号的推文，说俄罗斯的现在很可能就是以后的中国。不过这个以后正在到来，而且也发生了，Figma 禁止大疆使用服务。
 未雨绸缪，回想一下自己常用的一些软件，以及替代方案。
 phpstorm 本地软件 即使不更新也可以继续使用旧版本，但是不能保证后续不会被远程限制使用 obsidian 本地软件 软件是个本地软件，开发者看着也是中国人，如果被封，还能继续使用现有版本 苹果系统 如果真有一天苹果系统被停止服务，我们应该也可以继续使用现有版本，只不过不能使用 icloud。是在不行就迁移到深度系统 替代品：深度操作系统 icloud 替代品：坚果云，应该是我知道的国内唯一比较好用的替代方案了 chrome firefox 360 浏览器等一系列国产套壳浏览器 iTerm 系统默认终端也能用，只不过没有这个这么方便 最担心的还是苹果电脑和系统，万一哪天漂亮国发疯，全封了，那就是不死不休了。</description>
     </item>
-    
     <item>
       <title>hugo 实现写完一键发布</title>
       <link>https://wudanyang6.github.io/post/hugo-%E4%B8%80%E9%94%AE%E5%8F%91%E5%B8%83/</link>
       <pubDate>Sat, 12 Mar 2022 23:17:55 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/hugo-%E4%B8%80%E9%94%AE%E5%8F%91%E5%B8%83/</guid>
       <description>使用 Hugo 创建站点 首先打开 Hugo 官网 Quick start
 hugo 的安装就不说了，如果这一步觉得很困难，就可以放弃了。
@@ -411,21 +349,17 @@ hugo 的安装就不说了，如果这一步觉得很困难，就可以放弃了
 网站仓库打开 Settings 选择 Pages 选项，选择数据源分支
 示例 如下图所示，我这里分支设置成了 gh-pages 分支的根目录，并且使用了一个自定义域名，而且开启了强制 https 访问。自定义域名和 https 第一次使用完全可以不理会，咱们接着往下看。</description>
     </item>
-    
     <item>
       <title>多进程的rust</title>
       <link>https://wudanyang6.github.io/post/rust/%E5%A4%9A%E8%BF%9B%E7%A8%8B%E7%9A%84rust/</link>
       <pubDate>Sat, 12 Mar 2022 23:17:55 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/rust/%E5%A4%9A%E8%BF%9B%E7%A8%8B%E7%9A%84rust/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>树莓派 ubuntu 配置网络</title>
       <link>https://wudanyang6.github.io/post/raspberry/ubuntu-network/</link>
       <pubDate>Wed, 28 Apr 2021 10:18:04 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/raspberry/ubuntu-network/</guid>
       <description>树莓派 ubuntu 配置网络 树莓派现在可以安装很多操作系统，其中 ubuntu 也提供了树莓派版本，因为对 ubuntu 更加熟悉，所以就往 SD 卡中烧录了 ubuntu 的 20.04 lts 64位 版本。这里有可供选择的操作系统。
 简单提一嘴烧录操作系统到 SD 卡上面的方法，树莓派提供了一个傻瓜式的软件给大家使用，直接打开之后选择系统，就可以烧录了，烧录过程大概会有几分钟。
@@ -436,12 +370,10 @@ hugo 的安装就不说了，如果这一步觉得很困难，就可以放弃了
 wifis: wlan0: dhcp4: true optional: true access-points: &amp;lt;wifi network name&amp;gt;: password: &amp;#34;&amp;lt;wifi password&amp;gt;&amp;#34; 如果是企业网络：
 wifis: wlan0: dhcp4: true optional: true access-points: &amp;lt;wifi network name&amp;gt;: auth: key-management: eap method: peap identity: &amp;#34;wudanyang&amp;#34; password: &amp;#34;&amp;#34; 配置文件的格式</description>
     </item>
-    
     <item>
       <title>如何调试nginx的rewrite规则?</title>
       <link>https://wudanyang6.github.io/post/nginx/how-debug-nginx-rewrite/</link>
       <pubDate>Fri, 23 Apr 2021 14:58:47 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/nginx/how-debug-nginx-rewrite/</guid>
       <description>如何调试nginx的rewrite规则？ 设置 rewrite_log on;
 并且将error_log 的报错等级改成 notice;
@@ -450,12 +382,10 @@ Syntax:	rewrite_log on | off; Default:	rewrite_log off; Context:	http, server, l
 示例 url： /q?someparams
 2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;#34;^/+m/question(.*)?qid=\d+(.*)?$&amp;#34; does not match ... ... 中间省略一些日志 2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;#34;^/+question/(\w+.</description>
     </item>
-    
     <item>
       <title>Nginx Master 进程主流程</title>
       <link>https://wudanyang6.github.io/post/nginx/nginx-master/</link>
       <pubDate>Tue, 13 Apr 2021 21:07:19 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/nginx/nginx-master/</guid>
       <description>nginx master 进程主流程 之前有说到 nginx 进程模型-整体架构，下面来看一下 nginx master 进程的主要工作
 nginx 的入口 main 函数在 nginx.c 文件中
@@ -465,12 +395,10 @@ int ngx_cdecl main(int argc, char *const *argv) 在这个函数中，master 做�
 //... if (ngx_process == NGX_PROCESS_SINGLE) { ngx_single_process_cycle(cycle); } else { ngx_master_process_cycle(cycle); } //... 因为我们主要看 master-worker 这种进程模型，所以进入 ngx_master_process_cycle
 设置信号屏蔽字，防止创建子进程过程中被信号中断 // 先清空信号集 sigemptyset(&amp;amp;set); sigaddset(&amp;amp;set, SIGCHLD); sigaddset(&amp;amp;set, SIGALRM); sigaddset(&amp;amp;set, SIGIO); sigaddset(&amp;amp;set, SIGINT); sigaddset(&amp;amp;set, ngx_signal_value(NGX_RECONFIGURE_SIGNAL)); sigaddset(&amp;amp;set, ngx_signal_value(NGX_REOPEN_SIGNAL)); sigaddset(&amp;amp;set, ngx_signal_value(NGX_NOACCEPT_SIGNAL)); sigaddset(&amp;amp;set, ngx_signal_value(NGX_TERMINATE_SIGNAL)); sigaddset(&amp;amp;set, ngx_signal_value(NGX_SHUTDOWN_SIGNAL)); sigaddset(&amp;amp;set, ngx_signal_value(NGX_CHANGEBIN_SIGNAL)); // 设置信号屏蔽字，将 set 中的信号设置为阻塞状态，防止创建worker 的过程中，被进来的信号打断 if (sigprocmask(SIG_BLOCK, &amp;amp;set, NULL) == -1) { ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, ngx_errno, &amp;#34;sigprocmask() failed&amp;#34;); } // 将 set 清空 sigemptyset(&amp;amp;set); 设置信号屏蔽字，防止在创建子进程的过程中被信号处理程序中断</description>
     </item>
-    
     <item>
       <title>文件描述符</title>
       <link>https://wudanyang6.github.io/post/os/fd/</link>
       <pubDate>Tue, 13 Apr 2021 11:25:18 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/os/fd/</guid>
       <description>什么是文件描述符 对于内核而言，所有打开的文件都通过 文件描述符（file descriptor）引用。通常也写作 fd。
 文件描述符是一个非负整数。
@@ -482,46 +410,37 @@ int ngx_cdecl main(int argc, char *const *argv) 在这个函数中，master 做�
 使用 man 2 open 查看系统 man 手册
 NAME open, openat -- open or create a file for reading or writing SYNOPSIS #include &amp;lt;fcntl.h&amp;gt; int open(const char *path, int oflag, ...); int openat(int fd, const char *path, int oflag, ...); DESCRIPTION The file name specified by path is opened for reading and/or writing, as specified by the argument oflag; the file descriptor is returned to the calling process.</description>
     </item>
-    
     <item>
       <title>如何追查线上问题</title>
       <link>https://wudanyang6.github.io/post/exp/locate-online-error/</link>
       <pubDate>Mon, 12 Apr 2021 12:26:32 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/exp/locate-online-error/</guid>
       <description>原则 止损优先 不能先追查问题根源， 首先应该止损，不让问题进一步扩大，代码回滚、服务降级等都可以起到止损的效果。 对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 配置开关 控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快很多。
 及时通告 在问题发生之后，要及时对处理问题的过程进行通告。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。
 追查问题的方法 逻辑方法: 先收集现象：业务报错、线上报错日志等 对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。 针对现象假设原因： 常见问题依据追查手册 其他问题保持思路开放，大胆假设 是否有损的判断： 根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 止损优先 质疑所有数据： 各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证 知识准备 对线上各种日志的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等 对线上的各种配置更要做到心中有数 对细节的追查，每次都更细一些，这样才能获得更多的信息 计算机基本功，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查 总结经验 成熟的方法落地成工具 对问题的追查形成文档 问题解决之后 如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。 那么，我们可以通过思考以下几点来提升自己
 线上是否恢复了正常？（基本） 问题的原因是什么？（形成记录） 通过什么手段恢复的？（解决方案） 怎么可以避免下次再次出现问题？（防患未然） 除了此次出现的问题，会不会有其他的问题出现（举一反三） 出现此类问题是否是架构问题造成的？（根本原因） </description>
     </item>
-    
     <item>
       <title>Nginx 进程模型-整体架构</title>
       <link>https://wudanyang6.github.io/post/nginx/nginx-process/</link>
       <pubDate>Sat, 10 Apr 2021 14:26:32 +0800</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/nginx/nginx-process/</guid>
       <description> 从网上找了一个非常好的图片，从图中可以看到很多东西
 Nginx 会生成多个进程 worker 使用了io 多路复用的事件驱动框架 worker 内部有很多模块 worker 处理磁盘I/O 时，使用了标准I/O ，sendfile ，AIO ，mmap 等I/O 技术 Cache loader 和Cache manager 操作 proxy cache 后端支持多种基于tcp 的网络协议 </description>
     </item>
-    
     <item>
       <title>Hello World</title>
       <link>https://wudanyang6.github.io/post/hello-world/</link>
       <pubDate>Fri, 09 Apr 2021 09:08:27 +0000</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/hello-world/</guid>
       <description>歇一歇脚</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://wudanyang6.github.io/post/articles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://wudanyang6.github.io/post/articles/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
