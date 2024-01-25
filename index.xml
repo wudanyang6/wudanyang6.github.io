@@ -6,7 +6,7 @@
     <description>Recent content on 少侠的站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 10 Jan 2024 11:52:07 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jan 2024 23:51:21 +0800</lastBuildDate>
     <atom:link href="https://wudanyang6.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我喜欢的歌</title>
@@ -21,6 +21,16 @@
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       <guid>https://wudanyang6.github.io/about/</guid>
       <description>千里之行，始于足下</description>
+    </item>
+    <item>
+      <title>obsidian-things3-today插件</title>
+      <link>https://wudanyang6.github.io/post/2024-01-25-things3-today-obsidian-plugin/</link>
+      <pubDate>Thu, 25 Jan 2024 23:51:21 +0800</pubDate>
+      <guid>https://wudanyang6.github.io/post/2024-01-25-things3-today-obsidian-plugin/</guid>
+      <description>把之前的插件重新搞了搞，把乱七八糟的东西去掉了，然后提交了obsidian插件库
+正在等着被review： https://github.com/obsidianmd/obsidian-releases/pull/2997
+新录了一个gif：
+图中可以看到和things3的Today列表联动还算是顺畅</description>
     </item>
     <item>
       <title>分享一个力扣刷题插件</title>
