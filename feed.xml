@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://wudanyang6.github.io/dy_turbo/">
+    <title>dy turbo</title>
+    <link href="https://wudanyang6.github.io/dy_turbo//feed.xml" rel="self" >
+    <link href="https://wudanyang6.github.io/dy_turbo/" >
+    <updated>2024-01-28T17:29:13Z</updated>
+    <id>https://wudanyang6.github.io/dy_turbo/</id>
+        <entry>
+            <title>
+                My Garden
+                
+            </title>
+            <updated>2024-01-28T15:34:26.544Z</updated>
+            <id>https://wudanyang6.github.io/dy_turbo//</id>
+            <content type="html">
+                &lt;h1 id=&quot;my-garden&quot; tabindex=&quot;-1&quot;&gt;My Garden&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;../100 Programmer/c/nginx/epoll的边缘触发和水平触发&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io/dy_turbo//" >
+        </entry>
+        <entry>
+            <title>
+                如何查看 nginx 的rewrite记录
+                
+            </title>
+            <updated>2024-01-28T15:38:01.001Z</updated>
+            <id>https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/</id>
+            <content type="html">
+                &lt;h1 id=&quot;nginx-rewrite&quot; tabindex=&quot;-1&quot;&gt;如何调试nginx的rewrite规则？&lt;/h1&gt;
+&lt;p&gt;设置 &lt;code&gt;rewrite_log on;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;并且将&lt;code&gt;error_log&lt;/code&gt; 的报错等级改成 &lt;code&gt;notice&lt;/code&gt;;&lt;/p&gt;
+&lt;p&gt;官网对 &lt;code&gt;rewrite_log&lt;/code&gt; 的解释：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-plain&quot;&gt;Syntax:	rewrite_log on | off;
+Default:	
+rewrite_log off;
+Context:	http, server, location, if
+Enables or disables logging of ngx_http_rewrite_module module directives processing results into the error_log at the notice level.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以看到，这个指令只能在 &lt;code&gt;http&lt;/code&gt; &lt;code&gt;server&lt;/code&gt; &lt;code&gt;location&lt;/code&gt; &lt;code&gt;if&lt;/code&gt; 配置指令中使用，日志等级是 &lt;code&gt;notice&lt;/code&gt; 写入到 &lt;code&gt;error_log&lt;/code&gt; 配置的文件中。&lt;/p&gt;
+&lt;h1 id=&quot;示例&quot; tabindex=&quot;-1&quot;&gt;示例&lt;/h1&gt;
+&lt;p&gt;url： &lt;code&gt;/q?someparams&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;quot;^/+m/question(.*)?qid=&#92;d+(.*)?$&amp;quot; does not match ...
+... 中间省略一些日志
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;quot;^/+question/(&#92;w+.*?)$&amp;quot; does not match ...
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;quot;^/+q&#92;?(.*)?tn=nsatom_qb_main(.*)?$&amp;quot; matches ...
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;quot;^/+q&amp;quot; matches ...
+2021/04/22 18:21:28 [notice] 18131#0: *102982 rewritten data: &amp;quot;/q/q/q/q/q&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;从上面的日志中可以看出，当触发了重写规则时，会有关键字 &lt;code&gt;matches&lt;/code&gt; 否则会有 &lt;code&gt;does not match&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;最终重写完成之后，访问的地址会有标记：&lt;code&gt;rewritten data&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这里就是 &lt;code&gt;/q/q/q/q/q&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://serverfault.com/questions/333048/best-way-to-debug-nginx-rewrite-rules-in-config-file&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;best way to debug nginx rewrite rules in config file?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://nginx.org/en/docs/http/ngx_http_rewrite_module.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx官方文档：Module ngx_http_rewrite_module&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/" >
+        </entry>
+        <entry>
+            <title>
+                vscode 调试nginx代码
+                
+            </title>
+            <updated>2024-01-28T15:57:19.418Z</updated>
+            <id>https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/vscode 调试nginx代码/</id>
+            <content type="html">
+                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h1&gt;
+&lt;h2 id=&quot;auto-cc-conf&quot; tabindex=&quot;-1&quot;&gt;修改 auto/cc/conf&lt;/h2&gt;
+&lt;p&gt;ngx_compile_opt 中添加 -g&lt;br /&gt;
+修改后如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;ngx_compile_opt=&amp;quot;-c -g&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/#gcc-g&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#gcc&quot;&gt;#gcc&lt;/a&gt; -g 的作用&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;and-amp-and-amp&quot; tabindex=&quot;-1&quot;&gt;编译 &amp;amp; 安装 &amp;amp; 运行&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;# prefix 是想要安装到的目录
+auto/configure --prefix=/home/ubuntu/mydisk/var/nginx-debug-1
+
+# 编译安装
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;修改配置&quot; tabindex=&quot;-1&quot;&gt;修改配置&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;vim /home/ubuntu/mydisk/var/nginx-debug-1/conf/nginx.conf&lt;/code&gt;&lt;br /&gt;
+将监听端口号改成 &lt;code&gt;8080&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;worker_processes&lt;/code&gt; 改成 1 (方便调试)&lt;/p&gt;
+&lt;h3 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;启动 nginx&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;nginx 的进程：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;ps aux | grep nginx
+ubuntu     17093  0.0  0.0   4184   372 ?        Ss   Mar30   0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
+ubuntu     17094  0.0  0.0   4620  2316 ?        S    Mar30   0:00 nginx: worker process
+ubuntu     46072  0.0  0.0   7692   648 pts/0    S+   11:21   0:00 grep --color=auto nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;vscode&quot; tabindex=&quot;-1&quot;&gt;配置 vscode 调试&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    &amp;quot;version&amp;quot;: &amp;quot;0.2.0&amp;quot;,
+    &amp;quot;configurations&amp;quot;: [
+        {
+            &amp;quot;name&amp;quot;: &amp;quot;debug master&amp;quot;,
+            &amp;quot;type&amp;quot;: &amp;quot;cppdbg&amp;quot;,
+            &amp;quot;request&amp;quot;: &amp;quot;launch&amp;quot;,
+            &amp;quot;program&amp;quot;: &amp;quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&amp;quot;,
+            &amp;quot;args&amp;quot;: [],
+            &amp;quot;stopAtEntry&amp;quot;: true,
+            &amp;quot;cwd&amp;quot;: &amp;quot;${workspaceFolder}&amp;quot;,
+            &amp;quot;environment&amp;quot;: [],
+            &amp;quot;externalConsole&amp;quot;: false,
+            &amp;quot;MIMode&amp;quot;: &amp;quot;gdb&amp;quot;,
+            &amp;quot;setupCommands&amp;quot;: [
+                {
+                    &amp;quot;description&amp;quot;: &amp;quot;为 gdb 启用整齐打印&amp;quot;,
+                    &amp;quot;text&amp;quot;: &amp;quot;-enable-pretty-printing&amp;quot;,
+                    &amp;quot;ignoreFailures&amp;quot;: true
+                }
+            ]
+        },
+        {
+            &amp;quot;name&amp;quot;: &amp;quot;debug worker&amp;quot;,
+            &amp;quot;type&amp;quot;: &amp;quot;cppdbg&amp;quot;,
+            &amp;quot;request&amp;quot;: &amp;quot;attach&amp;quot;,
+            &amp;quot;program&amp;quot;: &amp;quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&amp;quot;,
+            &amp;quot;processId&amp;quot;: 17094,
+            &amp;quot;MIMode&amp;quot;: &amp;quot;gdb&amp;quot;,
+            &amp;quot;setupCommands&amp;quot;: [
+                {
+                    &amp;quot;description&amp;quot;: &amp;quot;为 gdb 启用整齐打印&amp;quot;,
+                    &amp;quot;text&amp;quot;: &amp;quot;-enable-pretty-printing&amp;quot;,
+                    &amp;quot;ignoreFailures&amp;quot;: true
+                }
+            ]
+        }
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在 worker 上调试需要改成 attach 的形式，并且使用了一次 attach 之后，就不能使用 strace -p 17094 查看系统调用了&lt;/p&gt;
+&lt;p&gt;然后就可以打断点，进行单步调试了&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/51b726b56e2f&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Mac上用Visual Studio Code调试Nginx&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;gcc-g&quot; tabindex=&quot;-1&quot;&gt;gcc -g 的作用&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.runoob.com/w3cnote/gcc-parameter-detail.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GCC 参数详解-runoob&lt;/a&gt;&lt;br /&gt;
+在编译的时候会产生调试信息&lt;/p&gt;
+&lt;h2 id=&quot;kernel-yama-ptrace-scope&quot; tabindex=&quot;-1&quot;&gt;kernel.yama.ptrace_scope&lt;/h2&gt;
+&lt;p&gt;sysctl -a 查看内核参数&lt;br /&gt;
+kernel.yama.ptrace_scope&lt;br /&gt;
+&lt;a href=&quot;https://www.kernel.org/doc/Documentation/security/Yama.txt&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.kernel.org/doc/Documentation/security/Yama.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;sudo vim /etc/sysctl.d/10-ptrace.conf&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/yihuajack/article/details/107151801&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;VSCode调试出现无法打开glibc库的“raise.c“或“abort.c“等文件的错误&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;sudo-strace&quot; tabindex=&quot;-1&quot;&gt;sudo strace 报 操作不被允许&lt;/h2&gt;
+&lt;p&gt;sudo strace -p 17094&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;strace: Could not attach to process. If your uid matches the uid of the target process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try again as the root user. For more details, see /etc/sysctl.d/10-ptrace.conf: Operation not permitted
+strace: attach: ptrace(PTRACE_SEIZE, 17094): Operation not permitted
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/19215177/how-to-solve-ptrace-operation-not-permitted-when-trying-to-attach-gdb-to-a-pro&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://stackoverflow.com/questions/19215177/how-to-solve-ptrace-operation-not-permitted-when-trying-to-attach-gdb-to-a-pro&lt;/a&gt;&lt;br /&gt;
+Maybe someone has attached this process with gdb.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ps -ef | grep gdb&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;can&#39;t gdb attach the same process twice.&lt;/strong&gt;&lt;br /&gt;
+将 vscode 中的 调试关掉，就可以使用 strace 了&lt;br /&gt;
+如下图，可以看到，子进程停在了 epoll_pwait 系统调用上了&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020210330203413.png&quot; alt=&quot;attachs/Pasted image 20210330203413.png&quot; /&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/vscode 调试nginx代码/" >
+        </entry>
+        <entry>
+            <title>
+                nginx 进程模型-整体架构
+                
+            </title>
+            <updated>2024-01-28T15:39:05.920Z</updated>
+            <id>https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/nginx 进程模型-整体架构/</id>
+            <content type="html">
+                &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型-整体架构&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://img2022.cnblogs.com/blog/713751/202211/713751-20221106220927618-2090658482.png&quot; alt=&quot;进程模型图示&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;从网上找了一个非常好的图片，从图中可以看到很多东西&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Nginx&lt;/code&gt; 会生成多个进程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 使用了 &lt;code&gt;io&lt;/code&gt; 多路复用的事件驱动框架&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 内部有很多模块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 处理磁盘 &lt;code&gt;I/O&lt;/code&gt; 时，使用了标准 &lt;code&gt;I/O&lt;/code&gt; ， &lt;code&gt;sendfile&lt;/code&gt; ， &lt;code&gt;AIO&lt;/code&gt; ，&lt;code&gt;mmap&lt;/code&gt; 等 &lt;code&gt;I/O&lt;/code&gt; 技术&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Cache loader&lt;/code&gt; 和 &lt;code&gt;Cache manager&lt;/code&gt; 操作 proxy cache&lt;/li&gt;
+&lt;li&gt;后端支持多种基于 &lt;code&gt;tcp&lt;/code&gt; 的网络协议&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/nginx 进程模型-整体架构/" >
+        </entry>
+        <entry>
+            <title>
+                epoll的边缘触发和水平触发
+                
+            </title>
+            <updated>2024-01-28T15:33:36.314Z</updated>
+            <id>https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/epoll的边缘触发和水平触发/</id>
+            <content type="html">
+                &lt;h1 id=&quot;epoll&quot; tabindex=&quot;-1&quot;&gt;epoll的边缘触发和水平触发&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;epoll&lt;/code&gt; 是 Linux 下用于处理大量文件描述符的高效 I/O 多路复用机制。在 &lt;code&gt;epoll&lt;/code&gt; 中，有两种触发模式：水平触发（Level-Triggered，简称 LT）和边缘触发（Edge-Triggered，简称 ET）。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;水平触发（LT，Level-Triggered）&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;当文件描述符就绪时，&lt;code&gt;epoll_wait&lt;/code&gt; 将立即返回。&lt;/li&gt;
+&lt;li&gt;如果文件描述符的状态发生变化，&lt;code&gt;epoll_wait&lt;/code&gt; 会再次通知应用程序。&lt;/li&gt;
+&lt;li&gt;这种模式下，如果文件描述符有数据可读或可写，&lt;code&gt;epoll_wait&lt;/code&gt; 将不停地返回通知，直到应用程序处理完数据或者阻塞。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;边缘触发（ET，Edge-Triggered）&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;当文件描述符就绪时，&lt;code&gt;epoll_wait&lt;/code&gt; 只会通知一次，直到应用程序处理完数据并清空了文件描述符的缓冲区。&lt;/li&gt;
+&lt;li&gt;如果文件描述符的状态没有变化，&lt;code&gt;epoll_wait&lt;/code&gt; 不会重复通知应用程序。&lt;/li&gt;
+&lt;li&gt;这种模式下，应用程序需要注意，在一个事件通知之后，要一直读或写，直到发生 &lt;code&gt;EAGAIN&lt;/code&gt; 或 &lt;code&gt;EWOULDBLOCK&lt;/code&gt; 错误。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;为什么epoll这里要叫做边缘触发和水平触发呢？&lt;/p&gt;
+&lt;p&gt;这源于通信数字信号处理领域的术语，边缘和水平通常用于描述信号的特性&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;边缘触发（Edge-Triggered）&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;边缘&amp;quot; 指的是信号的变化边缘，即信号从一个状态变为另一个状态的瞬间。&lt;/li&gt;
+&lt;li&gt;在数字信号处理中，边缘通常用来表示信号的上升沿或下降沿，即信号从低电平到高电平或从高电平到低电平的瞬间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;水平触发（Level-Triggered）&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;水平&amp;quot; 指的是信号的水平状态，即信号所处的电平状态。&lt;/li&gt;
+&lt;li&gt;在数字信号处理中，水平触发通常用来描述信号保持在某个电平的状态，而不关心信号的变化瞬间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/92310.png&quot; alt=&quot;92310.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://electronics.stackexchange.com/a/21891&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://electronics.stackexchange.com/a/21891&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/epoll的边缘触发和水平触发/" >
+        </entry>
+</feed>
