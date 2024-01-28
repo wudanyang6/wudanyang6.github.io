@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://wudanyang6.github.io/dy_turbo/">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://wudanyang6.github.io/">
     <title>dy turbo</title>
-    <link href="https://wudanyang6.github.io/dy_turbo//feed.xml" rel="self" >
-    <link href="https://wudanyang6.github.io/dy_turbo/" >
-    <updated>2024-01-28T17:29:13Z</updated>
-    <id>https://wudanyang6.github.io/dy_turbo/</id>
+    <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
+    <link href="https://wudanyang6.github.io/" >
+    <updated>2024-01-28T17:30:19Z</updated>
+    <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
                 My Garden
                 
             </title>
             <updated>2024-01-28T15:34:26.544Z</updated>
-            <id>https://wudanyang6.github.io/dy_turbo//</id>
+            <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;my-garden&quot; tabindex=&quot;-1&quot;&gt;My Garden&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;../100 Programmer/c/nginx/epoll的边缘触发和水平触发&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io/dy_turbo//" >
+            <link href="https://wudanyang6.github.io//" >
         </entry>
         <entry>
             <title>
@@ -26,7 +26,7 @@
                 
             </title>
             <updated>2024-01-28T15:38:01.001Z</updated>
-            <id>https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/</id>
+            <id>https://wudanyang6.github.io//100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx-rewrite&quot; tabindex=&quot;-1&quot;&gt;如何调试nginx的rewrite规则？&lt;/h1&gt;
 &lt;p&gt;设置 &lt;code&gt;rewrite_log on;&lt;/code&gt;&lt;/p&gt;
@@ -56,7 +56,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
 &lt;p&gt;&lt;a href=&quot;https://nginx.org/en/docs/http/ngx_http_rewrite_module.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx官方文档：Module ngx_http_rewrite_module&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/" >
+            <link href="https://wudanyang6.github.io//100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/" >
         </entry>
         <entry>
             <title>
@@ -64,7 +64,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 
             </title>
             <updated>2024-01-28T15:57:19.418Z</updated>
-            <id>https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/vscode 调试nginx代码/</id>
+            <id>https://wudanyang6.github.io//100 Programmer/c/nginx/vscode 调试nginx代码/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h1&gt;
@@ -167,7 +167,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020210330203413.png&quot; alt=&quot;attachs/Pasted image 20210330203413.png&quot; /&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/vscode 调试nginx代码/" >
+            <link href="https://wudanyang6.github.io//100 Programmer/c/nginx/vscode 调试nginx代码/" >
         </entry>
         <entry>
             <title>
@@ -175,7 +175,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 
             </title>
             <updated>2024-01-28T15:39:05.920Z</updated>
-            <id>https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/nginx 进程模型-整体架构/</id>
+            <id>https://wudanyang6.github.io//100 Programmer/c/nginx/nginx 进程模型-整体架构/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型-整体架构&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;https://img2022.cnblogs.com/blog/713751/202211/713751-20221106220927618-2090658482.png&quot; alt=&quot;进程模型图示&quot; /&gt;&lt;/p&gt;
@@ -190,7 +190,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
 &lt;/ol&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/nginx 进程模型-整体架构/" >
+            <link href="https://wudanyang6.github.io//100 Programmer/c/nginx/nginx 进程模型-整体架构/" >
         </entry>
         <entry>
             <title>
@@ -198,7 +198,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 
             </title>
             <updated>2024-01-28T15:33:36.314Z</updated>
-            <id>https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/epoll的边缘触发和水平触发/</id>
+            <id>https://wudanyang6.github.io//100 Programmer/c/nginx/epoll的边缘触发和水平触发/</id>
             <content type="html">
                 &lt;h1 id=&quot;epoll&quot; tabindex=&quot;-1&quot;&gt;epoll的边缘触发和水平触发&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;epoll&lt;/code&gt; 是 Linux 下用于处理大量文件描述符的高效 I/O 多路复用机制。在 &lt;code&gt;epoll&lt;/code&gt; 中，有两种触发模式：水平触发（Level-Triggered，简称 LT）和边缘触发（Edge-Triggered，简称 ET）。&lt;/p&gt;
@@ -239,6 +239,6 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://electronics.stackexchange.com/a/21891&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://electronics.stackexchange.com/a/21891&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io/dy_turbo//100 Programmer/c/nginx/epoll的边缘触发和水平触发/" >
+            <link href="https://wudanyang6.github.io//100 Programmer/c/nginx/epoll的边缘触发和水平触发/" >
         </entry>
 </feed>
