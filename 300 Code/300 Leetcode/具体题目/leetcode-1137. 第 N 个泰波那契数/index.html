@@ -645,7 +645,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T15:22:02.192Z';
+        const searchIndexDate = '2024-01-29T15:23:05.678Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -657,9 +657,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T15:22:02.192Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T15:23:05.678Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T15:22:02.192Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T15:23:05.678Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -897,15 +897,20 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #leetcode
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-29T23:18:56.408+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-29T23:22:37.082+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <p><a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></p>
-<h1 id="题目" tabindex="-1">题目</h1>
+      <h1 id="题目" tabindex="-1">题目</h1>
 <p><a href="https://leetcode-cn.com/problems/n-th-tribonacci-number/" target="_blank" class="external-link">1137. 第 N 个泰波那契数</a><br>
 这个跟斐波那契好像是一样的，一模一样</p>
 <h1 id="解法" tabindex="-1">解法</h1>

@@ -3,7 +3,7 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-29T15:22:02Z</updated>
+    <updated>2024-01-29T15:23:05Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -257,11 +257,10 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 leetcode-1137. 第 N 个泰波那契数
                 
             </title>
-            <updated>2024-01-29T15:18:56.408Z</updated>
+            <updated>2024-01-29T15:22:37.082Z</updated>
             <id>https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-1137. 第 N 个泰波那契数/</id>
             <content type="html">
-                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;题目&quot; tabindex=&quot;-1&quot;&gt;题目&lt;/h1&gt;
+                &lt;h1 id=&quot;题目&quot; tabindex=&quot;-1&quot;&gt;题目&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/n-th-tribonacci-number/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;1137. 第 N 个泰波那契数&lt;/a&gt;&lt;br /&gt;
 这个跟斐波那契好像是一样的，一模一样&lt;/p&gt;
 &lt;h1 id=&quot;解法&quot; tabindex=&quot;-1&quot;&gt;解法&lt;/h1&gt;
