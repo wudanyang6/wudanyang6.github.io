@@ -446,7 +446,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T05:38:12.188Z';
+        const searchIndexDate = '2024-01-29T06:28:09.766Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -458,9 +458,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T05:38:12.188Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T06:28:09.766Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T05:38:12.188Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T06:28:09.766Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -720,6 +720,11 @@
 </tr>
 </thead>
 <tbody class="table-view-tbody">
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">obsidian-things3-today插件</a></td>
+<td>2024-01-29星期1 14:23</td>
+<td>2024-01-29星期1 14:27</td>
+</tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a></td>
 <td>2024-01-28星期7 22:53</td>
