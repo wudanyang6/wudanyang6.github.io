@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>文件描述符</title>
+    <title>GTD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
@@ -405,7 +405,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/GTD/">GTD </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/GTD/">GTD </a>
                 </div>
             
         </div>
@@ -487,7 +487,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/output/文件描述符/">文件描述符 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/output/文件描述符/">文件描述符 </a>
                 </div>
             
         </div>
@@ -927,80 +927,26 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #文件
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #OS
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #linux
-                  </a>
-                
-              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-29T14:34:40.990+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-29T23:36:38.651+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="什么是文件描述符" tabindex="-1">什么是文件描述符</h1>
-<p>对于内核而言，所有打开的文件都通过<code>文件描述符（file descriptor）</code>引用。通常也写作 <code>fd</code>。</p>
-<p><code>文件描述符</code>是一个非负整数。</p>
-<p>当打开一个现有文件或者创建一个新文件时，内核向进程返回一个<code>文件描述符</code>。</p>
-<p><code>文件描述符</code>是跟<code>进程</code>相关联的。</p>
-<p>按照惯例，<code>UNIX</code> 系统将 <code>fd 0</code> 对应进程的标准输入， <code>fd 1</code> 对应进程的标准输出， <code>fd 2</code> 对应进程的标准错误。</p>
-<h1 id="系统调用中的文件描述符" tabindex="-1">系统调用中的文件描述符</h1>
-<p><code>UNIX</code> 系统中，一切皆文件，所以一切资源都可以使用文件描述符进程引用。</p>
-<p>以 <code>open</code> 系统调用为例</p>
-<p>使用 <code>man 2 open</code> 查看系统 <code>man</code> 手册</p>
-<pre><code class="language-man">NAME
-     open, openat -- open or create a file for reading or writing
-
-SYNOPSIS
-     <a class="tag" onclick="toggleTagSearch(this)" data-content="#include">#include</a> &lt;fcntl.h&gt;
-
-     int
-     open(const char *path, int oflag, ...);
-
-     int
-     openat(int fd, const char *path, int oflag, ...);
-
-DESCRIPTION
-     The file name specified by path is opened for reading and/or writing,
-     as specified by the argument oflag; the file descriptor is returned to
-     the calling process.
-</code></pre>
-<p>在简介中有一段话：<code>the file descriptor is returned to the calling process.</code></p>
-<p>使用 <code>c</code> 语言打开一个 文件</p>
-<pre><code class="language-c"><a class="tag" onclick="toggleTagSearch(this)" data-content="#include">#include</a> &lt;stdio.h&gt;
-<a class="tag" onclick="toggleTagSearch(this)" data-content="#include">#include</a> &lt;fcntl.h&gt;
-<a class="tag" onclick="toggleTagSearch(this)" data-content="#include">#include</a> &lt;unistd.h&gt;
-
-int main() {
-	int fd;
-	fd = open(&quot;tmp.txt&quot;, O_RDONLY);
-	printf(&quot;%d&quot;, fd);
-	sleep(10);
-}
-</code></pre>
-<p>会发现，在进程运行时 <code>fd</code> 目录下，会出现一个描述符 3 指向了 打开的文件</p>
-<pre><code class="language-sh">$ ll /proc/$(ps aux | grep a.out | grep -v grep | awk '{print $2}')/fd
-total 0
-lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 0 -&gt; /dev/pts/4
-lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 1 -&gt; /dev/pts/4
-lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 2 -&gt; /dev/pts/4
-lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&gt; /home/ubuntu/mydisk/yangblog/codes/file/tmp.txt
-</code></pre>
-<p>我们可以把这个文件描述符当做参数传递给 <code>read</code> 或者 <code>write</code> 等等系统调用。</p>
+      <ol>
+<li>把事情做好</li>
+<li>执行时是拿结果engage（而不是仅仅去 exec）</li>
+</ol>
+<p><a href="https://topbook.cc/course/detail/153" target="_blank" class="external-link">https://topbook.cc/course/detail/153</a></p>
+<p>主要思想：</p>
+<ol>
+<li>捕获</li>
+<li></li>
+</ol>
+<p><img src="/img/user/attachs/Pasted%20image%2020220509232211.png" alt="Pasted image 20220509232211.png"></p>
+<h1 id="参考" tabindex="-1">参考</h1>
+<p><a href="https://www.bilibili.com/video/BV1wE411176Q?p=6&amp;spm_id_from=333.880.my_history.page.click" target="_blank" class="external-link">bilibili教程</a></p>
 
       
       
@@ -1255,10 +1201,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&gt; /home/ubuntu/mydisk/yangblog/
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#什么是文件描述符">什么是文件描述符</a>
-            		</li>
-
-                    <li><a href="#系统调用中的文件描述符">系统调用中的文件描述符</a>
+                    <li><a href="#参考">参考</a>
             		</li>
                 </ol>
             </nav>

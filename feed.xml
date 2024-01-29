@@ -3,7 +3,7 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-29T15:37:07Z</updated>
+    <updated>2024-01-29T15:37:11Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -177,6 +177,31 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
         </entry>
         <entry>
             <title>
+                GTD
+                
+            </title>
+            <updated>2024-01-29T15:36:38.651Z</updated>
+            <id>https://wudanyang6.github.io//card/GTD/</id>
+            <content type="html">
+                &lt;ol&gt;
+&lt;li&gt;把事情做好&lt;/li&gt;
+&lt;li&gt;执行时是拿结果engage（而不是仅仅去 exec）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;https://topbook.cc/course/detail/153&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://topbook.cc/course/detail/153&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;主要思想：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;捕获&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020220509232211.png&quot; alt=&quot;Pasted image 20220509232211.png&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1wE411176Q?p=6&amp;amp;spm_id_from=333.880.my_history.page.click&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;bilibili教程&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/GTD/" />
+        </entry>
+        <entry>
+            <title>
                 Site Home dy_turbo
                 
             </title>
@@ -216,7 +241,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;td&gt;2024-01-29星期1 23:22&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;GTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/GTD/&quot;&gt;GTD&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2022-05-5星期4 13:26&lt;/td&gt;
 &lt;td&gt;2024-01-29星期1 23:36&lt;/td&gt;
 &lt;/tr&gt;
