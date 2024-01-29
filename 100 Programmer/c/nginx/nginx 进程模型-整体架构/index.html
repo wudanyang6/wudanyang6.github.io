@@ -448,7 +448,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T03:19:01.026Z';
+        const searchIndexDate = '2024-01-29T03:20:46.303Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -460,9 +460,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T03:19:01.026Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T03:20:46.303Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T03:19:01.026Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T03:20:46.303Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -713,7 +713,7 @@
                 
               
             </div>
-          </div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-04-14T13:14:29.000+08:00"></span></div></div></div>
       
       
       </header>
