@@ -643,7 +643,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T15:23:05.678Z';
+        const searchIndexDate = '2024-01-29T15:23:08.135Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -655,9 +655,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T15:23:05.678Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T15:23:08.135Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T15:23:05.678Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T15:23:08.135Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -935,7 +935,7 @@
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-1137. 第 N 个泰波那契数/">leetcode-1137. 第 N 个泰波那契数</a></td>
 <td>2023-02-26星期7 18:03</td>
-<td>2024-01-29星期1 23:18</td>
+<td>2024-01-29星期1 23:22</td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/output/js超长数字溢出问题/">js超长数字溢出问题</a></td>
