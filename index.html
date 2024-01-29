@@ -559,7 +559,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T06:37:59.548Z';
+        const searchIndexDate = '2024-01-29T06:38:47.327Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -571,9 +571,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T06:37:59.548Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T06:38:47.327Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T06:37:59.548Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T06:38:47.327Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -846,7 +846,7 @@
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/">Site Home dy_turbo</a></td>
 <td>2024-01-28星期7 22:46</td>
-<td>2024-01-29星期1 11:45</td>
+<td>2024-01-29星期1 14:38</td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络</a></td>
@@ -875,7 +875,8 @@
 </tr>
 </tbody>
 </table></div>
-
+<h2 id="music" tabindex="-1">music</h2>
+<iframe width="100%" height="1000px" src="https://music.163.com/playlist?id=13022777&userid=16553655" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
       
       
     </main>
@@ -1120,6 +1121,9 @@
                 <ol>
                     
                     <li><a href="#list">List</a>
+            		</li>
+
+                    <li><a href="#music">music</a>
             		</li>
                 </ol>
             		</li>
