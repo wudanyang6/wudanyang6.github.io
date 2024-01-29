@@ -502,7 +502,7 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Home dy_turbo </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Site Home dy_turbo </a>
                 </div>
             
         </div>
@@ -675,7 +675,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T15:37:47.513Z';
+        const searchIndexDate = '2024-01-29T15:37:49.713Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -687,9 +687,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T15:37:47.513Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T15:37:49.713Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T15:37:47.513Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T15:37:49.713Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1215,7 +1215,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home dy_turbo</a>
+                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Site Home dy_turbo</a>
                                                 </div></div>
                               </div>
                         
