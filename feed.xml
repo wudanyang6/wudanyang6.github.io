@@ -3,14 +3,14 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-01-29T03:46:31Z</updated>
+    <updated>2024-01-29T04:28:20Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
                 Site Home
                 
             </title>
-            <updated>2024-01-29T03:46:17Z</updated>
+            <updated>2024-01-29T04:28:06Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;what-are-you-doing&quot; tabindex=&quot;-1&quot;&gt;What are you doing&lt;/h1&gt;
@@ -61,7 +61,7 @@
                 如何查看 nginx 的rewrite记录
                 
             </title>
-            <updated>2024-01-29T03:46:17Z</updated>
+            <updated>2024-01-29T04:28:06Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx-rewrite&quot; tabindex=&quot;-1&quot;&gt;如何调试nginx的rewrite规则？&lt;/h1&gt;
@@ -99,7 +99,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 vscode 调试nginx代码
                 
             </title>
-            <updated>2024-01-29T03:46:17Z</updated>
+            <updated>2024-01-29T04:28:06Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/vscode 调试nginx代码/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
@@ -210,11 +210,11 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 nginx 进程模型-整体架构
                 
             </title>
-            <updated>2024-01-29T03:46:17Z</updated>
+            <updated>2024-01-29T04:28:06Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/nginx 进程模型-整体架构/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型-整体架构&lt;/h1&gt;
-&lt;p&gt;![进程模型图示](/img/user/100 Programmer/c/nginx/713751-20221106220927618-2090658482.png)&lt;/p&gt;
+&lt;p&gt;![](/img/user/100 Programmer/c/nginx/713751-20221106220927618-2090658482.png)&lt;/p&gt;
 &lt;p&gt;从网上找了一个非常好的图片，从图中可以看到很多东西&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;Nginx&lt;/code&gt; 会生成多个进程&lt;/li&gt;
@@ -233,7 +233,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 epoll的边缘触发和水平触发
                 
             </title>
-            <updated>2024-01-29T03:46:17Z</updated>
+            <updated>2024-01-29T04:28:06Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/epoll的边缘触发和水平触发/</id>
             <content type="html">
                 &lt;h1 id=&quot;epoll&quot; tabindex=&quot;-1&quot;&gt;epoll的边缘触发和水平触发&lt;/h1&gt;
