@@ -3,14 +3,14 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-01-29T06:37:58Z</updated>
+    <updated>2024-01-29T06:37:59Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
                 文件描述符
                 
             </title>
-            <updated>2024-01-29T06:37:43Z</updated>
+            <updated>2024-01-29T06:37:44Z</updated>
             <id>https://wudanyang6.github.io//output/文件描述符/</id>
             <content type="html">
                 &lt;h1 id=&quot;什么是文件描述符&quot; tabindex=&quot;-1&quot;&gt;什么是文件描述符&lt;/h1&gt;
@@ -71,7 +71,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 obsidian-things3-today插件
                 
             </title>
-            <updated>2024-01-29T06:37:43Z</updated>
+            <updated>2024-01-29T06:37:44Z</updated>
             <id>https://wudanyang6.github.io//obsidian/obsidian-things3-today插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
@@ -90,7 +90,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 Site Home dy_turbo
                 
             </title>
-            <updated>2024-01-29T06:37:43Z</updated>
+            <updated>2024-01-29T06:37:44Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;what-are-you-doing&quot; tabindex=&quot;-1&quot;&gt;What are you doing&lt;/h1&gt;
@@ -121,7 +121,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;td&gt;2024-01-29星期1 11:45&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/%E6%A0%91%E8%8E%93%E6%B4%BE/ubuntu%20%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%AF%E5%8A%A8%E6%97%B6%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C/&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2021-04-27星期2 23:13&lt;/td&gt;
 &lt;td&gt;2024-01-29星期1 14:37&lt;/td&gt;
 &lt;/tr&gt;
@@ -153,10 +153,78 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
         </entry>
         <entry>
             <title>
+                ubuntu 树莓派启动时配置网络
+                
+            </title>
+            <updated>2024-01-29T06:37:44Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/</id>
+            <content type="html">
+                &lt;h1 id=&quot;code-ubuntu-code&quot; tabindex=&quot;-1&quot;&gt;树莓派 &lt;code&gt;ubuntu&lt;/code&gt; 配置网络&lt;/h1&gt;
+&lt;p&gt;树莓派现在可以安装很多操作系统，其中 &lt;code&gt;ubuntu&lt;/code&gt; 也提供了树莓派版本，因为对 &lt;code&gt;ubuntu&lt;/code&gt; 更加熟悉，所以就往 &lt;code&gt;SD&lt;/code&gt; 卡中烧录了 &lt;code&gt;ubuntu&lt;/code&gt; 的 &lt;code&gt;20.04 lts 64位&lt;/code&gt; 版本。&lt;a href=&quot;https://www.raspberrypi.org/software/operating-systems/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;这里有可供选择的操作系统。&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;简单提一嘴烧录操作系统到 &lt;code&gt;SD&lt;/code&gt; 卡上面的方法，树莓派提供了一个&lt;a href=&quot;https://www.raspberrypi.org/software/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;傻瓜式的软件&lt;/a&gt;给大家使用，直接打开之后选择系统，就可以烧录了，烧录过程大概会有几分钟。&lt;/p&gt;
+&lt;p&gt;烧录完成之后，如果你按照树莓派官网的教程进行操作，肯定都行不通，因为树莓派的官方操作系统 &lt;code&gt;Raspberry Pi OS&lt;/code&gt; 和 &lt;code&gt;Ubuntu For Raspberry&lt;/code&gt; 上面的网络配置方式完全不一样。&lt;/p&gt;
+&lt;h2 id=&quot;ubuntu&quot; tabindex=&quot;-1&quot;&gt;安装了 ubuntu 的树莓派怎么配置网络？&lt;/h2&gt;
+&lt;p&gt;打开你烧录好的 &lt;code&gt;SD&lt;/code&gt; 卡&lt;/p&gt;
+&lt;p&gt;找到 &lt;code&gt;network-config&lt;/code&gt; 文件&lt;/p&gt;
+&lt;p&gt;写入如下配置：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;wifis:
+  wlan0:
+  dhcp4: true
+  optional: true
+  access-points:
+    &amp;lt;wifi network name&amp;gt;:
+      password: &amp;quot;&amp;lt;wifi password&amp;gt;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果是企业网络：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;wifis:
+  wlan0:
+  dhcp4: true
+  optional: true
+  access-points:
+        &amp;lt;wifi network name&amp;gt;:
+          auth:
+            key-management: eap
+            method: peap
+            identity: &amp;quot;wudanyang&amp;quot;
+            password: &amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;https://netplan.io/examples/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;配置文件的格式&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;修改完之后，把 &lt;code&gt;SD&lt;/code&gt; 卡从电脑上弹出，然后插到树莓派里。&lt;/p&gt;
+&lt;p&gt;不过，&lt;strong&gt;重启之后，你可能还是无法连接到网络&lt;/strong&gt;。可以看下&lt;a href=&quot;https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#3-wifi-or-ethernet&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: During the first boot, your Raspberry Pi will try to connect to this network. It will fail the first time around. Simply reboot &lt;code&gt;sudo reboot&lt;/code&gt; and it will work.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;引用&lt;code&gt;ubuntu&lt;/code&gt;官网的一段话，第一次会失败，直接重启，&lt;strong&gt;第二次就能连上了&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;开启网络之后，如何登录树莓派？&quot; tabindex=&quot;-1&quot;&gt;开启网络之后，如何登录树莓派？&lt;/h2&gt;
+&lt;p&gt;安装好之后默认用户名和密码都是 &lt;code&gt;ubuntu&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh ubuntu@&amp;lt;raspberry ip&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;ip 地址的获取这里列举几种方法，不详细介绍：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;自己的路由器&lt;/strong&gt;：登录后台查看分配的 ip&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;局域网扫描&lt;/strong&gt;（局域网机器不多的情况下）：
+&lt;ol&gt;
+&lt;li&gt;下载个局域网扫描工具，如果局域网机器不多，会看到一个制造商为树莓派的 ip&lt;/li&gt;
+&lt;li&gt;使用命令行 &lt;code&gt;arp -a &lt;/code&gt; 挨个试一下&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ubuntu&lt;/code&gt; 启动之后会使用 &lt;code&gt;avahi&lt;/code&gt; 服务通过 &lt;a href=&quot;https://baike.baidu.com/item/mdns&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;mdns&lt;/a&gt; 协议在局域网注册一个域名 &lt;code&gt;ubuntu.local&lt;/code&gt;，所以你可以这样登录 &lt;code&gt;ssh ubuntu@ubuntu.local&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.raspberrypi.org/software/operating-systems/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;树莓派支持的操作系统&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.raspberrypi.org/software/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;树莓派操作系统烧录软件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://shumeipai.nxez.com/2017/09/13/raspberry-pi-network-configuration-before-boot.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;无屏幕和键盘配置树莓派WiFi和SSH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://baike.baidu.com/item/mdns&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;百度百科-mdns&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/lonerpaul/p/11054419.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Mac通过网线直连控制树莓派 - lonerpaul - 博客园&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/" >
+        </entry>
+        <entry>
+            <title>
                 如何查看 nginx 的rewrite记录
                 
             </title>
-            <updated>2024-01-29T06:37:43Z</updated>
+            <updated>2024-01-29T06:37:44Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx-rewrite&quot; tabindex=&quot;-1&quot;&gt;如何调试nginx的rewrite规则？&lt;/h1&gt;
@@ -194,7 +262,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 vscode 调试nginx代码
                 
             </title>
-            <updated>2024-01-29T06:37:43Z</updated>
+            <updated>2024-01-29T06:37:44Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/vscode 调试nginx代码/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
@@ -305,7 +373,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 nginx 进程模型-整体架构
                 
             </title>
-            <updated>2024-01-29T06:37:43Z</updated>
+            <updated>2024-01-29T06:37:44Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/nginx 进程模型-整体架构/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型-整体架构&lt;/h1&gt;
@@ -328,7 +396,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 epoll的边缘触发和水平触发
                 
             </title>
-            <updated>2024-01-29T06:37:43Z</updated>
+            <updated>2024-01-29T06:37:44Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/epoll的边缘触发和水平触发/</id>
             <content type="html">
                 &lt;h1 id=&quot;epoll&quot; tabindex=&quot;-1&quot;&gt;epoll的边缘触发和水平触发&lt;/h1&gt;

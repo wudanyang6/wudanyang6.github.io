@@ -245,6 +245,59 @@
     
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('100 Programmer/linux')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">linux</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('100 Programmer/linux/树莓派')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">树莓派</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -506,7 +559,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T06:37:58.141Z';
+        const searchIndexDate = '2024-01-29T06:37:59.548Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -518,9 +571,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T06:37:58.141Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T06:37:59.548Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T06:37:58.141Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T06:37:59.548Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -796,7 +849,7 @@
 <td>2024-01-29星期1 11:45</td>
 </tr>
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">ubuntu 树莓派启动时配置网络</a></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络</a></td>
 <td>2021-04-27星期2 23:13</td>
 <td>2024-01-29星期1 14:37</td>
 </tr>

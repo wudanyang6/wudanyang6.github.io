@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>epoll的边缘触发和水平触发</title>
+    <title>ubuntu 树莓派启动时配置网络</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
@@ -190,7 +190,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/c/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/c/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发 </a>
                 </div>
             
         </div>
@@ -280,7 +280,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络 </a>
                 </div>
             
         </div>
@@ -814,65 +814,68 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-28T22:53:39.092+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-04-27T23:13:41.000+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="epoll" tabindex="-1">epoll的边缘触发和水平触发</h1>
-<p><code>epoll</code> 是 Linux 下用于处理大量文件描述符的高效 I/O 多路复用机制。在 <code>epoll</code> 中，有两种触发模式：水平触发（Level-Triggered，简称 LT）和边缘触发（Edge-Triggered，简称 ET）。</p>
+      <h1 id="code-ubuntu-code" tabindex="-1">树莓派 <code>ubuntu</code> 配置网络</h1>
+<p>树莓派现在可以安装很多操作系统，其中 <code>ubuntu</code> 也提供了树莓派版本，因为对 <code>ubuntu</code> 更加熟悉，所以就往 <code>SD</code> 卡中烧录了 <code>ubuntu</code> 的 <code>20.04 lts 64位</code> 版本。<a href="https://www.raspberrypi.org/software/operating-systems/" target="_blank" class="external-link">这里有可供选择的操作系统。</a></p>
+<p>简单提一嘴烧录操作系统到 <code>SD</code> 卡上面的方法，树莓派提供了一个<a href="https://www.raspberrypi.org/software/" target="_blank" class="external-link">傻瓜式的软件</a>给大家使用，直接打开之后选择系统，就可以烧录了，烧录过程大概会有几分钟。</p>
+<p>烧录完成之后，如果你按照树莓派官网的教程进行操作，肯定都行不通，因为树莓派的官方操作系统 <code>Raspberry Pi OS</code> 和 <code>Ubuntu For Raspberry</code> 上面的网络配置方式完全不一样。</p>
+<h2 id="ubuntu" tabindex="-1">安装了 ubuntu 的树莓派怎么配置网络？</h2>
+<p>打开你烧录好的 <code>SD</code> 卡</p>
+<p>找到 <code>network-config</code> 文件</p>
+<p>写入如下配置：</p>
+<pre><code class="language-yaml">wifis:
+  wlan0:
+  dhcp4: true
+  optional: true
+  access-points:
+    &lt;wifi network name&gt;:
+      password: &quot;&lt;wifi password&gt;&quot;
+</code></pre>
+<p>如果是企业网络：</p>
+<pre><code class="language-yaml">wifis:
+  wlan0:
+  dhcp4: true
+  optional: true
+  access-points:
+        &lt;wifi network name&gt;:
+          auth:
+            key-management: eap
+            method: peap
+            identity: &quot;wudanyang&quot;
+            password: &quot;&quot;
+</code></pre>
+<p><a href="https://netplan.io/examples/" target="_blank" class="external-link">配置文件的格式</a></p>
+<p>修改完之后，把 <code>SD</code> 卡从电脑上弹出，然后插到树莓派里。</p>
+<p>不过，<strong>重启之后，你可能还是无法连接到网络</strong>。可以看下<a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#3-wifi-or-ethernet" target="_blank" class="external-link">这里</a></p>
+<blockquote>
+<p>Note: During the first boot, your Raspberry Pi will try to connect to this network. It will fail the first time around. Simply reboot <code>sudo reboot</code> and it will work.</p>
+</blockquote>
+<p>引用<code>ubuntu</code>官网的一段话，第一次会失败，直接重启，<strong>第二次就能连上了</strong>。</p>
+<h2 id="开启网络之后，如何登录树莓派？" tabindex="-1">开启网络之后，如何登录树莓派？</h2>
+<p>安装好之后默认用户名和密码都是 <code>ubuntu</code></p>
+<p><code>ssh ubuntu@&lt;raspberry ip&gt;</code></p>
+<p>ip 地址的获取这里列举几种方法，不详细介绍：</p>
 <ol>
-<li><strong>水平触发（LT，Level-Triggered）</strong>：
-<ul>
-<li>当文件描述符就绪时，<code>epoll_wait</code> 将立即返回。</li>
-<li>如果文件描述符的状态发生变化，<code>epoll_wait</code> 会再次通知应用程序。</li>
-<li>这种模式下，如果文件描述符有数据可读或可写，<code>epoll_wait</code> 将不停地返回通知，直到应用程序处理完数据或者阻塞。</li>
-</ul>
-</li>
-<li><strong>边缘触发（ET，Edge-Triggered）</strong>：
-<ul>
-<li>当文件描述符就绪时，<code>epoll_wait</code> 只会通知一次，直到应用程序处理完数据并清空了文件描述符的缓冲区。</li>
-<li>如果文件描述符的状态没有变化，<code>epoll_wait</code> 不会重复通知应用程序。</li>
-<li>这种模式下，应用程序需要注意，在一个事件通知之后，要一直读或写，直到发生 <code>EAGAIN</code> 或 <code>EWOULDBLOCK</code> 错误。</li>
-</ul>
-</li>
-</ol>
-<p>为什么epoll这里要叫做边缘触发和水平触发呢？</p>
-<p>这源于通信<strong>数字信号处理领域</strong>的术语，边缘和水平通常用于描述信号的特性</p>
+<li><strong>自己的路由器</strong>：登录后台查看分配的 ip</li>
+<li><strong>局域网扫描</strong>（局域网机器不多的情况下）：
 <ol>
-<li><strong>边缘触发（Edge-Triggered）</strong>：
-<ul>
-<li>&quot;边缘&quot; 指的是信号的变化边缘，即信号从一个状态变为另一个状态的瞬间。</li>
-<li>在数字信号处理中，边缘通常用来表示信号的上升沿或下降沿，即信号从低电平到高电平或从高电平到低电平的瞬间。</li>
-</ul>
-</li>
-<li><strong>水平触发（Level-Triggered）</strong>：
-<ul>
-<li>&quot;水平&quot; 指的是信号的水平状态，即信号所处的电平状态。</li>
-<li>在数字信号处理中，水平触发通常用来描述信号保持在某个电平的状态，而不关心信号的变化瞬间。</li>
-</ul>
-</li>
+<li>下载个局域网扫描工具，如果局域网机器不多，会看到一个制造商为树莓派的 ip</li>
+<li>使用命令行 <code>arp -a </code> 挨个试一下</li>
 </ol>
-<p><picture src="/img/user/card/92310.png" alt="92310.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/So7zxuKtZ4-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/So7zxuKtZ4-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/So7zxuKtZ4-700.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/So7zxuKtZ4-700.jpeg"
-        ><img       class=""
-      src="/img/user/card/92310.png"
-      alt="92310.png"
-      width=""
-      ></picture></p>
-<h2 id="reference" tabindex="-1">Reference</h2>
-<p><a href="https://electronics.stackexchange.com/a/21891" target="_blank" class="external-link">https://electronics.stackexchange.com/a/21891</a></p>
+</li>
+<li><code>ubuntu</code> 启动之后会使用 <code>avahi</code> 服务通过 <a href="https://baike.baidu.com/item/mdns" target="_blank" class="external-link">mdns</a> 协议在局域网注册一个域名 <code>ubuntu.local</code>，所以你可以这样登录 <code>ssh ubuntu@ubuntu.local</code></li>
+</ol>
+<h1 id="参考" tabindex="-1">参考</h1>
+<p><a href="https://www.raspberrypi.org/software/operating-systems/" target="_blank" class="external-link">树莓派支持的操作系统</a></p>
+<p><a href="https://www.raspberrypi.org/software/" target="_blank" class="external-link">树莓派操作系统烧录软件</a></p>
+<p><a href="https://shumeipai.nxez.com/2017/09/13/raspberry-pi-network-configuration-before-boot.html" target="_blank" class="external-link">无屏幕和键盘配置树莓派WiFi和SSH</a></p>
+<p><a href="https://baike.baidu.com/item/mdns" target="_blank" class="external-link">百度百科-mdns</a></p>
+<p><a href="https://www.cnblogs.com/lonerpaul/p/11054419.html" target="_blank" class="external-link">Mac通过网线直连控制树莓派 - lonerpaul - 博客园</a></p>
 
       
       
@@ -1128,13 +1131,19 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#epoll">epoll的边缘触发和水平触发</a>
+                    <li><a href="#code-ubuntu-code">树莓派 ubuntu 配置网络</a>
             
                 <ol>
                     
-                    <li><a href="#reference">Reference</a>
+                    <li><a href="#ubuntu">安装了 ubuntu 的树莓派怎么配置网络？</a>
+            		</li>
+
+                    <li><a href="#开启网络之后，如何登录树莓派？">开启网络之后，如何登录树莓派？</a>
             		</li>
                 </ol>
+            		</li>
+
+                    <li><a href="#参考">参考</a>
             		</li>
                 </ol>
             </nav>
