@@ -269,7 +269,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Site Home </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Site Home dy_turbo </a>
                 </div>
             
         </div>
@@ -448,7 +448,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T05:16:44.128Z';
+        const searchIndexDate = '2024-01-29T05:20:31.033Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -460,9 +460,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T05:16:44.128Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T05:20:31.033Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T05:16:44.128Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T05:20:31.033Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -736,6 +736,21 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
 
       
       
+      <script src="https://giscus.app/client.js"
+              data-repo="wudanyang6/wudanyang6.github.io"
+              data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM="
+              data-category="Announcements"
+              data-category-id="DIC_kwDOFTtyT84CYlu-"
+              data-mapping="pathname"
+              data-strict="0"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="light"
+              data-lang="zh-CN"
+              data-loading="lazy"
+              crossorigin="anonymous"
+              async></script>
     </main>
 
     
@@ -993,7 +1008,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Site Home</a>
+                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Site Home dy_turbo</a>
                                                 </div></div>
                               </div>
                         
@@ -1206,19 +1221,5 @@ lucide.createIcons({
         });
 </script>
   </body>
-<script src="https://giscus.app/client.js"
-        data-repo="wudanyang6/wudanyang6.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM="
-        data-category="Announcements"
-        data-category-id="DIC_kwDOFTtyT84CYlu-"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="zh-CN"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async></script>
+
 </html>
