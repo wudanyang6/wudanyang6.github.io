@@ -561,7 +561,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T08:18:18.610Z';
+        const searchIndexDate = '2024-01-29T08:18:21.814Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -573,9 +573,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T08:18:18.610Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T08:18:21.814Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T08:18:18.610Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T08:18:21.814Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1223,8 +1223,7 @@ Maybe someone has attached this process with gdb.</p>
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Site Home dy_turbo</a>
-                                                </div></div>
+                                          <div class="backlink-list"></div>
                               </div>
                         
                   

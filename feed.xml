@@ -3,14 +3,14 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-29T08:18:18Z</updated>
+    <updated>2024-01-29T08:18:21Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
                 文件描述符
                 
             </title>
-            <updated>2024-01-29T08:18:04Z</updated>
+            <updated>2024-01-29T06:34:40.990Z</updated>
             <id>https://wudanyang6.github.io//output/文件描述符/</id>
             <content type="html">
                 &lt;h1 id=&quot;什么是文件描述符&quot; tabindex=&quot;-1&quot;&gt;什么是文件描述符&lt;/h1&gt;
@@ -71,7 +71,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 obsidian-things3-today插件
                 
             </title>
-            <updated>2024-01-29T08:18:04Z</updated>
+            <updated>2024-01-29T06:27:31.704Z</updated>
             <id>https://wudanyang6.github.io//obsidian/obsidian-things3-today插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
@@ -90,7 +90,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 Site Home dy_turbo
                 
             </title>
-            <updated>2024-01-29T08:18:04Z</updated>
+            <updated>2024-01-29T06:44:46.674Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;what-are-you-doing&quot; tabindex=&quot;-1&quot;&gt;What are you doing&lt;/h1&gt;
@@ -118,7 +118,12 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Site Home dy_turbo&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-01-28星期7 22:46&lt;/td&gt;
-&lt;td&gt;2024-01-29星期1 14:38&lt;/td&gt;
+&lt;td&gt;2024-01-29星期1 14:44&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;js超长数字溢出问题&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2022-02-26星期6 21:06&lt;/td&gt;
+&lt;td&gt;2024-01-29星期1 16:16&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/%E6%A0%91%E8%8E%93%E6%B4%BE/ubuntu%20%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%AF%E5%8A%A8%E6%97%B6%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C/&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;&lt;/td&gt;
@@ -141,9 +146,14 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;td&gt;2024-01-29星期1 14:34&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/&quot;&gt;vscode 调试nginx代码&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021-03-25星期4 19:13&lt;/td&gt;
-&lt;td&gt;2024-01-28星期7 23:57&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-04-12星期1 11:53&lt;/td&gt;
+&lt;td&gt;2024-01-29星期1 16:15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;linux-man命令使用&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-04-7星期3 17:11&lt;/td&gt;
+&lt;td&gt;2024-01-29星期1 16:17&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
