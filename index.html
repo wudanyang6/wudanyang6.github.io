@@ -476,7 +476,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T06:28:16.131Z';
+        const searchIndexDate = '2024-01-29T06:29:30.680Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -488,9 +488,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T06:28:16.131Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T06:29:30.680Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T06:28:16.131Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T06:29:30.680Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -774,6 +774,11 @@
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/nginx 进程模型-整体架构/">nginx 进程模型-整体架构</a></td>
 <td>2021-04-14星期3 13:14</td>
 <td>2024-01-29星期1 12:41</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">文件描述符</a></td>
+<td>2021-04-13星期2 11:24</td>
+<td>2024-01-29星期1 14:28</td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/vscode 调试nginx代码/">vscode 调试nginx代码</a></td>
