@@ -446,7 +446,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T04:28:19.980Z';
+        const searchIndexDate = '2024-01-29T04:28:23.086Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -458,9 +458,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T04:28:19.980Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T04:28:23.086Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T04:28:19.980Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T04:28:23.086Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -738,7 +738,7 @@
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/nginx 进程模型-整体架构/">nginx 进程模型-整体架构</a></td>
 <td>2021-04-14星期3 13:14</td>
-<td>2024-01-29星期1 11:46</td>
+<td>2024-01-29星期1 12:27</td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/vscode 调试nginx代码/">vscode 调试nginx代码</a></td>
