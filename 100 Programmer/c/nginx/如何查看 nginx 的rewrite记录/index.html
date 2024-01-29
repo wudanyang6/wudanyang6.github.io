@@ -3,7 +3,8 @@
   <head>
     <title>如何查看 nginx 的rewrite记录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
+<script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
 <script>
     mermaid.initialize({
         startOnLoad: true,
@@ -443,7 +444,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T02:57:23.222Z';
+        const searchIndexDate = '2024-01-29T03:08:38.797Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -455,9 +456,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T02:57:23.222Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T03:08:38.797Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T02:57:23.222Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T03:08:38.797Z', docs}));
             window.docs = docs
             window.index = index;
         }
