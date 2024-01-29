@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
   <head>
     <title>My Garden</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -446,7 +446,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T03:15:13.256Z';
+        const searchIndexDate = '2024-01-29T03:16:03.396Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -458,9 +458,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T03:15:13.256Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T03:16:03.396Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T03:15:13.256Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T03:16:03.396Z', docs}));
             window.docs = docs
             window.index = index;
         }
