@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>vscode 调试nginx代码</title>
+    <title>如何追查线上问题</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
@@ -212,7 +212,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/c/nginx/vscode 调试nginx代码/">vscode 调试nginx代码 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/c/nginx/vscode 调试nginx代码/">vscode 调试nginx代码 </a>
                 </div>
             
         </div>
@@ -404,7 +404,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/output/如何追查线上问题/">如何追查线上问题 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/output/如何追查线上问题/">如何追查线上问题 </a>
                 </div>
             
         </div>
@@ -847,111 +847,58 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-03-25 19:13:29"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-28T23:57:19.418+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-04-12 11:04:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-29T16:15:31.921+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <p><a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></p>
-<h1 id="内容" tabindex="-1">内容</h1>
-<h2 id="auto-cc-conf" tabindex="-1">修改 auto/cc/conf</h2>
-<p>ngx_compile_opt 中添加 -g<br>
-修改后如下：</p>
-<pre><code class="language-shell">ngx_compile_opt=&quot;-c -g&quot;
-</code></pre>
-<p><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/vscode 调试nginx代码/#gcc-g"><a class="tag" onclick="toggleTagSearch(this)" data-content="#gcc">#gcc</a> -g 的作用</a></p>
-<h2 id="and-amp-and-amp" tabindex="-1">编译 &amp; 安装 &amp; 运行</h2>
-<pre><code class="language-shell"># prefix 是想要安装到的目录
-auto/configure --prefix=/home/ubuntu/mydisk/var/nginx-debug-1
-
-# 编译安装
-make
-make install
-</code></pre>
-<h3 id="修改配置" tabindex="-1">修改配置</h3>
-<p><code>vim /home/ubuntu/mydisk/var/nginx-debug-1/conf/nginx.conf</code><br>
-将监听端口号改成 <code>8080</code><br>
-<code>worker_processes</code> 改成 1 (方便调试)</p>
-<h3 id="nginx" tabindex="-1">启动 nginx</h3>
-<p><code>/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx</code></p>
-<p>nginx 的进程：</p>
-<pre><code class="language-shell">ps aux | grep nginx
-ubuntu     17093  0.0  0.0   4184   372 ?        Ss   Mar30   0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
-ubuntu     17094  0.0  0.0   4620  2316 ?        S    Mar30   0:00 nginx: worker process
-ubuntu     46072  0.0  0.0   7692   648 pts/0    S+   11:21   0:00 grep --color=auto nginx
-</code></pre>
-<h2 id="vscode" tabindex="-1">配置 vscode 调试</h2>
-<pre><code class="language-json">{
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
-    &quot;version&quot;: &quot;0.2.0&quot;,
-    &quot;configurations&quot;: [
-        {
-            &quot;name&quot;: &quot;debug master&quot;,
-            &quot;type&quot;: &quot;cppdbg&quot;,
-            &quot;request&quot;: &quot;launch&quot;,
-            &quot;program&quot;: &quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&quot;,
-            &quot;args&quot;: [],
-            &quot;stopAtEntry&quot;: true,
-            &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,
-            &quot;environment&quot;: [],
-            &quot;externalConsole&quot;: false,
-            &quot;MIMode&quot;: &quot;gdb&quot;,
-            &quot;setupCommands&quot;: [
-                {
-                    &quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,
-                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,
-                    &quot;ignoreFailures&quot;: true
-                }
-            ]
-        },
-        {
-            &quot;name&quot;: &quot;debug worker&quot;,
-            &quot;type&quot;: &quot;cppdbg&quot;,
-            &quot;request&quot;: &quot;attach&quot;,
-            &quot;program&quot;: &quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&quot;,
-            &quot;processId&quot;: 17094,
-            &quot;MIMode&quot;: &quot;gdb&quot;,
-            &quot;setupCommands&quot;: [
-                {
-                    &quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,
-                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,
-                    &quot;ignoreFailures&quot;: true
-                }
-            ]
-        }
-    ]
-}
-</code></pre>
-<p>在 worker 上调试需要改成 attach 的形式，并且使用了一次 attach 之后，就不能使用 strace -p 17094 查看系统调用了</p>
-<p>然后就可以打断点，进行单步调试了</p>
-<h1 id="参考" tabindex="-1">参考</h1>
-<p><a href="https://www.jianshu.com/p/51b726b56e2f" target="_blank" class="external-link">Mac上用Visual Studio Code调试Nginx</a></p>
-<h2 id="gcc-g" tabindex="-1">gcc -g 的作用</h2>
-<p><a href="https://www.runoob.com/w3cnote/gcc-parameter-detail.html" target="_blank" class="external-link">GCC 参数详解-runoob</a><br>
-在编译的时候会产生调试信息</p>
-<h2 id="kernel-yama-ptrace-scope" tabindex="-1">kernel.yama.ptrace_scope</h2>
-<p>sysctl -a 查看内核参数<br>
-kernel.yama.ptrace_scope<br>
-<a href="https://www.kernel.org/doc/Documentation/security/Yama.txt" target="_blank" class="external-link">https://www.kernel.org/doc/Documentation/security/Yama.txt</a></p>
-<p>sudo vim /etc/sysctl.d/10-ptrace.conf</p>
-<p><a href="https://blog.csdn.net/yihuajack/article/details/107151801" target="_blank" class="external-link">VSCode调试出现无法打开glibc库的“raise.c“或“abort.c“等文件的错误</a></p>
-<h2 id="sudo-strace" tabindex="-1">sudo strace 报 操作不被允许</h2>
-<p>sudo strace -p 17094</p>
-<pre><code class="language-bash">strace: Could not attach to process. If your uid matches the uid of the target process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try again as the root user. For more details, see /etc/sysctl.d/10-ptrace.conf: Operation not permitted
-strace: attach: ptrace(PTRACE_SEIZE, 17094): Operation not permitted
-</code></pre>
-<p><a href="https://stackoverflow.com/questions/19215177/how-to-solve-ptrace-operation-not-permitted-when-trying-to-attach-gdb-to-a-pro" target="_blank" class="external-link">https://stackoverflow.com/questions/19215177/how-to-solve-ptrace-operation-not-permitted-when-trying-to-attach-gdb-to-a-pro</a><br>
-Maybe someone has attached this process with gdb.</p>
-<ul>
-<li>ps -ef | grep gdb</li>
-</ul>
-<p><strong>can't gdb attach the same process twice.</strong><br>
-将 vscode 中的 调试关掉，就可以使用 strace 了<br>
-如下图，可以看到，子进程停在了 epoll_pwait 系统调用上了<br>
-<img src="/img/user/attachs/Pasted%20image%2020210330203413.png" alt="attachs/Pasted image 20210330203413.png"></p>
+      <p>tags: <a class="tag" onclick="toggleTagSearch(this)" data-content="#开发经验">#开发经验</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></p>
+<h1 id="原则" tabindex="-1">原则</h1>
+<h2 id="止损优先" tabindex="-1">止损优先</h2>
+<p>不能先追查问题根源， 首先应该<code>止损</code>，不让问题进一步扩大，<code>代码回滚</code>、<code>服务降级</code>等都可以起到止损的效果。<br>
+对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 <code>配置开关 </code>控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多</p>
+<h2 id="及时通告" tabindex="-1">及时通告</h2>
+<p>在问题发生之后，要及时对处理问题的过程进行<code>通告</code>。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。</p>
+<h1 id="追查问题的方法" tabindex="-1">追查问题的方法</h1>
+<h2 id="逻辑方法:" tabindex="-1">逻辑方法:</h2>
+<ol>
+<li>先收集<code>现象</code>：业务报错、线上报错日志等<br>
+对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。</li>
+<li>针对现象假设<code>原因</code>：
+<ol>
+<li>常见问题依据追查手册</li>
+<li>其他问题保持思路开放，大胆假设</li>
+</ol>
+</li>
+<li>是否<code>有损</code>的判断：<br>
+根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 <strong>止损优先</strong></li>
+<li><code>质疑</code>所有数据：<br>
+各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证</li>
+</ol>
+<h2 id="知识准备" tabindex="-1">知识准备</h2>
+<ol>
+<li>对线上各种<code>日志</code>的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等</li>
+<li>对线上的各种<code>配置</code>更要做到心中有数</li>
+<li>对<code>细节</code>的追查，每次都更细一些，这样才能获得更多的信息</li>
+<li>计算机<code>基本功</code>，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查</li>
+</ol>
+<h2 id="总结经验" tabindex="-1">总结经验</h2>
+<ol>
+<li>成熟的方法落地成<code>工具</code></li>
+<li>对问题的追查形成<code>文档</code></li>
+</ol>
+<h1 id="问题解决之后" tabindex="-1">问题解决之后</h1>
+<p>如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。<br>
+那么，我们可以通过思考以下几点来提升自己</p>
+<ol>
+<li>线上是否恢复了正常？（<code>最基本的</code>）</li>
+<li>问题的原因是什么？（<code>落到追查文档</code>）</li>
+<li>通过什么手段恢复的？（<code>解决方案</code>）</li>
+<li>怎么可以避免下次再次出现问题？（<code>防患未然</code>）</li>
+<li>除了此次出现的问题，会不会有其他的问题出现（<code>举一反三</code>）</li>
+<li>出现此类问题是否是架构问题造成的？（<code>根本原因</code>）</li>
+</ol>
 
       
       
@@ -1206,43 +1153,34 @@ Maybe someone has attached this process with gdb.</p>
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#内容">内容</a>
+                    <li><a href="#原则">原则</a>
             
                 <ol>
                     
-                    <li><a href="#auto-cc-conf">修改 auto/cc/conf</a>
+                    <li><a href="#止损优先">止损优先</a>
             		</li>
 
-                    <li><a href="#and-amp-and-amp">编译 & 安装 & 运行</a>
-            
-                <ol>
-                    
-                    <li><a href="#修改配置">修改配置</a>
-            		</li>
-
-                    <li><a href="#nginx">启动 nginx</a>
+                    <li><a href="#及时通告">及时通告</a>
             		</li>
                 </ol>
             		</li>
 
-                    <li><a href="#vscode">配置 vscode 调试</a>
-            		</li>
-                </ol>
-            		</li>
-
-                    <li><a href="#参考">参考</a>
+                    <li><a href="#追查问题的方法">追查问题的方法</a>
             
                 <ol>
                     
-                    <li><a href="#gcc-g">gcc -g 的作用</a>
+                    <li><a href="#逻辑方法:">逻辑方法:</a>
             		</li>
 
-                    <li><a href="#kernel-yama-ptrace-scope">kernel.yama.ptrace_scope</a>
+                    <li><a href="#知识准备">知识准备</a>
             		</li>
 
-                    <li><a href="#sudo-strace">sudo strace 报 操作不被允许</a>
+                    <li><a href="#总结经验">总结经验</a>
             		</li>
                 </ol>
+            		</li>
+
+                    <li><a href="#问题解决之后">问题解决之后</a>
             		</li>
                 </ol>
             </nav>
@@ -1256,7 +1194,8 @@ Maybe someone has attached this process with gdb.</p>
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"></div>
+                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Site Home dy_turbo</a>
+                                                </div></div>
                               </div>
                         
                   

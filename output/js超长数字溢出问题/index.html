@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>vscode 调试nginx代码</title>
+    <title>js超长数字溢出问题</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
@@ -212,7 +212,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/c/nginx/vscode 调试nginx代码/">vscode 调试nginx代码 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/c/nginx/vscode 调试nginx代码/">vscode 调试nginx代码 </a>
                 </div>
             
         </div>
@@ -393,7 +393,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/output/js超长数字溢出问题/">js超长数字溢出问题 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/output/js超长数字溢出问题/">js超长数字溢出问题 </a>
                 </div>
             
         </div>
@@ -847,111 +847,32 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-03-25 19:13:29"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-28T23:57:19.418+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2022-02-26 21:02:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-29T16:16:00.186+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <p><a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></p>
-<h1 id="内容" tabindex="-1">内容</h1>
-<h2 id="auto-cc-conf" tabindex="-1">修改 auto/cc/conf</h2>
-<p>ngx_compile_opt 中添加 -g<br>
-修改后如下：</p>
-<pre><code class="language-shell">ngx_compile_opt=&quot;-c -g&quot;
-</code></pre>
-<p><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/vscode 调试nginx代码/#gcc-g"><a class="tag" onclick="toggleTagSearch(this)" data-content="#gcc">#gcc</a> -g 的作用</a></p>
-<h2 id="and-amp-and-amp" tabindex="-1">编译 &amp; 安装 &amp; 运行</h2>
-<pre><code class="language-shell"># prefix 是想要安装到的目录
-auto/configure --prefix=/home/ubuntu/mydisk/var/nginx-debug-1
-
-# 编译安装
-make
-make install
-</code></pre>
-<h3 id="修改配置" tabindex="-1">修改配置</h3>
-<p><code>vim /home/ubuntu/mydisk/var/nginx-debug-1/conf/nginx.conf</code><br>
-将监听端口号改成 <code>8080</code><br>
-<code>worker_processes</code> 改成 1 (方便调试)</p>
-<h3 id="nginx" tabindex="-1">启动 nginx</h3>
-<p><code>/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx</code></p>
-<p>nginx 的进程：</p>
-<pre><code class="language-shell">ps aux | grep nginx
-ubuntu     17093  0.0  0.0   4184   372 ?        Ss   Mar30   0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
-ubuntu     17094  0.0  0.0   4620  2316 ?        S    Mar30   0:00 nginx: worker process
-ubuntu     46072  0.0  0.0   7692   648 pts/0    S+   11:21   0:00 grep --color=auto nginx
-</code></pre>
-<h2 id="vscode" tabindex="-1">配置 vscode 调试</h2>
-<pre><code class="language-json">{
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
-    &quot;version&quot;: &quot;0.2.0&quot;,
-    &quot;configurations&quot;: [
-        {
-            &quot;name&quot;: &quot;debug master&quot;,
-            &quot;type&quot;: &quot;cppdbg&quot;,
-            &quot;request&quot;: &quot;launch&quot;,
-            &quot;program&quot;: &quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&quot;,
-            &quot;args&quot;: [],
-            &quot;stopAtEntry&quot;: true,
-            &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,
-            &quot;environment&quot;: [],
-            &quot;externalConsole&quot;: false,
-            &quot;MIMode&quot;: &quot;gdb&quot;,
-            &quot;setupCommands&quot;: [
-                {
-                    &quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,
-                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,
-                    &quot;ignoreFailures&quot;: true
-                }
-            ]
-        },
-        {
-            &quot;name&quot;: &quot;debug worker&quot;,
-            &quot;type&quot;: &quot;cppdbg&quot;,
-            &quot;request&quot;: &quot;attach&quot;,
-            &quot;program&quot;: &quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&quot;,
-            &quot;processId&quot;: 17094,
-            &quot;MIMode&quot;: &quot;gdb&quot;,
-            &quot;setupCommands&quot;: [
-                {
-                    &quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,
-                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,
-                    &quot;ignoreFailures&quot;: true
-                }
-            ]
-        }
-    ]
-}
-</code></pre>
-<p>在 worker 上调试需要改成 attach 的形式，并且使用了一次 attach 之后，就不能使用 strace -p 17094 查看系统调用了</p>
-<p>然后就可以打断点，进行单步调试了</p>
-<h1 id="参考" tabindex="-1">参考</h1>
-<p><a href="https://www.jianshu.com/p/51b726b56e2f" target="_blank" class="external-link">Mac上用Visual Studio Code调试Nginx</a></p>
-<h2 id="gcc-g" tabindex="-1">gcc -g 的作用</h2>
-<p><a href="https://www.runoob.com/w3cnote/gcc-parameter-detail.html" target="_blank" class="external-link">GCC 参数详解-runoob</a><br>
-在编译的时候会产生调试信息</p>
-<h2 id="kernel-yama-ptrace-scope" tabindex="-1">kernel.yama.ptrace_scope</h2>
-<p>sysctl -a 查看内核参数<br>
-kernel.yama.ptrace_scope<br>
-<a href="https://www.kernel.org/doc/Documentation/security/Yama.txt" target="_blank" class="external-link">https://www.kernel.org/doc/Documentation/security/Yama.txt</a></p>
-<p>sudo vim /etc/sysctl.d/10-ptrace.conf</p>
-<p><a href="https://blog.csdn.net/yihuajack/article/details/107151801" target="_blank" class="external-link">VSCode调试出现无法打开glibc库的“raise.c“或“abort.c“等文件的错误</a></p>
-<h2 id="sudo-strace" tabindex="-1">sudo strace 报 操作不被允许</h2>
-<p>sudo strace -p 17094</p>
-<pre><code class="language-bash">strace: Could not attach to process. If your uid matches the uid of the target process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try again as the root user. For more details, see /etc/sysctl.d/10-ptrace.conf: Operation not permitted
-strace: attach: ptrace(PTRACE_SEIZE, 17094): Operation not permitted
-</code></pre>
-<p><a href="https://stackoverflow.com/questions/19215177/how-to-solve-ptrace-operation-not-permitted-when-trying-to-attach-gdb-to-a-pro" target="_blank" class="external-link">https://stackoverflow.com/questions/19215177/how-to-solve-ptrace-operation-not-permitted-when-trying-to-attach-gdb-to-a-pro</a><br>
-Maybe someone has attached this process with gdb.</p>
-<ul>
-<li>ps -ef | grep gdb</li>
-</ul>
-<p><strong>can't gdb attach the same process twice.</strong><br>
-将 vscode 中的 调试关掉，就可以使用 strace 了<br>
-如下图，可以看到，子进程停在了 epoll_pwait 系统调用上了<br>
-<img src="/img/user/attachs/Pasted%20image%2020210330203413.png" alt="attachs/Pasted image 20210330203413.png"></p>
+      <p>tags: <a class="tag" onclick="toggleTagSearch(this)" data-content="#js">#js</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#联调">#联调</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#踩坑">#踩坑</a>  <a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></p>
+<p><a href="https://www.cnblogs.com/wudanyang/p/15940613.html" target="_blank" class="external-link">https://www.cnblogs.com/wudanyang/p/15940613.html</a></p>
+<h1 id="现象" tabindex="-1">现象</h1>
+<p>之前遇到过的一个问题<br>
+接口要返回给前端（js）一个比较长的数字：<code>759830849237899244</code></p>
+<p>看了接口返回是没问题的，但是前端拿着数字去取详情的时候，传过来的是另外一个数字：<code>759830849237899300</code></p>
+<p>一比较，看起来是数字被转换了</p>
+<p><code>759830849237899244</code> =&gt; <code>759830849237899300</code></p>
+<p>在前端控制台执行一下：<br>
+<img src="/img/user/attachs/Pasted%20image%2020220226212150.png" alt="Pasted image 20220226212150.png"><br>
+果然被转成了另外一个数字，而且看规律很像是后三位被上取整了</p>
+<h1 id="原理" tabindex="-1">原理</h1>
+<p>后来了解到js会将数字按照下图方式切分后表示数字，以至于最高表示的数字只能到 <code>9007199254740991</code>  比这个数字更大的数字就会发生进位溢出<br>
+<img src="/img/user/attachs/Pasted%20image%2020201109201831.png" alt="Pasted image 20201109201831.png"></p>
+<h1 id="解决方案" tabindex="-1">解决方案</h1>
+<p>解决方案很好办，那就是将数字转成字符串，只要前端不强转成数字，那就不会出问题<br>
+<img src="/img/user/attachs/iShot2022-02-26%2021.46.09.jpg" alt="iShot2022-02-26 21.46.09.jpg"></p>
+<h1 id="参考文档" tabindex="-1">参考文档</h1>
+<p><a href="https://cloud.tencent.com/developer/article/1477816" target="_blank" class="external-link">JSON Bigint 大数精度丢失的背后</a></p>
+<p><a href="https://stackoverflow.com/questions/10631494/json-parse-parses-converts-big-numbers-incorrectly" target="_blank" class="external-link">JSON.parse parses / converts big numbers incorrectly</a></p>
 
       
       
@@ -1206,43 +1127,16 @@ Maybe someone has attached this process with gdb.</p>
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#内容">内容</a>
-            
-                <ol>
-                    
-                    <li><a href="#auto-cc-conf">修改 auto/cc/conf</a>
+                    <li><a href="#现象">现象</a>
             		</li>
 
-                    <li><a href="#and-amp-and-amp">编译 & 安装 & 运行</a>
-            
-                <ol>
-                    
-                    <li><a href="#修改配置">修改配置</a>
+                    <li><a href="#原理">原理</a>
             		</li>
 
-                    <li><a href="#nginx">启动 nginx</a>
-            		</li>
-                </ol>
+                    <li><a href="#解决方案">解决方案</a>
             		</li>
 
-                    <li><a href="#vscode">配置 vscode 调试</a>
-            		</li>
-                </ol>
-            		</li>
-
-                    <li><a href="#参考">参考</a>
-            
-                <ol>
-                    
-                    <li><a href="#gcc-g">gcc -g 的作用</a>
-            		</li>
-
-                    <li><a href="#kernel-yama-ptrace-scope">kernel.yama.ptrace_scope</a>
-            		</li>
-
-                    <li><a href="#sudo-strace">sudo strace 报 操作不被允许</a>
-            		</li>
-                </ol>
+                    <li><a href="#参考文档">参考文档</a>
             		</li>
                 </ol>
             </nav>
@@ -1256,7 +1150,8 @@ Maybe someone has attached this process with gdb.</p>
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"></div>
+                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Site Home dy_turbo</a>
+                                                </div></div>
                               </div>
                         
                   

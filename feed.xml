@@ -3,14 +3,14 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-29T08:18:28Z</updated>
+    <updated>2024-01-29T08:18:33Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
                 文件描述符
                 
             </title>
-            <updated>2024-01-29T08:18:02Z</updated>
+            <updated>2024-01-29T06:34:40.990Z</updated>
             <id>https://wudanyang6.github.io//output/文件描述符/</id>
             <content type="html">
                 &lt;h1 id=&quot;什么是文件描述符&quot; tabindex=&quot;-1&quot;&gt;什么是文件描述符&lt;/h1&gt;
@@ -68,10 +68,100 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
         </entry>
         <entry>
             <title>
+                如何追查线上问题
+                
+            </title>
+            <updated>2024-01-29T08:15:31.921Z</updated>
+            <id>https://wudanyang6.github.io//output/如何追查线上问题/</id>
+            <content type="html">
+                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#开发经验&quot;&gt;#开发经验&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;原则&quot; tabindex=&quot;-1&quot;&gt;原则&lt;/h1&gt;
+&lt;h2 id=&quot;止损优先&quot; tabindex=&quot;-1&quot;&gt;止损优先&lt;/h2&gt;
+&lt;p&gt;不能先追查问题根源， 首先应该&lt;code&gt;止损&lt;/code&gt;，不让问题进一步扩大，&lt;code&gt;代码回滚&lt;/code&gt;、&lt;code&gt;服务降级&lt;/code&gt;等都可以起到止损的效果。&lt;br /&gt;
+对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 &lt;code&gt;配置开关 &lt;/code&gt;控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多&lt;/p&gt;
+&lt;h2 id=&quot;及时通告&quot; tabindex=&quot;-1&quot;&gt;及时通告&lt;/h2&gt;
+&lt;p&gt;在问题发生之后，要及时对处理问题的过程进行&lt;code&gt;通告&lt;/code&gt;。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。&lt;/p&gt;
+&lt;h1 id=&quot;追查问题的方法&quot; tabindex=&quot;-1&quot;&gt;追查问题的方法&lt;/h1&gt;
+&lt;h2 id=&quot;逻辑方法:&quot; tabindex=&quot;-1&quot;&gt;逻辑方法:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;先收集&lt;code&gt;现象&lt;/code&gt;：业务报错、线上报错日志等&lt;br /&gt;
+对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。&lt;/li&gt;
+&lt;li&gt;针对现象假设&lt;code&gt;原因&lt;/code&gt;：
+&lt;ol&gt;
+&lt;li&gt;常见问题依据追查手册&lt;/li&gt;
+&lt;li&gt;其他问题保持思路开放，大胆假设&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;是否&lt;code&gt;有损&lt;/code&gt;的判断：&lt;br /&gt;
+根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 &lt;strong&gt;止损优先&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;质疑&lt;/code&gt;所有数据：&lt;br /&gt;
+各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;知识准备&quot; tabindex=&quot;-1&quot;&gt;知识准备&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;对线上各种&lt;code&gt;日志&lt;/code&gt;的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等&lt;/li&gt;
+&lt;li&gt;对线上的各种&lt;code&gt;配置&lt;/code&gt;更要做到心中有数&lt;/li&gt;
+&lt;li&gt;对&lt;code&gt;细节&lt;/code&gt;的追查，每次都更细一些，这样才能获得更多的信息&lt;/li&gt;
+&lt;li&gt;计算机&lt;code&gt;基本功&lt;/code&gt;，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;总结经验&quot; tabindex=&quot;-1&quot;&gt;总结经验&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;成熟的方法落地成&lt;code&gt;工具&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;对问题的追查形成&lt;code&gt;文档&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;问题解决之后&quot; tabindex=&quot;-1&quot;&gt;问题解决之后&lt;/h1&gt;
+&lt;p&gt;如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。&lt;br /&gt;
+那么，我们可以通过思考以下几点来提升自己&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;线上是否恢复了正常？（&lt;code&gt;最基本的&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;问题的原因是什么？（&lt;code&gt;落到追查文档&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;通过什么手段恢复的？（&lt;code&gt;解决方案&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;怎么可以避免下次再次出现问题？（&lt;code&gt;防患未然&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;除了此次出现的问题，会不会有其他的问题出现（&lt;code&gt;举一反三&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;出现此类问题是否是架构问题造成的？（&lt;code&gt;根本原因&lt;/code&gt;）&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//output/如何追查线上问题/" />
+        </entry>
+        <entry>
+            <title>
+                js超长数字溢出问题
+                
+            </title>
+            <updated>2024-01-29T08:16:00.186Z</updated>
+            <id>https://wudanyang6.github.io//output/js超长数字溢出问题/</id>
+            <content type="html">
+                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#js&quot;&gt;#js&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#联调&quot;&gt;#联调&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#踩坑&quot;&gt;#踩坑&lt;/a&gt;  &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/wudanyang/p/15940613.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.cnblogs.com/wudanyang/p/15940613.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;现象&quot; tabindex=&quot;-1&quot;&gt;现象&lt;/h1&gt;
+&lt;p&gt;之前遇到过的一个问题&lt;br /&gt;
+接口要返回给前端（js）一个比较长的数字：&lt;code&gt;759830849237899244&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;看了接口返回是没问题的，但是前端拿着数字去取详情的时候，传过来的是另外一个数字：&lt;code&gt;759830849237899300&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;一比较，看起来是数字被转换了&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;759830849237899244&lt;/code&gt; =&amp;gt; &lt;code&gt;759830849237899300&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在前端控制台执行一下：&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020220226212150.png&quot; alt=&quot;Pasted image 20220226212150.png&quot; /&gt;&lt;br /&gt;
+果然被转成了另外一个数字，而且看规律很像是后三位被上取整了&lt;/p&gt;
+&lt;h1 id=&quot;原理&quot; tabindex=&quot;-1&quot;&gt;原理&lt;/h1&gt;
+&lt;p&gt;后来了解到js会将数字按照下图方式切分后表示数字，以至于最高表示的数字只能到 &lt;code&gt;9007199254740991&lt;/code&gt;  比这个数字更大的数字就会发生进位溢出&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020201109201831.png&quot; alt=&quot;Pasted image 20201109201831.png&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;解决方案&quot; tabindex=&quot;-1&quot;&gt;解决方案&lt;/h1&gt;
+&lt;p&gt;解决方案很好办，那就是将数字转成字符串，只要前端不强转成数字，那就不会出问题&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/iShot2022-02-26%2021.46.09.jpg&quot; alt=&quot;iShot2022-02-26 21.46.09.jpg&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;参考文档&quot; tabindex=&quot;-1&quot;&gt;参考文档&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://cloud.tencent.com/developer/article/1477816&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JSON Bigint 大数精度丢失的背后&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/10631494/json-parse-parses-converts-big-numbers-incorrectly&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JSON.parse parses / converts big numbers incorrectly&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//output/js超长数字溢出问题/" />
+        </entry>
+        <entry>
+            <title>
                 obsidian-things3-today插件
                 
             </title>
-            <updated>2024-01-29T08:18:02Z</updated>
+            <updated>2024-01-29T06:27:31.704Z</updated>
             <id>https://wudanyang6.github.io//obsidian/obsidian-things3-today插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
@@ -90,7 +180,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 Site Home dy_turbo
                 
             </title>
-            <updated>2024-01-29T08:18:02Z</updated>
+            <updated>2024-01-29T06:44:46.674Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;what-are-you-doing&quot; tabindex=&quot;-1&quot;&gt;What are you doing&lt;/h1&gt;
@@ -118,7 +208,12 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Site Home dy_turbo&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-01-28星期7 22:46&lt;/td&gt;
-&lt;td&gt;2024-01-29星期1 14:38&lt;/td&gt;
+&lt;td&gt;2024-01-29星期1 14:44&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/output/js%E8%B6%85%E9%95%BF%E6%95%B0%E5%AD%97%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/&quot;&gt;js超长数字溢出问题&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2022-02-26星期6 21:06&lt;/td&gt;
+&lt;td&gt;2024-01-29星期1 16:16&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/%E6%A0%91%E8%8E%93%E6%B4%BE/ubuntu%20%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%AF%E5%8A%A8%E6%97%B6%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C/&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;&lt;/td&gt;
@@ -141,9 +236,14 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;td&gt;2024-01-29星期1 14:34&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/&quot;&gt;vscode 调试nginx代码&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021-03-25星期4 19:13&lt;/td&gt;
-&lt;td&gt;2024-01-28星期7 23:57&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/output/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-04-12星期1 11:53&lt;/td&gt;
+&lt;td&gt;2024-01-29星期1 16:15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/linux-man%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/&quot;&gt;linux-man命令使用&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-04-7星期3 17:11&lt;/td&gt;
+&lt;td&gt;2024-01-29星期1 16:17&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -157,7 +257,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 ubuntu 树莓派启动时配置网络
                 
             </title>
-            <updated>2024-01-29T08:18:02Z</updated>
+            <updated>2024-01-29T06:37:29.740Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/</id>
             <content type="html">
                 &lt;h1 id=&quot;code-ubuntu-code&quot; tabindex=&quot;-1&quot;&gt;树莓派 &lt;code&gt;ubuntu&lt;/code&gt; 配置网络&lt;/h1&gt;
@@ -219,6 +319,32 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/" />
+        </entry>
+        <entry>
+            <title>
+                linux-man命令使用
+                
+            </title>
+            <updated>2024-01-29T08:17:40.695Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/linux/linux-man命令使用/</id>
+            <content type="html">
+                &lt;h1 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h1&gt;
+&lt;p&gt;1 - commands（普通的命令）&lt;br /&gt;
+2 - system calls（系统调用）&lt;/p&gt;
+&lt;p&gt;3 - library calls（库函数）&lt;br /&gt;
+4 - special files（特殊文件：/dev下设备文件）&lt;br /&gt;
+5 - file formats and convertions（文件格式）&lt;/p&gt;
+&lt;p&gt;6 - games for linux（游戏和娱乐）&lt;br /&gt;
+7 - macro packages and conventions（杂项）&lt;br /&gt;
+8 - system management commands（管理员命令）&lt;br /&gt;
+9 - 其他（Linux特定， 用来存放内核例行程序的文档）&lt;/p&gt;
+&lt;p&gt;可使用 man man 进入此页面&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/zhang_chou_chou/article/details/83589224&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://blog.csdn.net/zhang_chou_chou/article/details/83589224&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://man7.org/linux/man-pages/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;在线 man 手册&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/linux/linux-man命令使用/" />
         </entry>
         <entry>
             <title>
