@@ -309,6 +309,36 @@
             
         </div>
         
+    
+    
+        <div x-show="isOpen" style="display:none" class="">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('output')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">output</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/output/文件描述符/">文件描述符 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
     </div>
       </nav>
     </div>
@@ -476,7 +506,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T06:29:30.680Z';
+        const searchIndexDate = '2024-01-29T06:29:40.938Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -488,9 +518,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T06:29:30.680Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T06:29:40.938Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T06:29:30.680Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T06:29:40.938Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -776,7 +806,7 @@
 <td>2024-01-29星期1 12:41</td>
 </tr>
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">文件描述符</a></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/output/文件描述符/">文件描述符</a></td>
 <td>2021-04-13星期2 11:24</td>
 <td>2024-01-29星期1 14:28</td>
 </tr>
