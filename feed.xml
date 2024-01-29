@@ -3,7 +3,7 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-01-29T03:18:01Z</updated>
+    <updated>2024-01-29T03:18:03Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -197,7 +197,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 epoll的边缘触发和水平触发
                 
             </title>
-            <updated>2024-01-28T15:33:36.314Z</updated>
+            <updated>2024-01-29T03:17:20.307Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/epoll的边缘触发和水平触发/</id>
             <content type="html">
                 &lt;h1 id=&quot;epoll&quot; tabindex=&quot;-1&quot;&gt;epoll的边缘触发和水平触发&lt;/h1&gt;
@@ -219,7 +219,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;为什么epoll这里要叫做边缘触发和水平触发呢？&lt;/p&gt;
-&lt;p&gt;这源于通信数字信号处理领域的术语，边缘和水平通常用于描述信号的特性&lt;/p&gt;
+&lt;p&gt;这源于通信&lt;strong&gt;数字信号处理领域&lt;/strong&gt;的术语，边缘和水平通常用于描述信号的特性&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;边缘触发（Edge-Triggered）&lt;/strong&gt;：
 &lt;ul&gt;

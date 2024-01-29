@@ -448,7 +448,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T03:18:01.110Z';
+        const searchIndexDate = '2024-01-29T03:18:03.264Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -460,9 +460,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T03:18:01.110Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T03:18:03.264Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T03:18:01.110Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T03:18:03.264Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -701,7 +701,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-28T22:53:39.092+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-28T23:33:36.314+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-28T22:53:39.092+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-29T11:17:20.307+08:00"></span></div></div></div>
       
       
       </header>
@@ -726,7 +726,7 @@
 </li>
 </ol>
 <p>为什么epoll这里要叫做边缘触发和水平触发呢？</p>
-<p>这源于通信数字信号处理领域的术语，边缘和水平通常用于描述信号的特性</p>
+<p>这源于通信<strong>数字信号处理领域</strong>的术语，边缘和水平通常用于描述信号的特性</p>
 <ol>
 <li><strong>边缘触发（Edge-Triggered）</strong>：
 <ul>

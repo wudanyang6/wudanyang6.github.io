@@ -1,7 +1,7 @@
 [
 {
 		"title": "epoll的边缘触发和水平触发",
-		"date":"Mon Jan 29 2024 03:17:46 GMT+0000 (Coordinated Universal Time)",
+		"date":"Mon Jan 29 2024 03:17:49 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/c/nginx/epoll的边缘触发和水平触发/",
 		"content": "epoll的边缘触发和水平触发\nepoll 是 Linux 下用于处理大量文件描述符的高效 I/O 多路复用机制。在 epoll 中，有两种触发模式：水平触发（Level-Triggered，简称 LT）和边缘触发（Edge-Triggered，简称 ET）。\n\n水平触发（LT，Level-Triggered）：\n\n当文件描述符就绪时，epoll_wait 将立即返回。\n如果文件描述符的状态发生变化，epoll_wait 会再次通知应用程序。\n这种模式下，如果文件描述符有数据可读或可写，epoll_wait 将不停地返回通知，直到应用程序处理完数据或者阻塞。\n\n边缘触发（ET，Edge-Triggered）：\n\n当文件描述符就绪时，epoll_wait 只会通知一次，直到应用程序处理完数据并清空了文件描述符的缓冲区。\n如果文件描述符的状态没有变化，epoll_wait 不会重复通知应用程序。\n这种模式下，应用程序需要注意，在一个事件通知之后，要一直读或写，直到发生 EAGAIN 或 EWOULDBLOCK 错误。\n\n为什么epoll这里要叫做边缘触发和水平触发呢？\n这源于通信数字信号处理领域的术语，边缘和水平通常用于描述信号的特性\n\n边缘触发（Edge-Triggered）：\n\n&quot;边缘&quot; 指的是信号的变化边缘，即信号从一个状态变为另一个状态的瞬间。\n在数字信号处理中，边缘通常用来表示信号的上升沿或下降沿，即信号从低电平到高电平或从高电平到低电平的瞬间。\n\n水平触发（Level-Triggered）：\n\n&quot;水平&quot; 指的是信号的水平状态，即信号所处的电平状态。\n在数字信号处理中，水平触发通常用来描述信号保持在某个电平的状态，而不关心信号的变化瞬间。\n\nReference\nhttps://electronics.stackexchange.com/a/21891",
 		"tags": [ "note"]
@@ -9,7 +9,7 @@
 
 {
 		"title": "Nginx 进程模型-整体架构",
-		"date":"Mon Jan 29 2024 03:17:46 GMT+0000 (Coordinated Universal Time)",
+		"date":"Mon Jan 29 2024 03:17:49 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/c/nginx/nginx 进程模型-整体架构/",
 		"content": "nginx 进程模型-整体架构\n\n从网上找了一个非常好的图片，从图中可以看到很多东西\n\nNginx 会生成多个进程\nworker 使用了 io 多路复用的事件驱动框架\nworker 内部有很多模块\nworker 处理磁盘 I/O 时，使用了标准 I/O ， sendfile ， AIO ，mmap 等 I/O 技术\nCache loader 和 Cache manager 操作 proxy cache\n后端支持多种基于 tcp 的网络协议",
 		"tags": [ "note","nginx","Process"]
@@ -17,7 +17,7 @@
 
 {
 		"title": "vscode 调试nginx代码",
-		"date":"Mon Jan 29 2024 03:17:46 GMT+0000 (Coordinated Universal Time)",
+		"date":"Mon Jan 29 2024 03:17:49 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/c/nginx/vscode 调试nginx代码/",
 		"content": "#output\n内容\n修改 auto/cc/conf\nngx_compile_opt 中添加 -g\n修改后如下：\nngx_compile_opt=&quot;-c -g&quot;\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/vscode 调试nginx代码/#gcc-g\">#gcc -g 的作用</a>\n编译 &amp; 安装 &amp; 运行\n# prefix 是想要安装到的目录\nauto/configure --prefix=/home/ubuntu/mydisk/var/nginx-debug-1\n\n# 编译安装\nmake\nmake install\n\n修改配置\nvim /home/ubuntu/mydisk/var/nginx-debug-1/conf/nginx.conf\n将监听端口号改成 8080\nworker_processes 改成 1 (方便调试)\n启动 nginx\n/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx\nnginx 的进程：\nps aux | grep nginx\nubuntu 17093 0.0 0.0 4184 372 ? Ss Mar30 0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx\nubuntu 17094 0.0 0.0 4620 2316 ? S Mar30 0:00 nginx: worker process\nubuntu 46072 0.0 0.0 7692 648 pts/0 S+ 11:21 0:00 grep --color=auto nginx\n\n配置 vscode 调试\n{\n// 使用 IntelliSense 了解相关属性。\n// 悬停以查看现有属性的描述。\n// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387\n&quot;version&quot;: &quot;0.2.0&quot;,\n&quot;configurations&quot;: [\n{\n&quot;name&quot;: &quot;debug master&quot;,\n&quot;type&quot;: &quot;cppdbg&quot;,\n&quot;request&quot;: &quot;launch&quot;,\n&quot;program&quot;: &quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&quot;,\n&quot;args&quot;: [],\n&quot;stopAtEntry&quot;: true,\n&quot;cwd&quot;: &quot;${workspaceFolder}&quot;,\n&quot;environment&quot;: [],\n&quot;externalConsole&quot;: false,\n&quot;MIMode&quot;: &quot;gdb&quot;,\n&quot;setupCommands&quot;: [\n{\n&quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,\n&quot;text&quot;: &quot;-enable-pretty-printing&quot;,\n&quot;ignoreFailures&quot;: true\n}\n]\n},\n{\n&quot;name&quot;: &quot;debug worker&quot;,\n&quot;type&quot;: &quot;cppdbg&quot;,\n&quot;request&quot;: &quot;attach&quot;,\n&quot;program&quot;: &quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&quot;,\n&quot;processId&quot;: 17094,\n&quot;MIMode&quot;: &quot;gdb&quot;,\n&quot;setupCommands&quot;: [\n{\n&quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,\n&quot;text&quot;: &quot;-enable-pretty-printing&quot;,\n&quot;ignoreFailures&quot;: true\n}\n]\n}\n]\n}\n\n在 worker 上调试需要改成 attach 的形式，并且使用了一次 attach 之后，就不能使用 strace -p 17094 查看系统调用了\n然后就可以打断点，进行单步调试了\n参考\nMac上用Visual Studio Code调试Nginx\ngcc -g 的作用\nGCC 参数详解-runoob\n在编译的时候会产生调试信息\nkernel.yama.ptrace_scope\nsysctl -a 查看内核参数\nkernel.yama.ptrace_scope\nhttps://www.kernel.org/doc/Documentation/security/Yama.txt\nsudo vim /etc/sysctl.d/10-ptrace.conf\nVSCode调试出现无法打开glibc库的“raise.c“或“abort.c“等文件的错误\nsudo strace 报 操作不被允许\nsudo strace -p 17094\nstrace: Could not attach to process. If your uid matches the uid of the target process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try again as the root user. For more details, see /etc/sysctl.d/10-ptrace.conf: Operation not permitted\nstrace: attach: ptrace(PTRACE_SEIZE, 17094): Operation not permitted\n\nhttps://stackoverflow.com/questions/19215177/how-to-solve-ptrace-operation-not-permitted-when-trying-to-attach-gdb-to-a-pro\nMaybe someone has attached this process with gdb.\n\nps -ef | grep gdb\n\ncan't gdb attach the same process twice.\n将 vscode 中的 调试关掉，就可以使用 strace 了\n如下图，可以看到，子进程停在了 epoll_pwait 系统调用上了",
 		"tags": ["output", "gcc", "note"]
@@ -25,7 +25,7 @@
 
 {
 		"title": "如何查看 nginx 的rewrite记录",
-		"date":"Mon Jan 29 2024 03:17:46 GMT+0000 (Coordinated Universal Time)",
+		"date":"Mon Jan 29 2024 03:17:49 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/",
 		"content": "如何调试nginx的rewrite规则？\n设置 rewrite_log on;\n并且将error_log 的报错等级改成 notice;\n官网对 rewrite_log 的解释：\nSyntax:\trewrite_log on | off;\nDefault:\t\nrewrite_log off;\nContext:\thttp, server, location, if\nEnables or disables logging of ngx_http_rewrite_module module directives processing results into the error_log at the notice level.\n\n可以看到，这个指令只能在 http server location if 配置指令中使用，日志等级是 notice 写入到 error_log 配置的文件中。\n示例\nurl： /q?someparams\n2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+m/question(.*)?qid=\\d+(.*)?$&quot; does not match ...\n... 中间省略一些日志\n2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+question/(\\w+.*?)$&quot; does not match ...\n2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+q\\?(.*)?tn=nsatom_qb_main(.*)?$&quot; matches ...\n2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+q&quot; matches ...\n2021/04/22 18:21:28 [notice] 18131#0: *102982 rewritten data: &quot;/q/q/q/q/q&quot;\n\n从上面的日志中可以看出，当触发了重写规则时，会有关键字 matches 否则会有 does not match 。\n最终重写完成之后，访问的地址会有标记：rewritten data\n这里就是 /q/q/q/q/q\n参考\nbest way to debug nginx rewrite rules in config file?\nnginx官方文档：Module ngx_http_rewrite_module",
 		"tags": [ "note"]
@@ -33,7 +33,7 @@
 
 {
 		"title": "My Garden",
-		"date":"Mon Jan 29 2024 03:17:46 GMT+0000 (Coordinated Universal Time)",
+		"date":"Mon Jan 29 2024 03:17:49 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "My Garden\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/epoll的边缘触发和水平触发/\">../100 Programmer/c/nginx/epoll的边缘触发和水平触发</a>\nReference",
 		"tags": [ "note","gardenEntry"]
