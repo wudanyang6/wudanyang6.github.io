@@ -643,7 +643,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T15:23:25.378Z';
+        const searchIndexDate = '2024-01-29T15:37:07.337Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -655,9 +655,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T15:23:25.378Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T15:37:07.337Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T15:23:25.378Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T15:37:07.337Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -938,6 +938,11 @@
 <td>2024-01-29星期1 23:22</td>
 </tr>
 <tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">GTD</a></td>
+<td>2022-05-5星期4 13:26</td>
+<td>2024-01-29星期1 23:36</td>
+</tr>
+<tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/output/js超长数字溢出问题/">js超长数字溢出问题</a></td>
 <td>2022-02-26星期6 21:06</td>
 <td>2024-01-29星期1 16:16</td>
@@ -961,11 +966,6 @@
 <td><a class="internal-link" target="" data-note-icon="" href="/output/文件描述符/">文件描述符</a></td>
 <td>2021-04-13星期2 11:24</td>
 <td>2024-01-29星期1 14:34</td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/output/如何追查线上问题/">如何追查线上问题</a></td>
-<td>2021-04-12星期1 11:53</td>
-<td>2024-01-29星期1 16:15</td>
 </tr>
 </tbody>
 </table></div>
