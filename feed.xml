@@ -3,18 +3,55 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-01-29T03:26:01Z</updated>
+    <updated>2024-01-29T03:42:13Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
                 Site Home
                 
             </title>
-            <updated>2024-01-29T03:25:47Z</updated>
+            <updated>2024-01-29T03:41:59Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;what-are-you-doing&quot; tabindex=&quot;-1&quot;&gt;What are you doing&lt;/h1&gt;
 &lt;p&gt;千里之行，始于足下&lt;/p&gt;
+&lt;h2 id=&quot;list&quot; tabindex=&quot;-1&quot;&gt;List&lt;/h2&gt;
+&lt;table class=&quot;block-language-dataview&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;File&lt;/th&gt;
+&lt;th&gt;Created&lt;/th&gt;
+&lt;th&gt;Modified&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-01-28星期7 22:53&lt;/td&gt;
+&lt;td&gt;2024-01-29星期1 11:21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Site Home&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-01-28星期7 22:46&lt;/td&gt;
+&lt;td&gt;2024-01-29星期1 11:41&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-04-22星期4 18:14&lt;/td&gt;
+&lt;td&gt;2024-01-28星期7 23:38&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/nginx%20%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-04-14星期3 13:14&lt;/td&gt;
+&lt;td&gt;2024-01-28星期7 23:39&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/&quot;&gt;vscode 调试nginx代码&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-03-25星期4 19:13&lt;/td&gt;
+&lt;td&gt;2024-01-28星期7 23:57&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//" >
@@ -24,7 +61,7 @@
                 如何查看 nginx 的rewrite记录
                 
             </title>
-            <updated>2024-01-29T03:25:47Z</updated>
+            <updated>2024-01-29T03:41:59Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx-rewrite&quot; tabindex=&quot;-1&quot;&gt;如何调试nginx的rewrite规则？&lt;/h1&gt;
@@ -62,7 +99,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 vscode 调试nginx代码
                 
             </title>
-            <updated>2024-01-29T03:25:47Z</updated>
+            <updated>2024-01-29T03:41:59Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/vscode 调试nginx代码/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
@@ -173,7 +210,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 nginx 进程模型-整体架构
                 
             </title>
-            <updated>2024-01-29T03:25:47Z</updated>
+            <updated>2024-01-29T03:41:59Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/nginx 进程模型-整体架构/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型-整体架构&lt;/h1&gt;
@@ -196,7 +233,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 epoll的边缘触发和水平触发
                 
             </title>
-            <updated>2024-01-29T03:25:47Z</updated>
+            <updated>2024-01-29T03:41:59Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/epoll的边缘触发和水平触发/</id>
             <content type="html">
                 &lt;h1 id=&quot;epoll&quot; tabindex=&quot;-1&quot;&gt;epoll的边缘触发和水平触发&lt;/h1&gt;
