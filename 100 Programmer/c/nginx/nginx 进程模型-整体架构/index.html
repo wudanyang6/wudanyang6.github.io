@@ -269,7 +269,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Site Home </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Site Home dy_turbo </a>
                 </div>
             
         </div>
@@ -448,7 +448,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T05:14:57.264Z';
+        const searchIndexDate = '2024-01-29T05:16:35.532Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -460,9 +460,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T05:14:57.264Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T05:16:35.532Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T05:14:57.264Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T05:16:35.532Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -720,23 +720,7 @@
       
       
       <h1 id="nginx" tabindex="-1">nginx 进程模型-整体架构</h1>
-<p><picture src="/img/user/100%20Programmer/c/nginx/713751-20221106220927618-2090658482.png" alt="713751-20221106220927618-2090658482.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/LNI6sR4dfk-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/LNI6sR4dfk-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/LNI6sR4dfk-700.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/LNI6sR4dfk-700.jpeg"
-        ><img       class=""
-      src="/img/user/100%20Programmer/c/nginx/713751-20221106220927618-2090658482.png"
-      alt="713751-20221106220927618-2090658482.png"
-      width=""
-      ></picture></p>
+<p>![713751-20221106220927618-2090658482.png](/img/user/100 Programmer/c/nginx/713751-20221106220927618-2090658482.png)</p>
 <p>从网上找了一个非常好的图片，从图中可以看到很多东西</p>
 <ol>
 <li><code>Nginx</code> 会生成多个进程</li>
@@ -1000,7 +984,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Site Home</a>
+                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Site Home dy_turbo</a>
                                                 </div></div>
                               </div>
                         
