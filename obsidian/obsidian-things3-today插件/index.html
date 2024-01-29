@@ -561,7 +561,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T06:44:22.381Z';
+        const searchIndexDate = '2024-01-29T07:02:42.638Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -573,9 +573,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T06:44:22.381Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T07:02:42.638Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T06:44:22.381Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T07:02:42.638Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1141,7 +1141,7 @@
     </script>
     <script src=" https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js "></script>
 <script defer>
-    TIMESTAMP_FORMAT = "YYYY-MM-DD-E";
+    TIMESTAMP_FORMAT = "yyyy-MM-dd-c";
     document.querySelectorAll('.human-date').forEach(function (el) {
         el.innerHTML = luxon.DateTime.fromISO(el.getAttribute('data-date') || el.innerText).toFormat(TIMESTAMP_FORMAT);
       });

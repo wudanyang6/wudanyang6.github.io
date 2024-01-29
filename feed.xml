@@ -3,14 +3,14 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-29T06:44:22Z</updated>
+    <updated>2024-01-29T07:02:42Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
                 文件描述符
                 
             </title>
-            <updated>2024-01-29T06:44:04Z</updated>
+            <updated>2024-01-29T07:02:28Z</updated>
             <id>https://wudanyang6.github.io//output/文件描述符/</id>
             <content type="html">
                 &lt;h1 id=&quot;什么是文件描述符&quot; tabindex=&quot;-1&quot;&gt;什么是文件描述符&lt;/h1&gt;
@@ -71,7 +71,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 obsidian-things3-today插件
                 
             </title>
-            <updated>2024-01-29T06:44:04Z</updated>
+            <updated>2024-01-29T07:02:28Z</updated>
             <id>https://wudanyang6.github.io//obsidian/obsidian-things3-today插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
@@ -90,7 +90,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 Site Home dy_turbo
                 
             </title>
-            <updated>2024-01-29T06:44:04Z</updated>
+            <updated>2024-01-29T07:02:28Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;what-are-you-doing&quot; tabindex=&quot;-1&quot;&gt;What are you doing&lt;/h1&gt;
@@ -157,7 +157,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 ubuntu 树莓派启动时配置网络
                 
             </title>
-            <updated>2024-01-29T06:44:04Z</updated>
+            <updated>2024-01-29T07:02:28Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/</id>
             <content type="html">
                 &lt;h1 id=&quot;code-ubuntu-code&quot; tabindex=&quot;-1&quot;&gt;树莓派 &lt;code&gt;ubuntu&lt;/code&gt; 配置网络&lt;/h1&gt;
@@ -225,7 +225,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 如何查看 nginx 的rewrite记录
                 
             </title>
-            <updated>2024-01-29T06:44:04Z</updated>
+            <updated>2024-01-29T07:02:28Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx-rewrite&quot; tabindex=&quot;-1&quot;&gt;如何调试nginx的rewrite规则？&lt;/h1&gt;
@@ -263,7 +263,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 vscode 调试nginx代码
                 
             </title>
-            <updated>2024-01-29T06:44:04Z</updated>
+            <updated>2024-01-29T07:02:28Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/vscode 调试nginx代码/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
@@ -374,7 +374,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 nginx 进程模型-整体架构
                 
             </title>
-            <updated>2024-01-29T06:44:04Z</updated>
+            <updated>2024-01-29T07:02:28Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/nginx 进程模型-整体架构/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型-整体架构&lt;/h1&gt;
@@ -397,7 +397,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 epoll的边缘触发和水平触发
                 
             </title>
-            <updated>2024-01-29T06:44:04Z</updated>
+            <updated>2024-01-29T07:02:28Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/epoll的边缘触发和水平触发/</id>
             <content type="html">
                 &lt;h1 id=&quot;epoll&quot; tabindex=&quot;-1&quot;&gt;epoll的边缘触发和水平触发&lt;/h1&gt;
