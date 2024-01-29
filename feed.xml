@@ -3,7 +3,7 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-29T15:23:08Z</updated>
+    <updated>2024-01-29T15:23:20Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -211,7 +211,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;td&gt;2024-01-29星期1 14:44&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/%E5%85%B7%E4%BD%93%E9%A2%98%E7%9B%AE/leetcode-1137.%20%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137. 第 N 个泰波那契数&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/%E5%85%B7%E4%BD%93%E9%A2%98%E7%9B%AE/leetcode-1137%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137第 N 个泰波那契数&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2023-02-26星期7 18:03&lt;/td&gt;
 &lt;td&gt;2024-01-29星期1 23:22&lt;/td&gt;
 &lt;/tr&gt;
@@ -251,6 +251,44 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;iframe width=&quot;100%&quot; height=&quot;1000px&quot; src=&quot;https://music.163.com/playlist?id=13022777&amp;userid=16553655&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;
             </content>
             <link href="https://wudanyang6.github.io//" />
+        </entry>
+        <entry>
+            <title>
+                leetcode-1137第 N 个泰波那契数
+                
+            </title>
+            <updated>2024-01-29T15:22:37.082Z</updated>
+            <id>https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/</id>
+            <content type="html">
+                &lt;h1 id=&quot;题目&quot; tabindex=&quot;-1&quot;&gt;题目&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/n-th-tribonacci-number/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;1137. 第 N 个泰波那契数&lt;/a&gt;&lt;br /&gt;
+这个跟斐波那契好像是一样的，一模一样&lt;/p&gt;
+&lt;h1 id=&quot;解法&quot; tabindex=&quot;-1&quot;&gt;解法&lt;/h1&gt;
+&lt;p&gt;跟斐波纳契数列一样的解法&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class Solution {
+
+    /**
+     * @param Integer $n
+     * @return Integer
+     */
+    function tribonacci($n) {
+        if ($n &amp;lt;= 0) {
+            return 0;
+        }
+        
+        $retArr = [0,1,1];
+        for ($i = 3; $i &amp;lt;= $n; $i++) {
+            $retArr[$i] = $retArr[$i-1] + $retArr[$i-2] + $retArr[$i-3];
+        }
+
+        return $retArr[$n];
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/" />
         </entry>
         <entry>
             <title>
