@@ -3,7 +3,7 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-29T15:23:20Z</updated>
+    <updated>2024-01-29T15:23:25Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -289,44 +289,6 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/" />
-        </entry>
-        <entry>
-            <title>
-                leetcode-1137. 第 N 个泰波那契数
-                
-            </title>
-            <updated>2024-01-29T15:22:37.082Z</updated>
-            <id>https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-1137. 第 N 个泰波那契数/</id>
-            <content type="html">
-                &lt;h1 id=&quot;题目&quot; tabindex=&quot;-1&quot;&gt;题目&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/n-th-tribonacci-number/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;1137. 第 N 个泰波那契数&lt;/a&gt;&lt;br /&gt;
-这个跟斐波那契好像是一样的，一模一样&lt;/p&gt;
-&lt;h1 id=&quot;解法&quot; tabindex=&quot;-1&quot;&gt;解法&lt;/h1&gt;
-&lt;p&gt;跟斐波纳契数列一样的解法&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class Solution {
-
-    /**
-     * @param Integer $n
-     * @return Integer
-     */
-    function tribonacci($n) {
-        if ($n &amp;lt;= 0) {
-            return 0;
-        }
-        
-        $retArr = [0,1,1];
-        for ($i = 3; $i &amp;lt;= $n; $i++) {
-            $retArr[$i] = $retArr[$i-1] + $retArr[$i-2] + $retArr[$i-3];
-        }
-
-        return $retArr[$n];
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-1137. 第 N 个泰波那契数/" />
         </entry>
         <entry>
             <title>
