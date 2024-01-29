@@ -3,14 +3,33 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-01-29T06:28:09Z</updated>
+    <updated>2024-01-29T06:28:15Z</updated>
     <id>https://wudanyang6.github.io/</id>
+        <entry>
+            <title>
+                obsidian-things3-today插件
+                
+            </title>
+            <updated>2024-01-29T06:28:01Z</updated>
+            <id>https://wudanyang6.github.io//obsidian/obsidian-things3-today插件/</id>
+            <content type="html">
+                &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
+&lt;p&gt;把之前的插件重新搞了搞，把乱七八糟的东西去掉了，然后提交了obsidian插件库&lt;/p&gt;
+&lt;p&gt;正在等着被review： &lt;a href=&quot;https://github.com/obsidianmd/obsidian-releases/pull/2997&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/obsidianmd/obsidian-releases/pull/2997&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;新录了一个gif：&lt;/p&gt;
+&lt;p&gt;图中可以看到和things3的Today列表联动还算是顺畅&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/things3-today-showcase.gif&quot; alt=&quot;things3-today-showcase.gif&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//obsidian/obsidian-things3-today插件/" >
+        </entry>
         <entry>
             <title>
                 Site Home dy_turbo
                 
             </title>
-            <updated>2024-01-29T06:27:56Z</updated>
+            <updated>2024-01-29T06:28:01Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;what-are-you-doing&quot; tabindex=&quot;-1&quot;&gt;What are you doing&lt;/h1&gt;
@@ -26,7 +45,7 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/obsidian/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-01-29星期1 14:23&lt;/td&gt;
 &lt;td&gt;2024-01-29星期1 14:27&lt;/td&gt;
 &lt;/tr&gt;
@@ -66,7 +85,7 @@
                 如何查看 nginx 的rewrite记录
                 
             </title>
-            <updated>2024-01-29T06:27:56Z</updated>
+            <updated>2024-01-29T06:28:01Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx-rewrite&quot; tabindex=&quot;-1&quot;&gt;如何调试nginx的rewrite规则？&lt;/h1&gt;
@@ -104,7 +123,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 vscode 调试nginx代码
                 
             </title>
-            <updated>2024-01-29T06:27:56Z</updated>
+            <updated>2024-01-29T06:28:01Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/vscode 调试nginx代码/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
@@ -215,7 +234,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 nginx 进程模型-整体架构
                 
             </title>
-            <updated>2024-01-29T06:27:56Z</updated>
+            <updated>2024-01-29T06:28:01Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/nginx 进程模型-整体架构/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型-整体架构&lt;/h1&gt;
@@ -238,7 +257,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 epoll的边缘触发和水平触发
                 
             </title>
-            <updated>2024-01-29T06:27:56Z</updated>
+            <updated>2024-01-29T06:28:01Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/epoll的边缘触发和水平触发/</id>
             <content type="html">
                 &lt;h1 id=&quot;epoll&quot; tabindex=&quot;-1&quot;&gt;epoll的边缘触发和水平触发&lt;/h1&gt;
