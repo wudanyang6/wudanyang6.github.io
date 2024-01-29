@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>Site Home</title>
+    <title>My Garden</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
@@ -268,7 +268,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Site Home </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">My Garden </a>
                 </div>
             
         </div>
@@ -446,7 +446,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T03:22:44.364Z';
+        const searchIndexDate = '2024-01-29T03:22:49.759Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -458,9 +458,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T03:22:44.364Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T03:22:49.759Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T03:22:44.364Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T03:22:49.759Z', docs}));
             window.docs = docs
             window.index = index;
         }
