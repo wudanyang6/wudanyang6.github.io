@@ -63,7 +63,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.eef6c1bc.css" rel="stylesheet">
+    <link href="/styles/_theme.51255e18.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet">
@@ -448,7 +448,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-29T04:32:44.397Z';
+        const searchIndexDate = '2024-01-29T05:14:57.264Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -460,9 +460,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T04:32:44.397Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-29T05:14:57.264Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T04:32:44.397Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-29T05:14:57.264Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1233,4 +1233,19 @@ lucide.createIcons({
         });
 </script>
   </body>
+<script src="https://giscus.app/client.js"
+        data-repo="wudanyang6/wudanyang6.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOFTtyT84CYlu-"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async></script>
 </html>
