@@ -3,7 +3,7 @@
     <title>dy turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-30T02:45:09Z</updated>
+    <updated>2024-01-30T02:45:10Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -247,7 +247,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;td&gt;2024-01-29星期1 23:36&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;js超长数字溢出问题&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/%E8%B8%A9%E5%9D%91/js%E8%B6%85%E9%95%BF%E6%95%B0%E5%AD%97%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/&quot;&gt;js超长数字溢出问题&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2022-02-26星期6 21:06&lt;/td&gt;
 &lt;td&gt;2024-01-29星期1 16:16&lt;/td&gt;
 &lt;/tr&gt;
@@ -330,6 +330,38 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/" />
+        </entry>
+        <entry>
+            <title>
+                js超长数字溢出问题
+                
+            </title>
+            <updated>2024-01-29T08:16:00.186Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/踩坑/js超长数字溢出问题/</id>
+            <content type="html">
+                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#js&quot;&gt;#js&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#联调&quot;&gt;#联调&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#踩坑&quot;&gt;#踩坑&lt;/a&gt;  &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/wudanyang/p/15940613.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.cnblogs.com/wudanyang/p/15940613.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;现象&quot; tabindex=&quot;-1&quot;&gt;现象&lt;/h1&gt;
+&lt;p&gt;之前遇到过的一个问题&lt;br /&gt;
+接口要返回给前端（js）一个比较长的数字：&lt;code&gt;759830849237899244&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;看了接口返回是没问题的，但是前端拿着数字去取详情的时候，传过来的是另外一个数字：&lt;code&gt;759830849237899300&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;一比较，看起来是数字被转换了&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;759830849237899244&lt;/code&gt; =&amp;gt; &lt;code&gt;759830849237899300&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在前端控制台执行一下：&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020220226212150.png&quot; alt=&quot;Pasted image 20220226212150.png&quot; /&gt;&lt;br /&gt;
+果然被转成了另外一个数字，而且看规律很像是后三位被上取整了&lt;/p&gt;
+&lt;h1 id=&quot;原理&quot; tabindex=&quot;-1&quot;&gt;原理&lt;/h1&gt;
+&lt;p&gt;后来了解到js会将数字按照下图方式切分后表示数字，以至于最高表示的数字只能到 &lt;code&gt;9007199254740991&lt;/code&gt;  比这个数字更大的数字就会发生进位溢出&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020201109201831.png&quot; alt=&quot;Pasted image 20201109201831.png&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;解决方案&quot; tabindex=&quot;-1&quot;&gt;解决方案&lt;/h1&gt;
+&lt;p&gt;解决方案很好办，那就是将数字转成字符串，只要前端不强转成数字，那就不会出问题&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/iShot2022-02-26%2021.46.09.jpg&quot; alt=&quot;iShot2022-02-26 21.46.09.jpg&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;参考文档&quot; tabindex=&quot;-1&quot;&gt;参考文档&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://cloud.tencent.com/developer/article/1477816&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JSON Bigint 大数精度丢失的背后&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/10631494/json-parse-parses-converts-big-numbers-incorrectly&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JSON.parse parses / converts big numbers incorrectly&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/踩坑/js超长数字溢出问题/" />
         </entry>
         <entry>
             <title>

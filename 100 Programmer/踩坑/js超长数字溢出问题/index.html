@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>文件描述符</title>
+    <title>js超长数字溢出问题</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
@@ -329,7 +329,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/踩坑/js超长数字溢出问题/">js超长数字溢出问题 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/踩坑/js超长数字溢出问题/">js超长数字溢出问题 </a>
                 </div>
             
         </div>
@@ -519,7 +519,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/output/文件描述符/">文件描述符 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/output/文件描述符/">文件描述符 </a>
                 </div>
             
         </div>
@@ -959,80 +959,33 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #文件
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #OS
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #linux
-                  </a>
-                
-              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-29T14:34:40.990+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-29T16:16:00.186+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="什么是文件描述符" tabindex="-1">什么是文件描述符</h1>
-<p>对于内核而言，所有打开的文件都通过<code>文件描述符（file descriptor）</code>引用。通常也写作 <code>fd</code>。</p>
-<p><code>文件描述符</code>是一个非负整数。</p>
-<p>当打开一个现有文件或者创建一个新文件时，内核向进程返回一个<code>文件描述符</code>。</p>
-<p><code>文件描述符</code>是跟<code>进程</code>相关联的。</p>
-<p>按照惯例，<code>UNIX</code> 系统将 <code>fd 0</code> 对应进程的标准输入， <code>fd 1</code> 对应进程的标准输出， <code>fd 2</code> 对应进程的标准错误。</p>
-<h1 id="系统调用中的文件描述符" tabindex="-1">系统调用中的文件描述符</h1>
-<p><code>UNIX</code> 系统中，一切皆文件，所以一切资源都可以使用文件描述符进程引用。</p>
-<p>以 <code>open</code> 系统调用为例</p>
-<p>使用 <code>man 2 open</code> 查看系统 <code>man</code> 手册</p>
-<pre><code class="language-man">NAME
-     open, openat -- open or create a file for reading or writing
-
-SYNOPSIS
-     <a class="tag" onclick="toggleTagSearch(this)" data-content="#include">#include</a> &lt;fcntl.h&gt;
-
-     int
-     open(const char *path, int oflag, ...);
-
-     int
-     openat(int fd, const char *path, int oflag, ...);
-
-DESCRIPTION
-     The file name specified by path is opened for reading and/or writing,
-     as specified by the argument oflag; the file descriptor is returned to
-     the calling process.
-</code></pre>
-<p>在简介中有一段话：<code>the file descriptor is returned to the calling process.</code></p>
-<p>使用 <code>c</code> 语言打开一个 文件</p>
-<pre><code class="language-c"><a class="tag" onclick="toggleTagSearch(this)" data-content="#include">#include</a> &lt;stdio.h&gt;
-<a class="tag" onclick="toggleTagSearch(this)" data-content="#include">#include</a> &lt;fcntl.h&gt;
-<a class="tag" onclick="toggleTagSearch(this)" data-content="#include">#include</a> &lt;unistd.h&gt;
-
-int main() {
-	int fd;
-	fd = open(&quot;tmp.txt&quot;, O_RDONLY);
-	printf(&quot;%d&quot;, fd);
-	sleep(10);
-}
-</code></pre>
-<p>会发现，在进程运行时 <code>fd</code> 目录下，会出现一个描述符 3 指向了 打开的文件</p>
-<pre><code class="language-sh">$ ll /proc/$(ps aux | grep a.out | grep -v grep | awk '{print $2}')/fd
-total 0
-lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 0 -&gt; /dev/pts/4
-lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 1 -&gt; /dev/pts/4
-lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 2 -&gt; /dev/pts/4
-lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&gt; /home/ubuntu/mydisk/yangblog/codes/file/tmp.txt
-</code></pre>
-<p>我们可以把这个文件描述符当做参数传递给 <code>read</code> 或者 <code>write</code> 等等系统调用。</p>
+      <p>tags: <a class="tag" onclick="toggleTagSearch(this)" data-content="#js">#js</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#联调">#联调</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#踩坑">#踩坑</a>  <a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></p>
+<p><a href="https://www.cnblogs.com/wudanyang/p/15940613.html" target="_blank" class="external-link">https://www.cnblogs.com/wudanyang/p/15940613.html</a></p>
+<h1 id="现象" tabindex="-1">现象</h1>
+<p>之前遇到过的一个问题<br>
+接口要返回给前端（js）一个比较长的数字：<code>759830849237899244</code></p>
+<p>看了接口返回是没问题的，但是前端拿着数字去取详情的时候，传过来的是另外一个数字：<code>759830849237899300</code></p>
+<p>一比较，看起来是数字被转换了</p>
+<p><code>759830849237899244</code> =&gt; <code>759830849237899300</code></p>
+<p>在前端控制台执行一下：<br>
+<img src="/img/user/attachs/Pasted%20image%2020220226212150.png" alt="Pasted image 20220226212150.png"><br>
+果然被转成了另外一个数字，而且看规律很像是后三位被上取整了</p>
+<h1 id="原理" tabindex="-1">原理</h1>
+<p>后来了解到js会将数字按照下图方式切分后表示数字，以至于最高表示的数字只能到 <code>9007199254740991</code>  比这个数字更大的数字就会发生进位溢出<br>
+<img src="/img/user/attachs/Pasted%20image%2020201109201831.png" alt="Pasted image 20201109201831.png"></p>
+<h1 id="解决方案" tabindex="-1">解决方案</h1>
+<p>解决方案很好办，那就是将数字转成字符串，只要前端不强转成数字，那就不会出问题<br>
+<img src="/img/user/attachs/iShot2022-02-26%2021.46.09.jpg" alt="iShot2022-02-26 21.46.09.jpg"></p>
+<h1 id="参考文档" tabindex="-1">参考文档</h1>
+<p><a href="https://cloud.tencent.com/developer/article/1477816" target="_blank" class="external-link">JSON Bigint 大数精度丢失的背后</a></p>
+<p><a href="https://stackoverflow.com/questions/10631494/json-parse-parses-converts-big-numbers-incorrectly" target="_blank" class="external-link">JSON.parse parses / converts big numbers incorrectly</a></p>
 
       
       
@@ -1287,10 +1240,16 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&gt; /home/ubuntu/mydisk/yangblog/
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#什么是文件描述符">什么是文件描述符</a>
+                    <li><a href="#现象">现象</a>
             		</li>
 
-                    <li><a href="#系统调用中的文件描述符">系统调用中的文件描述符</a>
+                    <li><a href="#原理">原理</a>
+            		</li>
+
+                    <li><a href="#解决方案">解决方案</a>
+            		</li>
+
+                    <li><a href="#参考文档">参考文档</a>
             		</li>
                 </ol>
             </nav>
