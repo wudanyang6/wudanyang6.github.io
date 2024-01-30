@@ -694,7 +694,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-30T05:09:34.755Z';
+        const searchIndexDate = '2024-01-30T05:09:37.906Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -706,9 +706,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-30T05:09:34.755Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-30T05:09:37.906Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-30T05:09:34.755Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-30T05:09:37.906Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -984,7 +984,7 @@
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/">Home dy_turbo</a></td>
 <td>2024-01-28星期7 22:46</td>
-<td>2024-01-30星期2 10:39</td>
+<td>2024-01-30星期2 13:08</td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数</a></td>
@@ -1038,8 +1038,13 @@
 </tr>
 </tbody>
 </table></div>
+<h2 id="leetcode" tabindex="-1">leetcode</h2>
+<p><a href="https://leetcode.cn/u/wudanyang/" target="_blank" class="external-link">leetcode 个人主页</a></p>
+<h2 id="github" tabindex="-1">github</h2>
+<p><a href="https://github.com/wudanyang6" target="_blank" class="external-link">github 个人主页</a></p>
 <h2 id="music" tabindex="-1">music</h2>
-<iframe width="100%" height="1000px" src="https://music.163.com/playlist?id=13022777&userid=16553655" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe width="100%" height="650px" src="https://music.163.com/playlist?id=13022777&userid=16553655" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false"> </iframe>
+
       
       
     </main>
@@ -1287,6 +1292,12 @@
             		</li>
 
                     <li><a href="#list">List</a>
+            		</li>
+
+                    <li><a href="#leetcode">leetcode</a>
+            		</li>
+
+                    <li><a href="#github">github</a>
             		</li>
 
                     <li><a href="#music">music</a>
