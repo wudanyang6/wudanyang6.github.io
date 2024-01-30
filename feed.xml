@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-30T05:09:45Z</updated>
+    <updated>2024-01-30T05:29:45Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -170,15 +170,37 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
         </entry>
         <entry>
             <title>
+                About Me
+                
+            </title>
+            <updated>2024-01-30T05:29:12.761Z</updated>
+            <id>https://wudanyang6.github.io//card/About Me/</id>
+            <content type="html">
+                &lt;h1 id=&quot;about-me&quot; tabindex=&quot;-1&quot;&gt;About Me&lt;/h1&gt;
+&lt;p&gt;千里之行，始于足下&lt;/p&gt;
+&lt;h2 id=&quot;leetcode&quot; tabindex=&quot;-1&quot;&gt;leetcode&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/u/wudanyang/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;leetcode 个人主页&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;github&quot; tabindex=&quot;-1&quot;&gt;github&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/wudanyang6&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;github 个人主页&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;music&quot; tabindex=&quot;-1&quot;&gt;music&lt;/h2&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;650px&quot; src=&quot;https://music.163.com/playlist?id=13022777&amp;userid=16553655&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;false&quot;&gt; &lt;/iframe&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/About Me/" />
+        </entry>
+        <entry>
+            <title>
                 Home dy_turbo
                 
             </title>
-            <updated>2024-01-30T05:08:36.820Z</updated>
+            <updated>2024-01-30T05:27:52.537Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;home-dy-turbo&quot; tabindex=&quot;-1&quot;&gt;Home dy_turbo&lt;/h1&gt;
 &lt;h2 id=&quot;what-are-you-doing&quot; tabindex=&quot;-1&quot;&gt;What are you doing&lt;/h2&gt;
 &lt;p&gt;千里之行，始于足下&lt;/p&gt;
+&lt;h2 id=&quot;about-me&quot; tabindex=&quot;-1&quot;&gt;About Me&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;list&quot; tabindex=&quot;-1&quot;&gt;List&lt;/h2&gt;
 &lt;table class=&quot;block-language-dataview&quot;&gt;
 &lt;thead&gt;
@@ -189,6 +211,11 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-01-30星期2 13:27&lt;/td&gt;
+&lt;td&gt;2024-01-30星期2 13:29&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/obsidian/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-01-29星期1 14:23&lt;/td&gt;
@@ -202,7 +229,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Home dy_turbo&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-01-28星期7 22:46&lt;/td&gt;
-&lt;td&gt;2024-01-30星期2 13:08&lt;/td&gt;
+&lt;td&gt;2024-01-30星期2 13:27&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/%E5%85%B7%E4%BD%93%E9%A2%98%E7%9B%AE/leetcode-1137%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137第 N 个泰波那契数&lt;/a&gt;&lt;/td&gt;
@@ -256,12 +283,6 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&quot;leetcode&quot; tabindex=&quot;-1&quot;&gt;leetcode&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/u/wudanyang/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;leetcode 个人主页&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;github&quot; tabindex=&quot;-1&quot;&gt;github&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/wudanyang6&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;github 个人主页&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;music&quot; tabindex=&quot;-1&quot;&gt;music&lt;/h2&gt;
-&lt;iframe width=&quot;100%&quot; height=&quot;650px&quot; src=&quot;https://music.163.com/playlist?id=13022777&amp;userid=16553655&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;false&quot;&gt; &lt;/iframe&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//" />

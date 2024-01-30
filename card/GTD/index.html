@@ -437,6 +437,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/About Me/">About Me </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/GTD/">GTD </a>
                 </div>
             
@@ -696,7 +707,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-30T05:09:45.629Z';
+        const searchIndexDate = '2024-01-30T05:29:44.916Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -708,9 +719,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-30T05:09:45.629Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-30T05:29:44.916Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-30T05:09:45.629Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-30T05:29:44.916Z', docs}));
             window.docs = docs
             window.index = index;
         }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>js超长数字溢出问题</title>
+    <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
@@ -329,7 +329,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/踩坑/js超长数字溢出问题/">js超长数字溢出问题 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/踩坑/js超长数字溢出问题/">js超长数字溢出问题 </a>
                 </div>
             
         </div>
@@ -437,7 +437,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/About Me/">About Me </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/About Me/">About Me </a>
                 </div>
             
         </div>
@@ -953,7 +953,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">js超长数字溢出问题</h1>
+          <h1 data-note-icon="">About Me</h1>
         
         <div class="header-meta">
           
@@ -962,32 +962,20 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2022-02-26T21:06:13.932+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-29T16:16:00.186+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-30T13:27:39.113+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-30T13:29:12.761+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <p>tags: <a class="tag" onclick="toggleTagSearch(this)" data-content="#js">#js</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#联调">#联调</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#踩坑">#踩坑</a>  <a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></p>
-<p><a href="https://www.cnblogs.com/wudanyang/p/15940613.html" target="_blank" class="external-link">https://www.cnblogs.com/wudanyang/p/15940613.html</a></p>
-<h1 id="现象" tabindex="-1">现象</h1>
-<p>之前遇到过的一个问题<br>
-接口要返回给前端（js）一个比较长的数字：<code>759830849237899244</code></p>
-<p>看了接口返回是没问题的，但是前端拿着数字去取详情的时候，传过来的是另外一个数字：<code>759830849237899300</code></p>
-<p>一比较，看起来是数字被转换了</p>
-<p><code>759830849237899244</code> =&gt; <code>759830849237899300</code></p>
-<p>在前端控制台执行一下：<br>
-<img src="/img/user/attachs/Pasted%20image%2020220226212150.png" alt="Pasted image 20220226212150.png"><br>
-果然被转成了另外一个数字，而且看规律很像是后三位被上取整了</p>
-<h1 id="原理" tabindex="-1">原理</h1>
-<p>后来了解到js会将数字按照下图方式切分后表示数字，以至于最高表示的数字只能到 <code>9007199254740991</code>  比这个数字更大的数字就会发生进位溢出<br>
-<img src="/img/user/attachs/Pasted%20image%2020201109201831.png" alt="Pasted image 20201109201831.png"></p>
-<h1 id="解决方案" tabindex="-1">解决方案</h1>
-<p>解决方案很好办，那就是将数字转成字符串，只要前端不强转成数字，那就不会出问题<br>
-<img src="/img/user/attachs/iShot2022-02-26%2021.46.09.jpg" alt="iShot2022-02-26 21.46.09.jpg"></p>
-<h1 id="参考文档" tabindex="-1">参考文档</h1>
-<p><a href="https://cloud.tencent.com/developer/article/1477816" target="_blank" class="external-link">JSON Bigint 大数精度丢失的背后</a></p>
-<p><a href="https://stackoverflow.com/questions/10631494/json-parse-parses-converts-big-numbers-incorrectly" target="_blank" class="external-link">JSON.parse parses / converts big numbers incorrectly</a></p>
+      <h1 id="about-me" tabindex="-1">About Me</h1>
+<p>千里之行，始于足下</p>
+<h2 id="leetcode" tabindex="-1">leetcode</h2>
+<p><a href="https://leetcode.cn/u/wudanyang/" target="_blank" class="external-link">leetcode 个人主页</a></p>
+<h2 id="github" tabindex="-1">github</h2>
+<p><a href="https://github.com/wudanyang6" target="_blank" class="external-link">github 个人主页</a></p>
+<h2 id="music" tabindex="-1">music</h2>
+<iframe width="100%" height="650px" src="https://music.163.com/playlist?id=13022777&userid=16553655" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false"> </iframe>
 
       
       
@@ -1242,16 +1230,19 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#现象">现象</a>
+                    <li><a href="#about-me">About Me</a>
+            
+                <ol>
+                    
+                    <li><a href="#leetcode">leetcode</a>
             		</li>
 
-                    <li><a href="#原理">原理</a>
+                    <li><a href="#github">github</a>
             		</li>
 
-                    <li><a href="#解决方案">解决方案</a>
+                    <li><a href="#music">music</a>
             		</li>
-
-                    <li><a href="#参考文档">参考文档</a>
+                </ol>
             		</li>
                 </ol>
             </nav>
