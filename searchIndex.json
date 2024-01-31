@@ -1,7 +1,7 @@
 [
 {
 		"title": "epoll的边缘触发和水平触发",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/c/nginx/epoll的边缘触发和水平触发/",
 		"content": "epoll的边缘触发和水平触发\nepoll 是 Linux 下用于处理大量文件描述符的高效 I/O 多路复用机制。在 epoll 中，有两种触发模式：水平触发（Level-Triggered，简称 LT）和边缘触发（Edge-Triggered，简称 ET）。\n\n水平触发（LT，Level-Triggered）：\n\n当文件描述符就绪时，epoll_wait 将立即返回。\n如果文件描述符的状态发生变化，epoll_wait 会再次通知应用程序。\n这种模式下，如果文件描述符有数据可读或可写，epoll_wait 将不停地返回通知，直到应用程序处理完数据或者阻塞。\n\n边缘触发（ET，Edge-Triggered）：\n\n当文件描述符就绪时，epoll_wait 只会通知一次，直到应用程序处理完数据并清空了文件描述符的缓冲区。\n如果文件描述符的状态没有变化，epoll_wait 不会重复通知应用程序。\n这种模式下，应用程序需要注意，在一个事件通知之后，要一直读或写，直到发生 EAGAIN 或 EWOULDBLOCK 错误。\n\n为什么epoll这里要叫做边缘触发和水平触发呢？\n这源于通信数字信号处理领域的术语，边缘和水平通常用于描述信号的特性\n\n边缘触发（Edge-Triggered）：\n\n&quot;边缘&quot; 指的是信号的变化边缘，即信号从一个状态变为另一个状态的瞬间。\n在数字信号处理中，边缘通常用来表示信号的上升沿或下降沿，即信号从低电平到高电平或从高电平到低电平的瞬间。\n\n水平触发（Level-Triggered）：\n\n&quot;水平&quot; 指的是信号的水平状态，即信号所处的电平状态。\n在数字信号处理中，水平触发通常用来描述信号保持在某个电平的状态，而不关心信号的变化瞬间。\n\nReference\nhttps://electronics.stackexchange.com/a/21891",
 		"tags": [ "note"]
@@ -9,7 +9,7 @@
 
 {
 		"title": "Nginx 进程模型-整体架构",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/c/nginx/nginx 进程模型-整体架构/",
 		"content": "nginx 进程模型-整体架构\n\n从网上找了一个非常好的图片，从图中可以看到很多东西\n\nNginx 会生成多个进程\nworker 使用了 io 多路复用的事件驱动框架\nworker 内部有很多模块\nworker 处理磁盘 I/O 时，使用了标准 I/O ， sendfile ， AIO ，mmap 等 I/O 技术\nCache loader 和 Cache manager 操作 proxy cache\n后端支持多种基于 tcp 的网络协议",
 		"tags": [ "note","nginx","Process"]
@@ -17,7 +17,7 @@
 
 {
 		"title": "vscode 调试nginx代码",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/c/nginx/vscode 调试nginx代码/",
 		"content": "#output\n内容\n修改 auto/cc/conf\nngx_compile_opt 中添加 -g\n修改后如下：\nngx_compile_opt=&quot;-c -g&quot;\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/vscode 调试nginx代码/#gcc-g\">#gcc -g 的作用</a>\n编译 &amp; 安装 &amp; 运行\n# prefix 是想要安装到的目录\nauto/configure --prefix=/home/ubuntu/mydisk/var/nginx-debug-1\n\n# 编译安装\nmake\nmake install\n\n修改配置\nvim /home/ubuntu/mydisk/var/nginx-debug-1/conf/nginx.conf\n将监听端口号改成 8080\nworker_processes 改成 1 (方便调试)\n启动 nginx\n/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx\nnginx 的进程：\nps aux | grep nginx\nubuntu 17093 0.0 0.0 4184 372 ? Ss Mar30 0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx\nubuntu 17094 0.0 0.0 4620 2316 ? S Mar30 0:00 nginx: worker process\nubuntu 46072 0.0 0.0 7692 648 pts/0 S+ 11:21 0:00 grep --color=auto nginx\n\n配置 vscode 调试\n{\n// 使用 IntelliSense 了解相关属性。\n// 悬停以查看现有属性的描述。\n// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387\n&quot;version&quot;: &quot;0.2.0&quot;,\n&quot;configurations&quot;: [\n{\n&quot;name&quot;: &quot;debug master&quot;,\n&quot;type&quot;: &quot;cppdbg&quot;,\n&quot;request&quot;: &quot;launch&quot;,\n&quot;program&quot;: &quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&quot;,\n&quot;args&quot;: [],\n&quot;stopAtEntry&quot;: true,\n&quot;cwd&quot;: &quot;${workspaceFolder}&quot;,\n&quot;environment&quot;: [],\n&quot;externalConsole&quot;: false,\n&quot;MIMode&quot;: &quot;gdb&quot;,\n&quot;setupCommands&quot;: [\n{\n&quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,\n&quot;text&quot;: &quot;-enable-pretty-printing&quot;,\n&quot;ignoreFailures&quot;: true\n}\n]\n},\n{\n&quot;name&quot;: &quot;debug worker&quot;,\n&quot;type&quot;: &quot;cppdbg&quot;,\n&quot;request&quot;: &quot;attach&quot;,\n&quot;program&quot;: &quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&quot;,\n&quot;processId&quot;: 17094,\n&quot;MIMode&quot;: &quot;gdb&quot;,\n&quot;setupCommands&quot;: [\n{\n&quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,\n&quot;text&quot;: &quot;-enable-pretty-printing&quot;,\n&quot;ignoreFailures&quot;: true\n}\n]\n}\n]\n}\n\n在 worker 上调试需要改成 attach 的形式，并且使用了一次 attach 之后，就不能使用 strace -p 17094 查看系统调用了\n然后就可以打断点，进行单步调试了\n参考\nMac上用Visual Studio Code调试Nginx\ngcc -g 的作用\nGCC 参数详解-runoob\n在编译的时候会产生调试信息\nkernel.yama.ptrace_scope\nsysctl -a 查看内核参数\nkernel.yama.ptrace_scope\nhttps://www.kernel.org/doc/Documentation/security/Yama.txt\nsudo vim /etc/sysctl.d/10-ptrace.conf\nVSCode调试出现无法打开glibc库的“raise.c“或“abort.c“等文件的错误\nsudo strace 报 操作不被允许\nsudo strace -p 17094\nstrace: Could not attach to process. If your uid matches the uid of the target process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try again as the root user. For more details, see /etc/sysctl.d/10-ptrace.conf: Operation not permitted\nstrace: attach: ptrace(PTRACE_SEIZE, 17094): Operation not permitted\n\nhttps://stackoverflow.com/questions/19215177/how-to-solve-ptrace-operation-not-permitted-when-trying-to-attach-gdb-to-a-pro\nMaybe someone has attached this process with gdb.\n\nps -ef | grep gdb\n\ncan't gdb attach the same process twice.\n将 vscode 中的 调试关掉，就可以使用 strace 了\n如下图，可以看到，子进程停在了 epoll_pwait 系统调用上了",
 		"tags": ["output", "gcc", "note"]
@@ -25,7 +25,7 @@
 
 {
 		"title": "如何查看 nginx 的rewrite记录",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/",
 		"content": "如何调试nginx的rewrite规则？\n设置 rewrite_log on;\n并且将error_log 的报错等级改成 notice;\n官网对 rewrite_log 的解释：\nSyntax:\trewrite_log on | off;\nDefault:\t\nrewrite_log off;\nContext:\thttp, server, location, if\nEnables or disables logging of ngx_http_rewrite_module module directives processing results into the error_log at the notice level.\n\n可以看到，这个指令只能在 http server location if 配置指令中使用，日志等级是 notice 写入到 error_log 配置的文件中。\n示例\nurl： /q?someparams\n2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+m/question(.*)?qid=\\d+(.*)?$&quot; does not match ...\n... 中间省略一些日志\n2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+question/(\\w+.*?)$&quot; does not match ...\n2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+q\\?(.*)?tn=nsatom_qb_main(.*)?$&quot; matches ...\n2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+q&quot; matches ...\n2021/04/22 18:21:28 [notice] 18131#0: *102982 rewritten data: &quot;/q/q/q/q/q&quot;\n\n从上面的日志中可以看出，当触发了重写规则时，会有关键字 matches 否则会有 does not match 。\n最终重写完成之后，访问的地址会有标记：rewritten data\n这里就是 /q/q/q/q/q\n参考\nbest way to debug nginx rewrite rules in config file?\nnginx官方文档：Module ngx_http_rewrite_module",
 		"tags": [ "note"]
@@ -33,7 +33,7 @@
 
 {
 		"title": "linux-man命令使用",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/linux/linux-man命令使用/",
 		"content": "内容\n1 - commands（普通的命令）\n2 - system calls（系统调用）\n3 - library calls（库函数）\n4 - special files（特殊文件：/dev下设备文件）\n5 - file formats and convertions（文件格式）\n6 - games for linux（游戏和娱乐）\n7 - macro packages and conventions（杂项）\n8 - system management commands（管理员命令）\n9 - 其他（Linux特定， 用来存放内核例行程序的文档）\n可使用 man man 进入此页面\n参考\nhttps://blog.csdn.net/zhang_chou_chou/article/details/83589224\n在线 man 手册",
 		"tags": [ "note","linux"]
@@ -41,7 +41,7 @@
 
 {
 		"title": "ubuntu 树莓派启动时配置网络",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/",
 		"content": "树莓派 ubuntu 配置网络\n树莓派现在可以安装很多操作系统，其中 ubuntu 也提供了树莓派版本，因为对 ubuntu 更加熟悉，所以就往 SD 卡中烧录了 ubuntu 的 20.04 lts 64位 版本。这里有可供选择的操作系统。\n简单提一嘴烧录操作系统到 SD 卡上面的方法，树莓派提供了一个傻瓜式的软件给大家使用，直接打开之后选择系统，就可以烧录了，烧录过程大概会有几分钟。\n烧录完成之后，如果你按照树莓派官网的教程进行操作，肯定都行不通，因为树莓派的官方操作系统 Raspberry Pi OS 和 Ubuntu For Raspberry 上面的网络配置方式完全不一样。\n安装了 ubuntu 的树莓派怎么配置网络？\n打开你烧录好的 SD 卡\n找到 network-config 文件\n写入如下配置：\nwifis:\nwlan0:\ndhcp4: true\noptional: true\naccess-points:\n&lt;wifi network name&gt;:\npassword: &quot;&lt;wifi password&gt;&quot;\n\n如果是企业网络：\nwifis:\nwlan0:\ndhcp4: true\noptional: true\naccess-points:\n&lt;wifi network name&gt;:\nauth:\nkey-management: eap\nmethod: peap\nidentity: &quot;wudanyang&quot;\npassword: &quot;&quot;\n\n配置文件的格式\n修改完之后，把 SD 卡从电脑上弹出，然后插到树莓派里。\n不过，重启之后，你可能还是无法连接到网络。可以看下这里\n\nNote: During the first boot, your Raspberry Pi will try to connect to this network. It will fail the first time around. Simply reboot sudo reboot and it will work.\n\n引用ubuntu官网的一段话，第一次会失败，直接重启，第二次就能连上了。\n开启网络之后，如何登录树莓派？\n安装好之后默认用户名和密码都是 ubuntu\nssh ubuntu@&lt;raspberry ip&gt;\nip 地址的获取这里列举几种方法，不详细介绍：\n\n自己的路由器：登录后台查看分配的 ip\n局域网扫描（局域网机器不多的情况下）：\n\n下载个局域网扫描工具，如果局域网机器不多，会看到一个制造商为树莓派的 ip\n使用命令行 arp -a 挨个试一下\n\nubuntu 启动之后会使用 avahi 服务通过 mdns 协议在局域网注册一个域名 ubuntu.local，所以你可以这样登录 ssh ubuntu@ubuntu.local\n\n参考\n树莓派支持的操作系统\n树莓派操作系统烧录软件\n无屏幕和键盘配置树莓派WiFi和SSH\n百度百科-mdns\nMac通过网线直连控制树莓派 - lonerpaul - 博客园",
 		"tags": [ "note"]
@@ -49,7 +49,7 @@
 
 {
 		"title": "js超长数字溢出问题",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/踩坑/js超长数字溢出问题/",
 		"content": "tags: #js #联调 #踩坑 #output\nhttps://www.cnblogs.com/wudanyang/p/15940613.html\n现象\n之前遇到过的一个问题\n接口要返回给前端（js）一个比较长的数字：759830849237899244\n看了接口返回是没问题的，但是前端拿着数字去取详情的时候，传过来的是另外一个数字：759830849237899300\n一比较，看起来是数字被转换了\n759830849237899244 =&gt; 759830849237899300\n在前端控制台执行一下：\n\n果然被转成了另外一个数字，而且看规律很像是后三位被上取整了\n原理\n后来了解到js会将数字按照下图方式切分后表示数字，以至于最高表示的数字只能到 9007199254740991 比这个数字更大的数字就会发生进位溢出\n\n解决方案\n解决方案很好办，那就是将数字转成字符串，只要前端不强转成数字，那就不会出问题\n\n参考文档\nJSON Bigint 大数精度丢失的背后\nJSON.parse parses / converts big numbers incorrectly",
 		"tags": ["js", "联调", "踩坑", "output", "note"]
@@ -57,7 +57,7 @@
 
 {
 		"title": "leetcode-1137第 N 个泰波那契数",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/",
 		"content": "题目\n1137. 第 N 个泰波那契数\n这个跟斐波那契好像是一样的，一模一样\n解法\n跟斐波纳契数列一样的解法\nclass Solution {\n\n/**\n* @param Integer $n\n* @return Integer\n*/\nfunction tribonacci($n) {\nif ($n &lt;= 0) {\nreturn 0;\n}\n\n$retArr = [0,1,1];\nfor ($i = 3; $i &lt;= $n; $i++) {\n$retArr[$i] = $retArr[$i-1] + $retArr[$i-2] + $retArr[$i-3];\n}\n\nreturn $retArr[$n];\n}\n}\n\n参考",
 		"tags": [ "note","leetcode"]
@@ -65,15 +65,15 @@
 
 {
 		"title": "Home dy_turbo",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
-		"content": "Home dy_turbo\nAbout Me\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/About Me/\">About Me</a>\nList\n\nFile\nCreated\nModified\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/About Me/\">About Me</a>\n2024-01-30星期2 13:27\n2024-01-30星期2 13:29\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/obsidian/obsidian-things3-today插件/\">obsidian-things3-today插件</a>\n2024-01-29星期1 14:23\n2024-01-29星期1 14:27\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/epoll的边缘触发和水平触发/\">epoll的边缘触发和水平触发</a>\n2024-01-28星期7 22:53\n2024-01-29星期1 11:21\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/\">Home dy_turbo</a>\n2024-01-28星期7 22:46\n2024-01-30星期2 13:29\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/\">leetcode-1137第 N 个泰波那契数</a>\n2023-02-26星期7 18:03\n2024-01-29星期1 23:22\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/GTD/\">GTD</a>\n2022-05-5星期4 13:26\n2024-01-29星期1 23:36\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/踩坑/js超长数字溢出问题/\">js超长数字溢出问题</a>\n2022-02-26星期6 21:06\n2024-01-29星期1 16:16\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/\">ubuntu 树莓派启动时配置网络</a>\n2021-04-27星期2 23:13\n2024-01-29星期1 14:37\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/\">如何查看 nginx 的rewrite记录</a>\n2021-04-22星期4 18:14\n2024-01-28星期7 23:38\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/nginx 进程模型-整体架构/\">nginx 进程模型-整体架构</a>\n2021-04-14星期3 13:14\n2024-01-29星期1 14:36\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/output/文件描述符/\">文件描述符</a>\n2021-04-13星期2 11:24\n2024-01-29星期1 14:34\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/output/如何追查线上问题/\">如何追查线上问题</a>\n2021-04-12星期1 11:53\n2024-01-29星期1 16:15\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/linux/linux-man命令使用/\">linux-man命令使用</a>\n2021-04-7星期3 17:11\n2024-01-29星期1 16:17\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/vscode 调试nginx代码/\">vscode 调试nginx代码</a>\n2021-03-25星期4 19:13\n2024-01-28星期7 23:57",
+		"content": "Home dy_turbo\nAbout Me\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/About Me/\">About Me</a>\nList\n\nFile\nCreated\nModified\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/原神挺好玩/\">原神挺好玩</a>\n2024-01-31星期3 10:50\n2024-01-31星期3 11:12\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/About Me/\">About Me</a>\n2024-01-30星期2 13:27\n2024-01-30星期2 13:29\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/obsidian/obsidian-things3-today插件/\">obsidian-things3-today插件</a>\n2024-01-29星期1 14:23\n2024-01-29星期1 14:27\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/epoll的边缘触发和水平触发/\">epoll的边缘触发和水平触发</a>\n2024-01-28星期7 22:53\n2024-01-29星期1 11:21\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/\">Home dy_turbo</a>\n2024-01-28星期7 22:46\n2024-01-30星期2 13:29\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/\">leetcode-1137第 N 个泰波那契数</a>\n2023-02-26星期7 18:03\n2024-01-29星期1 23:22\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/GTD/\">GTD</a>\n2022-05-5星期4 13:26\n2024-01-29星期1 23:36\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/踩坑/js超长数字溢出问题/\">js超长数字溢出问题</a>\n2022-02-26星期6 21:06\n2024-01-29星期1 16:16\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/\">ubuntu 树莓派启动时配置网络</a>\n2021-04-27星期2 23:13\n2024-01-29星期1 14:37\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/\">如何查看 nginx 的rewrite记录</a>\n2021-04-22星期4 18:14\n2024-01-28星期7 23:38\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/nginx 进程模型-整体架构/\">nginx 进程模型-整体架构</a>\n2021-04-14星期3 13:14\n2024-01-29星期1 14:36\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/output/文件描述符/\">文件描述符</a>\n2021-04-13星期2 11:24\n2024-01-29星期1 14:34\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/output/如何追查线上问题/\">如何追查线上问题</a>\n2021-04-12星期1 11:53\n2024-01-29星期1 16:15\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/linux/linux-man命令使用/\">linux-man命令使用</a>\n2021-04-7星期3 17:11\n2024-01-29星期1 16:17\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/vscode 调试nginx代码/\">vscode 调试nginx代码</a>\n2021-03-25星期4 19:13\n2024-01-28星期7 23:57",
 		"tags": [ "note","gardenEntry"]
 },
 
 {
 		"title": "About Me",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/card/About Me/",
 		"content": "About Me\n千里之行，始于足下\nleetcode\nleetcode 个人主页\ngithub\ngithub 个人主页\nmusic",
 		"tags": [ "note"]
@@ -81,7 +81,7 @@
 
 {
 		"title": "GTD",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/card/GTD/",
 		"content": "把事情做好\n执行时是拿结果engage（而不是仅仅去 exec）\n\nhttps://topbook.cc/course/detail/153\n主要思想：\n\n捕获\n\n参考\nbilibili教程",
 		"tags": [ "note"]
@@ -89,7 +89,7 @@
 
 {
 		"title": "原神挺好玩",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/card/原神挺好玩/",
 		"content": "原神挺好玩\n最近游戏一直在玩原神，一个开放的大世界。主线剧情刚刚做完，确实是我想象中的角色扮演（RPG）游戏。\n记得高中在塞班手机上玩的一款RPG游戏，一个周末都在刷怪。后来重新练了个号，结果跟大师傅打架的时候，他的70级宠物不知道为什么变成我的了。我就带着一个70级将近满级的宠物一路过关斩将玩通关了。\n原神里面我自己感觉可玩的点有几个：\n\n角色都很二次元，都是按照动漫里面的角色画出来的，二次元的估计会很喜欢。\n\n剧情比较代入，某些剧情需要努力打怪，不过主线剧情并不是很难。\n\n大世界地图非常大，如果不是有传送节点估计跑图都得跑断腿。\n\n大世界里面有很多宝箱，有些宝箱需要解密之后才能获得，不过这些宝箱都是一次性的，我在蒙德、璃月、稻妻的探索度最高才到 50% ，所以也可见大世界有多大东西有多丰富。\n\n支线剧情也很丰富多彩，比如我就特别喜欢璃月里面的一个支线剧情《神女劈观》，并且剧情最后有一首歌，大家可以先听一下。不过没有了解剧情之前听这首歌触动应该不是很大，还是具体体验一下剧情再说。\n\n最后一点，原神不花钱氪金也可以玩的很舒服，每天做做每日任务，开开宝箱，欣赏欣赏美景，然后读一读角色的背景故事。\n\n对了，游戏社区里的前辈忠告，当深渊不存在，能打到哪里就打到哪里。",
 		"tags": [ "note"]
@@ -97,7 +97,7 @@
 
 {
 		"title": "obsidian-things3-today插件",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/obsidian/obsidian-things3-today插件/",
 		"content": "obsidian-things3-today插件\n把之前的插件重新搞了搞，把乱七八糟的东西去掉了，然后提交了obsidian插件库\n正在等着被review： https://github.com/obsidianmd/obsidian-releases/pull/2997\n新录了一个gif：\n图中可以看到和things3的Today列表联动还算是顺畅\n\nReference",
 		"tags": [ "note"]
@@ -105,7 +105,7 @@
 
 {
 		"title": "如何追查线上问题",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/output/如何追查线上问题/",
 		"content": "tags: #开发经验 #output\n原则\n止损优先\n不能先追查问题根源， 首先应该止损，不让问题进一步扩大，代码回滚、服务降级等都可以起到止损的效果。\n对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 配置开关 控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多\n及时通告\n在问题发生之后，要及时对处理问题的过程进行通告。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。\n追查问题的方法\n逻辑方法:\n\n先收集现象：业务报错、线上报错日志等\n对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。\n针对现象假设原因：\n\n常见问题依据追查手册\n其他问题保持思路开放，大胆假设\n\n是否有损的判断：\n根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 止损优先\n质疑所有数据：\n各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证\n\n知识准备\n\n对线上各种日志的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等\n对线上的各种配置更要做到心中有数\n对细节的追查，每次都更细一些，这样才能获得更多的信息\n计算机基本功，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查\n\n总结经验\n\n成熟的方法落地成工具\n对问题的追查形成文档\n\n问题解决之后\n如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。\n那么，我们可以通过思考以下几点来提升自己\n\n线上是否恢复了正常？（最基本的）\n问题的原因是什么？（落到追查文档）\n通过什么手段恢复的？（解决方案）\n怎么可以避免下次再次出现问题？（防患未然）\n除了此次出现的问题，会不会有其他的问题出现（举一反三）\n出现此类问题是否是架构问题造成的？（根本原因）",
 		"tags": ["开发经验", "output", "note"]
@@ -113,7 +113,7 @@
 
 {
 		"title": "文件描述符",
-		"date":"Wed Jan 31 2024 03:13:02 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jan 31 2024 03:13:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/output/文件描述符/",
 		"content": "什么是文件描述符\n对于内核而言，所有打开的文件都通过文件描述符（file descriptor）引用。通常也写作 fd。\n文件描述符是一个非负整数。\n当打开一个现有文件或者创建一个新文件时，内核向进程返回一个文件描述符。\n文件描述符是跟进程相关联的。\n按照惯例，UNIX 系统将 fd 0 对应进程的标准输入， fd 1 对应进程的标准输出， fd 2 对应进程的标准错误。\n系统调用中的文件描述符\nUNIX 系统中，一切皆文件，所以一切资源都可以使用文件描述符进程引用。\n以 open 系统调用为例\n使用 man 2 open 查看系统 man 手册\nNAME\nopen, openat -- open or create a file for reading or writing\n\nSYNOPSIS\n#include &lt;fcntl.h&gt;\n\nint\nopen(const char *path, int oflag, ...);\n\nint\nopenat(int fd, const char *path, int oflag, ...);\n\nDESCRIPTION\nThe file name specified by path is opened for reading and/or writing,\nas specified by the argument oflag; the file descriptor is returned to\nthe calling process.\n\n在简介中有一段话：the file descriptor is returned to the calling process.\n使用 c 语言打开一个 文件\n#include &lt;stdio.h&gt;\n#include &lt;fcntl.h&gt;\n#include &lt;unistd.h&gt;\n\nint main() {\n\tint fd;\n\tfd = open(&quot;tmp.txt&quot;, O_RDONLY);\n\tprintf(&quot;%d&quot;, fd);\n\tsleep(10);\n}\n\n会发现，在进程运行时 fd 目录下，会出现一个描述符 3 指向了 打开的文件\n$ ll /proc/$(ps aux | grep a.out | grep -v grep | awk '{print $2}')/fd\ntotal 0\nlrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 0 -&gt; /dev/pts/4\nlrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 1 -&gt; /dev/pts/4\nlrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 2 -&gt; /dev/pts/4\nlr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&gt; /home/ubuntu/mydisk/yangblog/codes/file/tmp.txt\n\n我们可以把这个文件描述符当做参数传递给 read 或者 write 等等系统调用。",
 		"tags": ["include", "include", "include", "include", "note","文件","OS","linux"]
