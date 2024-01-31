@@ -810,7 +810,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-31T06:38:21.007Z';
+        const searchIndexDate = '2024-01-31T06:43:59.363Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -822,9 +822,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-31T06:38:21.007Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-31T06:43:59.363Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-31T06:38:21.007Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-31T06:43:59.363Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1377,9 +1377,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">🏡 Home dy_turbo</a>
+                                                </div></div>
                               </div>
                         
                   
