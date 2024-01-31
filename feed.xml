@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-31T06:43:59Z</updated>
+    <updated>2024-01-31T15:44:43Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -55,6 +55,12 @@
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;🏡 Home dy_turbo&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024/1/28 22:46&lt;/td&gt;
 &lt;td&gt;2024/1/31 14:43&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-01-19 12:46:25&lt;/td&gt;
+&lt;td&gt;2024-01-22 13:21:07&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -575,6 +581,142 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//101 Tools/vim显示列分隔符/" />
+        </entry>
+        <entry>
+            <title>
+                10x程序员工作法
+                
+            </title>
+            <updated>2024-01-22T13:21:07.000Z</updated>
+            <id>https://wudanyang6.github.io//101 Tools/10x程序员工作法/</id>
+            <content type="html">
+                &lt;h1 id=&quot;10x&quot; tabindex=&quot;-1&quot;&gt;10x程序员工作法&lt;/h1&gt;
+&lt;h2 id=&quot;content&quot; tabindex=&quot;-1&quot;&gt;Content&lt;/h2&gt;
+&lt;h3 id=&quot;以终为始&quot; tabindex=&quot;-1&quot;&gt;以终为始&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;倒着想&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;DoD（Definition of Done 完成的定义）
+&lt;ul&gt;
+&lt;li&gt;弥合差异&lt;/li&gt;
+&lt;li&gt;个人的DoD，团队的DoD&lt;/li&gt;
+&lt;li&gt;DoD 是一个思维模式，是一种尽可能消除不确定性，达成共识的方式。&lt;/li&gt;
+&lt;li&gt;DoD 让我们能够在一开始就把“终”清晰地定义出来。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;在做任何事之前，先定义完成的标准。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;用户故事（User Story）
+&lt;ul&gt;
+&lt;li&gt;标题&lt;/li&gt;
+&lt;li&gt;概述&lt;/li&gt;
+&lt;li&gt;详述&lt;/li&gt;
+&lt;li&gt;验收标准&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;在做任何需求或任务之前，先定好验收标准。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;持续集成
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;尽早提交代码去集成。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;精益创业：产品经理不靠谱，你该怎么办？&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;MVP 最小可行产品&lt;/li&gt;
+&lt;li&gt;比较早成型的面向不确定创造新事物的方法论是精益创业，它提出了“开发（build）-测量（measure）-认知（learn）”这样一个反馈循环和最小可行产品的概念。&lt;br /&gt;
+如何试出来经过验证的认知 &lt;a href=&quot;https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://learn.lianglianglee.com/专栏/10x程序员工作法/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg&lt;/a&gt; &lt;img src=&quot;https://wudanyang6.github.io/img/user/Paste%20image%201705900815474image.png&quot; alt=&quot;Paste image 1705900815474image.png&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;精益创业提供给我们的是一个做产品的思考框架，我们能够接触到的大多数产品都可以放在这个框架内思考。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;默认所有需求都不做，直到弄清楚为什么要做这件事。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;上下文
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;扩大自己工作的上下文，别把自己局限在一个“程序员”的角色上。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;在动手做一件事之前，先推演一番。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;数字衡量
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;从数字中发现问题，让系统更稳定。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;问一下自己，我的工作是不是可以用数字衡量。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;开发前的准备
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;设计你的迭代0清单，给自己的项目做体检。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;任务分解&quot; tabindex=&quot;-1&quot;&gt;任务分解&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;动手做一个工作之前，请先对它进行任务分解。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;测试
+&lt;ul&gt;
+&lt;li&gt;测试模型：冰淇淋蛋卷： &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/1ac9ed05304d4009a1064dae764f1592.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;金字塔模型：&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/28d88fea0c894ba19321c844fe4d31ab.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;小事反馈周期短，而大事反馈周期长。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多写单元测试。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;我们应该编写可测的代码。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;将任务拆小，越小越好。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;按照完整实现一个需求的顺序去安排分解出来的任务。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;什么是好的测试
+&lt;ul&gt;
+&lt;li&gt;怎么衡量测试是否做好了呢？有一个标准：A-TRIP，这是五个单词的缩写，分别是Automatic（自动化）、Thorough（全面）、Repeatable（可重复的）、Independent（独立的）和 Professional（专业的）。&lt;/li&gt;
+&lt;li&gt;要想写好测试，就要写简单的测试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;需求分解
+&lt;ul&gt;
+&lt;li&gt;需求估算-大小标准&lt;/li&gt;
+&lt;li&gt;发现大的需求，一个迭代内做不完&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;想要管理好需求，先把需求拆小。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;尽量做最重要的事。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;做好产品开发，最可行的方式是采用 MVP。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;沟通反馈&quot; tabindex=&quot;-1&quot;&gt;沟通反馈&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;对齐？信息对齐&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;通过沟通反馈，不断升级自己的编解码能力。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用业务的语言写代码。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多面对面沟通，少开会。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多尝试用可视化的方式进行沟通。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;定期复盘，找准问题根因，不断改善。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多走近用户。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;事情往前做，有问题尽早暴露。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;金字塔原理 &lt;img src=&quot;https://learn.lianglianglee.com/%e4%b8%93%e6%a0%8f/10x%e7%a8%8b%e5%ba%8f%e5%91%98%e5%b7%a5%e4%bd%9c%e6%b3%95/assets/afdfd15d142d4732a2b6b87f4dae4450.jpg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多输出，让知识更有结构。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;自动化&quot; tabindex=&quot;-1&quot;&gt;自动化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;请谨慎地将工作自动化。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;有体系地学习运维知识。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;将验收测试自动化。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;把函数写短。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;&lt;strong&gt;构建好你的领域模型。&lt;/strong&gt;&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用简单技术解决问题，直到问题变复杂。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;学习领域驱动设计。再去拆分微服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;综合&quot; tabindex=&quot;-1&quot;&gt;综合&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;了解一个项目，从大图景开始。&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;业务&lt;/li&gt;
+&lt;li&gt;技术&lt;/li&gt;
+&lt;li&gt;团队运作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;小步改造遗留系统，不要回到老路上。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;什么叫 T 型人？简言之，一专多能。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;在学习区工作和成长。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
+&lt;h3 id=&quot;a-href-https-learn-lianglianglee-com-e4-b8-93-e6-a0-8f-10x-e7-a8-8b-e5-ba-8f-e5-91-98-e5-b7-a5-e4-bd-9c-e6-b3-95-39-20-e9-9d-a2-e5-af-b9-e9-81-97-e7-95-99-e7-b3-bb-e7-bb-9f-ef-bc-8c-e4-bd-a0-e5-ba-94-e8-af-a5-e8-bf-99-e6-a0-b7-e5-81-9a-md-target-blank-class-external-link-39-a&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://learn.lianglianglee.com/%e4%b8%93%e6%a0%8f/10x%e7%a8%8b%e5%ba%8f%e5%91%98%e5%b7%a5%e4%bd%9c%e6%b3%95/39%20%e9%9d%a2%e5%af%b9%e9%81%97%e7%95%99%e7%b3%bb%e7%bb%9f%ef%bc%8c%e4%bd%a0%e5%ba%94%e8%af%a5%e8%bf%99%e6%a0%b7%e5%81%9a.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;39 面对遗留系统，你应该这样做&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;a-href-https-learn-lianglianglee-com-e4-b8-93-e6-a0-8-f-10x-e7-a8-8-b-e5-ba-8-f-e5-91-98-e5-b7-a5-e4-bd-9-c-e6-b3-95-e6-80-bb-e5-a4-8-d-e4-b9-a0-20-e9-87-8-d-e6-96-b0-e6-9-d-a5-e2-80-9-c-e7-9-c-8-b-e4-b9-a6-e2-80-9-d-md-target-blank-class-external-link-https-learn-lianglianglee-com-10x-md-a&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/%E6%80%BB%E5%A4%8D%E4%B9%A0%20%E9%87%8D%E6%96%B0%E6%9D%A5%E2%80%9C%E7%9C%8B%E4%B9%A6%E2%80%9D.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://learn.lianglianglee.com/专栏/10x程序员工作法/总复习 重新来“看书”.md&lt;/a&gt;&lt;/h3&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//101 Tools/10x程序员工作法/" />
         </entry>
         <entry>
             <title>
