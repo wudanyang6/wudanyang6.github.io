@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-31T05:33:18Z</updated>
+    <updated>2024-01-31T05:34:10Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -365,6 +365,23 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/" />
+        </entry>
+        <entry>
+            <title>
+                vscode vim 状态下显示提示
+                
+            </title>
+            <updated>2024-01-31T05:33:14.000Z</updated>
+            <id>https://wudanyang6.github.io//101 Tools/vscode vim 状态下显示提示/</id>
+            <content type="html">
+                &lt;h1 id=&quot;vscode-vim&quot; tabindex=&quot;-1&quot;&gt;vscode vim 状态下显示提示&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/32279384/keyboard-shortcut-to-show-hover-tooltip#:~:text=The%20trick%20is%20timing.,CMD%2FCtrl%20%2B%20press%20K.&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;visual studio code - Keyboard shortcut to show hover tooltip - Stack Overflow&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you&#39;re using the VSCodeVim plugin, you can use &lt;code&gt;gh&lt;/code&gt; to show the tooltip. &lt;a href=&quot;https://stackoverflow.com/a/66860229&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//101 Tools/vscode vim 状态下显示提示/" />
         </entry>
         <entry>
             <title>
