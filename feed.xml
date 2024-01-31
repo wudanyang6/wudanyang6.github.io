@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-31T05:34:10Z</updated>
+    <updated>2024-01-31T05:35:42Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -327,6 +327,146 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//" />
+        </entry>
+        <entry>
+            <title>
+                如何做监控
+                
+            </title>
+            <updated>2024-01-31T05:34:46.000Z</updated>
+            <id>https://wudanyang6.github.io//600 Reading/700 Personal/如何做监控/</id>
+            <content type="html">
+                &lt;h1 id=&quot;如何做监控&quot; tabindex=&quot;-1&quot;&gt;如何做监控&lt;/h1&gt;
+&lt;p&gt;监控：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;什么是监控？
+&lt;ol&gt;
+&lt;li&gt;对&lt;em&gt;线上质量&lt;/em&gt;的一个实时检查&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;重要性
+&lt;ol&gt;
+&lt;li&gt;发现线上问题（早于用户）&lt;/li&gt;
+&lt;li&gt;快速止损、定位&lt;/li&gt;
+&lt;li&gt;及时发现隐藏的问题，指导策略优化&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;如何做好监控？
+&lt;ol&gt;
+&lt;li&gt;监控的流程及内容
+&lt;ol&gt;
+&lt;li&gt;监控需求提出&lt;/li&gt;
+&lt;li&gt;监控需求开发&lt;/li&gt;
+&lt;li&gt;监控需求测试&lt;/li&gt;
+&lt;li&gt;监控指标确认&lt;/li&gt;
+&lt;li&gt;监控报警添加&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;确认监控内容
+&lt;ol&gt;
+&lt;li&gt;新功能添加监控&lt;/li&gt;
+&lt;li&gt;补充监控&lt;/li&gt;
+&lt;li&gt;围绕
+&lt;ol&gt;
+&lt;li&gt;系统正确性&lt;/li&gt;
+&lt;li&gt;系统异常&lt;/li&gt;
+&lt;li&gt;异常定位&lt;/li&gt;
+&lt;li&gt;隐藏问题指导策略&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;监控数据获取
+&lt;ol&gt;
+&lt;li&gt;打点数据&lt;/li&gt;
+&lt;li&gt;日志数据&lt;/li&gt;
+&lt;li&gt;数据库数据&lt;/li&gt;
+&lt;li&gt;redis 数据&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;监控报警添加
+&lt;ol&gt;
+&lt;li&gt;监控可视化&lt;/li&gt;
+&lt;li&gt;确定触发报警策略&lt;/li&gt;
+&lt;li&gt;确定报警频率&lt;/li&gt;
+&lt;li&gt;确定报警接收人&lt;/li&gt;
+&lt;li&gt;配置监控&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;监控处理
+&lt;ol&gt;
+&lt;li&gt;收到报警&lt;/li&gt;
+&lt;li&gt;问题跟进&lt;/li&gt;
+&lt;li&gt;问题周知&lt;/li&gt;
+&lt;li&gt;问题处理&lt;/li&gt;
+&lt;li&gt;定损&lt;/li&gt;
+&lt;li&gt;复盘 &amp;amp; casestudy&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;监控报警优化
+&lt;ol&gt;
+&lt;li&gt;漏报
+&lt;ol&gt;
+&lt;li&gt;不同报警类型&lt;/li&gt;
+&lt;li&gt;突升突降代替固定阈值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;无效报警太多（准确率）
+&lt;ol&gt;
+&lt;li&gt;准确性提升
+&lt;ol&gt;
+&lt;li&gt;放大时间窗口，屏蔽预期内的单点抖动&lt;/li&gt;
+&lt;li&gt;工作日、节假日不同阈值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;推送方式优化
+&lt;ol&gt;
+&lt;li&gt;连续失败&lt;/li&gt;
+&lt;li&gt;通知间隔&lt;/li&gt;
+&lt;li&gt;通知依赖&lt;/li&gt;
+&lt;li&gt;不同方式报警（短信、电话）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;报警处理不及时
+&lt;ol&gt;
+&lt;li&gt;自愈脚本等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;问题定位
+&lt;ol&gt;
+&lt;li&gt;流量分析
+&lt;ol&gt;
+&lt;li&gt;流量细分
+&lt;ol&gt;
+&lt;li&gt;行业&lt;/li&gt;
+&lt;li&gt;地域&lt;/li&gt;
+&lt;li&gt;机房&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;系统分析
+&lt;ol&gt;
+&lt;li&gt;线上出现报错、fatal、pvlost&lt;/li&gt;
+&lt;li&gt;例行上线功能影响&lt;/li&gt;
+&lt;li&gt;数据变更&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;600 Reading/700 Personal/如何追查线上问题&lt;/a&gt;&lt;br /&gt;
+先通报、再止损、再定位&lt;br /&gt;
+最后修复&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//600 Reading/700 Personal/如何做监控/" />
         </entry>
         <entry>
             <title>
