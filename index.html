@@ -808,7 +808,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-01-31T06:06:06.936Z';
+        const searchIndexDate = '2024-01-31T06:21:46.170Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -820,9 +820,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-01-31T06:06:06.936Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-01-31T06:21:46.170Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-31T06:06:06.936Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-01-31T06:21:46.170Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1087,93 +1087,93 @@
 <tbody class="table-view-tbody">
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/card/原神挺好玩/">原神挺好玩</a></td>
-<td>2024-01-31星期3 10:50</td>
-<td>2024-01-31星期3 13:18</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/card/About Me/">About Me</a></td>
-<td>2024-01-30星期2 13:27</td>
-<td>2024-01-31星期3 13:28</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/obsidian/obsidian-things3-today插件/">obsidian-things3-today插件</a></td>
-<td>2024-01-29星期1 14:23</td>
-<td>2024-01-31星期3 13:28</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a></td>
-<td>2024-01-28星期7 22:53</td>
-<td>2024-01-31星期3 13:28</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/">🏡 Home dy_turbo</a></td>
-<td>2024-01-28星期7 22:46</td>
-<td>2024-01-31星期3 14:05</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a></td>
-<td>2023-05-9星期2 19:12</td>
-<td>2024-01-31星期3 13:34</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数</a></td>
-<td>2023-02-26星期7 18:03</td>
-<td>2024-01-31星期3 13:28</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符</a></td>
-<td>2022-12-7星期3 15:55</td>
-<td>2024-01-31星期3 13:32</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/card/GTD/">GTD</a></td>
-<td>2022-05-5星期4 13:26</td>
-<td>2024-01-31星期3 13:28</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/踩坑/js超长数字溢出问题/">js超长数字溢出问题</a></td>
-<td>2022-02-26星期6 21:06</td>
-<td>2024-01-31星期3 13:28</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/600 Reading/700 Personal/如何做监控/">如何做监控</a></td>
-<td>2021-05-7星期5 19:04</td>
-<td>2024-01-31星期3 13:35</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络</a></td>
-<td>2021-04-27星期2 23:13</td>
-<td>2024-01-31星期3 13:28</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/">如何查看 nginx 的rewrite记录</a></td>
-<td>2021-04-22星期4 18:14</td>
-<td>2024-01-31星期3 13:26</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/nginx 进程模型-整体架构/">nginx 进程模型-整体架构</a></td>
-<td>2021-04-14星期3 13:14</td>
-<td>2024-01-31星期3 13:28</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/output/文件描述符/">文件描述符</a></td>
-<td>2021-04-13星期2 11:24</td>
-<td>2024-01-31星期3 13:28</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/output/如何追查线上问题/">如何追查线上问题</a></td>
-<td>2021-04-12星期1 11:53</td>
-<td>2024-01-31星期3 13:26</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/linux-man命令使用/">linux-man命令使用</a></td>
-<td>2021-04-7星期3 17:11</td>
-<td>2024-01-31星期3 13:28</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/vscode 调试nginx代码/">vscode 调试nginx代码</a></td>
-<td>2021-03-25星期4 19:13</td>
-<td>2024-01-31星期3 13:28</td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table></div>
