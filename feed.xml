@@ -3,14 +3,14 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-31T05:12:42Z</updated>
+    <updated>2024-01-31T05:17:15Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
                 文件描述符
                 
             </title>
-            <updated>2024-01-29T06:34:40.990Z</updated>
+            <updated>2024-01-29T14:34:40.000Z</updated>
             <id>https://wudanyang6.github.io//output/文件描述符/</id>
             <content type="html">
                 &lt;h1 id=&quot;什么是文件描述符&quot; tabindex=&quot;-1&quot;&gt;什么是文件描述符&lt;/h1&gt;
@@ -71,7 +71,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 如何追查线上问题
                 
             </title>
-            <updated>2024-01-29T08:15:31.921Z</updated>
+            <updated>2024-01-29T16:15:31.000Z</updated>
             <id>https://wudanyang6.github.io//output/如何追查线上问题/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#开发经验&quot;&gt;#开发经验&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
@@ -129,7 +129,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 obsidian-things3-today插件
                 
             </title>
-            <updated>2024-01-29T06:27:31.704Z</updated>
+            <updated>2024-01-29T14:27:29.000Z</updated>
             <id>https://wudanyang6.github.io//obsidian/obsidian-things3-today插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
@@ -148,7 +148,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 原神挺好玩
                 
             </title>
-            <updated>2024-01-31T03:12:17.647Z</updated>
+            <updated>2024-01-31T02:12:15.000Z</updated>
             <id>https://wudanyang6.github.io//card/原神挺好玩/</id>
             <content type="html">
                 &lt;h1 id=&quot;原神挺好玩&quot; tabindex=&quot;-1&quot;&gt;原神挺好玩&lt;/h1&gt;
@@ -186,7 +186,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 GTD
                 
             </title>
-            <updated>2024-01-29T15:36:47.054Z</updated>
+            <updated>2024-01-29T23:36:47.000Z</updated>
             <id>https://wudanyang6.github.io//card/GTD/</id>
             <content type="html">
                 &lt;ol&gt;
@@ -211,7 +211,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 About Me
                 
             </title>
-            <updated>2024-01-30T05:29:12.761Z</updated>
+            <updated>2024-01-30T13:29:12.000Z</updated>
             <id>https://wudanyang6.github.io//card/About Me/</id>
             <content type="html">
                 &lt;h1 id=&quot;about-me&quot; tabindex=&quot;-1&quot;&gt;About Me&lt;/h1&gt;
@@ -231,7 +231,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 Home dy_turbo
                 
             </title>
-            <updated>2024-01-30T05:29:51.120Z</updated>
+            <updated>2024-01-30T13:29:51.000Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;home-dy-turbo&quot; tabindex=&quot;-1&quot;&gt;Home dy_turbo&lt;/h1&gt;
@@ -250,7 +250,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;原神挺好玩&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-01-31星期3 10:50&lt;/td&gt;
-&lt;td&gt;2024-01-31星期3 11:12&lt;/td&gt;
+&lt;td&gt;2024-01-31星期3 13:16&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/td&gt;
@@ -333,7 +333,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 leetcode-1137第 N 个泰波那契数
                 
             </title>
-            <updated>2024-01-29T15:22:37.082Z</updated>
+            <updated>2024-01-29T23:22:36.000Z</updated>
             <id>https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/</id>
             <content type="html">
                 &lt;h1 id=&quot;题目&quot; tabindex=&quot;-1&quot;&gt;题目&lt;/h1&gt;
@@ -371,7 +371,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 js超长数字溢出问题
                 
             </title>
-            <updated>2024-01-29T08:16:00.186Z</updated>
+            <updated>2024-01-29T16:16:00.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/踩坑/js超长数字溢出问题/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#js&quot;&gt;#js&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#联调&quot;&gt;#联调&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#踩坑&quot;&gt;#踩坑&lt;/a&gt;  &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
@@ -403,7 +403,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 ubuntu 树莓派启动时配置网络
                 
             </title>
-            <updated>2024-01-29T06:37:29.740Z</updated>
+            <updated>2024-01-29T14:37:24.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/</id>
             <content type="html">
                 &lt;h1 id=&quot;code-ubuntu-code&quot; tabindex=&quot;-1&quot;&gt;树莓派 &lt;code&gt;ubuntu&lt;/code&gt; 配置网络&lt;/h1&gt;
@@ -471,7 +471,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 linux-man命令使用
                 
             </title>
-            <updated>2024-01-29T08:17:40.695Z</updated>
+            <updated>2024-01-29T16:17:38.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/linux/linux-man命令使用/</id>
             <content type="html">
                 &lt;h1 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h1&gt;
@@ -497,7 +497,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 如何查看 nginx 的rewrite记录
                 
             </title>
-            <updated>2024-01-28T15:38:01.001Z</updated>
+            <updated>2024-01-28T23:37:59.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx-rewrite&quot; tabindex=&quot;-1&quot;&gt;如何调试nginx的rewrite规则？&lt;/h1&gt;
@@ -535,7 +535,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 vscode 调试nginx代码
                 
             </title>
-            <updated>2024-01-28T15:57:19.418Z</updated>
+            <updated>2024-01-28T23:57:17.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/vscode 调试nginx代码/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
@@ -646,7 +646,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 nginx 进程模型-整体架构
                 
             </title>
-            <updated>2024-01-29T06:36:19.477Z</updated>
+            <updated>2024-01-29T14:36:19.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/nginx 进程模型-整体架构/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型-整体架构&lt;/h1&gt;
@@ -669,7 +669,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 epoll的边缘触发和水平触发
                 
             </title>
-            <updated>2024-01-29T03:21:26.675Z</updated>
+            <updated>2024-01-29T11:21:24.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/c/nginx/epoll的边缘触发和水平触发/</id>
             <content type="html">
                 &lt;h1 id=&quot;epoll&quot; tabindex=&quot;-1&quot;&gt;epoll的边缘触发和水平触发&lt;/h1&gt;
