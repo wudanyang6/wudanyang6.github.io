@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-31T05:30:23Z</updated>
+    <updated>2024-01-31T05:33:18Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -365,6 +365,25 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/" />
+        </entry>
+        <entry>
+            <title>
+                vim显示列分隔符
+                
+            </title>
+            <updated>2024-01-31T05:32:42.000Z</updated>
+            <id>https://wudanyang6.github.io//101 Tools/vim显示列分隔符/</id>
+            <content type="html">
+                &lt;h1 id=&quot;vim&quot; tabindex=&quot;-1&quot;&gt;vim显示列分隔符&lt;/h1&gt;
+&lt;h2 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;:set list
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示 &lt;code&gt;tab&lt;/code&gt; 和结尾符号 &lt;code&gt;$&lt;/code&gt;，不显示开头的 &lt;code&gt;^&lt;/code&gt; 符号&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020221207155541.png&quot; alt=&quot;../attachs/Pasted image 20221207155541.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h2&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//101 Tools/vim显示列分隔符/" />
         </entry>
         <entry>
             <title>
