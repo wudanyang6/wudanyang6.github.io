@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>vim显示列分隔符</title>
+    <title>linux-树莓派无法上网排查</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.min.js"></script>
 <script>
@@ -319,7 +319,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/linux-树莓派无法上网排查/">linux-树莓派无法上网排查 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/linux-树莓派无法上网排查/">linux-树莓派无法上网排查 </a>
                 </div>
             
         </div>
@@ -485,7 +485,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符 </a>
                 </div>
             
         </div>
@@ -1262,7 +1262,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">vim显示列分隔符</h1>
+          <h1 data-note-icon="">linux-树莓派无法上网排查</h1>
         
         <div class="header-meta">
           
@@ -1271,19 +1271,47 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2022-12-07T15:55:15+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-31T13:32:42+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-07-15T10:52:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-02T00:03:54+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="vim" tabindex="-1">vim显示列分隔符</h1>
-<h2 id="内容" tabindex="-1">内容</h2>
-<pre><code class="language-bash">:set list
+      <h1 id="linux" tabindex="-1">linux-树莓派无法上网排查</h1>
+<ul>
+<li>wget -v <a href="http://baidu.com" target="_blank" class="external-link">baidu.com</a>
+<ul>
+<li>会有输出：</li>
+<li>如何处理呢</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-bash">--2021-07-15 10:52:24--  http://baidu.com/
+Resolving baidu.com (baidu.com)... 39.156.69.79, 220.181.38.148
+Connecting to baidu.com (baidu.com)|39.156.69.79|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 81 [text/html]
+Saving to: ‘index.html’
 </code></pre>
-<p>显示 <code>tab</code> 和结尾符号 <code>$</code>，不显示开头的 <code>^</code> 符号<br>
-<img src="/img/user/attachs/Pasted%20image%2020221207155541.png" alt="../attachs/Pasted image 20221207155541.png"></p>
-<h2 id="参考" tabindex="-1">参考</h2>
+<p>上次我就卡在了 解析 <a href="http://baidu.com" target="_blank" class="external-link">baidu.com</a> 域名这个地方</p>
+<ul>
+<li>
+<p>通过 <a class="internal-link is-unresolved" href="/404" target="">linux-nslookup</a> 命令查看路由解析</p>
+<ul>
+<li>发现解析不通</li>
+<li>查看 <code>/etc/resolv.conf</code> 将 <code>nameserver</code> 改成： <code>114.114.114.114</code></li>
+<li>再次查看路由解析，发现已经 OK 了</li>
+</ul>
+</li>
+<li>
+<p>如何修改 <code>/etc/resolv.conf</code> ，重启机器之后会发现文件又被改回去了，导致无法联网，正确的做法</p>
+<ul>
+<li><code>sudo vi /etc/systemd/resolved.conf</code></li>
+<li>重启网络服务 <code>sudo service networking restart</code></li>
+</ul>
+</li>
+</ul>
+<p><a href="https://blog.csdn.net/qq_42820594/article/details/107325437" target="_blank" class="external-link">树莓派4B】三、笔记本给树莓派Ubuntu 18.04提供网络|为什么Ubuntu18.04更改/etc/resolv.conf修改nameserver重启网络被重置</a></p>
 
       
       
@@ -1540,16 +1568,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#vim">vim显示列分隔符</a>
-            
-                <ol>
-                    
-                    <li><a href="#内容">内容</a>
-            		</li>
-
-                    <li><a href="#参考">参考</a>
-            		</li>
-                </ol>
+                    <li><a href="#linux">linux-树莓派无法上网排查</a>
             		</li>
                 </ol>
             </nav>
@@ -1563,8 +1582,9 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home dy_turbo</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   

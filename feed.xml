@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-01T16:04:02Z</updated>
+    <updated>2024-02-01T16:05:10Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -414,6 +414,29 @@ done
 &lt;div style=&quot;display: block; position: relative; width: 100%; height: 0px; --aspect-ratio:9/16; padding-bottom: calc(var(--aspect-ratio) * 100%);&quot;&gt;&lt;iframe src=&quot;https://zh.wikipedia.org/wiki/ISO_8601&quot; allow=&quot;fullscreen&quot; style=&quot;position: absolute; top: 0px; left: 0px; height: 100%; width: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
             </content>
             <link href="https://wudanyang6.github.io//card/iso-日期表示法/" />
+        </entry>
+        <entry>
+            <title>
+                PHP生成zip压缩包
+                
+            </title>
+            <updated>2024-02-01T16:04:25.000Z</updated>
+            <id>https://wudanyang6.github.io//card/PHP生成zip压缩包/</id>
+            <content type="html">
+                &lt;h1 id=&quot;php-zip&quot; tabindex=&quot;-1&quot;&gt;PHP生成zip压缩包&lt;/h1&gt;
+&lt;h2 id=&quot;zip&quot; tabindex=&quot;-1&quot;&gt;将文件压缩成zip格式&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$path = &amp;quot;file.txt&amp;quot;;
+$filename = &amp;quot;file.zip&amp;quot;;
+
+$zip = new ZipArchive();
+$zip-&amp;gt;open($filename, ZipArchive::CREATE); //打开压缩包
+$zip-&amp;gt;addFile($path, basename($path)); //向压缩包中添加文件
+$zip-&amp;gt;close(); //关闭压缩包
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/PHP生成zip压缩包/" />
         </entry>
         <entry>
             <title>
@@ -1210,6 +1233,53 @@ func main() {
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/linux/mac-合上盖子不断网/" />
+        </entry>
+        <entry>
+            <title>
+                linux-树莓派无法上网排查
+                
+            </title>
+            <updated>2024-02-01T16:03:54.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/linux/linux-树莓派无法上网排查/</id>
+            <content type="html">
+                &lt;h1 id=&quot;linux&quot; tabindex=&quot;-1&quot;&gt;linux-树莓派无法上网排查&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;wget -v &lt;a href=&quot;http://baidu.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;baidu.com&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;会有输出：&lt;/li&gt;
+&lt;li&gt;如何处理呢&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;--2021-07-15 10:52:24--  http://baidu.com/
+Resolving baidu.com (baidu.com)... 39.156.69.79, 220.181.38.148
+Connecting to baidu.com (baidu.com)|39.156.69.79|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 81 [text/html]
+Saving to: ‘index.html’
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上次我就卡在了 解析 &lt;a href=&quot;http://baidu.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;baidu.com&lt;/a&gt; 域名这个地方&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;通过 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;linux-nslookup&lt;/a&gt; 命令查看路由解析&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发现解析不通&lt;/li&gt;
+&lt;li&gt;查看 &lt;code&gt;/etc/resolv.conf&lt;/code&gt; 将 &lt;code&gt;nameserver&lt;/code&gt; 改成： &lt;code&gt;114.114.114.114&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;再次查看路由解析，发现已经 OK 了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如何修改 &lt;code&gt;/etc/resolv.conf&lt;/code&gt; ，重启机器之后会发现文件又被改回去了，导致无法联网，正确的做法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo vi /etc/systemd/resolved.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;重启网络服务 &lt;code&gt;sudo service networking restart&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq_42820594/article/details/107325437&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;树莓派4B】三、笔记本给树莓派Ubuntu 18.04提供网络|为什么Ubuntu18.04更改/etc/resolv.conf修改nameserver重启网络被重置&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/linux/linux-树莓派无法上网排查/" />
         </entry>
         <entry>
             <title>

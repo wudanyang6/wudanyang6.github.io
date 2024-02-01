@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>vim显示列分隔符</title>
+    <title>PHP生成zip压缩包</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.min.js"></script>
 <script>
@@ -485,7 +485,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符 </a>
                 </div>
             
         </div>
@@ -725,7 +725,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/PHP生成zip压缩包/">PHP生成zip压缩包 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/PHP生成zip压缩包/">PHP生成zip压缩包 </a>
                 </div>
             
         </div>
@@ -1262,7 +1262,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">vim显示列分隔符</h1>
+          <h1 data-note-icon="">PHP生成zip压缩包</h1>
         
         <div class="header-meta">
           
@@ -1271,19 +1271,23 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2022-12-07T15:55:15+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-31T13:32:42+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-11-23T14:16:24+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-02T00:04:25+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="vim" tabindex="-1">vim显示列分隔符</h1>
-<h2 id="内容" tabindex="-1">内容</h2>
-<pre><code class="language-bash">:set list
+      <h1 id="php-zip" tabindex="-1">PHP生成zip压缩包</h1>
+<h2 id="zip" tabindex="-1">将文件压缩成zip格式</h2>
+<pre><code class="language-php">&lt;?php
+$path = &quot;file.txt&quot;;
+$filename = &quot;file.zip&quot;;
+
+$zip = new ZipArchive();
+$zip-&gt;open($filename, ZipArchive::CREATE); //打开压缩包
+$zip-&gt;addFile($path, basename($path)); //向压缩包中添加文件
+$zip-&gt;close(); //关闭压缩包
 </code></pre>
-<p>显示 <code>tab</code> 和结尾符号 <code>$</code>，不显示开头的 <code>^</code> 符号<br>
-<img src="/img/user/attachs/Pasted%20image%2020221207155541.png" alt="../attachs/Pasted image 20221207155541.png"></p>
-<h2 id="参考" tabindex="-1">参考</h2>
 
       
       
@@ -1540,14 +1544,11 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#vim">vim显示列分隔符</a>
+                    <li><a href="#php-zip">PHP生成zip压缩包</a>
             
                 <ol>
                     
-                    <li><a href="#内容">内容</a>
-            		</li>
-
-                    <li><a href="#参考">参考</a>
+                    <li><a href="#zip">将文件压缩成zip格式</a>
             		</li>
                 </ol>
             		</li>
@@ -1563,8 +1564,9 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home dy_turbo</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   
