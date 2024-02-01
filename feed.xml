@@ -3,146 +3,41 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-01-31T15:44:43Z</updated>
+    <updated>2024-02-01T03:06:46Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
                 🏡 Home dy_turbo
                 
             </title>
-            <updated>2024-01-31T06:43:21.000Z</updated>
+            <updated>2024-02-01T03:06:06.000Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;home-dy-turbo&quot; tabindex=&quot;-1&quot;&gt;🏡 Home dy_turbo&lt;/h1&gt;
 &lt;h2 id=&quot;about-me&quot; tabindex=&quot;-1&quot;&gt;About Me&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;list&quot; tabindex=&quot;-1&quot;&gt;List&lt;/h2&gt;
-&lt;table class=&quot;block-language-dataview&quot;&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;File&lt;/th&gt;
-&lt;th&gt;date-created&lt;/th&gt;
-&lt;th&gt;date-modified&lt;/th&gt;
-&lt;th&gt;File Tags&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;原神挺好玩&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024/1/31 10:50&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:18&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024/1/30 13:27&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:28&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/obsidian/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024/1/29 14:23&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:28&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024/1/28 22:53&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:28&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;🏡 Home dy_turbo&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024/1/28 22:46&lt;/td&gt;
-&lt;td&gt;2024/1/31 14:43&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-01-19 12:46:25&lt;/td&gt;
-&lt;td&gt;2024-01-22 13:21:07&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2023/5/9 19:12&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:34&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/%E5%85%B7%E4%BD%93%E9%A2%98%E7%9B%AE/leetcode-1137%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137第 N 个泰波那契数&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2023/2/26 18:03&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:28&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/vim%E6%98%BE%E7%A4%BA%E5%88%97%E5%88%86%E9%9A%94%E7%AC%A6/&quot;&gt;vim显示列分隔符&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2022/12/7 15:55&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:32&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/GTD/&quot;&gt;GTD&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2022/5/5 13:26&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:28&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/%E8%B8%A9%E5%9D%91/js%E8%B6%85%E9%95%BF%E6%95%B0%E5%AD%97%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/&quot;&gt;js超长数字溢出问题&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2022/2/26 21:02&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:28&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#js&quot;&gt;#js&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#联调&quot;&gt;#联调&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#踩坑&quot;&gt;#踩坑&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/600%20Reading/700%20Personal/%E5%A6%82%E4%BD%95%E5%81%9A%E7%9B%91%E6%8E%A7/&quot;&gt;如何做监控&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021/5/7 19:04&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:35&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/%E6%A0%91%E8%8E%93%E6%B4%BE/ubuntu%20%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%AF%E5%8A%A8%E6%97%B6%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C/&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021/4/27 23:13&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:28&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021/4/22 18:14&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:26&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/nginx%20%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021/4/14 13:14&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:28&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Process&quot;&gt;#Process&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/output/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6/&quot;&gt;文件描述符&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021/4/13 11:04&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:28&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#文件&quot;&gt;#文件&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#OS&quot;&gt;#OS&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/output/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021/4/12 11:04&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:26&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#开发经验&quot;&gt;#开发经验&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/linux-man%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/&quot;&gt;linux-man命令使用&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021/4/7 17:11&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:28&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/&quot;&gt;vscode 调试nginx代码&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021/3/25 19:13&lt;/td&gt;
-&lt;td&gt;2024/1/31 13:28&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul class=&quot;block-language-dataview&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;原神挺好玩&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-31)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-30)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/obsidian/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-29)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-28)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;🏡 Home dy_turbo&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-28)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-19)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;:  &lt;em&gt;(created: 2023-5-9)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/%E5%85%B7%E4%BD%93%E9%A2%98%E7%9B%AE/leetcode-1137%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137第 N 个泰波那契数&lt;/a&gt;:  &lt;em&gt;(created: 2023-2-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/vim%E6%98%BE%E7%A4%BA%E5%88%97%E5%88%86%E9%9A%94%E7%AC%A6/&quot;&gt;vim显示列分隔符&lt;/a&gt;:  &lt;em&gt;(created: 2022-12-7)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/GTD/&quot;&gt;GTD&lt;/a&gt;:  &lt;em&gt;(created: 2022-5-5)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/%E8%B8%A9%E5%9D%91/js%E8%B6%85%E9%95%BF%E6%95%B0%E5%AD%97%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/&quot;&gt;js超长数字溢出问题&lt;/a&gt;:  &lt;em&gt;(created: 2022-2-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#js&quot;&gt;#js&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#联调&quot;&gt;#联调&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#踩坑&quot;&gt;#踩坑&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/600%20Reading/700%20Personal/%E5%A6%82%E4%BD%95%E5%81%9A%E7%9B%91%E6%8E%A7/&quot;&gt;如何做监控&lt;/a&gt;:  &lt;em&gt;(created: 2021-5-7)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/%E6%A0%91%E8%8E%93%E6%B4%BE/ubuntu%20%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%AF%E5%8A%A8%E6%97%B6%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C/&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-27)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-22)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/nginx%20%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-14)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/output/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6/&quot;&gt;文件描述符&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#文件&quot;&gt;#文件&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#OS&quot;&gt;#OS&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/output/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-12)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#开发经验&quot;&gt;#开发经验&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/linux-man%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/&quot;&gt;linux-man命令使用&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-7)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/&quot;&gt;vscode 调试nginx代码&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-25)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//" />
