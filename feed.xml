@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-01T15:07:30Z</updated>
+    <updated>2024-02-01T16:04:02Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -353,6 +353,31 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//card/网络-最多有多少个a类、b类和c类网络号/" />
+        </entry>
+        <entry>
+            <title>
+                linux-wait
+                
+            </title>
+            <updated>2024-02-01T16:03:11.000Z</updated>
+            <id>https://wudanyang6.github.io//card/linux-wait/</id>
+            <content type="html">
+                &lt;h1 id=&quot;content&quot; tabindex=&quot;-1&quot;&gt;Content&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;for pid in $(jobs -p); do
+    wait $pid
+    status=$?
+    if [ $status != 0 ]; then
+        echo &amp;quot; $pid status is $status have some error!&amp;quot; &amp;gt;&amp;gt; your_log
+    else
+        echo &amp;quot;$pid status is $status success!&amp;quot; &amp;gt;&amp;gt; your_log
+    fi
+done
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://man7.org/linux/man-pages/man1/wait.1p.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;wait(1p) - Linux manual page&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/linux-wait/" />
         </entry>
         <entry>
             <title>
