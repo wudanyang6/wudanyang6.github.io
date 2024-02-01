@@ -983,7 +983,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T13:33:05.415Z';
+        const searchIndexDate = '2024-02-01T15:07:30.209Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -995,9 +995,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T13:33:05.415Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T15:07:30.209Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T13:33:05.415Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T15:07:30.209Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1237,16 +1237,22 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #mac
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-02-03T15:47:28+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-01T15:20:12+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-02-03T15:47:28+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-01T23:06:29+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <p>将电池的设置 【唤醒以供网络访问】改成【始终】就会生效了<br>
+      <h1 id="mac" tabindex="-1">mac-合上盖子不断网</h1>
+<p>将电池的设置 【唤醒以供网络访问】改成【始终】就会生效了<br>
 <img src="/img/user/attachs/Pasted%20image%2020230203154729.png" alt="Pasted image 20230203154729.png"></p>
-<h1 id="参考" tabindex="-1">参考</h1>
 
       
       
@@ -1503,7 +1509,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#参考">参考</a>
+                    <li><a href="#mac">mac-合上盖子不断网</a>
             		</li>
                 </ol>
             </nav>

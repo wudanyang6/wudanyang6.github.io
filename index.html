@@ -981,7 +981,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T13:33:05.415Z';
+        const searchIndexDate = '2024-02-01T15:07:30.209Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -993,9 +993,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T13:33:05.415Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T15:07:30.209Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T13:33:05.415Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T15:07:30.209Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1262,7 +1262,7 @@
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka</a>:  <em>(created: 2023-9-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#kafka">#kafka</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#学习">#学习</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a>:  <em>(created: 2023-5-9)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/mac-合上盖子不断网/">mac-合上盖子不断网</a>:  <em>(created: 2023-2-3)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/mac-合上盖子不断网/">mac-合上盖子不断网</a>:  <em>(created: 2023-2-3)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符</a>:  <em>(created: 2022-12-7)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/mac/mac-自定义快捷键/">mac-自定义快捷键</a>:  <em>(created: 2022-11-16)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/card/GTD/">GTD</a>:  <em>(created: 2022-5-5)</em></li>
