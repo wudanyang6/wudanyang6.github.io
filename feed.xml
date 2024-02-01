@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-01T05:02:32Z</updated>
+    <updated>2024-02-01T05:08:04Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -182,6 +182,30 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
         </entry>
         <entry>
             <title>
+                网络-最多有多少个a类、b类和c类网络号
+                
+            </title>
+            <updated>2024-02-01T05:02:45.000Z</updated>
+            <id>https://wudanyang6.github.io//card/网络-最多有多少个a类、b类和c类网络号/</id>
+            <content type="html">
+                &lt;p&gt;在IPv4地址体系中，网络被分为4个等级，分别是A，B，C和D类。对于A、B、C类，其数量如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A类：128个（范围是0.0.0.0到127.255.255.255，但0.0.0.0和127.0.0.0通常分别用作默认路由和本地回环地址，所以不包括在内。）&lt;/li&gt;
+&lt;li&gt;B类：16,384个（范围是 128.0.0.0 到 191.255.255.255）&lt;/li&gt;
+&lt;li&gt;C类：2,097,152个（范围是 192.0.0.0 到 223.255.255.255）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;请注意，上述分类是根据原始的IPv4地址分类来计算的。然而，由于IP地址的枯竭，现在的实际网络环境中，通常在IP地址分配上使用了子网划分，CIDR，私有地址等现代网络技术，因此实际的可用网络数量会因子网划分、私有地址使用等因素而有所变化。&lt;/p&gt;
+&lt;p&gt;D类 IP 地址是多播（Multicast）地址，其范围是 224.0.0.0 到 239.255.255.255。&lt;/p&gt;
+&lt;p&gt;所以，D类网络（多播地址）总共有 (239-224+1) x (2^24) = 268,435,456 个。&lt;/p&gt;
+&lt;p&gt;但是，有些特定的地址在D类中是已经被保留或特殊用途的，例如 224.0.0.0 - 224.0.0.255 是被保留的用于本地网络的多播地址。&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/a5534789/article/details/50118857#:~:text=%E2%80%9C0%E2%80%9D%E5%81%9A%E4%B8%BA%E7%BD%91%E7%BB%9C%E5%8F%B7,%E7%BD%91%E6%AE%B5%E4%B8%BA1%E2%80%94126.&amp;amp;text=224%3D412%3D166%3D2563,%E6%95%B0%E5%BA%94%E8%AF%A5%E6%98%AF16777214%E4%B8%AA%E3%80%82&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://blog.csdn.net/a5534789/article/details/50118857#:~:text=“0”做为网络号,网段为1—126.&amp;amp;text=224%3D412%3D166%3D2563,数应该是16777214个。&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/网络-最多有多少个a类、b类和c类网络号/" />
+        </entry>
+        <entry>
+            <title>
                 原神挺好玩
                 
             </title>
@@ -220,10 +244,46 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
         </entry>
         <entry>
             <title>
+                iso-日期表示法
+                
+            </title>
+            <updated>2024-02-01T05:03:10.000Z</updated>
+            <id>https://wudanyang6.github.io//card/iso-日期表示法/</id>
+            <content type="html">
+                &lt;p&gt;&lt;strong&gt;国际标准化组织的日期时间表示法&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;日期时间点表示法&quot; tabindex=&quot;-1&quot;&gt;日期时间点表示法&lt;/h1&gt;
+&lt;h2 id=&quot;零时区&quot; tabindex=&quot;-1&quot;&gt;零时区&lt;/h2&gt;
+&lt;p&gt;在最后加上大写 的 Z&lt;br /&gt;
+2004-05-03T17:30:08Z&lt;/p&gt;
+&lt;h2 id=&quot;其他时区&quot; tabindex=&quot;-1&quot;&gt;其他时区&lt;/h2&gt;
+&lt;p&gt;合并表示时，要在时间前面加一大写字母T，如要表示东八区时间2004年5月3日下午5点30分8秒，可以写成&lt;strong&gt;2004-05-03T17:30:08+08:00&lt;/strong&gt;或&lt;strong&gt;20040503T173008+08&lt;/strong&gt;。&lt;/p&gt;
+&lt;h1 id=&quot;时间点表示法&quot; tabindex=&quot;-1&quot;&gt;时间点表示法&lt;/h1&gt;
+&lt;p&gt;首字母为 P，其他字母为年月日时分秒，中间加上 T&lt;br /&gt;
+&lt;strong&gt;P1Y3M5DT6H7M30S&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;时间间隔表示法&quot; tabindex=&quot;-1&quot;&gt;时间间隔表示法&lt;/h1&gt;
+&lt;h2 id=&quot;从一个时间开始，到另一个时间结束&quot; tabindex=&quot;-1&quot;&gt;从一个时间开始，到另一个时间结束&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;19850412/19860101&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;从指定时间开始持续一段时间&quot; tabindex=&quot;-1&quot;&gt;从指定时间开始持续一段时间&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;19850412/P6M&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&quot;循环时间表示法&quot; tabindex=&quot;-1&quot;&gt;循环时间表示法&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;R【循环次数】【/开始时间】/时间间隔【/结束时间】&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;从2004年5月6日北京时间下午1点起时间间隔半年零5天3小时循环，且循环3次&lt;br /&gt;
+&lt;strong&gt;R3/20040506T130000+08/P0Y6M5DT3H0M0S&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;以1年2个月为循环间隔，无限次循环，最后循环终止于2025年1月1日&lt;br /&gt;
+&lt;strong&gt;R/P1Y2M/20250101&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;div style=&quot;display: block; position: relative; width: 100%; height: 0px; --aspect-ratio:9/16; padding-bottom: calc(var(--aspect-ratio) * 100%);&quot;&gt;&lt;iframe src=&quot;https://zh.wikipedia.org/wiki/ISO_8601&quot; allow=&quot;fullscreen&quot; style=&quot;position: absolute; top: 0px; left: 0px; height: 100%; width: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+            </content>
+            <link href="https://wudanyang6.github.io//card/iso-日期表示法/" />
+        </entry>
+        <entry>
+            <title>
                 Things 工作流
                 
             </title>
-            <updated>2024-02-01T05:01:40.000Z</updated>
+            <updated>2024-02-01T05:07:15.000Z</updated>
             <id>https://wudanyang6.github.io//card/Things 工作流/</id>
             <content type="html">
                 &lt;h1 id=&quot;things&quot; tabindex=&quot;-1&quot;&gt;Things 工作流&lt;/h1&gt;
@@ -243,6 +303,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;/li&gt;
 &lt;li&gt;根据时间，选取任务进行处理，打开 &lt;code&gt;Session&lt;/code&gt; 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/Pasted%20image%2020231107224028.png&quot; alt=&quot;Pasted image 20231107224028.png&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;为了让Things工作流更顺畅，我做了一个obsidian插件： &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/obsidian/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/Things 工作流/" />
