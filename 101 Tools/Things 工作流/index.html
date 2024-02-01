@@ -376,6 +376,28 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/Things 工作流/">Things 工作流 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符 </a>
                 </div>
             
@@ -573,28 +595,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/Things 工作流/">Things 工作流 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/原神挺好玩/">原神挺好玩 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/网络-最多有多少个a类、b类和c类网络号/">网络-最多有多少个a类、b类和c类网络号 </a>
                 </div>
             
@@ -610,11 +610,11 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('obsidian')}" @click.stop="isOpen=!isOpen">
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('game')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
                     <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">obsidian</span>
+                    <span class="foldername">game</span>
                     </div>
                     
                         
@@ -625,7 +625,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/obsidian/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/game/原神挺好玩/">原神挺好玩 </a>
                 </div>
             
         </div>
@@ -854,7 +854,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T05:08:03.961Z';
+        const searchIndexDate = '2024-02-01T05:11:58.456Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -866,9 +866,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T05:08:03.961Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T05:11:58.456Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T05:08:03.961Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T05:11:58.456Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1144,7 +1144,7 @@
 </li>
 <li>根据时间，选取任务进行处理，打开 <code>Session</code> 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  <img src="/img/user/card/Pasted%20image%2020231107224028.png" alt="Pasted image 20231107224028.png"></li>
 </ol>
-<p>为了让Things工作流更顺畅，我做了一个obsidian插件： <a class="internal-link" target="" data-note-icon="" href="/obsidian/obsidian-things3-today插件/">obsidian-things3-today插件</a></p>
+<p>为了让Things工作流更顺畅，我做了一个obsidian插件： <a class="internal-link" target="" data-note-icon="" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件</a></p>
 
       
       
@@ -1413,9 +1413,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">🏡 Home dy_turbo</a>
+                                                </div></div>
                               </div>
                         
                   

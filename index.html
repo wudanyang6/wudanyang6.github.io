@@ -375,6 +375,28 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/Things 工作流/">Things 工作流 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符 </a>
                 </div>
             
@@ -572,28 +594,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/Things 工作流/">Things 工作流 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/原神挺好玩/">原神挺好玩 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/网络-最多有多少个a类、b类和c类网络号/">网络-最多有多少个a类、b类和c类网络号 </a>
                 </div>
             
@@ -609,11 +609,11 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('obsidian')}" @click.stop="isOpen=!isOpen">
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('game')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
                     <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">obsidian</span>
+                    <span class="foldername">game</span>
                     </div>
                     
                         
@@ -624,7 +624,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/obsidian/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/game/原神挺好玩/">原神挺好玩 </a>
                 </div>
             
         </div>
@@ -852,7 +852,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T05:08:03.961Z';
+        const searchIndexDate = '2024-02-01T05:11:58.456Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -864,9 +864,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T05:08:03.961Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T05:11:58.456Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T05:08:03.961Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T05:11:58.456Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1121,17 +1121,20 @@
 <p><a class="internal-link" target="" data-note-icon="" href="/card/About Me/">About Me</a></p>
 <h2 id="list" tabindex="-1">List</h2>
 <ul class="block-language-dataview">
-<li><a class="internal-link" target="" data-note-icon="" href="/card/原神挺好玩/">原神挺好玩</a>:  <em>(created: 2024-1-31)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/game/原神挺好玩/">原神挺好玩</a>:  <em>(created: 2024-1-31)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/card/About Me/">About Me</a>:  <em>(created: 2024-1-30)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/obsidian/obsidian-things3-today插件/">obsidian-things3-today插件</a>:  <em>(created: 2024-1-29)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件</a>:  <em>(created: 2024-1-29)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a>:  <em>(created: 2024-1-28)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/">🏡 Home dy_turbo</a>:  <em>(created: 2024-1-28)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/10x程序员工作法/">10x程序员工作法</a>:  <em>(created: 2024-1-19)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/Things 工作流/">Things 工作流</a>:  <em>(created: 2023-10-9)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a>:  <em>(created: 2023-5-9)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符</a>:  <em>(created: 2022-12-7)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/card/GTD/">GTD</a>:  <em>(created: 2022-5-5)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/踩坑/js超长数字溢出问题/">js超长数字溢出问题</a>:  <em>(created: 2022-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#js">#js</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#联调">#联调</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#踩坑">#踩坑</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/card/iso-日期表示法/">iso-日期表示法</a>:  <em>(created: 2021-7-25)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/card/网络-最多有多少个a类、b类和c类网络号/">网络-最多有多少个a类、b类和c类网络号</a>:  <em>(created: 2021-5-24)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/600 Reading/700 Personal/如何做监控/">如何做监控</a>:  <em>(created: 2021-5-7)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络</a>:  <em>(created: 2021-4-27)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/">如何查看 nginx 的rewrite记录</a>:  <em>(created: 2021-4-22)</em></li>

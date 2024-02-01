@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-01T05:08:04Z</updated>
+    <updated>2024-02-01T05:11:58Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -18,17 +18,20 @@
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;list&quot; tabindex=&quot;-1&quot;&gt;List&lt;/h2&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;原神挺好玩&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-31)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/game/%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;原神挺好玩&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-31)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-30)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/obsidian/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-29)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-29)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-28)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;🏡 Home dy_turbo&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-28)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-19)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;Things 工作流&lt;/a&gt;:  &lt;em&gt;(created: 2023-10-9)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#效率&quot;&gt;#效率&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tools&quot;&gt;#tools&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;:  &lt;em&gt;(created: 2023-5-9)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/%E5%85%B7%E4%BD%93%E9%A2%98%E7%9B%AE/leetcode-1137%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137第 N 个泰波那契数&lt;/a&gt;:  &lt;em&gt;(created: 2023-2-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/vim%E6%98%BE%E7%A4%BA%E5%88%97%E5%88%86%E9%9A%94%E7%AC%A6/&quot;&gt;vim显示列分隔符&lt;/a&gt;:  &lt;em&gt;(created: 2022-12-7)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/GTD/&quot;&gt;GTD&lt;/a&gt;:  &lt;em&gt;(created: 2022-5-5)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/%E8%B8%A9%E5%9D%91/js%E8%B6%85%E9%95%BF%E6%95%B0%E5%AD%97%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/&quot;&gt;js超长数字溢出问题&lt;/a&gt;:  &lt;em&gt;(created: 2022-2-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#js&quot;&gt;#js&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#联调&quot;&gt;#联调&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#踩坑&quot;&gt;#踩坑&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/iso-%E6%97%A5%E6%9C%9F%E8%A1%A8%E7%A4%BA%E6%B3%95/&quot;&gt;iso-日期表示法&lt;/a&gt;:  &lt;em&gt;(created: 2021-7-25)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E7%BD%91%E7%BB%9C-%E6%9C%80%E5%A4%9A%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AAa%E7%B1%BB%E3%80%81b%E7%B1%BB%E5%92%8Cc%E7%B1%BB%E7%BD%91%E7%BB%9C%E5%8F%B7/&quot;&gt;网络-最多有多少个a类、b类和c类网络号&lt;/a&gt;:  &lt;em&gt;(created: 2021-5-24)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/600%20Reading/700%20Personal/%E5%A6%82%E4%BD%95%E5%81%9A%E7%9B%91%E6%8E%A7/&quot;&gt;如何做监控&lt;/a&gt;:  &lt;em&gt;(created: 2021-5-7)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/%E6%A0%91%E8%8E%93%E6%B4%BE/ubuntu%20%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%AF%E5%8A%A8%E6%97%B6%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C/&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-27)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-22)&lt;/em&gt;&lt;/li&gt;
@@ -163,54 +166,11 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
         </entry>
         <entry>
             <title>
-                obsidian-things3-today插件
-                
-            </title>
-            <updated>2024-01-31T05:28:27.000Z</updated>
-            <id>https://wudanyang6.github.io//obsidian/obsidian-things3-today插件/</id>
-            <content type="html">
-                &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
-&lt;p&gt;把之前的插件重新搞了搞，把乱七八糟的东西去掉了，然后提交了obsidian插件库&lt;/p&gt;
-&lt;p&gt;正在等着被review： &lt;a href=&quot;https://github.com/obsidianmd/obsidian-releases/pull/2997&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/obsidianmd/obsidian-releases/pull/2997&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;新录了一个gif：&lt;/p&gt;
-&lt;p&gt;图中可以看到和things3的Today列表联动还算是顺畅&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/things3-today-showcase.gif&quot; alt=&quot;things3-today-showcase.gif&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//obsidian/obsidian-things3-today插件/" />
-        </entry>
-        <entry>
-            <title>
-                网络-最多有多少个a类、b类和c类网络号
-                
-            </title>
-            <updated>2024-02-01T05:02:45.000Z</updated>
-            <id>https://wudanyang6.github.io//card/网络-最多有多少个a类、b类和c类网络号/</id>
-            <content type="html">
-                &lt;p&gt;在IPv4地址体系中，网络被分为4个等级，分别是A，B，C和D类。对于A、B、C类，其数量如下：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A类：128个（范围是0.0.0.0到127.255.255.255，但0.0.0.0和127.0.0.0通常分别用作默认路由和本地回环地址，所以不包括在内。）&lt;/li&gt;
-&lt;li&gt;B类：16,384个（范围是 128.0.0.0 到 191.255.255.255）&lt;/li&gt;
-&lt;li&gt;C类：2,097,152个（范围是 192.0.0.0 到 223.255.255.255）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;请注意，上述分类是根据原始的IPv4地址分类来计算的。然而，由于IP地址的枯竭，现在的实际网络环境中，通常在IP地址分配上使用了子网划分，CIDR，私有地址等现代网络技术，因此实际的可用网络数量会因子网划分、私有地址使用等因素而有所变化。&lt;/p&gt;
-&lt;p&gt;D类 IP 地址是多播（Multicast）地址，其范围是 224.0.0.0 到 239.255.255.255。&lt;/p&gt;
-&lt;p&gt;所以，D类网络（多播地址）总共有 (239-224+1) x (2^24) = 268,435,456 个。&lt;/p&gt;
-&lt;p&gt;但是，有些特定的地址在D类中是已经被保留或特殊用途的，例如 224.0.0.0 - 224.0.0.255 是被保留的用于本地网络的多播地址。&lt;/p&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/a5534789/article/details/50118857#:~:text=%E2%80%9C0%E2%80%9D%E5%81%9A%E4%B8%BA%E7%BD%91%E7%BB%9C%E5%8F%B7,%E7%BD%91%E6%AE%B5%E4%B8%BA1%E2%80%94126.&amp;amp;text=224%3D412%3D166%3D2563,%E6%95%B0%E5%BA%94%E8%AF%A5%E6%98%AF16777214%E4%B8%AA%E3%80%82&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://blog.csdn.net/a5534789/article/details/50118857#:~:text=“0”做为网络号,网段为1—126.&amp;amp;text=224%3D412%3D166%3D2563,数应该是16777214个。&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/网络-最多有多少个a类、b类和c类网络号/" />
-        </entry>
-        <entry>
-            <title>
                 原神挺好玩
                 
             </title>
             <updated>2024-01-31T05:18:06.000Z</updated>
-            <id>https://wudanyang6.github.io//card/原神挺好玩/</id>
+            <id>https://wudanyang6.github.io//game/原神挺好玩/</id>
             <content type="html">
                 &lt;h1 id=&quot;原神挺好玩&quot; tabindex=&quot;-1&quot;&gt;原神挺好玩&lt;/h1&gt;
 &lt;p&gt;最近游戏一直在玩原神，一个开放的大世界。主线剧情刚刚做完，确实是我想象中的角色扮演（RPG）游戏。&lt;/p&gt;
@@ -240,14 +200,38 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-31_36.png&quot; alt=&quot;../attachs/clop_2024-01-31_36.png&quot; /&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/原神挺好玩/" />
+            <link href="https://wudanyang6.github.io//game/原神挺好玩/" />
+        </entry>
+        <entry>
+            <title>
+                网络-最多有多少个a类、b类和c类网络号
+                
+            </title>
+            <updated>2024-02-01T05:02:45.000Z</updated>
+            <id>https://wudanyang6.github.io//card/网络-最多有多少个a类、b类和c类网络号/</id>
+            <content type="html">
+                &lt;p&gt;在IPv4地址体系中，网络被分为4个等级，分别是A，B，C和D类。对于A、B、C类，其数量如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A类：128个（范围是0.0.0.0到127.255.255.255，但0.0.0.0和127.0.0.0通常分别用作默认路由和本地回环地址，所以不包括在内。）&lt;/li&gt;
+&lt;li&gt;B类：16,384个（范围是 128.0.0.0 到 191.255.255.255）&lt;/li&gt;
+&lt;li&gt;C类：2,097,152个（范围是 192.0.0.0 到 223.255.255.255）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;请注意，上述分类是根据原始的IPv4地址分类来计算的。然而，由于IP地址的枯竭，现在的实际网络环境中，通常在IP地址分配上使用了子网划分，CIDR，私有地址等现代网络技术，因此实际的可用网络数量会因子网划分、私有地址使用等因素而有所变化。&lt;/p&gt;
+&lt;p&gt;D类 IP 地址是多播（Multicast）地址，其范围是 224.0.0.0 到 239.255.255.255。&lt;/p&gt;
+&lt;p&gt;所以，D类网络（多播地址）总共有 (239-224+1) x (2^24) = 268,435,456 个。&lt;/p&gt;
+&lt;p&gt;但是，有些特定的地址在D类中是已经被保留或特殊用途的，例如 224.0.0.0 - 224.0.0.255 是被保留的用于本地网络的多播地址。&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/a5534789/article/details/50118857#:~:text=%E2%80%9C0%E2%80%9D%E5%81%9A%E4%B8%BA%E7%BD%91%E7%BB%9C%E5%8F%B7,%E7%BD%91%E6%AE%B5%E4%B8%BA1%E2%80%94126.&amp;amp;text=224%3D412%3D166%3D2563,%E6%95%B0%E5%BA%94%E8%AF%A5%E6%98%AF16777214%E4%B8%AA%E3%80%82&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://blog.csdn.net/a5534789/article/details/50118857#:~:text=“0”做为网络号,网段为1—126.&amp;amp;text=224%3D412%3D166%3D2563,数应该是16777214个。&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/网络-最多有多少个a类、b类和c类网络号/" />
         </entry>
         <entry>
             <title>
                 iso-日期表示法
                 
             </title>
-            <updated>2024-02-01T05:03:10.000Z</updated>
+            <updated>2024-02-01T05:03:15.000Z</updated>
             <id>https://wudanyang6.github.io//card/iso-日期表示法/</id>
             <content type="html">
                 &lt;p&gt;&lt;strong&gt;国际标准化组织的日期时间表示法&lt;/strong&gt;&lt;/p&gt;
@@ -277,36 +261,6 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 &lt;div style=&quot;display: block; position: relative; width: 100%; height: 0px; --aspect-ratio:9/16; padding-bottom: calc(var(--aspect-ratio) * 100%);&quot;&gt;&lt;iframe src=&quot;https://zh.wikipedia.org/wiki/ISO_8601&quot; allow=&quot;fullscreen&quot; style=&quot;position: absolute; top: 0px; left: 0px; height: 100%; width: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
             </content>
             <link href="https://wudanyang6.github.io//card/iso-日期表示法/" />
-        </entry>
-        <entry>
-            <title>
-                Things 工作流
-                
-            </title>
-            <updated>2024-02-01T05:07:15.000Z</updated>
-            <id>https://wudanyang6.github.io//card/Things 工作流/</id>
-            <content type="html">
-                &lt;h1 id=&quot;things&quot; tabindex=&quot;-1&quot;&gt;Things 工作流&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;有任何事情都记录下来，心中的任何想法都不要放过&lt;/li&gt;
-&lt;li&gt;定时整理收件箱（需要保证整理完收件箱之后，任务都是可执行的）
-&lt;ol&gt;
-&lt;li&gt;如果有事情2分钟就能解决，那么直接去做，属于小事情&lt;/li&gt;
-&lt;li&gt;如果需要15-30分钟，则标记上标签 ![](/img/user/card/Pasted image 20231009172220.png)&lt;/li&gt;
-&lt;li&gt;如果需要1小时以上，就将任务设置成项目
-&lt;ol&gt;
-&lt;li&gt;做一次任务分解，分解成小任务，小任务以30分钟以内完成最好&lt;/li&gt;
-&lt;li&gt;如果分解项目本身也需要很多时间，那么在项目里面加一个【分解任务】的事项&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;根据时间，选取任务进行处理，打开 &lt;code&gt;Session&lt;/code&gt; 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/Pasted%20image%2020231107224028.png&quot; alt=&quot;Pasted image 20231107224028.png&quot; /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;为了让Things工作流更顺畅，我做了一个obsidian插件： &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/obsidian/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/Things 工作流/" />
         </entry>
         <entry>
             <title>
@@ -569,10 +523,59 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
         </entry>
         <entry>
             <title>
+                obsidian-things3-today插件
+                
+            </title>
+            <updated>2024-01-31T05:28:27.000Z</updated>
+            <id>https://wudanyang6.github.io//101 Tools/obsidian-things3-today插件/</id>
+            <content type="html">
+                &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
+&lt;p&gt;把之前的插件重新搞了搞，把乱七八糟的东西去掉了，然后提交了obsidian插件库&lt;/p&gt;
+&lt;p&gt;正在等着被review： &lt;a href=&quot;https://github.com/obsidianmd/obsidian-releases/pull/2997&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/obsidianmd/obsidian-releases/pull/2997&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;新录了一个gif：&lt;/p&gt;
+&lt;p&gt;图中可以看到和things3的Today列表联动还算是顺畅&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/things3-today-showcase.gif&quot; alt=&quot;things3-today-showcase.gif&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//101 Tools/obsidian-things3-today插件/" />
+        </entry>
+        <entry>
+            <title>
+                Things 工作流
+                
+            </title>
+            <updated>2024-02-01T05:07:15.000Z</updated>
+            <id>https://wudanyang6.github.io//101 Tools/Things 工作流/</id>
+            <content type="html">
+                &lt;h1 id=&quot;things&quot; tabindex=&quot;-1&quot;&gt;Things 工作流&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;有任何事情都记录下来，心中的任何想法都不要放过&lt;/li&gt;
+&lt;li&gt;定时整理收件箱（需要保证整理完收件箱之后，任务都是可执行的）
+&lt;ol&gt;
+&lt;li&gt;如果有事情2分钟就能解决，那么直接去做，属于小事情&lt;/li&gt;
+&lt;li&gt;如果需要15-30分钟，则标记上标签 ![](/img/user/card/Pasted image 20231009172220.png)&lt;/li&gt;
+&lt;li&gt;如果需要1小时以上，就将任务设置成项目
+&lt;ol&gt;
+&lt;li&gt;做一次任务分解，分解成小任务，小任务以30分钟以内完成最好&lt;/li&gt;
+&lt;li&gt;如果分解项目本身也需要很多时间，那么在项目里面加一个【分解任务】的事项&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;根据时间，选取任务进行处理，打开 &lt;code&gt;Session&lt;/code&gt; 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/Pasted%20image%2020231107224028.png&quot; alt=&quot;Pasted image 20231107224028.png&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;为了让Things工作流更顺畅，我做了一个obsidian插件： &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//101 Tools/Things 工作流/" />
+        </entry>
+        <entry>
+            <title>
                 10x程序员工作法
                 
             </title>
-            <updated>2024-01-22T13:21:07.000Z</updated>
+            <updated>2024-01-31T15:50:43.000Z</updated>
             <id>https://wudanyang6.github.io//101 Tools/10x程序员工作法/</id>
             <content type="html">
                 &lt;h1 id=&quot;10x&quot; tabindex=&quot;-1&quot;&gt;10x程序员工作法&lt;/h1&gt;

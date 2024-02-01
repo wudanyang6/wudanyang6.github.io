@@ -376,6 +376,28 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/Things 工作流/">Things 工作流 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符 </a>
                 </div>
             
@@ -573,28 +595,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/Things 工作流/">Things 工作流 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/原神挺好玩/">原神挺好玩 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/网络-最多有多少个a类、b类和c类网络号/">网络-最多有多少个a类、b类和c类网络号 </a>
                 </div>
             
@@ -610,11 +610,11 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('obsidian')}" @click.stop="isOpen=!isOpen">
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('game')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
                     <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">obsidian</span>
+                    <span class="foldername">game</span>
                     </div>
                     
                         
@@ -625,7 +625,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/obsidian/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/game/原神挺好玩/">原神挺好玩 </a>
                 </div>
             
         </div>
@@ -854,7 +854,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T05:08:03.961Z';
+        const searchIndexDate = '2024-02-01T05:11:58.456Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -866,9 +866,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T05:08:03.961Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T05:11:58.456Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T05:08:03.961Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T05:11:58.456Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1396,7 +1396,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/card/Things 工作流/" data-note-icon="" class="backlink">Things 工作流</a>
+                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/101 Tools/Things 工作流/" data-note-icon="" class="backlink">Things 工作流</a>
                                                 </div><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">🏡 Home dy_turbo</a>
                                                 </div></div>
                               </div>
