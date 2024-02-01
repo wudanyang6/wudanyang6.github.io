@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-01T16:05:10Z</updated>
+    <updated>2024-02-01T16:05:54Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -1306,6 +1306,29 @@ Saving to: ‘index.html’
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/linux/linux-man命令使用/" />
+        </entry>
+        <entry>
+            <title>
+                linux-echo
+                
+            </title>
+            <updated>2024-02-01T16:05:03.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/linux/linux-echo/</id>
+            <content type="html">
+                &lt;h1 id=&quot;常用&quot; tabindex=&quot;-1&quot;&gt;常用&lt;/h1&gt;
+&lt;p&gt;echo &amp;quot;hello&amp;quot;&lt;/p&gt;
+&lt;p&gt;echo -n &amp;quot;hello&amp;quot; # 这种会去掉换行&lt;/p&gt;
+&lt;p&gt;sh 不支持这个 -n 参数，很奇怪&lt;/p&gt;
+&lt;h1 id=&quot;n-zsh&quot; tabindex=&quot;-1&quot;&gt;使用-n参数zsh 后面会跟着一个百分号&lt;/h1&gt;
+&lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
+&lt;div class=&quot;markdown-embed-title&quot;&gt;
+&lt;h1 id=&quot;printf-puts-a-percent-sign-after-everything-it-prints&quot; tabindex=&quot;-1&quot;&gt;Printf puts a percent sign after everything it prints&lt;/h1&gt;
+&lt;/div&gt;
+&lt;p&gt;This is &lt;code&gt;zsh&lt;/code&gt;&#39;s way of telling you that the preceding command outputted a partial line and the shell terminated that line to give you a prompt on a new line.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/linux/linux-echo/" />
         </entry>
         <entry>
             <title>
