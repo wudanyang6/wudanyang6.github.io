@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>🏡 Home dy_turbo</title>
+    <title>Home dy_turbo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
@@ -63,7 +63,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.8bfd6971.css" rel="stylesheet">
+    <link href="/styles/_theme.c23ab09f.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet">
@@ -148,7 +148,7 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">🏡 Home dy_turbo </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Home dy_turbo </a>
                 </div>
             
         </div>
@@ -979,7 +979,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T08:00:16.068Z';
+        const searchIndexDate = '2024-02-01T08:11:06.322Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -991,9 +991,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T08:00:16.068Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T08:11:06.322Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T08:00:16.068Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T08:11:06.322Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1252,7 +1252,7 @@
 <li><a class="internal-link" target="" data-note-icon="" href="/card/About Me/">About Me</a>:  <em>(created: 2024-1-30)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件</a>:  <em>(created: 2024-1-29)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a>:  <em>(created: 2024-1-28)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/">🏡 Home dy_turbo</a>:  <em>(created: 2024-1-28)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/">Home dy_turbo</a>:  <em>(created: 2024-1-28)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/obsidian/obsidian 开发过程支持的ICON/">obsidian 开发过程支持的ICON</a>:  <em>(created: 2024-1-25)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/10x程序员工作法/">10x程序员工作法</a>:  <em>(created: 2024-1-19)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/Kafka入门/">Kafka入门</a>:  <em>(created: 2024-1-15)</em></li>
