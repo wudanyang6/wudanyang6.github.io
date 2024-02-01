@@ -148,6 +148,15 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">🏡 Home dy_turbo </a>
+                </div>
+            
+        </div>
+        
+    
+    
+        <div x-show="isOpen" style="display:none" class="">
+            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('100 Programmer')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -803,15 +812,6 @@
             
         </div>
         
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">🏡 Home dy_turbo </a>
-                </div>
-            
-        </div>
-        
     </div>
       </nav>
     </div>
@@ -979,7 +979,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T07:35:25.738Z';
+        const searchIndexDate = '2024-02-01T07:38:05.718Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -991,9 +991,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T07:35:25.738Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T07:38:05.718Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T07:35:25.738Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T07:38:05.718Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1253,8 +1253,11 @@
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件</a>:  <em>(created: 2024-1-29)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a>:  <em>(created: 2024-1-28)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/">🏡 Home dy_turbo</a>:  <em>(created: 2024-1-28)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/obsidian/obsidian 开发过程支持的ICON/">obsidian 开发过程支持的ICON</a>:  <em>(created: 2024-1-25)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/10x程序员工作法/">10x程序员工作法</a>:  <em>(created: 2024-1-19)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/Kafka入门/">Kafka入门</a>:  <em>(created: 2024-1-15)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/Things 工作流/">Things 工作流</a>:  <em>(created: 2023-10-9)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka</a>:  <em>(created: 2023-9-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#kafka">#kafka</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#学习">#学习</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a>:  <em>(created: 2023-5-9)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/mac-合上盖子不断网/">mac-合上盖子不断网</a>:  <em>(created: 2023-2-3)</em></li>
