@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>如何追查线上问题</title>
+    <title>mac-自定义快捷键</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
@@ -380,7 +380,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/mac/mac-自定义快捷键/">mac-自定义快捷键 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/mac/mac-自定义快捷键/">mac-自定义快捷键 </a>
                 </div>
             
         </div>
@@ -687,7 +687,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/output/如何追查线上问题/">如何追查线上问题 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/output/如何追查线上问题/">如何追查线上问题 </a>
                 </div>
             
         </div>
@@ -1132,7 +1132,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">如何追查线上问题</h1>
+          <h1 data-note-icon="">mac-自定义快捷键</h1>
         
         <div class="header-meta">
           
@@ -1140,59 +1140,23 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #mac
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-04-12T11:04:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-31T13:26:30+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2022-11-16T14:19:58+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-01T13:13:40+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <p>tags: <a class="tag" onclick="toggleTagSearch(this)" data-content="#开发经验">#开发经验</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></p>
-<h1 id="原则" tabindex="-1">原则</h1>
-<h2 id="止损优先" tabindex="-1">止损优先</h2>
-<p>不能先追查问题根源， 首先应该<code>止损</code>，不让问题进一步扩大，<code>代码回滚</code>、<code>服务降级</code>等都可以起到止损的效果。<br>
-对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 <code>配置开关 </code>控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多</p>
-<h2 id="及时通告" tabindex="-1">及时通告</h2>
-<p>在问题发生之后，要及时对处理问题的过程进行<code>通告</code>。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。</p>
-<h1 id="追查问题的方法" tabindex="-1">追查问题的方法</h1>
-<h2 id="逻辑方法:" tabindex="-1">逻辑方法:</h2>
-<ol>
-<li>先收集<code>现象</code>：业务报错、线上报错日志等<br>
-对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。</li>
-<li>针对现象假设<code>原因</code>：
-<ol>
-<li>常见问题依据追查手册</li>
-<li>其他问题保持思路开放，大胆假设</li>
-</ol>
-</li>
-<li>是否<code>有损</code>的判断：<br>
-根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 <strong>止损优先</strong></li>
-<li><code>质疑</code>所有数据：<br>
-各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证</li>
-</ol>
-<h2 id="知识准备" tabindex="-1">知识准备</h2>
-<ol>
-<li>对线上各种<code>日志</code>的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等</li>
-<li>对线上的各种<code>配置</code>更要做到心中有数</li>
-<li>对<code>细节</code>的追查，每次都更细一些，这样才能获得更多的信息</li>
-<li>计算机<code>基本功</code>，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查</li>
-</ol>
-<h2 id="总结经验" tabindex="-1">总结经验</h2>
-<ol>
-<li>成熟的方法落地成<code>工具</code></li>
-<li>对问题的追查形成<code>文档</code></li>
-</ol>
-<h1 id="问题解决之后" tabindex="-1">问题解决之后</h1>
-<p>如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。<br>
-那么，我们可以通过思考以下几点来提升自己</p>
-<ol>
-<li>线上是否恢复了正常？（<code>最基本的</code>）</li>
-<li>问题的原因是什么？（<code>落到追查文档</code>）</li>
-<li>通过什么手段恢复的？（<code>解决方案</code>）</li>
-<li>怎么可以避免下次再次出现问题？（<code>防患未然</code>）</li>
-<li>除了此次出现的问题，会不会有其他的问题出现（<code>举一反三</code>）</li>
-<li>出现此类问题是否是架构问题造成的？（<code>根本原因</code>）</li>
-</ol>
+      <h1 id="mac" tabindex="-1">mac-自定义快捷键</h1>
+<h2 id="内容" tabindex="-1">内容</h2>
+<p><img src="/img/user/attachs/Pasted%20image%2020221116142140.png" alt="Pasted image 20221116142140.png"></p>
+<h2 id="参考" tabindex="-1">参考</h2>
 
       
       
@@ -1447,34 +1411,16 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#原则">原则</a>
+                    <li><a href="#mac">mac-自定义快捷键</a>
             
                 <ol>
                     
-                    <li><a href="#止损优先">止损优先</a>
+                    <li><a href="#内容">内容</a>
             		</li>
 
-                    <li><a href="#及时通告">及时通告</a>
+                    <li><a href="#参考">参考</a>
             		</li>
                 </ol>
-            		</li>
-
-                    <li><a href="#追查问题的方法">追查问题的方法</a>
-            
-                <ol>
-                    
-                    <li><a href="#逻辑方法:">逻辑方法:</a>
-            		</li>
-
-                    <li><a href="#知识准备">知识准备</a>
-            		</li>
-
-                    <li><a href="#总结经验">总结经验</a>
-            		</li>
-                </ol>
-            		</li>
-
-                    <li><a href="#问题解决之后">问题解决之后</a>
             		</li>
                 </ol>
             </nav>
