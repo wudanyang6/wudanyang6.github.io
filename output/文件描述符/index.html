@@ -3,7 +3,7 @@
   <head>
     <title>文件描述符</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
     mermaid.initialize({
         startOnLoad: true,
@@ -80,6 +80,7 @@
     </style>
 
 <style></style>
+
     
       <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 
@@ -982,7 +983,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T10:54:45.104Z';
+        const searchIndexDate = '2024-02-01T13:19:46.896Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -994,9 +995,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T10:54:45.104Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T13:19:46.896Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T10:54:45.104Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T13:19:46.896Z', docs}));
             window.docs = docs
             window.index = index;
         }
