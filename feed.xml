@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-01T05:15:28Z</updated>
+    <updated>2024-02-01T05:19:30Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -447,6 +447,80 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//600 Reading/700 Personal/如何做监控/" />
+        </entry>
+        <entry>
+            <title>
+                滑动窗口模板
+                
+            </title>
+            <updated>2024-01-31T15:39:42.000Z</updated>
+            <id>https://wudanyang6.github.io//300 Code/300 Leetcode/模板/滑动窗口模板/</id>
+            <content type="html">
+                &lt;h1 id=&quot;滑动窗口模板&quot; tabindex=&quot;-1&quot;&gt;滑动窗口模板&lt;/h1&gt;
+&lt;p&gt;以 &lt;a href=&quot;https://leetcode-cn.com/problems/grumpy-bookstore-owner/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;1052. 爱生气的书店老板&lt;/a&gt; 为例&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class Solution {
+
+    /**
+     * @param Integer[] $customers
+     * @param Integer[] $grumpy
+     * @param Integer $X
+     * @return Integer
+     */
+    function maxSatisfied($customers, $grumpy, $X) {
+        if (empty($customers)) {
+            return 0;
+        }
+
+        // 1. 计算初始状态： 不压抑的时候，最大的满意人数
+        $maxSat = 0;
+        foreach ($grumpy as $key =&amp;gt; $g) {
+            if ($g == 0) {
+                $maxSat += $customers[$key];
+            }
+        }
+		
+		// 1.1 初始化左右指针位置
+        $len = count($customers);
+        $left = $right = 0;
+        $curSat = $maxSat;
+		
+        // 2. 滑窗具体代码
+        // 2.1 右指针一直往右做
+        while ($right &amp;lt; $len) {
+            $span = $right - $left + 1;
+
+            // 2.1 直到遇到临界条件之后，左指针往右走，直到满足临界条件
+            if ($span &amp;gt; $X) {
+                if ($grumpy[$left]) {
+                    $curSat -= $customers[$left];
+                }
+                $left ++;
+            }
+
+            // 计算当前窗口的数值
+            if ($grumpy[$right]) {
+                $curSat += $customers[$right];
+            }
+			
+            // 最终结果比较
+            $maxSat = max($curSat, $maxSat);
+            $right++;
+        }
+
+        return $maxSat;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;多看几个题解：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;lc 的官方题解： &lt;a href=&quot;https://leetcode-cn.com/problems/grumpy-bookstore-owner/solution/ai-sheng-qi-de-shu-dian-lao-ban-by-leetc-dloq/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;爱生气的书店老板&lt;/a&gt;&lt;br /&gt;
+一般官方题解的思路会非常详细，建议多看几遍&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/grumpy-bookstore-owner/solution/yong-mi-mi-ji-qiao-wan-liu-zhu-zui-duo-d-py41/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;用「秘密技巧」挽留住最多的原本因为生气而被赶走的顾客&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//300 Code/300 Leetcode/模板/滑动窗口模板/" />
         </entry>
         <entry>
             <title>

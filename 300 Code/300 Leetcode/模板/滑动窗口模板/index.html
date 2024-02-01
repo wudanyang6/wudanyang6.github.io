@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>obsidian-things3-today插件</title>
+    <title>滑动窗口模板</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
@@ -408,7 +408,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
                 </div>
             
         </div>
@@ -529,7 +529,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/300 Code/300 Leetcode/模板/滑动窗口模板/">滑动窗口模板 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/300 Code/300 Leetcode/模板/滑动窗口模板/">滑动窗口模板 </a>
                 </div>
             
         </div>
@@ -1164,7 +1164,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">obsidian-things3-today插件</h1>
+          <h1 data-note-icon="">滑动窗口模板</h1>
         
         <div class="header-meta">
           
@@ -1172,20 +1172,81 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #leetcode
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-29T14:23:53+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-31T13:28:27+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-03-06T18:32:23+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-31T23:39:42+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="obsidian-things3-today" tabindex="-1">obsidian-things3-today插件</h1>
-<p>把之前的插件重新搞了搞，把乱七八糟的东西去掉了，然后提交了obsidian插件库</p>
-<p>正在等着被review： <a href="https://github.com/obsidianmd/obsidian-releases/pull/2997" target="_blank" class="external-link">https://github.com/obsidianmd/obsidian-releases/pull/2997</a></p>
-<p>新录了一个gif：</p>
-<p>图中可以看到和things3的Today列表联动还算是顺畅</p>
-<p><img src="/img/user/attachs/things3-today-showcase.gif" alt="things3-today-showcase.gif"></p>
-<h2 id="reference" tabindex="-1">Reference</h2>
+      <h1 id="滑动窗口模板" tabindex="-1">滑动窗口模板</h1>
+<p>以 <a href="https://leetcode-cn.com/problems/grumpy-bookstore-owner/" target="_blank" class="external-link">1052. 爱生气的书店老板</a> 为例</p>
+<pre><code class="language-php">class Solution {
+
+    /**
+     * @param Integer[] $customers
+     * @param Integer[] $grumpy
+     * @param Integer $X
+     * @return Integer
+     */
+    function maxSatisfied($customers, $grumpy, $X) {
+        if (empty($customers)) {
+            return 0;
+        }
+
+        // 1. 计算初始状态： 不压抑的时候，最大的满意人数
+        $maxSat = 0;
+        foreach ($grumpy as $key =&gt; $g) {
+            if ($g == 0) {
+                $maxSat += $customers[$key];
+            }
+        }
+		
+		// 1.1 初始化左右指针位置
+        $len = count($customers);
+        $left = $right = 0;
+        $curSat = $maxSat;
+		
+        // 2. 滑窗具体代码
+        // 2.1 右指针一直往右做
+        while ($right &lt; $len) {
+            $span = $right - $left + 1;
+
+            // 2.1 直到遇到临界条件之后，左指针往右走，直到满足临界条件
+            if ($span &gt; $X) {
+                if ($grumpy[$left]) {
+                    $curSat -= $customers[$left];
+                }
+                $left ++;
+            }
+
+            // 计算当前窗口的数值
+            if ($grumpy[$right]) {
+                $curSat += $customers[$right];
+            }
+			
+            // 最终结果比较
+            $maxSat = max($curSat, $maxSat);
+            $right++;
+        }
+
+        return $maxSat;
+    }
+}
+</code></pre>
+<h1 id="参考" tabindex="-1">参考</h1>
+<p>多看几个题解：</p>
+<ol>
+<li>lc 的官方题解： <a href="https://leetcode-cn.com/problems/grumpy-bookstore-owner/solution/ai-sheng-qi-de-shu-dian-lao-ban-by-leetc-dloq/" target="_blank" class="external-link">爱生气的书店老板</a><br>
+一般官方题解的思路会非常详细，建议多看几遍</li>
+<li><a href="https://leetcode-cn.com/problems/grumpy-bookstore-owner/solution/yong-mi-mi-ji-qiao-wan-liu-zhu-zui-duo-d-py41/" target="_blank" class="external-link">用「秘密技巧」挽留住最多的原本因为生气而被赶走的顾客</a></li>
+</ol>
 
       
       
@@ -1440,13 +1501,10 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#obsidian-things3-today">obsidian-things3-today插件</a>
-            
-                <ol>
-                    
-                    <li><a href="#reference">Reference</a>
+                    <li><a href="#滑动窗口模板">滑动窗口模板</a>
             		</li>
-                </ol>
+
+                    <li><a href="#参考">参考</a>
             		</li>
                 </ol>
             </nav>
@@ -1460,9 +1518,9 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/101 Tools/Things 工作流/" data-note-icon="" class="backlink">Things 工作流</a>
-                                                </div><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">🏡 Home dy_turbo</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   
