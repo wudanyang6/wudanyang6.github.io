@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-01T08:21:32Z</updated>
+    <updated>2024-02-01T09:10:03Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -1438,7 +1438,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 Kafka入门
                 
             </title>
-            <updated>2024-02-01T07:26:01.000Z</updated>
+            <updated>2024-02-01T09:09:03.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/Kafka入门/</id>
             <content type="html">
                 &lt;h1 id=&quot;1-kafka&quot; tabindex=&quot;-1&quot;&gt;1 初识Kafka&lt;/h1&gt;
@@ -1463,7 +1463,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-16_813.png&quot; alt=&quot;clop_2024-01-16_813.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://wudanyang6.github.io/100%20Programmer/mac%20%E8%BF%90%E8%A1%8C%20kafka.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;mac 运行 kafka&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;2-kafka&quot; tabindex=&quot;-1&quot;&gt;2 Kafka 整体架构&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/drawio/Kafka%20%E6%95%B0%E6%8D%AE%E6%B5%81.svg&quot; alt=&quot;../drawio/Kafka 数据流.svg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![../drawio/Kafka 数据流.png](/img/user/drawio/Kafka 数据流.png)&lt;/p&gt;
 &lt;p&gt;Kafka系统的核心概念包括：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1504,7 +1504,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
 &lt;h1 id=&quot;3-kafka&quot; tabindex=&quot;-1&quot;&gt;3 Kafka核心逻辑&lt;/h1&gt;
 &lt;h2 id=&quot;3-1&quot; tabindex=&quot;-1&quot;&gt;3.1 物理存储&lt;/h2&gt;
 &lt;p&gt;Kafka 的基本存储单元是分区。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/drawio/kafka%E5%AD%98%E5%82%A8.drawio.svg&quot; alt=&quot;../drawio/kafka存储.drawio.svg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/drawio/kafka%E5%AD%98%E5%82%A8.drawio.png&quot; alt=&quot;../drawio/kafka存储.drawio.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;kafka 存储的时候也是使用同样的格式存储到磁盘上，这样可以利用到零拷贝技术&lt;/p&gt;
 &lt;h2 id=&quot;3-2&quot; tabindex=&quot;-1&quot;&gt;3.2 生产者&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-16_814-kafka%E7%94%9F%E4%BA%A7%E8%80%85%E7%BB%84%E4%BB%B6%E5%9B%BE.png&quot; alt=&quot;clop_2024-01-16_814-kafka生产者组件图.png&quot; /&gt;&lt;/p&gt;

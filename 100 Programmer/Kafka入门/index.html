@@ -981,7 +981,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T08:21:32.416Z';
+        const searchIndexDate = '2024-02-01T09:10:02.630Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -993,9 +993,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T08:21:32.416Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T09:10:02.630Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T08:21:32.416Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T09:10:02.630Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1236,7 +1236,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-15T21:34:10+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-01T15:26:01+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-15T21:34:10+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-01T17:09:03+08:00"></span></div></div></div>
       
       
       </header>
@@ -1264,7 +1264,7 @@
 <p><img src="/img/user/card/clop_2024-01-16_813.png" alt="clop_2024-01-16_813.png"></p>
 <p><a href="../100%20Programmer/mac%20%E8%BF%90%E8%A1%8C%20kafka.md" target="_blank" class="external-link">mac 运行 kafka</a></p>
 <h1 id="2-kafka" tabindex="-1">2 Kafka 整体架构</h1>
-<p><img src="../drawio/Kafka%20%E6%95%B0%E6%8D%AE%E6%B5%81.svg" alt="../drawio/Kafka 数据流.svg"></p>
+<p>![../drawio/Kafka 数据流.png](/img/user/drawio/Kafka 数据流.png)</p>
 <p>Kafka系统的核心概念包括：</p>
 <ol>
 <li>
@@ -1305,7 +1305,7 @@
 <h1 id="3-kafka" tabindex="-1">3 Kafka核心逻辑</h1>
 <h2 id="3-1" tabindex="-1">3.1 物理存储</h2>
 <p>Kafka 的基本存储单元是分区。</p>
-<p><img src="../drawio/kafka%E5%AD%98%E5%82%A8.drawio.svg" alt="../drawio/kafka存储.drawio.svg"></p>
+<p><img src="/img/user/drawio/kafka%E5%AD%98%E5%82%A8.drawio.png" alt="../drawio/kafka存储.drawio.png"></p>
 <p>kafka 存储的时候也是使用同样的格式存储到磁盘上，这样可以利用到零拷贝技术</p>
 <h2 id="3-2" tabindex="-1">3.2 生产者</h2>
 <p><img src="/img/user/card/clop_2024-01-16_814-kafka%E7%94%9F%E4%BA%A7%E8%80%85%E7%BB%84%E4%BB%B6%E5%9B%BE.png" alt="clop_2024-01-16_814-kafka生产者组件图.png"></p>
