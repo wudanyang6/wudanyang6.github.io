@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-01T03:06:46Z</updated>
+    <updated>2024-02-01T05:02:32Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -217,6 +217,35 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//card/原神挺好玩/" />
+        </entry>
+        <entry>
+            <title>
+                Things 工作流
+                
+            </title>
+            <updated>2024-02-01T05:01:40.000Z</updated>
+            <id>https://wudanyang6.github.io//card/Things 工作流/</id>
+            <content type="html">
+                &lt;h1 id=&quot;things&quot; tabindex=&quot;-1&quot;&gt;Things 工作流&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;有任何事情都记录下来，心中的任何想法都不要放过&lt;/li&gt;
+&lt;li&gt;定时整理收件箱（需要保证整理完收件箱之后，任务都是可执行的）
+&lt;ol&gt;
+&lt;li&gt;如果有事情2分钟就能解决，那么直接去做，属于小事情&lt;/li&gt;
+&lt;li&gt;如果需要15-30分钟，则标记上标签 ![](/img/user/card/Pasted image 20231009172220.png)&lt;/li&gt;
+&lt;li&gt;如果需要1小时以上，就将任务设置成项目
+&lt;ol&gt;
+&lt;li&gt;做一次任务分解，分解成小任务，小任务以30分钟以内完成最好&lt;/li&gt;
+&lt;li&gt;如果分解项目本身也需要很多时间，那么在项目里面加一个【分解任务】的事项&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;根据时间，选取任务进行处理，打开 &lt;code&gt;Session&lt;/code&gt; 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/Pasted%20image%2020231107224028.png&quot; alt=&quot;Pasted image 20231107224028.png&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/Things 工作流/" />
         </entry>
         <entry>
             <title>
