@@ -336,17 +336,6 @@
         
     
                     
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/mac-合上盖子不断网/">mac-合上盖子不断网 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
                 </div>
             
         </div>
@@ -439,6 +428,17 @@
                     
                         
     
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/101 Tools/mac/mac-合上盖子不断网/">mac-合上盖子不断网 </a>
+                </div>
+            
+        </div>
+        
     
                     
                         
@@ -753,6 +753,17 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/非暴力沟通/">非暴力沟通 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -1025,7 +1036,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T16:05:53.950Z';
+        const searchIndexDate = '2024-02-01T16:09:49.154Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1037,9 +1048,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T16:05:53.950Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T16:09:49.154Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T16:05:53.950Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T16:09:49.154Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1302,16 +1313,21 @@
 <li><a class="internal-link" target="" data-note-icon="" href="/obsidian/obsidian 开发过程支持的ICON/">obsidian 开发过程支持的ICON</a>:  <em>(created: 2024-1-25)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/10x程序员工作法/">10x程序员工作法</a>:  <em>(created: 2024-1-19)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/Kafka入门/">Kafka入门</a>:  <em>(created: 2024-1-15)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/card/linux-wait/">linux-wait</a>:  <em>(created: 2023-12-11)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/Things 工作流/">Things 工作流</a>:  <em>(created: 2023-10-9)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka</a>:  <em>(created: 2023-9-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#kafka">#kafka</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#学习">#学习</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a>:  <em>(created: 2023-5-9)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/mac-合上盖子不断网/">mac-合上盖子不断网</a>:  <em>(created: 2023-2-3)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/mac/mac-合上盖子不断网/">mac-合上盖子不断网</a>:  <em>(created: 2023-2-3)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符</a>:  <em>(created: 2022-12-7)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/mac/mac-自定义快捷键/">mac-自定义快捷键</a>:  <em>(created: 2022-11-16)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/card/GTD/">GTD</a>:  <em>(created: 2022-5-5)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/踩坑/js超长数字溢出问题/">js超长数字溢出问题</a>:  <em>(created: 2022-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#js">#js</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#联调">#联调</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#踩坑">#踩坑</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/card/非暴力沟通/">非暴力沟通</a>:  <em>(created: 2021-12-16)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/card/PHP生成zip压缩包/">PHP生成zip压缩包</a>:  <em>(created: 2021-11-23)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/linux-echo/">linux-echo</a>:  <em>(created: 2021-10-19)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/card/iso-日期表示法/">iso-日期表示法</a>:  <em>(created: 2021-7-25)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/linux-树莓派无法上网排查/">linux-树莓派无法上网排查</a>:  <em>(created: 2021-7-15)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/card/网络-最多有多少个a类、b类和c类网络号/">网络-最多有多少个a类、b类和c类网络号</a>:  <em>(created: 2021-5-24)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/600 Reading/700 Personal/如何做监控/">如何做监控</a>:  <em>(created: 2021-5-7)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络</a>:  <em>(created: 2021-4-27)</em></li>
