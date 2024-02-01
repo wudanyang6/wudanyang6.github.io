@@ -3,8 +3,7 @@
   <head>
     <title>10x程序员工作法</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
     mermaid.initialize({
         startOnLoad: true,
@@ -52,13 +51,13 @@
 </script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/force-graph@1.43.4/dist/force-graph.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
 
-<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" defer></script>
+<script defer src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" defer></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
@@ -81,7 +80,6 @@
     </style>
 
 <style></style>
-
     
     
   </head>
@@ -981,7 +979,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T09:23:15.602Z';
+        const searchIndexDate = '2024-02-01T09:25:10.940Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -993,9 +991,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T09:23:15.602Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T09:25:10.940Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T09:23:15.602Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T09:25:10.940Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1369,20 +1367,6 @@
 
       
       
-      <script src="https://giscus.app/client.js"
-              data-repo="wudanyang6/wudanyang6.github.io"
-              data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM="
-              data-category="Announcements"
-              data-category-id="DIC_kwDOFTtyT84CYlu-"
-              data-mapping="pathname"
-              data-strict="0"
-              data-reactions-enabled="1"
-              data-emit-metadata="0"
-              data-input-position="top"
-              data-theme="light"
-              data-lang="zh-CN"
-              crossorigin="anonymous"
-              async></script>
     </main>
 
     
@@ -1741,5 +1725,4 @@ lucide.createIcons({
         });
 </script>
   </body>
-
 </html>
