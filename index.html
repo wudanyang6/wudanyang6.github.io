@@ -980,7 +980,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T09:56:57.677Z';
+        const searchIndexDate = '2024-02-01T10:24:49.874Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -992,9 +992,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T09:56:57.677Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T10:24:49.874Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T09:56:57.677Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T10:24:49.874Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1244,7 +1244,7 @@
       </header>
       
       
-      <h1 id="home-dy-turbo" tabindex="-1">🏡 Home dy_turbo</h1>
+      <h1 id="home-dy-turbo" tabindex="-1">Home dy_turbo</h1>
 <h2 id="about-me" tabindex="-1">About Me</h2>
 <p><a class="internal-link" target="" data-note-icon="" href="/card/About Me/">About Me</a></p>
 <h2 id="list" tabindex="-1">List</h2>
@@ -1518,7 +1518,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#home-dy-turbo">🏡 Home dy_turbo</a>
+                    <li><a href="#home-dy-turbo">Home dy_turbo</a>
             
                 <ol>
                     
