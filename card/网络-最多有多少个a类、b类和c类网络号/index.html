@@ -979,7 +979,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T09:29:14.121Z';
+        const searchIndexDate = '2024-02-01T09:30:30.175Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -991,9 +991,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T09:29:14.121Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T09:30:30.175Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T09:29:14.121Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T09:30:30.175Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1254,6 +1254,22 @@
 <p><a href="https://blog.csdn.net/a5534789/article/details/50118857#:~:text=%E2%80%9C0%E2%80%9D%E5%81%9A%E4%B8%BA%E7%BD%91%E7%BB%9C%E5%8F%B7,%E7%BD%91%E6%AE%B5%E4%B8%BA1%E2%80%94126.&amp;text=224%3D412%3D166%3D2563,%E6%95%B0%E5%BA%94%E8%AF%A5%E6%98%AF16777214%E4%B8%AA%E3%80%82" target="_blank" class="external-link">https://blog.csdn.net/a5534789/article/details/50118857#:~:text=“0”做为网络号,网段为1—126.&amp;text=224%3D412%3D166%3D2563,数应该是16777214个。</a></p>
 
       
+      
+        <script src="https://giscus.app/client.js"
+        data-repo="wudanyang6/wudanyang6.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOFTtyT84CYlu-"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async></script>
+
       
     </main>
 

@@ -979,7 +979,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T09:29:14.121Z';
+        const searchIndexDate = '2024-02-01T09:30:30.175Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -991,9 +991,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T09:29:14.121Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T09:30:30.175Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T09:29:14.121Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T09:30:30.175Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1366,6 +1366,22 @@
 <h3 id="a-href-https-learn-lianglianglee-com-e4-b8-93-e6-a0-8-f-10x-e7-a8-8-b-e5-ba-8-f-e5-91-98-e5-b7-a5-e4-bd-9-c-e6-b3-95-e6-80-bb-e5-a4-8-d-e4-b9-a0-20-e9-87-8-d-e6-96-b0-e6-9-d-a5-e2-80-9-c-e7-9-c-8-b-e4-b9-a6-e2-80-9-d-md-target-blank-class-external-link-https-learn-lianglianglee-com-10x-md-a" tabindex="-1"><a href="https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/%E6%80%BB%E5%A4%8D%E4%B9%A0%20%E9%87%8D%E6%96%B0%E6%9D%A5%E2%80%9C%E7%9C%8B%E4%B9%A6%E2%80%9D.md" target="_blank" class="external-link">https://learn.lianglianglee.com/专栏/10x程序员工作法/总复习 重新来“看书”.md</a></h3>
 
       
+      
+        <script src="https://giscus.app/client.js"
+        data-repo="wudanyang6/wudanyang6.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOFTtyT84CYlu-"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async></script>
+
       
     </main>
 
