@@ -980,7 +980,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-01T10:26:15.098Z';
+        const searchIndexDate = '2024-02-01T10:27:05.681Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -992,9 +992,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T10:26:15.098Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-01T10:27:05.681Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T10:26:15.098Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-01T10:27:05.681Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1504,36 +1504,6 @@
     </div>
 </div>
                   
-
-                  
-                        
-                        
-                              <div class="toc">
-                                    <div class="toc-title-container">
-                                          <div class="toc-title">
-                                                On this page
-                                          </div>
-                                    </div>
-                                    <div class="toc-container">
-                                          <nav class="toc">
-                <ol>
-                    
-                    <li><a href="#home-dy-turbo">Home dy_turbo</a>
-            
-                <ol>
-                    
-                    <li><a href="#about-me">About Me</a>
-            		</li>
-
-                    <li><a href="#list">List</a>
-            		</li>
-                </ol>
-            		</li>
-                </ol>
-            </nav>
-                                    </div>
-                              </div>
-                        
 
                   
 
