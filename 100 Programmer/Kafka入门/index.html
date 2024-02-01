@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>网络-最多有多少个a类、b类和c类网络号</title>
+    <title>Kafka入门</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
@@ -357,7 +357,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/Kafka入门/">Kafka入门 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/Kafka入门/">Kafka入门 </a>
                 </div>
             
         </div>
@@ -692,7 +692,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/网络-最多有多少个a类、b类和c类网络号/">网络-最多有多少个a类、b类和c类网络号 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/网络-最多有多少个a类、b类和c类网络号/">网络-最多有多少个a类、b类和c类网络号 </a>
                 </div>
             
         </div>
@@ -1227,7 +1227,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">网络-最多有多少个a类、b类和c类网络号</h1>
+          <h1 data-note-icon="">Kafka入门</h1>
         
         <div class="header-meta">
           
@@ -1236,24 +1236,201 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-05-24T14:05:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-01T13:02:45+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-15T21:34:10+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-01T15:26:01+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <p>在IPv4地址体系中，网络被分为4个等级，分别是A，B，C和D类。对于A、B、C类，其数量如下：</p>
+      <h1 id="1-kafka" tabindex="-1">1 初识Kafka</h1>
+<h2 id="1-1-kafka" tabindex="-1">1.1 什么是Kafka</h2>
+<p>Apache Kafka是一个分布式流处理平台，被设计用来高效地处理高吞吐量的数据流。它广泛应用于实时数据管道和流式应用程序中。以下是Kafka的一些主要优点：</p>
+<ol>
+<li><strong>高吞吐量</strong>：Kafka支持高吞吐量的数据处理，即使是非常大的数据量也能够快速处理。</li>
+<li><strong>可扩展性</strong>：Kafka集群可以横向扩展以处理更多的数据，可以在不停机的情况下动态添加更多的Broker。</li>
+<li><strong>持久性和可靠性</strong>：Kafka可以将数据持久化到磁盘，因此即使系统发生故障，数据也不会丢失。它使用分区和副本机制来确保数据的高可用性和耐用性。</li>
+<li><strong>容错能力</strong>：通过数据副本，Kafka可以在节点故障时保证数据不丢失，从而提供高可靠性。</li>
+<li><strong>低延迟</strong>：Kafka能够在保持高吞吐量的同时实现低延迟的消息传递。</li>
+<li><strong>可靠的消息传递保证</strong>：Kafka支持几种消息传递保证，包括最多一次、至少一次和精确一次（事务性传递）。</li>
+<li><strong>多客户端支持</strong>：Kafka提供多种编程语言的客户端库，方便不同开发环境下的集成。</li>
+<li><strong>流处理</strong>：Kafka Streams API允许构建实时流处理应用，可以进行复杂的数据处理和分析。</li>
+<li><strong>可观测性</strong>：Kafka提供了监控数据流和系统性能的工具，有助于性能调优和问题诊断。</li>
+<li><strong>大型社区和生态系统</strong>：Kafka拥有一个庞大的社区和丰富的生态系统，提供了大量的工具和插件以及集成方案，可以帮助用户更好地开发和维护Kafka系统。</li>
+</ol>
+<h2 id="1-2" tabindex="-1">1.2 使用场景</h2>
+<p>Kafka的这些优点使它在需要处理大量实时数据的系统中特别有价值，包括日志聚合、流式处理、事件源、实时监控和分析等场景。</p>
+<p><img src="/img/user/card/clop_2024-01-16_812.png" alt="clop_2024-01-16_812.png"></p>
+<h2 id="1-3-kafka" tabindex="-1">1.3 kafka生产消费流程</h2>
+<p><img src="/img/user/card/clop_2024-01-16_813.png" alt="clop_2024-01-16_813.png"></p>
+<p><a href="../100%20Programmer/mac%20%E8%BF%90%E8%A1%8C%20kafka.md" target="_blank" class="external-link">mac 运行 kafka</a></p>
+<h1 id="2-kafka" tabindex="-1">2 Kafka 整体架构</h1>
+<p><img src="../drawio/Kafka%20%E6%95%B0%E6%8D%AE%E6%B5%81.svg" alt="../drawio/Kafka 数据流.svg"></p>
+<p>Kafka系统的核心概念包括：</p>
+<ol>
+<li>
+<p><strong>Producer（生产者）</strong>：负责发布消息到Kafka的Topic（主题）中。</p>
+</li>
+<li>
+<p><strong>Consumer（消费者）</strong>：订阅Topic，并处理发布到这些Topic的消息。</p>
+</li>
+<li>
+<p><strong>Consumer Group（消费者组）</strong>：一个消费者组可以有一个或多个消费者实例。当多个消费者实例属于同一个消费者组时，它们会在组内共享Topic的Partition。这意味着，每个Partition只会被消费者组中的一个消费者实例消费，这样可以保证每条消息只被组内的一个消费者处理，从而实现消息的负载均衡。</p>
+</li>
+<li>
+<p><strong>Broker（代理）</strong>：Kafka集群中的服务器，负责存储数据并处理Producer和Consumer的请求。</p>
+</li>
+<li>
+<p><strong>Topic（主题）</strong>：消息的分类，Producer发布消息到指定的Topic，Consumer订阅并消费Topic中的消息。</p>
+</li>
+<li>
+<p><strong>Partition（分区）</strong>：Topic的物理分割，每个Partition在存储层面是独立的，可以在不同的Broker上。Partition内的消息是有序的。</p>
+</li>
+<li>
+<p><strong>Offset（偏移量）</strong>：Partition中每条消息的唯一标识，可以看作是消息在Partition中的索引。</p>
+</li>
+<li>
+<p><strong>Replica（副本）</strong>：Partition的副本，用于提高数据的可靠性和容错性。</p>
+</li>
+<li>
+<p><strong>Zookeeper</strong>：Kafka使用Zookeeper来进行集群管理和协调。</p>
+</li>
+<li>
+<p><strong>Stream Processing（流处理）</strong>：Kafka Streams是Kafka的流处理库，用于构建流式应用程序。</p>
+</li>
+<li>
+<p><strong>Connect（连接器）</strong>：Kafka Connect是用于构建和运行可重用的数据导入和导出连接器的工具。</p>
+</li>
+</ol>
+<p>Kafka生产者将消息发送到负责存储目标Topic的Partition的Broker上。在Kafka集群中，每个Topic可以分为多个Partition，而每个Partition可能分布在不同的Broker上。每个Partition有一个Broker充当Leader，其他的Broker充当Follower。所有的读写操作都是通过Leader Broker进行的，Follower负责同步数据以保证高可用性和数据的冗余。</p>
+<h1 id="3-kafka" tabindex="-1">3 Kafka核心逻辑</h1>
+<h2 id="3-1" tabindex="-1">3.1 物理存储</h2>
+<p>Kafka 的基本存储单元是分区。</p>
+<p><img src="../drawio/kafka%E5%AD%98%E5%82%A8.drawio.svg" alt="../drawio/kafka存储.drawio.svg"></p>
+<p>kafka 存储的时候也是使用同样的格式存储到磁盘上，这样可以利用到零拷贝技术</p>
+<h2 id="3-2" tabindex="-1">3.2 生产者</h2>
+<p><img src="/img/user/card/clop_2024-01-16_814-kafka%E7%94%9F%E4%BA%A7%E8%80%85%E7%BB%84%E4%BB%B6%E5%9B%BE.png" alt="clop_2024-01-16_814-kafka生产者组件图.png"></p>
+<p>流程如下：</p>
+<ol>
+<li>首先，我们需要创建一个 <code>ProducerRecord</code>，这个对象需要包含消息的主题（topic）和值（value），可以选择性指定一个键值（key）或者分区（partition）。</li>
+<li>发送消息时，生产者会对键值和值<strong>序列化</strong>成字节数组，然后发送到<strong>分配器</strong>。</li>
+<li>如果我们指定了分区，那么分配器返回该分区即可；否则，分配器将会基于键来选择一个分区并返回。</li>
+<li>选择完分区后，生产者知道了消息所属的主题和分区，它将这条记录添加到相同主题和分区的同一批次消息中，另一个线程负责发送这些批量消息到对应的 Kafka Broker。</li>
+<li>当Broker接收到消息后，如果成功写入则返回一个包含消息的主题、分区及位移的RecordMetadata对象，否则返回异常。</li>
+<li>生产者接收到结果后，对于异常可能会进行重试。重试几次还是失败会返回错误。</li>
+</ol>
+<p>生产者并不是将消息发送到任意的Broker，而是发送到管理特定Partition的Leader Broker上，以确保消息的正确存储和分发。</p>
+<p>消息写入多个分区<br>
+<img src="/img/user/card/clop_2024-01-18_844.png" alt="clop_2024-01-18_844.png"></p>
+<h2 id="3-3" tabindex="-1">3.3 消费者</h2>
+<p><img src="/img/user/card/clop_2024-01-17_818-%E4%B8%BB%E9%A2%98%E5%92%8C%E6%B6%88%E8%B4%B9%E8%80%85%E7%BE%A4%E7%BB%84%E7%9A%84%E5%85%B3%E7%B3%BB.png" alt="clop_2024-01-17_818-主题和消费者群组的关系.png"></p>
+<p><img src="/img/user/drawio/kafka%E6%B6%88%E8%B4%B9%E8%80%85.drawio.png" alt="kafka消费者.drawio"></p>
+<h3 id="3-3-1-offset" tabindex="-1">3.3.1 提交offset</h3>
+<p>Kafka消费者提交偏移量的过程是为了记录消费者在消费Topic的Partition时当前的位置，以便在消费者重启或发生故障时能从上次处理的位置继续消费，保证消息不会丢失也不会被重复消费。提交偏移量的过程主要包括以下步骤：</p>
+<ol>
+<li><strong>消费消息</strong>：消费者从Broker拉取数据并进行处理。</li>
+<li><strong>提交偏移量</strong>：在成功处理完一批消息后，消费者会将最新的偏移量提交给Kafka。提交的偏移量是消费者下一次预期读取的起始位置。</li>
+<li><strong>偏移量存储</strong>：提交的偏移量存储在Kafka内的一个特殊的Topic中，名为<code>__consumer_offsets</code>。每个消费者组的偏移量都会在这个Topic中维护。</li>
+<li><strong>偏移量读取</strong>：如果消费者发生重启或故障，它会从<code>__consumer_offsets</code> Topic中读取上次提交的偏移量，从而恢复其消费状态。</li>
+</ol>
+<p>提交偏移量的方式主要有两种：</p>
+<ol>
+<li><strong>自动提交偏移量</strong>：Kafka消费者默认的偏移量提交方式是自动提交。这是通过在消费者配置中设置<code>enable.auto.commit=true</code>来实现的，并且可以通过<code>auto.commit.interval.ms</code>配置项来指定提交间隔。这种方式简单方便，但是由于提交是周期性进行的，可能会导致消息重复消费（如果在两次提交间隔内消费者失败）。</li>
+<li><strong>手动提交偏移量</strong>：为了更精确地控制消息的消费状态，可以选择手动提交偏移量。手动提交可以是同步的也可以是异步的：
 <ul>
-<li>A类：128个（范围是0.0.0.0到127.255.255.255，但0.0.0.0和127.0.0.0通常分别用作默认路由和本地回环地址，所以不包括在内。）</li>
-<li>B类：16,384个（范围是 128.0.0.0 到 191.255.255.255）</li>
-<li>C类：2,097,152个（范围是 192.0.0.0 到 223.255.255.255）</li>
+<li><strong>同步提交</strong>：通过调用<code>consumer.commitSync()</code>方法，消费者会阻塞直到偏移量提交完成。这种方式会确保偏移量提交成功，如果提交失败，可以立即进行重试处理。</li>
+<li><strong>异步提交</strong>：通过调用<code>consumer.commitAsync()</code>方法，消费者可以在不阻塞当前线程的情况下提交偏移量。异步提交通常会提供一个回调函数来处理可能发生的提交错误。</li>
+<li><strong>异步+同步</strong>：针对异步提交偏移量丢失的问题，通过对消费者进行异步批次提交并且在关闭时同步提交的方式，这样即使上一次的异步提交失败，通过同步提交还能够进行补救，同步会一直重试，直到提交成功。</li>
 </ul>
-<p>请注意，上述分类是根据原始的IPv4地址分类来计算的。然而，由于IP地址的枯竭，现在的实际网络环境中，通常在IP地址分配上使用了子网划分，CIDR，私有地址等现代网络技术，因此实际的可用网络数量会因子网划分、私有地址使用等因素而有所变化。</p>
-<p>D类 IP 地址是多播（Multicast）地址，其范围是 224.0.0.0 到 239.255.255.255。</p>
-<p>所以，D类网络（多播地址）总共有 (239-224+1) x (2^24) = 268,435,456 个。</p>
-<p>但是，有些特定的地址在D类中是已经被保留或特殊用途的，例如 224.0.0.0 - 224.0.0.255 是被保留的用于本地网络的多播地址。</p>
-<h1 id="参考" tabindex="-1">参考</h1>
-<p><a href="https://blog.csdn.net/a5534789/article/details/50118857#:~:text=%E2%80%9C0%E2%80%9D%E5%81%9A%E4%B8%BA%E7%BD%91%E7%BB%9C%E5%8F%B7,%E7%BD%91%E6%AE%B5%E4%B8%BA1%E2%80%94126.&amp;text=224%3D412%3D166%3D2563,%E6%95%B0%E5%BA%94%E8%AF%A5%E6%98%AF16777214%E4%B8%AA%E3%80%82" target="_blank" class="external-link">https://blog.csdn.net/a5534789/article/details/50118857#:~:text=“0”做为网络号,网段为1—126.&amp;text=224%3D412%3D166%3D2563,数应该是16777214个。</a></p>
+</li>
+</ol>
+<h2 id="3-4" tabindex="-1">3.4 复制</h2>
+<h3 id="3-4-1" tabindex="-1">3.4.1 控制器</h3>
+<p>有一个概念需要单独阐明：控制器</p>
+<p>控制器其实就是一个 Broker，只不过它除了具有一般 Broker 的功能之外，<strong>还负责分区首领的选举</strong>。</p>
+<p>控制器是 Kafka 集群的管理节点。在一个 Kafka 集群中，所有的 Broker 节点中只有一个节点会被选举为控制器。</p>
+<p>每个新选出的控制器通过 Zookeeper 的条件递增操作获得一个全新的、数值更大的 epoch 值，防止脑裂</p>
+<p>简而言之，Kafka 使用 Zookeeper 的临时节点来选举控制器，并在节点加入集群或退出集群时通知控制器。控制器负责在节点加入或离开集群时进行分区首领选举。控制器使用 epoch 来避免“脑裂”。“脑裂”是指两个节点同时认为自己是当前的控制器。</p>
+<h3 id="3-4-2" tabindex="-1">3.4.2 与首领保持一致</h3>
+<p>为了与首领保持同步，跟随者向首领发送获取数据的请求，<strong>这种请求与消费者为了读取消息而发送的请求是一样的</strong>。首领将响应消息发给跟随者。请求消息里包含了跟随者想要获取消息的偏移量，而且这些偏移量总是有序的。</p>
+<h2 id="3-5" tabindex="-1">3.5 处理请求</h2>
+<p><img src="/img/user/card/clop_2024-01-18_846.png" alt="clop_2024-01-18_846.png"></p>
+<p>Kafka 使用零复制技术向客户端发送消息——也就是说，顺序读写内容，Kafka 直接把消息从文件(或者更确切地说是 Linux 文件系统缓存)里发送到网络通道，而不需要经过任何中间缓冲区。</p>
+<p>零拷贝示意图：<br>
+<img src="/img/user/card/clop_2024-01-18_848.png" alt="clop_2024-01-18_848.png"></p>
+<p>零拷贝省略了数据在内核空间和用户空间之间的重复穿梭；用户态和内核态切换时产生中断，耗时；</p>
+<p>生产请求和获取请求都必须发送给分区的首领副本。</p>
+<p>如何获取分区首领所在的broker：<br>
+<img src="/img/user/card/clop_2024-01-18_847.png" alt="clop_2024-01-18_847.png"></p>
+<h1 id="4" tabindex="-1">4 可靠性保证</h1>
+<p>先了解一个概念：不完全的首领选举</p>
+<h2 id="4-1" tabindex="-1">4.1 消息传递语义</h2>
+<ol>
+<li>
+<p>最多一次（at most once）：消息可能会丢失，但绝不会被重复发送。</p>
+<ol>
+<li>消费者端配置自动提交偏移量，并且在处理消息之前就提交。如果在提交偏移量后处理消息时发生了故障，那么这些消息可能不会被重新消费。</li>
+</ol>
+</li>
+<li>
+<p>至少一次（at least once）：消息不会丢失，但有可能被重复发送。</p>
+<ol>
+<li>手动提交偏移量。如果消费者在成功处理消息之前失败，那么同一消息可能会被再次消费。</li>
+</ol>
+</li>
+<li>
+<p>恰好一次（exactly once）：消息不会丢失，也不会被重复发送。</p>
+<ol>
+<li>Kafka通过“幂等生产者”（Idempotent Producer）和“事务”（Transactions）来支持恰好一次的语义。幂等生产者确保即使生产者发送重复的消息，Broker也只会接收一次。事务性生产者可以将消息的发送和偏移量的提交放在同一个事务中，确保它们要么都成功，要么都失败。（恰好一次语义在Kafka 0.11版本及以上被引入。）</li>
+</ol>
+</li>
+</ol>
+<h2 id="4-2" tabindex="-1">4.2 不完全的首领选举</h2>
+<p>是否允许不完全的首领选举：unclean.leader.election<br>
+如果在选举过程中没有丢失数据，也就是说提交的数据同时存在于所有的同步副本上，那么这个选举就是“完全”的。<br>
+如果在首领不可用时其他副本都是不同步的，那么这个选举就是“不完全”的。</p>
+<p>简而言之，如果我们允许不同步的副本成为首领，那么就要承担丢失数据和出现数据不一致的⻛险。如果不允许它们成为首领，那么就要接受较低的可用性，因为我们必须等待原先的首领恢复到可用状态。</p>
+<p><strong>unclean.leader.election=false</strong></p>
+<h2 id="4-3" tabindex="-1">4.3 复制</h2>
+<p>复制系数<br>
+<strong>replication.factor &gt;= 2</strong><br>
+<strong>min.insync.replicas &gt; 1</strong> 则至少有一个同步从副本</p>
+<h2 id="4-4" tabindex="-1">4.4 使用生产者</h2>
+<p>发送确认：</p>
+<ul>
+<li>acks=0 立即返回，不论是否写入</li>
+<li>acks=1 当前首领副本已经写入</li>
+<li>acks=-1或all 所有同步的副本已经被写入</li>
+</ul>
+<p>重试</p>
+<ul>
+<li>配置重试次数</li>
+<li>设置重试间隔</li>
+<li>程序兜底其他错误</li>
+</ul>
+<h2 id="4-5" tabindex="-1">4.5 使用消费者</h2>
+<p>如果消费者提交了偏移量却未能处理完消息，那么就有可能造成消息丢失，这也是消费者丢失消息的主要原因。</p>
+<p>正确的做法是：拉取数据、业务逻辑处理、提交消费 Offset 位移信息。</p>
+<p><strong>enable.auto.commit = false</strong> 采用手动提交位移的方式。</p>
+<p>对于消费消息重复的情况，业务自己保证幂等性， 保证只成功消费一次即可。</p>
+<h1 id="6" tabindex="-1">6 思考</h1>
+<p>Q: 知道了kafka的物理存储的结构，那么kafka通过offset查找对应的文件位置的过程是什么样的呢？</p>
+<p>Q: 从副本在什么情况下被认为是不同步 (OSR) ？</p>
+<p>Q: offset 为什么要从zookeeper挪到kafka本身存储呢？</p>
+<p>Q：分区分成多少比较好？</p>
+<p>Q：在主题流量不是很大的情况下，消费者一直轮询会造成浪费，有没有什么方式能够避免这种情况？</p>
+<p>Q：Kafka 为什么要把自己定位成一个分布式流平台？</p>
+<h1 id="7" tabindex="-1">7 参考</h1>
+<p>《Kafka 权威指南》 Neha Narkhede Gwen Shapira Todd Palino 著 薛命灯译</p>
+<p>官网文档： <a href="https://kafka.apache.org/documentation/#design" target="_blank" class="external-link">Apache Kafka</a></p>
+<p><a href="https://blog.csdn.net/li1669852599/article/details/113254934" target="_blank" class="external-link">mac环境下使用brew安装Kafka(详细过程)_brew kafka-CSDN博客</a></p>
+<p><a href="https://www.cnblogs.com/xyqlrjm/p/14939453.html" target="_blank" class="external-link">Kafka整体架构、工作流程与文件存储机制 - 细雨骑驴入剑门 - 博客园</a></p>
+<p><a href="https://www.cnblogs.com/jingdongkeji/p/17879177.html" target="_blank" class="external-link">扫盲Kafka？看这一篇就够了！ - 京东云技术团队 - 博客园</a></p>
+<p><a href="https://www.cnblogs.com/huxi2b/p/8440429.html" target="_blank" class="external-link">Kafka元数据缓存(metadata cache) - huxihx - 博客园</a></p>
+<p><a href="https://www.cnblogs.com/zhengzhaoxiang/p/13977382.html" target="_blank" class="external-link">Kafka 物理存储机制 - Java程序员进阶 - 博客园</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/1787164" target="_blank" class="external-link">稀疏索引与其在Kafka和ClickHouse中的应用-腾讯云开发者社区-腾讯云</a></p>
+<p><a href="https://www.cnblogs.com/alvinscript/p/17407980.html" target="_blank" class="external-link">8张图带你全面了解kafka的核心机制 - JAVA旭阳 - 博客园</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/459610418" target="_blank" class="external-link">进阶，Kafka 如何保证消息不丢失？ - 知乎</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/2181009" target="_blank" class="external-link">Kafka的自我定位</a></p>
 
       
       
@@ -1508,7 +1685,85 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#参考">参考</a>
+                    <li><a href="#1-kafka">1 初识Kafka</a>
+            
+                <ol>
+                    
+                    <li><a href="#1-1-kafka">1.1 什么是Kafka</a>
+            		</li>
+
+                    <li><a href="#1-2">1.2 使用场景</a>
+            		</li>
+
+                    <li><a href="#1-3-kafka">1.3 kafka生产消费流程</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#2-kafka">2 Kafka 整体架构</a>
+            		</li>
+
+                    <li><a href="#3-kafka">3 Kafka核心逻辑</a>
+            
+                <ol>
+                    
+                    <li><a href="#3-1">3.1 物理存储</a>
+            		</li>
+
+                    <li><a href="#3-2">3.2 生产者</a>
+            		</li>
+
+                    <li><a href="#3-3">3.3 消费者</a>
+            
+                <ol>
+                    
+                    <li><a href="#3-3-1-offset">3.3.1 提交offset</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#3-4">3.4 复制</a>
+            
+                <ol>
+                    
+                    <li><a href="#3-4-1">3.4.1 控制器</a>
+            		</li>
+
+                    <li><a href="#3-4-2">3.4.2 与首领保持一致</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#3-5">3.5 处理请求</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#4">4 可靠性保证</a>
+            
+                <ol>
+                    
+                    <li><a href="#4-1">4.1 消息传递语义</a>
+            		</li>
+
+                    <li><a href="#4-2">4.2 不完全的首领选举</a>
+            		</li>
+
+                    <li><a href="#4-3">4.3 复制</a>
+            		</li>
+
+                    <li><a href="#4-4">4.4 使用生产者</a>
+            		</li>
+
+                    <li><a href="#4-5">4.5 使用消费者</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#6">6 思考</a>
+            		</li>
+
+                    <li><a href="#7">7 参考</a>
             		</li>
                 </ol>
             </nav>
@@ -1522,8 +1777,9 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">🏡 Home dy_turbo</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   

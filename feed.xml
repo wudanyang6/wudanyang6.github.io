@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-01T07:25:22Z</updated>
+    <updated>2024-02-01T07:26:52Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -1001,6 +1001,107 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
         </entry>
         <entry>
             <title>
+                mac 运行 kafka
+                
+            </title>
+            <updated>2024-01-23T17:49:20.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/mac 运行 kafka/</id>
+            <content type="html">
+                &lt;h1 id=&quot;mac-kafka&quot; tabindex=&quot;-1&quot;&gt;mac 运行 kafka&lt;/h1&gt;
+&lt;h2 id=&quot;安装&quot; tabindex=&quot;-1&quot;&gt;安装&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;brew install kafka
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;broker&quot; tabindex=&quot;-1&quot;&gt;启动broker&lt;/h2&gt;
+&lt;p&gt;手动启动kafka， 同时启动一个使用 2181 端口的 zookeeper&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;/opt/homebrew/opt/kafka/bin/zookeeper-server-start /opt/homebrew/etc/kafka/zookeeper.properties
+/opt/homebrew/opt/kafka/bin/kafka-server-start /opt/homebrew/etc/kafka/server.properties
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;启动生产者&quot; tabindex=&quot;-1&quot;&gt;启动生产者&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;/opt/homebrew/opt/kafka/bin/kafka-console-producer --topic test --bootstrap-server localhost:9092 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;启动消费者&quot; tabindex=&quot;-1&quot;&gt;启动消费者&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;/opt/homebrew/opt/kafka/bin/kafka-console-consumer --topic test --bootstrap-server localhost:9092  --from-beginning
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;topic&quot; tabindex=&quot;-1&quot;&gt;创建 topic&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;kafka-topics --create  --replication-factor 1 --partitions 5 --topic myTopic --bootstrap-server localhost:9092
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;topic-1&quot; tabindex=&quot;-1&quot;&gt;查看topic列表&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;/opt/homebrew/opt/kafka/bin/kafka-topics --bootstrap-server localhost:9092   --list
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;数据文件目录&quot; tabindex=&quot;-1&quot;&gt;数据文件目录&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;/opt/homebrew/var/lib/kafka-logs/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;go&quot; tabindex=&quot;-1&quot;&gt;简易 go 程序&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-GO&quot;&gt;package main
+
+import (
+	&amp;quot;fmt&amp;quot;
+
+	&amp;quot;github.com/confluentinc/confluent-kafka-go/v2/kafka&amp;quot;
+)
+
+func main() {
+
+	p, err := kafka.NewProducer(&amp;amp;kafka.ConfigMap{&amp;quot;bootstrap.servers&amp;quot;: &amp;quot;localhost&amp;quot;})
+	if err != nil {
+		panic(err)
+	}
+
+	defer p.Close()
+
+	// Delivery report handler for produced messages
+	go func() {
+		for e := range p.Events() {
+			switch ev := e.(type) {
+			case *kafka.Message:
+				if ev.TopicPartition.Error != nil {
+					fmt.Printf(&amp;quot;Delivery failed: %v&#92;n&amp;quot;, ev.TopicPartition)
+				} else {
+					fmt.Printf(&amp;quot;Delivered message to %v&#92;n&amp;quot;, ev.TopicPartition)
+				}
+			}
+		}
+	}()
+
+	// Produce messages to topic (asynchronously)
+	topic := &amp;quot;myTopic&amp;quot;
+	for _, word := range []string{&amp;quot;Welcome&amp;quot;, &amp;quot;to&amp;quot;, &amp;quot;the&amp;quot;, &amp;quot;Confluent&amp;quot;, &amp;quot;Kafka&amp;quot;, &amp;quot;Golang&amp;quot;, &amp;quot;client&amp;quot;} {
+		p.Produce(&amp;amp;kafka.Message{
+			TopicPartition: kafka.TopicPartition{Topic: &amp;amp;topic, Partition: kafka.PartitionAny},
+			Value:          []byte(word),
+		}, nil)
+	}
+
+	// Wait for message deliveries before shutting down
+	p.Flush(15 * 1000)
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;kafka&quot; tabindex=&quot;-1&quot;&gt;《Kafka权威指南》章节列表&lt;/h2&gt;
+&lt;p&gt;《kafka 权威指南》&lt;br /&gt;
+章节列表：&lt;br /&gt;
+第1章 初识 kafka&lt;br /&gt;
+第2章 安装 Kafka&lt;br /&gt;
+第3章 Kafka 生产者——向 Kafka 写入数据&lt;br /&gt;
+第4章 Kafka 消费者——从 Kafka 读取数据&lt;br /&gt;
+第5章 深入 Kafka&lt;br /&gt;
+第6章 可靠的数据传递&lt;br /&gt;
+第7章 构建数据管道&lt;br /&gt;
+第8章 跨集群数据镜像&lt;br /&gt;
+第9章 管理 Kafka&lt;br /&gt;
+第10章 监控 Kafka&lt;br /&gt;
+第11章 流式处理&lt;/p&gt;
+&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/li1669852599/article/details/113254934&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;mac环境下使用brew安装Kafka(详细过程)_brew kafka-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/xyqlrjm/p/14939453.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Kafka整体架构、工作流程与文件存储机制 - 细雨骑驴入剑门 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/jingdongkeji/p/17879177.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;扫盲Kafka？看这一篇就够了！ - 京东云技术团队 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/huxi2b/p/8440429.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Kafka元数据缓存(metadata cache) - huxihx - 博客园&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/mac 运行 kafka/" />
+        </entry>
+        <entry>
+            <title>
                 ubuntu 树莓派启动时配置网络
                 
             </title>
@@ -1328,5 +1429,206 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/c/nginx/epoll的边缘触发和水平触发/" />
+        </entry>
+        <entry>
+            <title>
+                Kafka入门
+                
+            </title>
+            <updated>2024-02-01T07:26:01.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/Kafka入门/</id>
+            <content type="html">
+                &lt;h1 id=&quot;1-kafka&quot; tabindex=&quot;-1&quot;&gt;1 初识Kafka&lt;/h1&gt;
+&lt;h2 id=&quot;1-1-kafka&quot; tabindex=&quot;-1&quot;&gt;1.1 什么是Kafka&lt;/h2&gt;
+&lt;p&gt;Apache Kafka是一个分布式流处理平台，被设计用来高效地处理高吞吐量的数据流。它广泛应用于实时数据管道和流式应用程序中。以下是Kafka的一些主要优点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;高吞吐量&lt;/strong&gt;：Kafka支持高吞吐量的数据处理，即使是非常大的数据量也能够快速处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可扩展性&lt;/strong&gt;：Kafka集群可以横向扩展以处理更多的数据，可以在不停机的情况下动态添加更多的Broker。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;持久性和可靠性&lt;/strong&gt;：Kafka可以将数据持久化到磁盘，因此即使系统发生故障，数据也不会丢失。它使用分区和副本机制来确保数据的高可用性和耐用性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容错能力&lt;/strong&gt;：通过数据副本，Kafka可以在节点故障时保证数据不丢失，从而提供高可靠性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;低延迟&lt;/strong&gt;：Kafka能够在保持高吞吐量的同时实现低延迟的消息传递。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可靠的消息传递保证&lt;/strong&gt;：Kafka支持几种消息传递保证，包括最多一次、至少一次和精确一次（事务性传递）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多客户端支持&lt;/strong&gt;：Kafka提供多种编程语言的客户端库，方便不同开发环境下的集成。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;流处理&lt;/strong&gt;：Kafka Streams API允许构建实时流处理应用，可以进行复杂的数据处理和分析。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可观测性&lt;/strong&gt;：Kafka提供了监控数据流和系统性能的工具，有助于性能调优和问题诊断。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;大型社区和生态系统&lt;/strong&gt;：Kafka拥有一个庞大的社区和丰富的生态系统，提供了大量的工具和插件以及集成方案，可以帮助用户更好地开发和维护Kafka系统。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;1-2&quot; tabindex=&quot;-1&quot;&gt;1.2 使用场景&lt;/h2&gt;
+&lt;p&gt;Kafka的这些优点使它在需要处理大量实时数据的系统中特别有价值，包括日志聚合、流式处理、事件源、实时监控和分析等场景。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-16_812.png&quot; alt=&quot;clop_2024-01-16_812.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-3-kafka&quot; tabindex=&quot;-1&quot;&gt;1.3 kafka生产消费流程&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-16_813.png&quot; alt=&quot;clop_2024-01-16_813.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://wudanyang6.github.io/100%20Programmer/mac%20%E8%BF%90%E8%A1%8C%20kafka.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;mac 运行 kafka&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;2-kafka&quot; tabindex=&quot;-1&quot;&gt;2 Kafka 整体架构&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/drawio/Kafka%20%E6%95%B0%E6%8D%AE%E6%B5%81.svg&quot; alt=&quot;../drawio/Kafka 数据流.svg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Kafka系统的核心概念包括：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Producer（生产者）&lt;/strong&gt;：负责发布消息到Kafka的Topic（主题）中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Consumer（消费者）&lt;/strong&gt;：订阅Topic，并处理发布到这些Topic的消息。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Consumer Group（消费者组）&lt;/strong&gt;：一个消费者组可以有一个或多个消费者实例。当多个消费者实例属于同一个消费者组时，它们会在组内共享Topic的Partition。这意味着，每个Partition只会被消费者组中的一个消费者实例消费，这样可以保证每条消息只被组内的一个消费者处理，从而实现消息的负载均衡。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Broker（代理）&lt;/strong&gt;：Kafka集群中的服务器，负责存储数据并处理Producer和Consumer的请求。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Topic（主题）&lt;/strong&gt;：消息的分类，Producer发布消息到指定的Topic，Consumer订阅并消费Topic中的消息。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Partition（分区）&lt;/strong&gt;：Topic的物理分割，每个Partition在存储层面是独立的，可以在不同的Broker上。Partition内的消息是有序的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Offset（偏移量）&lt;/strong&gt;：Partition中每条消息的唯一标识，可以看作是消息在Partition中的索引。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Replica（副本）&lt;/strong&gt;：Partition的副本，用于提高数据的可靠性和容错性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Zookeeper&lt;/strong&gt;：Kafka使用Zookeeper来进行集群管理和协调。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stream Processing（流处理）&lt;/strong&gt;：Kafka Streams是Kafka的流处理库，用于构建流式应用程序。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Connect（连接器）&lt;/strong&gt;：Kafka Connect是用于构建和运行可重用的数据导入和导出连接器的工具。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Kafka生产者将消息发送到负责存储目标Topic的Partition的Broker上。在Kafka集群中，每个Topic可以分为多个Partition，而每个Partition可能分布在不同的Broker上。每个Partition有一个Broker充当Leader，其他的Broker充当Follower。所有的读写操作都是通过Leader Broker进行的，Follower负责同步数据以保证高可用性和数据的冗余。&lt;/p&gt;
+&lt;h1 id=&quot;3-kafka&quot; tabindex=&quot;-1&quot;&gt;3 Kafka核心逻辑&lt;/h1&gt;
+&lt;h2 id=&quot;3-1&quot; tabindex=&quot;-1&quot;&gt;3.1 物理存储&lt;/h2&gt;
+&lt;p&gt;Kafka 的基本存储单元是分区。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/drawio/kafka%E5%AD%98%E5%82%A8.drawio.svg&quot; alt=&quot;../drawio/kafka存储.drawio.svg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;kafka 存储的时候也是使用同样的格式存储到磁盘上，这样可以利用到零拷贝技术&lt;/p&gt;
+&lt;h2 id=&quot;3-2&quot; tabindex=&quot;-1&quot;&gt;3.2 生产者&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-16_814-kafka%E7%94%9F%E4%BA%A7%E8%80%85%E7%BB%84%E4%BB%B6%E5%9B%BE.png&quot; alt=&quot;clop_2024-01-16_814-kafka生产者组件图.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;流程如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先，我们需要创建一个 &lt;code&gt;ProducerRecord&lt;/code&gt;，这个对象需要包含消息的主题（topic）和值（value），可以选择性指定一个键值（key）或者分区（partition）。&lt;/li&gt;
+&lt;li&gt;发送消息时，生产者会对键值和值&lt;strong&gt;序列化&lt;/strong&gt;成字节数组，然后发送到&lt;strong&gt;分配器&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;如果我们指定了分区，那么分配器返回该分区即可；否则，分配器将会基于键来选择一个分区并返回。&lt;/li&gt;
+&lt;li&gt;选择完分区后，生产者知道了消息所属的主题和分区，它将这条记录添加到相同主题和分区的同一批次消息中，另一个线程负责发送这些批量消息到对应的 Kafka Broker。&lt;/li&gt;
+&lt;li&gt;当Broker接收到消息后，如果成功写入则返回一个包含消息的主题、分区及位移的RecordMetadata对象，否则返回异常。&lt;/li&gt;
+&lt;li&gt;生产者接收到结果后，对于异常可能会进行重试。重试几次还是失败会返回错误。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;生产者并不是将消息发送到任意的Broker，而是发送到管理特定Partition的Leader Broker上，以确保消息的正确存储和分发。&lt;/p&gt;
+&lt;p&gt;消息写入多个分区&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-18_844.png&quot; alt=&quot;clop_2024-01-18_844.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3-3&quot; tabindex=&quot;-1&quot;&gt;3.3 消费者&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-17_818-%E4%B8%BB%E9%A2%98%E5%92%8C%E6%B6%88%E8%B4%B9%E8%80%85%E7%BE%A4%E7%BB%84%E7%9A%84%E5%85%B3%E7%B3%BB.png&quot; alt=&quot;clop_2024-01-17_818-主题和消费者群组的关系.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/drawio/kafka%E6%B6%88%E8%B4%B9%E8%80%85.drawio.png&quot; alt=&quot;kafka消费者.drawio&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;3-3-1-offset&quot; tabindex=&quot;-1&quot;&gt;3.3.1 提交offset&lt;/h3&gt;
+&lt;p&gt;Kafka消费者提交偏移量的过程是为了记录消费者在消费Topic的Partition时当前的位置，以便在消费者重启或发生故障时能从上次处理的位置继续消费，保证消息不会丢失也不会被重复消费。提交偏移量的过程主要包括以下步骤：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;消费消息&lt;/strong&gt;：消费者从Broker拉取数据并进行处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;提交偏移量&lt;/strong&gt;：在成功处理完一批消息后，消费者会将最新的偏移量提交给Kafka。提交的偏移量是消费者下一次预期读取的起始位置。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;偏移量存储&lt;/strong&gt;：提交的偏移量存储在Kafka内的一个特殊的Topic中，名为&lt;code&gt;__consumer_offsets&lt;/code&gt;。每个消费者组的偏移量都会在这个Topic中维护。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;偏移量读取&lt;/strong&gt;：如果消费者发生重启或故障，它会从&lt;code&gt;__consumer_offsets&lt;/code&gt; Topic中读取上次提交的偏移量，从而恢复其消费状态。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;提交偏移量的方式主要有两种：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;自动提交偏移量&lt;/strong&gt;：Kafka消费者默认的偏移量提交方式是自动提交。这是通过在消费者配置中设置&lt;code&gt;enable.auto.commit=true&lt;/code&gt;来实现的，并且可以通过&lt;code&gt;auto.commit.interval.ms&lt;/code&gt;配置项来指定提交间隔。这种方式简单方便，但是由于提交是周期性进行的，可能会导致消息重复消费（如果在两次提交间隔内消费者失败）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;手动提交偏移量&lt;/strong&gt;：为了更精确地控制消息的消费状态，可以选择手动提交偏移量。手动提交可以是同步的也可以是异步的：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;同步提交&lt;/strong&gt;：通过调用&lt;code&gt;consumer.commitSync()&lt;/code&gt;方法，消费者会阻塞直到偏移量提交完成。这种方式会确保偏移量提交成功，如果提交失败，可以立即进行重试处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异步提交&lt;/strong&gt;：通过调用&lt;code&gt;consumer.commitAsync()&lt;/code&gt;方法，消费者可以在不阻塞当前线程的情况下提交偏移量。异步提交通常会提供一个回调函数来处理可能发生的提交错误。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异步+同步&lt;/strong&gt;：针对异步提交偏移量丢失的问题，通过对消费者进行异步批次提交并且在关闭时同步提交的方式，这样即使上一次的异步提交失败，通过同步提交还能够进行补救，同步会一直重试，直到提交成功。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;3-4&quot; tabindex=&quot;-1&quot;&gt;3.4 复制&lt;/h2&gt;
+&lt;h3 id=&quot;3-4-1&quot; tabindex=&quot;-1&quot;&gt;3.4.1 控制器&lt;/h3&gt;
+&lt;p&gt;有一个概念需要单独阐明：控制器&lt;/p&gt;
+&lt;p&gt;控制器其实就是一个 Broker，只不过它除了具有一般 Broker 的功能之外，&lt;strong&gt;还负责分区首领的选举&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;控制器是 Kafka 集群的管理节点。在一个 Kafka 集群中，所有的 Broker 节点中只有一个节点会被选举为控制器。&lt;/p&gt;
+&lt;p&gt;每个新选出的控制器通过 Zookeeper 的条件递增操作获得一个全新的、数值更大的 epoch 值，防止脑裂&lt;/p&gt;
+&lt;p&gt;简而言之，Kafka 使用 Zookeeper 的临时节点来选举控制器，并在节点加入集群或退出集群时通知控制器。控制器负责在节点加入或离开集群时进行分区首领选举。控制器使用 epoch 来避免“脑裂”。“脑裂”是指两个节点同时认为自己是当前的控制器。&lt;/p&gt;
+&lt;h3 id=&quot;3-4-2&quot; tabindex=&quot;-1&quot;&gt;3.4.2 与首领保持一致&lt;/h3&gt;
+&lt;p&gt;为了与首领保持同步，跟随者向首领发送获取数据的请求，&lt;strong&gt;这种请求与消费者为了读取消息而发送的请求是一样的&lt;/strong&gt;。首领将响应消息发给跟随者。请求消息里包含了跟随者想要获取消息的偏移量，而且这些偏移量总是有序的。&lt;/p&gt;
+&lt;h2 id=&quot;3-5&quot; tabindex=&quot;-1&quot;&gt;3.5 处理请求&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-18_846.png&quot; alt=&quot;clop_2024-01-18_846.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Kafka 使用零复制技术向客户端发送消息——也就是说，顺序读写内容，Kafka 直接把消息从文件(或者更确切地说是 Linux 文件系统缓存)里发送到网络通道，而不需要经过任何中间缓冲区。&lt;/p&gt;
+&lt;p&gt;零拷贝示意图：&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-18_848.png&quot; alt=&quot;clop_2024-01-18_848.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;零拷贝省略了数据在内核空间和用户空间之间的重复穿梭；用户态和内核态切换时产生中断，耗时；&lt;/p&gt;
+&lt;p&gt;生产请求和获取请求都必须发送给分区的首领副本。&lt;/p&gt;
+&lt;p&gt;如何获取分区首领所在的broker：&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-18_847.png&quot; alt=&quot;clop_2024-01-18_847.png&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;4&quot; tabindex=&quot;-1&quot;&gt;4 可靠性保证&lt;/h1&gt;
+&lt;p&gt;先了解一个概念：不完全的首领选举&lt;/p&gt;
+&lt;h2 id=&quot;4-1&quot; tabindex=&quot;-1&quot;&gt;4.1 消息传递语义&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;最多一次（at most once）：消息可能会丢失，但绝不会被重复发送。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;消费者端配置自动提交偏移量，并且在处理消息之前就提交。如果在提交偏移量后处理消息时发生了故障，那么这些消息可能不会被重新消费。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;至少一次（at least once）：消息不会丢失，但有可能被重复发送。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;手动提交偏移量。如果消费者在成功处理消息之前失败，那么同一消息可能会被再次消费。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;恰好一次（exactly once）：消息不会丢失，也不会被重复发送。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Kafka通过“幂等生产者”（Idempotent Producer）和“事务”（Transactions）来支持恰好一次的语义。幂等生产者确保即使生产者发送重复的消息，Broker也只会接收一次。事务性生产者可以将消息的发送和偏移量的提交放在同一个事务中，确保它们要么都成功，要么都失败。（恰好一次语义在Kafka 0.11版本及以上被引入。）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;4-2&quot; tabindex=&quot;-1&quot;&gt;4.2 不完全的首领选举&lt;/h2&gt;
+&lt;p&gt;是否允许不完全的首领选举：unclean.leader.election&lt;br /&gt;
+如果在选举过程中没有丢失数据，也就是说提交的数据同时存在于所有的同步副本上，那么这个选举就是“完全”的。&lt;br /&gt;
+如果在首领不可用时其他副本都是不同步的，那么这个选举就是“不完全”的。&lt;/p&gt;
+&lt;p&gt;简而言之，如果我们允许不同步的副本成为首领，那么就要承担丢失数据和出现数据不一致的⻛险。如果不允许它们成为首领，那么就要接受较低的可用性，因为我们必须等待原先的首领恢复到可用状态。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;unclean.leader.election=false&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;4-3&quot; tabindex=&quot;-1&quot;&gt;4.3 复制&lt;/h2&gt;
+&lt;p&gt;复制系数&lt;br /&gt;
+&lt;strong&gt;replication.factor &amp;gt;= 2&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;min.insync.replicas &amp;gt; 1&lt;/strong&gt; 则至少有一个同步从副本&lt;/p&gt;
+&lt;h2 id=&quot;4-4&quot; tabindex=&quot;-1&quot;&gt;4.4 使用生产者&lt;/h2&gt;
+&lt;p&gt;发送确认：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;acks=0 立即返回，不论是否写入&lt;/li&gt;
+&lt;li&gt;acks=1 当前首领副本已经写入&lt;/li&gt;
+&lt;li&gt;acks=-1或all 所有同步的副本已经被写入&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;重试&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;配置重试次数&lt;/li&gt;
+&lt;li&gt;设置重试间隔&lt;/li&gt;
+&lt;li&gt;程序兜底其他错误&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;4-5&quot; tabindex=&quot;-1&quot;&gt;4.5 使用消费者&lt;/h2&gt;
+&lt;p&gt;如果消费者提交了偏移量却未能处理完消息，那么就有可能造成消息丢失，这也是消费者丢失消息的主要原因。&lt;/p&gt;
+&lt;p&gt;正确的做法是：拉取数据、业务逻辑处理、提交消费 Offset 位移信息。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;enable.auto.commit = false&lt;/strong&gt; 采用手动提交位移的方式。&lt;/p&gt;
+&lt;p&gt;对于消费消息重复的情况，业务自己保证幂等性， 保证只成功消费一次即可。&lt;/p&gt;
+&lt;h1 id=&quot;6&quot; tabindex=&quot;-1&quot;&gt;6 思考&lt;/h1&gt;
+&lt;p&gt;Q: 知道了kafka的物理存储的结构，那么kafka通过offset查找对应的文件位置的过程是什么样的呢？&lt;/p&gt;
+&lt;p&gt;Q: 从副本在什么情况下被认为是不同步 (OSR) ？&lt;/p&gt;
+&lt;p&gt;Q: offset 为什么要从zookeeper挪到kafka本身存储呢？&lt;/p&gt;
+&lt;p&gt;Q：分区分成多少比较好？&lt;/p&gt;
+&lt;p&gt;Q：在主题流量不是很大的情况下，消费者一直轮询会造成浪费，有没有什么方式能够避免这种情况？&lt;/p&gt;
+&lt;p&gt;Q：Kafka 为什么要把自己定位成一个分布式流平台？&lt;/p&gt;
+&lt;h1 id=&quot;7&quot; tabindex=&quot;-1&quot;&gt;7 参考&lt;/h1&gt;
+&lt;p&gt;《Kafka 权威指南》 Neha Narkhede Gwen Shapira Todd Palino 著 薛命灯译&lt;/p&gt;
+&lt;p&gt;官网文档： &lt;a href=&quot;https://kafka.apache.org/documentation/#design&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Apache Kafka&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/li1669852599/article/details/113254934&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;mac环境下使用brew安装Kafka(详细过程)_brew kafka-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/xyqlrjm/p/14939453.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Kafka整体架构、工作流程与文件存储机制 - 细雨骑驴入剑门 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/jingdongkeji/p/17879177.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;扫盲Kafka？看这一篇就够了！ - 京东云技术团队 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/huxi2b/p/8440429.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Kafka元数据缓存(metadata cache) - huxihx - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/zhengzhaoxiang/p/13977382.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Kafka 物理存储机制 - Java程序员进阶 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cloud.tencent.com/developer/article/1787164&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;稀疏索引与其在Kafka和ClickHouse中的应用-腾讯云开发者社区-腾讯云&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/alvinscript/p/17407980.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;8张图带你全面了解kafka的核心机制 - JAVA旭阳 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/459610418&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;进阶，Kafka 如何保证消息不丢失？ - 知乎&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cloud.tencent.com/developer/article/2181009&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Kafka的自我定位&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/Kafka入门/" />
         </entry>
 </feed>

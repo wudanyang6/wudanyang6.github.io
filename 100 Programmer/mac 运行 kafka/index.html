@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>网络-最多有多少个a类、b类和c类网络号</title>
+    <title>mac 运行 kafka</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
@@ -368,7 +368,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka </a>
                 </div>
             
         </div>
@@ -692,7 +692,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/网络-最多有多少个a类、b类和c类网络号/">网络-最多有多少个a类、b类和c类网络号 </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/网络-最多有多少个a类、b类和c类网络号/">网络-最多有多少个a类、b类和c类网络号 </a>
                 </div>
             
         </div>
@@ -1227,7 +1227,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">网络-最多有多少个a类、b类和c类网络号</h1>
+          <h1 data-note-icon="">mac 运行 kafka</h1>
         
         <div class="header-meta">
           
@@ -1235,25 +1235,114 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #kafka
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #学习
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-05-24T14:05:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-01T13:02:45+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-09-13 21:55:10"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-23 17:49:20"></span></div></div></div>
       
       
       </header>
       
       
-      <p>在IPv4地址体系中，网络被分为4个等级，分别是A，B，C和D类。对于A、B、C类，其数量如下：</p>
-<ul>
-<li>A类：128个（范围是0.0.0.0到127.255.255.255，但0.0.0.0和127.0.0.0通常分别用作默认路由和本地回环地址，所以不包括在内。）</li>
-<li>B类：16,384个（范围是 128.0.0.0 到 191.255.255.255）</li>
-<li>C类：2,097,152个（范围是 192.0.0.0 到 223.255.255.255）</li>
-</ul>
-<p>请注意，上述分类是根据原始的IPv4地址分类来计算的。然而，由于IP地址的枯竭，现在的实际网络环境中，通常在IP地址分配上使用了子网划分，CIDR，私有地址等现代网络技术，因此实际的可用网络数量会因子网划分、私有地址使用等因素而有所变化。</p>
-<p>D类 IP 地址是多播（Multicast）地址，其范围是 224.0.0.0 到 239.255.255.255。</p>
-<p>所以，D类网络（多播地址）总共有 (239-224+1) x (2^24) = 268,435,456 个。</p>
-<p>但是，有些特定的地址在D类中是已经被保留或特殊用途的，例如 224.0.0.0 - 224.0.0.255 是被保留的用于本地网络的多播地址。</p>
-<h1 id="参考" tabindex="-1">参考</h1>
-<p><a href="https://blog.csdn.net/a5534789/article/details/50118857#:~:text=%E2%80%9C0%E2%80%9D%E5%81%9A%E4%B8%BA%E7%BD%91%E7%BB%9C%E5%8F%B7,%E7%BD%91%E6%AE%B5%E4%B8%BA1%E2%80%94126.&amp;text=224%3D412%3D166%3D2563,%E6%95%B0%E5%BA%94%E8%AF%A5%E6%98%AF16777214%E4%B8%AA%E3%80%82" target="_blank" class="external-link">https://blog.csdn.net/a5534789/article/details/50118857#:~:text=“0”做为网络号,网段为1—126.&amp;text=224%3D412%3D166%3D2563,数应该是16777214个。</a></p>
+      <h1 id="mac-kafka" tabindex="-1">mac 运行 kafka</h1>
+<h2 id="安装" tabindex="-1">安装</h2>
+<pre><code class="language-bash">brew install kafka
+</code></pre>
+<h2 id="broker" tabindex="-1">启动broker</h2>
+<p>手动启动kafka， 同时启动一个使用 2181 端口的 zookeeper</p>
+<pre><code class="language-bash">/opt/homebrew/opt/kafka/bin/zookeeper-server-start /opt/homebrew/etc/kafka/zookeeper.properties
+/opt/homebrew/opt/kafka/bin/kafka-server-start /opt/homebrew/etc/kafka/server.properties
+</code></pre>
+<h2 id="启动生产者" tabindex="-1">启动生产者</h2>
+<pre><code class="language-bash">/opt/homebrew/opt/kafka/bin/kafka-console-producer --topic test --bootstrap-server localhost:9092 
+</code></pre>
+<h2 id="启动消费者" tabindex="-1">启动消费者</h2>
+<pre><code class="language-bash">/opt/homebrew/opt/kafka/bin/kafka-console-consumer --topic test --bootstrap-server localhost:9092  --from-beginning
+</code></pre>
+<h2 id="topic" tabindex="-1">创建 topic</h2>
+<pre><code class="language-bash">kafka-topics --create  --replication-factor 1 --partitions 5 --topic myTopic --bootstrap-server localhost:9092
+</code></pre>
+<h2 id="topic-1" tabindex="-1">查看topic列表</h2>
+<pre><code class="language-bash">/opt/homebrew/opt/kafka/bin/kafka-topics --bootstrap-server localhost:9092   --list
+</code></pre>
+<h2 id="数据文件目录" tabindex="-1">数据文件目录</h2>
+<pre><code class="language-bash">/opt/homebrew/var/lib/kafka-logs/
+</code></pre>
+<h2 id="go" tabindex="-1">简易 go 程序</h2>
+<pre><code class="language-GO">package main
+
+import (
+	&quot;fmt&quot;
+
+	&quot;github.com/confluentinc/confluent-kafka-go/v2/kafka&quot;
+)
+
+func main() {
+
+	p, err := kafka.NewProducer(&amp;kafka.ConfigMap{&quot;bootstrap.servers&quot;: &quot;localhost&quot;})
+	if err != nil {
+		panic(err)
+	}
+
+	defer p.Close()
+
+	// Delivery report handler for produced messages
+	go func() {
+		for e := range p.Events() {
+			switch ev := e.(type) {
+			case *kafka.Message:
+				if ev.TopicPartition.Error != nil {
+					fmt.Printf(&quot;Delivery failed: %v\n&quot;, ev.TopicPartition)
+				} else {
+					fmt.Printf(&quot;Delivered message to %v\n&quot;, ev.TopicPartition)
+				}
+			}
+		}
+	}()
+
+	// Produce messages to topic (asynchronously)
+	topic := &quot;myTopic&quot;
+	for _, word := range []string{&quot;Welcome&quot;, &quot;to&quot;, &quot;the&quot;, &quot;Confluent&quot;, &quot;Kafka&quot;, &quot;Golang&quot;, &quot;client&quot;} {
+		p.Produce(&amp;kafka.Message{
+			TopicPartition: kafka.TopicPartition{Topic: &amp;topic, Partition: kafka.PartitionAny},
+			Value:          []byte(word),
+		}, nil)
+	}
+
+	// Wait for message deliveries before shutting down
+	p.Flush(15 * 1000)
+}
+
+</code></pre>
+<h2 id="kafka" tabindex="-1">《Kafka权威指南》章节列表</h2>
+<p>《kafka 权威指南》<br>
+章节列表：<br>
+第1章 初识 kafka<br>
+第2章 安装 Kafka<br>
+第3章 Kafka 生产者——向 Kafka 写入数据<br>
+第4章 Kafka 消费者——从 Kafka 读取数据<br>
+第5章 深入 Kafka<br>
+第6章 可靠的数据传递<br>
+第7章 构建数据管道<br>
+第8章 跨集群数据镜像<br>
+第9章 管理 Kafka<br>
+第10章 监控 Kafka<br>
+第11章 流式处理</p>
+<h2 id="reference" tabindex="-1">Reference</h2>
+<p><a href="https://blog.csdn.net/li1669852599/article/details/113254934" target="_blank" class="external-link">mac环境下使用brew安装Kafka(详细过程)_brew kafka-CSDN博客</a></p>
+<p><a href="https://www.cnblogs.com/xyqlrjm/p/14939453.html" target="_blank" class="external-link">Kafka整体架构、工作流程与文件存储机制 - 细雨骑驴入剑门 - 博客园</a></p>
+<p><a href="https://www.cnblogs.com/jingdongkeji/p/17879177.html" target="_blank" class="external-link">扫盲Kafka？看这一篇就够了！ - 京东云技术团队 - 博客园</a></p>
+<p><a href="https://www.cnblogs.com/huxi2b/p/8440429.html" target="_blank" class="external-link">Kafka元数据缓存(metadata cache) - huxihx - 博客园</a></p>
 
       
       
@@ -1508,7 +1597,40 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#参考">参考</a>
+                    <li><a href="#mac-kafka">mac 运行 kafka</a>
+            
+                <ol>
+                    
+                    <li><a href="#安装">安装</a>
+            		</li>
+
+                    <li><a href="#broker">启动broker</a>
+            		</li>
+
+                    <li><a href="#启动生产者">启动生产者</a>
+            		</li>
+
+                    <li><a href="#启动消费者">启动消费者</a>
+            		</li>
+
+                    <li><a href="#topic">创建 topic</a>
+            		</li>
+
+                    <li><a href="#topic-1">查看topic列表</a>
+            		</li>
+
+                    <li><a href="#数据文件目录">数据文件目录</a>
+            		</li>
+
+                    <li><a href="#go">简易 go 程序</a>
+            		</li>
+
+                    <li><a href="#kafka">《Kafka权威指南》章节列表</a>
+            		</li>
+
+                    <li><a href="#reference">Reference</a>
+            		</li>
+                </ol>
             		</li>
                 </ol>
             </nav>
@@ -1522,8 +1644,9 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">🏡 Home dy_turbo</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   
