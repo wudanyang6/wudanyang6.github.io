@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-02T05:03:07.881Z';
+        const searchIndexDate = '2024-02-02T05:24:51.843Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:03:07.881Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:24:51.843Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:03:07.881Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:24:51.843Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1377,7 +1377,23 @@
       
       <h1 id="mac" tabindex="-1">mac-合上盖子不断网</h1>
 <p>将电池的设置 【唤醒以供网络访问】改成【始终】就会生效了<br>
-<img src="/img/user/attachs/Pasted%20image%2020230203154729.png" alt="Pasted image 20230203154729.png"></p>
+<picture src="/img/user/attachs/Pasted%20image%2020230203154729.png" alt="Pasted image 20230203154729.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/67S04ZUBYe-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/67S04ZUBYe-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/67S04ZUBYe-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/67S04ZUBYe-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/Pasted%20image%2020230203154729.png"
+      alt="Pasted image 20230203154729.png"
+      width=""
+      ></picture></p>
 
       
       

@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-02T05:03:07.881Z';
+        const searchIndexDate = '2024-02-02T05:24:51.843Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:03:07.881Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:24:51.843Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:03:07.881Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:24:51.843Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1374,7 +1374,23 @@
 <p>正在等着被review： <a href="https://github.com/obsidianmd/obsidian-releases/pull/2997" target="_blank" class="external-link">https://github.com/obsidianmd/obsidian-releases/pull/2997</a></p>
 <p>新录了一个gif：</p>
 <p>图中可以看到和things3的Today列表联动还算是顺畅</p>
-<p><img src="/img/user/attachs/things3-today-showcase.gif" alt="things3-today-showcase.gif"></p>
+<p><picture src="/img/user/attachs/things3-today-showcase.gif" alt="things3-today-showcase.gif"><source       media="(max-width:480px)"
+      srcset="/img/optimized/JdZ4Va9ToO-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/JdZ4Va9ToO-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/JdZ4Va9ToO-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/JdZ4Va9ToO-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/things3-today-showcase.gif"
+      alt="things3-today-showcase.gif"
+      width=""
+      ></picture></p>
 <h2 id="reference" tabindex="-1">Reference</h2>
 
       

@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-02T05:03:07.881Z';
+        const searchIndexDate = '2024-02-02T05:24:51.843Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:03:07.881Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:24:51.843Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:03:07.881Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:24:51.843Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1382,7 +1382,23 @@
 <li>最后一点，原神不花钱氪金也可以玩的很舒服，每天做做每日任务，开开宝箱，欣赏欣赏美景，然后读一读角色的背景故事。</li>
 </ol>
 <p>对了，游戏社区里的前辈忠告，当深渊不存在，能打到哪里就打到哪里。</p>
-<p><img src="/img/user/attachs/clop_2024-01-31_36.png" alt="../attachs/clop_2024-01-31_36.png"></p>
+<p><picture src="/img/user/attachs/clop_2024-01-31_36.png" alt="../attachs/clop_2024-01-31_36.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/EDaJY1Mq0c-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/EDaJY1Mq0c-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/EDaJY1Mq0c-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/EDaJY1Mq0c-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/clop_2024-01-31_36.png"
+      alt="../attachs/clop_2024-01-31_36.png"
+      width=""
+      ></picture></p>
 
       
       

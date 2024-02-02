@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-02T05:03:07.881Z';
+        const searchIndexDate = '2024-02-02T05:24:51.843Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:03:07.881Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:24:51.843Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:03:07.881Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:24:51.843Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1434,12 +1434,60 @@ date_translator = require(&quot;date&quot;)
 </code></pre>
 <h1 id="最终效果" tabindex="-1">最终效果</h1>
 <h2 id="date" tabindex="-1">date</h2>
-<p><img src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-date%E6%95%88%E6%9E%9C%2020211226003919.png" alt="鼠须管-date效果 20211226003919.png"></p>
+<p><picture src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-date%E6%95%88%E6%9E%9C%2020211226003919.png" alt="鼠须管-date效果 20211226003919.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/w1Cr6XGJAL-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/w1Cr6XGJAL-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/w1Cr6XGJAL-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/w1Cr6XGJAL-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-date%E6%95%88%E6%9E%9C%2020211226003919.png"
+      alt="鼠须管-date效果 20211226003919.png"
+      width=""
+      ></picture></p>
 <h2 id="time" tabindex="-1">time</h2>
-<p><img src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-time%E6%95%88%E6%9E%9C%2020211226004010.png" alt="鼠须管-time效果 20211226004010.png"></p>
+<p><picture src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-time%E6%95%88%E6%9E%9C%2020211226004010.png" alt="鼠须管-time效果 20211226004010.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/sYdDO6N5-J-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/sYdDO6N5-J-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/sYdDO6N5-J-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/sYdDO6N5-J-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-time%E6%95%88%E6%9E%9C%2020211226004010.png"
+      alt="鼠须管-time效果 20211226004010.png"
+      width=""
+      ></picture></p>
 <h2 id="number" tabindex="-1">number</h2>
 <p>输入 <code>/</code> ，然后输入数字 <code>1</code>，会显示大写数字<br>
-<img src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-%E6%95%B0%E5%AD%97%E5%B1%95%E7%A4%BA%E6%95%88%E6%9E%9C%2020211226012849.png" alt="鼠须管-数字展示效果 20211226012849.png"></p>
+<picture src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-%E6%95%B0%E5%AD%97%E5%B1%95%E7%A4%BA%E6%95%88%E6%9E%9C%2020211226012849.png" alt="鼠须管-数字展示效果 20211226012849.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/PPGNLMd9_F-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/PPGNLMd9_F-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/PPGNLMd9_F-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/PPGNLMd9_F-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-%E6%95%B0%E5%AD%97%E5%B1%95%E7%A4%BA%E6%95%88%E6%9E%9C%2020211226012849.png"
+      alt="鼠须管-数字展示效果 20211226012849.png"
+      width=""
+      ></picture></p>
 <h1 id="参考" tabindex="-1">参考</h1>
 <p><a href="https://github.com/hchunhui/librime-lua" target="_blank" class="external-link">https://github.com/hchunhui/librime-lua</a></p>
 

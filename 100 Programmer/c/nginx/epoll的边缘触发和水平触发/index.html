@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-02T05:03:07.881Z';
+        const searchIndexDate = '2024-02-02T05:24:51.843Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:03:07.881Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:24:51.843Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:03:07.881Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:24:51.843Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1403,7 +1403,23 @@
 </ul>
 </li>
 </ol>
-<p><img src="/img/user/card/92310.png" alt="92310.png"></p>
+<p><picture src="/img/user/card/92310.png" alt="92310.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/So7zxuKtZ4-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/So7zxuKtZ4-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/So7zxuKtZ4-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/So7zxuKtZ4-700.jpeg"
+        ><img       class=""
+      src="/img/user/card/92310.png"
+      alt="92310.png"
+      width=""
+      ></picture></p>
 <h2 id="reference" tabindex="-1">Reference</h2>
 <p><a href="https://electronics.stackexchange.com/a/21891" target="_blank" class="external-link">https://electronics.stackexchange.com/a/21891</a></p>
 

@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-02T05:03:07.881Z';
+        const searchIndexDate = '2024-02-02T05:24:51.843Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:03:07.881Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:24:51.843Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:03:07.881Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:24:51.843Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1467,7 +1467,23 @@ Maybe someone has attached this process with gdb.</p>
 <p><strong>can't gdb attach the same process twice.</strong><br>
 将 vscode 中的 调试关掉，就可以使用 strace 了<br>
 如下图，可以看到，子进程停在了 epoll_pwait 系统调用上了<br>
-<img src="/img/user/attachs/Pasted%20image%2020210330203413.png" alt="attachs/Pasted image 20210330203413.png"></p>
+<picture src="/img/user/attachs/Pasted%20image%2020210330203413.png" alt="attachs/Pasted image 20210330203413.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/gduGuuS-79-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/gduGuuS-79-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/gduGuuS-79-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/gduGuuS-79-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/Pasted%20image%2020210330203413.png"
+      alt="attachs/Pasted image 20210330203413.png"
+      width=""
+      ></picture></p>
 
       
       

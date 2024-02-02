@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-02T05:03:07.881Z';
+        const searchIndexDate = '2024-02-02T05:24:51.843Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:03:07.881Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:24:51.843Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:03:07.881Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:24:51.843Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1387,7 +1387,18 @@
 <li>定时整理收件箱（需要保证整理完收件箱之后，任务都是可执行的）
 <ol>
 <li>如果有事情2分钟就能解决，那么直接去做，属于小事情</li>
-<li>如果需要15-30分钟，则标记上标签 <img src="/img/user/card/Pasted%20image%2020231009172220.png" alt="Pasted image 20231009172220.png"></li>
+<li>如果需要15-30分钟，则标记上标签 <picture src="/img/user/card/Pasted%20image%2020231009172220.png" alt="Pasted image 20231009172220.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/ZUdS9fFYvS-423.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/ZUdS9fFYvS-423.jpeg"
+      >
+      <img       class=""
+      src="/img/user/card/Pasted%20image%2020231009172220.png"
+      alt="Pasted image 20231009172220.png"
+      width=""
+      ></picture></li>
 <li>如果需要1小时以上，就将任务设置成项目
 <ol>
 <li>做一次任务分解，分解成小任务，小任务以30分钟以内完成最好</li>
@@ -1396,7 +1407,23 @@
 </li>
 </ol>
 </li>
-<li>根据时间，选取任务进行处理，打开 <code>Session</code> 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  <img src="/img/user/card/Pasted%20image%2020231107224028.png" alt="Pasted image 20231107224028.png"></li>
+<li>根据时间，选取任务进行处理，打开 <code>Session</code> 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  <picture src="/img/user/card/Pasted%20image%2020231107224028.png" alt="Pasted image 20231107224028.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/enKkIoJo3Y-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/enKkIoJo3Y-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/enKkIoJo3Y-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/enKkIoJo3Y-700.jpeg"
+        ><img       class=""
+      src="/img/user/card/Pasted%20image%2020231107224028.png"
+      alt="Pasted image 20231107224028.png"
+      width=""
+      ></picture></li>
 </ol>
 <p>为了让Things工作流更顺畅，我做了一个obsidian插件： <a class="internal-link" target="" data-note-icon="" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件</a></p>
 

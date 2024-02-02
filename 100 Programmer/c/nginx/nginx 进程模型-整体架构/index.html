@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-02T05:03:07.881Z';
+        const searchIndexDate = '2024-02-02T05:24:51.843Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:03:07.881Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:24:51.843Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:03:07.881Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:24:51.843Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1376,7 +1376,23 @@
       
       
       <h1 id="nginx" tabindex="-1">nginx 进程模型-整体架构</h1>
-<p><img src="/img/user/100%20Programmer/c/nginx/713751-20221106220927618-2090658482.png" alt="713751-20221106220927618-2090658482.png"></p>
+<p><picture src="/img/user/100%20Programmer/c/nginx/713751-20221106220927618-2090658482.png" alt="713751-20221106220927618-2090658482.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/LNI6sR4dfk-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/LNI6sR4dfk-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/LNI6sR4dfk-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/LNI6sR4dfk-700.jpeg"
+        ><img       class=""
+      src="/img/user/100%20Programmer/c/nginx/713751-20221106220927618-2090658482.png"
+      alt="713751-20221106220927618-2090658482.png"
+      width=""
+      ></picture></p>
 <p>从网上找了一个非常好的图片，从图中可以看到很多东西</p>
 <ol>
 <li><code>Nginx</code> 会生成多个进程</li>
