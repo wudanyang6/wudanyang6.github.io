@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-02T04:09:14Z</updated>
+    <updated>2024-02-02T04:11:30Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -1311,6 +1311,91 @@ func main() {
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/" />
+        </entry>
+        <entry>
+            <title>
+                mac-鼠须管-使用lua脚本
+                
+            </title>
+            <updated>2024-02-02T04:10:27.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/linux/mac-鼠须管-使用lua脚本/</id>
+            <content type="html">
+                &lt;h1 id=&quot;使用步骤&quot; tabindex=&quot;-1&quot;&gt;使用步骤&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;在 &lt;code&gt;lua&lt;/code&gt; 目录中，添加脚本，以 &lt;code&gt;date&lt;/code&gt; 日期文件为例：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-lua&quot;&gt;--[[
+date_translator: 将 `date` 翻译为当前日期
+
+translator 的功能是将分好段的输入串翻译为一系列候选项。
+
+欲定义的 translator 包含三个输入参数：
+ - input: 待翻译的字符串
+ - seg: 包含 `start` 和 `_end` 两个属性，分别表示当前串在输入框中的起始和结束位置
+ - env: 可选参数，表示 translator 所处的环境（本例没有体现）
+
+translator 的输出是若干候选项。
+与通常的函数使用 `return` 返回不同，translator 要求您使用 `yield` 产生候选项。
+
+`yield` 每次只能产生一个候选项。有多个候选时，可以多次使用 `yield` 。
+
+请看如下示例：
+--]]
+
+local function translator(input, seg)
+   -- 如果输入串为 `date` 则翻译
+   if (input == &amp;quot;date&amp;quot; or input == &amp;quot;shijian&amp;quot;) then
+      --[[ 用 `yield` 产生一个候选项
+           候选项的构造函数是 `Candidate`，它有五个参数：
+            - type: 字符串，表示候选项的类型
+            - start: 候选项对应的输入串的起始位置
+            - _end:  候选项对应的输入串的结束位置
+            - text:  候选项的文本
+            - comment: 候选项的注释
+       --]]
+      yield(Candidate(&amp;quot;date&amp;quot;, seg.start, seg._end, os.date(&amp;quot;%Y年%m月%d日&amp;quot;), &amp;quot;日期&amp;quot;))
+      --[[ 用 `yield` 再产生一个候选项
+           最终的效果是输入法候选框中出现两个格式不同的当前日期的候选项。
+      --]]
+      yield(Candidate(&amp;quot;date&amp;quot;, seg.start, seg._end, os.date(&amp;quot;%Y-%m-%d&amp;quot;), &amp;quot;日期&amp;quot;))
+      yield(Candidate(&amp;quot;date&amp;quot;, seg.start, seg._end, os.date(&amp;quot;%Y-%m-%d %H:%M:%S&amp;quot;), &amp;quot;日期时间&amp;quot;))
+   end
+end
+
+-- 将上述定义导出
+return translator
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;code&gt;rime.lua&lt;/code&gt; 中引入此脚本:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-lua&quot;&gt;-- date_translator: 将 `date` 翻译为当前日期
+-- 详见 `lua/date.lua`:
+date_translator = require(&amp;quot;date&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;在 &lt;code&gt;double_pinyin.custom.yaml&lt;/code&gt; 或 &lt;code&gt;double_pinyin.schema.yaml&lt;/code&gt; 中配置上此处理程序&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yml&quot;&gt;  engine/translators:
+    - lua_translator@date_translator
+    - lua_translator@week_translator
+    - lua_translator@time_translator
+    - lua_translator@number_translator
+    - lua_translator@reverse_lookup_filter
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;最终效果&quot; tabindex=&quot;-1&quot;&gt;最终效果&lt;/h1&gt;
+&lt;h2 id=&quot;date&quot; tabindex=&quot;-1&quot;&gt;date&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-date%E6%95%88%E6%9E%9C%2020211226003919.png&quot; alt=&quot;鼠须管-date效果 20211226003919.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;time&quot; tabindex=&quot;-1&quot;&gt;time&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-time%E6%95%88%E6%9E%9C%2020211226004010.png&quot; alt=&quot;鼠须管-time效果 20211226004010.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;number&quot; tabindex=&quot;-1&quot;&gt;number&lt;/h2&gt;
+&lt;p&gt;输入 &lt;code&gt;/&lt;/code&gt; ，然后输入数字 &lt;code&gt;1&lt;/code&gt;，会显示大写数字&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-%E6%95%B0%E5%AD%97%E5%B1%95%E7%A4%BA%E6%95%88%E6%9E%9C%2020211226012849.png&quot; alt=&quot;鼠须管-数字展示效果 20211226012849.png&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/hchunhui/librime-lua&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/hchunhui/librime-lua&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/linux/mac-鼠须管-使用lua脚本/" />
         </entry>
         <entry>
             <title>
