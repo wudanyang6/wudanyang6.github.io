@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-02T04:57:30Z</updated>
+    <updated>2024-02-02T05:03:08Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -938,7 +938,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 Things 工作流
                 
             </title>
-            <updated>2024-02-01T05:07:15.000Z</updated>
+            <updated>2024-02-02T05:02:13.000Z</updated>
             <id>https://wudanyang6.github.io//101 Tools/Things 工作流/</id>
             <content type="html">
                 &lt;h1 id=&quot;things&quot; tabindex=&quot;-1&quot;&gt;Things 工作流&lt;/h1&gt;
@@ -947,7 +947,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;li&gt;定时整理收件箱（需要保证整理完收件箱之后，任务都是可执行的）
 &lt;ol&gt;
 &lt;li&gt;如果有事情2分钟就能解决，那么直接去做，属于小事情&lt;/li&gt;
-&lt;li&gt;如果需要15-30分钟，则标记上标签 ![](/img/user/card/Pasted image 20231009172220.png)&lt;/li&gt;
+&lt;li&gt;如果需要15-30分钟，则标记上标签 &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/Pasted%20image%2020231009172220.png&quot; alt=&quot;Pasted image 20231009172220.png&quot; /&gt;&lt;/li&gt;
 &lt;li&gt;如果需要1小时以上，就将任务设置成项目
 &lt;ol&gt;
 &lt;li&gt;做一次任务分解，分解成小任务，小任务以30分钟以内完成最好&lt;/li&gt;

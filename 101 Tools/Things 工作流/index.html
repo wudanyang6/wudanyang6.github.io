@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-02T04:57:30.146Z';
+        const searchIndexDate = '2024-02-02T05:03:07.881Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T04:57:30.146Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T05:03:07.881Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T04:57:30.146Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T05:03:07.881Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1375,7 +1375,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-10-09T17:10:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-01T13:07:15+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-10-09T17:10:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-02T13:02:13+08:00"></span></div></div></div>
       
       
       </header>
@@ -1387,7 +1387,7 @@
 <li>定时整理收件箱（需要保证整理完收件箱之后，任务都是可执行的）
 <ol>
 <li>如果有事情2分钟就能解决，那么直接去做，属于小事情</li>
-<li>如果需要15-30分钟，则标记上标签 ![](/img/user/card/Pasted image 20231009172220.png)</li>
+<li>如果需要15-30分钟，则标记上标签 <img src="/img/user/card/Pasted%20image%2020231009172220.png" alt="Pasted image 20231009172220.png"></li>
 <li>如果需要1小时以上，就将任务设置成项目
 <ol>
 <li>做一次任务分解，分解成小任务，小任务以30分钟以内完成最好</li>
