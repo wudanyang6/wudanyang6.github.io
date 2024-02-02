@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>mac 运行 kafka</title>
+    <title>linux-查看内存占用情况</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -324,7 +324,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/linux-查看内存占用情况/">linux-查看内存占用情况 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/linux-查看内存占用情况/">linux-查看内存占用情况 </a>
                 </div>
             
         </div>
@@ -395,7 +395,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka </a>
                 </div>
             
         </div>
@@ -1300,7 +1300,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">mac 运行 kafka</h1>
+          <h1 data-note-icon="">linux-查看内存占用情况</h1>
         
         <div class="header-meta">
           
@@ -1308,114 +1308,16 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #kafka
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #学习
-                  </a>
-                
-              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-09-13T21:55:10+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-01T15:37:09+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-01-04T15:23:34+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-02T12:07:52+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="mac-kafka" tabindex="-1">mac 运行 kafka</h1>
-<h2 id="安装" tabindex="-1">安装</h2>
-<pre><code class="language-bash">brew install kafka
+      <h1 id="linux" tabindex="-1">linux-查看内存占用情况</h1>
+<pre><code class="language-Shell">ps --no-headers -o &quot;rss,cmd&quot; -A | awk '{print $1/1024&quot;M&quot;,&quot;\t&quot;,$0}' | sort -n -k1
 </code></pre>
-<h2 id="broker" tabindex="-1">启动broker</h2>
-<p>手动启动kafka， 同时启动一个使用 2181 端口的 zookeeper</p>
-<pre><code class="language-bash">/opt/homebrew/opt/kafka/bin/zookeeper-server-start /opt/homebrew/etc/kafka/zookeeper.properties
-/opt/homebrew/opt/kafka/bin/kafka-server-start /opt/homebrew/etc/kafka/server.properties
-</code></pre>
-<h2 id="启动生产者" tabindex="-1">启动生产者</h2>
-<pre><code class="language-bash">/opt/homebrew/opt/kafka/bin/kafka-console-producer --topic test --bootstrap-server localhost:9092 
-</code></pre>
-<h2 id="启动消费者" tabindex="-1">启动消费者</h2>
-<pre><code class="language-bash">/opt/homebrew/opt/kafka/bin/kafka-console-consumer --topic test --bootstrap-server localhost:9092  --from-beginning
-</code></pre>
-<h2 id="topic" tabindex="-1">创建 topic</h2>
-<pre><code class="language-bash">kafka-topics --create  --replication-factor 1 --partitions 5 --topic myTopic --bootstrap-server localhost:9092
-</code></pre>
-<h2 id="topic-1" tabindex="-1">查看topic列表</h2>
-<pre><code class="language-bash">/opt/homebrew/opt/kafka/bin/kafka-topics --bootstrap-server localhost:9092   --list
-</code></pre>
-<h2 id="数据文件目录" tabindex="-1">数据文件目录</h2>
-<pre><code class="language-bash">/opt/homebrew/var/lib/kafka-logs/
-</code></pre>
-<h2 id="go" tabindex="-1">简易 go 程序</h2>
-<pre><code class="language-GO">package main
-
-import (
-	&quot;fmt&quot;
-
-	&quot;github.com/confluentinc/confluent-kafka-go/v2/kafka&quot;
-)
-
-func main() {
-
-	p, err := kafka.NewProducer(&amp;kafka.ConfigMap{&quot;bootstrap.servers&quot;: &quot;localhost&quot;})
-	if err != nil {
-		panic(err)
-	}
-
-	defer p.Close()
-
-	// Delivery report handler for produced messages
-	go func() {
-		for e := range p.Events() {
-			switch ev := e.(type) {
-			case *kafka.Message:
-				if ev.TopicPartition.Error != nil {
-					fmt.Printf(&quot;Delivery failed: %v\n&quot;, ev.TopicPartition)
-				} else {
-					fmt.Printf(&quot;Delivered message to %v\n&quot;, ev.TopicPartition)
-				}
-			}
-		}
-	}()
-
-	// Produce messages to topic (asynchronously)
-	topic := &quot;myTopic&quot;
-	for _, word := range []string{&quot;Welcome&quot;, &quot;to&quot;, &quot;the&quot;, &quot;Confluent&quot;, &quot;Kafka&quot;, &quot;Golang&quot;, &quot;client&quot;} {
-		p.Produce(&amp;kafka.Message{
-			TopicPartition: kafka.TopicPartition{Topic: &amp;topic, Partition: kafka.PartitionAny},
-			Value:          []byte(word),
-		}, nil)
-	}
-
-	// Wait for message deliveries before shutting down
-	p.Flush(15 * 1000)
-}
-
-</code></pre>
-<h2 id="kafka" tabindex="-1">《Kafka权威指南》章节列表</h2>
-<p>《kafka 权威指南》<br>
-章节列表：<br>
-第1章 初识 kafka<br>
-第2章 安装 Kafka<br>
-第3章 Kafka 生产者——向 Kafka 写入数据<br>
-第4章 Kafka 消费者——从 Kafka 读取数据<br>
-第5章 深入 Kafka<br>
-第6章 可靠的数据传递<br>
-第7章 构建数据管道<br>
-第8章 跨集群数据镜像<br>
-第9章 管理 Kafka<br>
-第10章 监控 Kafka<br>
-第11章 流式处理</p>
-<h2 id="reference" tabindex="-1">Reference</h2>
-<p><a href="https://blog.csdn.net/li1669852599/article/details/113254934" target="_blank" class="external-link">mac环境下使用brew安装Kafka(详细过程)_brew kafka-CSDN博客</a></p>
-<p><a href="https://www.cnblogs.com/xyqlrjm/p/14939453.html" target="_blank" class="external-link">Kafka整体架构、工作流程与文件存储机制 - 细雨骑驴入剑门 - 博客园</a></p>
-<p><a href="https://www.cnblogs.com/jingdongkeji/p/17879177.html" target="_blank" class="external-link">扫盲Kafka？看这一篇就够了！ - 京东云技术团队 - 博客园</a></p>
-<p><a href="https://www.cnblogs.com/huxi2b/p/8440429.html" target="_blank" class="external-link">Kafka元数据缓存(metadata cache) - huxihx - 博客园</a></p>
 
       
       
@@ -1672,40 +1574,7 @@ func main() {
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#mac-kafka">mac 运行 kafka</a>
-            
-                <ol>
-                    
-                    <li><a href="#安装">安装</a>
-            		</li>
-
-                    <li><a href="#broker">启动broker</a>
-            		</li>
-
-                    <li><a href="#启动生产者">启动生产者</a>
-            		</li>
-
-                    <li><a href="#启动消费者">启动消费者</a>
-            		</li>
-
-                    <li><a href="#topic">创建 topic</a>
-            		</li>
-
-                    <li><a href="#topic-1">查看topic列表</a>
-            		</li>
-
-                    <li><a href="#数据文件目录">数据文件目录</a>
-            		</li>
-
-                    <li><a href="#go">简易 go 程序</a>
-            		</li>
-
-                    <li><a href="#kafka">《Kafka权威指南》章节列表</a>
-            		</li>
-
-                    <li><a href="#reference">Reference</a>
-            		</li>
-                </ol>
+                    <li><a href="#linux">linux-查看内存占用情况</a>
             		</li>
                 </ol>
             </nav>
@@ -1719,8 +1588,9 @@ func main() {
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home dy_turbo</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   

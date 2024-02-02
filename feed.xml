@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-02T02:59:05Z</updated>
+    <updated>2024-02-02T04:08:27Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -1358,6 +1358,21 @@ Saving to: ‘index.html’
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/linux/linux-树莓派无法上网排查/" />
+        </entry>
+        <entry>
+            <title>
+                linux-查看内存占用情况
+                
+            </title>
+            <updated>2024-02-02T04:07:52.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/linux/linux-查看内存占用情况/</id>
+            <content type="html">
+                &lt;h1 id=&quot;linux&quot; tabindex=&quot;-1&quot;&gt;linux-查看内存占用情况&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;ps --no-headers -o &amp;quot;rss,cmd&amp;quot; -A | awk &#39;{print $1/1024&amp;quot;M&amp;quot;,&amp;quot;&#92;t&amp;quot;,$0}&#39; | sort -n -k1
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/linux/linux-查看内存占用情况/" />
         </entry>
         <entry>
             <title>
