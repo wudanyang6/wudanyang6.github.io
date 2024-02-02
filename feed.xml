@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-02T04:11:30Z</updated>
+    <updated>2024-02-02T04:55:41Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -1142,6 +1142,36 @@ $zip-&amp;gt;close(); //关闭压缩包
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/踩坑/js超长数字溢出问题/" />
+        </entry>
+        <entry>
+            <title>
+                202012081017 - php8.0 新特性 1
+                
+            </title>
+            <updated>2024-02-02T04:54:48.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/php/202012081017 - php8.0 新特性 1/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202012081017-php8-0&quot; tabindex=&quot;-1&quot;&gt;202012081017 - php8.0 新特性&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;把 youtube 中的 php8.0 的新特性看完了
+&lt;ol&gt;
+&lt;li&gt;doc 属性&lt;/li&gt;
+&lt;li&gt;jit&lt;/li&gt;
+&lt;li&gt;?-&amp;gt; null 安全运算符&lt;/li&gt;
+&lt;li&gt;WeakMap&lt;/li&gt;
+&lt;li&gt;string 的函数 str_contain&lt;/li&gt;
+&lt;li&gt;命名参数&lt;/li&gt;
+&lt;li&gt;构造函数成员提升&lt;/li&gt;
+&lt;li&gt;match 表达式匹配&lt;/li&gt;
+&lt;li&gt;mixed 类型&lt;/li&gt;
+&lt;li&gt;使用对象进行 ::class 调用&lt;/li&gt;
+&lt;li&gt;联合类型   float|int&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/php/202012081017 - php8.0 新特性 1/" />
         </entry>
         <entry>
             <title>
