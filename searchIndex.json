@@ -1,7 +1,7 @@
 [
 {
 		"title": "Kafka入门",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/Kafka入门/",
 		"content": "1 初识Kafka\n1.1 什么是Kafka\nApache Kafka是一个分布式流处理平台，被设计用来高效地处理高吞吐量的数据流。它广泛应用于实时数据管道和流式应用程序中。以下是Kafka的一些主要优点：\n\n高吞吐量：Kafka支持高吞吐量的数据处理，即使是非常大的数据量也能够快速处理。\n可扩展性：Kafka集群可以横向扩展以处理更多的数据，可以在不停机的情况下动态添加更多的Broker。\n持久性和可靠性：Kafka可以将数据持久化到磁盘，因此即使系统发生故障，数据也不会丢失。它使用分区和副本机制来确保数据的高可用性和耐用性。\n容错能力：通过数据副本，Kafka可以在节点故障时保证数据不丢失，从而提供高可靠性。\n低延迟：Kafka能够在保持高吞吐量的同时实现低延迟的消息传递。\n可靠的消息传递保证：Kafka支持几种消息传递保证，包括最多一次、至少一次和精确一次（事务性传递）。\n多客户端支持：Kafka提供多种编程语言的客户端库，方便不同开发环境下的集成。\n流处理：Kafka Streams API允许构建实时流处理应用，可以进行复杂的数据处理和分析。\n可观测性：Kafka提供了监控数据流和系统性能的工具，有助于性能调优和问题诊断。\n大型社区和生态系统：Kafka拥有一个庞大的社区和丰富的生态系统，提供了大量的工具和插件以及集成方案，可以帮助用户更好地开发和维护Kafka系统。\n\n1.2 使用场景\nKafka的这些优点使它在需要处理大量实时数据的系统中特别有价值，包括日志聚合、流式处理、事件源、实时监控和分析等场景。\n\n1.3 kafka生产消费流程\n\nmac 运行 kafka\n2 Kafka 整体架构\n![../drawio/Kafka 数据流.png](/img/user/drawio/Kafka 数据流.png)\nKafka系统的核心概念包括：\n\nProducer（生产者）：负责发布消息到Kafka的Topic（主题）中。\n\nConsumer（消费者）：订阅Topic，并处理发布到这些Topic的消息。\n\nConsumer Group（消费者组）：一个消费者组可以有一个或多个消费者实例。当多个消费者实例属于同一个消费者组时，它们会在组内共享Topic的Partition。这意味着，每个Partition只会被消费者组中的一个消费者实例消费，这样可以保证每条消息只被组内的一个消费者处理，从而实现消息的负载均衡。\n\nBroker（代理）：Kafka集群中的服务器，负责存储数据并处理Producer和Consumer的请求。\n\nTopic（主题）：消息的分类，Producer发布消息到指定的Topic，Consumer订阅并消费Topic中的消息。\n\nPartition（分区）：Topic的物理分割，每个Partition在存储层面是独立的，可以在不同的Broker上。Partition内的消息是有序的。\n\nOffset（偏移量）：Partition中每条消息的唯一标识，可以看作是消息在Partition中的索引。\n\nReplica（副本）：Partition的副本，用于提高数据的可靠性和容错性。\n\nZookeeper：Kafka使用Zookeeper来进行集群管理和协调。\n\nStream Processing（流处理）：Kafka Streams是Kafka的流处理库，用于构建流式应用程序。\n\nConnect（连接器）：Kafka Connect是用于构建和运行可重用的数据导入和导出连接器的工具。\n\nKafka生产者将消息发送到负责存储目标Topic的Partition的Broker上。在Kafka集群中，每个Topic可以分为多个Partition，而每个Partition可能分布在不同的Broker上。每个Partition有一个Broker充当Leader，其他的Broker充当Follower。所有的读写操作都是通过Leader Broker进行的，Follower负责同步数据以保证高可用性和数据的冗余。\n3 Kafka核心逻辑\n3.1 物理存储\nKafka 的基本存储单元是分区。\n\nkafka 存储的时候也是使用同样的格式存储到磁盘上，这样可以利用到零拷贝技术\n3.2 生产者\n\n流程如下：\n\n首先，我们需要创建一个 ProducerRecord，这个对象需要包含消息的主题（topic）和值（value），可以选择性指定一个键值（key）或者分区（partition）。\n发送消息时，生产者会对键值和值序列化成字节数组，然后发送到分配器。\n如果我们指定了分区，那么分配器返回该分区即可；否则，分配器将会基于键来选择一个分区并返回。\n选择完分区后，生产者知道了消息所属的主题和分区，它将这条记录添加到相同主题和分区的同一批次消息中，另一个线程负责发送这些批量消息到对应的 Kafka Broker。\n当Broker接收到消息后，如果成功写入则返回一个包含消息的主题、分区及位移的RecordMetadata对象，否则返回异常。\n生产者接收到结果后，对于异常可能会进行重试。重试几次还是失败会返回错误。\n\n生产者并不是将消息发送到任意的Broker，而是发送到管理特定Partition的Leader Broker上，以确保消息的正确存储和分发。\n消息写入多个分区\n\n3.3 消费者\n\n3.3.1 提交offset\nKafka消费者提交偏移量的过程是为了记录消费者在消费Topic的Partition时当前的位置，以便在消费者重启或发生故障时能从上次处理的位置继续消费，保证消息不会丢失也不会被重复消费。提交偏移量的过程主要包括以下步骤：\n\n消费消息：消费者从Broker拉取数据并进行处理。\n提交偏移量：在成功处理完一批消息后，消费者会将最新的偏移量提交给Kafka。提交的偏移量是消费者下一次预期读取的起始位置。\n偏移量存储：提交的偏移量存储在Kafka内的一个特殊的Topic中，名为__consumer_offsets。每个消费者组的偏移量都会在这个Topic中维护。\n偏移量读取：如果消费者发生重启或故障，它会从__consumer_offsets Topic中读取上次提交的偏移量，从而恢复其消费状态。\n\n提交偏移量的方式主要有两种：\n\n自动提交偏移量：Kafka消费者默认的偏移量提交方式是自动提交。这是通过在消费者配置中设置enable.auto.commit=true来实现的，并且可以通过auto.commit.interval.ms配置项来指定提交间隔。这种方式简单方便，但是由于提交是周期性进行的，可能会导致消息重复消费（如果在两次提交间隔内消费者失败）。\n手动提交偏移量：为了更精确地控制消息的消费状态，可以选择手动提交偏移量。手动提交可以是同步的也可以是异步的：\n\n同步提交：通过调用consumer.commitSync()方法，消费者会阻塞直到偏移量提交完成。这种方式会确保偏移量提交成功，如果提交失败，可以立即进行重试处理。\n异步提交：通过调用consumer.commitAsync()方法，消费者可以在不阻塞当前线程的情况下提交偏移量。异步提交通常会提供一个回调函数来处理可能发生的提交错误。\n异步+同步：针对异步提交偏移量丢失的问题，通过对消费者进行异步批次提交并且在关闭时同步提交的方式，这样即使上一次的异步提交失败，通过同步提交还能够进行补救，同步会一直重试，直到提交成功。\n\n3.4 复制\n3.4.1 控制器\n有一个概念需要单独阐明：控制器\n控制器其实就是一个 Broker，只不过它除了具有一般 Broker 的功能之外，还负责分区首领的选举。\n控制器是 Kafka 集群的管理节点。在一个 Kafka 集群中，所有的 Broker 节点中只有一个节点会被选举为控制器。\n每个新选出的控制器通过 Zookeeper 的条件递增操作获得一个全新的、数值更大的 epoch 值，防止脑裂\n简而言之，Kafka 使用 Zookeeper 的临时节点来选举控制器，并在节点加入集群或退出集群时通知控制器。控制器负责在节点加入或离开集群时进行分区首领选举。控制器使用 epoch 来避免“脑裂”。“脑裂”是指两个节点同时认为自己是当前的控制器。\n3.4.2 与首领保持一致\n为了与首领保持同步，跟随者向首领发送获取数据的请求，这种请求与消费者为了读取消息而发送的请求是一样的。首领将响应消息发给跟随者。请求消息里包含了跟随者想要获取消息的偏移量，而且这些偏移量总是有序的。\n3.5 处理请求\n\nKafka 使用零复制技术向客户端发送消息——也就是说，顺序读写内容，Kafka 直接把消息从文件(或者更确切地说是 Linux 文件系统缓存)里发送到网络通道，而不需要经过任何中间缓冲区。\n零拷贝示意图：\n\n零拷贝省略了数据在内核空间和用户空间之间的重复穿梭；用户态和内核态切换时产生中断，耗时；\n生产请求和获取请求都必须发送给分区的首领副本。\n如何获取分区首领所在的broker：\n\n4 可靠性保证\n先了解一个概念：不完全的首领选举\n4.1 消息传递语义\n\n最多一次（at most once）：消息可能会丢失，但绝不会被重复发送。\n\n消费者端配置自动提交偏移量，并且在处理消息之前就提交。如果在提交偏移量后处理消息时发生了故障，那么这些消息可能不会被重新消费。\n\n至少一次（at least once）：消息不会丢失，但有可能被重复发送。\n\n手动提交偏移量。如果消费者在成功处理消息之前失败，那么同一消息可能会被再次消费。\n\n恰好一次（exactly once）：消息不会丢失，也不会被重复发送。\n\nKafka通过“幂等生产者”（Idempotent Producer）和“事务”（Transactions）来支持恰好一次的语义。幂等生产者确保即使生产者发送重复的消息，Broker也只会接收一次。事务性生产者可以将消息的发送和偏移量的提交放在同一个事务中，确保它们要么都成功，要么都失败。（恰好一次语义在Kafka 0.11版本及以上被引入。）\n\n4.2 不完全的首领选举\n是否允许不完全的首领选举：unclean.leader.election\n如果在选举过程中没有丢失数据，也就是说提交的数据同时存在于所有的同步副本上，那么这个选举就是“完全”的。\n如果在首领不可用时其他副本都是不同步的，那么这个选举就是“不完全”的。\n简而言之，如果我们允许不同步的副本成为首领，那么就要承担丢失数据和出现数据不一致的⻛险。如果不允许它们成为首领，那么就要接受较低的可用性，因为我们必须等待原先的首领恢复到可用状态。\nunclean.leader.election=false\n4.3 复制\n复制系数\nreplication.factor &gt;= 2\nmin.insync.replicas &gt; 1 则至少有一个同步从副本\n4.4 使用生产者\n发送确认：\n\nacks=0 立即返回，不论是否写入\nacks=1 当前首领副本已经写入\nacks=-1或all 所有同步的副本已经被写入\n\n重试\n\n配置重试次数\n设置重试间隔\n程序兜底其他错误\n\n4.5 使用消费者\n如果消费者提交了偏移量却未能处理完消息，那么就有可能造成消息丢失，这也是消费者丢失消息的主要原因。\n正确的做法是：拉取数据、业务逻辑处理、提交消费 Offset 位移信息。\nenable.auto.commit = false 采用手动提交位移的方式。\n对于消费消息重复的情况，业务自己保证幂等性， 保证只成功消费一次即可。\n6 思考\nQ: 知道了kafka的物理存储的结构，那么kafka通过offset查找对应的文件位置的过程是什么样的呢？\nQ: 从副本在什么情况下被认为是不同步 (OSR) ？\nQ: offset 为什么要从zookeeper挪到kafka本身存储呢？\nQ：分区分成多少比较好？\nQ：在主题流量不是很大的情况下，消费者一直轮询会造成浪费，有没有什么方式能够避免这种情况？\nQ：Kafka 为什么要把自己定位成一个分布式流平台？\n7 参考\n《Kafka 权威指南》 Neha Narkhede Gwen Shapira Todd Palino 著 薛命灯译\n官网文档： Apache Kafka\nmac环境下使用brew安装Kafka(详细过程)_brew kafka-CSDN博客\nKafka整体架构、工作流程与文件存储机制 - 细雨骑驴入剑门 - 博客园\n扫盲Kafka？看这一篇就够了！ - 京东云技术团队 - 博客园\nKafka元数据缓存(metadata cache) - huxihx - 博客园\nKafka 物理存储机制 - Java程序员进阶 - 博客园\n稀疏索引与其在Kafka和ClickHouse中的应用-腾讯云开发者社区-腾讯云\n8张图带你全面了解kafka的核心机制 - JAVA旭阳 - 博客园\n进阶，Kafka 如何保证消息不丢失？ - 知乎\nKafka的自我定位",
 		"tags": [ "note"]
@@ -9,7 +9,7 @@
 
 {
 		"title": "epoll的边缘触发和水平触发",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/c/nginx/epoll的边缘触发和水平触发/",
 		"content": "epoll的边缘触发和水平触发\nepoll 是 Linux 下用于处理大量文件描述符的高效 I/O 多路复用机制。在 epoll 中，有两种触发模式：水平触发（Level-Triggered，简称 LT）和边缘触发（Edge-Triggered，简称 ET）。\n\n水平触发（LT，Level-Triggered）：\n\n当文件描述符就绪时，epoll_wait 将立即返回。\n如果文件描述符的状态发生变化，epoll_wait 会再次通知应用程序。\n这种模式下，如果文件描述符有数据可读或可写，epoll_wait 将不停地返回通知，直到应用程序处理完数据或者阻塞。\n\n边缘触发（ET，Edge-Triggered）：\n\n当文件描述符就绪时，epoll_wait 只会通知一次，直到应用程序处理完数据并清空了文件描述符的缓冲区。\n如果文件描述符的状态没有变化，epoll_wait 不会重复通知应用程序。\n这种模式下，应用程序需要注意，在一个事件通知之后，要一直读或写，直到发生 EAGAIN 或 EWOULDBLOCK 错误。\n\n为什么epoll这里要叫做边缘触发和水平触发呢？\n这源于通信数字信号处理领域的术语，边缘和水平通常用于描述信号的特性\n\n边缘触发（Edge-Triggered）：\n\n&quot;边缘&quot; 指的是信号的变化边缘，即信号从一个状态变为另一个状态的瞬间。\n在数字信号处理中，边缘通常用来表示信号的上升沿或下降沿，即信号从低电平到高电平或从高电平到低电平的瞬间。\n\n水平触发（Level-Triggered）：\n\n&quot;水平&quot; 指的是信号的水平状态，即信号所处的电平状态。\n在数字信号处理中，水平触发通常用来描述信号保持在某个电平的状态，而不关心信号的变化瞬间。\n\nReference\nhttps://electronics.stackexchange.com/a/21891",
 		"tags": [ "note"]
@@ -17,7 +17,7 @@
 
 {
 		"title": "Nginx 进程模型-整体架构",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/c/nginx/nginx 进程模型-整体架构/",
 		"content": "nginx 进程模型-整体架构\n\n从网上找了一个非常好的图片，从图中可以看到很多东西\n\nNginx 会生成多个进程\nworker 使用了 io 多路复用的事件驱动框架\nworker 内部有很多模块\nworker 处理磁盘 I/O 时，使用了标准 I/O ， sendfile ， AIO ，mmap 等 I/O 技术\nCache loader 和 Cache manager 操作 proxy cache\n后端支持多种基于 tcp 的网络协议",
 		"tags": [ "note","nginx"]
@@ -25,7 +25,7 @@
 
 {
 		"title": "vscode 调试nginx代码",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/c/nginx/vscode 调试nginx代码/",
 		"content": "#output\n内容\n修改 auto/cc/conf\nngx_compile_opt 中添加 -g\n修改后如下：\nngx_compile_opt=&quot;-c -g&quot;\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/vscode 调试nginx代码/#gcc-g\">#gcc -g 的作用</a>\n编译 &amp; 安装 &amp; 运行\n# prefix 是想要安装到的目录\nauto/configure --prefix=/home/ubuntu/mydisk/var/nginx-debug-1\n\n# 编译安装\nmake\nmake install\n\n修改配置\nvim /home/ubuntu/mydisk/var/nginx-debug-1/conf/nginx.conf\n将监听端口号改成 8080\nworker_processes 改成 1 (方便调试)\n启动 nginx\n/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx\nnginx 的进程：\nps aux | grep nginx\nubuntu 17093 0.0 0.0 4184 372 ? Ss Mar30 0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx\nubuntu 17094 0.0 0.0 4620 2316 ? S Mar30 0:00 nginx: worker process\nubuntu 46072 0.0 0.0 7692 648 pts/0 S+ 11:21 0:00 grep --color=auto nginx\n\n配置 vscode 调试\n{\n// 使用 IntelliSense 了解相关属性。\n// 悬停以查看现有属性的描述。\n// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387\n&quot;version&quot;: &quot;0.2.0&quot;,\n&quot;configurations&quot;: [\n{\n&quot;name&quot;: &quot;debug master&quot;,\n&quot;type&quot;: &quot;cppdbg&quot;,\n&quot;request&quot;: &quot;launch&quot;,\n&quot;program&quot;: &quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&quot;,\n&quot;args&quot;: [],\n&quot;stopAtEntry&quot;: true,\n&quot;cwd&quot;: &quot;${workspaceFolder}&quot;,\n&quot;environment&quot;: [],\n&quot;externalConsole&quot;: false,\n&quot;MIMode&quot;: &quot;gdb&quot;,\n&quot;setupCommands&quot;: [\n{\n&quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,\n&quot;text&quot;: &quot;-enable-pretty-printing&quot;,\n&quot;ignoreFailures&quot;: true\n}\n]\n},\n{\n&quot;name&quot;: &quot;debug worker&quot;,\n&quot;type&quot;: &quot;cppdbg&quot;,\n&quot;request&quot;: &quot;attach&quot;,\n&quot;program&quot;: &quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&quot;,\n&quot;processId&quot;: 17094,\n&quot;MIMode&quot;: &quot;gdb&quot;,\n&quot;setupCommands&quot;: [\n{\n&quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,\n&quot;text&quot;: &quot;-enable-pretty-printing&quot;,\n&quot;ignoreFailures&quot;: true\n}\n]\n}\n]\n}\n\n在 worker 上调试需要改成 attach 的形式，并且使用了一次 attach 之后，就不能使用 strace -p 17094 查看系统调用了\n然后就可以打断点，进行单步调试了\n参考\nMac上用Visual Studio Code调试Nginx\ngcc -g 的作用\nGCC 参数详解-runoob\n在编译的时候会产生调试信息\nkernel.yama.ptrace_scope\nsysctl -a 查看内核参数\nkernel.yama.ptrace_scope\nhttps://www.kernel.org/doc/Documentation/security/Yama.txt\nsudo vim /etc/sysctl.d/10-ptrace.conf\nVSCode调试出现无法打开glibc库的“raise.c“或“abort.c“等文件的错误\nsudo strace 报 操作不被允许\nsudo strace -p 17094\nstrace: Could not attach to process. If your uid matches the uid of the target process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try again as the root user. For more details, see /etc/sysctl.d/10-ptrace.conf: Operation not permitted\nstrace: attach: ptrace(PTRACE_SEIZE, 17094): Operation not permitted\n\nhttps://stackoverflow.com/questions/19215177/how-to-solve-ptrace-operation-not-permitted-when-trying-to-attach-gdb-to-a-pro\nMaybe someone has attached this process with gdb.\n\nps -ef | grep gdb\n\ncan't gdb attach the same process twice.\n将 vscode 中的 调试关掉，就可以使用 strace 了\n如下图，可以看到，子进程停在了 epoll_pwait 系统调用上了",
 		"tags": ["output", "gcc", "note"]
@@ -33,7 +33,7 @@
 
 {
 		"title": "如何查看 nginx 的rewrite记录",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/",
 		"content": "如何调试nginx的rewrite规则？\n设置 rewrite_log on;\n并且将error_log 的报错等级改成 notice;\n官网对 rewrite_log 的解释：\nSyntax:\trewrite_log on | off;\nDefault:\t\nrewrite_log off;\nContext:\thttp, server, location, if\nEnables or disables logging of ngx_http_rewrite_module module directives processing results into the error_log at the notice level.\n\n可以看到，这个指令只能在 http server location if 配置指令中使用，日志等级是 notice 写入到 error_log 配置的文件中。\n示例\nurl： /q?someparams\n2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+m/question(.*)?qid=\\d+(.*)?$&quot; does not match ...\n... 中间省略一些日志\n2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+question/(\\w+.*?)$&quot; does not match ...\n2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+q\\?(.*)?tn=nsatom_qb_main(.*)?$&quot; matches ...\n2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+q&quot; matches ...\n2021/04/22 18:21:28 [notice] 18131#0: *102982 rewritten data: &quot;/q/q/q/q/q&quot;\n\n从上面的日志中可以看出，当触发了重写规则时，会有关键字 matches 否则会有 does not match 。\n最终重写完成之后，访问的地址会有标记：rewritten data\n这里就是 /q/q/q/q/q\n参考\nbest way to debug nginx rewrite rules in config file?\nnginx官方文档：Module ngx_http_rewrite_module",
 		"tags": [ "note"]
@@ -41,7 +41,7 @@
 
 {
 		"title": "202103251606 - linux-翻墙",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/linux/202103251606 - linux-翻墙/",
 		"content": "安装 ClashX\n我的机器是树莓派，底层架构是 arm 的，所以下载 arm 版本的安装包：\nhttps://github.com/Dreamacro/clash/releases/download/v1.4.2/clash-linux-armv8-v1.4.2.gz\ngunzip clash-linux-armv8-v1.4.2.gz\nsudo mv clash-linux-armv8-v1.4.2 /usr/bin/clash\n\n# 下载你的配置，这里我是用的是 nsfwcloud.com 的服务\nwget -O config.yml &quot;https://rxl-nc.xyz/link/{your.token}?clash=1&amp;log-level=info&quot;\n\n# 后台运行\nnohup clash -f config.yml &amp;\n\nexport https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890\n\n最终效果\n翻个墙\n\n如果不想要 info 日志，可以在 config.yml 中将 log-level 修改成 log-level: warning\n参考\nhttps://nsfwcloud.com/user/tutorial?os=linux&amp;client=clash##\noutput\nhttps://www.cnblogs.com/wudanyang/p/15142036.html",
 		"tags": [ "note"]
@@ -49,7 +49,7 @@
 
 {
 		"title": "linux-echo",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/linux/linux-echo/",
 		"content": "常用\necho &quot;hello&quot;\necho -n &quot;hello&quot; # 这种会去掉换行\nsh 不支持这个 -n 参数，很奇怪\n使用-n参数zsh 后面会跟着一个百分号\n\nPrintf puts a percent sign after everything it prints\n\nThis is zsh's way of telling you that the preceding command outputted a partial line and the shell terminated that line to give you a prompt on a new line.",
 		"tags": [ "note"]
@@ -57,7 +57,7 @@
 
 {
 		"title": "linux-man命令使用",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/linux/linux-man命令使用/",
 		"content": "内容\n1 - commands（普通的命令）\n2 - system calls（系统调用）\n3 - library calls（库函数）\n4 - special files（特殊文件：/dev下设备文件）\n5 - file formats and convertions（文件格式）\n6 - games for linux（游戏和娱乐）\n7 - macro packages and conventions（杂项）\n8 - system management commands（管理员命令）\n9 - 其他（Linux特定， 用来存放内核例行程序的文档）\n可使用 man man 进入此页面\n参考\nhttps://blog.csdn.net/zhang_chou_chou/article/details/83589224\n在线 man 手册",
 		"tags": [ "note","linux"]
@@ -65,7 +65,7 @@
 
 {
 		"title": "linux-查看内存占用情况",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/linux/linux-查看内存占用情况/",
 		"content": "linux-查看内存占用情况\nps --no-headers -o &quot;rss,cmd&quot; -A | awk '{print $1/1024&quot;M&quot;,&quot;\\t&quot;,$0}' | sort -n -k1",
 		"tags": [ "note"]
@@ -73,7 +73,7 @@
 
 {
 		"title": "linux-树莓派无法上网排查",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/linux/linux-树莓派无法上网排查/",
 		"content": "linux-树莓派无法上网排查\n\nwget -v baidu.com\n\n会有输出：\n如何处理呢\n\n--2021-07-15 10:52:24-- http://baidu.com/\nResolving baidu.com (baidu.com)... 39.156.69.79, 220.181.38.148\nConnecting to baidu.com (baidu.com)|39.156.69.79|:80... connected.\nHTTP request sent, awaiting response... 200 OK\nLength: 81 [text/html]\nSaving to: ‘index.html’\n\n上次我就卡在了 解析 baidu.com 域名这个地方\n\n通过 <a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">linux-nslookup</a> 命令查看路由解析\n\n发现解析不通\n查看 /etc/resolv.conf 将 nameserver 改成： 114.114.114.114\n再次查看路由解析，发现已经 OK 了\n\n如何修改 /etc/resolv.conf ，重启机器之后会发现文件又被改回去了，导致无法联网，正确的做法\n\nsudo vi /etc/systemd/resolved.conf\n重启网络服务 sudo service networking restart\n\n树莓派4B】三、笔记本给树莓派Ubuntu 18.04提供网络|为什么Ubuntu18.04更改/etc/resolv.conf修改nameserver重启网络被重置",
 		"tags": [ "note"]
@@ -81,7 +81,7 @@
 
 {
 		"title": "mac-鼠须管-使用lua脚本",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/linux/mac-鼠须管-使用lua脚本/",
 		"content": "使用步骤\n\n在 lua 目录中，添加脚本，以 date 日期文件为例：\n\n--[[\ndate_translator: 将 `date` 翻译为当前日期\n\ntranslator 的功能是将分好段的输入串翻译为一系列候选项。\n\n欲定义的 translator 包含三个输入参数：\n- input: 待翻译的字符串\n- seg: 包含 `start` 和 `_end` 两个属性，分别表示当前串在输入框中的起始和结束位置\n- env: 可选参数，表示 translator 所处的环境（本例没有体现）\n\ntranslator 的输出是若干候选项。\n与通常的函数使用 `return` 返回不同，translator 要求您使用 `yield` 产生候选项。\n\n`yield` 每次只能产生一个候选项。有多个候选时，可以多次使用 `yield` 。\n\n请看如下示例：\n--]]\n\nlocal function translator(input, seg)\n-- 如果输入串为 `date` 则翻译\nif (input == &quot;date&quot; or input == &quot;shijian&quot;) then\n--[[ 用 `yield` 产生一个候选项\n候选项的构造函数是 `Candidate`，它有五个参数：\n- type: 字符串，表示候选项的类型\n- start: 候选项对应的输入串的起始位置\n- _end: 候选项对应的输入串的结束位置\n- text: 候选项的文本\n- comment: 候选项的注释\n--]]\nyield(Candidate(&quot;date&quot;, seg.start, seg._end, os.date(&quot;%Y年%m月%d日&quot;), &quot;日期&quot;))\n--[[ 用 `yield` 再产生一个候选项\n最终的效果是输入法候选框中出现两个格式不同的当前日期的候选项。\n--]]\nyield(Candidate(&quot;date&quot;, seg.start, seg._end, os.date(&quot;%Y-%m-%d&quot;), &quot;日期&quot;))\nyield(Candidate(&quot;date&quot;, seg.start, seg._end, os.date(&quot;%Y-%m-%d %H:%M:%S&quot;), &quot;日期时间&quot;))\nend\nend\n\n-- 将上述定义导出\nreturn translator\n\nrime.lua 中引入此脚本:\n\n-- date_translator: 将 `date` 翻译为当前日期\n-- 详见 `lua/date.lua`:\ndate_translator = require(&quot;date&quot;)\n\n在 double_pinyin.custom.yaml 或 double_pinyin.schema.yaml 中配置上此处理程序\n\nengine/translators:\n- lua_translator@date_translator\n- lua_translator@week_translator\n- lua_translator@time_translator\n- lua_translator@number_translator\n- lua_translator@reverse_lookup_filter\n\n最终效果\ndate\n\ntime\n\nnumber\n输入 / ，然后输入数字 1，会显示大写数字\n\n参考\nhttps://github.com/hchunhui/librime-lua",
 		"tags": [ "note"]
@@ -89,7 +89,7 @@
 
 {
 		"title": "ubuntu 树莓派启动时配置网络",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/",
 		"content": "树莓派 ubuntu 配置网络\n树莓派现在可以安装很多操作系统，其中 ubuntu 也提供了树莓派版本，因为对 ubuntu 更加熟悉，所以就往 SD 卡中烧录了 ubuntu 的 20.04 lts 64位 版本。这里有可供选择的操作系统。\n简单提一嘴烧录操作系统到 SD 卡上面的方法，树莓派提供了一个傻瓜式的软件给大家使用，直接打开之后选择系统，就可以烧录了，烧录过程大概会有几分钟。\n烧录完成之后，如果你按照树莓派官网的教程进行操作，肯定都行不通，因为树莓派的官方操作系统 Raspberry Pi OS 和 Ubuntu For Raspberry 上面的网络配置方式完全不一样。\n安装了 ubuntu 的树莓派怎么配置网络？\n打开你烧录好的 SD 卡\n找到 network-config 文件\n写入如下配置：\nwifis:\nwlan0:\ndhcp4: true\noptional: true\naccess-points:\n&lt;wifi network name&gt;:\npassword: &quot;&lt;wifi password&gt;&quot;\n\n如果是企业网络：\nwifis:\nwlan0:\ndhcp4: true\noptional: true\naccess-points:\n&lt;wifi network name&gt;:\nauth:\nkey-management: eap\nmethod: peap\nidentity: &quot;wudanyang&quot;\npassword: &quot;&quot;\n\n配置文件的格式\n修改完之后，把 SD 卡从电脑上弹出，然后插到树莓派里。\n不过，重启之后，你可能还是无法连接到网络。可以看下这里\n\nNote: During the first boot, your Raspberry Pi will try to connect to this network. It will fail the first time around. Simply reboot sudo reboot and it will work.\n\n引用ubuntu官网的一段话，第一次会失败，直接重启，第二次就能连上了。\n开启网络之后，如何登录树莓派？\n安装好之后默认用户名和密码都是 ubuntu\nssh ubuntu@&lt;raspberry ip&gt;\nip 地址的获取这里列举几种方法，不详细介绍：\n\n自己的路由器：登录后台查看分配的 ip\n局域网扫描（局域网机器不多的情况下）：\n\n下载个局域网扫描工具，如果局域网机器不多，会看到一个制造商为树莓派的 ip\n使用命令行 arp -a 挨个试一下\n\nubuntu 启动之后会使用 avahi 服务通过 mdns 协议在局域网注册一个域名 ubuntu.local，所以你可以这样登录 ssh ubuntu@ubuntu.local\n\n参考\n树莓派支持的操作系统\n树莓派操作系统烧录软件\n无屏幕和键盘配置树莓派WiFi和SSH\n百度百科-mdns\nMac通过网线直连控制树莓派 - lonerpaul - 博客园",
 		"tags": [ "note"]
@@ -97,7 +97,7 @@
 
 {
 		"title": "mac 运行 kafka",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/mac 运行 kafka/",
 		"content": "mac 运行 kafka\n安装\nbrew install kafka\n\n启动broker\n手动启动kafka， 同时启动一个使用 2181 端口的 zookeeper\n/opt/homebrew/opt/kafka/bin/zookeeper-server-start /opt/homebrew/etc/kafka/zookeeper.properties\n/opt/homebrew/opt/kafka/bin/kafka-server-start /opt/homebrew/etc/kafka/server.properties\n\n启动生产者\n/opt/homebrew/opt/kafka/bin/kafka-console-producer --topic test --bootstrap-server localhost:9092\n\n启动消费者\n/opt/homebrew/opt/kafka/bin/kafka-console-consumer --topic test --bootstrap-server localhost:9092 --from-beginning\n\n创建 topic\nkafka-topics --create --replication-factor 1 --partitions 5 --topic myTopic --bootstrap-server localhost:9092\n\n查看topic列表\n/opt/homebrew/opt/kafka/bin/kafka-topics --bootstrap-server localhost:9092 --list\n\n数据文件目录\n/opt/homebrew/var/lib/kafka-logs/\n\n简易 go 程序\npackage main\n\nimport (\n\t&quot;fmt&quot;\n\n\t&quot;github.com/confluentinc/confluent-kafka-go/v2/kafka&quot;\n)\n\nfunc main() {\n\n\tp, err := kafka.NewProducer(&amp;kafka.ConfigMap{&quot;bootstrap.servers&quot;: &quot;localhost&quot;})\n\tif err != nil {\n\t\tpanic(err)\n\t}\n\n\tdefer p.Close()\n\n\t// Delivery report handler for produced messages\n\tgo func() {\n\t\tfor e := range p.Events() {\n\t\t\tswitch ev := e.(type) {\n\t\t\tcase *kafka.Message:\n\t\t\t\tif ev.TopicPartition.Error != nil {\n\t\t\t\t\tfmt.Printf(&quot;Delivery failed: %v\\n&quot;, ev.TopicPartition)\n\t\t\t\t} else {\n\t\t\t\t\tfmt.Printf(&quot;Delivered message to %v\\n&quot;, ev.TopicPartition)\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}()\n\n\t// Produce messages to topic (asynchronously)\n\ttopic := &quot;myTopic&quot;\n\tfor _, word := range []string{&quot;Welcome&quot;, &quot;to&quot;, &quot;the&quot;, &quot;Confluent&quot;, &quot;Kafka&quot;, &quot;Golang&quot;, &quot;client&quot;} {\n\t\tp.Produce(&amp;kafka.Message{\n\t\t\tTopicPartition: kafka.TopicPartition{Topic: &amp;topic, Partition: kafka.PartitionAny},\n\t\t\tValue: []byte(word),\n\t\t}, nil)\n\t}\n\n\t// Wait for message deliveries before shutting down\n\tp.Flush(15 * 1000)\n}\n\n《Kafka权威指南》章节列表\n《kafka 权威指南》\n章节列表：\n第1章 初识 kafka\n第2章 安装 Kafka\n第3章 Kafka 生产者——向 Kafka 写入数据\n第4章 Kafka 消费者——从 Kafka 读取数据\n第5章 深入 Kafka\n第6章 可靠的数据传递\n第7章 构建数据管道\n第8章 跨集群数据镜像\n第9章 管理 Kafka\n第10章 监控 Kafka\n第11章 流式处理\nReference\nmac环境下使用brew安装Kafka(详细过程)_brew kafka-CSDN博客\nKafka整体架构、工作流程与文件存储机制 - 细雨骑驴入剑门 - 博客园\n扫盲Kafka？看这一篇就够了！ - 京东云技术团队 - 博客园\nKafka元数据缓存(metadata cache) - huxihx - 博客园",
 		"tags": [ "note","kafka","学习"]
@@ -105,7 +105,7 @@
 
 {
 		"title": "202012081017 - php8.0 新特性 1",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/php/202012081017 - php8.0 新特性 1/",
 		"content": "202012081017 - php8.0 新特性\n\n把 youtube 中的 php8.0 的新特性看完了\n\ndoc 属性\njit\n?-&gt; null 安全运算符\nWeakMap\nstring 的函数 str_contain\n命名参数\n构造函数成员提升\nmatch 表达式匹配\nmixed 类型\n使用对象进行 ::class 调用\n联合类型 float|int",
 		"tags": [ "note"]
@@ -113,7 +113,7 @@
 
 {
 		"title": "js超长数字溢出问题",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/100 Programmer/踩坑/js超长数字溢出问题/",
 		"content": "tags: #js #联调 #踩坑 #output\nhttps://www.cnblogs.com/wudanyang/p/15940613.html\n现象\n之前遇到过的一个问题\n接口要返回给前端（js）一个比较长的数字：759830849237899244\n看了接口返回是没问题的，但是前端拿着数字去取详情的时候，传过来的是另外一个数字：759830849237899300\n一比较，看起来是数字被转换了\n759830849237899244 =&gt; 759830849237899300\n在前端控制台执行一下：\n\n果然被转成了另外一个数字，而且看规律很像是后三位被上取整了\n原理\n后来了解到js会将数字按照下图方式切分后表示数字，以至于最高表示的数字只能到 9007199254740991 比这个数字更大的数字就会发生进位溢出\n\n解决方案\n解决方案很好办，那就是将数字转成字符串，只要前端不强转成数字，那就不会出问题\n\n参考文档\nJSON Bigint 大数精度丢失的背后\nJSON.parse parses / converts big numbers incorrectly",
 		"tags": ["js", "联调", "踩坑", "output", "note"]
@@ -121,7 +121,7 @@
 
 {
 		"title": "10x程序员工作法",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/101 Tools/10x程序员工作法/",
 		"content": "10x程序员工作法\nContent\n以终为始\n\n倒着想\nDoD（Definition of Done 完成的定义）\n\n弥合差异\n个人的DoD，团队的DoD\nDoD 是一个思维模式，是一种尽可能消除不确定性，达成共识的方式。\nDoD 让我们能够在一开始就把“终”清晰地定义出来。\n在做任何事之前，先定义完成的标准。\n\n用户故事（User Story）\n\n标题\n概述\n详述\n验收标准\n在做任何需求或任务之前，先定好验收标准。\n\n持续集成\n\n尽早提交代码去集成。\n\n精益创业：产品经理不靠谱，你该怎么办？\n\nMVP 最小可行产品\n比较早成型的面向不确定创造新事物的方法论是精益创业，它提出了“开发（build）-测量（measure）-认知（learn）”这样一个反馈循环和最小可行产品的概念。\n如何试出来经过验证的认知 https://learn.lianglianglee.com/专栏/10x程序员工作法/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg\n精益创业提供给我们的是一个做产品的思考框架，我们能够接触到的大多数产品都可以放在这个框架内思考。\n默认所有需求都不做，直到弄清楚为什么要做这件事。\n\n上下文\n\n扩大自己工作的上下文，别把自己局限在一个“程序员”的角色上。\n\n在动手做一件事之前，先推演一番。\n数字衡量\n\n从数字中发现问题，让系统更稳定。\n问一下自己，我的工作是不是可以用数字衡量。\n\n开发前的准备\n\n设计你的迭代0清单，给自己的项目做体检。\n\n任务分解\n\n动手做一个工作之前，请先对它进行任务分解。\n测试\n\n测试模型：冰淇淋蛋卷：\n金字塔模型：\n小事反馈周期短，而大事反馈周期长。\n多写单元测试。\n我们应该编写可测的代码。\n将任务拆小，越小越好。\n按照完整实现一个需求的顺序去安排分解出来的任务。\n什么是好的测试\n\n怎么衡量测试是否做好了呢？有一个标准：A-TRIP，这是五个单词的缩写，分别是Automatic（自动化）、Thorough（全面）、Repeatable（可重复的）、Independent（独立的）和 Professional（专业的）。\n要想写好测试，就要写简单的测试。\n\n需求分解\n\n需求估算-大小标准\n发现大的需求，一个迭代内做不完\n想要管理好需求，先把需求拆小。\n\n尽量做最重要的事。\n做好产品开发，最可行的方式是采用 MVP。\n\n沟通反馈\n\n对齐？信息对齐\n通过沟通反馈，不断升级自己的编解码能力。\n用业务的语言写代码。\n多面对面沟通，少开会。\n多尝试用可视化的方式进行沟通。\n定期复盘，找准问题根因，不断改善。\n多走近用户。\n事情往前做，有问题尽早暴露。\n金字塔原理\n多输出，让知识更有结构。\n\n自动化\n\n请谨慎地将工作自动化。\n有体系地学习运维知识。\n将验收测试自动化。\n把函数写短。\n构建好你的领域模型。\n用简单技术解决问题，直到问题变复杂。\n学习领域驱动设计。再去拆分微服务\n\n综合\n\n了解一个项目，从大图景开始。\n\n业务\n技术\n团队运作\n\n小步改造遗留系统，不要回到老路上。\n什么叫 T 型人？简言之，一专多能。\n在学习区工作和成长。\n\nReference\n39 面对遗留系统，你应该这样做\nhttps://learn.lianglianglee.com/专栏/10x程序员工作法/总复习 重新来“看书”.md",
 		"tags": [ "note"]
@@ -129,7 +129,7 @@
 
 {
 		"title": "Things 工作流",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/101 Tools/Things 工作流/",
 		"content": "Things 工作流\n\n有任何事情都记录下来，心中的任何想法都不要放过\n定时整理收件箱（需要保证整理完收件箱之后，任务都是可执行的）\n\n如果有事情2分钟就能解决，那么直接去做，属于小事情\n如果需要15-30分钟，则标记上标签 ![](/img/user/card/Pasted image 20231009172220.png)\n如果需要1小时以上，就将任务设置成项目\n\n做一次任务分解，分解成小任务，小任务以30分钟以内完成最好\n如果分解项目本身也需要很多时间，那么在项目里面加一个【分解任务】的事项\n\n根据时间，选取任务进行处理，打开 Session 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用\n\n为了让Things工作流更顺畅，我做了一个obsidian插件： <a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/101 Tools/obsidian-things3-today插件/\">obsidian-things3-today插件</a>",
 		"tags": [ "note","效率","tools"]
@@ -137,7 +137,7 @@
 
 {
 		"title": "mac-合上盖子不断网",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/101 Tools/mac/mac-合上盖子不断网/",
 		"content": "mac-合上盖子不断网\n将电池的设置 【唤醒以供网络访问】改成【始终】就会生效了",
 		"tags": [ "note","mac"]
@@ -145,7 +145,7 @@
 
 {
 		"title": "mac-自定义快捷键",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/101 Tools/mac/mac-自定义快捷键/",
 		"content": "mac-自定义快捷键\n内容\n\n参考",
 		"tags": [ "note","mac"]
@@ -153,7 +153,7 @@
 
 {
 		"title": "obsidian-things3-today插件",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/101 Tools/obsidian-things3-today插件/",
 		"content": "obsidian-things3-today插件\n把之前的插件重新搞了搞，把乱七八糟的东西去掉了，然后提交了obsidian插件库\n正在等着被review： https://github.com/obsidianmd/obsidian-releases/pull/2997\n新录了一个gif：\n图中可以看到和things3的Today列表联动还算是顺畅\n\nReference",
 		"tags": [ "note"]
@@ -161,7 +161,7 @@
 
 {
 		"title": "vim显示列分隔符",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/101 Tools/vim显示列分隔符/",
 		"content": "vim显示列分隔符\n内容\n:set list\n\n显示 tab 和结尾符号 $，不显示开头的 ^ 符号\n\n参考",
 		"tags": [ "note"]
@@ -169,7 +169,7 @@
 
 {
 		"title": "vscode vim 状态下显示提示",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/101 Tools/vscode vim 状态下显示提示/",
 		"content": "vscode vim 状态下显示提示\nvisual studio code - Keyboard shortcut to show hover tooltip - Stack Overflow\n\nIf you're using the VSCodeVim plugin, you can use gh to show the tooltip.",
 		"tags": [ "note"]
@@ -177,7 +177,7 @@
 
 {
 		"title": "leetcode-1137第 N 个泰波那契数",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/",
 		"content": "题目\n1137. 第 N 个泰波那契数\n这个跟斐波那契好像是一样的，一模一样\n解法\n跟斐波纳契数列一样的解法\nclass Solution {\n\n/**\n* @param Integer $n\n* @return Integer\n*/\nfunction tribonacci($n) {\nif ($n &lt;= 0) {\nreturn 0;\n}\n\n$retArr = [0,1,1];\nfor ($i = 3; $i &lt;= $n; $i++) {\n$retArr[$i] = $retArr[$i-1] + $retArr[$i-2] + $retArr[$i-3];\n}\n\nreturn $retArr[$n];\n}\n}\n\n参考",
 		"tags": [ "note","leetcode"]
@@ -185,7 +185,7 @@
 
 {
 		"title": "滑动窗口模板",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/300 Code/300 Leetcode/模板/滑动窗口模板/",
 		"content": "滑动窗口模板\n以 1052. 爱生气的书店老板 为例\nclass Solution {\n\n/**\n* @param Integer[] $customers\n* @param Integer[] $grumpy\n* @param Integer $X\n* @return Integer\n*/\nfunction maxSatisfied($customers, $grumpy, $X) {\nif (empty($customers)) {\nreturn 0;\n}\n\n// 1. 计算初始状态： 不压抑的时候，最大的满意人数\n$maxSat = 0;\nforeach ($grumpy as $key =&gt; $g) {\nif ($g == 0) {\n$maxSat += $customers[$key];\n}\n}\n\t\t\n\t\t// 1.1 初始化左右指针位置\n$len = count($customers);\n$left = $right = 0;\n$curSat = $maxSat;\n\t\t\n// 2. 滑窗具体代码\n// 2.1 右指针一直往右做\nwhile ($right &lt; $len) {\n$span = $right - $left + 1;\n\n// 2.1 直到遇到临界条件之后，左指针往右走，直到满足临界条件\nif ($span &gt; $X) {\nif ($grumpy[$left]) {\n$curSat -= $customers[$left];\n}\n$left ++;\n}\n\n// 计算当前窗口的数值\nif ($grumpy[$right]) {\n$curSat += $customers[$right];\n}\n\t\t\t\n// 最终结果比较\n$maxSat = max($curSat, $maxSat);\n$right++;\n}\n\nreturn $maxSat;\n}\n}\n\n参考\n多看几个题解：\n\nlc 的官方题解： 爱生气的书店老板\n一般官方题解的思路会非常详细，建议多看几遍\n用「秘密技巧」挽留住最多的原本因为生气而被赶走的顾客",
 		"tags": [ "note","leetcode"]
@@ -193,7 +193,7 @@
 
 {
 		"title": "如何做监控",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/600 Reading/700 Personal/如何做监控/",
 		"content": "如何做监控\n监控：\n\n什么是监控？\n\n对线上质量的一个实时检查\n\n重要性\n\n发现线上问题（早于用户）\n快速止损、定位\n及时发现隐藏的问题，指导策略优化\n\n如何做好监控？\n\n监控的流程及内容\n\n监控需求提出\n监控需求开发\n监控需求测试\n监控指标确认\n监控报警添加\n\n确认监控内容\n\n新功能添加监控\n补充监控\n围绕\n\n系统正确性\n系统异常\n异常定位\n隐藏问题指导策略\n\n监控数据获取\n\n打点数据\n日志数据\n数据库数据\nredis 数据\n\n监控报警添加\n\n监控可视化\n确定触发报警策略\n确定报警频率\n确定报警接收人\n配置监控\n\n监控处理\n\n收到报警\n问题跟进\n问题周知\n问题处理\n定损\n复盘 &amp; casestudy\n\n监控报警优化\n\n漏报\n\n不同报警类型\n突升突降代替固定阈值\n\n无效报警太多（准确率）\n\n准确性提升\n\n放大时间窗口，屏蔽预期内的单点抖动\n工作日、节假日不同阈值\n\n推送方式优化\n\n连续失败\n通知间隔\n通知依赖\n不同方式报警（短信、电话）\n\n报警处理不及时\n\n自愈脚本等\n\n问题定位\n\n流量分析\n\n流量细分\n\n行业\n地域\n机房\n\n系统分析\n\n线上出现报错、fatal、pvlost\n例行上线功能影响\n数据变更\n\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">600 Reading/700 Personal/如何追查线上问题</a>\n先通报、再止损、再定位\n最后修复",
 		"tags": [ "note"]
@@ -201,7 +201,7 @@
 
 {
 		"title": "Home dy_turbo",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "Home dy_turbo\nAbout Me\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/About Me/\">About Me</a>\nList\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/game/原神挺好玩/\">原神挺好玩</a>: (created: 2024-1-31)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/About Me/\">About Me</a>: (created: 2024-1-30)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/101 Tools/obsidian-things3-today插件/\">obsidian-things3-today插件</a>: (created: 2024-1-29)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/epoll的边缘触发和水平触发/\">epoll的边缘触发和水平触发</a>: (created: 2024-1-28)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/\">Home dy_turbo</a>: (created: 2024-1-28)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/obsidian/obsidian 开发过程支持的ICON/\">obsidian 开发过程支持的ICON</a>: (created: 2024-1-25)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/101 Tools/10x程序员工作法/\">10x程序员工作法</a>: (created: 2024-1-19)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/Kafka入门/\">Kafka入门</a>: (created: 2024-1-15)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/linux-wait/\">linux-wait</a>: (created: 2023-12-11) #linux\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/101 Tools/Things 工作流/\">Things 工作流</a>: (created: 2023-10-9) #效率 #tools\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/mac 运行 kafka/\">mac 运行 kafka</a>: (created: 2023-9-13) #kafka #学习\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/101 Tools/vscode vim 状态下显示提示/\">vscode vim 状态下显示提示</a>: (created: 2023-5-9)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/\">leetcode-1137第 N 个泰波那契数</a>: (created: 2023-2-26) #leetcode\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/101 Tools/mac/mac-合上盖子不断网/\">mac-合上盖子不断网</a>: (created: 2023-2-3) #mac\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/101 Tools/vim显示列分隔符/\">vim显示列分隔符</a>: (created: 2022-12-7)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/101 Tools/mac/mac-自定义快捷键/\">mac-自定义快捷键</a>: (created: 2022-11-16) #mac\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/GTD/\">GTD</a>: (created: 2022-5-5)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/踩坑/js超长数字溢出问题/\">js超长数字溢出问题</a>: (created: 2022-2-26) #js #联调 #踩坑 #output\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/非暴力沟通/\">非暴力沟通</a>: (created: 2021-12-16)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/PHP生成zip压缩包/\">PHP生成zip压缩包</a>: (created: 2021-11-23)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/linux/linux-echo/\">linux-echo</a>: (created: 2021-10-19)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/iso-日期表示法/\">iso-日期表示法</a>: (created: 2021-7-25)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/linux/linux-树莓派无法上网排查/\">linux-树莓派无法上网排查</a>: (created: 2021-7-15)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/card/网络-最多有多少个a类、b类和c类网络号/\">网络-最多有多少个a类、b类和c类网络号</a>: (created: 2021-5-24)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/600 Reading/700 Personal/如何做监控/\">如何做监控</a>: (created: 2021-5-7)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/\">ubuntu 树莓派启动时配置网络</a>: (created: 2021-4-27)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/\">如何查看 nginx 的rewrite记录</a>: (created: 2021-4-22)\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/nginx 进程模型-整体架构/\">nginx 进程模型-整体架构</a>: (created: 2021-4-14) #nginx\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/output/文件描述符/\">文件描述符</a>: (created: 2021-4-13) #文件 #OS #linux\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/output/如何追查线上问题/\">如何追查线上问题</a>: (created: 2021-4-12) #开发经验 #output\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/linux/linux-man命令使用/\">linux-man命令使用</a>: (created: 2021-4-7) #linux\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/100 Programmer/c/nginx/vscode 调试nginx代码/\">vscode 调试nginx代码</a>: (created: 2021-3-25) #output\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/300 Code/300 Leetcode/模板/滑动窗口模板/\">滑动窗口模板</a>: (created: 2021-3-6) #leetcode",
 		"tags": ["linux", "效率", "tools", "kafka", "学习", "leetcode", "mac", "mac", "js", "联调", "踩坑", "output", "nginx", "文件", "OS", "linux", "开发经验", "output", "linux", "output", "leetcode", "note","gardenEntry"]
@@ -209,7 +209,7 @@
 
 {
 		"title": "About Me",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/card/About Me/",
 		"content": "About Me\n千里之行，始于足下\nleetcode\nleetcode 个人主页\ngithub\ngithub 个人主页\nmusic",
 		"tags": [ "note"]
@@ -217,7 +217,7 @@
 
 {
 		"title": "GTD",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/card/GTD/",
 		"content": "把事情做好\n执行时是拿结果engage（而不是仅仅去 exec）\n\nhttps://topbook.cc/course/detail/153\n主要思想：\n\n捕获\n\n参考\nbilibili教程",
 		"tags": [ "note"]
@@ -225,7 +225,7 @@
 
 {
 		"title": "PHP生成zip压缩包",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/card/PHP生成zip压缩包/",
 		"content": "PHP生成zip压缩包\n将文件压缩成zip格式\n&lt;?php\n$path = &quot;file.txt&quot;;\n$filename = &quot;file.zip&quot;;\n\n$zip = new ZipArchive();\n$zip-&gt;open($filename, ZipArchive::CREATE); //打开压缩包\n$zip-&gt;addFile($path, basename($path)); //向压缩包中添加文件\n$zip-&gt;close(); //关闭压缩包",
 		"tags": [ "note"]
@@ -233,7 +233,7 @@
 
 {
 		"title": "iso-日期表示法",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/card/iso-日期表示法/",
 		"content": "国际标准化组织的日期时间表示法\n日期时间点表示法\n零时区\n在最后加上大写 的 Z\n2004-05-03T17:30:08Z\n其他时区\n合并表示时，要在时间前面加一大写字母T，如要表示东八区时间2004年5月3日下午5点30分8秒，可以写成2004-05-03T17:30:08+08:00或20040503T173008+08。\n时间点表示法\n首字母为 P，其他字母为年月日时分秒，中间加上 T\nP1Y3M5DT6H7M30S\n时间间隔表示法\n从一个时间开始，到另一个时间结束\n19850412/19860101\n从指定时间开始持续一段时间\n19850412/P6M\n循环时间表示法\n\nR【循环次数】【/开始时间】/时间间隔【/结束时间】\n\n从2004年5月6日北京时间下午1点起时间间隔半年零5天3小时循环，且循环3次\nR3/20040506T130000+08/P0Y6M5DT3H0M0S。\n以1年2个月为循环间隔，无限次循环，最后循环终止于2025年1月1日\nR/P1Y2M/20250101\n参考",
 		"tags": [ "note"]
@@ -241,7 +241,7 @@
 
 {
 		"title": "linux-wait",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/card/linux-wait/",
 		"content": "Content\nfor pid in $(jobs -p); do\nwait $pid\nstatus=$?\nif [ $status != 0 ]; then\necho &quot; $pid status is $status have some error!&quot; &gt;&gt; your_log\nelse\necho &quot;$pid status is $status success!&quot; &gt;&gt; your_log\nfi\ndone\n\nReference\nwait(1p) - Linux manual page",
 		"tags": [ "note","linux"]
@@ -249,7 +249,7 @@
 
 {
 		"title": "算法新年祝福语",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/card/算法新年祝福语/",
 		"content": "算法新年祝福语\n2022年祝你冒泡排序，选择排序，插入排序，快速排序，堆排序，归并排序，希尔排序，桶排序，基数排序新年帮您排忧解难。\n有向图，无向图，有环图，无环图，完全图，稠密图，稀疏图，拓扑图祝您新年宏图大展。\n最长路，最短路，单源路径，所有节点对路径祝您新年路路通畅。\n二叉树，红黑树，van Emde Boas树，最小生成树祝您新年好运枝繁叶茂。\n最大流，网络流，标准输入流，标准输出流，文件输入流，文件输出流祝您新年顺顺流流。\n线性动规，区间动规，坐标动规，背包动规，树型动归为您的新年规划精彩。\n散列表，哈希表，邻接表，双向链表，循环链表帮您在新年表达喜悦。",
 		"tags": [ "note"]
@@ -257,7 +257,7 @@
 
 {
 		"title": "网络-最多有多少个a类、b类和c类网络号",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/card/网络-最多有多少个a类、b类和c类网络号/",
 		"content": "在IPv4地址体系中，网络被分为4个等级，分别是A，B，C和D类。对于A、B、C类，其数量如下：\n\nA类：128个（范围是0.0.0.0到127.255.255.255，但0.0.0.0和127.0.0.0通常分别用作默认路由和本地回环地址，所以不包括在内。）\nB类：16,384个（范围是 128.0.0.0 到 191.255.255.255）\nC类：2,097,152个（范围是 192.0.0.0 到 223.255.255.255）\n\n请注意，上述分类是根据原始的IPv4地址分类来计算的。然而，由于IP地址的枯竭，现在的实际网络环境中，通常在IP地址分配上使用了子网划分，CIDR，私有地址等现代网络技术，因此实际的可用网络数量会因子网划分、私有地址使用等因素而有所变化。\nD类 IP 地址是多播（Multicast）地址，其范围是 224.0.0.0 到 239.255.255.255。\n所以，D类网络（多播地址）总共有 (239-224+1) x (2^24) = 268,435,456 个。\n但是，有些特定的地址在D类中是已经被保留或特殊用途的，例如 224.0.0.0 - 224.0.0.255 是被保留的用于本地网络的多播地址。\n参考\nhttps://blog.csdn.net/a5534789/article/details/50118857#:~:text=“0”做为网络号,网段为1—126.&amp;text=224%3D412%3D166%3D2563,数应该是16777214个。",
 		"tags": [ "note"]
@@ -265,7 +265,7 @@
 
 {
 		"title": "非暴力沟通",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/card/非暴力沟通/",
 		"content": "非暴力沟通\n基于需要的意识\n无论人们做还是不做\n他都在试图满足某个 内在的需要\n开始理解对方的 内在需要\n表达自己、倾听对方\n四个要素\n\n观察\n\n区分观察（客观）和评论（主观）\n用观察性的语言聊，要不然容易出现回怼\n不加评论的观察\n不随便评论他人\n\n感受\n\n体会并描述自己当下的全部感受\n区分感受和想法（评论）\n\n需要\n\n感受的根源\n我自己，而不是他人，对我的感受负责\n\n请求\n\n明确\n\n沟通句式\n表达：\n当我看到 ——————，我感到——————，因为我需要——————，（或我看重/希望——————），你是否乐意——————？\n倾听：\n你是否感到——————？因为你需要——————？",
 		"tags": [ "note"]
@@ -273,15 +273,15 @@
 
 {
 		"title": "原神挺好玩",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/game/原神挺好玩/",
-		"content": "原神挺好玩\n最近游戏一直在玩原神，一个开放的大世界。主线剧情刚刚做完，确实是我想象中的角色扮演（RPG）游戏。\n记得高中在塞班手机上玩的一款RPG游戏，一个周末都在刷怪。后来重新练了个号，结果跟大师傅打架的时候，他的70级宠物不知道为什么变成我的了。我就带着一个70级将近满级的宠物一路过关斩将玩通关了。\n原神里面我自己感觉可玩的点有几个：\n\n角色都很二次元，都是按照动漫里面的角色画出来的，二次元的估计会很喜欢。\n\n剧情比较代入，某些剧情需要努力打怪，不过主线剧情并不是很难。\n\n大世界地图非常大，如果不是有传送节点估计跑图都得跑断腿。\n\n大世界里面有很多宝箱，有些宝箱需要解密之后才能获得，不过这些宝箱都是一次性的，我在蒙德、璃月、稻妻的探索度最高才到 50% ，所以也可见大世界有多大东西有多丰富。\n\n支线剧情也很丰富多彩，比如我就特别喜欢璃月里面的一个支线剧情《神女劈观》，并且剧情最后有一首歌，大家可以先听一下。不过没有了解剧情之前听这首歌触动应该不是很大，还是具体体验一下剧情再说。\n\n最后一点，原神不花钱氪金也可以玩的很舒服，每天做做每日任务，开开宝箱，欣赏欣赏美景，然后读一读角色的背景故事。\n\n对了，游戏社区里的前辈忠告，当深渊不存在，能打到哪里就打到哪里。",
+		"content": "原神挺好玩\n最近游戏一直在玩原神，一个开放的大世界。主线剧情刚刚做完，确实是我想象中的角色扮演（RPG）游戏。\n记得高中在塞班手机上玩的一款RPG游戏，一个周末都在刷怪。后来重新练了个号，结果跟大师傅打架的时候，他的70级宠物不知道为什么变成我的了。我就带着一个70级将近满级的宠物一路过关斩将玩通关了。\n原神里面我自己感觉可玩的点有几个：\n\n角色都很二次元，都是按照动漫里面的角色画出来的，二次元的估计会很喜欢。\n剧情比较代入，某些剧情需要努力打怪，不过主线剧情并不是很难。\n大世界地图非常大，如果不是有传送节点估计跑图都得跑断腿。\n大世界里面有很多宝箱，有些宝箱需要解密之后才能获得，不过这些宝箱都是一次性的，我在蒙德、璃月、稻妻的探索度最高才到 50% ，所以也可见大世界有多大东西有多丰富。\n支线剧情也很丰富多彩，比如我就特别喜欢璃月里面的一个支线剧情《神女劈观》，并且剧情最后有一首歌，大家可以先听一下。不过没有了解剧情之前听这首歌触动应该不是很大，还是具体体验一下剧情再说。\n最后一点，原神不花钱氪金也可以玩的很舒服，每天做做每日任务，开开宝箱，欣赏欣赏美景，然后读一读角色的背景故事。\n\n对了，游戏社区里的前辈忠告，当深渊不存在，能打到哪里就打到哪里。",
 		"tags": [ "note"]
 },
 
 {
 		"title": "obsidian 开发过程支持的ICON",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/obsidian/obsidian 开发过程支持的ICON/",
 		"content": "obsidian 开发过程支持的ICON\n\n[!info]- Icons\n\nadd-note-glyph\nany-key\naudio-file\nblocks\nbold-glyph\nbox-glyph\nbracket-glyph\nbroken-link\nbullet-list\nbullet-list-glyph\ncalendar-glyph\ncalendar-with-checkmark\ncheck-in-circle\ncheck-small\ncheckbox-glyph\ncheckmark\nclock\nclock-glyph\ncloud\ncode-glyph\ncommand-glyph\ncompress-glyph\ncreate-new\ncross\ncross-in-box\ncrossed-star\ndice\ndice-glyph\ndocument\ndocuments\ndot-network\ndouble-down-arrow-glyph\ndouble-up-arrow-glyph\ndown-arrow-with-tail\ndown-chevron-glyph\ndown-curly-arrow-glyph\nduplicate-glyph\nenlarge-glyph\nenter\nexit-fullscreen\nexpand-vertically\nfile-explorer-glyph\nfilled-pin\nfolder\nforward-arrow\nfullscreen\ngear\ngithub-glyph\ngo-to-file\ngraph-glyph\nhashtag\nheading-glyph\nhelp\nhighlight-glyph\nhorizontal-split\nimage-file\nimage-glyph\nimport-glyph\nindent-glyph\ninfo\ninstall\nitalic-glyph\nkeyboard-glyph\nlanguages\nleft-arrow\nleft-arrow-with-tail\nleft-chevron-glyph\nlines-of-text\nlink\nlink-glyph\nlinks-coming-in\nlinks-going-out\nlogo-crystal\nmagnifying-glass\nmerge-files\nmerge-files-glyph\nmicrophone\nmicrophone-filled\nminus-with-circle\nnavigate-glyph\nnote-glyph\nnumber-list-glyph\nopen-elsewhere-glyph\nopen-vault\npane-layout\npaper-plane\npaper-plane-glyph\npaste\npaste-text\npaused\npdf-file\npencil\npercent-sign-glyph\npin\nplay-audio-glyph\nplus-minus-glyph\nplus-with-circle\npopup-open\npresentation\npresentation-glyph\nprice-tag-glyph\nquestion-mark-glyph\nquote-glyph\nreading-glasses\nredo-glyph\nreset\nrestore-file-glyph\nright-arrow\nright-arrow-with-tail\nright-chevron-glyph\nright-triangle\nrun-command\nscissors\nscissors-glyph\nsearch\nsearch-glyph\nselect-all-text\nsheets-in-box\nsplit\nstacked-levels\nstar\nstar-glyph\nstar-list\nstop-audio-glyph\nstrikethrough-glyph\nswitch\nsync\nsync-small\ntag-glyph\nthree-horizontal-bars\ntomorrow-glyph\ntrash\ntwo-blank-pages\nundo-glyph\nunindent-glyph\nup-and-down-arrows\nup-arrow-with-tail\nup-chevron-glyph\nup-curly-arrow-glyph\nuppercase-lowercase-a\nvault\nvertical-split\nvertical-three-dots\nwand\nwand-glyph\nworkspace-glyph\nwrench-screwdriver-glyph\nyesterday-glyph\n\nIcon148Nameadd-note-glyphany-keyaudio-fileblocksbold-glyphbox-glyphbracket-glyphbroken-linkbullet-listbullet-list-glyphcalendar-glyphcalendar-with-checkmarkcheck-in-circlecheck-smallcheckbox-glyphcheckmarkclockclock-glyphcloudcode-glyphcommand-glyphcompress-glyphcreate-newcrosscross-in-boxcrossed-stardicedice-glyphdocumentdocumentsdot-networkdouble-down-arrow-glyphdouble-up-arrow-glyphdown-arrow-with-taildown-chevron-glyphdown-curly-arrow-glyphduplicate-glyphenlarge-glyphenterexit-fullscreenexpand-verticallyfile-explorer-glyphfilled-pinfolderforward-arrowfullscreengeargithub-glyphgo-to-filegraph-glyphhashtagheading-glyphhelphighlight-glyphhorizontal-splitimage-fileimage-glyphimport-glyphindent-glyphinfoinstallitalic-glyphkeyboard-glyphlanguagesleft-arrowleft-arrow-with-tailleft-chevron-glyphlines-of-textlinklink-glyphlinks-coming-inlinks-going-outlogo-crystalmagnifying-glassmerge-filesmerge-files-glyphmicrophonemicrophone-filledminus-with-circlenavigate-glyphnote-glyphnumber-list-glyphopen-elsewhere-glyphopen-vaultpane-layoutpaper-planepaper-plane-glyphpastepaste-textpausedpdf-filepencilpercent-sign-glyphpinplay-audio-glyphplus-minus-glyphplus-with-circlepopup-openpresentationpresentation-glyphprice-tag-glyphquestion-mark-glyphquote-glyphreading-glassesredo-glyphresetrestore-file-glyphright-arrowright-arrow-with-tailright-chevron-glyphright-trianglerun-commandscissorsscissors-glyphsearchsearch-glyphselect-all-textsheets-in-boxsplitstacked-levelsstarstar-glyphstar-liststop-audio-glyphstrikethrough-glyphswitchsyncsync-smalltag-glyphthree-horizontal-barstomorrow-glyphtrashtwo-blank-pagesundo-glyphunindent-glyphup-and-down-arrowsup-arrow-with-tailup-chevron-glyphup-curly-arrow-glyphuppercase-lowercase-avaultvertical-splitvertical-three-dotswandwand-glyphworkspace-glyphwrench-screwdriver-glyphyesterday-glyph\nReference",
 		"tags": [ "note"]
@@ -289,7 +289,7 @@
 
 {
 		"title": "如何追查线上问题",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/output/如何追查线上问题/",
 		"content": "tags: #开发经验 #output\n原则\n止损优先\n不能先追查问题根源， 首先应该止损，不让问题进一步扩大，代码回滚、服务降级等都可以起到止损的效果。\n对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 配置开关 控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多\n及时通告\n在问题发生之后，要及时对处理问题的过程进行通告。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。\n追查问题的方法\n逻辑方法:\n\n先收集现象：业务报错、线上报错日志等\n对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。\n针对现象假设原因：\n\n常见问题依据追查手册\n其他问题保持思路开放，大胆假设\n\n是否有损的判断：\n根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 止损优先\n质疑所有数据：\n各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证\n\n知识准备\n\n对线上各种日志的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等\n对线上的各种配置更要做到心中有数\n对细节的追查，每次都更细一些，这样才能获得更多的信息\n计算机基本功，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查\n\n总结经验\n\n成熟的方法落地成工具\n对问题的追查形成文档\n\n问题解决之后\n如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。\n那么，我们可以通过思考以下几点来提升自己\n\n线上是否恢复了正常？（最基本的）\n问题的原因是什么？（落到追查文档）\n通过什么手段恢复的？（解决方案）\n怎么可以避免下次再次出现问题？（防患未然）\n除了此次出现的问题，会不会有其他的问题出现（举一反三）\n出现此类问题是否是架构问题造成的？（根本原因）",
 		"tags": ["开发经验", "output", "note"]
@@ -297,7 +297,7 @@
 
 {
 		"title": "文件描述符",
-		"date":"Fri Feb 02 2024 04:55:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Feb 02 2024 04:57:15 GMT+0000 (Coordinated Universal Time)",
 		"url":"/output/文件描述符/",
 		"content": "什么是文件描述符\n对于内核而言，所有打开的文件都通过文件描述符（file descriptor）引用。通常也写作 fd。\n文件描述符是一个非负整数。\n当打开一个现有文件或者创建一个新文件时，内核向进程返回一个文件描述符。\n文件描述符是跟进程相关联的。\n按照惯例，UNIX 系统将 fd 0 对应进程的标准输入， fd 1 对应进程的标准输出， fd 2 对应进程的标准错误。\n系统调用中的文件描述符\nUNIX 系统中，一切皆文件，所以一切资源都可以使用文件描述符进程引用。\n以 open 系统调用为例\n使用 man 2 open 查看系统 man 手册\nNAME\nopen, openat -- open or create a file for reading or writing\n\nSYNOPSIS\n#include &lt;fcntl.h&gt;\n\nint\nopen(const char *path, int oflag, ...);\n\nint\nopenat(int fd, const char *path, int oflag, ...);\n\nDESCRIPTION\nThe file name specified by path is opened for reading and/or writing,\nas specified by the argument oflag; the file descriptor is returned to\nthe calling process.\n\n在简介中有一段话：the file descriptor is returned to the calling process.\n使用 c 语言打开一个 文件\n#include &lt;stdio.h&gt;\n#include &lt;fcntl.h&gt;\n#include &lt;unistd.h&gt;\n\nint main() {\n\tint fd;\n\tfd = open(&quot;tmp.txt&quot;, O_RDONLY);\n\tprintf(&quot;%d&quot;, fd);\n\tsleep(10);\n}\n\n会发现，在进程运行时 fd 目录下，会出现一个描述符 3 指向了 打开的文件\n$ ll /proc/$(ps aux | grep a.out | grep -v grep | awk '{print $2}')/fd\ntotal 0\nlrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 0 -&gt; /dev/pts/4\nlrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 1 -&gt; /dev/pts/4\nlrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 2 -&gt; /dev/pts/4\nlr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&gt; /home/ubuntu/mydisk/yangblog/codes/file/tmp.txt\n\n我们可以把这个文件描述符当做参数传递给 read 或者 write 等等系统调用。",
 		"tags": ["include", "include", "include", "include", "note","文件","OS","linux"]

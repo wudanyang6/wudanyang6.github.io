@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-02T04:55:40.748Z';
+        const searchIndexDate = '2024-02-02T04:57:30.146Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T04:55:40.748Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-02T04:57:30.146Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T04:55:40.748Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-02T04:57:30.146Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1374,24 +1374,12 @@
 <p>记得高中在塞班手机上玩的一款RPG游戏，一个周末都在刷怪。后来重新练了个号，结果跟大师傅打架的时候，他的70级宠物不知道为什么变成我的了。我就带着一个70级将近满级的宠物一路过关斩将玩通关了。</p>
 <p>原神里面我自己感觉可玩的点有几个：</p>
 <ol>
-<li>
-<p>角色都很二次元，都是按照动漫里面的角色画出来的，二次元的估计会很喜欢。</p>
-</li>
-<li>
-<p>剧情比较代入，某些剧情需要努力打怪，不过主线剧情并不是很难。</p>
-</li>
-<li>
-<p>大世界地图非常大，如果不是有传送节点估计跑图都得跑断腿。</p>
-</li>
-<li>
-<p>大世界里面有很多宝箱，有些宝箱需要解密之后才能获得，不过这些宝箱都是一次性的，我在蒙德、璃月、稻妻的探索度最高才到 50% ，所以也可见大世界有多大东西有多丰富。</p>
-</li>
-<li>
-<p>支线剧情也很丰富多彩，比如我就特别喜欢璃月里面的一个支线剧情《神女劈观》，并且剧情最后有一首歌，大家可以先听一下。不过没有了解剧情之前听这首歌触动应该不是很大，还是具体体验一下剧情再说。</p>
-</li>
-<li>
-<p>最后一点，原神不花钱氪金也可以玩的很舒服，每天做做每日任务，开开宝箱，欣赏欣赏美景，然后读一读角色的背景故事。</p>
-</li>
+<li>角色都很二次元，都是按照动漫里面的角色画出来的，二次元的估计会很喜欢。</li>
+<li>剧情比较代入，某些剧情需要努力打怪，不过主线剧情并不是很难。</li>
+<li>大世界地图非常大，如果不是有传送节点估计跑图都得跑断腿。</li>
+<li>大世界里面有很多宝箱，有些宝箱需要解密之后才能获得，不过这些宝箱都是一次性的，我在蒙德、璃月、稻妻的探索度最高才到 50% ，所以也可见大世界有多大东西有多丰富。</li>
+<li>支线剧情也很丰富多彩，比如我就特别喜欢璃月里面的一个支线剧情《神女劈观》，并且剧情最后有一首歌，大家可以先听一下。不过没有了解剧情之前听这首歌触动应该不是很大，还是具体体验一下剧情再说。</li>
+<li>最后一点，原神不花钱氪金也可以玩的很舒服，每天做做每日任务，开开宝箱，欣赏欣赏美景，然后读一读角色的背景故事。</li>
 </ol>
 <p>对了，游戏社区里的前辈忠告，当深渊不存在，能打到哪里就打到哪里。</p>
 <p><img src="/img/user/attachs/clop_2024-01-31_36.png" alt="../attachs/clop_2024-01-31_36.png"></p>
