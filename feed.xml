@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-02-02T04:08:27Z</updated>
+    <updated>2024-02-02T04:09:14Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -1422,6 +1422,40 @@ Saving to: ‘index.html’
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/linux/linux-echo/" />
+        </entry>
+        <entry>
+            <title>
+                202103251606 - linux-翻墙
+                
+            </title>
+            <updated>2024-02-02T04:08:36.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/linux/202103251606 - linux-翻墙/</id>
+            <content type="html">
+                &lt;h1 id=&quot;clash-x&quot; tabindex=&quot;-1&quot;&gt;安装 ClashX&lt;/h1&gt;
+&lt;p&gt;我的机器是树莓派，底层架构是 arm 的，所以下载 arm 版本的安装包：&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Dreamacro/clash/releases/download/v1.4.2/clash-linux-armv8-v1.4.2.gz&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/Dreamacro/clash/releases/download/v1.4.2/clash-linux-armv8-v1.4.2.gz&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;gunzip clash-linux-armv8-v1.4.2.gz
+sudo mv clash-linux-armv8-v1.4.2 /usr/bin/clash
+
+# 下载你的配置，这里我是用的是 nsfwcloud.com 的服务
+wget -O config.yml &amp;quot;https://rxl-nc.xyz/link/{your.token}?clash=1&amp;amp;log-level=info&amp;quot;
+
+# 后台运行
+nohup clash -f config.yml &amp;amp; 
+
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;最终效果&quot; tabindex=&quot;-1&quot;&gt;最终效果&lt;/h2&gt;
+&lt;p&gt;翻个墙&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020210325154154.png&quot; alt=&quot;Pasted image 20210325154154.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;如果不想要 info 日志，可以在 &lt;code&gt;config.yml&lt;/code&gt; 中将 log-level 修改成 &lt;code&gt;log-level: warning&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://nsfwcloud.com/user/tutorial?os=linux&amp;amp;client=clash##&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://nsfwcloud.com/user/tutorial?os=linux&amp;amp;client=clash##&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;output&quot; tabindex=&quot;-1&quot;&gt;output&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/wudanyang/p/15142036.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.cnblogs.com/wudanyang/p/15142036.html&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/linux/202103251606 - linux-翻墙/" />
         </entry>
         <entry>
             <title>
