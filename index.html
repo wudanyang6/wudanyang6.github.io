@@ -81,7 +81,7 @@
     
     
   </head>
-  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon links-note-icon css-settings-manager mod-macos is-frameless is-hidden-frameless obsidian-app native-scrollbars show-inline-title show-view-header css-settings-manager hider-scroll obsidian-themepocalypse AT-multirow AT-row is-maximized theme-light is-focused pane-relief-pane-numbering Ribbon-autohide icon-autohide vault-name-hide file-icon-remove colorful-folder outline-enhanced new-tab-btn-default new-tab-image-old canvas-card-menu-center theme-light-background-adapt accent-color-override-light mod-left-split-background-CSS-light mod-right-split-background-CSS-light mod-root-split-background-CSS-light background-underlying-CSS-light activated-file-default-light workspace-divider-transparent-light theme-dark-background-default accent-color-override-dark mod-left-split-background-primary-dark mod-right-split-background-primary-dark mod-root-split-background-primary-dark background-underlying-defalut-dark activated-file-default-dark line-hover-indicator inline-title-color-default h1-color-default h2-color-default h3-color-default h4-color-default h5-color-default h6-color-default table-width-default img-center-align zoom-off codeblock-style-customize callout-style-customize DB-table-bg-color-default Projects-bg-color-default colorful-checkbox">
+  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon links-note-icon css-settings-manager mod-macos is-frameless is-hidden-frameless obsidian-app native-scrollbars show-inline-title show-view-header css-settings-manager hider-scroll obsidian-themepocalypse AT-multirow AT-row is-maximized theme-light pane-relief-pane-numbering Ribbon-autohide icon-autohide vault-name-hide file-icon-remove colorful-folder outline-enhanced new-tab-btn-default new-tab-image-old canvas-card-menu-center theme-light-background-adapt accent-color-override-light mod-left-split-background-CSS-light mod-right-split-background-CSS-light mod-root-split-background-CSS-light background-underlying-CSS-light activated-file-default-light workspace-divider-transparent-light theme-dark-background-default accent-color-override-dark mod-left-split-background-primary-dark mod-right-split-background-primary-dark mod-root-split-background-primary-dark background-underlying-defalut-dark activated-file-default-dark line-hover-indicator inline-title-color-default h1-color-default h2-color-default h3-color-default h4-color-default h5-color-default h6-color-default table-width-default img-center-align zoom-off codeblock-style-solarized-dark callout-style-customize DB-table-bg-color-default Projects-bg-color-default colorful-checkbox is-focused">
     
     
       
@@ -1106,7 +1106,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-04T15:28:44.921Z';
+        const searchIndexDate = '2024-02-04T15:45:15.717Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1118,9 +1118,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-04T15:28:44.921Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-04T15:45:15.717Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-04T15:28:44.921Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-04T15:45:15.717Z', docs}));
             window.docs = docs
             window.index = index;
         }
