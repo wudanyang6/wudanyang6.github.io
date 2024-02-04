@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-04T15:10:15.234Z';
+        const searchIndexDate = '2024-02-04T15:15:12.823Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-04T15:10:15.234Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-04T15:15:12.823Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-04T15:10:15.234Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-04T15:15:12.823Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1363,7 +1363,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-15T21:34:10+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-01T17:09:40+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-15T21:34:10+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-04T23:12:52+08:00"></span></div></div></div>
       
       
       </header>
@@ -1421,44 +1421,38 @@
       alt="clop_2024-01-16_813.png"
       width=""
       ></picture></p>
-<p><a href="../100%20Programmer/mac%20%E8%BF%90%E8%A1%8C%20kafka.md" target="_blank" class="external-link">mac 运行 kafka</a></p>
+<p><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/mac 运行 kafka/">../100 Programmer/mac 运行 kafka</a></p>
 <h1 id="2-kafka" tabindex="-1">2 Kafka 整体架构</h1>
-<p>![../drawio/Kafka 数据流.png](/img/user/drawio/Kafka 数据流.png)</p>
+<p><picture src="/img/user/drawio/Kafka%20%E6%95%B0%E6%8D%AE%E6%B5%81.png" alt="../drawio/Kafka 数据流.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/fEGHrVTFe8-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/fEGHrVTFe8-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/fEGHrVTFe8-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/fEGHrVTFe8-700.jpeg"
+        ><img       class=""
+      src="/img/user/drawio/Kafka%20%E6%95%B0%E6%8D%AE%E6%B5%81.png"
+      alt="../drawio/Kafka 数据流.png"
+      width=""
+      ></picture></p>
 <p>Kafka系统的核心概念包括：</p>
 <ol>
-<li>
-<p><strong>Producer（生产者）</strong>：负责发布消息到Kafka的Topic（主题）中。</p>
-</li>
-<li>
-<p><strong>Consumer（消费者）</strong>：订阅Topic，并处理发布到这些Topic的消息。</p>
-</li>
-<li>
-<p><strong>Consumer Group（消费者组）</strong>：一个消费者组可以有一个或多个消费者实例。当多个消费者实例属于同一个消费者组时，它们会在组内共享Topic的Partition。这意味着，每个Partition只会被消费者组中的一个消费者实例消费，这样可以保证每条消息只被组内的一个消费者处理，从而实现消息的负载均衡。</p>
-</li>
-<li>
-<p><strong>Broker（代理）</strong>：Kafka集群中的服务器，负责存储数据并处理Producer和Consumer的请求。</p>
-</li>
-<li>
-<p><strong>Topic（主题）</strong>：消息的分类，Producer发布消息到指定的Topic，Consumer订阅并消费Topic中的消息。</p>
-</li>
-<li>
-<p><strong>Partition（分区）</strong>：Topic的物理分割，每个Partition在存储层面是独立的，可以在不同的Broker上。Partition内的消息是有序的。</p>
-</li>
-<li>
-<p><strong>Offset（偏移量）</strong>：Partition中每条消息的唯一标识，可以看作是消息在Partition中的索引。</p>
-</li>
-<li>
-<p><strong>Replica（副本）</strong>：Partition的副本，用于提高数据的可靠性和容错性。</p>
-</li>
-<li>
-<p><strong>Zookeeper</strong>：Kafka使用Zookeeper来进行集群管理和协调。</p>
-</li>
-<li>
-<p><strong>Stream Processing（流处理）</strong>：Kafka Streams是Kafka的流处理库，用于构建流式应用程序。</p>
-</li>
-<li>
-<p><strong>Connect（连接器）</strong>：Kafka Connect是用于构建和运行可重用的数据导入和导出连接器的工具。</p>
-</li>
+<li><strong>Producer（生产者）</strong>：负责发布消息到Kafka的Topic（主题）中。</li>
+<li><strong>Consumer（消费者）</strong>：订阅Topic，并处理发布到这些Topic的消息。</li>
+<li><strong>Consumer Group（消费者组）</strong>：一个消费者组可以有一个或多个消费者实例。当多个消费者实例属于同一个消费者组时，它们会在组内共享Topic的Partition。这意味着，每个Partition只会被消费者组中的一个消费者实例消费，这样可以保证每条消息只被组内的一个消费者处理，从而实现消息的负载均衡。</li>
+<li><strong>Broker（代理）</strong>：Kafka集群中的服务器，负责存储数据并处理Producer和Consumer的请求。</li>
+<li><strong>Topic（主题）</strong>：消息的分类，Producer发布消息到指定的Topic，Consumer订阅并消费Topic中的消息。</li>
+<li><strong>Partition（分区）</strong>：Topic的物理分割，每个Partition在存储层面是独立的，可以在不同的Broker上。Partition内的消息是有序的。</li>
+<li><strong>Offset（偏移量）</strong>：Partition中每条消息的唯一标识，可以看作是消息在Partition中的索引。</li>
+<li><strong>Replica（副本）</strong>：Partition的副本，用于提高数据的可靠性和容错性。</li>
+<li><strong>Zookeeper</strong>：Kafka使用Zookeeper来进行集群管理和协调。</li>
+<li><strong>Stream Processing（流处理）</strong>：Kafka Streams是Kafka的流处理库，用于构建流式应用程序。</li>
+<li><strong>Connect（连接器）</strong>：Kafka Connect是用于构建和运行可重用的数据导入和导出连接器的工具。</li>
 </ol>
 <p>Kafka生产者将消息发送到负责存储目标Topic的Partition的Broker上。在Kafka集群中，每个Topic可以分为多个Partition，而每个Partition可能分布在不同的Broker上。每个Partition有一个Broker充当Leader，其他的Broker充当Follower。所有的读写操作都是通过Leader Broker进行的，Follower负责同步数据以保证高可用性和数据的冗余。</p>
 <h1 id="3-kafka" tabindex="-1">3 Kafka核心逻辑</h1>
