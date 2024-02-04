@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-02-04T15:59:16Z</updated>
+    <updated>2024-02-04T16:49:55Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -65,64 +65,6 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//output/文件描述符/" >
-        </entry>
-        <entry>
-            <title>
-                如何追查线上问题
-                
-            </title>
-            <updated>2024-01-31T05:26:30.000Z</updated>
-            <id>https://wudanyang6.github.io//output/如何追查线上问题/</id>
-            <content type="html">
-                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#开发经验&quot;&gt;#开发经验&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;原则&quot; tabindex=&quot;-1&quot;&gt;原则&lt;/h1&gt;
-&lt;h2 id=&quot;止损优先&quot; tabindex=&quot;-1&quot;&gt;止损优先&lt;/h2&gt;
-&lt;p&gt;不能先追查问题根源， 首先应该&lt;code&gt;止损&lt;/code&gt;，不让问题进一步扩大，&lt;code&gt;代码回滚&lt;/code&gt;、&lt;code&gt;服务降级&lt;/code&gt;等都可以起到止损的效果。&lt;br /&gt;
-对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 &lt;code&gt;配置开关 &lt;/code&gt;控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多&lt;/p&gt;
-&lt;h2 id=&quot;及时通告&quot; tabindex=&quot;-1&quot;&gt;及时通告&lt;/h2&gt;
-&lt;p&gt;在问题发生之后，要及时对处理问题的过程进行&lt;code&gt;通告&lt;/code&gt;。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。&lt;/p&gt;
-&lt;h1 id=&quot;追查问题的方法&quot; tabindex=&quot;-1&quot;&gt;追查问题的方法&lt;/h1&gt;
-&lt;h2 id=&quot;逻辑方法:&quot; tabindex=&quot;-1&quot;&gt;逻辑方法:&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;先收集&lt;code&gt;现象&lt;/code&gt;：业务报错、线上报错日志等&lt;br /&gt;
-对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。&lt;/li&gt;
-&lt;li&gt;针对现象假设&lt;code&gt;原因&lt;/code&gt;：
-&lt;ol&gt;
-&lt;li&gt;常见问题依据追查手册&lt;/li&gt;
-&lt;li&gt;其他问题保持思路开放，大胆假设&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;是否&lt;code&gt;有损&lt;/code&gt;的判断：&lt;br /&gt;
-根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 &lt;strong&gt;止损优先&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;质疑&lt;/code&gt;所有数据：&lt;br /&gt;
-各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;知识准备&quot; tabindex=&quot;-1&quot;&gt;知识准备&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;对线上各种&lt;code&gt;日志&lt;/code&gt;的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等&lt;/li&gt;
-&lt;li&gt;对线上的各种&lt;code&gt;配置&lt;/code&gt;更要做到心中有数&lt;/li&gt;
-&lt;li&gt;对&lt;code&gt;细节&lt;/code&gt;的追查，每次都更细一些，这样才能获得更多的信息&lt;/li&gt;
-&lt;li&gt;计算机&lt;code&gt;基本功&lt;/code&gt;，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;总结经验&quot; tabindex=&quot;-1&quot;&gt;总结经验&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;成熟的方法落地成&lt;code&gt;工具&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;对问题的追查形成&lt;code&gt;文档&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;问题解决之后&quot; tabindex=&quot;-1&quot;&gt;问题解决之后&lt;/h1&gt;
-&lt;p&gt;如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。&lt;br /&gt;
-那么，我们可以通过思考以下几点来提升自己&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;线上是否恢复了正常？（&lt;code&gt;最基本的&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;问题的原因是什么？（&lt;code&gt;落到追查文档&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;通过什么手段恢复的？（&lt;code&gt;解决方案&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;怎么可以避免下次再次出现问题？（&lt;code&gt;防患未然&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;除了此次出现的问题，会不会有其他的问题出现（&lt;code&gt;举一反三&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;出现此类问题是否是架构问题造成的？（&lt;code&gt;根本原因&lt;/code&gt;）&lt;/li&gt;
-&lt;/ol&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//output/如何追查线上问题/" >
         </entry>
         <entry>
             <title>
@@ -589,7 +531,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-22)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/nginx%20%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-14)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/output/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6/&quot;&gt;文件描述符&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/output/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-12)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#开发经验&quot;&gt;#开发经验&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-12)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#开发经验&quot;&gt;#开发经验&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/linux-man%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/&quot;&gt;linux-man命令使用&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-7)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/&quot;&gt;vscode 调试nginx代码&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-25)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/202103251606%20-%20linux-%E7%BF%BB%E5%A2%99/&quot;&gt;202103251606 - linux-翻墙&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-25)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
@@ -605,7 +547,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 如何做监控
                 
             </title>
-            <updated>2024-01-31T05:35:08.000Z</updated>
+            <updated>2024-02-04T16:48:11.000Z</updated>
             <id>https://wudanyang6.github.io//600 Reading/700 Personal/如何做监控/</id>
             <content type="html">
                 &lt;h1 id=&quot;如何做监控&quot; tabindex=&quot;-1&quot;&gt;如何做监控&lt;/h1&gt;
@@ -733,7 +675,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;600 Reading/700 Personal/如何追查线上问题&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;br /&gt;
 先通报、再止损、再定位&lt;br /&gt;
 最后修复&lt;/p&gt;
 
@@ -1135,6 +1077,64 @@ $zip-&amp;gt;close(); //关闭压缩包
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/踩坑/js超长数字溢出问题/" >
+        </entry>
+        <entry>
+            <title>
+                如何追查线上问题
+                
+            </title>
+            <updated>2024-01-31T05:26:30.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/如何追查线上问题/</id>
+            <content type="html">
+                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#开发经验&quot;&gt;#开发经验&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;原则&quot; tabindex=&quot;-1&quot;&gt;原则&lt;/h1&gt;
+&lt;h2 id=&quot;止损优先&quot; tabindex=&quot;-1&quot;&gt;止损优先&lt;/h2&gt;
+&lt;p&gt;不能先追查问题根源， 首先应该&lt;code&gt;止损&lt;/code&gt;，不让问题进一步扩大，&lt;code&gt;代码回滚&lt;/code&gt;、&lt;code&gt;服务降级&lt;/code&gt;等都可以起到止损的效果。&lt;br /&gt;
+对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 &lt;code&gt;配置开关 &lt;/code&gt;控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多&lt;/p&gt;
+&lt;h2 id=&quot;及时通告&quot; tabindex=&quot;-1&quot;&gt;及时通告&lt;/h2&gt;
+&lt;p&gt;在问题发生之后，要及时对处理问题的过程进行&lt;code&gt;通告&lt;/code&gt;。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。&lt;/p&gt;
+&lt;h1 id=&quot;追查问题的方法&quot; tabindex=&quot;-1&quot;&gt;追查问题的方法&lt;/h1&gt;
+&lt;h2 id=&quot;逻辑方法:&quot; tabindex=&quot;-1&quot;&gt;逻辑方法:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;先收集&lt;code&gt;现象&lt;/code&gt;：业务报错、线上报错日志等&lt;br /&gt;
+对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。&lt;/li&gt;
+&lt;li&gt;针对现象假设&lt;code&gt;原因&lt;/code&gt;：
+&lt;ol&gt;
+&lt;li&gt;常见问题依据追查手册&lt;/li&gt;
+&lt;li&gt;其他问题保持思路开放，大胆假设&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;是否&lt;code&gt;有损&lt;/code&gt;的判断：&lt;br /&gt;
+根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 &lt;strong&gt;止损优先&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;质疑&lt;/code&gt;所有数据：&lt;br /&gt;
+各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;知识准备&quot; tabindex=&quot;-1&quot;&gt;知识准备&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;对线上各种&lt;code&gt;日志&lt;/code&gt;的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等&lt;/li&gt;
+&lt;li&gt;对线上的各种&lt;code&gt;配置&lt;/code&gt;更要做到心中有数&lt;/li&gt;
+&lt;li&gt;对&lt;code&gt;细节&lt;/code&gt;的追查，每次都更细一些，这样才能获得更多的信息&lt;/li&gt;
+&lt;li&gt;计算机&lt;code&gt;基本功&lt;/code&gt;，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;总结经验&quot; tabindex=&quot;-1&quot;&gt;总结经验&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;成熟的方法落地成&lt;code&gt;工具&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;对问题的追查形成&lt;code&gt;文档&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;问题解决之后&quot; tabindex=&quot;-1&quot;&gt;问题解决之后&lt;/h1&gt;
+&lt;p&gt;如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。&lt;br /&gt;
+那么，我们可以通过思考以下几点来提升自己&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;线上是否恢复了正常？（&lt;code&gt;最基本的&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;问题的原因是什么？（&lt;code&gt;落到追查文档&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;通过什么手段恢复的？（&lt;code&gt;解决方案&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;怎么可以避免下次再次出现问题？（&lt;code&gt;防患未然&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;除了此次出现的问题，会不会有其他的问题出现（&lt;code&gt;举一反三&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;出现此类问题是否是架构问题造成的？（&lt;code&gt;根本原因&lt;/code&gt;）&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/如何追查线上问题/" >
         </entry>
         <entry>
             <title>
@@ -1790,7 +1790,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 Kafka入门
                 
             </title>
-            <updated>2024-02-04T15:12:52.000Z</updated>
+            <updated>2024-02-04T15:21:49.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/Kafka入门/</id>
             <content type="html">
                 &lt;h1 id=&quot;1-kafka&quot; tabindex=&quot;-1&quot;&gt;1 初识Kafka&lt;/h1&gt;
