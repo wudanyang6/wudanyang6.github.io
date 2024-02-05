@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-05T04:43:16.056Z';
+        const searchIndexDate = '2024-02-05T13:52:39.638Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-05T04:43:16.056Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-05T13:52:39.638Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-05T04:43:16.056Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-05T13:52:39.638Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1753,22 +1753,6 @@
       });
 </script>
     
-    
-      <script src="https://giscus.app/client.js"
-        data-repo="wudanyang6/wudanyang6.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM="
-        data-category="Announcements"
-        data-category-id="DIC_kwDOFTtyT84CYlu-"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async></script>
-
     
     <script>
 lucide.createIcons({
