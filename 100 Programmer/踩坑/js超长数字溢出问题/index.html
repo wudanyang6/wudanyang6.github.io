@@ -1119,7 +1119,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-06T07:12:07.109Z';
+        const searchIndexDate = '2024-02-06T07:38:06.015Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1131,9 +1131,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-06T07:12:07.109Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-06T07:38:06.015Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-06T07:12:07.109Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-06T07:38:06.015Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1374,13 +1374,13 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2022-02-26T21:02:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-31T13:28:37+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2022-02-26T21:02:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-05T12:47:16+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <p>tags: <a class="tag" onclick="toggleTagSearch(this)" data-content="#js">#js</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#联调">#联调</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#踩坑">#踩坑</a>  <a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></p>
+      <p>tags: <a class="tag" onclick="toggleTagSearch(this)" data-content="#js">#js</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#联调">#联调</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#踩坑">#踩坑</a></p>
 <p><a href="https://www.cnblogs.com/wudanyang/p/15940613.html" target="_blank" class="external-link">https://www.cnblogs.com/wudanyang/p/15940613.html</a></p>
 <h1 id="现象" tabindex="-1">现象</h1>
 <p>之前遇到过的一个问题<br>
