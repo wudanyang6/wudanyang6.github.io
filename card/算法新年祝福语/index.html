@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-06T05:24:35.601Z';
+        const searchIndexDate = '2024-02-06T05:25:40.327Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-06T05:24:35.601Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-06T05:25:40.327Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-06T05:24:35.601Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-06T05:25:40.327Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1379,6 +1379,13 @@
 <p>散列表，哈希表，邻接表，双向链表，循环链表帮您在新年表达喜悦。</p>
 
       
+      
+        <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<span id="busuanzi_container_page_pv">
+    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</span>
       
         <script src="https://giscus.app/client.js"
         data-repo="wudanyang6/wudanyang6.github.io"
@@ -1694,12 +1701,7 @@
 </script>
     
     
-      <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
-</span>
-<span id="busuanzi_container_page_pv">
-    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
+      
     
     <script>
 lucide.createIcons({

@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-06T05:24:35.601Z';
+        const searchIndexDate = '2024-02-06T05:25:40.327Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-06T05:24:35.601Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-06T05:25:40.327Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-06T05:24:35.601Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-06T05:25:40.327Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1383,6 +1383,13 @@
 <p><a href="https://blog.csdn.net/a5534789/article/details/50118857#:~:text=%E2%80%9C0%E2%80%9D%E5%81%9A%E4%B8%BA%E7%BD%91%E7%BB%9C%E5%8F%B7,%E7%BD%91%E6%AE%B5%E4%B8%BA1%E2%80%94126.&amp;text=224%3D412%3D166%3D2563,%E6%95%B0%E5%BA%94%E8%AF%A5%E6%98%AF16777214%E4%B8%AA%E3%80%82" target="_blank" class="external-link">https://blog.csdn.net/a5534789/article/details/50118857#:~:text=“0”做为网络号,网段为1—126.&amp;text=224%3D412%3D166%3D2563,数应该是16777214个。</a></p>
 
       
+      
+        <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<span id="busuanzi_container_page_pv">
+    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</span>
       
         <script src="https://giscus.app/client.js"
         data-repo="wudanyang6/wudanyang6.github.io"
@@ -1698,12 +1705,7 @@
 </script>
     
     
-      <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
-</span>
-<span id="busuanzi_container_page_pv">
-    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-</span>
+      
     
     <script>
 lucide.createIcons({
