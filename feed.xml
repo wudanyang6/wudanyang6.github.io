@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-02-06T05:25:40Z</updated>
+    <updated>2024-02-06T07:12:07Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -417,6 +417,25 @@ done
 &lt;div style=&quot;display: block; position: relative; width: 100%; height: 0px; --aspect-ratio:9/16; padding-bottom: calc(var(--aspect-ratio) * 100%);&quot;&gt;&lt;iframe src=&quot;https://zh.wikipedia.org/wiki/ISO_8601&quot; allow=&quot;fullscreen&quot; style=&quot;position: absolute; top: 0px; left: 0px; height: 100%; width: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
             </content>
             <link href="https://wudanyang6.github.io//card/iso-日期表示法/" >
+        </entry>
+        <entry>
+            <title>
+                docker-ubuntu-unminimize
+                
+            </title>
+            <updated>2024-02-06T07:11:33.000Z</updated>
+            <id>https://wudanyang6.github.io//card/docker-ubuntu-unminimize/</id>
+            <content type="html">
+                &lt;h1 id=&quot;docker-ubuntu&quot; tabindex=&quot;-1&quot;&gt;docker-ubuntu&lt;/h1&gt;
+&lt;p&gt;unminimize 命令可以将 &lt;code&gt;ubuntu&lt;/code&gt; 的环境切换成正常的环境，会安装很多软件进去&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://wiki.ubuntu.com/Minimal&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://wiki.ubuntu.com/Minimal&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &#39;unminimize&#39; command will install the standard Ubuntu Server packages if you want to convert a Minimal instance to a standard Server environment for interactive use.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;但是这些软件里面没有 ping 、 traceroute 等网络实用工具&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/docker-ubuntu-unminimize/" >
         </entry>
         <entry>
             <title>
