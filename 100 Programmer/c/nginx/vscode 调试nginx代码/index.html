@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-06T05:15:23.563Z';
+        const searchIndexDate = '2024-02-06T05:20:39.195Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-06T05:15:23.563Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-06T05:20:39.195Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-06T05:15:23.563Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-06T05:20:39.195Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1492,9 +1492,6 @@ Maybe someone has attached this process with gdb.</p>
 
       
       
-        <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-
-      
         <script src="https://giscus.app/client.js"
         data-repo="wudanyang6/wudanyang6.github.io"
         data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM="
@@ -1844,6 +1841,9 @@ Maybe someone has attached this process with gdb.</p>
       });
 </script>
     
+    
+      <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+
     
     <script>
 lucide.createIcons({
