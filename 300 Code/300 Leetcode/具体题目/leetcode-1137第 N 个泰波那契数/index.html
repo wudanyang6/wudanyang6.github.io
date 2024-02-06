@@ -77,7 +77,7 @@
 
     
       <script defer src="https://eu.umami.is/script.js" data-website-id="991e47f1-cc75-4cdd-8e98-d9df76b10a5e"></script>
-
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     
     
   </head>
@@ -1108,7 +1108,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-06T04:51:09.285Z';
+        const searchIndexDate = '2024-02-06T05:15:23.563Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1120,9 +1120,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-06T04:51:09.285Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-06T05:15:23.563Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-06T04:51:09.285Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-06T05:15:23.563Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1403,6 +1403,9 @@
 <h1 id="参考" tabindex="-1">参考</h1>
 
       
+      
+        <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+
       
         <script src="https://giscus.app/client.js"
         data-repo="wudanyang6/wudanyang6.github.io"
