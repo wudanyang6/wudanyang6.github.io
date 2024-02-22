@@ -56,7 +56,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.9748abaf.css" rel="stylesheet">
+    <link href="/styles/_theme.006d4a2d.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
@@ -358,6 +358,17 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/mac-鼠须管-使用lua脚本/">mac-鼠须管-使用lua脚本 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/nginx-master-start-worker/">Nginx Master 启动 worker 进程的流程 </a>
                 </div>
             
         </div>
@@ -1119,7 +1130,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-21T11:17:01.104Z';
+        const searchIndexDate = '2024-02-22T02:31:41.026Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1131,9 +1142,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-21T11:17:01.104Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-22T02:31:41.026Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-21T11:17:01.104Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-22T02:31:41.026Z', docs}));
             window.docs = docs
             window.index = index;
         }
