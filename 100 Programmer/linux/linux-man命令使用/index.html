@@ -267,7 +267,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-23T03:37:00.709Z';
+        const searchIndexDate = '2024-02-23T03:37:51.196Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -279,9 +279,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-23T03:37:00.709Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-23T03:37:51.196Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-23T03:37:00.709Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-23T03:37:51.196Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -551,7 +551,8 @@
 
       
       
-        <span id="busuanzi_container_site_pv">
+        <hr>
+<span id="busuanzi_container_site_pv">
     本站总访问量<span id="busuanzi_value_site_pv"></span>次
 </span>
 <span id="busuanzi_container_page_pv">
