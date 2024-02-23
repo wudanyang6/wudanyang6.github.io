@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-02-23T02:41:05Z</updated>
+    <updated>2024-02-23T02:42:05Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -423,7 +423,7 @@ done
                 docker-ubuntu-unminimize
                 
             </title>
-            <updated>2024-02-06T07:11:33.000Z</updated>
+            <updated>2024-02-06T09:49:27.000Z</updated>
             <id>https://wudanyang6.github.io//card/docker-ubuntu-unminimize/</id>
             <content type="html">
                 &lt;h1 id=&quot;docker-ubuntu&quot; tabindex=&quot;-1&quot;&gt;docker-ubuntu&lt;/h1&gt;
@@ -549,6 +549,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/600%20Reading/700%20Personal/%E5%A6%82%E4%BD%95%E5%81%9A%E7%9B%91%E6%8E%A7/&quot;&gt;如何做监控&lt;/a&gt;:  &lt;em&gt;(created: 2021-5-7)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/%E6%A0%91%E8%8E%93%E6%B4%BE/ubuntu%20%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%AF%E5%8A%A8%E6%97%B6%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C/&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-27)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-22)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-16)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Process&quot;&gt;#Process&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#source-code&quot;&gt;#source-code&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/nginx%20%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-14)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/output/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6/&quot;&gt;文件描述符&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-12)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#开发经验&quot;&gt;#开发经验&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/li&gt;
@@ -1359,7 +1360,7 @@ func main() {
                 nginx-master-start-worker
                 
             </title>
-            <updated>2024-02-17T11:25:44.000Z</updated>
+            <updated>2024-02-22T07:57:08.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/linux/nginx-master-start-worker/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx-master&quot; tabindex=&quot;-1&quot;&gt;Nginx Master 进程启动子进程的流程&lt;/h1&gt;

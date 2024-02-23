@@ -1126,7 +1126,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-23T02:41:05.271Z';
+        const searchIndexDate = '2024-02-23T02:42:04.946Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1138,9 +1138,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-23T02:41:05.271Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-23T02:42:04.946Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-23T02:41:05.271Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-23T02:42:04.946Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1399,7 +1399,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-04-16T19:04:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-17T19:25:44+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-04-16T19:04:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-22T15:57:08+08:00"></span></div></div></div>
       
       
       </header>
@@ -1818,9 +1818,8 @@ if (s == NGX_MAX_PROCESSES) {
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home dy_turbo</a>
+                                                </div></div>
                               </div>
                         
                   

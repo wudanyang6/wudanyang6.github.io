@@ -1124,7 +1124,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-23T02:41:05.271Z';
+        const searchIndexDate = '2024-02-23T02:42:04.946Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1136,9 +1136,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-23T02:41:05.271Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-23T02:42:04.946Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-23T02:41:05.271Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-23T02:42:04.946Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1424,6 +1424,7 @@
 <li><a class="internal-link" target="" data-note-icon="" href="/600 Reading/700 Personal/如何做监控/">如何做监控</a>:  <em>(created: 2021-5-7)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络</a>:  <em>(created: 2021-4-27)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/如何查看 nginx 的rewrite记录/">如何查看 nginx 的rewrite记录</a>:  <em>(created: 2021-4-22)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/nginx-master-start-worker/">nginx-master-start-worker</a>:  <em>(created: 2021-4-16)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#nginx">#nginx</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#Process">#Process</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#source-code">#source-code</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/nginx 进程模型-整体架构/">nginx 进程模型-整体架构</a>:  <em>(created: 2021-4-14)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#nginx">#nginx</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/output/文件描述符/">文件描述符</a>:  <em>(created: 2021-4-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/如何追查线上问题/">如何追查线上问题</a>:  <em>(created: 2021-4-12)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#开发经验">#开发经验</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></li>
