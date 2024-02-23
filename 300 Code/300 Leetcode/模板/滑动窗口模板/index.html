@@ -77,7 +77,7 @@
     
     
   </head>
-  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
+  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon links-note-icon">
     
     
     
@@ -1126,7 +1126,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-23T03:14:33.896Z';
+        const searchIndexDate = '2024-02-23T03:24:48.277Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1138,9 +1138,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-23T03:14:33.896Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-23T03:24:48.277Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-23T03:14:33.896Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-23T03:24:48.277Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1735,7 +1735,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home dy_turbo</a>
+                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home dy_turbo</a>
                                                 </div></div>
                               </div>
                         
