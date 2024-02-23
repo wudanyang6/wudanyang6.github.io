@@ -56,7 +56,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.006d4a2d.css" rel="stylesheet">
+    <link href="/styles/_theme.33781be0.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
@@ -69,10 +69,6 @@
 
 
 
-    <style>
-        body.css-settings-manager { --anim-speed: 1; --inline-code-background-light: white; --inline-code-background-dark: black; --accent-dark-h: 267.1875; --accent-dark-s: 57.14285714285713%; --accent-dark-l: 78.03921568627452%; --accent-light-h: 32.02453987730061; --accent-light-s: 63.921568627450974%; --accent-light-l: 50%; --background-mod-left-CSS-light: transparent; --background-mod-left-CSS-backdrop-filter-light: blur(0px); --background-mod-right-CSS-light: transparent; --background-mod-right-CSS-backdrop-filter-light: blur(0px); --background-mod-root-CSS-light: blur(0px); --background-mod-root-CSS-backdrop-filter-light: blur(0px); --background-underlying-CSS-light:
-    </style>
-
 <style></style>
 
     
@@ -81,7 +77,7 @@
     
     
   </head>
-  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon links-note-icon css-settings-manager mod-macos is-frameless is-hidden-frameless obsidian-app native-scrollbars show-inline-title show-view-header css-settings-manager hider-scroll obsidian-themepocalypse AT-multirow AT-row is-maximized theme-light pane-relief-pane-numbering Ribbon-autohide icon-autohide vault-name-hide file-icon-remove colorful-folder outline-enhanced new-tab-btn-default new-tab-image-old canvas-card-menu-center theme-light-background-adapt accent-color-override-light mod-left-split-background-CSS-light mod-right-split-background-CSS-light mod-root-split-background-CSS-light background-underlying-CSS-light activated-file-default-light workspace-divider-transparent-light theme-dark-background-default accent-color-override-dark mod-left-split-background-primary-dark mod-right-split-background-primary-dark mod-root-split-background-primary-dark background-underlying-defalut-dark activated-file-default-dark line-hover-indicator inline-title-color-default h1-color-default h2-color-default h3-color-default h4-color-default h5-color-default h6-color-default table-width-default img-center-align zoom-off codeblock-style-solarized-dark callout-style-customize DB-table-bg-color-default Projects-bg-color-default colorful-checkbox is-focused">
+  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
     
     
     
@@ -1130,7 +1126,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-22T02:31:41.026Z';
+        const searchIndexDate = '2024-02-23T02:41:05.271Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1142,9 +1138,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-22T02:31:41.026Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-23T02:41:05.271Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-22T02:31:41.026Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-23T02:41:05.271Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1700,7 +1696,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home dy_turbo</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home dy_turbo</a>
                                                 </div></div>
                               </div>
                         

@@ -28,12 +28,6 @@ settings:
 
 body:not(.border-focus-mode) .setting-item:is([data-id=line-active-bg], [data-id=line-normal-opacity]),
 body:not(.inline-title-color-customized) .setting-item[data-id=inline-title-color],
-body:not(.h1-color-customized) .setting-item[data-id=h1-color],
-body:not(.h2-color-customized) .setting-item[data-id=h2-color],
-body:not(.h3-color-customized) .setting-item[data-id=h3-color],
-body:not(.h4-color-customized) .setting-item[data-id=h4-color],
-body:not(.h5-color-customized) .setting-item[data-id=h5-color],
-body:not(.h6-color-customized) .setting-item[data-id=h6-color],
 body:not(.background-underlying-Color-light) .setting-item[data-id=background-underlying-light],
 body:not(.background-underlying-CSS-light) .setting-item:is([data-id=background-underlying-CSS-light], [data-id=background-underlying-CSS-blend-mode-light]),
 body:not(.background-underlying-Color-dark) .setting-item[data-id=background-underlying-dark],
@@ -3128,12 +3122,12 @@ body {
     --h4-color: inherit;
     --h5-color: inherit;
     --h6-color: inherit;
-    --h1-indicator-color: var(--color-red);
-    --h2-indicator-color: var(--color-orange);
-    --h3-indicator-color: var(--color-yellow);
-    --h4-indicator-color: var(--color-green);
-    --h5-indicator-color: var(--color-blue);
-    --h6-indicator-color: var(--color-purple);
+    --h1-accent-color: var(--color-red);
+    --h2-accent-color: var(--color-orange);
+    --h3-accent-color: var(--color-yellow);
+    --h4-accent-color: var(--color-green);
+    --h5-accent-color: var(--color-blue);
+    --h6-accent-color: var(--color-purple);
     --h1-font: inherit;
     --h2-font: inherit;
     --h3-font: inherit;
@@ -3172,15 +3166,6 @@ body {
     --h6-weight: 575;
 }
 
-.inline-title-color-default {
-    --inline-title-color: var(--text-normal) !important;
-}
-
-.inline-title-color-designated {
-    --inline-title-color: var(--color-accent) !important;
-}
-
-
 body:not(.inline-title-divider-remove) .inline-title:not(.mk-inline-title) {
     border-bottom: 1px solid var(--divider-color);
     padding-bottom: var(--size-4-3);
@@ -3205,19 +3190,8 @@ body:not(.heading-indicator-off) :is(.markdown-rendered, .markdown-preview-view)
 }
 
 
-
-.h1-color-default {
-    --h1-color: var(--text-normal) !important;
-    --h1-indicator-color: var(--color-red) !important;
-}
-
 .h1-color-designated {
-    --h1-color: var(--color-red) !important;
-    --h1-indicator-color: var(--h1-color);
-}
-
-.h1-color-customized {
-    --h1-indicator-color: var(--h1-color);
+    --h1-color: var(--h1-accent-color) !important;
 }
 
 body:not(.heading-indicator-off) .is-live-preview .HyperMD-header-1::before {
@@ -3227,7 +3201,7 @@ body:not(.heading-indicator-off) .is-live-preview .HyperMD-header-1::before {
     width: 3px;
     height: calc(1.2em - 8px);
     border-radius: var(--radius-m);
-    background-color: var(--h1-indicator-color);
+    background-color: var(--h1-accent-color);
     transform: translateY(4px);
 }
 
@@ -3239,7 +3213,7 @@ body:not(.heading-indicator-off) .markdown-preview-sizer>div>h1::before {
     width: 3px;
     height: calc(1.2em - 8px);
     border-radius: var(--radius-m);
-    background-color: var(--h1-indicator-color);
+    background-color: var(--h1-accent-color);
     position: absolute;
     top: 4px;
     left: 0px;
@@ -3254,7 +3228,7 @@ body.h1-divider-on :is(.markdown-preview-sizer>div>h1, .markdown-rendered>h1, .H
     right: 0px;
     opacity: 0.5;
     bottom: 0;
-    background-image: linear-gradient(to left, var(--h1-indicator-color) 30%, transparent 70%);
+    background-image: linear-gradient(to left, var(--h1-accent-color) 30%, transparent 70%);
 }
 
 body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-1 .collapse-indicator.collapse-icon svg,
@@ -3266,22 +3240,12 @@ body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view)
 
 body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-1 .is-collapsed .collapse-indicator.collapse-icon svg,
 body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view) .is-collapsed h1 .collapse-indicator.collapse-icon svg {
-    background-color: var(--h1-indicator-color);
-    color: var(--h1-indicator-color);
-}
-
-.h2-color-default {
-    --h2-color: var(--text-normal) !important;
-    --h2-indicator-color: var(--color-orange) !important;
+    background-color: var(--h1-accent-color);
+    color: var(--h1-accent-color);
 }
 
 .h2-color-designated {
-    --h2-color: var(--color-orange) !important;
-    --h2-indicator-color: var(--h2-color);
-}
-
-.h2-color-customized {
-    --h2-indicator-color: var(--h2-color);
+    --h2-color: var(--h2-accent-color) !important;
 }
 
 body:not(.heading-indicator-off) .is-live-preview .HyperMD-header-2::before {
@@ -3291,7 +3255,7 @@ body:not(.heading-indicator-off) .is-live-preview .HyperMD-header-2::before {
     width: 3px;
     height: calc(1.2em - 8px);
     border-radius: var(--radius-m);
-    background-color: var(--h2-indicator-color);
+    background-color: var(--h2-accent-color);
     transform: translateY(4px);
 }
 
@@ -3303,7 +3267,7 @@ body:not(.heading-indicator-off) .markdown-preview-sizer>div>h2::before {
     width: 3px;
     height: calc(1.2em - 8px);
     border-radius: var(--radius-m);
-    background-color: var(--h2-indicator-color);
+    background-color: var(--h2-accent-color);
     position: absolute;
     top: 4px;
     left: 0px;
@@ -3318,7 +3282,7 @@ body.h2-divider-on :is(.markdown-preview-sizer>div>h2, .markdown-rendered>h2, .H
     right: 0px;
     opacity: 0.5;
     bottom: 0;
-    background-image: linear-gradient(to left, var(--h2-indicator-color) 30%, transparent 70%);
+    background-image: linear-gradient(to left, var(--h2-accent-color) 30%, transparent 70%);
 }
 
 
@@ -3331,24 +3295,13 @@ body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view)
 
 body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-2 .is-collapsed .collapse-indicator.collapse-icon svg,
 body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view) .is-collapsed h2 .collapse-indicator.collapse-icon svg {
-    background-color: var(--h2-indicator-color);
-    color: var(--h2-indicator-color);
-}
-
-.h3-color-default {
-    --h3-color: var(--text-normal) !important;
-    --h3-indicator-color: var(--color-yellow) !important;
+    background-color: var(--h2-accent-color);
+    color: var(--h2-accent-color);
 }
 
 .h3-color-designated {
-    --h3-color: var(--color-yellow) !important;
-    --h3-indicator-color: var(--h3-color);
+    --h3-color: var(--h3-accent-color) !important;
 }
-
-.h3-color-customized {
-    --h3-indicator-color: var(--h3-color);
-}
-
 
 body:not(.heading-indicator-off) .is-live-preview .HyperMD-header-3::before {
     margin-right: 6px;
@@ -3357,7 +3310,7 @@ body:not(.heading-indicator-off) .is-live-preview .HyperMD-header-3::before {
     width: 3px;
     height: calc(1.3em - 8px);
     border-radius: var(--radius-m);
-    background-color: var(--h3-indicator-color);
+    background-color: var(--h3-accent-color);
     transform: translateY(4px);
 }
 
@@ -3369,7 +3322,7 @@ body:not(.heading-indicator-off) .markdown-preview-sizer>div>h3::before {
     width: 3px;
     height: calc(1.3em - 8px);
     border-radius: var(--radius-m);
-    background-color: var(--h3-indicator-color);
+    background-color: var(--h3-accent-color);
     position: absolute;
     top: 4px;
     left: 0px;
@@ -3383,7 +3336,7 @@ body.h3-divider-on :is(.markdown-preview-sizer>div>h3, .markdown-rendered>h3, .H
     right: 0px;
     opacity: 0.5;
     bottom: 0;
-    background-image: linear-gradient(to left, var(--h3-indicator-color) 30%, transparent 70%);
+    background-image: linear-gradient(to left, var(--h3-accent-color) 30%, transparent 70%);
 }
 
 body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-3 .collapse-indicator.collapse-icon svg,
@@ -3395,22 +3348,12 @@ body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view)
 
 body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-3 .is-collapsed .collapse-indicator.collapse-icon svg,
 body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view) .is-collapsed h3 .collapse-indicator.collapse-icon svg {
-    background-color: var(--h3-indicator-color);
-    color: var(--h3-indicator-color);
-}
-
-.h4-color-default {
-    --h4-color: var(--text-normal) !important;
-    --h4-indicator-color: var(--color-green) !important;
+    background-color: var(--h3-accent-color);
+    color: var(--h3-accent-color);
 }
 
 .h4-color-designated {
-    --h4-color: var(--color-green) !important;
-    --h4-indicator-color: var(--h4-color);
-}
-
-.h4-color-customized {
-    --h4-indicator-color: var(--h4-color);
+    --h4-color: var(--h4-accent-color) !important;
 }
 
 body:not(.heading-indicator-off) .is-live-preview .HyperMD-header-4::before {
@@ -3420,7 +3363,7 @@ body:not(.heading-indicator-off) .is-live-preview .HyperMD-header-4::before {
     width: 3px;
     height: calc(1.4em - 8px);
     border-radius: var(--radius-m);
-    background-color: var(--h4-indicator-color);
+    background-color: var(--h4-accent-color);
     transform: translateY(4px);
 }
 
@@ -3432,7 +3375,7 @@ body:not(.heading-indicator-off) .markdown-preview-sizer>div>h4::before {
     width: 3px;
     height: calc(1.4em - 8px);
     border-radius: var(--radius-m);
-    background-color: var(--h4-indicator-color);
+    background-color: var(--h4-accent-color);
     position: absolute;
     top: 4px;
     left: 0px;
@@ -3447,7 +3390,7 @@ body.h4-divider-on :is(.markdown-rendered>h4, .markdown-preview-sizer>div>h4, .H
     right: 0px;
     opacity: 0.5;
     bottom: 0;
-    background-image: linear-gradient(to left, var(--h4-indicator-color) 30%, transparent 70%);
+    background-image: linear-gradient(to left, var(--h4-accent-color) 30%, transparent 70%);
 }
 
 body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-4 .collapse-indicator.collapse-icon svg,
@@ -3459,24 +3402,13 @@ body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view)
 
 body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-4 .is-collapsed .collapse-indicator.collapse-icon svg,
 body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view) .is-collapsed h4 .collapse-indicator.collapse-icon svg {
-    background-color: var(--h4-indicator-color);
-    color: var(--h4-indicator-color);
-}
-
-.h5-color-default {
-    --h5-color: var(--text-normal) !important;
-    --h5-indicator-color: var(--color-blue) !important;
+    background-color: var(--h4-accent-color);
+    color: var(--h4-accent-color);
 }
 
 .h5-color-designated {
-    --h5-color: var(--color-blue) !important;
-    --h5-indicator-color: var(--h5-color);
+    --h5-color: var(--h5-accent-color) !important;
 }
-
-.h5-color-customized {
-    --h5-indicator-color: var(--h5-color);
-}
-
 
 body:not(.heading-indicator-off) .is-live-preview .HyperMD-header-5::before {
     margin-right: 6px;
@@ -3485,7 +3417,7 @@ body:not(.heading-indicator-off) .is-live-preview .HyperMD-header-5::before {
     width: 3px;
     height: calc(1.5em - 8px);
     border-radius: var(--radius-m);
-    background-color: var(--h5-indicator-color);
+    background-color: var(--h5-accent-color);
     transform: translateY(4px);
 }
 
@@ -3497,7 +3429,7 @@ body:not(.heading-indicator-off) .markdown-preview-sizer>div>h5::before {
     width: 3px;
     height: calc(1.5em - 8px);
     border-radius: var(--radius-m);
-    background-color: var(--h5-indicator-color);
+    background-color: var(--h5-accent-color);
     position: absolute;
     top: 4px;
     left: 0px;
@@ -3512,7 +3444,7 @@ body.h5-divider-on :is(.markdown-rendered>h5, .markdown-preview-sizer>div>h5, .H
     right: 0px;
     opacity: 0.5;
     bottom: 0;
-    background-image: linear-gradient(to left, var(--h5-indicator-color) 30%, transparent 70%);
+    background-image: linear-gradient(to left, var(--h5-accent-color) 30%, transparent 70%);
 }
 
 body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-5 .collapse-indicator.collapse-icon svg,
@@ -3524,25 +3456,13 @@ body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view)
 
 body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-5 .is-collapsed .collapse-indicator.collapse-icon svg,
 body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view) .is-collapsed h5 .collapse-indicator.collapse-icon svg {
-    background-color: var(--h5-indicator-color);
-    color: var(--h5-indicator-color);
-}
-
-
-.h6-color-default {
-    --h6-color: var(--text-normal) !important;
-    --h6-indicator-color: var(--color-purple) !important;
+    background-color: var(--h5-accent-color);
+    color: var(--h5-accent-color);
 }
 
 .h6-color-designated {
-    --h6-color: var(--color-purple) !important;
-    --h6-indicator-color: var(--h6-color);
+    --h6-color: var(--h6-accent-color) !important;
 }
-
-.h6-color-customized {
-    --h6-indicator-color: var(--h6-color);
-}
-
 
 body:not(.heading-indicator-off) .is-live-preview .HyperMD-header-6::before {
     margin-right: 6px;
@@ -3551,7 +3471,7 @@ body:not(.heading-indicator-off) .is-live-preview .HyperMD-header-6::before {
     width: 3px;
     height: calc(1.5em - 8px);
     border-radius: var(--radius-m);
-    background-color: var(--h6-indicator-color);
+    background-color: var(--h6-accent-color);
     transform: translateY(4px);
 }
 
@@ -3563,7 +3483,7 @@ body:not(.heading-indicator-off) .markdown-preview-sizer>div>h6::before {
     width: 3px;
     height: calc(1.5em - 8px);
     border-radius: var(--radius-m);
-    background-color: var(--h6-indicator-color);
+    background-color: var(--h6-accent-color);
     position: absolute;
     top: 4px;
     left: 0px;
@@ -3578,7 +3498,7 @@ body.h6-divider-on :is(.markdown-rendered>h6, .markdown-preview-sizer>div>h6, .H
     right: 0px;
     opacity: 0.5;
     bottom: 0;
-    background-image: linear-gradient(to left, var(--h6-indicator-color) 30%, transparent 70%);
+    background-image: linear-gradient(to left, var(--h6-accent-color) 30%, transparent 70%);
 }
 
 
@@ -3592,8 +3512,8 @@ body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view)
 
 body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-6 .is-collapsed .collapse-indicator.collapse-icon svg,
 body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view) .is-collapsed h6 .collapse-indicator.collapse-icon svg {
-    background-color: var(--h6-indicator-color);
-    color: var(--h6-indicator-color);
+    background-color: var(--h6-accent-color);
+    color: var(--h6-accent-color);
 }
 
 
