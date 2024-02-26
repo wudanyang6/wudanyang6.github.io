@@ -3,7 +3,7 @@
     <title>dy_turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-02-24T11:54:36Z</updated>
+    <updated>2024-02-26T03:40:06Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -855,16 +855,16 @@ $zip-&amp;gt;close(); //关闭压缩包
                 obsidian-things3-today插件
                 
             </title>
-            <updated>2024-01-31T05:28:27.000Z</updated>
+            <updated>2024-02-26T03:39:29.000Z</updated>
             <id>https://wudanyang6.github.io//101 Tools/obsidian-things3-today插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
 &lt;p&gt;把之前的插件重新搞了搞，把乱七八糟的东西去掉了，然后提交了obsidian插件库&lt;/p&gt;
 &lt;p&gt;正在等着被review： &lt;a href=&quot;https://github.com/obsidianmd/obsidian-releases/pull/2997&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/obsidianmd/obsidian-releases/pull/2997&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;新录了一个gif：&lt;/p&gt;
-&lt;p&gt;图中可以看到和things3的Today列表联动还算是顺畅&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/things3-today-showcase.gif&quot; alt=&quot;things3-today-showcase.gif&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
+&lt;p&gt;新录了一个gif：&lt;br /&gt;
+见github的readme&lt;br /&gt;
+图中可以看到和things3的Today列表联动还算是顺畅&lt;br /&gt;
+&lt;a href=&quot;https://github.com/wudanyang6/obsidian-things3-today&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/wudanyang6/obsidian-things3-today&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//101 Tools/obsidian-things3-today插件/" >
