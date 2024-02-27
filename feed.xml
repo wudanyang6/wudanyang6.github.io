@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-02-27T02:41:00Z</updated>
+    <updated>2024-02-27T08:28:24Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -356,6 +356,34 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//card/算法新年祝福语/" >
+        </entry>
+        <entry>
+            <title>
+                创建一个chrome独立APP窗口
+                
+            </title>
+            <updated>2024-02-27T08:27:41.000Z</updated>
+            <id>https://wudanyang6.github.io//card/创建一个chrome独立APP窗口/</id>
+            <content type="html">
+                &lt;h1 id=&quot;chrome-app&quot; tabindex=&quot;-1&quot;&gt;创建一个chrome独立APP窗口&lt;/h1&gt;
+&lt;p&gt;创建出的窗口本质还是一个chrome网页，但是比较方便使用&lt;/p&gt;
+&lt;p&gt;按步骤操作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;点击chrome右上角的三个点&lt;/li&gt;
+&lt;li&gt;点击保存并分享&lt;/li&gt;
+&lt;li&gt;点击创建快捷方式&lt;/li&gt;
+&lt;li&gt;在弹窗中勾选&lt;code&gt;在窗口打开&lt;/code&gt;，点击创建&lt;/li&gt;
+&lt;li&gt;即可得到一个独立APP窗口&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-02-27_159.png&quot; alt=&quot;../attachs/clop_2024-02-27_159.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;弹窗出来之后，选择 &lt;code&gt;在窗口中打开&lt;/code&gt;&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-02-27_160.png&quot; alt=&quot;../attachs/clop_2024-02-27_160.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;就会得到一个独立软件一样的百度&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-02-27_161.png&quot; alt=&quot;../attachs/clop_2024-02-27_161.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/创建一个chrome独立APP窗口/" >
         </entry>
         <entry>
             <title>
