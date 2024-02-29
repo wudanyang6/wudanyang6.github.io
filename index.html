@@ -893,6 +893,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/软装-沙发/">软装-沙发 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/非暴力沟通/">非暴力沟通 </a>
                 </div>
             
@@ -1161,7 +1172,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-29T06:58:55.224Z';
+        const searchIndexDate = '2024-02-29T15:38:24.157Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1173,9 +1184,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-29T06:58:55.224Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-29T15:38:24.157Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-29T06:58:55.224Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-29T15:38:24.157Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1430,6 +1441,7 @@
 <p><a class="internal-link" target="" data-note-icon="" href="/card/About Me/">About Me</a></p>
 <h2 id="list" tabindex="-1">List</h2>
 <ul class="block-language-dataview">
+<li><a class="internal-link" target="" data-note-icon="" href="/card/软装-沙发/">软装-沙发</a>:  <em>(created: 2024-2-27)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#家">#家</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/card/创建一个chrome独立APP窗口/">创建一个chrome独立APP窗口</a>:  <em>(created: 2024-2-27)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#chrome">#chrome</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/game/原神挺好玩/">原神挺好玩</a>:  <em>(created: 2024-1-31)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/card/About Me/">About Me</a>:  <em>(created: 2024-1-30)</em></li>
