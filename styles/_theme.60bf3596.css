@@ -3166,6 +3166,21 @@ body {
     --h6-weight: 575;
 }
 
+body {
+    
+    --inline-title-text-transform: var(--h1-text-transform);
+    --h1-text-transform: unset;
+    --h2-text-transform: unset;
+    --h3-text-transform: unset;
+    --h4-text-transform: unset;
+    --h5-text-transform: unset;
+    --h6-text-transform: unset;
+}
+
+.inline-title {
+    text-transform: var(--inline-title-text-transform);
+}
+
 body:not(.inline-title-divider-remove) .inline-title:not(.mk-inline-title) {
     border-bottom: 1px solid var(--divider-color);
     padding-bottom: var(--size-4-3);
@@ -3187,6 +3202,14 @@ body:not(.heading-indicator-off) .markdown-preview-sizer>div>:is(h1, h2, h3, h4,
     text-indent: 9px;
 }
 
+
+h1,
+.markdown-rendered h1,
+.HyperMD-header-1,
+.inline-title[data-level='1'],
+.HyperMD-list-line .cm-header-1 {
+    text-transform: var(--h1-text-transform);
+}
 
 .h1-color-designated {
     --h1-color: var(--h1-accent-color) !important;
@@ -3240,6 +3263,14 @@ body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-1 .is-collapse
 body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view) .is-collapsed h1 .collapse-indicator.collapse-icon svg {
     background-color: var(--h1-accent-color);
     color: var(--h1-accent-color);
+}
+
+h2,
+.markdown-rendered h2,
+.HyperMD-header-2,
+.inline-title[data-level='2'],
+.HyperMD-list-line .cm-header-2 {
+    text-transform: var(--h2-text-transform);
 }
 
 .h2-color-designated {
@@ -3297,6 +3328,14 @@ body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view)
     color: var(--h2-accent-color);
 }
 
+h3,
+.markdown-rendered h3,
+.HyperMD-header-3,
+.inline-title[data-level='3'],
+.HyperMD-list-line .cm-header-3 {
+    text-transform: var(--h3-text-transform);
+}
+
 .h3-color-designated {
     --h3-color: var(--h3-accent-color) !important;
 }
@@ -3348,6 +3387,14 @@ body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-3 .is-collapse
 body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view) .is-collapsed h3 .collapse-indicator.collapse-icon svg {
     background-color: var(--h3-accent-color);
     color: var(--h3-accent-color);
+}
+
+h4,
+.markdown-rendered h4,
+.HyperMD-header-4,
+.inline-title[data-level='4'],
+.HyperMD-list-line .cm-header-4 {
+    text-transform: var(--h4-text-transform);
 }
 
 .h4-color-designated {
@@ -3404,6 +3451,14 @@ body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view)
     color: var(--h4-accent-color);
 }
 
+h5,
+.markdown-rendered h5,
+.HyperMD-header-5,
+.inline-title[data-level='5'],
+.HyperMD-list-line .cm-header-5 {
+    text-transform: var(--h5-text-transform);
+}
+
 .h5-color-designated {
     --h5-color: var(--h5-accent-color) !important;
 }
@@ -3456,6 +3511,14 @@ body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header-5 .is-collapse
 body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view) .is-collapsed h5 .collapse-indicator.collapse-icon svg {
     background-color: var(--h5-accent-color);
     color: var(--h5-accent-color);
+}
+
+h6,
+.markdown-rendered h6,
+.HyperMD-header-6,
+.inline-title[data-level='6'],
+.HyperMD-list-line .cm-header-6 {
+    text-transform: var(--h6-text-transform);
 }
 
 .h6-color-designated {
@@ -3513,6 +3576,7 @@ body:not(.collapse-icon-restore) :is(.markdown-rendered, .markdown-preview-view)
     background-color: var(--h6-accent-color);
     color: var(--h6-accent-color);
 }
+
 
 
 

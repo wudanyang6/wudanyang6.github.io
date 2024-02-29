@@ -56,7 +56,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.418dbccb.css" rel="stylesheet">
+    <link href="/styles/_theme.60bf3596.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
@@ -1161,7 +1161,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-28T14:25:30.147Z';
+        const searchIndexDate = '2024-02-29T06:58:55.224Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1173,9 +1173,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-28T14:25:30.147Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-29T06:58:55.224Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-28T14:25:30.147Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-29T06:58:55.224Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1430,6 +1430,7 @@
 <p><a class="internal-link" target="" data-note-icon="" href="/card/About Me/">About Me</a></p>
 <h2 id="list" tabindex="-1">List</h2>
 <ul class="block-language-dataview">
+<li><a class="internal-link" target="" data-note-icon="" href="/card/创建一个chrome独立APP窗口/">创建一个chrome独立APP窗口</a>:  <em>(created: 2024-2-27)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#chrome">#chrome</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/game/原神挺好玩/">原神挺好玩</a>:  <em>(created: 2024-1-31)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/card/About Me/">About Me</a>:  <em>(created: 2024-1-30)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件</a>:  <em>(created: 2024-1-29)</em></li>
@@ -1443,6 +1444,8 @@
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/Things 工作流/">Things 工作流</a>:  <em>(created: 2023-10-9)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka</a>:  <em>(created: 2023-9-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#kafka">#kafka</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#学习">#学习</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a>:  <em>(created: 2023-5-9)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-1014. 最佳观光组合/">leetcode-1014. 最佳观光组合</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-53. 最大子数组和/">leetcode-53. 最大子数组和</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#dp">#dp</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/mac/mac-合上盖子不断网/">mac-合上盖子不断网</a>:  <em>(created: 2023-2-3)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/linux-查看内存占用情况/">linux-查看内存占用情况</a>:  <em>(created: 2023-1-4)</em></li>
