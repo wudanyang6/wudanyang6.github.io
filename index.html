@@ -860,6 +860,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/vscode git 只暂存部分改动/">vscode git 只暂存部分改动 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/card/创建一个chrome独立APP窗口/">创建一个chrome独立APP窗口 </a>
                 </div>
             
@@ -1172,7 +1183,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-29T15:38:24.157Z';
+        const searchIndexDate = '2024-02-29T15:41:04.624Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1184,9 +1195,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-29T15:38:24.157Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-29T15:41:04.624Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-29T15:38:24.157Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-29T15:41:04.624Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1455,6 +1466,7 @@
 <li><a class="internal-link" target="" data-note-icon="" href="/card/linux-wait/">linux-wait</a>:  <em>(created: 2023-12-11)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/Things 工作流/">Things 工作流</a>:  <em>(created: 2023-10-9)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka</a>:  <em>(created: 2023-9-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#kafka">#kafka</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#学习">#学习</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/card/vscode git 只暂存部分改动/">vscode git 只暂存部分改动</a>:  <em>(created: 2023-6-19)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a>:  <em>(created: 2023-5-9)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-1014. 最佳观光组合/">leetcode-1014. 最佳观光组合</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-53. 最大子数组和/">leetcode-53. 最大子数组和</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#dp">#dp</a></li>
