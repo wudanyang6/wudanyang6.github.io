@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-29T15:41:04.624Z';
+        const searchIndexDate = '2024-03-02T15:07:17.128Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-29T15:41:04.624Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T15:07:17.128Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-29T15:41:04.624Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T15:07:17.128Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -526,7 +526,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-29T14:23:53+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-26T11:39:29+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-29T14:23:53+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-02T23:06:25+08:00"></span></div></div></div>
       
       
       </header>
@@ -537,8 +537,11 @@
 <p>正在等着被review： <a href="https://github.com/obsidianmd/obsidian-releases/pull/2997" target="_blank" class="external-link">https://github.com/obsidianmd/obsidian-releases/pull/2997</a></p>
 <p>新录了一个gif：<br>
 见github的readme<br>
-图中可以看到和things3的Today列表联动还算是顺畅<br>
-<a href="https://github.com/wudanyang6/obsidian-things3-today" target="_blank" class="external-link">https://github.com/wudanyang6/obsidian-things3-today</a></p>
+图中可以看到和things3的Today列表联动还算是顺畅</p>
+<p><a href="https://github.com/wudanyang6/obsidian-things3-today?tab=readme-ov-file" target="_blank" class="external-link">wudanyang6/obsidian-things3-today</a></p>
+<p>pr 审核通过了</p>
+<p>跟着操作手册在论坛上面发了分享贴： <a href="https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916" target="_blank" class="external-link">https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916</a></p>
+<p>插件可以在这里找到： <a href="https://obsidian.md/plugins?id=things3-today" target="_blank" class="external-link">Obsidian Plugin - Things3 Today</a></p>
 
       
       

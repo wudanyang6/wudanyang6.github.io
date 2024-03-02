@@ -3,8 +3,87 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-02-29T15:41:05Z</updated>
+    <updated>2024-03-02T15:07:17Z</updated>
     <id>https://wudanyang6.github.io/</id>
+        <entry>
+            <title>
+                202103251606 - linux-翻墙
+                
+            </title>
+            <updated>2024-02-29T15:44:52.000Z</updated>
+            <id>https://wudanyang6.github.io//永久卡片/202103251606 - linux-翻墙/</id>
+            <content type="html">
+                &lt;h1 id=&quot;clash-x&quot; tabindex=&quot;-1&quot;&gt;安装 ClashX&lt;/h1&gt;
+&lt;p&gt;我的机器是树莓派，底层架构是 arm 的，所以下载 arm 版本的安装包：&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Dreamacro/clash/releases/download/v1.4.2/clash-linux-armv8-v1.4.2.gz&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/Dreamacro/clash/releases/download/v1.4.2/clash-linux-armv8-v1.4.2.gz&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;gunzip clash-linux-armv8-v1.4.2.gz
+sudo mv clash-linux-armv8-v1.4.2 /usr/bin/clash
+
+# 下载你的配置，这里我是用的是 nsfwcloud.com 的服务
+wget -O config.yml &amp;quot;https://rxl-nc.xyz/link/{your.token}?clash=1&amp;amp;log-level=info&amp;quot;
+
+# 后台运行
+nohup clash -f config.yml &amp;amp; 
+
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;最终效果&quot; tabindex=&quot;-1&quot;&gt;最终效果&lt;/h2&gt;
+&lt;p&gt;翻个墙&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020210325154154.png&quot; alt=&quot;Pasted image 20210325154154.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;如果不想要 info 日志，可以在 &lt;code&gt;config.yml&lt;/code&gt; 中将 log-level 修改成 &lt;code&gt;log-level: warning&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://nsfwcloud.com/user/tutorial?os=linux&amp;amp;client=clash##&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://nsfwcloud.com/user/tutorial?os=linux&amp;amp;client=clash##&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;output&quot; tabindex=&quot;-1&quot;&gt;output&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/wudanyang/p/15142036.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.cnblogs.com/wudanyang/p/15142036.html&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//永久卡片/202103251606 - linux-翻墙/" >
+        </entry>
+        <entry>
+            <title>
+                软装-沙发
+                
+            </title>
+            <updated>2024-02-29T15:37:43.000Z</updated>
+            <id>https://wudanyang6.github.io//家/软装-沙发/</id>
+            <content type="html">
+                &lt;h1 id=&quot;软装-沙发&quot; tabindex=&quot;-1&quot;&gt;软装-沙发&lt;/h1&gt;
+&lt;h2 id=&quot;材质&quot; tabindex=&quot;-1&quot;&gt;材质&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;布艺&lt;/li&gt;
+&lt;li&gt;科技布？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;填充物&quot; tabindex=&quot;-1&quot;&gt;填充物&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;一体成型&lt;/li&gt;
+&lt;li&gt;海绵密度高于50&lt;/li&gt;
+&lt;li&gt;海绵加羽绒&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;尺寸&quot; tabindex=&quot;-1&quot;&gt;尺寸&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;坐深65cm以上&lt;/li&gt;
+&lt;li&gt;坐高40cm左右&lt;/li&gt;
+&lt;li&gt;靠背高度55cm以上&lt;/li&gt;
+&lt;li&gt;长度3.2-3.5米&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;框架&quot; tabindex=&quot;-1&quot;&gt;框架&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;蛇形弹簧&lt;/li&gt;
+&lt;li&gt;实木框架&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;封底&quot; tabindex=&quot;-1&quot;&gt;封底&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;布艺封底&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;颜色&quot; tabindex=&quot;-1&quot;&gt;颜色&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;深色（不容易翻车）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//家/软装-沙发/" >
+        </entry>
         <entry>
             <title>
                 文件描述符
@@ -315,51 +394,6 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
         </entry>
         <entry>
             <title>
-                软装-沙发
-                
-            </title>
-            <updated>2024-02-29T15:37:43.000Z</updated>
-            <id>https://wudanyang6.github.io//card/软装-沙发/</id>
-            <content type="html">
-                &lt;h1 id=&quot;软装-沙发&quot; tabindex=&quot;-1&quot;&gt;软装-沙发&lt;/h1&gt;
-&lt;h2 id=&quot;材质&quot; tabindex=&quot;-1&quot;&gt;材质&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;布艺&lt;/li&gt;
-&lt;li&gt;科技布？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;填充物&quot; tabindex=&quot;-1&quot;&gt;填充物&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;一体成型&lt;/li&gt;
-&lt;li&gt;海绵密度高于50&lt;/li&gt;
-&lt;li&gt;海绵加羽绒&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;尺寸&quot; tabindex=&quot;-1&quot;&gt;尺寸&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;坐深65cm以上&lt;/li&gt;
-&lt;li&gt;坐高40cm左右&lt;/li&gt;
-&lt;li&gt;靠背高度55cm以上&lt;/li&gt;
-&lt;li&gt;长度3.2-3.5米&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;框架&quot; tabindex=&quot;-1&quot;&gt;框架&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;蛇形弹簧&lt;/li&gt;
-&lt;li&gt;实木框架&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;封底&quot; tabindex=&quot;-1&quot;&gt;封底&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;布艺封底&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;颜色&quot; tabindex=&quot;-1&quot;&gt;颜色&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;深色（不容易翻车）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/软装-沙发/" >
-        </entry>
-        <entry>
-            <title>
                 网络-最多有多少个a类、b类和c类网络号
                 
             </title>
@@ -404,6 +438,21 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
         </entry>
         <entry>
             <title>
+                快速上取整
+                
+            </title>
+            <updated>2024-02-29T15:43:12.000Z</updated>
+            <id>https://wudanyang6.github.io//card/快速上取整/</id>
+            <content type="html">
+                &lt;h1 id=&quot;快速上取整&quot; tabindex=&quot;-1&quot;&gt;快速上取整&lt;/h1&gt;
+&lt;p&gt;正整数的情况下， &lt;code&gt;a/b&lt;/code&gt;  上取整可以使用 :&lt;br /&gt;
+&lt;code&gt;(a+b-1)/b&lt;/code&gt;  快速计算，适用于强类型语言&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/快速上取整/" >
+        </entry>
+        <entry>
+            <title>
                 创建一个chrome独立APP窗口
                 
             </title>
@@ -435,7 +484,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 vscode git 只暂存部分改动
                 
             </title>
-            <updated>2024-02-29T15:40:07.000Z</updated>
+            <updated>2024-02-29T15:41:01.000Z</updated>
             <id>https://wudanyang6.github.io//card/vscode git 只暂存部分改动/</id>
             <content type="html">
                 &lt;h1 id=&quot;vscode-git&quot; tabindex=&quot;-1&quot;&gt;vscode git 只暂存部分改动&lt;/h1&gt;
@@ -608,7 +657,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;list&quot; tabindex=&quot;-1&quot;&gt;List&lt;/h2&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E8%BD%AF%E8%A3%85-%E6%B2%99%E5%8F%91/&quot;&gt;软装-沙发&lt;/a&gt;:  &lt;em&gt;(created: 2024-2-27)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#家&quot;&gt;#家&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/%E5%AE%B6/%E8%BD%AF%E8%A3%85-%E6%B2%99%E5%8F%91/&quot;&gt;软装-沙发&lt;/a&gt;:  &lt;em&gt;(created: 2024-2-27)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#家&quot;&gt;#家&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAchrome%E7%8B%AC%E7%AB%8BAPP%E7%AA%97%E5%8F%A3/&quot;&gt;创建一个chrome独立APP窗口&lt;/a&gt;:  &lt;em&gt;(created: 2024-2-27)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#chrome&quot;&gt;#chrome&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/game/%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;原神挺好玩&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-31)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-30)&lt;/em&gt;&lt;/li&gt;
@@ -616,6 +665,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-28)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Home dy_turbo&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-28)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/obsidian/obsidian%20%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%94%AF%E6%8C%81%E7%9A%84ICON/&quot;&gt;obsidian 开发过程支持的ICON&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-25)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%BF%AB%E9%80%9F%E4%B8%8A%E5%8F%96%E6%95%B4/&quot;&gt;快速上取整&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-22)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#算法&quot;&gt;#算法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-19)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95%E6%96%B0%E5%B9%B4%E7%A5%9D%E7%A6%8F%E8%AF%AD/&quot;&gt;算法新年祝福语&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-16)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-15)&lt;/em&gt;&lt;/li&gt;
@@ -651,6 +701,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/linux-man%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/&quot;&gt;linux-man命令使用&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-7)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/&quot;&gt;vscode 调试nginx代码&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-25)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/202103251606%20-%20linux-%E7%BF%BB%E5%A2%99/&quot;&gt;202103251606 - linux-翻墙&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-25)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/%E6%B0%B8%E4%B9%85%E5%8D%A1%E7%89%87/202103251606%20-%20linux-%E7%BF%BB%E5%A2%99/&quot;&gt;202103251606 - linux-翻墙&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-25)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/%E6%A8%A1%E6%9D%BF/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%A8%A1%E6%9D%BF/&quot;&gt;滑动窗口模板&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-6)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1037,7 +1088,7 @@ fn 为最大值&lt;/p&gt;
                 obsidian-things3-today插件
                 
             </title>
-            <updated>2024-02-26T03:39:29.000Z</updated>
+            <updated>2024-03-02T15:06:25.000Z</updated>
             <id>https://wudanyang6.github.io//101 Tools/obsidian-things3-today插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
@@ -1045,8 +1096,11 @@ fn 为最大值&lt;/p&gt;
 &lt;p&gt;正在等着被review： &lt;a href=&quot;https://github.com/obsidianmd/obsidian-releases/pull/2997&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/obsidianmd/obsidian-releases/pull/2997&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;新录了一个gif：&lt;br /&gt;
 见github的readme&lt;br /&gt;
-图中可以看到和things3的Today列表联动还算是顺畅&lt;br /&gt;
-&lt;a href=&quot;https://github.com/wudanyang6/obsidian-things3-today&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/wudanyang6/obsidian-things3-today&lt;/a&gt;&lt;/p&gt;
+图中可以看到和things3的Today列表联动还算是顺畅&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/wudanyang6/obsidian-things3-today?tab=readme-ov-file&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;wudanyang6/obsidian-things3-today&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;pr 审核通过了&lt;/p&gt;
+&lt;p&gt;跟着操作手册在论坛上面发了分享贴： &lt;a href=&quot;https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;插件可以在这里找到： &lt;a href=&quot;https://obsidian.md/plugins?id=things3-today&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Plugin - Things3 Today&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//101 Tools/obsidian-things3-today插件/" >

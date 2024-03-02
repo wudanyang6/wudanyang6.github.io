@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-29T15:41:04.624Z';
+        const searchIndexDate = '2024-03-02T15:07:17.128Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-29T15:41:04.624Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T15:07:17.128Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-29T15:41:04.624Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T15:07:17.128Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -526,7 +526,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-06-19T13:32:23+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-29T23:40:07+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-06-19T13:32:23+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-29T23:41:01+08:00"></span></div></div></div>
       
       
       </header>
@@ -534,7 +534,23 @@
       
       <h1 id="vscode-git" tabindex="-1">vscode git 只暂存部分改动</h1>
 <p>可以只暂存这部分改动<br>
-<img src="/img/user/attachs/Pasted%20image%2020230619133256.png" alt="../attachs/Pasted image 20230619133256.png"></p>
+<picture src="/img/user/attachs/Pasted%20image%2020230619133256.png" alt="../attachs/Pasted image 20230619133256.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/49sL9zb2PZ-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/49sL9zb2PZ-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/49sL9zb2PZ-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/49sL9zb2PZ-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/Pasted%20image%2020230619133256.png"
+      alt="../attachs/Pasted image 20230619133256.png"
+      width=""
+      ></picture></p>
 <h2 id="reference" tabindex="-1">Reference</h2>
 <p><a href="https://stackoverflow.com/questions/34730585/how-can-i-commit-some-changes-to-a-file-but-not-others-in-vscode" target="_blank" class="external-link">visual studio code - How can I commit some changes to a file, but not others, in VSCode? - Stack Overflow</a></p>
 

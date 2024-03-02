@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>软装-沙发</title>
+    <title>202103251606 - linux-翻墙</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-29T15:41:04.624Z';
+        const searchIndexDate = '2024-03-02T15:07:17.128Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-29T15:41:04.624Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T15:07:17.128Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-29T15:41:04.624Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T15:07:17.128Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -517,7 +517,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">软装-沙发</h1>
+          <h1 data-note-icon="">202103251606 - linux-翻墙</h1>
         
         <div class="header-meta">
           
@@ -527,50 +527,55 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #家
+                    #linux
                   </a>
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-02-27T17:58:38+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-29T23:37:43+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-03-25T16:06:38+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-29T23:44:52+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="软装-沙发" tabindex="-1">软装-沙发</h1>
-<h2 id="材质" tabindex="-1">材质</h2>
-<ul>
-<li>布艺</li>
-<li>科技布？</li>
-</ul>
-<h2 id="填充物" tabindex="-1">填充物</h2>
-<ul>
-<li>一体成型</li>
-<li>海绵密度高于50</li>
-<li>海绵加羽绒</li>
-</ul>
-<h2 id="尺寸" tabindex="-1">尺寸</h2>
-<ul>
-<li>坐深65cm以上</li>
-<li>坐高40cm左右</li>
-<li>靠背高度55cm以上</li>
-<li>长度3.2-3.5米</li>
-</ul>
-<h2 id="框架" tabindex="-1">框架</h2>
-<ul>
-<li>蛇形弹簧</li>
-<li>实木框架</li>
-</ul>
-<h2 id="封底" tabindex="-1">封底</h2>
-<ul>
-<li>布艺封底</li>
-</ul>
-<h2 id="颜色" tabindex="-1">颜色</h2>
-<ul>
-<li>深色（不容易翻车）</li>
-</ul>
-<h2 id="reference" tabindex="-1">Reference</h2>
+      <h1 id="clash-x" tabindex="-1">安装 ClashX</h1>
+<p>我的机器是树莓派，底层架构是 arm 的，所以下载 arm 版本的安装包：<br>
+<a href="https://github.com/Dreamacro/clash/releases/download/v1.4.2/clash-linux-armv8-v1.4.2.gz" target="_blank" class="external-link">https://github.com/Dreamacro/clash/releases/download/v1.4.2/clash-linux-armv8-v1.4.2.gz</a></p>
+<pre><code class="language-shell">gunzip clash-linux-armv8-v1.4.2.gz
+sudo mv clash-linux-armv8-v1.4.2 /usr/bin/clash
+
+# 下载你的配置，这里我是用的是 nsfwcloud.com 的服务
+wget -O config.yml &quot;https://rxl-nc.xyz/link/{your.token}?clash=1&amp;log-level=info&quot;
+
+# 后台运行
+nohup clash -f config.yml &amp; 
+
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+</code></pre>
+<h2 id="最终效果" tabindex="-1">最终效果</h2>
+<p>翻个墙<br>
+<picture src="/img/user/attachs/Pasted%20image%2020210325154154.png" alt="Pasted image 20210325154154.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/tOfCg66_1k-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/tOfCg66_1k-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/tOfCg66_1k-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/tOfCg66_1k-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/Pasted%20image%2020210325154154.png"
+      alt="Pasted image 20210325154154.png"
+      width=""
+      ></picture></p>
+<p>如果不想要 info 日志，可以在 <code>config.yml</code> 中将 log-level 修改成 <code>log-level: warning</code></p>
+<h1 id="参考" tabindex="-1">参考</h1>
+<p><a href="https://nsfwcloud.com/user/tutorial?os=linux&amp;client=clash##" target="_blank" class="external-link">https://nsfwcloud.com/user/tutorial?os=linux&amp;client=clash##</a></p>
+<h1 id="output" tabindex="-1">output</h1>
+<p><a href="https://www.cnblogs.com/wudanyang/p/15142036.html" target="_blank" class="external-link">https://www.cnblogs.com/wudanyang/p/15142036.html</a></p>
 
       
       
@@ -835,31 +840,19 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#软装-沙发">软装-沙发</a>
+                    <li><a href="#clash-x">安装 ClashX</a>
             
                 <ol>
                     
-                    <li><a href="#材质">材质</a>
-            		</li>
-
-                    <li><a href="#填充物">填充物</a>
-            		</li>
-
-                    <li><a href="#尺寸">尺寸</a>
-            		</li>
-
-                    <li><a href="#框架">框架</a>
-            		</li>
-
-                    <li><a href="#封底">封底</a>
-            		</li>
-
-                    <li><a href="#颜色">颜色</a>
-            		</li>
-
-                    <li><a href="#reference">Reference</a>
+                    <li><a href="#最终效果">最终效果</a>
             		</li>
                 </ol>
+            		</li>
+
+                    <li><a href="#参考">参考</a>
+            		</li>
+
+                    <li><a href="#output">output</a>
             		</li>
                 </ol>
             </nav>
