@@ -634,8 +634,8 @@ body.background-underlying-secondary-dark.theme-dark {
     --background-underlying: var(--background-secondary) !important;
 }
 
-body.background-underlying-defalut-light.theme-light,
-body.background-underlying-defalut-dark.theme-dark {
+body.background-underlying-default-light.theme-light,
+body.background-underlying-default-dark.theme-dark {
     --background-underlying: var(--background-tertiary) !important;
 }
 

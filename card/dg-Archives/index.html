@@ -56,7 +56,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.680f47d4.css" rel="stylesheet">
+    <link href="/styles/_theme.895324bc.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-08T09:07:31.176Z';
+        const searchIndexDate = '2024-03-08T13:45:55.670Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-08T09:07:31.176Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-08T13:45:55.670Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-08T09:07:31.176Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-08T13:45:55.670Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -543,7 +543,7 @@
 <li><a class="internal-link" target="" data-note-icon="" href="/card/About Me/">About Me</a>:  <em>(created: 2024-1-30)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件</a>:  <em>(created: 2024-1-29)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a>:  <em>(created: 2024-1-28)</em></li>
-<li><a class="internal-link is-unresolved" href="/404" target="">Home dy-turbo</a>:  <em>(created: 2024-1-28)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/">0 Home dy-turbo</a>:  <em>(created: 2024-1-28)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/obsidian/obsidian 开发过程支持的ICON/">obsidian 开发过程支持的ICON</a>:  <em>(created: 2024-1-25)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/card/快速上取整/">快速上取整</a>:  <em>(created: 2024-1-22)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#算法">#算法</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/10x程序员工作法/">10x程序员工作法</a>:  <em>(created: 2024-1-19)</em></li>
@@ -554,6 +554,7 @@
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka</a>:  <em>(created: 2023-9-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#kafka">#kafka</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#学习">#学习</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/card/vscode git 只暂存部分改动/">vscode git 只暂存部分改动</a>:  <em>(created: 2023-6-19)</em></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a>:  <em>(created: 2023-5-9)</em></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/Excalidraw/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw</a>:  <em>(created: 2023-4-18)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#excalidraw">#excalidraw</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-1014. 最佳观光组合/">leetcode-1014. 最佳观光组合</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-53. 最大子数组和/">leetcode-53. 最大子数组和</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#dp">#dp</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>

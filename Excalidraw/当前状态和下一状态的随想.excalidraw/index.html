@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>Nginx 进程模型-整体架构</title>
+    <title>当前状态和下一状态的随想.excalidraw</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -517,7 +517,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Nginx 进程模型-整体架构</h1>
+          <h1 data-note-icon="">当前状态和下一状态的随想.excalidraw</h1>
         
         <div class="header-meta">
           
@@ -527,45 +527,18 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #nginx
+                    #excalidraw
                   </a>
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-04-14T13:14:29+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-31T13:28:34+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-04-18T22:39:52+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-08T16:23:47+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="nginx" tabindex="-1">nginx 进程模型-整体架构</h1>
-<p><picture src="/img/user/100%20Programmer/c/nginx/713751-20221106220927618-2090658482.png" alt="713751-20221106220927618-2090658482.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/LNI6sR4dfk-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/LNI6sR4dfk-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/LNI6sR4dfk-700.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/LNI6sR4dfk-700.jpeg"
-        ><img       class=""
-      src="/img/user/100%20Programmer/c/nginx/713751-20221106220927618-2090658482.png"
-      alt="713751-20221106220927618-2090658482.png"
-      width=""
-      ></picture></p>
-<p>从网上找了一个非常好的图片，从图中可以看到很多东西</p>
-<ol>
-<li><code>Nginx</code> 会生成多个进程</li>
-<li><code>worker</code> 使用了 <code>io</code> 多路复用的事件驱动框架</li>
-<li><code>worker</code> 内部有很多模块</li>
-<li><code>worker</code> 处理磁盘 <code>I/O</code> 时，使用了标准 <code>I/O</code> ， <code>sendfile</code> ， <code>AIO</code> ，<code>mmap</code> 等 <code>I/O</code> 技术</li>
-<li><code>Cache loader</code> 和 <code>Cache manager</code> 操作 proxy cache</li>
-<li>后端支持多种基于 <code>tcp</code> 的网络协议</li>
-</ol>
-
+      <style> .container {font-family: sans-serif; text-align: center;} .button-wrapper button {z-index: 1;height: 40px; width: 100px; margin: 10px;padding: 5px;} .excalidraw .App-menu_top .buttonList { display: flex;} .excalidraw-wrapper { height: 800px; margin: 50px; position: relative;} :root[dir="ltr"] .excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left {transform: none;} </style><script src="https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js"></script><script src="https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw@0/dist/excalidraw.production.min.js"></script><div id="当前状态和下一状态的随想excalidraw.md"></div><script>(function(){const InitialData={"type":"excalidraw","version":2,"source":"https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23","elements":[{"type":"rectangle","version":123,"versionNonce":840223705,"isDeleted":false,"id":"XgjAPiQ47fqEwl-LpfWxA","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-120.83203125,"y":-187.431640625,"strokeColor":"#000000","backgroundColor":"transparent","width":153,"height":97,"seed":1809355819,"groupIds":[],"frameId":null,"roundness":{"type":3},"boundElements":[{"type":"text","id":"lcXa25o6"},{"id":"90yz_m0kH4RaMUXRgR-Br","type":"arrow"}],"updated":1694187112200,"link":null,"locked":false},{"type":"text","version":106,"versionNonce":150017138,"isDeleted":false,"id":"lcXa25o6","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-84.33203125,"y":-163.931640625,"strokeColor":"#000000","backgroundColor":"transparent","width":80,"height":50,"seed":1671257323,"groupIds":[],"frameId":null,"roundness":null,"boundElements":[],"updated":1709886216070,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"\n当前状态","rawText":"\n当前状态","textAlign":"center","verticalAlign":"middle","containerId":"XgjAPiQ47fqEwl-LpfWxA","originalText":"\n当前状态","lineHeight":1.25,"baseline":43},{"type":"rectangle","version":89,"versionNonce":223660165,"isDeleted":false,"id":"GZ7hQS78e5Q1siEvK33Lx","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":247.68359375,"y":-186.693359375,"strokeColor":"#000000","backgroundColor":"transparent","width":153,"height":97,"seed":1586660869,"groupIds":[],"frameId":null,"roundness":{"type":3},"boundElements":[{"id":"90yz_m0kH4RaMUXRgR-Br","type":"arrow"},{"type":"text","id":"Ymxj0WWT"}],"updated":1681829010086,"link":null,"locked":false},{"type":"text","version":80,"versionNonce":617185317,"isDeleted":false,"id":"Ymxj0WWT","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":284.18359375,"y":-150.693359375,"strokeColor":"#000000","backgroundColor":"transparent","width":80,"height":25,"seed":1849985227,"groupIds":[],"frameId":null,"roundness":null,"boundElements":[],"updated":1681829015527,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"下一状态","rawText":"下一状态","textAlign":"center","verticalAlign":"middle","containerId":"GZ7hQS78e5Q1siEvK33Lx","originalText":"下一状态","lineHeight":1.25,"baseline":18},{"type":"arrow","version":328,"versionNonce":215536942,"isDeleted":false,"id":"90yz_m0kH4RaMUXRgR-Br","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":38.5078125,"y":-133.77581768475125,"strokeColor":"#000000","backgroundColor":"transparent","width":197.88671875,"height":1.1447743969327462,"seed":343810891,"groupIds":[],"frameId":null,"roundness":{"type":2},"boundElements":[],"updated":1709905513490,"link":null,"locked":false,"startBinding":{"elementId":"XgjAPiQ47fqEwl-LpfWxA","gap":6.33984375,"focus":0.11513603277860894},"endBinding":{"elementId":"GZ7hQS78e5Q1siEvK33Lx","gap":11.2890625,"focus":-0.056492919794349276},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[197.88671875,-1.1447743969327462]]},{"type":"text","version":92,"versionNonce":449696485,"isDeleted":false,"id":"LIFeX9WH","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":41.53515625,"y":-169.86328125,"strokeColor":"#000000","backgroundColor":"transparent","width":180,"height":25,"seed":591423115,"groupIds":[],"frameId":null,"roundness":null,"boundElements":[],"updated":1681829151102,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"中间可能过了亿万年","rawText":"中间可能过了亿万年","textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"中间可能过了亿万年","lineHeight":1.25,"baseline":18}],"appState":{"theme":"light","viewBackgroundColor":"#ffffff","currentItemStrokeColor":"#000000","currentItemBackgroundColor":"transparent","currentItemFillStyle":"hachure","currentItemStrokeWidth":1,"currentItemStrokeStyle":"solid","currentItemRoughness":1,"currentItemOpacity":100,"currentItemFontFamily":1,"currentItemFontSize":20,"currentItemTextAlign":"left","currentItemStartArrowhead":null,"currentItemEndArrowhead":"arrow","scrollX":368.49609375,"scrollY":520.8359375,"zoom":{"value":1},"currentItemRoundness":"round","gridSize":null,"gridColor":{"Bold":"#C9C9C9FF","Regular":"#EDEDEDFF"},"colorPalette":{},"currentStrokeOptions":null,"previousGridSize":null,"frameRendering":{"enabled":true,"clip":true,"name":true,"outline":true}},"files":{}};InitialData.scrollToContent=true;App=()=>{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[t]),React.createElement(React.Fragment,null,React.createElement("div",{className:"excalidraw-wrapper",ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById("当前状态和下一状态的随想excalidraw.md");ReactDOM.render(React.createElement(App),excalidrawWrapper);})();</script>
       
       
         <hr>
@@ -818,23 +791,6 @@
 
                   
                         
-                        
-                              <div class="toc">
-                                    <div class="toc-title-container">
-                                          <div class="toc-title">
-                                                On this page
-                                          </div>
-                                    </div>
-                                    <div class="toc-container">
-                                          <nav class="toc">
-                <ol>
-                    
-                    <li><a href="#nginx">nginx 进程模型-整体架构</a>
-            		</li>
-                </ol>
-            </nav>
-                                    </div>
-                              </div>
                         
 
                   
