@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-08T13:45:55.670Z';
+        const searchIndexDate = '2024-03-08T13:47:09.804Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-08T13:45:55.670Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-08T13:47:09.804Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-08T13:45:55.670Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-08T13:47:09.804Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -582,7 +582,6 @@
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/linux-man命令使用/">linux-man命令使用</a>:  <em>(created: 2021-4-7)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/vscode 调试nginx代码/">vscode 调试nginx代码</a>:  <em>(created: 2021-3-25)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#nginx">#nginx</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/202103251606 - linux-翻墙/">202103251606 - linux-翻墙</a>:  <em>(created: 2021-3-25)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/永久卡片/202103251606 - linux-翻墙/">202103251606 - linux-翻墙</a>:  <em>(created: 2021-3-25)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
 <li><a class="internal-link" target="" data-note-icon="" href="/300 Code/300 Leetcode/模板/滑动窗口模板/">滑动窗口模板</a>:  <em>(created: 2021-3-6)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
 </ul>
 
