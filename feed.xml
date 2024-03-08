@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-03-08T09:05:45Z</updated>
+    <updated>2024-03-08T09:07:31Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -367,7 +367,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
                 心得
                 
             </title>
-            <updated>2024-03-08T08:56:34.000Z</updated>
+            <updated>2024-03-08T08:59:26.000Z</updated>
             <id>https://wudanyang6.github.io//card/心得/</id>
             <content type="html">
                 &lt;h1 id=&quot;心得&quot; tabindex=&quot;-1&quot;&gt;心得&lt;/h1&gt;
@@ -514,7 +514,7 @@ done
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-30)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-29)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-28)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Home dy_turbo&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-28)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Home dy-turbo&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-28)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/obsidian/obsidian%20%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%94%AF%E6%8C%81%E7%9A%84ICON/&quot;&gt;obsidian 开发过程支持的ICON&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-25)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%BF%AB%E9%80%9F%E4%B8%8A%E5%8F%96%E6%95%B4/&quot;&gt;快速上取整&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-22)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#算法&quot;&gt;#算法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-19)&lt;/em&gt;&lt;/li&gt;
@@ -626,25 +626,6 @@ $zip-&amp;gt;close(); //关闭压缩包
 
             </content>
             <link href="https://wudanyang6.github.io//card/About Me/" >
-        </entry>
-        <entry>
-            <title>
-                Home dy_turbo
-                
-            </title>
-            <updated>2024-03-08T08:58:27.000Z</updated>
-            <id>https://wudanyang6.github.io//</id>
-            <content type="html">
-                &lt;h1 id=&quot;home-dy-turbo&quot; tabindex=&quot;-1&quot;&gt;Home dy_turbo&lt;/h1&gt;
-&lt;h2 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;心得&quot; tabindex=&quot;-1&quot;&gt;心得&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%BF%83%E5%BE%97/&quot;&gt;心得&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;关于我&quot; tabindex=&quot;-1&quot;&gt;关于我&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//" >
         </entry>
         <entry>
             <title>
@@ -2395,5 +2376,24 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/Kafka入门/" >
+        </entry>
+        <entry>
+            <title>
+                0 Home dy-turbo
+                
+            </title>
+            <updated>2024-03-08T09:04:15.000Z</updated>
+            <id>https://wudanyang6.github.io//</id>
+            <content type="html">
+                &lt;h1 id=&quot;home&quot; tabindex=&quot;-1&quot;&gt;Home&lt;/h1&gt;
+&lt;h2 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;心得&quot; tabindex=&quot;-1&quot;&gt;心得&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%BF%83%E5%BE%97/&quot;&gt;心得&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;关于我&quot; tabindex=&quot;-1&quot;&gt;关于我&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//" >
         </entry>
 </feed>
