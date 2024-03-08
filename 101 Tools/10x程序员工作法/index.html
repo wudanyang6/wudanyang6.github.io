@@ -56,7 +56,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.60bf3596.css" rel="stylesheet">
+    <link href="/styles/_theme.680f47d4.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-05T05:19:56.973Z';
+        const searchIndexDate = '2024-03-08T08:59:47.806Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-05T05:19:56.973Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-08T08:59:47.806Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-05T05:19:56.973Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-08T08:59:47.806Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -564,23 +564,7 @@
 <ul>
 <li>MVP 最小可行产品</li>
 <li>比较早成型的面向不确定创造新事物的方法论是精益创业，它提出了“开发（build）-测量（measure）-认知（learn）”这样一个反馈循环和最小可行产品的概念。<br>
-如何试出来经过验证的认知 <a href="https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg" target="_blank" class="external-link">https://learn.lianglianglee.com/专栏/10x程序员工作法/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg</a> <picture src="/img/user/Paste%20image%201705900815474image.png" alt="Paste image 1705900815474image.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/NWnmfBjkdO-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/NWnmfBjkdO-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/NWnmfBjkdO-700.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/NWnmfBjkdO-700.jpeg"
-        ><img       class=""
-      src="/img/user/Paste%20image%201705900815474image.png"
-      alt="Paste image 1705900815474image.png"
-      width=""
-      ></picture></li>
+如何试出来经过验证的认知 <a href="https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg" target="_blank" class="external-link">https://learn.lianglianglee.com/专栏/10x程序员工作法/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg</a> !<a class="internal-link is-unresolved" href="/404" target="">Paste image 1705900815474image.png</a></li>
 <li>精益创业提供给我们的是一个做产品的思考框架，我们能够接触到的大多数产品都可以放在这个框架内思考。</li>
 <li><strong>默认所有需求都不做，直到弄清楚为什么要做这件事。</strong></li>
 </ul>
@@ -1018,7 +1002,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home dy_turbo</a>
+                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/card/dg-Archives/" data-note-icon="" class="backlink">dg-Archives</a>
                                                 </div></div>
                               </div>
                         

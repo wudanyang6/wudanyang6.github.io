@@ -56,7 +56,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.60bf3596.css" rel="stylesheet">
+    <link href="/styles/_theme.680f47d4.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-05T05:19:56.973Z';
+        const searchIndexDate = '2024-03-08T08:59:47.806Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-05T05:19:56.973Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-08T08:59:47.806Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-05T05:19:56.973Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-08T08:59:47.806Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -848,7 +848,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home dy_turbo</a>
+                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/card/dg-Archives/" data-note-icon="" class="backlink">dg-Archives</a>
                                                 </div></div>
                               </div>
                         

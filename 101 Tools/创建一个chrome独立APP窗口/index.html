@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>vscode 调试nginx代码</title>
+    <title>创建一个chrome独立APP窗口</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -517,7 +517,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">vscode 调试nginx代码</h1>
+          <h1 data-note-icon="">创建一个chrome独立APP窗口</h1>
         
         <div class="header-meta">
           
@@ -527,131 +527,81 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #nginx
+                    #chrome
                   </a>
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-03-25T19:13:29+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-02T16:16:08+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-02-27T16:20:49+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-08T16:39:26+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="内容" tabindex="-1">内容</h1>
-<h2 id="auto-cc-conf" tabindex="-1">修改 auto/cc/conf</h2>
-<p>ngx_compile_opt 中添加 -g<br>
-修改后如下：</p>
-<pre><code class="language-shell">ngx_compile_opt=&quot;-c -g&quot;
-</code></pre>
-<p><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/vscode 调试nginx代码/#gcc-g"><a class="tag" onclick="toggleTagSearch(this)" data-content="#gcc">#gcc</a> -g 的作用</a></p>
-<h2 id="and-amp-and-amp" tabindex="-1">编译 &amp; 安装 &amp; 运行</h2>
-<pre><code class="language-shell"># prefix 是想要安装到的目录
-auto/configure --prefix=/home/ubuntu/mydisk/var/nginx-debug-1
-
-# 编译安装
-make
-make install
-</code></pre>
-<h3 id="修改配置" tabindex="-1">修改配置</h3>
-<p><code>vim /home/ubuntu/mydisk/var/nginx-debug-1/conf/nginx.conf</code><br>
-将监听端口号改成 <code>8080</code><br>
-<code>worker_processes</code> 改成 1 (方便调试)</p>
-<h3 id="nginx" tabindex="-1">启动 nginx</h3>
-<p><code>/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx</code></p>
-<p>nginx 的进程：</p>
-<pre><code class="language-shell">ps aux | grep nginx
-ubuntu     17093  0.0  0.0   4184   372 ?        Ss   Mar30   0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
-ubuntu     17094  0.0  0.0   4620  2316 ?        S    Mar30   0:00 nginx: worker process
-ubuntu     46072  0.0  0.0   7692   648 pts/0    S+   11:21   0:00 grep --color=auto nginx
-</code></pre>
-<h2 id="vscode" tabindex="-1">配置 vscode 调试</h2>
-<pre><code class="language-json">{
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
-    &quot;version&quot;: &quot;0.2.0&quot;,
-    &quot;configurations&quot;: [
-        {
-            &quot;name&quot;: &quot;debug master&quot;,
-            &quot;type&quot;: &quot;cppdbg&quot;,
-            &quot;request&quot;: &quot;launch&quot;,
-            &quot;program&quot;: &quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&quot;,
-            &quot;args&quot;: [],
-            &quot;stopAtEntry&quot;: true,
-            &quot;cwd&quot;: &quot;${workspaceFolder}&quot;,
-            &quot;environment&quot;: [],
-            &quot;externalConsole&quot;: false,
-            &quot;MIMode&quot;: &quot;gdb&quot;,
-            &quot;setupCommands&quot;: [
-                {
-                    &quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,
-                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,
-                    &quot;ignoreFailures&quot;: true
-                }
-            ]
-        },
-        {
-            &quot;name&quot;: &quot;debug worker&quot;,
-            &quot;type&quot;: &quot;cppdbg&quot;,
-            &quot;request&quot;: &quot;attach&quot;,
-            &quot;program&quot;: &quot;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&quot;,
-            &quot;processId&quot;: 17094,
-            &quot;MIMode&quot;: &quot;gdb&quot;,
-            &quot;setupCommands&quot;: [
-                {
-                    &quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,
-                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,
-                    &quot;ignoreFailures&quot;: true
-                }
-            ]
-        }
-    ]
-}
-</code></pre>
-<p>在 worker 上调试需要改成 attach 的形式，并且使用了一次 attach 之后，就不能使用 strace -p 17094 查看系统调用了</p>
-<p>然后就可以打断点，进行单步调试了</p>
-<h1 id="参考" tabindex="-1">参考</h1>
-<p><a href="https://www.jianshu.com/p/51b726b56e2f" target="_blank" class="external-link">Mac上用Visual Studio Code调试Nginx</a></p>
-<h2 id="gcc-g" tabindex="-1">gcc -g 的作用</h2>
-<p><a href="https://www.runoob.com/w3cnote/gcc-parameter-detail.html" target="_blank" class="external-link">GCC 参数详解-runoob</a><br>
-在编译的时候会产生调试信息</p>
-<h2 id="kernel-yama-ptrace-scope" tabindex="-1">kernel.yama.ptrace_scope</h2>
-<p>sysctl -a 查看内核参数<br>
-kernel.yama.ptrace_scope<br>
-<a href="https://www.kernel.org/doc/Documentation/security/Yama.txt" target="_blank" class="external-link">https://www.kernel.org/doc/Documentation/security/Yama.txt</a></p>
-<p>sudo vim /etc/sysctl.d/10-ptrace.conf</p>
-<p><a href="https://blog.csdn.net/yihuajack/article/details/107151801" target="_blank" class="external-link">VSCode调试出现无法打开glibc库的“raise.c“或“abort.c“等文件的错误</a></p>
-<h2 id="sudo-strace" tabindex="-1">sudo strace 报 操作不被允许</h2>
-<p>sudo strace -p 17094</p>
-<pre><code class="language-bash">strace: Could not attach to process. If your uid matches the uid of the target process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try again as the root user. For more details, see /etc/sysctl.d/10-ptrace.conf: Operation not permitted
-strace: attach: ptrace(PTRACE_SEIZE, 17094): Operation not permitted
-</code></pre>
-<p><a href="https://stackoverflow.com/questions/19215177/how-to-solve-ptrace-operation-not-permitted-when-trying-to-attach-gdb-to-a-pro" target="_blank" class="external-link">https://stackoverflow.com/questions/19215177/how-to-solve-ptrace-operation-not-permitted-when-trying-to-attach-gdb-to-a-pro</a><br>
-Maybe someone has attached this process with gdb.</p>
-<ul>
-<li>ps -ef | grep gdb</li>
-</ul>
-<p><strong>can't gdb attach the same process twice.</strong><br>
-将 vscode 中的 调试关掉，就可以使用 strace 了<br>
-如下图，可以看到，子进程停在了 epoll_pwait 系统调用上了<br>
-<picture src="/img/user/attachs/Pasted%20image%2020210330203413.png" alt="attachs/Pasted image 20210330203413.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/gduGuuS-79-500.webp"
+      <h1 id="chrome-app" tabindex="-1">创建一个chrome独立APP窗口</h1>
+<p>创建出的窗口本质还是一个chrome网页，但是比较方便使用</p>
+<p>按步骤操作：</p>
+<ol>
+<li>点击chrome右上角的三个点</li>
+<li>点击保存并分享</li>
+<li>点击创建快捷方式</li>
+<li>在弹窗中勾选<code>在窗口打开</code>，点击创建</li>
+<li>即可得到一个独立APP窗口</li>
+</ol>
+<p><picture src="/img/user/attachs/clop_2024-02-27_159.png" alt="../attachs/clop_2024-02-27_159.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/VxkcAEI2Tr-500.webp"
       type="image/webp"
       >
       <source       media="(max-width:480px)"
-      srcset="/img/optimized/gduGuuS-79-500.jpeg"
+      srcset="/img/optimized/VxkcAEI2Tr-500.jpeg"
       >
       <source         media="(max-width:1920px)"
-        srcset="/img/optimized/gduGuuS-79-700.webp"
+        srcset="/img/optimized/VxkcAEI2Tr-700.webp"
         type="image/webp"
         ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/gduGuuS-79-700.jpeg"
+        srcset="/img/optimized/VxkcAEI2Tr-700.jpeg"
         ><img       class=""
-      src="/img/user/attachs/Pasted%20image%2020210330203413.png"
-      alt="attachs/Pasted image 20210330203413.png"
+      src="/img/user/attachs/clop_2024-02-27_159.png"
+      alt="../attachs/clop_2024-02-27_159.png"
       width=""
       ></picture></p>
+<p>弹窗出来之后，选择 <code>在窗口中打开</code><br>
+<picture src="/img/user/attachs/clop_2024-02-27_160.png" alt="../attachs/clop_2024-02-27_160.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/xJKpbV16DR-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/xJKpbV16DR-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/xJKpbV16DR-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/xJKpbV16DR-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/clop_2024-02-27_160.png"
+      alt="../attachs/clop_2024-02-27_160.png"
+      width=""
+      ></picture></p>
+<p>就会得到一个独立软件一样的百度</p>
+<p><picture src="/img/user/attachs/clop_2024-02-27_161.png" alt="../attachs/clop_2024-02-27_161.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/1C5C8TXYHM-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/1C5C8TXYHM-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/1C5C8TXYHM-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/1C5C8TXYHM-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/clop_2024-02-27_161.png"
+      alt="../attachs/clop_2024-02-27_161.png"
+      width=""
+      ></picture></p>
+<h2 id="reference" tabindex="-1">Reference</h2>
 
       
       
@@ -916,41 +866,11 @@ Maybe someone has attached this process with gdb.</p>
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#内容">内容</a>
+                    <li><a href="#chrome-app">创建一个chrome独立APP窗口</a>
             
                 <ol>
                     
-                    <li><a href="#auto-cc-conf">修改 auto/cc/conf</a>
-            		</li>
-
-                    <li><a href="#and-amp-and-amp">编译 & 安装 & 运行</a>
-            
-                <ol>
-                    
-                    <li><a href="#修改配置">修改配置</a>
-            		</li>
-
-                    <li><a href="#nginx">启动 nginx</a>
-            		</li>
-                </ol>
-            		</li>
-
-                    <li><a href="#vscode">配置 vscode 调试</a>
-            		</li>
-                </ol>
-            		</li>
-
-                    <li><a href="#参考">参考</a>
-            
-                <ol>
-                    
-                    <li><a href="#gcc-g">gcc -g 的作用</a>
-            		</li>
-
-                    <li><a href="#kernel-yama-ptrace-scope">kernel.yama.ptrace_scope</a>
-            		</li>
-
-                    <li><a href="#sudo-strace">sudo strace 报 操作不被允许</a>
+                    <li><a href="#reference">Reference</a>
             		</li>
                 </ol>
             		</li>
