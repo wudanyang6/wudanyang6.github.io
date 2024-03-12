@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>2024-03-11T02_29_59.429Z.Desktop</title>
+    <title>leetcode-1137第 N 个泰波那契数</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -81,7 +81,7 @@
     
     
   </head>
-  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon links-note-icon css-settings-manager mod-macos is-frameless is-hidden-frameless obsidian-app native-scrollbars theme-light show-inline-title show-view-header css-settings-manager hider-scroll obsidian-themepocalypse AT-multirow AT-row pane-relief-pane-numbering vault-name-default new-tab-btn-default new-tab-image-default canvas-card-menu-center theme-light-background-default mod-left-split-background-primary-light mod-right-split-background-primary-light mod-root-split-background-primary-light background-underlying-defalut-light activated-file-default-light theme-dark-background-default accent-color-override-dark mod-left-split-background-primary-dark mod-right-split-background-primary-dark mod-root-split-background-primary-dark background-underlying-defalut-dark activated-file-default-dark line-hover-indicator inline-title-color-default h1-divider-on h1-color-default h2-divider-on h2-color-default h3-color-default h4-color-default h5-color-default h6-color-default table-width-default img-center-align zoom-off codeblock-style-one-dark callout-style-customize DB-table-bg-color-default Projects-bg-color-default colorful-checkbox is-maximized is-focused">
+  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon links-note-icon css-settings-manager mod-macos is-frameless is-hidden-frameless obsidian-app native-scrollbars theme-light show-inline-title show-view-header css-settings-manager hider-scroll obsidian-themepocalypse AT-multirow AT-row pane-relief-pane-numbering vault-name-default new-tab-btn-default new-tab-image-default canvas-card-menu-center theme-light-background-default mod-left-split-background-primary-light mod-right-split-background-primary-light mod-root-split-background-primary-light background-underlying-defalut-light activated-file-default-light theme-dark-background-default accent-color-override-dark mod-left-split-background-primary-dark mod-right-split-background-primary-dark mod-root-split-background-primary-dark background-underlying-defalut-dark activated-file-default-dark line-hover-indicator inline-title-color-default h1-divider-on h1-color-default h2-divider-on h2-color-default h3-color-default h4-color-default h5-color-default h6-color-default table-width-default img-center-align zoom-off codeblock-style-one-dark callout-style-customize DB-table-bg-color-default Projects-bg-color-default colorful-checkbox is-maximized is-focused">
     
     
     
@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-12T05:48:02.095Z';
+        const searchIndexDate = '2024-03-12T08:53:38.953Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-12T05:48:02.095Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-12T08:53:38.953Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-12T05:48:02.095Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-12T08:53:38.953Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -517,7 +517,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">2024-03-11T02_29_59.429Z.Desktop</h1>
+          <h1 data-note-icon="">leetcode-1137第 N 个泰波那契数</h1>
         
         <div class="header-meta">
           
@@ -527,68 +527,43 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #效率
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #tools
+                    #leetcode
                   </a>
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-10-09T17:10:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-02T13:02:13+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-02-26T18:03:27+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-31T13:28:41+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="things" tabindex="-1">Things 工作流</h1>
-<ol>
-<li>有任何事情都记录下来，心中的任何想法都不要放过</li>
-<li>定时整理收件箱（需要保证整理完收件箱之后，任务都是可执行的）
-<ol>
-<li>如果有事情2分钟就能解决，那么直接去做，属于小事情</li>
-<li>如果需要15-30分钟，则标记上标签 <picture src="/img/user/card/Pasted%20image%2020231009172220.png" alt="Pasted image 20231009172220.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/ZUdS9fFYvS-423.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/ZUdS9fFYvS-423.jpeg"
-      >
-      <img       class=""
-      src="/img/user/card/Pasted%20image%2020231009172220.png"
-      alt="Pasted image 20231009172220.png"
-      width=""
-      ></picture></li>
-<li>如果需要1小时以上，就将任务设置成项目
-<ol>
-<li>做一次任务分解，分解成小任务，小任务以30分钟以内完成最好</li>
-<li>如果分解项目本身也需要很多时间，那么在项目里面加一个【分解任务】的事项</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>根据时间，选取任务进行处理，打开 <code>Session</code> 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  <picture src="/img/user/card/Pasted%20image%2020231107224028.png" alt="Pasted image 20231107224028.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/enKkIoJo3Y-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/enKkIoJo3Y-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/enKkIoJo3Y-700.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/enKkIoJo3Y-700.jpeg"
-        ><img       class=""
-      src="/img/user/card/Pasted%20image%2020231107224028.png"
-      alt="Pasted image 20231107224028.png"
-      width=""
-      ></picture></li>
-</ol>
-<p>为了让Things工作流更顺畅，我做了一个obsidian插件： <a class="internal-link" target="" data-note-icon="" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件</a></p>
+      <h1 id="题目" tabindex="-1">题目</h1>
+<p><a href="https://leetcode-cn.com/problems/n-th-tribonacci-number/" target="_blank" class="external-link">1137. 第 N 个泰波那契数</a><br>
+这个跟斐波那契好像是一样的，一模一样</p>
+<h1 id="解法" tabindex="-1">解法</h1>
+<p>跟斐波纳契数列一样的解法</p>
+<pre><code class="language-php">class Solution {
+
+    /**
+     * @param Integer $n
+     * @return Integer
+     */
+    function tribonacci($n) {
+        if ($n &lt;= 0) {
+            return 0;
+        }
+        
+        $retArr = [0,1,1];
+        for ($i = 3; $i &lt;= $n; $i++) {
+            $retArr[$i] = $retArr[$i-1] + $retArr[$i-2] + $retArr[$i-3];
+        }
+
+        return $retArr[$n];
+    }
+}
+</code></pre>
+<h1 id="参考" tabindex="-1">参考</h1>
 
       
       
@@ -853,7 +828,13 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#things">Things 工作流</a>
+                    <li><a href="#题目">题目</a>
+            		</li>
+
+                    <li><a href="#解法">解法</a>
+            		</li>
+
+                    <li><a href="#参考">参考</a>
             		</li>
                 </ol>
             </nav>

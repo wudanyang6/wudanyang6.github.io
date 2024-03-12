@@ -81,7 +81,7 @@
     
     
   </head>
-  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon links-note-icon css-settings-manager mod-macos is-frameless is-hidden-frameless obsidian-app native-scrollbars theme-light show-inline-title show-view-header css-settings-manager hider-scroll obsidian-themepocalypse AT-multirow AT-row pane-relief-pane-numbering vault-name-default new-tab-btn-default new-tab-image-default canvas-card-menu-center theme-light-background-default mod-left-split-background-primary-light mod-right-split-background-primary-light mod-root-split-background-primary-light background-underlying-defalut-light activated-file-default-light theme-dark-background-default accent-color-override-dark mod-left-split-background-primary-dark mod-right-split-background-primary-dark mod-root-split-background-primary-dark background-underlying-defalut-dark activated-file-default-dark line-hover-indicator inline-title-color-default h1-divider-on h1-color-default h2-divider-on h2-color-default h3-color-default h4-color-default h5-color-default h6-color-default table-width-default img-center-align zoom-off codeblock-style-one-dark callout-style-customize DB-table-bg-color-default Projects-bg-color-default colorful-checkbox is-maximized is-focused">
+  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon links-note-icon css-settings-manager mod-macos is-frameless is-hidden-frameless obsidian-app native-scrollbars theme-light show-inline-title show-view-header css-settings-manager hider-scroll obsidian-themepocalypse AT-multirow AT-row pane-relief-pane-numbering vault-name-default new-tab-btn-default new-tab-image-default canvas-card-menu-center theme-light-background-default mod-left-split-background-primary-light mod-right-split-background-primary-light mod-root-split-background-primary-light background-underlying-defalut-light activated-file-default-light theme-dark-background-default accent-color-override-dark mod-left-split-background-primary-dark mod-right-split-background-primary-dark mod-root-split-background-primary-dark background-underlying-defalut-dark activated-file-default-dark line-hover-indicator inline-title-color-default h1-divider-on h1-color-default h2-divider-on h2-color-default h3-color-default h4-color-default h5-color-default h6-color-default table-width-default img-center-align zoom-off codeblock-style-one-dark callout-style-customize DB-table-bg-color-default Projects-bg-color-default colorful-checkbox is-maximized is-focused">
     
     
     
@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-12T05:48:02.095Z';
+        const searchIndexDate = '2024-03-12T08:53:38.953Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-12T05:48:02.095Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-12T08:53:38.953Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-12T05:48:02.095Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-12T08:53:38.953Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -526,7 +526,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-08T16:51:12+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-12T13:44:26+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-08T16:51:12+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-12T13:55:02+08:00"></span></div></div></div>
       
       
       </header>
