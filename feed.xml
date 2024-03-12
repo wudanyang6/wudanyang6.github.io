@@ -3,14 +3,14 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-03-08T13:47:10Z</updated>
+    <updated>2024-03-12T05:48:02Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
                 如何做监控
                 
             </title>
-            <updated>2024-02-04T16:48:46.000Z</updated>
+            <updated>2024-03-09T14:04:48.000Z</updated>
             <id>https://wudanyang6.github.io//阅读/700 Personal/如何做监控/</id>
             <content type="html">
                 &lt;h1 id=&quot;如何做监控&quot; tabindex=&quot;-1&quot;&gt;如何做监控&lt;/h1&gt;
@@ -138,8 +138,8 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;br /&gt;
-先通报、再止损、再定位&lt;br /&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;先通报、再止损、再定位&lt;br /&gt;
 最后修复&lt;/p&gt;
 
             </content>
@@ -315,25 +315,10 @@
         </entry>
         <entry>
             <title>
-                快速上取整
-                
-            </title>
-            <updated>2024-03-07T09:27:48.000Z</updated>
-            <id>https://wudanyang6.github.io//card/快速上取整/</id>
-            <content type="html">
-                &lt;h1 id=&quot;快速上取整&quot; tabindex=&quot;-1&quot;&gt;快速上取整&lt;/h1&gt;
-&lt;p&gt;正整数的情况下， &lt;code&gt;a/b&lt;/code&gt;  上取整可以使用 :&lt;br /&gt;
-&lt;code&gt;(a+b-1)/b&lt;/code&gt;  快速计算，适用于强类型语言&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/快速上取整/" >
-        </entry>
-        <entry>
-            <title>
                 心得
                 
             </title>
-            <updated>2024-03-08T09:07:08.000Z</updated>
+            <updated>2024-03-12T05:44:26.000Z</updated>
             <id>https://wudanyang6.github.io//card/心得/</id>
             <content type="html">
                 &lt;h1 id=&quot;心得&quot; tabindex=&quot;-1&quot;&gt;心得&lt;/h1&gt;
@@ -344,6 +329,7 @@
 &lt;li&gt;相信明天更美好，但是要过好当下&lt;/li&gt;
 &lt;li&gt;自己的智商又不是很好，毅力也不是很高，算法学习也只能是慢慢学了，也就是为了不让自己的脑子生锈吧&lt;/li&gt;
 &lt;li&gt;坚持骑车锻炼 2024年03月08日16:55:41&lt;/li&gt;
+&lt;li&gt;最好维护的代码是没有写出来的代码 2024年03月12日13:44:30&lt;/li&gt;
 &lt;/ol&gt;
 
             </content>
@@ -471,6 +457,10 @@ done
             <content type="html">
                 &lt;h1 id=&quot;dg-archives&quot; tabindex=&quot;-1&quot;&gt;dg-Archives&lt;/h1&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/logseq/bak/card/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A/2024-03-11T02_30_08.257Z.Desktop/&quot;&gt;2024-03-11T02_30_08.257Z.Desktop&lt;/a&gt;:  &lt;em&gt;(created: 2021-12-16)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/logseq/bak/101%20Tools/Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/2024-03-11T02_29_59.429Z.Desktop/&quot;&gt;2024-03-11T02_29_59.429Z.Desktop&lt;/a&gt;:  &lt;em&gt;(created: 2023-10-9)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#效率&quot;&gt;#效率&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tools&quot;&gt;#tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/logseq/bak/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/2024-03-11T02_29_59.419Z.Desktop/&quot;&gt;2024-03-11T02_29_59.419Z.Desktop&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-19)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/logseq/bak/100%20Programmer/Kafka%E5%85%A5%E9%97%A8/2024-03-11T02_29_59.332Z.Desktop/&quot;&gt;2024-03-11T02_29_59.332Z.Desktop&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-15)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%BF%83%E5%BE%97/&quot;&gt;心得&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-8)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-8)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/ithoughtx%E7%A0%B4%E4%BA%A7%E4%BA%86/&quot;&gt;ithoughtx破产了&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-5)&lt;/em&gt;&lt;/li&gt;
@@ -482,18 +472,18 @@ done
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/c/nginx/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-28)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;0 Home dy-turbo&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-28)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/obsidian/obsidian%20%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%94%AF%E6%8C%81%E7%9A%84ICON/&quot;&gt;obsidian 开发过程支持的ICON&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-25)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%BF%AB%E9%80%9F%E4%B8%8A%E5%8F%96%E6%95%B4/&quot;&gt;快速上取整&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-22)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#算法&quot;&gt;#算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/%E5%BF%AB%E9%80%9F%E4%B8%8A%E5%8F%96%E6%95%B4/&quot;&gt;快速上取整&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-22)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#算法&quot;&gt;#算法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-19)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95%E6%96%B0%E5%B9%B4%E7%A5%9D%E7%A6%8F%E8%AF%AD/&quot;&gt;算法新年祝福语&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-16)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-15)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/linux-wait/&quot;&gt;linux-wait&lt;/a&gt;:  &lt;em&gt;(created: 2023-12-11)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;Things 工作流&lt;/a&gt;:  &lt;em&gt;(created: 2023-10-9)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#效率&quot;&gt;#效率&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tools&quot;&gt;#tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;Things 工作流&lt;/a&gt;:  &lt;em&gt;(created: 2023-10-9)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#效率&quot;&gt;#效率&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tools&quot;&gt;#tools&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#things&quot;&gt;#things&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/mac%20%E8%BF%90%E8%A1%8C%20kafka/&quot;&gt;mac 运行 kafka&lt;/a&gt;:  &lt;em&gt;(created: 2023-9-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#kafka&quot;&gt;#kafka&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#学习&quot;&gt;#学习&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/vscode%20git%20%E5%8F%AA%E6%9A%82%E5%AD%98%E9%83%A8%E5%88%86%E6%94%B9%E5%8A%A8/&quot;&gt;vscode git 只暂存部分改动&lt;/a&gt;:  &lt;em&gt;(created: 2023-6-19)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;:  &lt;em&gt;(created: 2023-5-9)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/Excalidraw/%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%92%8C%E4%B8%8B%E4%B8%80%E7%8A%B6%E6%80%81%E7%9A%84%E9%9A%8F%E6%83%B3.excalidraw/&quot;&gt;当前状态和下一状态的随想.excalidraw&lt;/a&gt;:  &lt;em&gt;(created: 2023-4-18)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#excalidraw&quot;&gt;#excalidraw&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/%E5%85%B7%E4%BD%93%E9%A2%98%E7%9B%AE/leetcode-1014.%20%E6%9C%80%E4%BD%B3%E8%A7%82%E5%85%89%E7%BB%84%E5%90%88/&quot;&gt;leetcode-1014. 最佳观光组合&lt;/a&gt;:  &lt;em&gt;(created: 2023-2-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/%E5%85%B7%E4%BD%93%E9%A2%98%E7%9B%AE/leetcode-53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/&quot;&gt;leetcode-53. 最大子数组和&lt;/a&gt;:  &lt;em&gt;(created: 2023-2-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dp&quot;&gt;#dp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/leetcode-1014.%20%E6%9C%80%E4%BD%B3%E8%A7%82%E5%85%89%E7%BB%84%E5%90%88/&quot;&gt;leetcode-1014. 最佳观光组合&lt;/a&gt;:  &lt;em&gt;(created: 2023-2-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/leetcode-53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/&quot;&gt;leetcode-53. 最大子数组和&lt;/a&gt;:  &lt;em&gt;(created: 2023-2-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dp&quot;&gt;#dp&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/300%20Code/300%20Leetcode/%E5%85%B7%E4%BD%93%E9%A2%98%E7%9B%AE/leetcode-1137%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137第 N 个泰波那契数&lt;/a&gt;:  &lt;em&gt;(created: 2023-2-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/mac/mac-%E5%90%88%E4%B8%8A%E7%9B%96%E5%AD%90%E4%B8%8D%E6%96%AD%E7%BD%91/&quot;&gt;mac-合上盖子不断网&lt;/a&gt;:  &lt;em&gt;(created: 2023-2-3)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mac&quot;&gt;#mac&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/linux-%E6%9F%A5%E7%9C%8B%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/&quot;&gt;linux-查看内存占用情况&lt;/a&gt;:  &lt;em&gt;(created: 2023-1-4)&lt;/em&gt;&lt;/li&gt;
@@ -598,10 +588,10 @@ $zip-&amp;gt;close(); //关闭压缩包
                 当前状态和下一状态的随想.excalidraw
                 
             </title>
-            <updated>2024-03-08T13:46:16.000Z</updated>
+            <updated>2024-03-08T13:56:36.000Z</updated>
             <id>https://wudanyang6.github.io//Excalidraw/当前状态和下一状态的随想.excalidraw/</id>
             <content type="html">
-                &lt;style&gt; .container {font-family: sans-serif; text-align: center;} .button-wrapper button {z-index: 1;height: 40px; width: 100px; margin: 10px;padding: 5px;} .excalidraw .App-menu_top .buttonList { display: flex;} .excalidraw-wrapper { height: 800px; margin: 50px; position: relative;} :root[dir=&quot;ltr&quot;] .excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left {transform: none;} &lt;/style&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw@0/dist/excalidraw.production.min.js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;当前状态和下一状态的随想excalidraw.md&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){const InitialData={&quot;type&quot;:&quot;excalidraw&quot;,&quot;version&quot;:2,&quot;source&quot;:&quot;https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23&quot;,&quot;elements&quot;:[{&quot;type&quot;:&quot;rectangle&quot;,&quot;version&quot;:123,&quot;versionNonce&quot;:840223705,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:-120.83203125,&quot;y&quot;:-187.431640625,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:153,&quot;height&quot;:97,&quot;seed&quot;:1809355819,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;lcXa25o6&quot;},{&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1694187112200,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:106,&quot;versionNonce&quot;:150017138,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;lcXa25o6&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:-84.33203125,&quot;y&quot;:-163.931640625,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:80,&quot;height&quot;:50,&quot;seed&quot;:1671257323,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1709886216070,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;&#92;n当前状态&quot;,&quot;rawText&quot;:&quot;&#92;n当前状态&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;originalText&quot;:&quot;&#92;n当前状态&quot;,&quot;lineHeight&quot;:1.25,&quot;baseline&quot;:43},{&quot;type&quot;:&quot;rectangle&quot;,&quot;version&quot;:89,&quot;versionNonce&quot;:223660165,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:247.68359375,&quot;y&quot;:-186.693359375,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:153,&quot;height&quot;:97,&quot;seed&quot;:1586660869,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;boundElements&quot;:[{&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;Ymxj0WWT&quot;}],&quot;updated&quot;:1681829010086,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:80,&quot;versionNonce&quot;:617185317,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;Ymxj0WWT&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:284.18359375,&quot;y&quot;:-150.693359375,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:80,&quot;height&quot;:25,&quot;seed&quot;:1849985227,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1681829015527,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;下一状态&quot;,&quot;rawText&quot;:&quot;下一状态&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;originalText&quot;:&quot;下一状态&quot;,&quot;lineHeight&quot;:1.25,&quot;baseline&quot;:18},{&quot;type&quot;:&quot;arrow&quot;,&quot;version&quot;:332,&quot;versionNonce&quot;:2011689906,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:38.5078125,&quot;y&quot;:-133.77581768952354,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:197.88671875,&quot;height&quot;:1.144774393676272,&quot;seed&quot;:343810891,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;boundElements&quot;:[],&quot;updated&quot;:1709905580584,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;gap&quot;:6.33984375,&quot;focus&quot;:0.11513603277860894},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;gap&quot;:11.2890625,&quot;focus&quot;:-0.056492919794349276},&quot;lastCommittedPoint&quot;:null,&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;points&quot;:[[0,0],[197.88671875,-1.144774393676272]]},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:92,&quot;versionNonce&quot;:449696485,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;LIFeX9WH&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:41.53515625,&quot;y&quot;:-169.86328125,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:180,&quot;height&quot;:25,&quot;seed&quot;:591423115,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1681829151102,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;中间可能过了亿万年&quot;,&quot;rawText&quot;:&quot;中间可能过了亿万年&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;中间可能过了亿万年&quot;,&quot;lineHeight&quot;:1.25,&quot;baseline&quot;:18}],&quot;appState&quot;:{&quot;theme&quot;:&quot;light&quot;,&quot;viewBackgroundColor&quot;:&quot;#ffffff&quot;,&quot;currentItemStrokeColor&quot;:&quot;#000000&quot;,&quot;currentItemBackgroundColor&quot;:&quot;transparent&quot;,&quot;currentItemFillStyle&quot;:&quot;hachure&quot;,&quot;currentItemStrokeWidth&quot;:1,&quot;currentItemStrokeStyle&quot;:&quot;solid&quot;,&quot;currentItemRoughness&quot;:1,&quot;currentItemOpacity&quot;:100,&quot;currentItemFontFamily&quot;:1,&quot;currentItemFontSize&quot;:20,&quot;currentItemTextAlign&quot;:&quot;left&quot;,&quot;currentItemStartArrowhead&quot;:null,&quot;currentItemEndArrowhead&quot;:&quot;arrow&quot;,&quot;scrollX&quot;:249.57421875,&quot;scrollY&quot;:493.5625,&quot;zoom&quot;:{&quot;value&quot;:1},&quot;currentItemRoundness&quot;:&quot;round&quot;,&quot;gridSize&quot;:null,&quot;gridColor&quot;:{&quot;Bold&quot;:&quot;#C9C9C9FF&quot;,&quot;Regular&quot;:&quot;#EDEDEDFF&quot;},&quot;colorPalette&quot;:{},&quot;currentStrokeOptions&quot;:null,&quot;previousGridSize&quot;:null,&quot;frameRendering&quot;:{&quot;enabled&quot;:true,&quot;clip&quot;:true,&quot;name&quot;:true,&quot;outline&quot;:true}},&quot;files&quot;:{}};InitialData.scrollToContent=true;App=()=&gt;{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener(&quot;resize&quot;,e),()=&gt;window.removeEventListener(&quot;resize&quot;,e)},[t]),React.createElement(React.Fragment,null,React.createElement(&quot;div&quot;,{className:&quot;excalidraw-wrapper&quot;,ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById(&quot;当前状态和下一状态的随想excalidraw.md&quot;);ReactDOM.render(React.createElement(App),excalidrawWrapper);})();&lt;/script&gt;
+                &lt;style&gt; .container {font-family: sans-serif; text-align: center;} .button-wrapper button {z-index: 1;height: 40px; width: 100px; margin: 10px;padding: 5px;} .excalidraw .App-menu_top .buttonList { display: flex;} .excalidraw-wrapper { height: 800px; margin: 50px; position: relative;} :root[dir=&quot;ltr&quot;] .excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left {transform: none;} &lt;/style&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw@0/dist/excalidraw.production.min.js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;当前状态和下一状态的随想excalidraw.md&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){const InitialData={&quot;type&quot;:&quot;excalidraw&quot;,&quot;version&quot;:2,&quot;source&quot;:&quot;https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23&quot;,&quot;elements&quot;:[{&quot;type&quot;:&quot;rectangle&quot;,&quot;version&quot;:123,&quot;versionNonce&quot;:840223705,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:-120.83203125,&quot;y&quot;:-187.431640625,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:153,&quot;height&quot;:97,&quot;seed&quot;:1809355819,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;lcXa25o6&quot;},{&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1694187112200,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:106,&quot;versionNonce&quot;:150017138,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;lcXa25o6&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:-84.33203125,&quot;y&quot;:-163.931640625,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:80,&quot;height&quot;:50,&quot;seed&quot;:1671257323,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1709886216070,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;&#92;n当前状态&quot;,&quot;rawText&quot;:&quot;&#92;n当前状态&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;originalText&quot;:&quot;&#92;n当前状态&quot;,&quot;lineHeight&quot;:1.25,&quot;baseline&quot;:43},{&quot;type&quot;:&quot;rectangle&quot;,&quot;version&quot;:125,&quot;versionNonce&quot;:46448114,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:375.140625,&quot;y&quot;:-190.029296875,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:153,&quot;height&quot;:97,&quot;seed&quot;:1586660869,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;boundElements&quot;:[{&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;Ymxj0WWT&quot;}],&quot;updated&quot;:1709905924750,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:116,&quot;versionNonce&quot;:1864118194,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;Ymxj0WWT&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:411.640625,&quot;y&quot;:-154.029296875,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:80,&quot;height&quot;:25,&quot;seed&quot;:1849985227,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1709905924750,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;下一状态&quot;,&quot;rawText&quot;:&quot;下一状态&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;originalText&quot;:&quot;下一状态&quot;,&quot;lineHeight&quot;:1.25,&quot;baseline&quot;:18},{&quot;type&quot;:&quot;arrow&quot;,&quot;version&quot;:404,&quot;versionNonce&quot;:1041591090,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:38.50781250000003,&quot;y&quot;:-134.10614115612412,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:325.34375,&quot;height&quot;:3.64989657820189,&quot;seed&quot;:343810891,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;boundElements&quot;:[],&quot;updated&quot;:1709905924750,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;gap&quot;:6.33984375,&quot;focus&quot;:0.11513603277860894},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;gap&quot;:11.2890625,&quot;focus&quot;:-0.056492919794349276},&quot;lastCommittedPoint&quot;:null,&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;points&quot;:[[0,0],[325.34375,-3.64989657820189]]},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:168,&quot;versionNonce&quot;:486444270,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;LIFeX9WH&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:95.265625,&quot;y&quot;:-171.51171875,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:180,&quot;height&quot;:25,&quot;seed&quot;:591423115,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1709905976598,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;中间可能过了亿万年&quot;,&quot;rawText&quot;:&quot;中间可能过了亿万年&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;中间可能过了亿万年&quot;,&quot;lineHeight&quot;:1.25,&quot;baseline&quot;:18},{&quot;id&quot;:&quot;ov2HcC8X&quot;,&quot;type&quot;:&quot;embeddable&quot;,&quot;x&quot;:-36.78125,&quot;y&quot;:-7.21875,&quot;width&quot;:500,&quot;height&quot;:500,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;transparent&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;roundness&quot;:null,&quot;seed&quot;:50533,&quot;version&quot;:47,&quot;versionNonce&quot;:1117175218,&quot;updated&quot;:1709906036690,&quot;isDeleted&quot;:true,&quot;groupIds&quot;:[],&quot;boundElements&quot;:[],&quot;link&quot;:&quot;[[Kafka 数据流.svg]]&quot;,&quot;locked&quot;:false,&quot;scale&quot;:[1,1],&quot;customData&quot;:{&quot;mdProps&quot;:{&quot;useObsidianDefaults&quot;:false,&quot;backgroundMatchCanvas&quot;:false,&quot;backgroundMatchElement&quot;:true,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;backgroundOpacity&quot;:60,&quot;borderMatchElement&quot;:true,&quot;borderColor&quot;:&quot;#fff&quot;,&quot;borderOpacity&quot;:0,&quot;filenameVisible&quot;:false}}}],&quot;appState&quot;:{&quot;theme&quot;:&quot;light&quot;,&quot;viewBackgroundColor&quot;:&quot;#ffffff&quot;,&quot;currentItemStrokeColor&quot;:&quot;#000000&quot;,&quot;currentItemBackgroundColor&quot;:&quot;transparent&quot;,&quot;currentItemFillStyle&quot;:&quot;hachure&quot;,&quot;currentItemStrokeWidth&quot;:1,&quot;currentItemStrokeStyle&quot;:&quot;solid&quot;,&quot;currentItemRoughness&quot;:1,&quot;currentItemOpacity&quot;:100,&quot;currentItemFontFamily&quot;:1,&quot;currentItemFontSize&quot;:20,&quot;currentItemTextAlign&quot;:&quot;left&quot;,&quot;currentItemStartArrowhead&quot;:null,&quot;currentItemEndArrowhead&quot;:&quot;arrow&quot;,&quot;scrollX&quot;:143.18124999999998,&quot;scrollY&quot;:388.41875000000005,&quot;zoom&quot;:{&quot;value&quot;:1.25},&quot;currentItemRoundness&quot;:&quot;round&quot;,&quot;gridSize&quot;:null,&quot;gridColor&quot;:{&quot;Bold&quot;:&quot;#C9C9C9FF&quot;,&quot;Regular&quot;:&quot;#EDEDEDFF&quot;},&quot;colorPalette&quot;:{},&quot;currentStrokeOptions&quot;:null,&quot;previousGridSize&quot;:null,&quot;frameRendering&quot;:{&quot;enabled&quot;:true,&quot;clip&quot;:true,&quot;name&quot;:true,&quot;outline&quot;:true}},&quot;files&quot;:{}};InitialData.scrollToContent=true;App=()=&gt;{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener(&quot;resize&quot;,e),()=&gt;window.removeEventListener(&quot;resize&quot;,e)},[t]),React.createElement(React.Fragment,null,React.createElement(&quot;div&quot;,{className:&quot;excalidraw-wrapper&quot;,ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById(&quot;当前状态和下一状态的随想excalidraw.md&quot;);ReactDOM.render(React.createElement(App),excalidrawWrapper);})();&lt;/script&gt;
             </content>
             <link href="https://wudanyang6.github.io//Excalidraw/当前状态和下一状态的随想.excalidraw/" >
         </entry>
@@ -681,49 +671,18 @@ $zip-&amp;gt;close(); //关闭压缩包
         </entry>
         <entry>
             <title>
-                leetcode-53. 最大子数组和
+                快速上取整
                 
             </title>
-            <updated>2024-02-28T14:25:00.000Z</updated>
-            <id>https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-53. 最大子数组和/</id>
+            <updated>2024-03-07T09:27:48.000Z</updated>
+            <id>https://wudanyang6.github.io//300 Code/300 Leetcode/快速上取整/</id>
             <content type="html">
-                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;题目&quot; tabindex=&quot;-1&quot;&gt;题目&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/maximum-subarray/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;53. 最大子数组和&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;解法&quot; tabindex=&quot;-1&quot;&gt;解法&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dp&quot;&gt;#dp&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;第一版写的时候，可以加一个 dp 数组，保存每个节点的最大值&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;code&gt;dp&lt;/code&gt; 公式&lt;/p&gt;
-&lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot; display=&quot;true&quot; style=&quot;direction: ltr; display: block; text-align: center; margin: 1em 0; position: relative;&quot;&gt;&lt;svg style=&quot;overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -2.148ex;&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;47.438ex&quot; height=&quot;5.428ex&quot; role=&quot;img&quot; focusable=&quot;false&quot; viewBox=&quot;0 -1449.5 20967.4 2399&quot; aria-hidden=&quot;true&quot;&gt;&lt;g stroke=&quot;currentColor&quot; fill=&quot;currentColor&quot; stroke-width=&quot;0&quot; transform=&quot;scale(1,-1)&quot;&gt;&lt;g data-mml-node=&quot;math&quot;&gt;&lt;g data-mml-node=&quot;msub&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D453&quot; d=&quot;M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(523,-150) scale(0.707)&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(1275,0)&quot;&gt;&lt;path data-c=&quot;3D&quot; d=&quot;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mrow&quot; transform=&quot;translate(2330.8,0)&quot;&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(0 -0.5)&quot;&gt;&lt;path data-c=&quot;7B&quot; d=&quot;M618 -943L612 -949H582L568 -943Q472 -903 411 -841T332 -703Q327 -682 327 -653T325 -350Q324 -28 323 -18Q317 24 301 61T264 124T221 171T179 205T147 225T132 234Q130 238 130 250Q130 255 130 258T131 264T132 267T134 269T139 272T144 275Q207 308 256 367Q310 436 323 519Q324 529 325 851Q326 1124 326 1154T332 1205Q369 1358 566 1443L582 1450H612L618 1444V1429Q618 1413 616 1411L608 1406Q599 1402 585 1393T552 1372T515 1343T479 1305T449 1257T429 1200Q425 1180 425 1152T423 851Q422 579 422 549T416 498Q407 459 388 424T346 364T297 318T250 284T214 264T197 254L188 251L205 242Q290 200 345 138T416 3Q421 -18 421 -48T423 -349Q423 -397 423 -472Q424 -677 428 -694Q429 -697 429 -699Q434 -722 443 -743T465 -782T491 -816T519 -845T548 -868T574 -886T595 -899T610 -908L616 -910Q618 -912 618 -928V-943Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mtable&quot; transform=&quot;translate(750,0)&quot;&gt;&lt;g data-mml-node=&quot;mtr&quot; transform=&quot;translate(0,600)&quot;&gt;&lt;g data-mml-node=&quot;mtd&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D45A&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(878,0)&quot;&gt;&lt;path data-c=&quot;1D44E&quot; d=&quot;M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(1407,0)&quot;&gt;&lt;path data-c=&quot;1D465&quot; d=&quot;M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(1979,0)&quot;&gt;&lt;path data-c=&quot;28&quot; d=&quot;M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(2368,0)&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(2968,0)&quot;&gt;&lt;path data-c=&quot;1D462&quot; d=&quot;M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(3540,0)&quot;&gt;&lt;path data-c=&quot;1D45A&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(4418,0)&quot;&gt;&lt;path data-c=&quot;1D460&quot; d=&quot;M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(4887,0)&quot;&gt;&lt;path data-c=&quot;5B&quot; d=&quot;M118 -250V750H255V710H158V-210H255V-250H118Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(5165,0)&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(5765,0)&quot;&gt;&lt;path data-c=&quot;5D&quot; d=&quot;M22 710V750H159V-250H22V-210H119V710H22Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(6265.2,0)&quot;&gt;&lt;path data-c=&quot;2B&quot; d=&quot;M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;msub&quot; transform=&quot;translate(7265.4,0)&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D453&quot; d=&quot;M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;TeXAtom&quot; transform=&quot;translate(523,-150) scale(0.707)&quot; data-mjx-texclass=&quot;ORD&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(600,0)&quot;&gt;&lt;path data-c=&quot;2212&quot; d=&quot;M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mn&quot; transform=&quot;translate(1378,0)&quot;&gt;&lt;path data-c=&quot;31&quot; d=&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(9166.4,0)&quot;&gt;&lt;path data-c=&quot;2C&quot; d=&quot;M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(9611.1,0)&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(10211.1,0)&quot;&gt;&lt;path data-c=&quot;1D462&quot; d=&quot;M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(10783.1,0)&quot;&gt;&lt;path data-c=&quot;1D45A&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(11661.1,0)&quot;&gt;&lt;path data-c=&quot;1D460&quot; d=&quot;M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(12130.1,0)&quot;&gt;&lt;path data-c=&quot;5B&quot; d=&quot;M118 -250V750H255V710H158V-210H255V-250H118Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(12408.1,0)&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(13008.1,0)&quot;&gt;&lt;path data-c=&quot;5D&quot; d=&quot;M22 710V750H159V-250H22V-210H119V710H22Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(13286.1,0)&quot;&gt;&lt;path data-c=&quot;29&quot; d=&quot;M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mtd&quot; transform=&quot;translate(14675.1,0)&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(877.8,0)&quot;&gt;&lt;g data-mml-node=&quot;text&quot;&gt;&lt;path data-c=&quot;3E&quot; d=&quot;M84 520Q84 528 88 533T96 539L99 540Q106 540 253 471T544 334L687 265Q694 260 694 250T687 235Q685 233 395 96L107 -40H101Q83 -38 83 -20Q83 -19 83 -17Q82 -10 98 -1Q117 9 248 71Q326 108 378 132L626 250L378 368Q90 504 86 509Q84 513 84 520Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;text&quot; transform=&quot;translate(778,0)&quot;&gt;&lt;path data-c=&quot;3D&quot; d=&quot;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mn&quot; transform=&quot;translate(2711.6,0)&quot;&gt;&lt;path data-c=&quot;31&quot; d=&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mtr&quot; transform=&quot;translate(0,-600)&quot;&gt;&lt;g data-mml-node=&quot;mtd&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(600,0)&quot;&gt;&lt;path data-c=&quot;1D462&quot; d=&quot;M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(1172,0)&quot;&gt;&lt;path data-c=&quot;1D45A&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(2050,0)&quot;&gt;&lt;path data-c=&quot;1D460&quot; d=&quot;M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(2519,0)&quot;&gt;&lt;path data-c=&quot;5B&quot; d=&quot;M118 -250V750H255V710H158V-210H255V-250H118Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(2797,0)&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(3397,0)&quot;&gt;&lt;path data-c=&quot;5D&quot; d=&quot;M22 710V750H159V-250H22V-210H119V710H22Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(3675,0)&quot;&gt;&lt;path data-c=&quot;2C&quot; d=&quot;M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mtd&quot; transform=&quot;translate(14675.1,0)&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(877.8,0)&quot;&gt;&lt;path data-c=&quot;3D&quot; d=&quot;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mn&quot; transform=&quot;translate(1933.6,0)&quot;&gt;&lt;path data-c=&quot;30&quot; d=&quot;M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(18636.6,0) translate(0 250)&quot;&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;mjx-assistive-mml unselectable=&quot;on&quot; display=&quot;block&quot; style=&quot;top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; overflow: hidden; width: 100%;&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;msub&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mrow data-mjx-texclass=&quot;INNER&quot;&gt;&lt;mo data-mjx-texclass=&quot;OPEN&quot;&gt;{&lt;/mo&gt;&lt;mtable columnalign=&quot;left left&quot; columnspacing=&quot;1em&quot; rowspacing=&quot;.2em&quot;&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;&amp;gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;mo data-mjx-texclass=&quot;CLOSE&quot; fence=&quot;true&quot; stretchy=&quot;true&quot; symmetric=&quot;true&quot;&gt;&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;&lt;/mjx-assistive-mml&gt;&lt;/mjx-container&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class Solution {
-    
-    /**
-     * @param Integer[] $nums
-     * @return Integer
-     */
-    function maxSubArray($nums) {
-        $len = count($nums);
-        if ($len == 1) {
-            return $nums[0];
-        }
-        
-        $currentMaxSum = $nums[0];
-        
-        $max = $nums[0];
-        for ($i=1; $i &amp;lt; $len; $i++) {
-            $currentMaxSum = max($currentMaxSum + $nums[$i], $nums[$i]);
-            $max = max($currentMaxSum, $max);
-        }
-        
-        return $max;
-    }
-}
-
-&lt;/code&gt;&lt;/pre&gt;
+                &lt;h1 id=&quot;快速上取整&quot; tabindex=&quot;-1&quot;&gt;快速上取整&lt;/h1&gt;
+&lt;p&gt;正整数的情况下， &lt;code&gt;a/b&lt;/code&gt;  上取整可以使用 :&lt;br /&gt;
+&lt;code&gt;(a+b-1)/b&lt;/code&gt;  快速计算，适用于强类型语言&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-53. 最大子数组和/" >
+            <link href="https://wudanyang6.github.io//300 Code/300 Leetcode/快速上取整/" >
         </entry>
         <entry>
             <title>
@@ -765,11 +724,57 @@ $zip-&amp;gt;close(); //关闭压缩包
         </entry>
         <entry>
             <title>
+                leetcode-53. 最大子数组和
+                
+            </title>
+            <updated>2024-02-28T14:25:00.000Z</updated>
+            <id>https://wudanyang6.github.io//300 Code/300 Leetcode/leetcode-53. 最大子数组和/</id>
+            <content type="html">
+                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;题目&quot; tabindex=&quot;-1&quot;&gt;题目&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/maximum-subarray/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;53. 最大子数组和&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;解法&quot; tabindex=&quot;-1&quot;&gt;解法&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dp&quot;&gt;#dp&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一版写的时候，可以加一个 dp 数组，保存每个节点的最大值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;dp&lt;/code&gt; 公式&lt;/p&gt;
+&lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot; display=&quot;true&quot; style=&quot;direction: ltr; display: block; text-align: center; margin: 1em 0; position: relative;&quot;&gt;&lt;svg style=&quot;overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -2.148ex;&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;47.438ex&quot; height=&quot;5.428ex&quot; role=&quot;img&quot; focusable=&quot;false&quot; viewBox=&quot;0 -1449.5 20967.4 2399&quot; aria-hidden=&quot;true&quot;&gt;&lt;g stroke=&quot;currentColor&quot; fill=&quot;currentColor&quot; stroke-width=&quot;0&quot; transform=&quot;scale(1,-1)&quot;&gt;&lt;g data-mml-node=&quot;math&quot;&gt;&lt;g data-mml-node=&quot;msub&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D453&quot; d=&quot;M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(523,-150) scale(0.707)&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(1275,0)&quot;&gt;&lt;path data-c=&quot;3D&quot; d=&quot;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mrow&quot; transform=&quot;translate(2330.8,0)&quot;&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(0 -0.5)&quot;&gt;&lt;path data-c=&quot;7B&quot; d=&quot;M618 -943L612 -949H582L568 -943Q472 -903 411 -841T332 -703Q327 -682 327 -653T325 -350Q324 -28 323 -18Q317 24 301 61T264 124T221 171T179 205T147 225T132 234Q130 238 130 250Q130 255 130 258T131 264T132 267T134 269T139 272T144 275Q207 308 256 367Q310 436 323 519Q324 529 325 851Q326 1124 326 1154T332 1205Q369 1358 566 1443L582 1450H612L618 1444V1429Q618 1413 616 1411L608 1406Q599 1402 585 1393T552 1372T515 1343T479 1305T449 1257T429 1200Q425 1180 425 1152T423 851Q422 579 422 549T416 498Q407 459 388 424T346 364T297 318T250 284T214 264T197 254L188 251L205 242Q290 200 345 138T416 3Q421 -18 421 -48T423 -349Q423 -397 423 -472Q424 -677 428 -694Q429 -697 429 -699Q434 -722 443 -743T465 -782T491 -816T519 -845T548 -868T574 -886T595 -899T610 -908L616 -910Q618 -912 618 -928V-943Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mtable&quot; transform=&quot;translate(750,0)&quot;&gt;&lt;g data-mml-node=&quot;mtr&quot; transform=&quot;translate(0,600)&quot;&gt;&lt;g data-mml-node=&quot;mtd&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D45A&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(878,0)&quot;&gt;&lt;path data-c=&quot;1D44E&quot; d=&quot;M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(1407,0)&quot;&gt;&lt;path data-c=&quot;1D465&quot; d=&quot;M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(1979,0)&quot;&gt;&lt;path data-c=&quot;28&quot; d=&quot;M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(2368,0)&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(2968,0)&quot;&gt;&lt;path data-c=&quot;1D462&quot; d=&quot;M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(3540,0)&quot;&gt;&lt;path data-c=&quot;1D45A&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(4418,0)&quot;&gt;&lt;path data-c=&quot;1D460&quot; d=&quot;M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(4887,0)&quot;&gt;&lt;path data-c=&quot;5B&quot; d=&quot;M118 -250V750H255V710H158V-210H255V-250H118Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(5165,0)&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(5765,0)&quot;&gt;&lt;path data-c=&quot;5D&quot; d=&quot;M22 710V750H159V-250H22V-210H119V710H22Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(6265.2,0)&quot;&gt;&lt;path data-c=&quot;2B&quot; d=&quot;M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;msub&quot; transform=&quot;translate(7265.4,0)&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D453&quot; d=&quot;M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;TeXAtom&quot; transform=&quot;translate(523,-150) scale(0.707)&quot; data-mjx-texclass=&quot;ORD&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(600,0)&quot;&gt;&lt;path data-c=&quot;2212&quot; d=&quot;M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mn&quot; transform=&quot;translate(1378,0)&quot;&gt;&lt;path data-c=&quot;31&quot; d=&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(9166.4,0)&quot;&gt;&lt;path data-c=&quot;2C&quot; d=&quot;M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(9611.1,0)&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(10211.1,0)&quot;&gt;&lt;path data-c=&quot;1D462&quot; d=&quot;M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(10783.1,0)&quot;&gt;&lt;path data-c=&quot;1D45A&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(11661.1,0)&quot;&gt;&lt;path data-c=&quot;1D460&quot; d=&quot;M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(12130.1,0)&quot;&gt;&lt;path data-c=&quot;5B&quot; d=&quot;M118 -250V750H255V710H158V-210H255V-250H118Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(12408.1,0)&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(13008.1,0)&quot;&gt;&lt;path data-c=&quot;5D&quot; d=&quot;M22 710V750H159V-250H22V-210H119V710H22Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(13286.1,0)&quot;&gt;&lt;path data-c=&quot;29&quot; d=&quot;M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mtd&quot; transform=&quot;translate(14675.1,0)&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(877.8,0)&quot;&gt;&lt;g data-mml-node=&quot;text&quot;&gt;&lt;path data-c=&quot;3E&quot; d=&quot;M84 520Q84 528 88 533T96 539L99 540Q106 540 253 471T544 334L687 265Q694 260 694 250T687 235Q685 233 395 96L107 -40H101Q83 -38 83 -20Q83 -19 83 -17Q82 -10 98 -1Q117 9 248 71Q326 108 378 132L626 250L378 368Q90 504 86 509Q84 513 84 520Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;text&quot; transform=&quot;translate(778,0)&quot;&gt;&lt;path data-c=&quot;3D&quot; d=&quot;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mn&quot; transform=&quot;translate(2711.6,0)&quot;&gt;&lt;path data-c=&quot;31&quot; d=&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mtr&quot; transform=&quot;translate(0,-600)&quot;&gt;&lt;g data-mml-node=&quot;mtd&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(600,0)&quot;&gt;&lt;path data-c=&quot;1D462&quot; d=&quot;M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(1172,0)&quot;&gt;&lt;path data-c=&quot;1D45A&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(2050,0)&quot;&gt;&lt;path data-c=&quot;1D460&quot; d=&quot;M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(2519,0)&quot;&gt;&lt;path data-c=&quot;5B&quot; d=&quot;M118 -250V750H255V710H158V-210H255V-250H118Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(2797,0)&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(3397,0)&quot;&gt;&lt;path data-c=&quot;5D&quot; d=&quot;M22 710V750H159V-250H22V-210H119V710H22Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(3675,0)&quot;&gt;&lt;path data-c=&quot;2C&quot; d=&quot;M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mtd&quot; transform=&quot;translate(14675.1,0)&quot;&gt;&lt;g data-mml-node=&quot;mi&quot;&gt;&lt;path data-c=&quot;1D45B&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(877.8,0)&quot;&gt;&lt;path data-c=&quot;3D&quot; d=&quot;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mn&quot; transform=&quot;translate(1933.6,0)&quot;&gt;&lt;path data-c=&quot;30&quot; d=&quot;M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(18636.6,0) translate(0 250)&quot;&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;mjx-assistive-mml unselectable=&quot;on&quot; display=&quot;block&quot; style=&quot;top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; overflow: hidden; width: 100%;&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;msub&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mrow data-mjx-texclass=&quot;INNER&quot;&gt;&lt;mo data-mjx-texclass=&quot;OPEN&quot;&gt;{&lt;/mo&gt;&lt;mtable columnalign=&quot;left left&quot; columnspacing=&quot;1em&quot; rowspacing=&quot;.2em&quot;&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;&amp;gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;mo data-mjx-texclass=&quot;CLOSE&quot; fence=&quot;true&quot; stretchy=&quot;true&quot; symmetric=&quot;true&quot;&gt;&lt;/mo&gt;&lt;/mrow&gt;&lt;/math&gt;&lt;/mjx-assistive-mml&gt;&lt;/mjx-container&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class Solution {
+    
+    /**
+     * @param Integer[] $nums
+     * @return Integer
+     */
+    function maxSubArray($nums) {
+        $len = count($nums);
+        if ($len == 1) {
+            return $nums[0];
+        }
+        
+        $currentMaxSum = $nums[0];
+        
+        $max = $nums[0];
+        for ($i=1; $i &amp;lt; $len; $i++) {
+            $currentMaxSum = max($currentMaxSum + $nums[$i], $nums[$i]);
+            $max = max($currentMaxSum, $max);
+        }
+        
+        return $max;
+    }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//300 Code/300 Leetcode/leetcode-53. 最大子数组和/" >
+        </entry>
+        <entry>
+            <title>
                 leetcode-1014. 最佳观光组合
                 
             </title>
             <updated>2024-02-28T14:24:03.000Z</updated>
-            <id>https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-1014. 最佳观光组合/</id>
+            <id>https://wudanyang6.github.io//300 Code/300 Leetcode/leetcode-1014. 最佳观光组合/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;题目&quot; tabindex=&quot;-1&quot;&gt;题目&lt;/h1&gt;
@@ -802,26 +807,7 @@ fn 为最大值&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/best-sightseeing-pair/solution/zui-jia-guan-guang-zu-he-by-leetcode-solution/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;官方题解&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//300 Code/300 Leetcode/具体题目/leetcode-1014. 最佳观光组合/" >
-        </entry>
-        <entry>
-            <title>
-                0 Home dy-turbo
-                
-            </title>
-            <updated>2024-03-08T09:07:09.000Z</updated>
-            <id>https://wudanyang6.github.io//</id>
-            <content type="html">
-                &lt;h1 id=&quot;home&quot; tabindex=&quot;-1&quot;&gt;Home&lt;/h1&gt;
-&lt;h2 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;心得&quot; tabindex=&quot;-1&quot;&gt;心得&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%BF%83%E5%BE%97/&quot;&gt;心得&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;关于我&quot; tabindex=&quot;-1&quot;&gt;关于我&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//" >
+            <link href="https://wudanyang6.github.io//300 Code/300 Leetcode/leetcode-1014. 最佳观光组合/" >
         </entry>
         <entry>
             <title>
@@ -1113,7 +1099,7 @@ fn 为最大值&lt;/p&gt;
                 Things 工作流
                 
             </title>
-            <updated>2024-02-02T05:02:13.000Z</updated>
+            <updated>2024-03-09T14:23:07.000Z</updated>
             <id>https://wudanyang6.github.io//101 Tools/Things 工作流/</id>
             <content type="html">
                 &lt;h1 id=&quot;things&quot; tabindex=&quot;-1&quot;&gt;Things 工作流&lt;/h1&gt;
@@ -2200,7 +2186,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 Kafka入门
                 
             </title>
-            <updated>2024-02-04T15:21:49.000Z</updated>
+            <updated>2024-03-09T14:14:17.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/Kafka入门/</id>
             <content type="html">
                 &lt;h1 id=&quot;1-kafka&quot; tabindex=&quot;-1&quot;&gt;1 初识Kafka&lt;/h1&gt;
@@ -2373,5 +2359,422 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/Kafka入门/" >
+        </entry>
+        <entry>
+            <title>
+                0 Home dy-turbo
+                
+            </title>
+            <updated>2024-03-09T14:07:47.000Z</updated>
+            <id>https://wudanyang6.github.io//</id>
+            <content type="html">
+                &lt;h1 id=&quot;home&quot; tabindex=&quot;-1&quot;&gt;Home&lt;/h1&gt;
+&lt;h2 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;心得&quot; tabindex=&quot;-1&quot;&gt;心得&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/%E5%BF%83%E5%BE%97/&quot;&gt;心得&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;关于我&quot; tabindex=&quot;-1&quot;&gt;关于我&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//" >
+        </entry>
+        <entry>
+            <title>
+                2024-03-11T02_30_08.257Z.Desktop
+                
+            </title>
+            <updated>2024-02-01T15:40:04.000Z</updated>
+            <id>https://wudanyang6.github.io//logseq/bak/card/非暴力沟通/2024-03-11T02_30_08.257Z.Desktop/</id>
+            <content type="html">
+                &lt;h1 id=&quot;非暴力沟通&quot; tabindex=&quot;-1&quot;&gt;非暴力沟通&lt;/h1&gt;
+&lt;p&gt;基于需要的意识&lt;/p&gt;
+&lt;p&gt;无论人们做还是不做&lt;/p&gt;
+&lt;p&gt;他都在试图满足某个 &lt;code&gt;内在的需要&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;开始理解对方的 &lt;code&gt;内在需要&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;表达自己、倾听对方&lt;/p&gt;
+&lt;p&gt;四个要素&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;观察
+&lt;ol&gt;
+&lt;li&gt;区分观察（客观）和评论（主观）&lt;/li&gt;
+&lt;li&gt;用观察性的语言聊，要不然容易出现回怼&lt;/li&gt;
+&lt;li&gt;不加评论的观察&lt;/li&gt;
+&lt;li&gt;不随便评论他人&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;感受
+&lt;ol&gt;
+&lt;li&gt;体会并描述自己当下的全部感受&lt;/li&gt;
+&lt;li&gt;区分感受和想法（评论）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;需要
+&lt;ol&gt;
+&lt;li&gt;感受的根源&lt;/li&gt;
+&lt;li&gt;我自己，而不是他人，对我的感受负责&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;请求
+&lt;ol&gt;
+&lt;li&gt;明确&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;沟通句式&lt;br /&gt;
+表达：&lt;br /&gt;
+当我看到 ——————，我感到——————，因为我需要——————，（或我看重/希望——————），你是否乐意——————？&lt;/p&gt;
+&lt;p&gt;倾听：&lt;br /&gt;
+你是否感到——————？因为你需要——————？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//logseq/bak/card/非暴力沟通/2024-03-11T02_30_08.257Z.Desktop/" >
+        </entry>
+        <entry>
+            <title>
+                2024-03-11T02_29_59.429Z.Desktop
+                
+            </title>
+            <updated>2024-02-02T05:02:13.000Z</updated>
+            <id>https://wudanyang6.github.io//logseq/bak/101 Tools/Things 工作流/2024-03-11T02_29_59.429Z.Desktop/</id>
+            <content type="html">
+                &lt;h1 id=&quot;things&quot; tabindex=&quot;-1&quot;&gt;Things 工作流&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;有任何事情都记录下来，心中的任何想法都不要放过&lt;/li&gt;
+&lt;li&gt;定时整理收件箱（需要保证整理完收件箱之后，任务都是可执行的）
+&lt;ol&gt;
+&lt;li&gt;如果有事情2分钟就能解决，那么直接去做，属于小事情&lt;/li&gt;
+&lt;li&gt;如果需要15-30分钟，则标记上标签 &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/Pasted%20image%2020231009172220.png&quot; alt=&quot;Pasted image 20231009172220.png&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;如果需要1小时以上，就将任务设置成项目
+&lt;ol&gt;
+&lt;li&gt;做一次任务分解，分解成小任务，小任务以30分钟以内完成最好&lt;/li&gt;
+&lt;li&gt;如果分解项目本身也需要很多时间，那么在项目里面加一个【分解任务】的事项&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;根据时间，选取任务进行处理，打开 &lt;code&gt;Session&lt;/code&gt; 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/Pasted%20image%2020231107224028.png&quot; alt=&quot;Pasted image 20231107224028.png&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;为了让Things工作流更顺畅，我做了一个obsidian插件： &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//logseq/bak/101 Tools/Things 工作流/2024-03-11T02_29_59.429Z.Desktop/" >
+        </entry>
+        <entry>
+            <title>
+                2024-03-11T02_29_59.419Z.Desktop
+                
+            </title>
+            <updated>2024-01-31T15:50:43.000Z</updated>
+            <id>https://wudanyang6.github.io//logseq/bak/101 Tools/10x程序员工作法/2024-03-11T02_29_59.419Z.Desktop/</id>
+            <content type="html">
+                &lt;h1 id=&quot;10x&quot; tabindex=&quot;-1&quot;&gt;10x程序员工作法&lt;/h1&gt;
+&lt;h2 id=&quot;content&quot; tabindex=&quot;-1&quot;&gt;Content&lt;/h2&gt;
+&lt;h3 id=&quot;以终为始&quot; tabindex=&quot;-1&quot;&gt;以终为始&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;倒着想&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;DoD（Definition of Done 完成的定义）
+&lt;ul&gt;
+&lt;li&gt;弥合差异&lt;/li&gt;
+&lt;li&gt;个人的DoD，团队的DoD&lt;/li&gt;
+&lt;li&gt;DoD 是一个思维模式，是一种尽可能消除不确定性，达成共识的方式。&lt;/li&gt;
+&lt;li&gt;DoD 让我们能够在一开始就把“终”清晰地定义出来。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;在做任何事之前，先定义完成的标准。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;用户故事（User Story）
+&lt;ul&gt;
+&lt;li&gt;标题&lt;/li&gt;
+&lt;li&gt;概述&lt;/li&gt;
+&lt;li&gt;详述&lt;/li&gt;
+&lt;li&gt;验收标准&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;在做任何需求或任务之前，先定好验收标准。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;持续集成
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;尽早提交代码去集成。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;精益创业：产品经理不靠谱，你该怎么办？&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;MVP 最小可行产品&lt;/li&gt;
+&lt;li&gt;比较早成型的面向不确定创造新事物的方法论是精益创业，它提出了“开发（build）-测量（measure）-认知（learn）”这样一个反馈循环和最小可行产品的概念。&lt;br /&gt;
+如何试出来经过验证的认知 &lt;a href=&quot;https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://learn.lianglianglee.com/专栏/10x程序员工作法/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg&lt;/a&gt; !&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Paste image 1705900815474image.png&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;精益创业提供给我们的是一个做产品的思考框架，我们能够接触到的大多数产品都可以放在这个框架内思考。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;默认所有需求都不做，直到弄清楚为什么要做这件事。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;上下文
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;扩大自己工作的上下文，别把自己局限在一个“程序员”的角色上。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;在动手做一件事之前，先推演一番。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;数字衡量
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;从数字中发现问题，让系统更稳定。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;问一下自己，我的工作是不是可以用数字衡量。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;开发前的准备
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;设计你的迭代0清单，给自己的项目做体检。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;任务分解&quot; tabindex=&quot;-1&quot;&gt;任务分解&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;动手做一个工作之前，请先对它进行任务分解。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;测试
+&lt;ul&gt;
+&lt;li&gt;测试模型：冰淇淋蛋卷： &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/1ac9ed05304d4009a1064dae764f1592.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;金字塔模型：&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/28d88fea0c894ba19321c844fe4d31ab.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;小事反馈周期短，而大事反馈周期长。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多写单元测试。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;我们应该编写可测的代码。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;将任务拆小，越小越好。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;按照完整实现一个需求的顺序去安排分解出来的任务。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;什么是好的测试
+&lt;ul&gt;
+&lt;li&gt;怎么衡量测试是否做好了呢？有一个标准：A-TRIP，这是五个单词的缩写，分别是Automatic（自动化）、Thorough（全面）、Repeatable（可重复的）、Independent（独立的）和 Professional（专业的）。&lt;/li&gt;
+&lt;li&gt;要想写好测试，就要写简单的测试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;需求分解
+&lt;ul&gt;
+&lt;li&gt;需求估算-大小标准&lt;/li&gt;
+&lt;li&gt;发现大的需求，一个迭代内做不完&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;想要管理好需求，先把需求拆小。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;尽量做最重要的事。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;做好产品开发，最可行的方式是采用 MVP。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;沟通反馈&quot; tabindex=&quot;-1&quot;&gt;沟通反馈&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;对齐？信息对齐&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;通过沟通反馈，不断升级自己的编解码能力。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用业务的语言写代码。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多面对面沟通，少开会。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多尝试用可视化的方式进行沟通。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;定期复盘，找准问题根因，不断改善。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多走近用户。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;事情往前做，有问题尽早暴露。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;金字塔原理 &lt;img src=&quot;https://learn.lianglianglee.com/%e4%b8%93%e6%a0%8f/10x%e7%a8%8b%e5%ba%8f%e5%91%98%e5%b7%a5%e4%bd%9c%e6%b3%95/assets/afdfd15d142d4732a2b6b87f4dae4450.jpg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多输出，让知识更有结构。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;自动化&quot; tabindex=&quot;-1&quot;&gt;自动化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;请谨慎地将工作自动化。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;有体系地学习运维知识。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;将验收测试自动化。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;把函数写短。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;&lt;strong&gt;构建好你的领域模型。&lt;/strong&gt;&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用简单技术解决问题，直到问题变复杂。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;学习领域驱动设计。再去拆分微服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;综合&quot; tabindex=&quot;-1&quot;&gt;综合&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;了解一个项目，从大图景开始。&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;业务&lt;/li&gt;
+&lt;li&gt;技术&lt;/li&gt;
+&lt;li&gt;团队运作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;小步改造遗留系统，不要回到老路上。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;什么叫 T 型人？简言之，一专多能。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;在学习区工作和成长。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
+&lt;h3 id=&quot;a-href-https-learn-lianglianglee-com-e4-b8-93-e6-a0-8f-10x-e7-a8-8b-e5-ba-8f-e5-91-98-e5-b7-a5-e4-bd-9c-e6-b3-95-39-20-e9-9d-a2-e5-af-b9-e9-81-97-e7-95-99-e7-b3-bb-e7-bb-9f-ef-bc-8c-e4-bd-a0-e5-ba-94-e8-af-a5-e8-bf-99-e6-a0-b7-e5-81-9a-md-target-blank-class-external-link-39-a&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://learn.lianglianglee.com/%e4%b8%93%e6%a0%8f/10x%e7%a8%8b%e5%ba%8f%e5%91%98%e5%b7%a5%e4%bd%9c%e6%b3%95/39%20%e9%9d%a2%e5%af%b9%e9%81%97%e7%95%99%e7%b3%bb%e7%bb%9f%ef%bc%8c%e4%bd%a0%e5%ba%94%e8%af%a5%e8%bf%99%e6%a0%b7%e5%81%9a.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;39 面对遗留系统，你应该这样做&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;a-href-https-learn-lianglianglee-com-e4-b8-93-e6-a0-8-f-10x-e7-a8-8-b-e5-ba-8-f-e5-91-98-e5-b7-a5-e4-bd-9-c-e6-b3-95-e6-80-bb-e5-a4-8-d-e4-b9-a0-20-e9-87-8-d-e6-96-b0-e6-9-d-a5-e2-80-9-c-e7-9-c-8-b-e4-b9-a6-e2-80-9-d-md-target-blank-class-external-link-https-learn-lianglianglee-com-10x-md-a&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/%E6%80%BB%E5%A4%8D%E4%B9%A0%20%E9%87%8D%E6%96%B0%E6%9D%A5%E2%80%9C%E7%9C%8B%E4%B9%A6%E2%80%9D.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://learn.lianglianglee.com/专栏/10x程序员工作法/总复习 重新来“看书”.md&lt;/a&gt;&lt;/h3&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//logseq/bak/101 Tools/10x程序员工作法/2024-03-11T02_29_59.419Z.Desktop/" >
+        </entry>
+        <entry>
+            <title>
+                2024-03-11T02_29_59.332Z.Desktop
+                
+            </title>
+            <updated>2024-02-04T15:21:49.000Z</updated>
+            <id>https://wudanyang6.github.io//logseq/bak/100 Programmer/Kafka入门/2024-03-11T02_29_59.332Z.Desktop/</id>
+            <content type="html">
+                &lt;h1 id=&quot;1-kafka&quot; tabindex=&quot;-1&quot;&gt;1 初识Kafka&lt;/h1&gt;
+&lt;h2 id=&quot;1-1-kafka&quot; tabindex=&quot;-1&quot;&gt;1.1 什么是Kafka&lt;/h2&gt;
+&lt;p&gt;Apache Kafka是一个分布式流处理平台，被设计用来高效地处理高吞吐量的数据流。它广泛应用于实时数据管道和流式应用程序中。以下是Kafka的一些主要优点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;高吞吐量&lt;/strong&gt;：Kafka支持高吞吐量的数据处理，即使是非常大的数据量也能够快速处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可扩展性&lt;/strong&gt;：Kafka集群可以横向扩展以处理更多的数据，可以在不停机的情况下动态添加更多的Broker。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;持久性和可靠性&lt;/strong&gt;：Kafka可以将数据持久化到磁盘，因此即使系统发生故障，数据也不会丢失。它使用分区和副本机制来确保数据的高可用性和耐用性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容错能力&lt;/strong&gt;：通过数据副本，Kafka可以在节点故障时保证数据不丢失，从而提供高可靠性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;低延迟&lt;/strong&gt;：Kafka能够在保持高吞吐量的同时实现低延迟的消息传递。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可靠的消息传递保证&lt;/strong&gt;：Kafka支持几种消息传递保证，包括最多一次、至少一次和精确一次（事务性传递）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多客户端支持&lt;/strong&gt;：Kafka提供多种编程语言的客户端库，方便不同开发环境下的集成。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;流处理&lt;/strong&gt;：Kafka Streams API允许构建实时流处理应用，可以进行复杂的数据处理和分析。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可观测性&lt;/strong&gt;：Kafka提供了监控数据流和系统性能的工具，有助于性能调优和问题诊断。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;大型社区和生态系统&lt;/strong&gt;：Kafka拥有一个庞大的社区和丰富的生态系统，提供了大量的工具和插件以及集成方案，可以帮助用户更好地开发和维护Kafka系统。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;1-2&quot; tabindex=&quot;-1&quot;&gt;1.2 使用场景&lt;/h2&gt;
+&lt;p&gt;Kafka的这些优点使它在需要处理大量实时数据的系统中特别有价值，包括日志聚合、流式处理、事件源、实时监控和分析等场景。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-16_812.png&quot; alt=&quot;clop_2024-01-16_812.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-3-kafka&quot; tabindex=&quot;-1&quot;&gt;1.3 kafka生产消费流程&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-16_813.png&quot; alt=&quot;clop_2024-01-16_813.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;../100 Programmer/mac 运行 kafka&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;2-kafka&quot; tabindex=&quot;-1&quot;&gt;2 Kafka 整体架构&lt;/h1&gt;
+&lt;p&gt;!&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;../drawio/Kafka 数据流.png&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kafka系统的核心概念包括：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Producer（生产者）&lt;/strong&gt;：负责发布消息到Kafka的Topic（主题）中。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Consumer（消费者）&lt;/strong&gt;：订阅Topic，并处理发布到这些Topic的消息。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Consumer Group（消费者组）&lt;/strong&gt;：一个消费者组可以有一个或多个消费者实例。当多个消费者实例属于同一个消费者组时，它们会在组内共享Topic的Partition。这意味着，每个Partition只会被消费者组中的一个消费者实例消费，这样可以保证每条消息只被组内的一个消费者处理，从而实现消息的负载均衡。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Broker（代理）&lt;/strong&gt;：Kafka集群中的服务器，负责存储数据并处理Producer和Consumer的请求。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Topic（主题）&lt;/strong&gt;：消息的分类，Producer发布消息到指定的Topic，Consumer订阅并消费Topic中的消息。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Partition（分区）&lt;/strong&gt;：Topic的物理分割，每个Partition在存储层面是独立的，可以在不同的Broker上。Partition内的消息是有序的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Offset（偏移量）&lt;/strong&gt;：Partition中每条消息的唯一标识，可以看作是消息在Partition中的索引。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Replica（副本）&lt;/strong&gt;：Partition的副本，用于提高数据的可靠性和容错性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zookeeper&lt;/strong&gt;：Kafka使用Zookeeper来进行集群管理和协调。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stream Processing（流处理）&lt;/strong&gt;：Kafka Streams是Kafka的流处理库，用于构建流式应用程序。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Connect（连接器）&lt;/strong&gt;：Kafka Connect是用于构建和运行可重用的数据导入和导出连接器的工具。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Kafka生产者将消息发送到负责存储目标Topic的Partition的Broker上。在Kafka集群中，每个Topic可以分为多个Partition，而每个Partition可能分布在不同的Broker上。每个Partition有一个Broker充当Leader，其他的Broker充当Follower。所有的读写操作都是通过Leader Broker进行的，Follower负责同步数据以保证高可用性和数据的冗余。&lt;/p&gt;
+&lt;h1 id=&quot;3-kafka&quot; tabindex=&quot;-1&quot;&gt;3 Kafka核心逻辑&lt;/h1&gt;
+&lt;h2 id=&quot;3-1&quot; tabindex=&quot;-1&quot;&gt;3.1 物理存储&lt;/h2&gt;
+&lt;p&gt;Kafka 的基本存储单元是分区。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/drawio/kafka%E5%AD%98%E5%82%A8.drawio.png&quot; alt=&quot;../drawio/kafka存储.drawio.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;kafka 存储的时候也是使用同样的格式存储到磁盘上，这样可以利用到零拷贝技术&lt;/p&gt;
+&lt;h2 id=&quot;3-2&quot; tabindex=&quot;-1&quot;&gt;3.2 生产者&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-16_814-kafka%E7%94%9F%E4%BA%A7%E8%80%85%E7%BB%84%E4%BB%B6%E5%9B%BE.png&quot; alt=&quot;clop_2024-01-16_814-kafka生产者组件图.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;流程如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先，我们需要创建一个 &lt;code&gt;ProducerRecord&lt;/code&gt;，这个对象需要包含消息的主题（topic）和值（value），可以选择性指定一个键值（key）或者分区（partition）。&lt;/li&gt;
+&lt;li&gt;发送消息时，生产者会对键值和值&lt;strong&gt;序列化&lt;/strong&gt;成字节数组，然后发送到&lt;strong&gt;分配器&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;如果我们指定了分区，那么分配器返回该分区即可；否则，分配器将会基于键来选择一个分区并返回。&lt;/li&gt;
+&lt;li&gt;选择完分区后，生产者知道了消息所属的主题和分区，它将这条记录添加到相同主题和分区的同一批次消息中，另一个线程负责发送这些批量消息到对应的 Kafka Broker。&lt;/li&gt;
+&lt;li&gt;当Broker接收到消息后，如果成功写入则返回一个包含消息的主题、分区及位移的RecordMetadata对象，否则返回异常。&lt;/li&gt;
+&lt;li&gt;生产者接收到结果后，对于异常可能会进行重试。重试几次还是失败会返回错误。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;生产者并不是将消息发送到任意的Broker，而是发送到管理特定Partition的Leader Broker上，以确保消息的正确存储和分发。&lt;/p&gt;
+&lt;p&gt;消息写入多个分区&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-18_844.png&quot; alt=&quot;clop_2024-01-18_844.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3-3&quot; tabindex=&quot;-1&quot;&gt;3.3 消费者&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-17_818-%E4%B8%BB%E9%A2%98%E5%92%8C%E6%B6%88%E8%B4%B9%E8%80%85%E7%BE%A4%E7%BB%84%E7%9A%84%E5%85%B3%E7%B3%BB.png&quot; alt=&quot;clop_2024-01-17_818-主题和消费者群组的关系.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/drawio/kafka%E6%B6%88%E8%B4%B9%E8%80%85.drawio.png&quot; alt=&quot;kafka消费者.drawio&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;3-3-1-offset&quot; tabindex=&quot;-1&quot;&gt;3.3.1 提交offset&lt;/h3&gt;
+&lt;p&gt;Kafka消费者提交偏移量的过程是为了记录消费者在消费Topic的Partition时当前的位置，以便在消费者重启或发生故障时能从上次处理的位置继续消费，保证消息不会丢失也不会被重复消费。提交偏移量的过程主要包括以下步骤：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;消费消息&lt;/strong&gt;：消费者从Broker拉取数据并进行处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;提交偏移量&lt;/strong&gt;：在成功处理完一批消息后，消费者会将最新的偏移量提交给Kafka。提交的偏移量是消费者下一次预期读取的起始位置。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;偏移量存储&lt;/strong&gt;：提交的偏移量存储在Kafka内的一个特殊的Topic中，名为&lt;code&gt;__consumer_offsets&lt;/code&gt;。每个消费者组的偏移量都会在这个Topic中维护。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;偏移量读取&lt;/strong&gt;：如果消费者发生重启或故障，它会从&lt;code&gt;__consumer_offsets&lt;/code&gt; Topic中读取上次提交的偏移量，从而恢复其消费状态。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;提交偏移量的方式主要有两种：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;自动提交偏移量&lt;/strong&gt;：Kafka消费者默认的偏移量提交方式是自动提交。这是通过在消费者配置中设置&lt;code&gt;enable.auto.commit=true&lt;/code&gt;来实现的，并且可以通过&lt;code&gt;auto.commit.interval.ms&lt;/code&gt;配置项来指定提交间隔。这种方式简单方便，但是由于提交是周期性进行的，可能会导致消息重复消费（如果在两次提交间隔内消费者失败）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;手动提交偏移量&lt;/strong&gt;：为了更精确地控制消息的消费状态，可以选择手动提交偏移量。手动提交可以是同步的也可以是异步的：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;同步提交&lt;/strong&gt;：通过调用&lt;code&gt;consumer.commitSync()&lt;/code&gt;方法，消费者会阻塞直到偏移量提交完成。这种方式会确保偏移量提交成功，如果提交失败，可以立即进行重试处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异步提交&lt;/strong&gt;：通过调用&lt;code&gt;consumer.commitAsync()&lt;/code&gt;方法，消费者可以在不阻塞当前线程的情况下提交偏移量。异步提交通常会提供一个回调函数来处理可能发生的提交错误。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异步+同步&lt;/strong&gt;：针对异步提交偏移量丢失的问题，通过对消费者进行异步批次提交并且在关闭时同步提交的方式，这样即使上一次的异步提交失败，通过同步提交还能够进行补救，同步会一直重试，直到提交成功。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;3-4&quot; tabindex=&quot;-1&quot;&gt;3.4 复制&lt;/h2&gt;
+&lt;h3 id=&quot;3-4-1&quot; tabindex=&quot;-1&quot;&gt;3.4.1 控制器&lt;/h3&gt;
+&lt;p&gt;有一个概念需要单独阐明：控制器&lt;/p&gt;
+&lt;p&gt;控制器其实就是一个 Broker，只不过它除了具有一般 Broker 的功能之外，&lt;strong&gt;还负责分区首领的选举&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;控制器是 Kafka 集群的管理节点。在一个 Kafka 集群中，所有的 Broker 节点中只有一个节点会被选举为控制器。&lt;/p&gt;
+&lt;p&gt;每个新选出的控制器通过 Zookeeper 的条件递增操作获得一个全新的、数值更大的 epoch 值，防止脑裂&lt;/p&gt;
+&lt;p&gt;简而言之，Kafka 使用 Zookeeper 的临时节点来选举控制器，并在节点加入集群或退出集群时通知控制器。控制器负责在节点加入或离开集群时进行分区首领选举。控制器使用 epoch 来避免“脑裂”。“脑裂”是指两个节点同时认为自己是当前的控制器。&lt;/p&gt;
+&lt;h3 id=&quot;3-4-2&quot; tabindex=&quot;-1&quot;&gt;3.4.2 与首领保持一致&lt;/h3&gt;
+&lt;p&gt;为了与首领保持同步，跟随者向首领发送获取数据的请求，&lt;strong&gt;这种请求与消费者为了读取消息而发送的请求是一样的&lt;/strong&gt;。首领将响应消息发给跟随者。请求消息里包含了跟随者想要获取消息的偏移量，而且这些偏移量总是有序的。&lt;/p&gt;
+&lt;h2 id=&quot;3-5&quot; tabindex=&quot;-1&quot;&gt;3.5 处理请求&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-18_846.png&quot; alt=&quot;clop_2024-01-18_846.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Kafka 使用零复制技术向客户端发送消息——也就是说，顺序读写内容，Kafka 直接把消息从文件(或者更确切地说是 Linux 文件系统缓存)里发送到网络通道，而不需要经过任何中间缓冲区。&lt;/p&gt;
+&lt;p&gt;零拷贝示意图：&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-18_848.png&quot; alt=&quot;clop_2024-01-18_848.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;零拷贝省略了数据在内核空间和用户空间之间的重复穿梭；用户态和内核态切换时产生中断，耗时；&lt;/p&gt;
+&lt;p&gt;生产请求和获取请求都必须发送给分区的首领副本。&lt;/p&gt;
+&lt;p&gt;如何获取分区首领所在的broker：&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-18_847.png&quot; alt=&quot;clop_2024-01-18_847.png&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;4&quot; tabindex=&quot;-1&quot;&gt;4 可靠性保证&lt;/h1&gt;
+&lt;p&gt;先了解一个概念：不完全的首领选举&lt;/p&gt;
+&lt;h2 id=&quot;4-1&quot; tabindex=&quot;-1&quot;&gt;4.1 消息传递语义&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;最多一次（at most once）：消息可能会丢失，但绝不会被重复发送。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;消费者端配置自动提交偏移量，并且在处理消息之前就提交。如果在提交偏移量后处理消息时发生了故障，那么这些消息可能不会被重新消费。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;至少一次（at least once）：消息不会丢失，但有可能被重复发送。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;手动提交偏移量。如果消费者在成功处理消息之前失败，那么同一消息可能会被再次消费。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;恰好一次（exactly once）：消息不会丢失，也不会被重复发送。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Kafka通过“幂等生产者”（Idempotent Producer）和“事务”（Transactions）来支持恰好一次的语义。幂等生产者确保即使生产者发送重复的消息，Broker也只会接收一次。事务性生产者可以将消息的发送和偏移量的提交放在同一个事务中，确保它们要么都成功，要么都失败。（恰好一次语义在Kafka 0.11版本及以上被引入。）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;4-2&quot; tabindex=&quot;-1&quot;&gt;4.2 不完全的首领选举&lt;/h2&gt;
+&lt;p&gt;是否允许不完全的首领选举：unclean.leader.election&lt;br /&gt;
+如果在选举过程中没有丢失数据，也就是说提交的数据同时存在于所有的同步副本上，那么这个选举就是“完全”的。&lt;br /&gt;
+如果在首领不可用时其他副本都是不同步的，那么这个选举就是“不完全”的。&lt;/p&gt;
+&lt;p&gt;简而言之，如果我们允许不同步的副本成为首领，那么就要承担丢失数据和出现数据不一致的⻛险。如果不允许它们成为首领，那么就要接受较低的可用性，因为我们必须等待原先的首领恢复到可用状态。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;unclean.leader.election=false&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;4-3&quot; tabindex=&quot;-1&quot;&gt;4.3 复制&lt;/h2&gt;
+&lt;p&gt;复制系数&lt;br /&gt;
+&lt;strong&gt;replication.factor &amp;gt;= 2&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;min.insync.replicas &amp;gt; 1&lt;/strong&gt; 则至少有一个同步从副本&lt;/p&gt;
+&lt;h2 id=&quot;4-4&quot; tabindex=&quot;-1&quot;&gt;4.4 使用生产者&lt;/h2&gt;
+&lt;p&gt;发送确认：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;acks=0 立即返回，不论是否写入&lt;/li&gt;
+&lt;li&gt;acks=1 当前首领副本已经写入&lt;/li&gt;
+&lt;li&gt;acks=-1或all 所有同步的副本已经被写入&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;重试&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;配置重试次数&lt;/li&gt;
+&lt;li&gt;设置重试间隔&lt;/li&gt;
+&lt;li&gt;程序兜底其他错误&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;4-5&quot; tabindex=&quot;-1&quot;&gt;4.5 使用消费者&lt;/h2&gt;
+&lt;p&gt;如果消费者提交了偏移量却未能处理完消息，那么就有可能造成消息丢失，这也是消费者丢失消息的主要原因。&lt;/p&gt;
+&lt;p&gt;正确的做法是：拉取数据、业务逻辑处理、提交消费 Offset 位移信息。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;enable.auto.commit = false&lt;/strong&gt; 采用手动提交位移的方式。&lt;/p&gt;
+&lt;p&gt;对于消费消息重复的情况，业务自己保证幂等性， 保证只成功消费一次即可。&lt;/p&gt;
+&lt;h1 id=&quot;6&quot; tabindex=&quot;-1&quot;&gt;6 思考&lt;/h1&gt;
+&lt;p&gt;Q: 知道了kafka的物理存储的结构，那么kafka通过offset查找对应的文件位置的过程是什么样的呢？&lt;/p&gt;
+&lt;p&gt;Q: 从副本在什么情况下被认为是不同步 (OSR) ？&lt;/p&gt;
+&lt;p&gt;Q: offset 为什么要从zookeeper挪到kafka本身存储呢？&lt;/p&gt;
+&lt;p&gt;Q：分区分成多少比较好？&lt;/p&gt;
+&lt;p&gt;Q：在主题流量不是很大的情况下，消费者一直轮询会造成浪费，有没有什么方式能够避免这种情况？&lt;/p&gt;
+&lt;p&gt;Q：Kafka 为什么要把自己定位成一个分布式流平台？&lt;/p&gt;
+&lt;h1 id=&quot;7&quot; tabindex=&quot;-1&quot;&gt;7 参考&lt;/h1&gt;
+&lt;p&gt;《Kafka 权威指南》 Neha Narkhede Gwen Shapira Todd Palino 著 薛命灯译&lt;/p&gt;
+&lt;p&gt;官网文档： &lt;a href=&quot;https://kafka.apache.org/documentation/#design&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Apache Kafka&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/li1669852599/article/details/113254934&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;mac环境下使用brew安装Kafka(详细过程)_brew kafka-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/xyqlrjm/p/14939453.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Kafka整体架构、工作流程与文件存储机制 - 细雨骑驴入剑门 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/jingdongkeji/p/17879177.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;扫盲Kafka？看这一篇就够了！ - 京东云技术团队 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/huxi2b/p/8440429.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Kafka元数据缓存(metadata cache) - huxihx - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/zhengzhaoxiang/p/13977382.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Kafka 物理存储机制 - Java程序员进阶 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cloud.tencent.com/developer/article/1787164&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;稀疏索引与其在Kafka和ClickHouse中的应用-腾讯云开发者社区-腾讯云&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/alvinscript/p/17407980.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;8张图带你全面了解kafka的核心机制 - JAVA旭阳 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/459610418&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;进阶，Kafka 如何保证消息不丢失？ - 知乎&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cloud.tencent.com/developer/article/2181009&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Kafka的自我定位&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//logseq/bak/100 Programmer/Kafka入门/2024-03-11T02_29_59.332Z.Desktop/" >
         </entry>
 </feed>

@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-08T13:47:09.804Z';
+        const searchIndexDate = '2024-03-12T05:48:02.095Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-08T13:47:09.804Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-12T05:48:02.095Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-08T13:47:09.804Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-12T05:48:02.095Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -820,7 +820,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/101 Tools/Things 工作流/" data-note-icon="" class="backlink">Things 工作流</a>
+                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/logseq/bak/101 Tools/Things 工作流/2024-03-11T02_29_59.429Z.Desktop/" data-note-icon="" class="backlink">2024-03-11T02_29_59.429Z.Desktop</a>
+                                                </div><div class="backlink-card"><i  icon-name="link"></i><a href="/101 Tools/Things 工作流/" data-note-icon="" class="backlink">Things 工作流</a>
                                                 </div><div class="backlink-card"><i  icon-name="link"></i><a href="/card/dg-Archives/" data-note-icon="" class="backlink">dg-Archives</a>
                                                 </div></div>
                               </div>

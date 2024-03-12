@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-08T13:47:09.804Z';
+        const searchIndexDate = '2024-03-12T05:48:02.095Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-08T13:47:09.804Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-12T05:48:02.095Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-08T13:47:09.804Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-12T05:48:02.095Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -526,7 +526,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-08T16:51:12+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-08T17:07:08+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-08T16:51:12+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-12T13:44:26+08:00"></span></div></div></div>
       
       
       </header>
@@ -540,6 +540,7 @@
 <li>相信明天更美好，但是要过好当下</li>
 <li>自己的智商又不是很好，毅力也不是很高，算法学习也只能是慢慢学了，也就是为了不让自己的脑子生锈吧</li>
 <li>坚持骑车锻炼 2024年03月08日16:55:41</li>
+<li>最好维护的代码是没有写出来的代码 2024年03月12日13:44:30</li>
 </ol>
 
       
