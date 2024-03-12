@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-12T09:02:39.846Z';
+        const searchIndexDate = '2024-03-12T09:23:58.485Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-12T09:02:39.846Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-12T09:23:58.485Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-12T09:02:39.846Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-12T09:23:58.485Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -566,7 +566,7 @@
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="top"
-        data-theme="transparent_dark"
+        data-theme="dark_tritanopia"
         data-lang="zh-CN"
         crossorigin="anonymous"
         async></script>
