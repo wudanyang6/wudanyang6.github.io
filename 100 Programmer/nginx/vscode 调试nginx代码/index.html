@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-12T09:23:58.485Z';
+        const searchIndexDate = '2024-03-13T07:54:40.197Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-12T09:23:58.485Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-13T07:54:40.197Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-12T09:23:58.485Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-13T07:54:40.197Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -544,7 +544,7 @@
 修改后如下：</p>
 <pre><code class="language-shell">ngx_compile_opt=&quot;-c -g&quot;
 </code></pre>
-<p><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/c/nginx/vscode 调试nginx代码/#gcc-g"><a class="tag" onclick="toggleTagSearch(this)" data-content="#gcc">#gcc</a> -g 的作用</a></p>
+<p><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/nginx/vscode 调试nginx代码/#gcc-g"><a class="tag" onclick="toggleTagSearch(this)" data-content="#gcc">#gcc</a> -g 的作用</a></p>
 <h2 id="and-amp-and-amp" tabindex="-1">编译 &amp; 安装 &amp; 运行</h2>
 <pre><code class="language-shell"># prefix 是想要安装到的目录
 auto/configure --prefix=/home/ubuntu/mydisk/var/nginx-debug-1

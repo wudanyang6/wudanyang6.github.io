@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>Nginx Master 启动 worker 进程的流程</title>
+    <title>如何查看 nginx 的rewrite记录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-12T09:23:58.485Z';
+        const searchIndexDate = '2024-03-13T07:54:40.197Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-12T09:23:58.485Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-13T07:54:40.197Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-12T09:23:58.485Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-13T07:54:40.197Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -517,7 +517,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Nginx Master 启动 worker 进程的流程</h1>
+          <h1 data-note-icon="">如何查看 nginx 的rewrite记录</h1>
         
         <div class="header-meta">
           
@@ -525,140 +525,39 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #nginx
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Process
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #source-code
-                  </a>
-                
-              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-04-16T19:04:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-22T15:57:08+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-04-22T18:14:44+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-31T13:26:28+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="nginx-master" tabindex="-1">Nginx Master 进程启动子进程的流程</h1>
-<h2 id="入口" tabindex="-1">入口</h2>
-<p>启动子进程的流程在<code>ngx_start_worker_processes</code>函数中，具体代码如下：</p>
-<pre><code class="language-c">static void
-ngx_start_worker_processes(ngx_cycle_t *cycle, ngx_int_t n, ngx_int_t type)
-{
-    ngx_int_t  i;
-
-    ngx_log_error(NGX_LOG_NOTICE, cycle-&gt;log, 0, &quot;start worker processes&quot;);
-
-    for (i = 0; i &lt; n; i++) {
-
-        ngx_spawn_process(cycle, ngx_worker_process_cycle,
-                          (void *) (intptr_t) i, &quot;worker process&quot;, type);
-
-        ngx_pass_open_channel(cycle);
-    }
-}
-
-
+      <h1 id="nginx-rewrite" tabindex="-1">如何调试nginx的rewrite规则？</h1>
+<p>设置 <code>rewrite_log on;</code></p>
+<p>并且将<code>error_log</code> 的报错等级改成 <code>notice</code>;</p>
+<p>官网对 <code>rewrite_log</code> 的解释：</p>
+<pre><code class="language-plain">Syntax:	rewrite_log on | off;
+Default:	
+rewrite_log off;
+Context:	http, server, location, if
+Enables or disables logging of ngx_http_rewrite_module module directives processing results into the error_log at the notice level.
 </code></pre>
-<h2 id="创建子进程" tabindex="-1">创建子进程</h2>
-<p>其中创建子进程的函数为 <code>ngx_spawn_process</code>，主要就是封装了 <code>fork</code> 函数。</p>
-<pre><code class="language-c">ngx_pid_t
-ngx_spawn_process(ngx_cycle_t *cycle, ngx_spawn_proc_pt proc, void *data,
-    char *name, ngx_int_t respawn)
-{
-    // ...
-    pid = fork();
-
-    switch (pid) {
-
-    case -1:
-        ngx_log_error(NGX_LOG_ALERT, cycle-&gt;log, ngx_errno,
-                      &quot;fork() failed while spawning \&quot;%s\&quot;&quot;, name);
-        ngx_close_channel(ngx_processes[s].channel, cycle-&gt;log);
-        return NGX_INVALID_PID;
-
-    case 0:
-        ngx_parent = ngx_pid;
-        ngx_pid = ngx_getpid();
-        proc(cycle, data);
-        break;
-
-    default:
-        break;
-    }
-
-    ngx_log_error(NGX_LOG_NOTICE, cycle-&gt;log, 0, &quot;start %s %P&quot;, name, pid);
-
-    ngx_processes[s].pid = pid;
-    ngx_processes[s].exited = 0;
-
-  // ...
-}
+<p>可以看到，这个指令只能在 <code>http</code> <code>server</code> <code>location</code> <code>if</code> 配置指令中使用，日志等级是 <code>notice</code> 写入到 <code>error_log</code> 配置的文件中。</p>
+<h1 id="示例" tabindex="-1">示例</h1>
+<p>url： <code>/q?someparams</code></p>
+<pre><code class="language-sh">2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+m/question(.*)?qid=\d+(.*)?$&quot; does not match ...
+... 中间省略一些日志
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+question/(\w+.*?)$&quot; does not match ...
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+q\?(.*)?tn=nsatom_qb_main(.*)?$&quot; matches ...
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+q&quot; matches ...
+2021/04/22 18:21:28 [notice] 18131#0: *102982 rewritten data: &quot;/q/q/q/q/q&quot;
 </code></pre>
-<p><code>fork</code> 函数的返回值：</p>
-<blockquote>
-<p>子进程返回0，父进程返回子进程id，若出错，返回 -1</p>
-</blockquote>
-<p>子进程在 <code>case 0</code> 中执行 <code>proc</code> 函数，<code>proc</code> 函数是 <code>ngx_start_worker_processes</code> 函数中传进来的第二个参数 <code>ngx_worker_process_cycle</code>。</p>
-<p><code>ngx_worker_process_cycle</code> 函数，就是 worker 进程的主要流程，以后会继续分析。</p>
-<h2 id="最大子进程数量" tabindex="-1">最大子进程数量</h2>
-<pre><code class="language-c">if (s == NGX_MAX_PROCESSES) {
-    ngx_log_error(NGX_LOG_ALERT, cycle-&gt;log, 0,
-                    &quot;no more than %d processes can be spawned&quot;,
-                    NGX_MAX_PROCESSES);
-    return NGX_INVALID_PID;
-}
-</code></pre>
-<pre><code class="language-c"><a class="tag" onclick="toggleTagSearch(this)" data-content="#define">#define</a> NGX_MAX_PROCESSES         1024
-</code></pre>
-<p>最大子进程数量定义成了 <code>NGX_MAX_PROCESSES</code> 也就是 1024，如果超过了 1024个进程，就会报错</p>
-<h2 id="code-respawn-code" tabindex="-1"><code>respawn</code> 参数的意义</h2>
-<h3 id="code-respawn-code-0" tabindex="-1"><code>respawn</code> 大于等于0时</h3>
-<p><code>respawn</code> 大于等于0时，代表重启子进程，respawn 代表给 <code>ngx_processes</code> 数组的下标</p>
-<pre><code class="language-c">if (respawn &gt;= 0) {
-    s = respawn;
-} else {
-    ...
-}
-</code></pre>
-<h3 id="code-respawn-code-0-1" tabindex="-1"><code>respawn</code> 小于0时</h3>
-<p><code>respawn</code> 小于0时，代表启动的子进程的属性，子进程的几种属性：</p>
-<pre><code class="language-c"><a class="tag" onclick="toggleTagSearch(this)" data-content="#define">#define</a> NGX_PROCESS_NORESPAWN     -1
-<a class="tag" onclick="toggleTagSearch(this)" data-content="#define">#define</a> NGX_PROCESS_JUST_SPAWN    -2
-<a class="tag" onclick="toggleTagSearch(this)" data-content="#define">#define</a> NGX_PROCESS_RESPAWN       -3
-<a class="tag" onclick="toggleTagSearch(this)" data-content="#define">#define</a> NGX_PROCESS_JUST_RESPAWN  -4
-<a class="tag" onclick="toggleTagSearch(this)" data-content="#define">#define</a> NGX_PROCESS_DETACHED      -5
-</code></pre>
-<p>那么 <code>respawn</code> 小于0时，子进程在 <code>ngx_processes</code>数组中的下标是多少呢？</p>
-<p>看下面这段代码：</p>
-<pre><code class="language-c">for (s = 0; s &lt; ngx_last_process; s++) {
-    if (ngx_processes[s].pid == -1) {
-        break;
-    }
-}
-
-if (s == NGX_MAX_PROCESSES) {
-    ngx_log_error(NGX_LOG_ALERT, cycle-&gt;log, 0,
-                  &quot;no more than %d processes can be spawned&quot;,
-                  NGX_MAX_PROCESSES);
-    return NGX_INVALID_PID;
-}
-</code></pre>
-<p>实际上就是在找 <code>ngx_processes</code> 数组中未使用的最小下标。</p>
+<p>从上面的日志中可以看出，当触发了重写规则时，会有关键字 <code>matches</code> 否则会有 <code>does not match</code> 。</p>
+<p>最终重写完成之后，访问的地址会有标记：<code>rewritten data</code></p>
+<p>这里就是 <code>/q/q/q/q/q</code></p>
 <h1 id="参考" tabindex="-1">参考</h1>
-<p>《UNIX 环境高级编程》</p>
-<p><a href="https://ivanzz1001.github.io/records/post/nginx/2017/12/02/nginx-source_part15_2" target="_blank" class="external-link">os/unix/ngx_process.c源代码分析</a></p>
+<p><a href="https://serverfault.com/questions/333048/best-way-to-debug-nginx-rewrite-rules-in-config-file" target="_blank" class="external-link">best way to debug nginx rewrite rules in config file?</a></p>
+<p><a href="https://nginx.org/en/docs/http/ngx_http_rewrite_module.html" target="_blank" class="external-link">nginx官方文档：Module ngx_http_rewrite_module</a></p>
 
       
       
@@ -923,31 +822,10 @@ if (s == NGX_MAX_PROCESSES) {
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#nginx-master">Nginx Master 进程启动子进程的流程</a>
-            
-                <ol>
-                    
-                    <li><a href="#入口">入口</a>
+                    <li><a href="#nginx-rewrite">如何调试nginx的rewrite规则？</a>
             		</li>
 
-                    <li><a href="#创建子进程">创建子进程</a>
-            		</li>
-
-                    <li><a href="#最大子进程数量">最大子进程数量</a>
-            		</li>
-
-                    <li><a href="#code-respawn-code">respawn 参数的意义</a>
-            
-                <ol>
-                    
-                    <li><a href="#code-respawn-code-0">respawn 大于等于0时</a>
-            		</li>
-
-                    <li><a href="#code-respawn-code-0-1">respawn 小于0时</a>
-            		</li>
-                </ol>
-            		</li>
-                </ol>
+                    <li><a href="#示例">示例</a>
             		</li>
 
                     <li><a href="#参考">参考</a>

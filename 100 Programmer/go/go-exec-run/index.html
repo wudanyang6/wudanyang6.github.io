@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>Nginx 进程模型-整体架构</title>
+    <title>go-exec-run</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -271,7 +271,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-12T09:23:58.485Z';
+        const searchIndexDate = '2024-03-13T07:54:40.197Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -283,9 +283,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-12T09:23:58.485Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-13T07:54:40.197Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-12T09:23:58.485Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-13T07:54:40.197Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -517,7 +517,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Nginx 进程模型-整体架构</h1>
+          <h1 data-note-icon="">go-exec-run</h1>
         
         <div class="header-meta">
           
@@ -525,46 +525,46 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #nginx
-                  </a>
-                
-              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-04-14T13:14:29+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-31T13:28:34+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-13T15:51:45+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-13T15:51:49+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="nginx" tabindex="-1">nginx 进程模型-整体架构</h1>
-<p><picture src="/img/user/100%20Programmer/c/nginx/713751-20221106220927618-2090658482.png" alt="713751-20221106220927618-2090658482.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/LNI6sR4dfk-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/LNI6sR4dfk-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/LNI6sR4dfk-700.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/LNI6sR4dfk-700.jpeg"
-        ><img       class=""
-      src="/img/user/100%20Programmer/c/nginx/713751-20221106220927618-2090658482.png"
-      alt="713751-20221106220927618-2090658482.png"
-      width=""
-      ></picture></p>
-<p>从网上找了一个非常好的图片，从图中可以看到很多东西</p>
-<ol>
-<li><code>Nginx</code> 会生成多个进程</li>
-<li><code>worker</code> 使用了 <code>io</code> 多路复用的事件驱动框架</li>
-<li><code>worker</code> 内部有很多模块</li>
-<li><code>worker</code> 处理磁盘 <code>I/O</code> 时，使用了标准 <code>I/O</code> ， <code>sendfile</code> ， <code>AIO</code> ，<code>mmap</code> 等 <code>I/O</code> 技术</li>
-<li><code>Cache loader</code> 和 <code>Cache manager</code> 操作 proxy cache</li>
-<li>后端支持多种基于 <code>tcp</code> 的网络协议</li>
-</ol>
+      <h1 id="go-exec-run" tabindex="-1">go-exec-run</h1>
+<p><code>Run</code> 和 <code>Wait</code> 都是 <code>os/exec</code> 包中 <code>Cmd</code> 结构体的方法，用于执行外部命令，但它们在执行方式上有一些关键的区别。</p>
+<h2 id="run" tabindex="-1">Run 方法</h2>
+<p><code>Run</code> 方法会启动外部命令，等待它完成，并返回一个错误值。如果命令成功执行（即退出状态为0），<code>Run</code> 返回 <code>nil</code>。如果命令执行失败（比如命令不存在，或者执行过程中出现了错误），则返回一个非 <code>nil</code> 的错误值。</p>
+<p><code>Run</code> 是一个阻塞调用，意味着它会阻塞当前的 Goroutine 直到外部命令执行完成。它实际上是 <code>Start</code> 和 <code>Wait</code> 方法的组合。首先，<code>Run</code> 调用 <code>Start</code> 方法来启动命令，然后立即调用 <code>Wait</code> 方法等待命令执行结束。</p>
+<pre><code class="language-go">cmd := exec.Command(&quot;echo&quot;, &quot;Hello, World!&quot;)
+err := cmd.Run()
+if err != nil {
+    log.Fatalf(&quot;cmd.Run() failed with %s\n&quot;, err)
+}
+</code></pre>
+<h2 id="wait" tabindex="-1">Wait 方法</h2>
+<p><code>Wait</code> 方法会阻塞调用它的 Goroutine，直到 <code>Cmd</code> 表示的命令执行完成。它必须在 <code>Start</code> 方法之后调用。<code>Start</code> 方法启动命令但不等待它结束，这使得你可以在命令执行的同时做一些其他的事情（比如读取命令的输出）。一旦你准备好等待命令执行完成，就可以调用 <code>Wait</code> 方法。</p>
+<p>如果命令成功执行，<code>Wait</code> 返回 <code>nil</code>。如果执行失败，则返回一个非 <code>nil</code> 的错误值。</p>
+<p>使用 <code>Start</code> 和 <code>Wait</code> 的组合，你可以更灵活地控制命令的执行过程。</p>
+<pre><code class="language-go">cmd := exec.Command(&quot;echo&quot;, &quot;Hello, World!&quot;)
+err := cmd.Start()
+if err != nil {
+    log.Fatal(err)
+}
+
+err = cmd.Wait()
+if err != nil {
+    log.Fatal(err)
+}
+</code></pre>
+<h2 id="区别总结" tabindex="-1">区别总结</h2>
+<ul>
+<li><code>Run</code> 是一个便利的方法，用于当你只需要简单地执行一个命令并等待它完成时。它是 <code>Start</code> 和 <code>Wait</code> 的组合。</li>
+<li>使用 <code>Start</code> 和 <code>Wait</code> 可以让你在命令执行的同时做一些其他的处理，比如并发地处理命令的输出。这提供了更高的灵活性，但也需要你手动管理命令的启动和完成等待。</li>
+</ul>
+<p>选择使用哪一个方法取决于你的具体需求和你想要的控制级别。对于大多数简单的用例，<code>Run</code> 方法可能就足够了。但如果你需要更细粒度的控制，比如并发处理命令的输出，那么使用 <code>Start</code> 和 <code>Wait</code> 的组合可能更合适。</p>
+<h1 id="reference" tabindex="-1">Reference</h1>
 
       
       
@@ -829,7 +829,22 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#nginx">nginx 进程模型-整体架构</a>
+                    <li><a href="#go-exec-run">go-exec-run</a>
+            
+                <ol>
+                    
+                    <li><a href="#run">Run 方法</a>
+            		</li>
+
+                    <li><a href="#wait">Wait 方法</a>
+            		</li>
+
+                    <li><a href="#区别总结">区别总结</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#reference">Reference</a>
             		</li>
                 </ol>
             </nav>

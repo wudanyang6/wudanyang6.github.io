@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>linux-查看内存占用情况</title>
+    <title>mac-鼠须管-使用lua脚本</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -517,7 +517,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">linux-查看内存占用情况</h1>
+          <h1 data-note-icon="">mac-鼠须管-使用lua脚本</h1>
         
         <div class="header-meta">
           
@@ -525,16 +525,140 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #输入法
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-01-04T15:23:34+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-02T12:07:52+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-12-26T00:31:15+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-02T16:15:28+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="linux" tabindex="-1">linux-查看内存占用情况</h1>
-<pre><code class="language-Shell">ps --no-headers -o &quot;rss,cmd&quot; -A | awk '{print $1/1024&quot;M&quot;,&quot;\t&quot;,$0}' | sort -n -k1
+      <h1 id="使用步骤" tabindex="-1">使用步骤</h1>
+<ol>
+<li>在 <code>lua</code> 目录中，添加脚本，以 <code>date</code> 日期文件为例：</li>
+</ol>
+<pre><code class="language-lua">--[[
+date_translator: 将 `date` 翻译为当前日期
+
+translator 的功能是将分好段的输入串翻译为一系列候选项。
+
+欲定义的 translator 包含三个输入参数：
+ - input: 待翻译的字符串
+ - seg: 包含 `start` 和 `_end` 两个属性，分别表示当前串在输入框中的起始和结束位置
+ - env: 可选参数，表示 translator 所处的环境（本例没有体现）
+
+translator 的输出是若干候选项。
+与通常的函数使用 `return` 返回不同，translator 要求您使用 `yield` 产生候选项。
+
+`yield` 每次只能产生一个候选项。有多个候选时，可以多次使用 `yield` 。
+
+请看如下示例：
+--]]
+
+local function translator(input, seg)
+   -- 如果输入串为 `date` 则翻译
+   if (input == &quot;date&quot; or input == &quot;shijian&quot;) then
+      --[[ 用 `yield` 产生一个候选项
+           候选项的构造函数是 `Candidate`，它有五个参数：
+            - type: 字符串，表示候选项的类型
+            - start: 候选项对应的输入串的起始位置
+            - _end:  候选项对应的输入串的结束位置
+            - text:  候选项的文本
+            - comment: 候选项的注释
+       --]]
+      yield(Candidate(&quot;date&quot;, seg.start, seg._end, os.date(&quot;%Y年%m月%d日&quot;), &quot;日期&quot;))
+      --[[ 用 `yield` 再产生一个候选项
+           最终的效果是输入法候选框中出现两个格式不同的当前日期的候选项。
+      --]]
+      yield(Candidate(&quot;date&quot;, seg.start, seg._end, os.date(&quot;%Y-%m-%d&quot;), &quot;日期&quot;))
+      yield(Candidate(&quot;date&quot;, seg.start, seg._end, os.date(&quot;%Y-%m-%d %H:%M:%S&quot;), &quot;日期时间&quot;))
+   end
+end
+
+-- 将上述定义导出
+return translator
+
 </code></pre>
+<ol>
+<li><code>rime.lua</code> 中引入此脚本:</li>
+</ol>
+<pre><code class="language-lua">-- date_translator: 将 `date` 翻译为当前日期
+-- 详见 `lua/date.lua`:
+date_translator = require(&quot;date&quot;)
+</code></pre>
+<ol>
+<li>在 <code>double_pinyin.custom.yaml</code> 或 <code>double_pinyin.schema.yaml</code> 中配置上此处理程序</li>
+</ol>
+<pre><code class="language-yml">  engine/translators:
+    - lua_translator@date_translator
+    - lua_translator@week_translator
+    - lua_translator@time_translator
+    - lua_translator@number_translator
+    - lua_translator@reverse_lookup_filter
+</code></pre>
+<h1 id="最终效果" tabindex="-1">最终效果</h1>
+<h2 id="date" tabindex="-1">date</h2>
+<p><picture src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-date%E6%95%88%E6%9E%9C%2020211226003919.png" alt="鼠须管-date效果 20211226003919.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/w1Cr6XGJAL-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/w1Cr6XGJAL-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/w1Cr6XGJAL-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/w1Cr6XGJAL-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-date%E6%95%88%E6%9E%9C%2020211226003919.png"
+      alt="鼠须管-date效果 20211226003919.png"
+      width=""
+      ></picture></p>
+<h2 id="time" tabindex="-1">time</h2>
+<p><picture src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-time%E6%95%88%E6%9E%9C%2020211226004010.png" alt="鼠须管-time效果 20211226004010.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/sYdDO6N5-J-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/sYdDO6N5-J-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/sYdDO6N5-J-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/sYdDO6N5-J-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-time%E6%95%88%E6%9E%9C%2020211226004010.png"
+      alt="鼠须管-time效果 20211226004010.png"
+      width=""
+      ></picture></p>
+<h2 id="number" tabindex="-1">number</h2>
+<p>输入 <code>/</code> ，然后输入数字 <code>1</code>，会显示大写数字<br>
+<picture src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-%E6%95%B0%E5%AD%97%E5%B1%95%E7%A4%BA%E6%95%88%E6%9E%9C%2020211226012849.png" alt="鼠须管-数字展示效果 20211226012849.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/PPGNLMd9_F-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/PPGNLMd9_F-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/PPGNLMd9_F-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/PPGNLMd9_F-700.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/%E9%BC%A0%E9%A1%BB%E7%AE%A1-%E6%95%B0%E5%AD%97%E5%B1%95%E7%A4%BA%E6%95%88%E6%9E%9C%2020211226012849.png"
+      alt="鼠须管-数字展示效果 20211226012849.png"
+      width=""
+      ></picture></p>
+<h1 id="参考" tabindex="-1">参考</h1>
+<p><a href="https://github.com/hchunhui/librime-lua" target="_blank" class="external-link">https://github.com/hchunhui/librime-lua</a></p>
 
       
       
@@ -799,7 +923,25 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#linux">linux-查看内存占用情况</a>
+                    <li><a href="#使用步骤">使用步骤</a>
+            		</li>
+
+                    <li><a href="#最终效果">最终效果</a>
+            
+                <ol>
+                    
+                    <li><a href="#date">date</a>
+            		</li>
+
+                    <li><a href="#time">time</a>
+            		</li>
+
+                    <li><a href="#number">number</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#参考">参考</a>
             		</li>
                 </ol>
             </nav>
