@@ -76,7 +76,7 @@
     
     
   </head>
-  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon links-note-icon">
+  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
     
     
     
@@ -266,7 +266,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-16T15:14:31.679Z';
+        const searchIndexDate = '2024-03-18T14:36:17.766Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -278,9 +278,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-16T15:14:31.679Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-18T14:36:17.766Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-16T15:14:31.679Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-18T14:36:17.766Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -512,7 +512,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">dg-Archives</h1>
+          <h1 data-note-icon="2">dg-Archives</h1>
         
         <div class="header-meta">
           
@@ -529,56 +529,56 @@
       
       <h1 id="dg-archives" tabindex="-1">dg-Archives</h1>
 <ul class="block-language-dataview">
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/go/go-exec-run/">go-exec-run</a>:  <em>(created: 2024-3-13)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/心得/">心得</a>:  <em>(created: 2024-3-8)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/dg-Archives/">dg-Archives</a>:  <em>(created: 2024-3-8)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/ithoughtx破产了/">ithoughtx破产了</a>:  <em>(created: 2024-3-5)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/家/软装-沙发/">软装-沙发</a>:  <em>(created: 2024-2-27)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#家">#家</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/创建一个chrome独立APP窗口/">创建一个chrome独立APP窗口</a>:  <em>(created: 2024-2-27)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#chrome">#chrome</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/娱乐/原神挺好玩/">原神挺好玩</a>:  <em>(created: 2024-1-31)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/About Me/">About Me</a>:  <em>(created: 2024-1-30)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件</a>:  <em>(created: 2024-1-29)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a>:  <em>(created: 2024-1-28)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/">0 Home dy-turbo</a>:  <em>(created: 2024-1-28)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/obsidian/obsidian 开发过程支持的ICON/">obsidian 开发过程支持的ICON</a>:  <em>(created: 2024-1-25)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/300 Leetcode/快速上取整/">快速上取整</a>:  <em>(created: 2024-1-22)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#算法">#算法</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/10x程序员工作法/">10x程序员工作法</a>:  <em>(created: 2024-1-19)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/算法新年祝福语/">算法新年祝福语</a>:  <em>(created: 2024-1-16)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/Kafka入门/">Kafka入门</a>:  <em>(created: 2024-1-15)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/linux-wait/">linux-wait</a>:  <em>(created: 2023-12-11)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/Things 工作流/">Things 工作流</a>:  <em>(created: 2023-10-9)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#things">#things</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka</a>:  <em>(created: 2023-9-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#kafka">#kafka</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#学习">#学习</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/vscode git 只暂存部分改动/">vscode git 只暂存部分改动</a>:  <em>(created: 2023-6-19)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a>:  <em>(created: 2023-5-9)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/Excalidraw/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw</a>:  <em>(created: 2023-4-18)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#excalidraw">#excalidraw</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/300 Leetcode/leetcode-1014. 最佳观光组合/">leetcode-1014. 最佳观光组合</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/300 Leetcode/leetcode-53. 最大子数组和/">leetcode-53. 最大子数组和</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#dp">#dp</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/mac/mac-合上盖子不断网/">mac-合上盖子不断网</a>:  <em>(created: 2023-2-3)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/linux-查看内存占用情况/">linux-查看内存占用情况</a>:  <em>(created: 2023-1-4)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符</a>:  <em>(created: 2022-12-7)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/mac/mac-自定义快捷键/">mac-自定义快捷键</a>:  <em>(created: 2022-11-16)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/docker-ubuntu-unminimize/">docker-ubuntu-unminimize</a>:  <em>(created: 2022-5-8)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/GTD/">GTD</a>:  <em>(created: 2022-5-5)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/踩坑/js超长数字溢出问题/">js超长数字溢出问题</a>:  <em>(created: 2022-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#js">#js</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#联调">#联调</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#踩坑">#踩坑</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/101 Tools/mac/mac-鼠须管-使用lua脚本/">mac-鼠须管-使用lua脚本</a>:  <em>(created: 2021-12-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#输入法">#输入法</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/非暴力沟通/">非暴力沟通</a>:  <em>(created: 2021-12-16)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/PHP生成zip压缩包/">PHP生成zip压缩包</a>:  <em>(created: 2021-11-23)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/linux-echo/">linux-echo</a>:  <em>(created: 2021-10-19)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/iso-日期表示法/">iso-日期表示法</a>:  <em>(created: 2021-7-25)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/linux-树莓派无法上网排查/">linux-树莓派无法上网排查</a>:  <em>(created: 2021-7-15)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#树莓派">#树莓派</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/card/网络-最多有多少个a类、b类和c类网络号/">网络-最多有多少个a类、b类和c类网络号</a>:  <em>(created: 2021-5-24)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/700 Personal/如何做监控/">如何做监控</a>:  <em>(created: 2021-5-7)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络</a>:  <em>(created: 2021-4-27)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/nginx/如何查看 nginx 的rewrite记录/">如何查看 nginx 的rewrite记录</a>:  <em>(created: 2021-4-22)</em></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/nginx/nginx-master-start-worker/">nginx-master-start-worker</a>:  <em>(created: 2021-4-16)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#nginx">#nginx</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#Process">#Process</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#source-code">#source-code</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/nginx/nginx 进程模型-整体架构/">nginx 进程模型-整体架构</a>:  <em>(created: 2021-4-14)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#nginx">#nginx</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/文件描述符/">文件描述符</a>:  <em>(created: 2021-4-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/如何追查线上问题/">如何追查线上问题</a>:  <em>(created: 2021-4-12)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#开发经验">#开发经验</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/linux-man命令使用/">linux-man命令使用</a>:  <em>(created: 2021-4-7)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/nginx/vscode 调试nginx代码/">vscode 调试nginx代码</a>:  <em>(created: 2021-3-25)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#nginx">#nginx</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/linux/202103251606 - linux-科学上网/">202103251606 - linux-科学上网</a>:  <em>(created: 2021-3-25)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
-<li><a class="internal-link" target="" data-note-icon="" href="/100 Programmer/300 Leetcode/模板/滑动窗口模板/">滑动窗口模板</a>:  <em>(created: 2021-3-6)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/go/go-exec-run/">go-exec-run</a>:  <em>(created: 2024-3-13)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/心得/">心得</a>:  <em>(created: 2024-3-8)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/dg-Archives/">dg-Archives</a>:  <em>(created: 2024-3-8)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/ithoughtx破产了/">ithoughtx破产了</a>:  <em>(created: 2024-3-5)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/家/软装-沙发/">软装-沙发</a>:  <em>(created: 2024-2-27)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#家">#家</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/创建一个chrome独立APP窗口/">创建一个chrome独立APP窗口</a>:  <em>(created: 2024-2-27)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#chrome">#chrome</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/娱乐/原神挺好玩/">原神挺好玩</a>:  <em>(created: 2024-1-31)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/About Me/">About Me</a>:  <em>(created: 2024-1-30)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件</a>:  <em>(created: 2024-1-29)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a>:  <em>(created: 2024-1-28)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/">0 Home dy-turbo</a>:  <em>(created: 2024-1-28)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/obsidian/obsidian 开发过程支持的ICON/">obsidian 开发过程支持的ICON</a>:  <em>(created: 2024-1-25)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/快速上取整/">快速上取整</a>:  <em>(created: 2024-1-22)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#算法">#算法</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/10x程序员工作法/">10x程序员工作法</a>:  <em>(created: 2024-1-19)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/算法新年祝福语/">算法新年祝福语</a>:  <em>(created: 2024-1-16)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/Kafka入门/">Kafka入门</a>:  <em>(created: 2024-1-15)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-wait/">linux-wait</a>:  <em>(created: 2023-12-11)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/Things 工作流/">Things 工作流</a>:  <em>(created: 2023-10-9)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#things">#things</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka</a>:  <em>(created: 2023-9-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#kafka">#kafka</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#学习">#学习</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/vscode git 只暂存部分改动/">vscode git 只暂存部分改动</a>:  <em>(created: 2023-6-19)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a>:  <em>(created: 2023-5-9)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/Excalidraw/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw</a>:  <em>(created: 2023-4-18)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#excalidraw">#excalidraw</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/leetcode-1014. 最佳观光组合/">leetcode-1014. 最佳观光组合</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/leetcode-53. 最大子数组和/">leetcode-53. 最大子数组和</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#dp">#dp</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/mac/mac-合上盖子不断网/">mac-合上盖子不断网</a>:  <em>(created: 2023-2-3)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/linux/linux-查看内存占用情况/">linux-查看内存占用情况</a>:  <em>(created: 2023-1-4)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/vim显示列分隔符/">vim显示列分隔符</a>:  <em>(created: 2022-12-7)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/mac/mac-自定义快捷键/">mac-自定义快捷键</a>:  <em>(created: 2022-11-16)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/docker-ubuntu-unminimize/">docker-ubuntu-unminimize</a>:  <em>(created: 2022-5-8)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/GTD/">GTD</a>:  <em>(created: 2022-5-5)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/踩坑/js超长数字溢出问题/">js超长数字溢出问题</a>:  <em>(created: 2022-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#js">#js</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#联调">#联调</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#踩坑">#踩坑</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/mac/mac-鼠须管-使用lua脚本/">mac-鼠须管-使用lua脚本</a>:  <em>(created: 2021-12-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#输入法">#输入法</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/非暴力沟通/">非暴力沟通</a>:  <em>(created: 2021-12-16)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/PHP生成zip压缩包/">PHP生成zip压缩包</a>:  <em>(created: 2021-11-23)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/linux/linux-echo/">linux-echo</a>:  <em>(created: 2021-10-19)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/iso-日期表示法/">iso-日期表示法</a>:  <em>(created: 2021-7-25)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/linux/linux-树莓派无法上网排查/">linux-树莓派无法上网排查</a>:  <em>(created: 2021-7-15)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#树莓派">#树莓派</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/网络-最多有多少个a类、b类和c类网络号/">网络-最多有多少个a类、b类和c类网络号</a>:  <em>(created: 2021-5-24)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/700 Personal/如何做监控/">如何做监控</a>:  <em>(created: 2021-5-7)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/linux/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络</a>:  <em>(created: 2021-4-27)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/nginx/如何查看 nginx 的rewrite记录/">如何查看 nginx 的rewrite记录</a>:  <em>(created: 2021-4-22)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/nginx/nginx-master-start-worker/">nginx-master-start-worker</a>:  <em>(created: 2021-4-16)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#nginx">#nginx</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#Process">#Process</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#source-code">#source-code</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/nginx/nginx 进程模型-整体架构/">nginx 进程模型-整体架构</a>:  <em>(created: 2021-4-14)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#nginx">#nginx</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/linux/文件描述符/">文件描述符</a>:  <em>(created: 2021-4-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/如何追查线上问题/">如何追查线上问题</a>:  <em>(created: 2021-4-12)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#开发经验">#开发经验</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/linux/linux-man命令使用/">linux-man命令使用</a>:  <em>(created: 2021-4-7)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/nginx/vscode 调试nginx代码/">vscode 调试nginx代码</a>:  <em>(created: 2021-3-25)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#nginx">#nginx</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/linux/202103251606 - linux-科学上网/">202103251606 - linux-科学上网</a>:  <em>(created: 2021-3-25)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/模板/滑动窗口模板/">滑动窗口模板</a>:  <em>(created: 2021-3-6)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
 </ul>
 
       
@@ -858,7 +858,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/" data-note-icon="" class="backlink">0 Home dy-turbo</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="2" class="backlink">0 Home dy-turbo</a>
                                                 </div></div>
                               </div>
                         

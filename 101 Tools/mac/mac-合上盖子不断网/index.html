@@ -76,7 +76,7 @@
     
     
   </head>
-  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon links-note-icon">
+  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
     
     
     
@@ -266,7 +266,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-16T15:14:31.679Z';
+        const searchIndexDate = '2024-03-18T14:36:17.766Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -278,9 +278,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-16T15:14:31.679Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-18T14:36:17.766Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-16T15:14:31.679Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-18T14:36:17.766Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -512,7 +512,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">mac-合上盖子不断网</h1>
+          <h1 data-note-icon="2">mac-合上盖子不断网</h1>
         
         <div class="header-meta">
           
@@ -830,7 +830,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><i  icon-name="link"></i><a href="/card/dg-Archives/" data-note-icon="" class="backlink">dg-Archives</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
                                                 </div></div>
                               </div>
                         
