@@ -266,7 +266,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-18T14:36:17.766Z';
+        const searchIndexDate = '2024-03-18T14:41:04.533Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -278,9 +278,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-18T14:36:17.766Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-18T14:41:04.533Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-18T14:36:17.766Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-18T14:41:04.533Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -521,7 +521,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-13T15:51:45+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-13T15:51:49+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-13T15:51:45+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-13T15:53:16+08:00"></span></div></div></div>
       
       
       </header>
@@ -853,7 +853,8 @@ if err != nil {
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/100 Programmer/go/go-exec/" data-note-icon="2" class="backlink">go-exec</a>
+                                                </div><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
                                                 </div></div>
                               </div>
                         

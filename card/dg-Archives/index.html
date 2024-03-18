@@ -266,7 +266,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-18T14:36:17.766Z';
+        const searchIndexDate = '2024-03-18T14:41:04.533Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -278,9 +278,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-18T14:36:17.766Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-18T14:41:04.533Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-18T14:36:17.766Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-18T14:41:04.533Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -530,18 +530,19 @@
       <h1 id="dg-archives" tabindex="-1">dg-Archives</h1>
 <ul class="block-language-dataview">
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/go/go-exec-run/">go-exec-run</a>:  <em>(created: 2024-3-13)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/go/go-exec/">go-exec</a>:  <em>(created: 2024-3-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#Go">#Go</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/心得/">心得</a>:  <em>(created: 2024-3-8)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/dg-Archives/">dg-Archives</a>:  <em>(created: 2024-3-8)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/ithoughtx破产了/">ithoughtx破产了</a>:  <em>(created: 2024-3-5)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/家/软装-沙发/">软装-沙发</a>:  <em>(created: 2024-2-27)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#家">#家</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/创建一个chrome独立APP窗口/">创建一个chrome独立APP窗口</a>:  <em>(created: 2024-2-27)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#chrome">#chrome</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/算法编码技巧/">算法编码技巧</a>:  <em>(created: 2024-2-4)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/娱乐/原神挺好玩/">原神挺好玩</a>:  <em>(created: 2024-1-31)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/About Me/">About Me</a>:  <em>(created: 2024-1-30)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件</a>:  <em>(created: 2024-1-29)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a>:  <em>(created: 2024-1-28)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/">0 Home dy-turbo</a>:  <em>(created: 2024-1-28)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/obsidian/obsidian 开发过程支持的ICON/">obsidian 开发过程支持的ICON</a>:  <em>(created: 2024-1-25)</em></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/快速上取整/">快速上取整</a>:  <em>(created: 2024-1-22)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#算法">#算法</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/10x程序员工作法/">10x程序员工作法</a>:  <em>(created: 2024-1-19)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/算法新年祝福语/">算法新年祝福语</a>:  <em>(created: 2024-1-16)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/Kafka入门/">Kafka入门</a>:  <em>(created: 2024-1-15)</em></li>
@@ -551,8 +552,8 @@
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/vscode git 只暂存部分改动/">vscode git 只暂存部分改动</a>:  <em>(created: 2023-6-19)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a>:  <em>(created: 2023-5-9)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/Excalidraw/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw</a>:  <em>(created: 2023-4-18)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#excalidraw">#excalidraw</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/leetcode-1014. 最佳观光组合/">leetcode-1014. 最佳观光组合</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/leetcode-53. 最大子数组和/">leetcode-53. 最大子数组和</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#dp">#dp</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/具体题目/leetcode-1014. 最佳观光组合/">leetcode-1014. 最佳观光组合</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/具体题目/leetcode-53. 最大子数组和/">leetcode-53. 最大子数组和</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#dp">#dp</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数</a>:  <em>(created: 2023-2-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/mac/mac-合上盖子不断网/">mac-合上盖子不断网</a>:  <em>(created: 2023-2-3)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/linux/linux-查看内存占用情况/">linux-查看内存占用情况</a>:  <em>(created: 2023-1-4)</em></li>

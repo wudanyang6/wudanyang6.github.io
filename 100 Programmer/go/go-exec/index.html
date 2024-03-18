@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>网络-最多有多少个a类、b类和c类网络号</title>
+    <title>go-exec</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -512,7 +512,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">网络-最多有多少个a类、b类和c类网络号</h1>
+          <h1 data-note-icon="2">go-exec</h1>
         
         <div class="header-meta">
           
@@ -520,25 +520,96 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #Go
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-05-24T14:05:00+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-01T13:02:45+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-13T15:43:24+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-13T15:53:18+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <p>在IPv4地址体系中，网络被分为4个等级，分别是A，B，C和D类。对于A、B、C类，其数量如下：</p>
+      <h1 id="go-exec" tabindex="-1">go-exec</h1>
+<p>在Go语言中，<code>exec</code> 包提供了执行外部命令的功能。这个包是标准库的一部分，允许你从Go程序中运行外部的系统命令和程序。使用这个包，你可以执行Shell命令，处理命令的输入输出，以及访问命令的返回状态。</p>
+<p>下面是如何使用 <code>exec</code> 包执行Shell命令的一些基本步骤和示例。</p>
+<h2 id="1-exec" tabindex="-1">1. 导入exec包</h2>
+<p>在你的Go文件中，首先需要导入<code>os/exec</code>包。</p>
+<pre><code class="language-go">import &quot;os/exec&quot;
+</code></pre>
+<h2 id="2" tabindex="-1">2. 创建命令</h2>
+<p>使用<code>exec.Command</code>函数创建一个新的<code>*exec.Cmd</code>对象，该对象用于执行外部命令。这个函数的第一个参数是命令名称，后续参数是命令需要的参数。</p>
+<pre><code class="language-go">cmd := exec.Command(&quot;echo&quot;, &quot;Hello, World!&quot;)
+</code></pre>
+<p>如果你需要执行的命令需要Shell特性（比如管道、文件重定向等），你可以通过在Shell中执行命令来实现。例如，在Unix系统中，可以使用<code>bash</code>的<code>-c</code>选项。</p>
+<pre><code class="language-go">cmd := exec.Command(&quot;bash&quot;, &quot;-c&quot;, &quot;ls -l | grep .go&quot;)
+</code></pre>
+<h2 id="3" tabindex="-1">3. 运行命令</h2>
+<p>有几种方法可以用来运行命令并获取输出。</p>
+<p><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/go/go-exec-run/">go-exec-run</a></p>
 <ul>
-<li>A类：128个（范围是0.0.0.0到127.255.255.255，但0.0.0.0和127.0.0.0通常分别用作默认路由和本地回环地址，所以不包括在内。）</li>
-<li>B类：16,384个（范围是 128.0.0.0 到 191.255.255.255）</li>
-<li>C类：2,097,152个（范围是 192.0.0.0 到 223.255.255.255）</li>
+<li><strong>Run</strong>：运行命令，并等待命令完成。</li>
 </ul>
-<p>请注意，上述分类是根据原始的IPv4地址分类来计算的。然而，由于IP地址的枯竭，现在的实际网络环境中，通常在IP地址分配上使用了子网划分，CIDR，私有地址等现代网络技术，因此实际的可用网络数量会因子网划分、私有地址使用等因素而有所变化。</p>
-<p>D类 IP 地址是多播（Multicast）地址，其范围是 224.0.0.0 到 239.255.255.255。</p>
-<p>所以，D类网络（多播地址）总共有 (239-224+1) x (2^24) = 268,435,456 个。</p>
-<p>但是，有些特定的地址在D类中是已经被保留或特殊用途的，例如 224.0.0.0 - 224.0.0.255 是被保留的用于本地网络的多播地址。</p>
-<h1 id="参考" tabindex="-1">参考</h1>
-<p><a href="https://blog.csdn.net/a5534789/article/details/50118857#:~:text=%E2%80%9C0%E2%80%9D%E5%81%9A%E4%B8%BA%E7%BD%91%E7%BB%9C%E5%8F%B7,%E7%BD%91%E6%AE%B5%E4%B8%BA1%E2%80%94126.&amp;text=224%3D412%3D166%3D2563,%E6%95%B0%E5%BA%94%E8%AF%A5%E6%98%AF16777214%E4%B8%AA%E3%80%82" target="_blank" class="external-link">https://blog.csdn.net/a5534789/article/details/50118857#:~:text=“0”做为网络号,网段为1—126.&amp;text=224%3D412%3D166%3D2563,数应该是16777214个。</a></p>
+<pre><code class="language-go">err := cmd.Run()
+if err != nil {
+    log.Fatalf(&quot;cmd.Run() failed with %s\n&quot;, err)
+}
+</code></pre>
+<ul>
+<li><strong>Output</strong>：运行命令，并收集命令的标准输出。</li>
+</ul>
+<pre><code class="language-go">out, err := cmd.Output()
+if err != nil {
+    log.Fatal(err)
+}
+fmt.Printf(&quot;The output is %s\n&quot;, out)
+</code></pre>
+<ul>
+<li><strong>CombinedOutput</strong>：运行命令，并收集标准输出和标准错误。</li>
+</ul>
+<pre><code class="language-go">out, err := cmd.CombinedOutput()
+if err != nil {
+    log.Fatal(err)
+}
+fmt.Printf(&quot;The combined output is %s\n&quot;, out)
+</code></pre>
+<ul>
+<li><strong>Start</strong> 和 <strong>Wait</strong>：<code>Start</code> 开始执行命令但不等待它完成，<code>Wait</code> 等待命令完成。</li>
+</ul>
+<pre><code class="language-go">err := cmd.Start()
+if err != nil {
+    log.Fatal(err)
+}
+
+err = cmd.Wait()
+if err != nil {
+    log.Fatal(err)
+}
+</code></pre>
+<h2 id="4" tabindex="-1">4. 处理命令的输入输出</h2>
+<p>你可以通过设置<code>Cmd</code>结构体的<code>Stdin</code>、<code>Stdout</code>、<code>Stderr</code>属性来处理命令的输入输出。</p>
+<pre><code class="language-go">cmd.Stdin = strings.NewReader(&quot;some input&quot;)
+var out bytes.Buffer
+cmd.Stdout = &amp;out
+err := cmd.Run()
+if err != nil {
+    log.Fatal(err)
+}
+fmt.Printf(&quot;The output is %s\n&quot;, out.String())
+</code></pre>
+<h2 id="5" tabindex="-1">5. 获取命令的返回状态</h2>
+<p>命令的返回状态可以通过检查<code>Run</code>、<code>Output</code>或<code>CombinedOutput</code>方法返回的错误来获取。如果命令以非零状态退出，这些方法会返回一个<code>*exec.ExitError</code>类型的错误。</p>
+<pre><code class="language-go">if exitErr, ok := err.(*exec.ExitError); ok {
+    // 这里可以获取到非零退出状态和更多信息
+    fmt.Printf(&quot;Command exited with status %d\n&quot;, exitErr.ExitCode())
+}
+</code></pre>
+<h2 id="总结" tabindex="-1">总结</h2>
+<p>通过Go的<code>exec</code>包，你可以方便地执行外部命令和处理Shell命令。这对于需要与系统层面交互的程序来说非常有用。记得总是仔细处理命令的输出和错误，以及考虑安全性，避免执行不受信任的命令。</p>
+<h1 id="reference" tabindex="-1">Reference</h1>
 
       
       
@@ -803,7 +874,31 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#参考">参考</a>
+                    <li><a href="#go-exec">go-exec</a>
+            
+                <ol>
+                    
+                    <li><a href="#1-exec">1. 导入exec包</a>
+            		</li>
+
+                    <li><a href="#2">2. 创建命令</a>
+            		</li>
+
+                    <li><a href="#3">3. 运行命令</a>
+            		</li>
+
+                    <li><a href="#4">4. 处理命令的输入输出</a>
+            		</li>
+
+                    <li><a href="#5">5. 获取命令的返回状态</a>
+            		</li>
+
+                    <li><a href="#总结">总结</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#reference">Reference</a>
             		</li>
                 </ol>
             </nav>
