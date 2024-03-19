@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" >
     <link href="https://wudanyang6.github.io/" >
-    <updated>2024-03-18T14:41:04Z</updated>
+    <updated>2024-03-19T03:19:29Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -368,6 +368,7 @@ done
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/nginx/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/&quot;&gt;vscode 调试nginx代码&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-25)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/202103251606%20-%20linux-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/&quot;&gt;202103251606 - linux-科学上网&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-25)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/300%20Leetcode/%E6%A8%A1%E6%9D%BF/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%A8%A1%E6%9D%BF/&quot;&gt;滑动窗口模板&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-6)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/phpstorm%20%E4%B8%A4%E4%B8%8B%20ctrl%20%E5%8F%AF%E4%BB%A5%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F/&quot;&gt;phpstorm 两下 ctrl 可以快速运行程序&lt;/a&gt;:  &lt;em&gt;(created: 2020-11-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#phpstorm&quot;&gt;#phpstorm&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ide&quot;&gt;#ide&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#效率&quot;&gt;#效率&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
             </content>
@@ -659,6 +660,26 @@ $zip-&amp;gt;close(); //关闭压缩包
         </entry>
         <entry>
             <title>
+                phpstorm 两下 ctrl 可以快速运行程序
+                
+            </title>
+            <updated>2024-03-09T14:03:33.000Z</updated>
+            <id>https://wudanyang6.github.io//101 Tools/phpstorm 两下 ctrl 可以快速运行程序/</id>
+            <content type="html">
+                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#phpstorm&quot;&gt;#phpstorm&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ide&quot;&gt;#ide&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#效率&quot;&gt;#效率&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;code-phpstorm-code-code-ctrl-code&quot; tabindex=&quot;-1&quot;&gt;使用 &lt;code&gt;phpstorm&lt;/code&gt; 双击 &lt;code&gt;ctrl&lt;/code&gt; 运行预定义程序&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020201127112108.png&quot; alt=&quot;Pasted image 20201127112108.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;phpstorm&lt;/code&gt; 中的工具栏中，有一个绿色的按钮，可以运行已经定义好的配置&lt;/p&gt;
+&lt;p&gt;但是每次切换的时候，都需要点一下切换到具体的程序&lt;/p&gt;
+&lt;p&gt;但是如果双击 &lt;code&gt;ctrl&lt;/code&gt; 就可以直接弹出运行的搜索栏&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020201127112303.png&quot; alt=&quot;Pasted image 20201127112303.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;在搜索栏中输入你想运行的程序，上下键选中，然后 &lt;code&gt;enter&lt;/code&gt; 即可运行&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//101 Tools/phpstorm 两下 ctrl 可以快速运行程序/" >
+        </entry>
+        <entry>
+            <title>
                 obsidian 开发过程支持的ICON
                 
             </title>
@@ -830,7 +851,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 obsidian-things3-today插件
                 
             </title>
-            <updated>2024-03-03T13:25:54.000Z</updated>
+            <updated>2024-03-19T03:18:39.000Z</updated>
             <id>https://wudanyang6.github.io//101 Tools/obsidian-things3-today插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
@@ -2283,7 +2304,7 @@ if err != nil {
                 算法编码技巧
                 
             </title>
-            <updated>2024-03-18T14:31:31.000Z</updated>
+            <updated>2024-03-19T02:06:26.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/300 Leetcode/算法编码技巧/</id>
             <content type="html">
                 &lt;h1 id=&quot;算法编码技巧&quot; tabindex=&quot;-1&quot;&gt;算法编码技巧&lt;/h1&gt;
