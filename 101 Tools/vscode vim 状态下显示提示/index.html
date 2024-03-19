@@ -266,7 +266,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-19T03:19:29.169Z';
+        const searchIndexDate = '2024-03-19T03:24:40.868Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -278,9 +278,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-19T03:19:29.169Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-19T03:24:40.868Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-19T03:19:29.169Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-19T03:24:40.868Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -521,7 +521,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-05-09T19:12:14+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-01-31T13:34:35+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-05-09T19:12:14+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-19T11:23:42+08:00"></span></div></div></div>
       
       
       </header>
@@ -532,6 +532,24 @@
 <blockquote>
 <p>If you're using the VSCodeVim plugin, you can use <code>gh</code> to show the tooltip. <a href="https://stackoverflow.com/a/66860229" target="_blank" class="external-link"></a></p>
 </blockquote>
+<p>如下图所示，光标所在位置，平常是需要鼠标移动刀红色波浪线位置后才出现这个提示，在使用<code>VSCodeVim</code>的情况下，按下<code>gh</code>可以调出此弹窗快速查看错误提示信息<br>
+<picture src="/img/user/attachs/Pasted%20image%2020240319112212.png" alt="Pasted image 20240319112212.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/l-P-xxNNFq-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/l-P-xxNNFq-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/l-P-xxNNFq-546.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/l-P-xxNNFq-546.jpeg"
+        ><img       class=""
+      src="/img/user/attachs/Pasted%20image%2020240319112212.png"
+      alt="Pasted image 20240319112212.png"
+      width=""
+      ></picture></p>
 
       
       

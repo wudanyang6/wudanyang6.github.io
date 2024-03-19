@@ -266,7 +266,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-19T03:19:29.169Z';
+        const searchIndexDate = '2024-03-19T03:24:40.868Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -278,9 +278,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-19T03:19:29.169Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-19T03:24:40.868Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-19T03:19:29.169Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-19T03:24:40.868Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -520,15 +520,32 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #phpstorm
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #ide
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #tools
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2020-11-26T20:08:03+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-09T22:03:33+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2020-11-26T20:08:03+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-19T11:19:05+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <p><a class="tag" onclick="toggleTagSearch(this)" data-content="#phpstorm">#phpstorm</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#ide">#ide</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a></p>
-<h1 id="code-phpstorm-code-code-ctrl-code" tabindex="-1">使用 <code>phpstorm</code> 双击 <code>ctrl</code> 运行预定义程序</h1>
+      <h1 id="code-phpstorm-code-code-ctrl-code" tabindex="-1">使用 <code>phpstorm</code> 双击 <code>ctrl</code> 运行预定义程序</h1>
 <p><picture src="/img/user/attachs/Pasted%20image%2020201127112108.png" alt="Pasted image 20201127112108.png"><source       media="(max-width:480px)"
       srcset="/img/optimized/Rv4iZ7t1gu-350.webp"
       type="image/webp"

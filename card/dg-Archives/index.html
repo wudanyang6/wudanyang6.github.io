@@ -266,7 +266,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-19T03:19:29.169Z';
+        const searchIndexDate = '2024-03-19T03:24:40.868Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -278,9 +278,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-19T03:19:29.169Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-19T03:24:40.868Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-19T03:19:29.169Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-19T03:24:40.868Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -539,7 +539,7 @@
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/算法编码技巧/">算法编码技巧</a>:  <em>(created: 2024-2-4)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/娱乐/原神挺好玩/">原神挺好玩</a>:  <em>(created: 2024-1-31)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/About Me/">About Me</a>:  <em>(created: 2024-1-30)</em></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件</a>:  <em>(created: 2024-1-29)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/things/obsidian-things3-today插件/">obsidian-things3-today插件</a>:  <em>(created: 2024-1-29)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a>:  <em>(created: 2024-1-28)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/">0 Home dy-turbo</a>:  <em>(created: 2024-1-28)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/obsidian/obsidian 开发过程支持的ICON/">obsidian 开发过程支持的ICON</a>:  <em>(created: 2024-1-25)</em></li>
@@ -547,7 +547,7 @@
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/算法新年祝福语/">算法新年祝福语</a>:  <em>(created: 2024-1-16)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/Kafka入门/">Kafka入门</a>:  <em>(created: 2024-1-15)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-wait/">linux-wait</a>:  <em>(created: 2023-12-11)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/Things 工作流/">Things 工作流</a>:  <em>(created: 2023-10-9)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#things">#things</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/things/Things 工作流/">Things 工作流</a>:  <em>(created: 2023-10-9)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#things">#things</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka</a>:  <em>(created: 2023-9-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#kafka">#kafka</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#学习">#学习</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/vscode git 只暂存部分改动/">vscode git 只暂存部分改动</a>:  <em>(created: 2023-6-19)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a>:  <em>(created: 2023-5-9)</em></li>
@@ -580,7 +580,7 @@
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/nginx/vscode 调试nginx代码/">vscode 调试nginx代码</a>:  <em>(created: 2021-3-25)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#nginx">#nginx</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/linux/202103251606 - linux-科学上网/">202103251606 - linux-科学上网</a>:  <em>(created: 2021-3-25)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/模板/滑动窗口模板/">滑动窗口模板</a>:  <em>(created: 2021-3-6)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/phpstorm 两下 ctrl 可以快速运行程序/">phpstorm 两下 ctrl 可以快速运行程序</a>:  <em>(created: 2020-11-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#phpstorm">#phpstorm</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#ide">#ide</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/phpstorm 两下 ctrl 可以快速运行程序/">phpstorm 两下 ctrl 可以快速运行程序</a>:  <em>(created: 2020-11-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#phpstorm">#phpstorm</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#ide">#ide</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a></li>
 </ul>
 
       

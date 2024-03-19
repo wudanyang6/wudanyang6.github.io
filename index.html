@@ -721,6 +721,49 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('101 Tools/things')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">things</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/things/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/things/Things 工作流/">Things 工作流 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/10x程序员工作法/">10x程序员工作法 </a>
                 </div>
             
@@ -732,29 +775,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/phpstorm 两下 ctrl 可以快速运行程序/">phpstorm 两下 ctrl 可以快速运行程序 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/Things 工作流/">Things 工作流 </a>
                 </div>
             
         </div>
@@ -1247,7 +1268,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-19T03:19:29.169Z';
+        const searchIndexDate = '2024-03-19T03:24:40.868Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1259,9 +1280,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-19T03:19:29.169Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-19T03:24:40.868Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-19T03:19:29.169Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-19T03:24:40.868Z', docs}));
             window.docs = docs
             window.index = index;
         }
