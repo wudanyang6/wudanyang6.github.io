@@ -1270,7 +1270,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-22T09:34:25.160Z';
+        const searchIndexDate = '2024-03-22T10:44:16.007Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1282,9 +1282,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T09:34:25.160Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T10:44:16.007Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T09:34:25.160Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T10:44:16.007Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1525,19 +1525,17 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2022-12-07T15:55:15+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-19T11:19:48+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2022-12-07T15:55:15+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-19T11:24:30+08:00"></span></div></div></div>
       
       
       </header>
       
       
       <h1 id="vim" tabindex="-1">vim显示列分隔符</h1>
-<h2 id="内容" tabindex="-1">内容</h2>
 <pre><code class="language-bash">:set list
 </code></pre>
-<p>显示 <code>tab</code> 和结尾符号 <code>$</code>，不显示开头的 <code>^</code> 符号<br>
-<img src="/img/user/attachs/Pasted%20image%2020221207155541.png" alt="../attachs/Pasted image 20221207155541.png"></p>
-<h2 id="参考" tabindex="-1">参考</h2>
+<p>显示 <code>tab</code> 和结尾符号 <code>$</code>，不显示开头的 <code>^</code> 符号</p>
+<p><img src="/img/user/attachs/Pasted%20image%2020221207155541.png" alt="../attachs/Pasted image 20221207155541.png"></p>
 
       
       
@@ -1803,15 +1801,6 @@
                 <ol>
                     
                     <li><a href="#vim">vim显示列分隔符</a>
-            
-                <ol>
-                    
-                    <li><a href="#内容">内容</a>
-            		</li>
-
-                    <li><a href="#参考">参考</a>
-            		</li>
-                </ol>
             		</li>
                 </ol>
             </nav>

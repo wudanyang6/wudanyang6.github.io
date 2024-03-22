@@ -1270,7 +1270,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-22T09:34:25.160Z';
+        const searchIndexDate = '2024-03-22T10:44:16.007Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1282,9 +1282,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T09:34:25.160Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T10:44:16.007Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T09:34:25.160Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T10:44:16.007Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1525,15 +1525,16 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-08T16:50:22+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-08T16:58:37+08:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-08T16:50:22+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-22T17:33:56+08:00"></span></div></div></div>
       
       
       </header>
       
       
       <h1 id="dg-archives" tabindex="-1">dg-Archives</h1>
+<p><img src="/img/user/attachs/favicon-32x32.png" alt="favicon-32x32.png"></p>
 <ul class="block-language-dataview">
-<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/go/go-exec-run/">go-exec-run</a>:  <em>(created: 2024-3-13)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/go/go-exec-run/">go-exec-run</a>:  <em>(created: 2024-3-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#Go">#Go</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/go/go-exec/">go-exec</a>:  <em>(created: 2024-3-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#Go">#Go</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/心得/">心得</a>:  <em>(created: 2024-3-8)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/dg-Archives/">dg-Archives</a>:  <em>(created: 2024-3-8)</em></li>
@@ -1584,6 +1585,7 @@
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/nginx/vscode 调试nginx代码/">vscode 调试nginx代码</a>:  <em>(created: 2021-3-25)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#nginx">#nginx</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/linux/202103251606 - linux-科学上网/">202103251606 - linux-科学上网</a>:  <em>(created: 2021-3-25)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/模板/滑动窗口模板/">滑动窗口模板</a>:  <em>(created: 2021-3-6)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#leetcode">#leetcode</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/php/202012081017 - php8.0 新特性/">202012081017 - php8.0 新特性</a>:  <em>(created: 2020-12-8)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#php">#php</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/phpstorm 两下 ctrl 可以快速运行程序/">phpstorm 两下 ctrl 可以快速运行程序</a>:  <em>(created: 2020-11-26)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#phpstorm">#phpstorm</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#ide">#ide</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a></li>
 </ul>
 

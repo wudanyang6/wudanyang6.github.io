@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-03-22T09:34:25Z</updated>
+    <updated>2024-03-22T10:44:16Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -312,12 +312,13 @@ done
                 dg-Archives
                 
             </title>
-            <updated>2024-03-08T08:58:37.000Z</updated>
+            <updated>2024-03-22T09:33:56.000Z</updated>
             <id>https://wudanyang6.github.io//card/dg-Archives/</id>
             <content type="html">
                 &lt;h1 id=&quot;dg-archives&quot; tabindex=&quot;-1&quot;&gt;dg-Archives&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/favicon-32x32.png&quot; alt=&quot;favicon-32x32.png&quot; /&gt;&lt;/p&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/go/go-exec-run/&quot;&gt;go-exec-run&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-13)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/go/go-exec-run/&quot;&gt;go-exec-run&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Go&quot;&gt;#Go&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/go/go-exec/&quot;&gt;go-exec&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Go&quot;&gt;#Go&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%BF%83%E5%BE%97/&quot;&gt;心得&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-8)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-8)&lt;/em&gt;&lt;/li&gt;
@@ -368,6 +369,7 @@ done
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/nginx/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/&quot;&gt;vscode 调试nginx代码&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-25)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/202103251606%20-%20linux-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/&quot;&gt;202103251606 - linux-科学上网&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-25)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/300%20Leetcode/%E6%A8%A1%E6%9D%BF/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%A8%A1%E6%9D%BF/&quot;&gt;滑动窗口模板&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-6)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/php/202012081017%20-%20php8.0%20%E6%96%B0%E7%89%B9%E6%80%A7/&quot;&gt;202012081017 - php8.0 新特性&lt;/a&gt;:  &lt;em&gt;(created: 2020-12-8)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#php&quot;&gt;#php&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/phpstorm%20%E4%B8%A4%E4%B8%8B%20ctrl%20%E5%8F%AF%E4%BB%A5%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F/&quot;&gt;phpstorm 两下 ctrl 可以快速运行程序&lt;/a&gt;:  &lt;em&gt;(created: 2020-11-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#phpstorm&quot;&gt;#phpstorm&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ide&quot;&gt;#ide&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tools&quot;&gt;#tools&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -646,16 +648,14 @@ $zip-&amp;gt;close(); //关闭压缩包
                 vim显示列分隔符
                 
             </title>
-            <updated>2024-03-19T03:19:48.000Z</updated>
+            <updated>2024-03-19T03:24:30.000Z</updated>
             <id>https://wudanyang6.github.io//101 Tools/vim显示列分隔符/</id>
             <content type="html">
                 &lt;h1 id=&quot;vim&quot; tabindex=&quot;-1&quot;&gt;vim显示列分隔符&lt;/h1&gt;
-&lt;h2 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;:set list
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;显示 &lt;code&gt;tab&lt;/code&gt; 和结尾符号 &lt;code&gt;$&lt;/code&gt;，不显示开头的 &lt;code&gt;^&lt;/code&gt; 符号&lt;br /&gt;
-&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020221207155541.png&quot; alt=&quot;../attachs/Pasted image 20221207155541.png&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h2&gt;
+&lt;p&gt;显示 &lt;code&gt;tab&lt;/code&gt; 和结尾符号 &lt;code&gt;$&lt;/code&gt;，不显示开头的 &lt;code&gt;^&lt;/code&gt; 符号&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020221207155541.png&quot; alt=&quot;../attachs/Pasted image 20221207155541.png&quot; /&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//101 Tools/vim显示列分隔符/" />
@@ -2081,7 +2081,7 @@ fmt.Printf(&amp;quot;The output is %s&#92;n&amp;quot;, out.String())
                 go-exec-run
                 
             </title>
-            <updated>2024-03-13T07:53:16.000Z</updated>
+            <updated>2024-03-22T10:43:31.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/go/go-exec-run/</id>
             <content type="html">
                 &lt;h1 id=&quot;go-exec-run&quot; tabindex=&quot;-1&quot;&gt;go-exec-run&lt;/h1&gt;
