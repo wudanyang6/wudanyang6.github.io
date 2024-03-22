@@ -55,7 +55,8 @@
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
-    <link href="/styles/style.css" rel="stylesheet">
+    <link href="/styles/obsidian-base.css" rel="stylesheet">
+    <link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
@@ -76,7 +77,7 @@
     
     
   </head>
-  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
+  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
     
     
     
@@ -266,7 +267,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-19T09:37:54.434Z';
+        const searchIndexDate = '2024-03-22T06:05:47.989Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -278,9 +279,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-19T09:37:54.434Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T06:05:47.989Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-19T09:37:54.434Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T06:05:47.989Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -532,23 +533,7 @@
 <pre><code class="language-bash">:set list
 </code></pre>
 <p>显示 <code>tab</code> 和结尾符号 <code>$</code>，不显示开头的 <code>^</code> 符号<br>
-<picture src="/img/user/attachs/Pasted%20image%2020221207155541.png" alt="../attachs/Pasted image 20221207155541.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/yQe8zCpsgy-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/yQe8zCpsgy-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/yQe8zCpsgy-624.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/yQe8zCpsgy-624.jpeg"
-        ><img       class=""
-      src="/img/user/attachs/Pasted%20image%2020221207155541.png"
-      alt="../attachs/Pasted image 20221207155541.png"
-      width=""
-      ></picture></p>
+<img src="/img/user/attachs/Pasted%20image%2020221207155541.png" alt="../attachs/Pasted image 20221207155541.png"></p>
 <h2 id="参考" tabindex="-1">参考</h2>
 
       

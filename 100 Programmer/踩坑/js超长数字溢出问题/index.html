@@ -55,7 +55,8 @@
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
-    <link href="/styles/style.css" rel="stylesheet">
+    <link href="/styles/obsidian-base.css" rel="stylesheet">
+    <link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
@@ -76,7 +77,7 @@
     
     
   </head>
-  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
+  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
     
     
     
@@ -266,7 +267,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-19T09:37:54.434Z';
+        const searchIndexDate = '2024-03-22T06:05:47.989Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -278,9 +279,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-19T09:37:54.434Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T06:05:47.989Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-19T09:37:54.434Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T06:05:47.989Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -536,62 +537,14 @@
 <p>一比较，看起来是数字被转换了</p>
 <p><code>759830849237899244</code> =&gt; <code>759830849237899300</code></p>
 <p>在前端控制台执行一下：<br>
-<picture src="/img/user/attachs/Pasted%20image%2020220226212150.png" alt="Pasted image 20220226212150.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/63j22XQTjm-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/63j22XQTjm-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/63j22XQTjm-612.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/63j22XQTjm-612.jpeg"
-        ><img       class=""
-      src="/img/user/attachs/Pasted%20image%2020220226212150.png"
-      alt="Pasted image 20220226212150.png"
-      width=""
-      ></picture><br>
+<img src="/img/user/attachs/Pasted%20image%2020220226212150.png" alt="Pasted image 20220226212150.png"><br>
 果然被转成了另外一个数字，而且看规律很像是后三位被上取整了</p>
 <h1 id="原理" tabindex="-1">原理</h1>
 <p>后来了解到js会将数字按照下图方式切分后表示数字，以至于最高表示的数字只能到 <code>9007199254740991</code>  比这个数字更大的数字就会发生进位溢出<br>
-<picture src="/img/user/attachs/Pasted%20image%2020201109201831.png" alt="Pasted image 20201109201831.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/8h7550GQlZ-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/8h7550GQlZ-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/8h7550GQlZ-594.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/8h7550GQlZ-594.jpeg"
-        ><img       class=""
-      src="/img/user/attachs/Pasted%20image%2020201109201831.png"
-      alt="Pasted image 20201109201831.png"
-      width=""
-      ></picture></p>
+<img src="/img/user/attachs/Pasted%20image%2020201109201831.png" alt="Pasted image 20201109201831.png"></p>
 <h1 id="解决方案" tabindex="-1">解决方案</h1>
 <p>解决方案很好办，那就是将数字转成字符串，只要前端不强转成数字，那就不会出问题<br>
-<picture src="/img/user/attachs/iShot2022-02-26%2021.46.09.jpg" alt="iShot2022-02-26 21.46.09.jpg"><source       media="(max-width:480px)"
-      srcset="/img/optimized/JBNOQc9Vw_-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/JBNOQc9Vw_-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/JBNOQc9Vw_-700.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/JBNOQc9Vw_-700.jpeg"
-        ><img       class=""
-      src="/img/user/attachs/iShot2022-02-26%2021.46.09.jpg"
-      alt="iShot2022-02-26 21.46.09.jpg"
-      width=""
-      ></picture></p>
+<img src="/img/user/attachs/iShot2022-02-26%2021.46.09.jpg" alt="iShot2022-02-26 21.46.09.jpg"></p>
 <h1 id="参考文档" tabindex="-1">参考文档</h1>
 <p><a href="https://cloud.tencent.com/developer/article/1477816" target="_blank" class="external-link">JSON Bigint 大数精度丢失的背后</a></p>
 <p><a href="https://stackoverflow.com/questions/10631494/json-parse-parses-converts-big-numbers-incorrectly" target="_blank" class="external-link">JSON.parse parses / converts big numbers incorrectly</a></p>

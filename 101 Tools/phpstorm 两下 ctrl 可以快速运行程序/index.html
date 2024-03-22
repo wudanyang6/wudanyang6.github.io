@@ -55,7 +55,8 @@
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
-    <link href="/styles/style.css" rel="stylesheet">
+    <link href="/styles/obsidian-base.css" rel="stylesheet">
+    <link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
@@ -76,7 +77,7 @@
     
     
   </head>
-  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
+  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
     
     
     
@@ -266,7 +267,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-19T09:37:54.434Z';
+        const searchIndexDate = '2024-03-22T06:05:47.989Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -278,9 +279,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-19T09:37:54.434Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T06:05:47.989Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-19T09:37:54.434Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T06:05:47.989Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -546,38 +547,11 @@
       
       
       <h1 id="code-phpstorm-code-code-ctrl-code" tabindex="-1">使用 <code>phpstorm</code> 双击 <code>ctrl</code> 运行预定义程序</h1>
-<p><picture src="/img/user/attachs/Pasted%20image%2020201127112108.png" alt="Pasted image 20201127112108.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/Rv4iZ7t1gu-350.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/Rv4iZ7t1gu-350.jpeg"
-      >
-      <img       class=""
-      src="/img/user/attachs/Pasted%20image%2020201127112108.png"
-      alt="Pasted image 20201127112108.png"
-      width=""
-      ></picture></p>
+<p><img src="/img/user/attachs/Pasted%20image%2020201127112108.png" alt="Pasted image 20201127112108.png"></p>
 <p>在 <code>phpstorm</code> 中的工具栏中，有一个绿色的按钮，可以运行已经定义好的配置</p>
 <p>但是每次切换的时候，都需要点一下切换到具体的程序</p>
 <p>但是如果双击 <code>ctrl</code> 就可以直接弹出运行的搜索栏</p>
-<p><picture src="/img/user/attachs/Pasted%20image%2020201127112303.png" alt="Pasted image 20201127112303.png"><source       media="(max-width:480px)"
-      srcset="/img/optimized/YkSmd1Qw2B-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/YkSmd1Qw2B-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/YkSmd1Qw2B-700.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/YkSmd1Qw2B-700.jpeg"
-        ><img       class=""
-      src="/img/user/attachs/Pasted%20image%2020201127112303.png"
-      alt="Pasted image 20201127112303.png"
-      width=""
-      ></picture></p>
+<p><img src="/img/user/attachs/Pasted%20image%2020201127112303.png" alt="Pasted image 20201127112303.png"></p>
 <p>在搜索栏中输入你想运行的程序，上下键选中，然后 <code>enter</code> 即可运行</p>
 
       
