@@ -61,7 +61,6 @@
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
 
@@ -1271,7 +1270,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-22T08:19:38.507Z';
+        const searchIndexDate = '2024-03-22T09:34:25.160Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1283,9 +1282,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T08:19:38.507Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T09:34:25.160Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T08:19:38.507Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T09:34:25.160Z', docs}));
             window.docs = docs
             window.index = index;
         }
