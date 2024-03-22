@@ -1270,7 +1270,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-22T10:44:16.007Z';
+        const searchIndexDate = '2024-03-22T11:12:12.289Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1282,9 +1282,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T10:44:16.007Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T11:12:12.289Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T10:44:16.007Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T11:12:12.289Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1525,7 +1525,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-02-04T16:28:43+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-19T10:06:26+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-02-04T16:28:43+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-03-19T10:06:26+08:00"></span></div></div></div>
       
       
       </header>
@@ -1615,6 +1615,9 @@ for j := 0; j &lt; 4; j++ {
       
       
         <hr>
+有志者事竟成
+      
+        <hr>
 <span id="busuanzi_container_site_pv">
     本站总访问量<span id="busuanzi_value_site_pv"></span>次
 </span>
@@ -1622,7 +1625,8 @@ for j := 0; j &lt; 4; j++ {
     本文总阅读量<span id="busuanzi_value_page_pv"></span>次
 </span>
       
-        <script src="https://giscus.app/client.js"
+        <hr>
+<script src="https://giscus.app/client.js"
         data-repo="wudanyang6/wudanyang6.github.io"
         data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM="
         data-category="Announcements"

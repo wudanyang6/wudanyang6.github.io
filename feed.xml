@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-03-22T10:44:16Z</updated>
+    <updated>2024-03-22T11:12:12Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -312,11 +312,10 @@ done
                 dg-Archives
                 
             </title>
-            <updated>2024-03-22T09:33:56.000Z</updated>
+            <updated>2024-03-22T11:01:22.000Z</updated>
             <id>https://wudanyang6.github.io//card/dg-Archives/</id>
             <content type="html">
                 &lt;h1 id=&quot;dg-archives&quot; tabindex=&quot;-1&quot;&gt;dg-Archives&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/favicon-32x32.png&quot; alt=&quot;favicon-32x32.png&quot; /&gt;&lt;/p&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/go/go-exec-run/&quot;&gt;go-exec-run&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Go&quot;&gt;#Go&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/go/go-exec/&quot;&gt;go-exec&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Go&quot;&gt;#Go&lt;/a&gt;&lt;/li&gt;
@@ -429,14 +428,11 @@ $zip-&amp;gt;close(); //关闭压缩包
                 About Me
                 
             </title>
-            <updated>2024-01-31T05:28:44.000Z</updated>
+            <updated>2024-03-22T11:11:25.000Z</updated>
             <id>https://wudanyang6.github.io//card/About Me/</id>
             <content type="html">
                 &lt;h1 id=&quot;about-me&quot; tabindex=&quot;-1&quot;&gt;About Me&lt;/h1&gt;
-&lt;p&gt;千里之行，始于足下&lt;/p&gt;
-&lt;h2 id=&quot;leetcode&quot; tabindex=&quot;-1&quot;&gt;leetcode&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode.cn/u/wudanyang/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;leetcode 个人主页&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;github&quot; tabindex=&quot;-1&quot;&gt;github&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/wudanyang6&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;github 个人主页&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;music&quot; tabindex=&quot;-1&quot;&gt;music&lt;/h2&gt;
 &lt;iframe width=&quot;100%&quot; height=&quot;650px&quot; src=&quot;https://music.163.com/playlist?id=13022777&amp;userid=16553655&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;false&quot;&gt; &lt;/iframe&gt;
@@ -2595,7 +2591,7 @@ fn 为最大值&lt;/p&gt;
                 0 Home dy-turbo
                 
             </title>
-            <updated>2024-03-09T14:07:47.000Z</updated>
+            <updated>2024-03-22T11:01:00.000Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;home&quot; tabindex=&quot;-1&quot;&gt;Home&lt;/h1&gt;

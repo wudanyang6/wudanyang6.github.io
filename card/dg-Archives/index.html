@@ -1270,7 +1270,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-22T10:44:16.007Z';
+        const searchIndexDate = '2024-03-22T11:12:12.289Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1282,9 +1282,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T10:44:16.007Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-22T11:12:12.289Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T10:44:16.007Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-22T11:12:12.289Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1525,14 +1525,13 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-08T16:50:22+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-22T17:33:56+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:50:22+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-03-22T19:01:22+08:00"></span></div></div></div>
       
       
       </header>
       
       
       <h1 id="dg-archives" tabindex="-1">dg-Archives</h1>
-<p><img src="/img/user/attachs/favicon-32x32.png" alt="favicon-32x32.png"></p>
 <ul class="block-language-dataview">
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/go/go-exec-run/">go-exec-run</a>:  <em>(created: 2024-3-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#Go">#Go</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/go/go-exec/">go-exec</a>:  <em>(created: 2024-3-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#Go">#Go</a></li>
@@ -1592,6 +1591,9 @@
       
       
         <hr>
+有志者事竟成
+      
+        <hr>
 <span id="busuanzi_container_site_pv">
     本站总访问量<span id="busuanzi_value_site_pv"></span>次
 </span>
@@ -1599,7 +1601,8 @@
     本文总阅读量<span id="busuanzi_value_page_pv"></span>次
 </span>
       
-        <script src="https://giscus.app/client.js"
+        <hr>
+<script src="https://giscus.app/client.js"
         data-repo="wudanyang6/wudanyang6.github.io"
         data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM="
         data-category="Announcements"
