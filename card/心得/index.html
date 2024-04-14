@@ -261,7 +261,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/300 Leetcode/算法编码技巧/">算法编码技巧 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/300 Leetcode/leetcode 编码技巧/">leetcode 编码技巧 </a>
                 </div>
             
         </div>
@@ -1270,7 +1270,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-14T02:46:59.548Z';
+        const searchIndexDate = '2024-04-14T03:15:00.462Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1282,9 +1282,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-14T02:46:59.548Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-14T03:15:00.462Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-14T02:46:59.548Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-14T03:15:00.462Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1525,7 +1525,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:51:12+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-03-12T13:55:02+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:51:12+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-14T11:12:23+08:00"></span></div></div></div>
       
       
       </header>
@@ -1540,6 +1540,7 @@
 <li>自己的智商又不是很好，毅力也不是很高，算法学习也只能是慢慢学了，也就是为了不让自己的脑子生锈吧</li>
 <li>坚持骑车锻炼 2024年03月08日16:55:41</li>
 <li>最好维护的代码是没有写出来的代码 2024年03月12日13:44:30</li>
+<li>要因为做了什么而赞美，而不是是什么而赞美</li>
 </ol>
 
       

@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-14T02:46:59Z</updated>
+    <updated>2024-04-14T03:15:00Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -178,7 +178,7 @@
                 心得
                 
             </title>
-            <updated>2024-03-12T05:55:02.000Z</updated>
+            <updated>2024-04-14T03:12:23.000Z</updated>
             <id>https://wudanyang6.github.io//card/心得/</id>
             <content type="html">
                 &lt;h1 id=&quot;心得&quot; tabindex=&quot;-1&quot;&gt;心得&lt;/h1&gt;
@@ -190,6 +190,7 @@
 &lt;li&gt;自己的智商又不是很好，毅力也不是很高，算法学习也只能是慢慢学了，也就是为了不让自己的脑子生锈吧&lt;/li&gt;
 &lt;li&gt;坚持骑车锻炼 2024年03月08日16:55:41&lt;/li&gt;
 &lt;li&gt;最好维护的代码是没有写出来的代码 2024年03月12日13:44:30&lt;/li&gt;
+&lt;li&gt;要因为做了什么而赞美，而不是是什么而赞美&lt;/li&gt;
 &lt;/ol&gt;
 
             </content>
@@ -324,7 +325,7 @@ done
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ithoughtx%E7%A0%B4%E4%BA%A7%E4%BA%86/&quot;&gt;ithoughtx破产了&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-5)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E5%AE%B6/%E8%BD%AF%E8%A3%85-%E6%B2%99%E5%8F%91/&quot;&gt;软装-沙发&lt;/a&gt;:  &lt;em&gt;(created: 2024-2-27)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#家&quot;&gt;#家&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAchrome%E7%8B%AC%E7%AB%8BAPP%E7%AA%97%E5%8F%A3/&quot;&gt;创建一个chrome独立APP窗口&lt;/a&gt;:  &lt;em&gt;(created: 2024-2-27)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#chrome&quot;&gt;#chrome&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/300%20Leetcode/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A0%81%E6%8A%80%E5%B7%A7/&quot;&gt;算法编码技巧&lt;/a&gt;:  &lt;em&gt;(created: 2024-2-4)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/300%20Leetcode/leetcode%20%E7%BC%96%E7%A0%81%E6%8A%80%E5%B7%A7/&quot;&gt;leetcode 编码技巧&lt;/a&gt;:  &lt;em&gt;(created: 2024-2-4)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E5%A8%B1%E4%B9%90/%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;原神挺好玩&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-31)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-30)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/things/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-29)&lt;/em&gt;&lt;/li&gt;
@@ -2298,98 +2299,6 @@ if err != nil {
         </entry>
         <entry>
             <title>
-                算法编码技巧
-                
-            </title>
-            <updated>2024-04-07T02:50:33.000Z</updated>
-            <id>https://wudanyang6.github.io//100 Programmer/300 Leetcode/算法编码技巧/</id>
-            <content type="html">
-                &lt;h1 id=&quot;算法编码技巧&quot; tabindex=&quot;-1&quot;&gt;算法编码技巧&lt;/h1&gt;
-&lt;h2 id=&quot;数字&quot; tabindex=&quot;-1&quot;&gt;数字&lt;/h2&gt;
-&lt;h3 id=&quot;快速上取整&quot; tabindex=&quot;-1&quot;&gt;快速上取整&lt;/h3&gt;
-&lt;p&gt;正整数的情况下， &lt;code&gt;a/b&lt;/code&gt;  上取整可以使用 :&lt;br /&gt;
-&lt;code&gt;(a+b-1)/b&lt;/code&gt;  快速计算，适用于强类型语言&lt;/p&gt;
-&lt;h3 id=&quot;取中间数&quot; tabindex=&quot;-1&quot;&gt;取中间数&lt;/h3&gt;
-&lt;p&gt;强类型语言：&lt;code&gt;(left+right)/2&lt;/code&gt; 。此方式在 &lt;code&gt;left+right&lt;/code&gt; 时有可能会出现溢出，可以使用 &lt;code&gt;left-(left-right)/2&lt;/code&gt; 计算&lt;/p&gt;
-&lt;h2 id=&quot;二进制&quot; tabindex=&quot;-1&quot;&gt;二进制&lt;/h2&gt;
-&lt;h3 id=&quot;1-0&quot; tabindex=&quot;-1&quot;&gt;最低位1变0&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;num1 &amp;amp;= num1 - 1  // 最低的 1 变成 0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;0-1&quot; tabindex=&quot;-1&quot;&gt;最低位0变1&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;num1 |= num1 + 1 // 最低的 0 变成 1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;判断是否是2的整数次&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;if (num &amp;amp; (num - 1)) == 0 {
-	return true
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;0-1-1&quot; tabindex=&quot;-1&quot;&gt;0和1取反&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;x ^= 1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;func flip(a int) int {
-	if a == 0 {
-		return 1
-	}
-
-	return 0
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;x = 1 - x
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;数组&quot; tabindex=&quot;-1&quot;&gt;数组&lt;/h2&gt;
-&lt;h3 id=&quot;双指针&quot; tabindex=&quot;-1&quot;&gt;双指针&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/problems/two-sum/?envType=featured-list&amp;amp;envId=2cktkvj?envType=featured-list&amp;amp;envId=2cktkvj&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;1. 两数之和 - 力扣（LeetCode）&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;leetcode-42. 接雨水&lt;/a&gt;&lt;br /&gt;
-对向双指针 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;leetcode-11. 盛最多水的容器&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;前缀和&quot; tabindex=&quot;-1&quot;&gt;前缀和&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;pre := []int{}
-
-for i := range nums {
-	if i == 0 {
-		pre[i] = 0
-		continue
-	}
-
-	pre[i] = pre[i-1] + nums[i-1]
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;从前缀和中获取后缀和&quot; tabindex=&quot;-1&quot;&gt;从前缀和中获取后缀和&lt;/h4&gt;
-&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;// 小技巧，前缀和也能得出后缀和
-if i == 0 {
-    postfixSum = prefixSum[len(prefixSum)-1]
-} else {
-    postfixSum = prefixSum[len(prefixSum)-1] - prefixSum[i-1]
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;深度搜索&quot; tabindex=&quot;-1&quot;&gt;深度搜索&lt;/h2&gt;
-&lt;h3 id=&quot;方向&quot; tabindex=&quot;-1&quot;&gt;方向&lt;/h3&gt;
-&lt;p&gt;在做深度搜索题时，经常用到方向，可以用下面的代码判断方向&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;var (
-    dx = []int{1, 0, 0, -1}
-    dy = []int{0, 1, -1, 0}
-)
-
-// 四个方向
-for j := 0; j &amp;lt; 4; j++ {
-    mx, my := cell[0] + dx[j], cell[1] + dy[j]
-    // 查看每个方向有没有超出边界，如果没有超出边界则进行处理
-    if mx &amp;gt;= 0 &amp;amp;&amp;amp; mx &amp;lt; n &amp;amp;&amp;amp; my &amp;gt;= 0 &amp;amp;&amp;amp; my &amp;lt; m &amp;amp;&amp;amp; image[mx][my] == currColor {
-        queue = append(queue, []int{mx, my})
-        image[mx][my] = color
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;字符串&quot; tabindex=&quot;-1&quot;&gt;字符串&lt;/h2&gt;
-&lt;h3 id=&quot;字符在数组中的偏移位置&quot; tabindex=&quot;-1&quot;&gt;字符在数组中的偏移位置&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;widths[c-&#39;a&#39;]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//100 Programmer/300 Leetcode/算法编码技巧/" />
-        </entry>
-        <entry>
-            <title>
                 滑动窗口模板
                 
             </title>
@@ -2585,6 +2494,101 @@ fn 为最大值&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/300 Leetcode/具体题目/leetcode-1014. 最佳观光组合/" />
+        </entry>
+        <entry>
+            <title>
+                leetcode 编码技巧
+                
+            </title>
+            <updated>2024-04-09T03:12:08.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/300 Leetcode/leetcode 编码技巧/</id>
+            <content type="html">
+                &lt;h1 id=&quot;leetcode&quot; tabindex=&quot;-1&quot;&gt;leetcode&lt;/h1&gt;
+&lt;p&gt;编码技巧&lt;/p&gt;
+&lt;h2 id=&quot;数字&quot; tabindex=&quot;-1&quot;&gt;数字&lt;/h2&gt;
+&lt;h3 id=&quot;快速上取整&quot; tabindex=&quot;-1&quot;&gt;快速上取整&lt;/h3&gt;
+&lt;p&gt;正整数的情况下， &lt;code&gt;a/b&lt;/code&gt;  上取整可以使用 :&lt;br /&gt;
+&lt;code&gt;(a+b-1)/b&lt;/code&gt;  快速计算，适用于强类型语言&lt;/p&gt;
+&lt;h3 id=&quot;取中间数&quot; tabindex=&quot;-1&quot;&gt;取中间数&lt;/h3&gt;
+&lt;p&gt;强类型语言：&lt;code&gt;(left+right)/2&lt;/code&gt; 。此方式在 &lt;code&gt;left+right&lt;/code&gt; 时有可能会出现溢出，可以使用 &lt;code&gt;left-(left-right)/2&lt;/code&gt; 计算&lt;/p&gt;
+&lt;h2 id=&quot;二进制&quot; tabindex=&quot;-1&quot;&gt;二进制&lt;/h2&gt;
+&lt;h3 id=&quot;1-0&quot; tabindex=&quot;-1&quot;&gt;最低位1变0&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;num1 &amp;amp;= num1 - 1  // 最低的 1 变成 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;0-1&quot; tabindex=&quot;-1&quot;&gt;最低位0变1&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;num1 |= num1 + 1 // 最低的 0 变成 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;判断是否是2的整数次&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;if (num &amp;amp; (num - 1)) == 0 {
+	return true
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;0-1-1&quot; tabindex=&quot;-1&quot;&gt;0和1取反&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;x ^= 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;func flip(a int) int {
+	if a == 0 {
+		return 1
+	}
+
+	return 0
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;x = 1 - x
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;数组&quot; tabindex=&quot;-1&quot;&gt;数组&lt;/h2&gt;
+&lt;h3 id=&quot;双指针&quot; tabindex=&quot;-1&quot;&gt;双指针&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/problems/two-sum/?envType=featured-list&amp;amp;envId=2cktkvj?envType=featured-list&amp;amp;envId=2cktkvj&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;1. 两数之和 - 力扣（LeetCode）&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;leetcode-42. 接雨水&lt;/a&gt;&lt;br /&gt;
+对向双指针 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;leetcode-11. 盛最多水的容器&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;前缀和&quot; tabindex=&quot;-1&quot;&gt;前缀和&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;pre := []int{}
+
+for i := range nums {
+	if i == 0 {
+		pre[i] = 0
+		continue
+	}
+
+	pre[i] = pre[i-1] + nums[i-1]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;从前缀和中获取后缀和&quot; tabindex=&quot;-1&quot;&gt;从前缀和中获取后缀和&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;// 小技巧，前缀和也能得出后缀和
+if i == 0 {
+    postfixSum = prefixSum[len(prefixSum)-1]
+} else {
+    postfixSum = prefixSum[len(prefixSum)-1] - prefixSum[i-1]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;深度搜索&quot; tabindex=&quot;-1&quot;&gt;深度搜索&lt;/h2&gt;
+&lt;h3 id=&quot;方向&quot; tabindex=&quot;-1&quot;&gt;方向&lt;/h3&gt;
+&lt;p&gt;在做深度搜索题时，经常用到方向，可以用下面的代码判断方向&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;var (
+    dx = []int{1, 0, 0, -1}
+    dy = []int{0, 1, -1, 0}
+)
+
+// 四个方向
+for j := 0; j &amp;lt; 4; j++ {
+    mx, my := cell[0] + dx[j], cell[1] + dy[j]
+    // 查看每个方向有没有超出边界，如果没有超出边界则进行处理
+    if mx &amp;gt;= 0 &amp;amp;&amp;amp; mx &amp;lt; n &amp;amp;&amp;amp; my &amp;gt;= 0 &amp;amp;&amp;amp; my &amp;lt; m &amp;amp;&amp;amp; image[mx][my] == currColor {
+        queue = append(queue, []int{mx, my})
+        image[mx][my] = color
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;字符串&quot; tabindex=&quot;-1&quot;&gt;字符串&lt;/h2&gt;
+&lt;h3 id=&quot;字符在数组中的偏移位置&quot; tabindex=&quot;-1&quot;&gt;字符在数组中的偏移位置&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;widths[c-&#39;a&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;矩阵&quot; tabindex=&quot;-1&quot;&gt;矩阵&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;判断点在对角线上&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/300 Leetcode/leetcode 编码技巧/" />
         </entry>
         <entry>
             <title>
