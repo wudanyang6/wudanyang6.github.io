@@ -722,22 +722,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('101 Tools/things')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">things</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/things/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/101b1 obsidian-things3-today插件/">101b1 obsidian-things3-today插件 </a>
                 </div>
             
         </div>
@@ -748,13 +733,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/things/Things 工作流/">Things 工作流 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/101b2 Things 工作流/">101b2 Things 工作流 </a>
                 </div>
             
         </div>
@@ -1016,11 +995,11 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('Excalidraw')}" @click.stop="isOpen=!isOpen">
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('thought')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
                     <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">Excalidraw</span>
+                    <span class="foldername">thought</span>
                     </div>
                     
                         
@@ -1031,7 +1010,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/Excalidraw/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thought/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw </a>
                 </div>
             
         </div>
@@ -1270,7 +1249,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-14T03:15:00.462Z';
+        const searchIndexDate = '2024-04-15T06:14:23.268Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1282,9 +1261,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-14T03:15:00.462Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T06:14:23.268Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-14T03:15:00.462Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T06:14:23.268Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1591,7 +1570,7 @@
 <li><strong>动手做一个工作之前，请先对它进行任务分解。</strong></li>
 <li>测试
 <ul>
-<li>测试模型：冰淇淋蛋卷： <img src="/img/user/card/1ac9ed05304d4009a1064dae764f1592.jpg" alt="img"></li>
+<li>测试模型：冰淇淋蛋卷： <img src="/img/user/attachs/1ac9ed05304d4009a1064dae764f1592.jpg" alt="img"></li>
 <li>金字塔模型：<img src="/img/user/card/28d88fea0c894ba19321c844fe4d31ab.jpg" alt="img"></li>
 <li><strong>小事反馈周期短，而大事反馈周期长。</strong></li>
 <li><strong>多写单元测试。</strong></li>

@@ -722,22 +722,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('101 Tools/things')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">things</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/things/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/101b1 obsidian-things3-today插件/">101b1 obsidian-things3-today插件 </a>
                 </div>
             
         </div>
@@ -748,13 +733,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/things/Things 工作流/">Things 工作流 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/101b2 Things 工作流/">101b2 Things 工作流 </a>
                 </div>
             
         </div>
@@ -1016,11 +995,11 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('Excalidraw')}" @click.stop="isOpen=!isOpen">
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('thought')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
                     <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">Excalidraw</span>
+                    <span class="foldername">thought</span>
                     </div>
                     
                         
@@ -1031,7 +1010,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/Excalidraw/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thought/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw </a>
                 </div>
             
         </div>
@@ -1270,7 +1249,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-14T03:15:00.462Z';
+        const searchIndexDate = '2024-04-15T06:14:23.268Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1282,9 +1261,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-14T03:15:00.462Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T06:14:23.268Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-14T03:15:00.462Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T06:14:23.268Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1553,7 +1532,7 @@
 <p><img src="/img/user/card/clop_2024-01-16_813.png" alt="clop_2024-01-16_813.png"></p>
 <p><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/mac 运行 kafka/">../100 Programmer/mac 运行 kafka</a></p>
 <h1 id="2-kafka" tabindex="-1">2 Kafka 整体架构</h1>
-<p><img src="/img/user/card/drawio/Kafka%20%E6%95%B0%E6%8D%AE%E6%B5%81.png" alt="Kafka 数据流.png"></p>
+<p><img src="/img/user/drawio/Kafka%20%E6%95%B0%E6%8D%AE%E6%B5%81.png" alt="Kafka 数据流.png"></p>
 <p>Kafka系统的核心概念包括：</p>
 <ol>
 <li><strong>Producer（生产者）</strong>：负责发布消息到Kafka的Topic（主题）中。</li>
@@ -1572,7 +1551,7 @@
 <h1 id="3-kafka" tabindex="-1">3 Kafka核心逻辑</h1>
 <h2 id="3-1" tabindex="-1">3.1 物理存储</h2>
 <p>Kafka 的基本存储单元是分区。</p>
-<p><img src="/img/user/card/drawio/kafka%E5%AD%98%E5%82%A8.drawio.png" alt="kafka存储.drawio.png"></p>
+<p><img src="/img/user/drawio/kafka%E5%AD%98%E5%82%A8.drawio.png" alt="kafka存储.drawio.png"></p>
 <p>kafka 存储的时候也是使用同样的格式存储到磁盘上，这样可以利用到零拷贝技术</p>
 <h2 id="3-2" tabindex="-1">3.2 生产者</h2>
 <p><img src="/img/user/card/clop_2024-01-16_814-kafka%E7%94%9F%E4%BA%A7%E8%80%85%E7%BB%84%E4%BB%B6%E5%9B%BE.png" alt="clop_2024-01-16_814-kafka生产者组件图.png"></p>
@@ -1590,7 +1569,7 @@
 <img src="/img/user/card/clop_2024-01-18_844.png" alt="clop_2024-01-18_844.png"></p>
 <h2 id="3-3" tabindex="-1">3.3 消费者</h2>
 <p><img src="/img/user/card/clop_2024-01-17_818-%E4%B8%BB%E9%A2%98%E5%92%8C%E6%B6%88%E8%B4%B9%E8%80%85%E7%BE%A4%E7%BB%84%E7%9A%84%E5%85%B3%E7%B3%BB.png" alt="clop_2024-01-17_818-主题和消费者群组的关系.png"></p>
-<p><img src="/img/user/card/drawio/kafka%E6%B6%88%E8%B4%B9%E8%80%85.drawio.png" alt="kafka消费者.drawio"></p>
+<p><img src="/img/user/drawio/kafka%E6%B6%88%E8%B4%B9%E8%80%85.drawio.png" alt="kafka消费者.drawio"></p>
 <h3 id="3-3-1-offset" tabindex="-1">3.3.1 提交offset</h3>
 <p>Kafka消费者提交偏移量的过程是为了记录消费者在消费Topic的Partition时当前的位置，以便在消费者重启或发生故障时能从上次处理的位置继续消费，保证消息不会丢失也不会被重复消费。提交偏移量的过程主要包括以下步骤：</p>
 <ol>
