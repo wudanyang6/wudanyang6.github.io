@@ -56,7 +56,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.2d9aac7e.css" rel="stylesheet">
+    <link href="/styles/_theme.933979fa.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
@@ -76,7 +76,7 @@
     
     
   </head>
-  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
+  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
     
     
     
@@ -1230,7 +1230,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T08:19:42.822Z';
+        const searchIndexDate = '2024-04-15T08:24:23.245Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1242,9 +1242,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T08:19:42.822Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T08:24:23.245Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T08:19:42.822Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T08:24:23.245Z', docs}));
             window.docs = docs
             window.index = index;
         }
