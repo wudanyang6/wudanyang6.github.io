@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>当前状态和下一状态的随想.excalidraw</title>
+    <title>20240415142052 原神挺好玩</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -848,6 +848,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/20240415142052 原神挺好玩/">20240415142052 原神挺好玩 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/About Me/">About Me </a>
                 </div>
             
@@ -947,17 +958,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/做事心得/">做事心得 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/算法新年祝福语/">算法新年祝福语 </a>
                 </div>
             
@@ -995,11 +995,11 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('thought')}" @click.stop="isOpen=!isOpen">
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('thoughts')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
                     <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">thought</span>
+                    <span class="foldername">thoughts</span>
                     </div>
                     
                         
@@ -1010,37 +1010,18 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thought/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thoughts/做事心得/">做事心得 </a>
                 </div>
             
         </div>
         
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('娱乐')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">娱乐</span>
-                    </div>
-                    
-                        
-    
     
                     
                         
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/娱乐/原神挺好玩/">原神挺好玩 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thoughts/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw </a>
                 </div>
             
         </div>
@@ -1249,7 +1230,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T06:15:30.676Z';
+        const searchIndexDate = '2024-04-15T08:19:42.822Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1261,9 +1242,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T06:15:30.676Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T08:19:42.822Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T06:15:30.676Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T08:19:42.822Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1495,7 +1476,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">当前状态和下一状态的随想.excalidraw</h1>
+          <h1 data-note-icon="2">20240415142052 原神挺好玩</h1>
         
         <div class="header-meta">
           
@@ -1503,20 +1484,28 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #excalidraw
-                  </a>
-                
-              
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2023-04-18T22:39:52+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-15T11:21:30+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-31T10:50:46+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-15T14:20:53+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <style> .container {font-family: sans-serif; text-align: center;} .button-wrapper button {z-index: 1;height: 40px; width: 100px; margin: 10px;padding: 5px;} .excalidraw .App-menu_top .buttonList { display: flex;} .excalidraw-wrapper { height: 800px; margin: 50px; position: relative;} :root[dir="ltr"] .excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left {transform: none;} </style><script src="https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js"></script><script src="https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw@0/dist/excalidraw.production.min.js"></script><div id="当前状态和下一状态的随想excalidraw.md"></div><script>(function(){const InitialData={"type":"excalidraw","version":2,"source":"https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23","elements":[{"type":"rectangle","version":123,"versionNonce":840223705,"isDeleted":false,"id":"XgjAPiQ47fqEwl-LpfWxA","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-120.83203125,"y":-187.431640625,"strokeColor":"#000000","backgroundColor":"transparent","width":153,"height":97,"seed":1809355819,"groupIds":[],"frameId":null,"roundness":{"type":3},"boundElements":[{"type":"text","id":"lcXa25o6"},{"id":"90yz_m0kH4RaMUXRgR-Br","type":"arrow"}],"updated":1694187112200,"link":null,"locked":false},{"type":"text","version":106,"versionNonce":150017138,"isDeleted":false,"id":"lcXa25o6","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-84.33203125,"y":-163.931640625,"strokeColor":"#000000","backgroundColor":"transparent","width":80,"height":50,"seed":1671257323,"groupIds":[],"frameId":null,"roundness":null,"boundElements":[],"updated":1709886216070,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"\n当前状态","rawText":"\n当前状态","textAlign":"center","verticalAlign":"middle","containerId":"XgjAPiQ47fqEwl-LpfWxA","originalText":"\n当前状态","lineHeight":1.25,"baseline":43},{"type":"rectangle","version":125,"versionNonce":46448114,"isDeleted":false,"id":"GZ7hQS78e5Q1siEvK33Lx","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":375.140625,"y":-190.029296875,"strokeColor":"#000000","backgroundColor":"transparent","width":153,"height":97,"seed":1586660869,"groupIds":[],"frameId":null,"roundness":{"type":3},"boundElements":[{"id":"90yz_m0kH4RaMUXRgR-Br","type":"arrow"},{"type":"text","id":"Ymxj0WWT"}],"updated":1709905924750,"link":null,"locked":false},{"type":"text","version":116,"versionNonce":1864118194,"isDeleted":false,"id":"Ymxj0WWT","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":411.640625,"y":-154.029296875,"strokeColor":"#000000","backgroundColor":"transparent","width":80,"height":25,"seed":1849985227,"groupIds":[],"frameId":null,"roundness":null,"boundElements":[],"updated":1709905924750,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"下一状态","rawText":"下一状态","textAlign":"center","verticalAlign":"middle","containerId":"GZ7hQS78e5Q1siEvK33Lx","originalText":"下一状态","lineHeight":1.25,"baseline":18},{"type":"arrow","version":404,"versionNonce":1041591090,"isDeleted":false,"id":"90yz_m0kH4RaMUXRgR-Br","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":38.50781250000003,"y":-134.10614115612412,"strokeColor":"#000000","backgroundColor":"transparent","width":325.34375,"height":3.64989657820189,"seed":343810891,"groupIds":[],"frameId":null,"roundness":{"type":2},"boundElements":[],"updated":1709905924750,"link":null,"locked":false,"startBinding":{"elementId":"XgjAPiQ47fqEwl-LpfWxA","gap":6.33984375,"focus":0.11513603277860894},"endBinding":{"elementId":"GZ7hQS78e5Q1siEvK33Lx","gap":11.2890625,"focus":-0.056492919794349276},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[325.34375,-3.64989657820189]]},{"type":"text","version":168,"versionNonce":486444270,"isDeleted":false,"id":"LIFeX9WH","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":95.265625,"y":-171.51171875,"strokeColor":"#000000","backgroundColor":"transparent","width":180,"height":25,"seed":591423115,"groupIds":[],"frameId":null,"roundness":null,"boundElements":[],"updated":1709905976598,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"中间可能过了亿万年","rawText":"中间可能过了亿万年","textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"中间可能过了亿万年","lineHeight":1.25,"baseline":18},{"id":"ov2HcC8X","type":"embeddable","x":-36.78125,"y":-7.21875,"width":500,"height":500,"angle":0,"strokeColor":"transparent","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"roundness":null,"seed":50533,"version":47,"versionNonce":1117175218,"updated":1709906036690,"isDeleted":true,"groupIds":[],"boundElements":[],"link":"[[Kafka 数据流.svg]]","locked":false,"scale":[1,1],"customData":{"mdProps":{"useObsidianDefaults":false,"backgroundMatchCanvas":false,"backgroundMatchElement":true,"backgroundColor":"#fff","backgroundOpacity":60,"borderMatchElement":true,"borderColor":"#fff","borderOpacity":0,"filenameVisible":false}}}],"appState":{"theme":"light","viewBackgroundColor":"#ffffff","currentItemStrokeColor":"#000000","currentItemBackgroundColor":"transparent","currentItemFillStyle":"hachure","currentItemStrokeWidth":1,"currentItemStrokeStyle":"solid","currentItemRoughness":1,"currentItemOpacity":100,"currentItemFontFamily":1,"currentItemFontSize":20,"currentItemTextAlign":"left","currentItemStartArrowhead":null,"currentItemEndArrowhead":"arrow","scrollX":143.18124999999998,"scrollY":388.41875000000005,"zoom":{"value":1.25},"currentItemRoundness":"round","gridSize":null,"gridColor":{"Bold":"#C9C9C9FF","Regular":"#EDEDEDFF"},"colorPalette":{},"currentStrokeOptions":null,"previousGridSize":null,"frameRendering":{"enabled":true,"clip":true,"name":true,"outline":true}},"files":{}};InitialData.scrollToContent=true;App=()=>{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[t]),React.createElement(React.Fragment,null,React.createElement("div",{className:"excalidraw-wrapper",ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById("当前状态和下一状态的随想excalidraw.md");ReactDOM.render(React.createElement(App),excalidrawWrapper);})();</script>
+      <h1 id="20240415142052" tabindex="-1">20240415142052 原神挺好玩</h1>
+<p>最近游戏一直在玩原神，一个开放的大世界。主线剧情刚刚做完，确实是我想象中的角色扮演（RPG）游戏。</p>
+<p>记得高中在塞班手机上玩的一款RPG游戏，一个周末都在刷怪。后来重新练了个号，结果跟大师傅打架的时候，他的70级宠物不知道为什么变成我的了。我就带着一个70级将近满级的宠物一路过关斩将玩通关了。</p>
+<p>原神里面我自己感觉可玩的点有几个：</p>
+<ol>
+<li>角色都很二次元，都是按照动漫里面的角色画出来的，二次元的估计会很喜欢。</li>
+<li>剧情比较代入，某些剧情需要努力打怪，不过主线剧情并不是很难。</li>
+<li>大世界地图非常大，如果不是有传送节点估计跑图都得跑断腿。</li>
+<li>大世界里面有很多宝箱，有些宝箱需要解密之后才能获得，不过这些宝箱都是一次性的，我在蒙德、璃月、稻妻的探索度最高才到 50% ，所以也可见大世界有多大东西有多丰富。</li>
+<li>支线剧情也很丰富多彩，比如我就特别喜欢璃月里面的一个支线剧情《神女劈观》，并且剧情最后有一首歌，大家可以先听一下。不过没有了解剧情之前听这首歌触动应该不是很大，还是具体体验一下剧情再说。</li>
+<li>最后一点，原神不花钱氪金也可以玩的很舒服，每天做做每日任务，开开宝箱，欣赏欣赏美景，然后读一读角色的背景故事。</li>
+</ol>
+<p>对了，游戏社区里的前辈忠告，当深渊不存在，能打到哪里就打到哪里。</p>
+<p><img src="/img/user/attachs/clop_2024-01-31_36.png" alt="../attachs/clop_2024-01-31_36.png"></p>
+
       
       
         <hr>
@@ -1773,6 +1762,23 @@
 
                   
                         
+                        
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#20240415142052">20240415142052 原神挺好玩</a>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
                         
 
                   

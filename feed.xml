@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-15T06:15:31Z</updated>
+    <updated>2024-04-15T08:19:43Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -52,41 +52,38 @@
         </entry>
         <entry>
             <title>
-                原神挺好玩
-                
-            </title>
-            <updated>2024-02-02T04:57:02.000Z</updated>
-            <id>https://wudanyang6.github.io//娱乐/原神挺好玩/</id>
-            <content type="html">
-                &lt;h1 id=&quot;原神挺好玩&quot; tabindex=&quot;-1&quot;&gt;原神挺好玩&lt;/h1&gt;
-&lt;p&gt;最近游戏一直在玩原神，一个开放的大世界。主线剧情刚刚做完，确实是我想象中的角色扮演（RPG）游戏。&lt;/p&gt;
-&lt;p&gt;记得高中在塞班手机上玩的一款RPG游戏，一个周末都在刷怪。后来重新练了个号，结果跟大师傅打架的时候，他的70级宠物不知道为什么变成我的了。我就带着一个70级将近满级的宠物一路过关斩将玩通关了。&lt;/p&gt;
-&lt;p&gt;原神里面我自己感觉可玩的点有几个：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;角色都很二次元，都是按照动漫里面的角色画出来的，二次元的估计会很喜欢。&lt;/li&gt;
-&lt;li&gt;剧情比较代入，某些剧情需要努力打怪，不过主线剧情并不是很难。&lt;/li&gt;
-&lt;li&gt;大世界地图非常大，如果不是有传送节点估计跑图都得跑断腿。&lt;/li&gt;
-&lt;li&gt;大世界里面有很多宝箱，有些宝箱需要解密之后才能获得，不过这些宝箱都是一次性的，我在蒙德、璃月、稻妻的探索度最高才到 50% ，所以也可见大世界有多大东西有多丰富。&lt;/li&gt;
-&lt;li&gt;支线剧情也很丰富多彩，比如我就特别喜欢璃月里面的一个支线剧情《神女劈观》，并且剧情最后有一首歌，大家可以先听一下。不过没有了解剧情之前听这首歌触动应该不是很大，还是具体体验一下剧情再说。&lt;/li&gt;
-&lt;li&gt;最后一点，原神不花钱氪金也可以玩的很舒服，每天做做每日任务，开开宝箱，欣赏欣赏美景，然后读一读角色的背景故事。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;对了，游戏社区里的前辈忠告，当深渊不存在，能打到哪里就打到哪里。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-31_36.png&quot; alt=&quot;../attachs/clop_2024-01-31_36.png&quot; /&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//娱乐/原神挺好玩/" />
-        </entry>
-        <entry>
-            <title>
                 当前状态和下一状态的随想.excalidraw
                 
             </title>
             <updated>2024-04-15T03:21:30.000Z</updated>
-            <id>https://wudanyang6.github.io//thought/当前状态和下一状态的随想.excalidraw/</id>
+            <id>https://wudanyang6.github.io//thoughts/当前状态和下一状态的随想.excalidraw/</id>
             <content type="html">
                 &lt;style&gt; .container {font-family: sans-serif; text-align: center;} .button-wrapper button {z-index: 1;height: 40px; width: 100px; margin: 10px;padding: 5px;} .excalidraw .App-menu_top .buttonList { display: flex;} .excalidraw-wrapper { height: 800px; margin: 50px; position: relative;} :root[dir=&quot;ltr&quot;] .excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left {transform: none;} &lt;/style&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw@0/dist/excalidraw.production.min.js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;当前状态和下一状态的随想excalidraw.md&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){const InitialData={&quot;type&quot;:&quot;excalidraw&quot;,&quot;version&quot;:2,&quot;source&quot;:&quot;https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23&quot;,&quot;elements&quot;:[{&quot;type&quot;:&quot;rectangle&quot;,&quot;version&quot;:123,&quot;versionNonce&quot;:840223705,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:-120.83203125,&quot;y&quot;:-187.431640625,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:153,&quot;height&quot;:97,&quot;seed&quot;:1809355819,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;lcXa25o6&quot;},{&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1694187112200,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:106,&quot;versionNonce&quot;:150017138,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;lcXa25o6&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:-84.33203125,&quot;y&quot;:-163.931640625,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:80,&quot;height&quot;:50,&quot;seed&quot;:1671257323,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1709886216070,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;&#92;n当前状态&quot;,&quot;rawText&quot;:&quot;&#92;n当前状态&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;originalText&quot;:&quot;&#92;n当前状态&quot;,&quot;lineHeight&quot;:1.25,&quot;baseline&quot;:43},{&quot;type&quot;:&quot;rectangle&quot;,&quot;version&quot;:125,&quot;versionNonce&quot;:46448114,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:375.140625,&quot;y&quot;:-190.029296875,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:153,&quot;height&quot;:97,&quot;seed&quot;:1586660869,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;boundElements&quot;:[{&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;Ymxj0WWT&quot;}],&quot;updated&quot;:1709905924750,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:116,&quot;versionNonce&quot;:1864118194,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;Ymxj0WWT&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:411.640625,&quot;y&quot;:-154.029296875,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:80,&quot;height&quot;:25,&quot;seed&quot;:1849985227,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1709905924750,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;下一状态&quot;,&quot;rawText&quot;:&quot;下一状态&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;originalText&quot;:&quot;下一状态&quot;,&quot;lineHeight&quot;:1.25,&quot;baseline&quot;:18},{&quot;type&quot;:&quot;arrow&quot;,&quot;version&quot;:404,&quot;versionNonce&quot;:1041591090,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:38.50781250000003,&quot;y&quot;:-134.10614115612412,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:325.34375,&quot;height&quot;:3.64989657820189,&quot;seed&quot;:343810891,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;boundElements&quot;:[],&quot;updated&quot;:1709905924750,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;gap&quot;:6.33984375,&quot;focus&quot;:0.11513603277860894},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;gap&quot;:11.2890625,&quot;focus&quot;:-0.056492919794349276},&quot;lastCommittedPoint&quot;:null,&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;points&quot;:[[0,0],[325.34375,-3.64989657820189]]},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:168,&quot;versionNonce&quot;:486444270,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;LIFeX9WH&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:95.265625,&quot;y&quot;:-171.51171875,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:180,&quot;height&quot;:25,&quot;seed&quot;:591423115,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1709905976598,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;中间可能过了亿万年&quot;,&quot;rawText&quot;:&quot;中间可能过了亿万年&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;中间可能过了亿万年&quot;,&quot;lineHeight&quot;:1.25,&quot;baseline&quot;:18},{&quot;id&quot;:&quot;ov2HcC8X&quot;,&quot;type&quot;:&quot;embeddable&quot;,&quot;x&quot;:-36.78125,&quot;y&quot;:-7.21875,&quot;width&quot;:500,&quot;height&quot;:500,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;transparent&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;roundness&quot;:null,&quot;seed&quot;:50533,&quot;version&quot;:47,&quot;versionNonce&quot;:1117175218,&quot;updated&quot;:1709906036690,&quot;isDeleted&quot;:true,&quot;groupIds&quot;:[],&quot;boundElements&quot;:[],&quot;link&quot;:&quot;[[Kafka 数据流.svg]]&quot;,&quot;locked&quot;:false,&quot;scale&quot;:[1,1],&quot;customData&quot;:{&quot;mdProps&quot;:{&quot;useObsidianDefaults&quot;:false,&quot;backgroundMatchCanvas&quot;:false,&quot;backgroundMatchElement&quot;:true,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;backgroundOpacity&quot;:60,&quot;borderMatchElement&quot;:true,&quot;borderColor&quot;:&quot;#fff&quot;,&quot;borderOpacity&quot;:0,&quot;filenameVisible&quot;:false}}}],&quot;appState&quot;:{&quot;theme&quot;:&quot;light&quot;,&quot;viewBackgroundColor&quot;:&quot;#ffffff&quot;,&quot;currentItemStrokeColor&quot;:&quot;#000000&quot;,&quot;currentItemBackgroundColor&quot;:&quot;transparent&quot;,&quot;currentItemFillStyle&quot;:&quot;hachure&quot;,&quot;currentItemStrokeWidth&quot;:1,&quot;currentItemStrokeStyle&quot;:&quot;solid&quot;,&quot;currentItemRoughness&quot;:1,&quot;currentItemOpacity&quot;:100,&quot;currentItemFontFamily&quot;:1,&quot;currentItemFontSize&quot;:20,&quot;currentItemTextAlign&quot;:&quot;left&quot;,&quot;currentItemStartArrowhead&quot;:null,&quot;currentItemEndArrowhead&quot;:&quot;arrow&quot;,&quot;scrollX&quot;:143.18124999999998,&quot;scrollY&quot;:388.41875000000005,&quot;zoom&quot;:{&quot;value&quot;:1.25},&quot;currentItemRoundness&quot;:&quot;round&quot;,&quot;gridSize&quot;:null,&quot;gridColor&quot;:{&quot;Bold&quot;:&quot;#C9C9C9FF&quot;,&quot;Regular&quot;:&quot;#EDEDEDFF&quot;},&quot;colorPalette&quot;:{},&quot;currentStrokeOptions&quot;:null,&quot;previousGridSize&quot;:null,&quot;frameRendering&quot;:{&quot;enabled&quot;:true,&quot;clip&quot;:true,&quot;name&quot;:true,&quot;outline&quot;:true}},&quot;files&quot;:{}};InitialData.scrollToContent=true;App=()=&gt;{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener(&quot;resize&quot;,e),()=&gt;window.removeEventListener(&quot;resize&quot;,e)},[t]),React.createElement(React.Fragment,null,React.createElement(&quot;div&quot;,{className:&quot;excalidraw-wrapper&quot;,ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById(&quot;当前状态和下一状态的随想excalidraw.md&quot;);ReactDOM.render(React.createElement(App),excalidrawWrapper);})();&lt;/script&gt;
             </content>
-            <link href="https://wudanyang6.github.io//thought/当前状态和下一状态的随想.excalidraw/" />
+            <link href="https://wudanyang6.github.io//thoughts/当前状态和下一状态的随想.excalidraw/" />
+        </entry>
+        <entry>
+            <title>
+                做事心得
+                
+            </title>
+            <updated>2024-04-15T06:14:48.000Z</updated>
+            <id>https://wudanyang6.github.io//thoughts/做事心得/</id>
+            <content type="html">
+                &lt;h1 id=&quot;做事心得&quot; tabindex=&quot;-1&quot;&gt;做事心得&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;看书只要开始就能看得进去&lt;/li&gt;
+&lt;li&gt;不要急着清空代办，如果出了问题，即使代办清空了也没有任何功劳&lt;/li&gt;
+&lt;li&gt;周五不上线、不切流&lt;/li&gt;
+&lt;li&gt;相信明天更美好，但是要过好当下&lt;/li&gt;
+&lt;li&gt;自己的智商又不是很好，毅力也不是很高，算法学习也只能是慢慢学了，也就是为了不让自己的脑子生锈吧&lt;/li&gt;
+&lt;li&gt;坚持骑车锻炼 2024年03月08日16:55:41&lt;/li&gt;
+&lt;li&gt;最好维护的代码是没有写出来的代码 2024年03月12日13:44:30&lt;/li&gt;
+&lt;li&gt;要因为做了什么而赞美，而不是是什么而赞美 2024 年 04 月 15 日 14:12:01&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//thoughts/做事心得/" />
         </entry>
         <entry>
             <title>
@@ -184,29 +181,6 @@
 
             </content>
             <link href="https://wudanyang6.github.io//card/算法新年祝福语/" />
-        </entry>
-        <entry>
-            <title>
-                做事心得
-                
-            </title>
-            <updated>2024-04-15T06:14:48.000Z</updated>
-            <id>https://wudanyang6.github.io//card/做事心得/</id>
-            <content type="html">
-                &lt;h1 id=&quot;做事心得&quot; tabindex=&quot;-1&quot;&gt;做事心得&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;看书只要开始就能看得进去&lt;/li&gt;
-&lt;li&gt;不要急着清空代办，如果出了问题，即使代办清空了也没有任何功劳&lt;/li&gt;
-&lt;li&gt;周五不上线、不切流&lt;/li&gt;
-&lt;li&gt;相信明天更美好，但是要过好当下&lt;/li&gt;
-&lt;li&gt;自己的智商又不是很好，毅力也不是很高，算法学习也只能是慢慢学了，也就是为了不让自己的脑子生锈吧&lt;/li&gt;
-&lt;li&gt;坚持骑车锻炼 2024年03月08日16:55:41&lt;/li&gt;
-&lt;li&gt;最好维护的代码是没有写出来的代码 2024年03月12日13:44:30&lt;/li&gt;
-&lt;li&gt;要因为做了什么而赞美，而不是是什么而赞美 2024 年 04 月 15 日 14:12:01&lt;/li&gt;
-&lt;/ol&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/做事心得/" />
         </entry>
         <entry>
             <title>
@@ -332,13 +306,13 @@ done
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/go/go-exec-run/&quot;&gt;go-exec-run&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Go&quot;&gt;#Go&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/go/go-exec/&quot;&gt;go-exec&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Go&quot;&gt;#Go&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-8)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-8)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-8)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ithoughtx%E7%A0%B4%E4%BA%A7%E4%BA%86/&quot;&gt;ithoughtx破产了&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-5)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E5%AE%B6/%E8%BD%AF%E8%A3%85-%E6%B2%99%E5%8F%91/&quot;&gt;软装-沙发&lt;/a&gt;:  &lt;em&gt;(created: 2024-2-27)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#家&quot;&gt;#家&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAchrome%E7%8B%AC%E7%AB%8BAPP%E7%AA%97%E5%8F%A3/&quot;&gt;创建一个chrome独立APP窗口&lt;/a&gt;:  &lt;em&gt;(created: 2024-2-27)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#chrome&quot;&gt;#chrome&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/300%20Leetcode/leetcode%20%E7%BC%96%E7%A0%81%E6%8A%80%E5%B7%A7/&quot;&gt;leetcode 编码技巧&lt;/a&gt;:  &lt;em&gt;(created: 2024-2-4)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E5%A8%B1%E4%B9%90/%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;原神挺好玩&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-31)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142052%20%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;20240415142052 原神挺好玩&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-31)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-30)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/101b1%20obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;101b1 obsidian-things3-today插件&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-29)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/nginx/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;:  &lt;em&gt;(created: 2024-1-28)&lt;/em&gt;&lt;/li&gt;
@@ -352,7 +326,7 @@ done
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/mac%20%E8%BF%90%E8%A1%8C%20kafka/&quot;&gt;mac 运行 kafka&lt;/a&gt;:  &lt;em&gt;(created: 2023-9-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#kafka&quot;&gt;#kafka&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#学习&quot;&gt;#学习&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/vscode%20git%20%E5%8F%AA%E6%9A%82%E5%AD%98%E9%83%A8%E5%88%86%E6%94%B9%E5%8A%A8/&quot;&gt;vscode git 只暂存部分改动&lt;/a&gt;:  &lt;em&gt;(created: 2023-6-19)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;:  &lt;em&gt;(created: 2023-5-9)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thought/%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%92%8C%E4%B8%8B%E4%B8%80%E7%8A%B6%E6%80%81%E7%9A%84%E9%9A%8F%E6%83%B3.excalidraw/&quot;&gt;当前状态和下一状态的随想.excalidraw&lt;/a&gt;:  &lt;em&gt;(created: 2023-4-18)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#excalidraw&quot;&gt;#excalidraw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%92%8C%E4%B8%8B%E4%B8%80%E7%8A%B6%E6%80%81%E7%9A%84%E9%9A%8F%E6%83%B3.excalidraw/&quot;&gt;当前状态和下一状态的随想.excalidraw&lt;/a&gt;:  &lt;em&gt;(created: 2023-4-18)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#excalidraw&quot;&gt;#excalidraw&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/300%20Leetcode/%E5%85%B7%E4%BD%93%E9%A2%98%E7%9B%AE/leetcode-1014.%20%E6%9C%80%E4%BD%B3%E8%A7%82%E5%85%89%E7%BB%84%E5%90%88/&quot;&gt;leetcode-1014. 最佳观光组合&lt;/a&gt;:  &lt;em&gt;(created: 2023-2-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/300%20Leetcode/%E5%85%B7%E4%BD%93%E9%A2%98%E7%9B%AE/leetcode-53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/&quot;&gt;leetcode-53. 最大子数组和&lt;/a&gt;:  &lt;em&gt;(created: 2023-2-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dp&quot;&gt;#dp&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/300%20Leetcode/%E5%85%B7%E4%BD%93%E9%A2%98%E7%9B%AE/leetcode-1137%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137第 N 个泰波那契数&lt;/a&gt;:  &lt;em&gt;(created: 2023-2-26)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;
@@ -452,6 +426,32 @@ $zip-&amp;gt;close(); //关闭压缩包
 
             </content>
             <link href="https://wudanyang6.github.io//card/About Me/" />
+        </entry>
+        <entry>
+            <title>
+                20240415142052 原神挺好玩
+                
+            </title>
+            <updated>2024-04-15T06:20:53.000Z</updated>
+            <id>https://wudanyang6.github.io//card/20240415142052 原神挺好玩/</id>
+            <content type="html">
+                &lt;h1 id=&quot;20240415142052&quot; tabindex=&quot;-1&quot;&gt;20240415142052 原神挺好玩&lt;/h1&gt;
+&lt;p&gt;最近游戏一直在玩原神，一个开放的大世界。主线剧情刚刚做完，确实是我想象中的角色扮演（RPG）游戏。&lt;/p&gt;
+&lt;p&gt;记得高中在塞班手机上玩的一款RPG游戏，一个周末都在刷怪。后来重新练了个号，结果跟大师傅打架的时候，他的70级宠物不知道为什么变成我的了。我就带着一个70级将近满级的宠物一路过关斩将玩通关了。&lt;/p&gt;
+&lt;p&gt;原神里面我自己感觉可玩的点有几个：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;角色都很二次元，都是按照动漫里面的角色画出来的，二次元的估计会很喜欢。&lt;/li&gt;
+&lt;li&gt;剧情比较代入，某些剧情需要努力打怪，不过主线剧情并不是很难。&lt;/li&gt;
+&lt;li&gt;大世界地图非常大，如果不是有传送节点估计跑图都得跑断腿。&lt;/li&gt;
+&lt;li&gt;大世界里面有很多宝箱，有些宝箱需要解密之后才能获得，不过这些宝箱都是一次性的，我在蒙德、璃月、稻妻的探索度最高才到 50% ，所以也可见大世界有多大东西有多丰富。&lt;/li&gt;
+&lt;li&gt;支线剧情也很丰富多彩，比如我就特别喜欢璃月里面的一个支线剧情《神女劈观》，并且剧情最后有一首歌，大家可以先听一下。不过没有了解剧情之前听这首歌触动应该不是很大，还是具体体验一下剧情再说。&lt;/li&gt;
+&lt;li&gt;最后一点，原神不花钱氪金也可以玩的很舒服，每天做做每日任务，开开宝箱，欣赏欣赏美景，然后读一读角色的背景故事。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;对了，游戏社区里的前辈忠告，当深渊不存在，能打到哪里就打到哪里。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-31_36.png&quot; alt=&quot;../attachs/clop_2024-01-31_36.png&quot; /&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/20240415142052 原神挺好玩/" />
         </entry>
         <entry>
             <title>
@@ -2602,7 +2602,7 @@ for j := 0; j &amp;lt; 4; j++ {
 &lt;h2 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;心得&quot; tabindex=&quot;-1&quot;&gt;心得&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;关于我&quot; tabindex=&quot;-1&quot;&gt;关于我&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
 

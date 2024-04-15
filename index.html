@@ -847,6 +847,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/20240415142052 原神挺好玩/">20240415142052 原神挺好玩 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/About Me/">About Me </a>
                 </div>
             
@@ -946,17 +957,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/做事心得/">做事心得 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/算法新年祝福语/">算法新年祝福语 </a>
                 </div>
             
@@ -994,11 +994,11 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('thought')}" @click.stop="isOpen=!isOpen">
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('thoughts')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
                     <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">thought</span>
+                    <span class="foldername">thoughts</span>
                     </div>
                     
                         
@@ -1009,37 +1009,18 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thought/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thoughts/做事心得/">做事心得 </a>
                 </div>
             
         </div>
         
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('娱乐')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">娱乐</span>
-                    </div>
-                    
-                        
-    
     
                     
                         
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/娱乐/原神挺好玩/">原神挺好玩 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thoughts/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw </a>
                 </div>
             
         </div>
@@ -1247,7 +1228,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T06:15:30.676Z';
+        const searchIndexDate = '2024-04-15T08:19:42.822Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1259,9 +1240,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T06:15:30.676Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T08:19:42.822Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T06:15:30.676Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T08:19:42.822Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1515,7 +1496,7 @@
 <h2 id="文章列表" tabindex="-1">文章列表</h2>
 <p><a class="internal-link" target="" data-note-icon="2" href="/card/dg-Archives/">dg-Archives</a></p>
 <h1 id="心得" tabindex="-1">心得</h1>
-<p><a class="internal-link" target="" data-note-icon="2" href="/card/做事心得/">做事心得</a></p>
+<p><a class="internal-link" target="" data-note-icon="2" href="/thoughts/做事心得/">做事心得</a></p>
 <h2 id="关于我" tabindex="-1">关于我</h2>
 <p><a class="internal-link" target="" data-note-icon="2" href="/card/About Me/">About Me</a></p>
 
