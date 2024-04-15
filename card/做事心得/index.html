@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>心得</title>
+    <title>做事心得</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -947,7 +947,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/心得/">心得 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/做事心得/">做事心得 </a>
                 </div>
             
         </div>
@@ -1249,7 +1249,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T06:14:23.268Z';
+        const searchIndexDate = '2024-04-15T06:15:30.676Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1261,9 +1261,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T06:14:23.268Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T06:15:30.676Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T06:14:23.268Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T06:15:30.676Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1495,7 +1495,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">心得</h1>
+          <h1 data-note-icon="2">做事心得</h1>
         
         <div class="header-meta">
           
@@ -1504,13 +1504,13 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:51:12+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-15T14:12:03+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:51:12+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-15T14:14:48+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="心得" tabindex="-1">心得</h1>
+      <h1 id="做事心得" tabindex="-1">做事心得</h1>
 <ol>
 <li>看书只要开始就能看得进去</li>
 <li>不要急着清空代办，如果出了问题，即使代办清空了也没有任何功劳</li>
@@ -1789,7 +1789,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#心得">心得</a>
+                    <li><a href="#做事心得">做事心得</a>
             		</li>
                 </ol>
             </nav>

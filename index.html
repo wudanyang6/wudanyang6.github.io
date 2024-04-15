@@ -946,7 +946,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/心得/">心得 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/做事心得/">做事心得 </a>
                 </div>
             
         </div>
@@ -1247,7 +1247,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T06:14:23.268Z';
+        const searchIndexDate = '2024-04-15T06:15:30.676Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1259,9 +1259,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T06:14:23.268Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T06:15:30.676Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T06:14:23.268Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T06:15:30.676Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1515,7 +1515,7 @@
 <h2 id="文章列表" tabindex="-1">文章列表</h2>
 <p><a class="internal-link" target="" data-note-icon="2" href="/card/dg-Archives/">dg-Archives</a></p>
 <h1 id="心得" tabindex="-1">心得</h1>
-<p><a class="internal-link" target="" data-note-icon="2" href="/card/心得/">心得</a></p>
+<p><a class="internal-link" target="" data-note-icon="2" href="/card/做事心得/">做事心得</a></p>
 <h2 id="关于我" tabindex="-1">关于我</h2>
 <p><a class="internal-link" target="" data-note-icon="2" href="/card/About Me/">About Me</a></p>
 
