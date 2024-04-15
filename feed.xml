@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-15T10:39:03Z</updated>
+    <updated>2024-04-15T10:43:50Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -64,10 +64,148 @@
         </entry>
         <entry>
             <title>
+                如何做监控
+                
+            </title>
+            <updated>2024-04-15T10:33:58.000Z</updated>
+            <id>https://wudanyang6.github.io//thoughts/如何做监控/</id>
+            <content type="html">
+                &lt;h1 id=&quot;如何做监控&quot; tabindex=&quot;-1&quot;&gt;如何做监控&lt;/h1&gt;
+&lt;p&gt;监控：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;什么是监控？
+&lt;ol&gt;
+&lt;li&gt;对&lt;em&gt;线上质量&lt;/em&gt;的一个实时检查&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;重要性
+&lt;ol&gt;
+&lt;li&gt;发现线上问题（早于用户）&lt;/li&gt;
+&lt;li&gt;快速止损、定位&lt;/li&gt;
+&lt;li&gt;及时发现隐藏的问题，指导策略优化&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;如何做好监控？
+&lt;ol&gt;
+&lt;li&gt;监控的流程及内容
+&lt;ol&gt;
+&lt;li&gt;监控需求提出&lt;/li&gt;
+&lt;li&gt;监控需求开发&lt;/li&gt;
+&lt;li&gt;监控需求测试&lt;/li&gt;
+&lt;li&gt;监控指标确认&lt;/li&gt;
+&lt;li&gt;监控报警添加&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;确认监控内容
+&lt;ol&gt;
+&lt;li&gt;新功能添加监控&lt;/li&gt;
+&lt;li&gt;补充监控&lt;/li&gt;
+&lt;li&gt;围绕
+&lt;ol&gt;
+&lt;li&gt;系统正确性&lt;/li&gt;
+&lt;li&gt;系统异常&lt;/li&gt;
+&lt;li&gt;异常定位&lt;/li&gt;
+&lt;li&gt;隐藏问题指导策略&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;监控数据获取
+&lt;ol&gt;
+&lt;li&gt;打点数据&lt;/li&gt;
+&lt;li&gt;日志数据&lt;/li&gt;
+&lt;li&gt;数据库数据&lt;/li&gt;
+&lt;li&gt;redis 数据&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;监控报警添加
+&lt;ol&gt;
+&lt;li&gt;监控可视化&lt;/li&gt;
+&lt;li&gt;确定触发报警策略&lt;/li&gt;
+&lt;li&gt;确定报警频率&lt;/li&gt;
+&lt;li&gt;确定报警接收人&lt;/li&gt;
+&lt;li&gt;配置监控&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;监控处理
+&lt;ol&gt;
+&lt;li&gt;收到报警&lt;/li&gt;
+&lt;li&gt;问题跟进&lt;/li&gt;
+&lt;li&gt;问题周知&lt;/li&gt;
+&lt;li&gt;问题处理&lt;/li&gt;
+&lt;li&gt;定损&lt;/li&gt;
+&lt;li&gt;复盘 &amp;amp; casestudy&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;监控报警优化
+&lt;ol&gt;
+&lt;li&gt;漏报
+&lt;ol&gt;
+&lt;li&gt;不同报警类型&lt;/li&gt;
+&lt;li&gt;突升突降代替固定阈值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;无效报警太多（准确率）
+&lt;ol&gt;
+&lt;li&gt;准确性提升
+&lt;ol&gt;
+&lt;li&gt;放大时间窗口，屏蔽预期内的单点抖动&lt;/li&gt;
+&lt;li&gt;工作日、节假日不同阈值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;推送方式优化
+&lt;ol&gt;
+&lt;li&gt;连续失败&lt;/li&gt;
+&lt;li&gt;通知间隔&lt;/li&gt;
+&lt;li&gt;通知依赖&lt;/li&gt;
+&lt;li&gt;不同方式报警（短信、电话）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;报警处理不及时
+&lt;ol&gt;
+&lt;li&gt;自愈脚本等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;问题定位
+&lt;ol&gt;
+&lt;li&gt;流量分析
+&lt;ol&gt;
+&lt;li&gt;流量细分
+&lt;ol&gt;
+&lt;li&gt;行业&lt;/li&gt;
+&lt;li&gt;地域&lt;/li&gt;
+&lt;li&gt;机房&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;系统分析
+&lt;ol&gt;
+&lt;li&gt;线上出现报错、fatal、pvlost&lt;/li&gt;
+&lt;li&gt;例行上线功能影响&lt;/li&gt;
+&lt;li&gt;数据变更&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;监控发现有问题之后可以了解一下 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//thoughts/如何做监控/" />
+        </entry>
+        <entry>
+            <title>
                 做事心得
                 
             </title>
-            <updated>2024-04-15T06:14:48.000Z</updated>
+            <updated>2024-04-15T08:35:36.000Z</updated>
             <id>https://wudanyang6.github.io//thoughts/做事心得/</id>
             <content type="html">
                 &lt;h1 id=&quot;做事心得&quot; tabindex=&quot;-1&quot;&gt;做事心得&lt;/h1&gt;
@@ -79,11 +217,26 @@
 &lt;li&gt;自己的智商又不是很好，毅力也不是很高，算法学习也只能是慢慢学了，也就是为了不让自己的脑子生锈吧&lt;/li&gt;
 &lt;li&gt;坚持骑车锻炼 2024年03月08日16:55:41&lt;/li&gt;
 &lt;li&gt;最好维护的代码是没有写出来的代码 2024年03月12日13:44:30&lt;/li&gt;
-&lt;li&gt;要因为做了什么而赞美，而不是是什么而赞美 2024 年 04 月 15 日 14:12:01&lt;/li&gt;
+&lt;li&gt;要因为做了什么而赞美，而不是是什么而赞美 2024年04月15日14:12:01&lt;/li&gt;
 &lt;/ol&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//thoughts/做事心得/" />
+        </entry>
+        <entry>
+            <title>
+                20240415141933 什么是哲学
+                
+            </title>
+            <updated>2024-04-15T10:37:18.000Z</updated>
+            <id>https://wudanyang6.github.io//thoughts/20240415141933 什么是哲学/</id>
+            <content type="html">
+                &lt;h1 id=&quot;20240415141933&quot; tabindex=&quot;-1&quot;&gt;20240415141933 什么是哲学&lt;/h1&gt;
+&lt;p&gt;哲学是在探究根本性的问题，【为什么】这个问题要问到根本&lt;/p&gt;
+&lt;p&gt;比如，为什么要吃饭，因为要活着，为什么活着。。。&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//thoughts/20240415141933 什么是哲学/" />
         </entry>
         <entry>
             <title>
@@ -304,6 +457,9 @@ done
             <content type="html">
                 &lt;h1 id=&quot;dg-archives&quot; tabindex=&quot;-1&quot;&gt;dg-Archives&lt;/h1&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415183533%20%E5%93%B2%E5%AD%A6%E4%B9%A6%E5%8D%95/&quot;&gt;20240415183533 哲学书单&lt;/a&gt;:  &lt;em&gt;(created: 2024-4-15)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/20240415141933%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141933 什么是哲学&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-18)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#哲学&quot;&gt;#哲学&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142017%20%E5%93%B2%E5%AD%A6%E7%9A%84%E5%88%86%E6%94%AF/&quot;&gt;20240415142017 哲学的分支&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-18)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#哲学&quot;&gt;#哲学&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/go/go-exec-run/&quot;&gt;go-exec-run&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Go&quot;&gt;#Go&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/go/go-exec/&quot;&gt;go-exec&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Go&quot;&gt;#Go&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;:  &lt;em&gt;(created: 2024-3-8)&lt;/em&gt;&lt;/li&gt;
@@ -324,6 +480,7 @@ done
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-wait/&quot;&gt;linux-wait&lt;/a&gt;:  &lt;em&gt;(created: 2023-12-11)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/101b2%20Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;101b2 Things 工作流&lt;/a&gt;:  &lt;em&gt;(created: 2023-10-9)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#效率&quot;&gt;#效率&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tools&quot;&gt;#tools&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#things3&quot;&gt;#things3&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/mac%20%E8%BF%90%E8%A1%8C%20kafka/&quot;&gt;mac 运行 kafka&lt;/a&gt;:  &lt;em&gt;(created: 2023-9-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#kafka&quot;&gt;#kafka&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#学习&quot;&gt;#学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/20240415141824%20%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141824 哲学&lt;/a&gt;:  &lt;em&gt;(created: 2023-8-8)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/vscode%20git%20%E5%8F%AA%E6%9A%82%E5%AD%98%E9%83%A8%E5%88%86%E6%94%B9%E5%8A%A8/&quot;&gt;vscode git 只暂存部分改动&lt;/a&gt;:  &lt;em&gt;(created: 2023-6-19)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;:  &lt;em&gt;(created: 2023-5-9)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%92%8C%E4%B8%8B%E4%B8%80%E7%8A%B6%E6%80%81%E7%9A%84%E9%9A%8F%E6%83%B3.excalidraw/&quot;&gt;当前状态和下一状态的随想.excalidraw&lt;/a&gt;:  &lt;em&gt;(created: 2023-4-18)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#excalidraw&quot;&gt;#excalidraw&lt;/a&gt;&lt;/li&gt;
@@ -344,13 +501,13 @@ done
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/iso-%E6%97%A5%E6%9C%9F%E8%A1%A8%E7%A4%BA%E6%B3%95/&quot;&gt;iso-日期表示法&lt;/a&gt;:  &lt;em&gt;(created: 2021-7-25)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/linux-%E6%A0%91%E8%8E%93%E6%B4%BE%E6%97%A0%E6%B3%95%E4%B8%8A%E7%BD%91%E6%8E%92%E6%9F%A5/&quot;&gt;linux-树莓派无法上网排查&lt;/a&gt;:  &lt;em&gt;(created: 2021-7-15)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#树莓派&quot;&gt;#树莓派&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%BD%91%E7%BB%9C-%E6%9C%80%E5%A4%9A%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AAa%E7%B1%BB%E3%80%81b%E7%B1%BB%E5%92%8Cc%E7%B1%BB%E7%BD%91%E7%BB%9C%E5%8F%B7/&quot;&gt;网络-最多有多少个a类、b类和c类网络号&lt;/a&gt;:  &lt;em&gt;(created: 2021-5-24)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/700%20Personal/%E5%A6%82%E4%BD%95%E5%81%9A%E7%9B%91%E6%8E%A7/&quot;&gt;如何做监控&lt;/a&gt;:  &lt;em&gt;(created: 2021-5-7)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%A6%82%E4%BD%95%E5%81%9A%E7%9B%91%E6%8E%A7/&quot;&gt;如何做监控&lt;/a&gt;:  &lt;em&gt;(created: 2021-5-7)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/%E6%A0%91%E8%8E%93%E6%B4%BE/ubuntu%20%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%AF%E5%8A%A8%E6%97%B6%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C/&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-27)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/nginx/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-22)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/nginx/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-16)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Process&quot;&gt;#Process&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#source-code&quot;&gt;#source-code&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/nginx/nginx%20%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-14)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6/&quot;&gt;文件描述符&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-12)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#开发经验&quot;&gt;#开发经验&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-12)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#开发经验&quot;&gt;#开发经验&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/linux-man%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/&quot;&gt;linux-man命令使用&lt;/a&gt;:  &lt;em&gt;(created: 2021-4-7)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/nginx/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/&quot;&gt;vscode 调试nginx代码&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-25)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/202103251606%20-%20linux-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/&quot;&gt;202103251606 - linux-科学上网&lt;/a&gt;:  &lt;em&gt;(created: 2021-3-25)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
@@ -429,6 +586,20 @@ $zip-&amp;gt;close(); //关闭压缩包
         </entry>
         <entry>
             <title>
+                20240415183533 哲学书单
+                
+            </title>
+            <updated>2024-04-15T10:36:20.000Z</updated>
+            <id>https://wudanyang6.github.io//card/20240415183533 哲学书单/</id>
+            <content type="html">
+                &lt;h1 id=&quot;20240415183533&quot; tabindex=&quot;-1&quot;&gt;20240415183533 哲学书单&lt;/h1&gt;
+&lt;p&gt;哲学书单最全102本，哲学入门到进阶必读！北大武大哲学系推荐 - 知乎: &lt;a href=&quot;https://zhuanlan.zhihu.com/p/72569441&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://zhuanlan.zhihu.com/p/72569441&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/20240415183533 哲学书单/" />
+        </entry>
+        <entry>
+            <title>
                 20240415142052 原神挺好玩
                 
             </title>
@@ -455,143 +626,49 @@ $zip-&amp;gt;close(); //关闭压缩包
         </entry>
         <entry>
             <title>
-                如何做监控
+                20240415142017 哲学的分支
                 
             </title>
-            <updated>2024-03-09T14:04:48.000Z</updated>
-            <id>https://wudanyang6.github.io//700 Personal/如何做监控/</id>
+            <updated>2024-04-15T10:37:58.000Z</updated>
+            <id>https://wudanyang6.github.io//card/20240415142017 哲学的分支/</id>
             <content type="html">
-                &lt;h1 id=&quot;如何做监控&quot; tabindex=&quot;-1&quot;&gt;如何做监控&lt;/h1&gt;
-&lt;p&gt;监控：&lt;/p&gt;
+                &lt;h1 id=&quot;20240415142017&quot; tabindex=&quot;-1&quot;&gt;20240415142017 哲学的分支&lt;/h1&gt;
+&lt;p&gt;哲学是一个广泛的学科，包含多个分支，除了形而上学之外，还包括以下主要领域：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;什么是监控？
-&lt;ol&gt;
-&lt;li&gt;对&lt;em&gt;线上质量&lt;/em&gt;的一个实时检查&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;认识论（Epistemology）&lt;/strong&gt;：研究知识的性质、起源、范围和极限。认识论探讨我们如何知道什么是真实的，什么可以被认为是知识，以及我们如何获取知识。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;重要性
-&lt;ol&gt;
-&lt;li&gt;发现线上问题（早于用户）&lt;/li&gt;
-&lt;li&gt;快速止损、定位&lt;/li&gt;
-&lt;li&gt;及时发现隐藏的问题，指导策略优化&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;伦理学（Ethics）&lt;/strong&gt;：探讨行为的道德性，即什么是对的，什么是错的。伦理学涉及到道德原则、价值观和好的生活方式的探讨。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;如何做好监控？
-&lt;ol&gt;
-&lt;li&gt;监控的流程及内容
-&lt;ol&gt;
-&lt;li&gt;监控需求提出&lt;/li&gt;
-&lt;li&gt;监控需求开发&lt;/li&gt;
-&lt;li&gt;监控需求测试&lt;/li&gt;
-&lt;li&gt;监控指标确认&lt;/li&gt;
-&lt;li&gt;监控报警添加&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;逻辑学（Logic）&lt;/strong&gt;：研究有效推理的原则。逻辑学关注于如何构建有效的论证，以及如何区分有效论证和无效论证。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;确认监控内容
-&lt;ol&gt;
-&lt;li&gt;新功能添加监控&lt;/li&gt;
-&lt;li&gt;补充监控&lt;/li&gt;
-&lt;li&gt;围绕
-&lt;ol&gt;
-&lt;li&gt;系统正确性&lt;/li&gt;
-&lt;li&gt;系统异常&lt;/li&gt;
-&lt;li&gt;异常定位&lt;/li&gt;
-&lt;li&gt;隐藏问题指导策略&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;政治哲学（Political Philosophy）&lt;/strong&gt;：探讨政府、公民、政治权利、公正、法律、自由、正义等概念。政治哲学试图理解人类社会和政治结构的理想形态。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;美学（Aesthetics）&lt;/strong&gt;：研究美和艺术的本质、经验和价值。美学涵盖了艺术作品的创造、欣赏和批评等方面。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;存在主义（Existentialism）&lt;/strong&gt;：虽然更多被视为哲学的一个流派，但存在主义对个体存在、自由和选择的探讨对整个哲学领域有深远影响。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;心灵哲学（Philosophy of Mind）&lt;/strong&gt;：研究心灵本质、心灵与身体的关系等问题。心灵哲学试图理解意识、感觉、感知和思维的本质。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;语言哲学（Philosophy of Language）&lt;/strong&gt;：探索语言的本质、使用以及语言与现实之间的关系。语言哲学关注如何通过语言表达思想以及语言如何影响我们的理解和认识世界。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;科学哲学（Philosophy of Science）&lt;/strong&gt;：分析科学的方法、目的和理论基础。它探讨了科学如何工作，以及科学知识的性质和局限性。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;监控数据获取
-&lt;ol&gt;
-&lt;li&gt;打点数据&lt;/li&gt;
-&lt;li&gt;日志数据&lt;/li&gt;
-&lt;li&gt;数据库数据&lt;/li&gt;
-&lt;li&gt;redis 数据&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;监控报警添加
-&lt;ol&gt;
-&lt;li&gt;监控可视化&lt;/li&gt;
-&lt;li&gt;确定触发报警策略&lt;/li&gt;
-&lt;li&gt;确定报警频率&lt;/li&gt;
-&lt;li&gt;确定报警接收人&lt;/li&gt;
-&lt;li&gt;配置监控&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;监控处理
-&lt;ol&gt;
-&lt;li&gt;收到报警&lt;/li&gt;
-&lt;li&gt;问题跟进&lt;/li&gt;
-&lt;li&gt;问题周知&lt;/li&gt;
-&lt;li&gt;问题处理&lt;/li&gt;
-&lt;li&gt;定损&lt;/li&gt;
-&lt;li&gt;复盘 &amp;amp; casestudy&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;监控报警优化
-&lt;ol&gt;
-&lt;li&gt;漏报
-&lt;ol&gt;
-&lt;li&gt;不同报警类型&lt;/li&gt;
-&lt;li&gt;突升突降代替固定阈值&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;无效报警太多（准确率）
-&lt;ol&gt;
-&lt;li&gt;准确性提升
-&lt;ol&gt;
-&lt;li&gt;放大时间窗口，屏蔽预期内的单点抖动&lt;/li&gt;
-&lt;li&gt;工作日、节假日不同阈值&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;推送方式优化
-&lt;ol&gt;
-&lt;li&gt;连续失败&lt;/li&gt;
-&lt;li&gt;通知间隔&lt;/li&gt;
-&lt;li&gt;通知依赖&lt;/li&gt;
-&lt;li&gt;不同方式报警（短信、电话）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;报警处理不及时
-&lt;ol&gt;
-&lt;li&gt;自愈脚本等&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;问题定位
-&lt;ol&gt;
-&lt;li&gt;流量分析
-&lt;ol&gt;
-&lt;li&gt;流量细分
-&lt;ol&gt;
-&lt;li&gt;行业&lt;/li&gt;
-&lt;li&gt;地域&lt;/li&gt;
-&lt;li&gt;机房&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;系统分析
-&lt;ol&gt;
-&lt;li&gt;线上出现报错、fatal、pvlost&lt;/li&gt;
-&lt;li&gt;例行上线功能影响&lt;/li&gt;
-&lt;li&gt;数据变更&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;先通报、再止损、再定位&lt;br /&gt;
-最后修复&lt;/p&gt;
+&lt;p&gt;这些领域相互交织，共同构成了哲学这一广泛的学科。每个领域都有其特定的研究问题和方法，但它们共同探讨人类知识和存在的基本问题。&lt;/p&gt;
+&lt;p&gt;形而上学是哲学的一个核心分支，&lt;strong&gt;它探讨现实的最基本结构和本质&lt;/strong&gt;。 词语“形而上学”（Metaphysics）源自拉丁语“Metaphysica”，最早可追溯到亚里士多德的作品集，意味着“超越自然之学”。形而上学关注那些超越物理科学研究范畴的问题，试图理解和解释存在的根本性质、宇宙的本质、事物存在的原因以及它们是如何存在的。&lt;/p&gt;
+&lt;p&gt;通过 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;gpt4-1106-preview&lt;/a&gt; 生成的答案&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//700 Personal/如何做监控/" />
+            <link href="https://wudanyang6.github.io//card/20240415142017 哲学的分支/" />
         </entry>
         <entry>
             <title>
@@ -1182,64 +1259,6 @@ date_translator = require(&amp;quot;date&amp;quot;)
         </entry>
         <entry>
             <title>
-                如何追查线上问题
-                
-            </title>
-            <updated>2024-02-04T16:48:40.000Z</updated>
-            <id>https://wudanyang6.github.io//100 Programmer/如何追查线上问题/</id>
-            <content type="html">
-                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#开发经验&quot;&gt;#开发经验&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;原则&quot; tabindex=&quot;-1&quot;&gt;原则&lt;/h1&gt;
-&lt;h2 id=&quot;止损优先&quot; tabindex=&quot;-1&quot;&gt;止损优先&lt;/h2&gt;
-&lt;p&gt;不能先追查问题根源， 首先应该&lt;code&gt;止损&lt;/code&gt;，不让问题进一步扩大，&lt;code&gt;代码回滚&lt;/code&gt;、&lt;code&gt;服务降级&lt;/code&gt;等都可以起到止损的效果。&lt;br /&gt;
-对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 &lt;code&gt;配置开关 &lt;/code&gt;控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多&lt;/p&gt;
-&lt;h2 id=&quot;及时通告&quot; tabindex=&quot;-1&quot;&gt;及时通告&lt;/h2&gt;
-&lt;p&gt;在问题发生之后，要及时对处理问题的过程进行&lt;code&gt;通告&lt;/code&gt;。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。&lt;/p&gt;
-&lt;h1 id=&quot;追查问题的方法&quot; tabindex=&quot;-1&quot;&gt;追查问题的方法&lt;/h1&gt;
-&lt;h2 id=&quot;逻辑方法:&quot; tabindex=&quot;-1&quot;&gt;逻辑方法:&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;先收集&lt;code&gt;现象&lt;/code&gt;：业务报错、线上报错日志等&lt;br /&gt;
-对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。&lt;/li&gt;
-&lt;li&gt;针对现象假设&lt;code&gt;原因&lt;/code&gt;：
-&lt;ol&gt;
-&lt;li&gt;常见问题依据追查手册&lt;/li&gt;
-&lt;li&gt;其他问题保持思路开放，大胆假设&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;是否&lt;code&gt;有损&lt;/code&gt;的判断：&lt;br /&gt;
-根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 &lt;strong&gt;止损优先&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;质疑&lt;/code&gt;所有数据：&lt;br /&gt;
-各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;知识准备&quot; tabindex=&quot;-1&quot;&gt;知识准备&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;对线上各种&lt;code&gt;日志&lt;/code&gt;的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等&lt;/li&gt;
-&lt;li&gt;对线上的各种&lt;code&gt;配置&lt;/code&gt;更要做到心中有数&lt;/li&gt;
-&lt;li&gt;对&lt;code&gt;细节&lt;/code&gt;的追查，每次都更细一些，这样才能获得更多的信息&lt;/li&gt;
-&lt;li&gt;计算机&lt;code&gt;基本功&lt;/code&gt;，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;总结经验&quot; tabindex=&quot;-1&quot;&gt;总结经验&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;成熟的方法落地成&lt;code&gt;工具&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;对问题的追查形成&lt;code&gt;文档&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;问题解决之后&quot; tabindex=&quot;-1&quot;&gt;问题解决之后&lt;/h1&gt;
-&lt;p&gt;如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。&lt;br /&gt;
-那么，我们可以通过思考以下几点来提升自己&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;线上是否恢复了正常？（&lt;code&gt;最基本的&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;问题的原因是什么？（&lt;code&gt;落到追查文档&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;通过什么手段恢复的？（&lt;code&gt;解决方案&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;怎么可以避免下次再次出现问题？（&lt;code&gt;防患未然&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;除了此次出现的问题，会不会有其他的问题出现（&lt;code&gt;举一反三&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;出现此类问题是否是架构问题造成的？（&lt;code&gt;根本原因&lt;/code&gt;）&lt;/li&gt;
-&lt;/ol&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//100 Programmer/如何追查线上问题/" />
-        </entry>
-        <entry>
-            <title>
                 202012081017 - php8.0 新特性
                 
             </title>
@@ -1415,150 +1434,6 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/nginx/vscode 调试nginx代码/" />
-        </entry>
-        <entry>
-            <title>
-                nginx-master-start-worker
-                
-            </title>
-            <updated>2024-02-22T07:57:08.000Z</updated>
-            <id>https://wudanyang6.github.io//100 Programmer/nginx/nginx-master-start-worker/</id>
-            <content type="html">
-                &lt;h1 id=&quot;nginx-master&quot; tabindex=&quot;-1&quot;&gt;Nginx Master 进程启动子进程的流程&lt;/h1&gt;
-&lt;h2 id=&quot;入口&quot; tabindex=&quot;-1&quot;&gt;入口&lt;/h2&gt;
-&lt;p&gt;启动子进程的流程在&lt;code&gt;ngx_start_worker_processes&lt;/code&gt;函数中，具体代码如下：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;static void
-ngx_start_worker_processes(ngx_cycle_t *cycle, ngx_int_t n, ngx_int_t type)
-{
-    ngx_int_t  i;
-
-    ngx_log_error(NGX_LOG_NOTICE, cycle-&amp;gt;log, 0, &amp;quot;start worker processes&amp;quot;);
-
-    for (i = 0; i &amp;lt; n; i++) {
-
-        ngx_spawn_process(cycle, ngx_worker_process_cycle,
-                          (void *) (intptr_t) i, &amp;quot;worker process&amp;quot;, type);
-
-        ngx_pass_open_channel(cycle);
-    }
-}
-
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;创建子进程&quot; tabindex=&quot;-1&quot;&gt;创建子进程&lt;/h2&gt;
-&lt;p&gt;其中创建子进程的函数为 &lt;code&gt;ngx_spawn_process&lt;/code&gt;，主要就是封装了 &lt;code&gt;fork&lt;/code&gt; 函数。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;ngx_pid_t
-ngx_spawn_process(ngx_cycle_t *cycle, ngx_spawn_proc_pt proc, void *data,
-    char *name, ngx_int_t respawn)
-{
-    // ...
-    pid = fork();
-
-    switch (pid) {
-
-    case -1:
-        ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, ngx_errno,
-                      &amp;quot;fork() failed while spawning &#92;&amp;quot;%s&#92;&amp;quot;&amp;quot;, name);
-        ngx_close_channel(ngx_processes[s].channel, cycle-&amp;gt;log);
-        return NGX_INVALID_PID;
-
-    case 0:
-        ngx_parent = ngx_pid;
-        ngx_pid = ngx_getpid();
-        proc(cycle, data);
-        break;
-
-    default:
-        break;
-    }
-
-    ngx_log_error(NGX_LOG_NOTICE, cycle-&amp;gt;log, 0, &amp;quot;start %s %P&amp;quot;, name, pid);
-
-    ngx_processes[s].pid = pid;
-    ngx_processes[s].exited = 0;
-
-  // ...
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;fork&lt;/code&gt; 函数的返回值：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;子进程返回0，父进程返回子进程id，若出错，返回 -1&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;子进程在 &lt;code&gt;case 0&lt;/code&gt; 中执行 &lt;code&gt;proc&lt;/code&gt; 函数，&lt;code&gt;proc&lt;/code&gt; 函数是 &lt;code&gt;ngx_start_worker_processes&lt;/code&gt; 函数中传进来的第二个参数 &lt;code&gt;ngx_worker_process_cycle&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ngx_worker_process_cycle&lt;/code&gt; 函数，就是 worker 进程的主要流程，以后会继续分析。&lt;/p&gt;
-&lt;h2 id=&quot;最大子进程数量&quot; tabindex=&quot;-1&quot;&gt;最大子进程数量&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;if (s == NGX_MAX_PROCESSES) {
-    ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, 0,
-                    &amp;quot;no more than %d processes can be spawned&amp;quot;,
-                    NGX_MAX_PROCESSES);
-    return NGX_INVALID_PID;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_MAX_PROCESSES         1024
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;最大子进程数量定义成了 &lt;code&gt;NGX_MAX_PROCESSES&lt;/code&gt; 也就是 1024，如果超过了 1024个进程，就会报错&lt;/p&gt;
-&lt;h2 id=&quot;code-respawn-code&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;respawn&lt;/code&gt; 参数的意义&lt;/h2&gt;
-&lt;h3 id=&quot;code-respawn-code-0&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;respawn&lt;/code&gt; 大于等于0时&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;respawn&lt;/code&gt; 大于等于0时，代表重启子进程，respawn 代表给 &lt;code&gt;ngx_processes&lt;/code&gt; 数组的下标&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;if (respawn &amp;gt;= 0) {
-    s = respawn;
-} else {
-    ...
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;code-respawn-code-0-1&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;respawn&lt;/code&gt; 小于0时&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;respawn&lt;/code&gt; 小于0时，代表启动的子进程的属性，子进程的几种属性：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_NORESPAWN     -1
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_JUST_SPAWN    -2
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_RESPAWN       -3
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_JUST_RESPAWN  -4
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_DETACHED      -5
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;那么 &lt;code&gt;respawn&lt;/code&gt; 小于0时，子进程在 &lt;code&gt;ngx_processes&lt;/code&gt;数组中的下标是多少呢？&lt;/p&gt;
-&lt;p&gt;看下面这段代码：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;for (s = 0; s &amp;lt; ngx_last_process; s++) {
-    if (ngx_processes[s].pid == -1) {
-        break;
-    }
-}
-
-if (s == NGX_MAX_PROCESSES) {
-    ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, 0,
-                  &amp;quot;no more than %d processes can be spawned&amp;quot;,
-                  NGX_MAX_PROCESSES);
-    return NGX_INVALID_PID;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;实际上就是在找 &lt;code&gt;ngx_processes&lt;/code&gt; 数组中未使用的最小下标。&lt;/p&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;《UNIX 环境高级编程》&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://ivanzz1001.github.io/records/post/nginx/2017/12/02/nginx-source_part15_2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;os/unix/ngx_process.c源代码分析&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//100 Programmer/nginx/nginx-master-start-worker/" />
-        </entry>
-        <entry>
-            <title>
-                nginx 进程模型-整体架构
-                
-            </title>
-            <updated>2024-01-31T05:28:34.000Z</updated>
-            <id>https://wudanyang6.github.io//100 Programmer/nginx/nginx 进程模型-整体架构/</id>
-            <content type="html">
-                &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型-整体架构&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/100%20Programmer/nginx/713751-20221106220927618-2090658482.png&quot; alt=&quot;713751-20221106220927618-2090658482.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;从网上找了一个非常好的图片，从图中可以看到很多东西&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Nginx&lt;/code&gt; 会生成多个进程&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 使用了 &lt;code&gt;io&lt;/code&gt; 多路复用的事件驱动框架&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 内部有很多模块&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 处理磁盘 &lt;code&gt;I/O&lt;/code&gt; 时，使用了标准 &lt;code&gt;I/O&lt;/code&gt; ， &lt;code&gt;sendfile&lt;/code&gt; ， &lt;code&gt;AIO&lt;/code&gt; ，&lt;code&gt;mmap&lt;/code&gt; 等 &lt;code&gt;I/O&lt;/code&gt; 技术&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Cache loader&lt;/code&gt; 和 &lt;code&gt;Cache manager&lt;/code&gt; 操作 proxy cache&lt;/li&gt;
-&lt;li&gt;后端支持多种基于 &lt;code&gt;tcp&lt;/code&gt; 的网络协议&lt;/li&gt;
-&lt;/ol&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//100 Programmer/nginx/nginx 进程模型-整体架构/" />
         </entry>
         <entry>
             <title>
@@ -2592,6 +2467,24 @@ for j := 0; j &amp;lt; 4; j++ {
         </entry>
         <entry>
             <title>
+                20240415141824 哲学
+                
+            </title>
+            <updated>2024-04-15T10:37:23.000Z</updated>
+            <id>https://wudanyang6.github.io//000 Topic Index/20240415141824 哲学/</id>
+            <content type="html">
+                &lt;h1 id=&quot;20240415141824&quot; tabindex=&quot;-1&quot;&gt;20240415141824 哲学&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415183533%20%E5%93%B2%E5%AD%A6%E4%B9%A6%E5%8D%95/&quot;&gt;20240415183533 哲学书单&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142017%20%E5%93%B2%E5%AD%A6%E7%9A%84%E5%88%86%E6%94%AF/&quot;&gt;20240415142017 哲学的分支&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/20240415141933%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141933 什么是哲学&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//000 Topic Index/20240415141824 哲学/" />
+        </entry>
+        <entry>
+            <title>
                 0 Home dy-turbo
                 
             </title>
@@ -2608,5 +2501,206 @@ for j := 0; j &amp;lt; 4; j++ {
 
             </content>
             <link href="https://wudanyang6.github.io//" />
+        </entry>
+        <entry>
+            <title>
+                nginx-master-start-worker
+                
+            </title>
+            <updated>2024-02-22T07:57:08.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/nginx/nginx-master-start-worker/</id>
+            <content type="html">
+                &lt;h1 id=&quot;nginx-master&quot; tabindex=&quot;-1&quot;&gt;Nginx Master 进程启动子进程的流程&lt;/h1&gt;
+&lt;h2 id=&quot;入口&quot; tabindex=&quot;-1&quot;&gt;入口&lt;/h2&gt;
+&lt;p&gt;启动子进程的流程在&lt;code&gt;ngx_start_worker_processes&lt;/code&gt;函数中，具体代码如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;static void
+ngx_start_worker_processes(ngx_cycle_t *cycle, ngx_int_t n, ngx_int_t type)
+{
+    ngx_int_t  i;
+
+    ngx_log_error(NGX_LOG_NOTICE, cycle-&amp;gt;log, 0, &amp;quot;start worker processes&amp;quot;);
+
+    for (i = 0; i &amp;lt; n; i++) {
+
+        ngx_spawn_process(cycle, ngx_worker_process_cycle,
+                          (void *) (intptr_t) i, &amp;quot;worker process&amp;quot;, type);
+
+        ngx_pass_open_channel(cycle);
+    }
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;创建子进程&quot; tabindex=&quot;-1&quot;&gt;创建子进程&lt;/h2&gt;
+&lt;p&gt;其中创建子进程的函数为 &lt;code&gt;ngx_spawn_process&lt;/code&gt;，主要就是封装了 &lt;code&gt;fork&lt;/code&gt; 函数。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;ngx_pid_t
+ngx_spawn_process(ngx_cycle_t *cycle, ngx_spawn_proc_pt proc, void *data,
+    char *name, ngx_int_t respawn)
+{
+    // ...
+    pid = fork();
+
+    switch (pid) {
+
+    case -1:
+        ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, ngx_errno,
+                      &amp;quot;fork() failed while spawning &#92;&amp;quot;%s&#92;&amp;quot;&amp;quot;, name);
+        ngx_close_channel(ngx_processes[s].channel, cycle-&amp;gt;log);
+        return NGX_INVALID_PID;
+
+    case 0:
+        ngx_parent = ngx_pid;
+        ngx_pid = ngx_getpid();
+        proc(cycle, data);
+        break;
+
+    default:
+        break;
+    }
+
+    ngx_log_error(NGX_LOG_NOTICE, cycle-&amp;gt;log, 0, &amp;quot;start %s %P&amp;quot;, name, pid);
+
+    ngx_processes[s].pid = pid;
+    ngx_processes[s].exited = 0;
+
+  // ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;fork&lt;/code&gt; 函数的返回值：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;子进程返回0，父进程返回子进程id，若出错，返回 -1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;子进程在 &lt;code&gt;case 0&lt;/code&gt; 中执行 &lt;code&gt;proc&lt;/code&gt; 函数，&lt;code&gt;proc&lt;/code&gt; 函数是 &lt;code&gt;ngx_start_worker_processes&lt;/code&gt; 函数中传进来的第二个参数 &lt;code&gt;ngx_worker_process_cycle&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ngx_worker_process_cycle&lt;/code&gt; 函数，就是 worker 进程的主要流程，以后会继续分析。&lt;/p&gt;
+&lt;h2 id=&quot;最大子进程数量&quot; tabindex=&quot;-1&quot;&gt;最大子进程数量&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;if (s == NGX_MAX_PROCESSES) {
+    ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, 0,
+                    &amp;quot;no more than %d processes can be spawned&amp;quot;,
+                    NGX_MAX_PROCESSES);
+    return NGX_INVALID_PID;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_MAX_PROCESSES         1024
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;最大子进程数量定义成了 &lt;code&gt;NGX_MAX_PROCESSES&lt;/code&gt; 也就是 1024，如果超过了 1024个进程，就会报错&lt;/p&gt;
+&lt;h2 id=&quot;code-respawn-code&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;respawn&lt;/code&gt; 参数的意义&lt;/h2&gt;
+&lt;h3 id=&quot;code-respawn-code-0&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;respawn&lt;/code&gt; 大于等于0时&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;respawn&lt;/code&gt; 大于等于0时，代表重启子进程，respawn 代表给 &lt;code&gt;ngx_processes&lt;/code&gt; 数组的下标&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;if (respawn &amp;gt;= 0) {
+    s = respawn;
+} else {
+    ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;code-respawn-code-0-1&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;respawn&lt;/code&gt; 小于0时&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;respawn&lt;/code&gt; 小于0时，代表启动的子进程的属性，子进程的几种属性：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_NORESPAWN     -1
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_JUST_SPAWN    -2
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_RESPAWN       -3
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_JUST_RESPAWN  -4
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_DETACHED      -5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;那么 &lt;code&gt;respawn&lt;/code&gt; 小于0时，子进程在 &lt;code&gt;ngx_processes&lt;/code&gt;数组中的下标是多少呢？&lt;/p&gt;
+&lt;p&gt;看下面这段代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;for (s = 0; s &amp;lt; ngx_last_process; s++) {
+    if (ngx_processes[s].pid == -1) {
+        break;
+    }
+}
+
+if (s == NGX_MAX_PROCESSES) {
+    ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, 0,
+                  &amp;quot;no more than %d processes can be spawned&amp;quot;,
+                  NGX_MAX_PROCESSES);
+    return NGX_INVALID_PID;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;实际上就是在找 &lt;code&gt;ngx_processes&lt;/code&gt; 数组中未使用的最小下标。&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;《UNIX 环境高级编程》&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ivanzz1001.github.io/records/post/nginx/2017/12/02/nginx-source_part15_2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;os/unix/ngx_process.c源代码分析&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/nginx/nginx-master-start-worker/" />
+        </entry>
+        <entry>
+            <title>
+                如何追查线上问题
+                
+            </title>
+            <updated>2024-04-15T10:35:05.000Z</updated>
+            <id>https://wudanyang6.github.io//thoughts/如何追查线上问题/</id>
+            <content type="html">
+                &lt;h1 id=&quot;如何追查线上问题&quot; tabindex=&quot;-1&quot;&gt;如何追查线上问题&lt;/h1&gt;
+&lt;h2 id=&quot;止损优先&quot; tabindex=&quot;-1&quot;&gt;止损优先&lt;/h2&gt;
+&lt;p&gt;不能先追查问题根源， 首先应该&lt;code&gt;止损&lt;/code&gt;，不让问题进一步扩大，&lt;code&gt;代码回滚&lt;/code&gt;、&lt;code&gt;服务降级&lt;/code&gt;等都可以起到止损的效果。&lt;br /&gt;
+对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 &lt;code&gt;配置开关 &lt;/code&gt;控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多&lt;/p&gt;
+&lt;h2 id=&quot;及时通告&quot; tabindex=&quot;-1&quot;&gt;及时通告&lt;/h2&gt;
+&lt;p&gt;在问题发生之后，要及时对处理问题的过程进行&lt;code&gt;通告&lt;/code&gt;。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。&lt;/p&gt;
+&lt;h1 id=&quot;追查问题的方法&quot; tabindex=&quot;-1&quot;&gt;追查问题的方法&lt;/h1&gt;
+&lt;h2 id=&quot;逻辑方法:&quot; tabindex=&quot;-1&quot;&gt;逻辑方法:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;先收集&lt;code&gt;现象&lt;/code&gt;：业务报错、线上报错日志等&lt;br /&gt;
+对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。&lt;/li&gt;
+&lt;li&gt;针对现象假设&lt;code&gt;原因&lt;/code&gt;：
+&lt;ol&gt;
+&lt;li&gt;常见问题依据追查手册&lt;/li&gt;
+&lt;li&gt;其他问题保持思路开放，大胆假设&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;是否&lt;code&gt;有损&lt;/code&gt;的判断：&lt;br /&gt;
+根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 &lt;strong&gt;止损优先&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;质疑&lt;/code&gt;所有数据：&lt;br /&gt;
+各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;知识准备&quot; tabindex=&quot;-1&quot;&gt;知识准备&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;对线上各种&lt;code&gt;日志&lt;/code&gt;的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等&lt;/li&gt;
+&lt;li&gt;对线上的各种&lt;code&gt;配置&lt;/code&gt;更要做到心中有数&lt;/li&gt;
+&lt;li&gt;对&lt;code&gt;细节&lt;/code&gt;的追查，每次都更细一些，这样才能获得更多的信息&lt;/li&gt;
+&lt;li&gt;计算机&lt;code&gt;基本功&lt;/code&gt;，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;总结经验&quot; tabindex=&quot;-1&quot;&gt;总结经验&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;成熟的方法落地成&lt;code&gt;工具&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;对问题的追查形成&lt;code&gt;文档&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;问题解决之后&quot; tabindex=&quot;-1&quot;&gt;问题解决之后&lt;/h1&gt;
+&lt;p&gt;如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。&lt;br /&gt;
+那么，我们可以通过思考以下几点来提升自己&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;线上是否恢复了正常？（&lt;code&gt;最基本的&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;问题的原因是什么？（&lt;code&gt;落到追查文档&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;通过什么手段恢复的？（&lt;code&gt;解决方案&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;怎么可以避免下次再次出现问题？（&lt;code&gt;防患未然&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;除了此次出现的问题，会不会有其他的问题出现（&lt;code&gt;举一反三&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;出现此类问题是否是架构问题造成的？（&lt;code&gt;根本原因&lt;/code&gt;）&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//thoughts/如何追查线上问题/" />
+        </entry>
+        <entry>
+            <title>
+                nginx 进程模型-整体架构
+                
+            </title>
+            <updated>2024-01-31T05:28:34.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/nginx/nginx 进程模型-整体架构/</id>
+            <content type="html">
+                &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型-整体架构&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/100%20Programmer/nginx/713751-20221106220927618-2090658482.png&quot; alt=&quot;713751-20221106220927618-2090658482.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;从网上找了一个非常好的图片，从图中可以看到很多东西&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Nginx&lt;/code&gt; 会生成多个进程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 使用了 &lt;code&gt;io&lt;/code&gt; 多路复用的事件驱动框架&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 内部有很多模块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 处理磁盘 &lt;code&gt;I/O&lt;/code&gt; 时，使用了标准 &lt;code&gt;I/O&lt;/code&gt; ， &lt;code&gt;sendfile&lt;/code&gt; ， &lt;code&gt;AIO&lt;/code&gt; ，&lt;code&gt;mmap&lt;/code&gt; 等 &lt;code&gt;I/O&lt;/code&gt; 技术&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Cache loader&lt;/code&gt; 和 &lt;code&gt;Cache manager&lt;/code&gt; 操作 proxy cache&lt;/li&gt;
+&lt;li&gt;后端支持多种基于 &lt;code&gt;tcp&lt;/code&gt; 的网络协议&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/nginx/nginx 进程模型-整体架构/" />
         </entry>
 </feed>

@@ -149,6 +149,36 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('000 Topic Index')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">000 Topic Index</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/000 Topic Index/20240415141824 哲学/">20240415141824 哲学 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+    
+        <div x-show="isOpen" style="display:none" class="">
+            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('100 Programmer')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -602,17 +632,6 @@
         
     
                     
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/如何追查线上问题/">如何追查线上问题 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
                 </div>
             
         </div>
@@ -803,36 +822,6 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('700 Personal')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">700 Personal</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/700 Personal/如何做监控/">如何做监控 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('card')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -848,7 +837,29 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/20240415142017 哲学的分支/">20240415142017 哲学的分支 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/20240415142052 原神挺好玩/">20240415142052 原神挺好玩 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/20240415183533 哲学书单/">20240415183533 哲学书单 </a>
                 </div>
             
         </div>
@@ -1010,7 +1021,40 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thoughts/20240415141933 什么是哲学/">20240415141933 什么是哲学 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thoughts/做事心得/">做事心得 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thoughts/如何做监控/">如何做监控 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thoughts/如何追查线上问题/">如何追查线上问题 </a>
                 </div>
             
         </div>
@@ -1230,7 +1274,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T10:39:03.027Z';
+        const searchIndexDate = '2024-04-15T10:43:49.924Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1242,9 +1286,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T10:39:03.027Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T10:43:49.924Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T10:39:03.027Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T10:43:49.924Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1485,7 +1529,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:51:12+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-15T14:14:48+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:51:12+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-15T16:35:36+08:00"></span></div></div></div>
       
       
       </header>
@@ -1500,7 +1544,7 @@
 <li>自己的智商又不是很好，毅力也不是很高，算法学习也只能是慢慢学了，也就是为了不让自己的脑子生锈吧</li>
 <li>坚持骑车锻炼 2024年03月08日16:55:41</li>
 <li>最好维护的代码是没有写出来的代码 2024年03月12日13:44:30</li>
-<li>要因为做了什么而赞美，而不是是什么而赞美 2024 年 04 月 15 日 14:12:01</li>
+<li>要因为做了什么而赞美，而不是是什么而赞美 2024年04月15日14:12:01</li>
 </ol>
 
       

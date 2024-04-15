@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>linux-树莓派无法上网排查</title>
+    <title>20240415141824 哲学</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -164,7 +164,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/000 Topic Index/20240415141824 哲学/">20240415141824 哲学 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/000 Topic Index/20240415141824 哲学/">20240415141824 哲学 </a>
                 </div>
             
         </div>
@@ -446,7 +446,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/linux-树莓派无法上网排查/">linux-树莓派无法上网排查 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/linux-树莓派无法上网排查/">linux-树莓派无法上网排查 </a>
                 </div>
             
         </div>
@@ -1520,7 +1520,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">linux-树莓派无法上网排查</h1>
+          <h1 data-note-icon="2">20240415141824 哲学</h1>
         
         <div class="header-meta">
           
@@ -1528,54 +1528,19 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #树莓派
-                  </a>
-                
-              
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-07-15T10:52:00+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-02-02T16:15:46+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2023-08-08T12:54:06+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-15T18:37:23+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="linux" tabindex="-1">linux-树莓派无法上网排查</h1>
+      <h1 id="20240415141824" tabindex="-1">20240415141824 哲学</h1>
 <ul>
-<li>wget -v <a href="http://baidu.com" target="_blank" class="external-link">baidu.com</a>
-<ul>
-<li>会有输出：</li>
-<li>如何处理呢</li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/20240415183533 哲学书单/">20240415183533 哲学书单</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/20240415142017 哲学的分支/">20240415142017 哲学的分支</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/20240415141933 什么是哲学/">20240415141933 什么是哲学</a></li>
 </ul>
-</li>
-</ul>
-<pre><code class="language-bash">--2021-07-15 10:52:24--  http://baidu.com/
-Resolving baidu.com (baidu.com)... 39.156.69.79, 220.181.38.148
-Connecting to baidu.com (baidu.com)|39.156.69.79|:80... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 81 [text/html]
-Saving to: ‘index.html’
-</code></pre>
-<p>上次我就卡在了 解析 <a href="http://baidu.com" target="_blank" class="external-link">baidu.com</a> 域名这个地方</p>
-<ul>
-<li>
-<p>通过 <a class="internal-link is-unresolved" href="/404" target="">linux-nslookup</a> 命令查看路由解析</p>
-<ul>
-<li>发现解析不通</li>
-<li>查看 <code>/etc/resolv.conf</code> 将 <code>nameserver</code> 改成： <code>114.114.114.114</code></li>
-<li>再次查看路由解析，发现已经 OK 了</li>
-</ul>
-</li>
-<li>
-<p>如何修改 <code>/etc/resolv.conf</code> ，重启机器之后会发现文件又被改回去了，导致无法联网，正确的做法</p>
-<ul>
-<li><code>sudo vi /etc/systemd/resolved.conf</code></li>
-<li>重启网络服务 <code>sudo service networking restart</code></li>
-</ul>
-</li>
-</ul>
-<p><a href="https://blog.csdn.net/qq_42820594/article/details/107325437" target="_blank" class="external-link">树莓派4B】三、笔记本给树莓派Ubuntu 18.04提供网络|为什么Ubuntu18.04更改/etc/resolv.conf修改nameserver重启网络被重置</a></p>
 
       
       
@@ -1844,7 +1809,7 @@ Saving to: ‘index.html’
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#linux">linux-树莓派无法上网排查</a>
+                    <li><a href="#20240415141824">20240415141824 哲学</a>
             		</li>
                 </ol>
             </nav>
