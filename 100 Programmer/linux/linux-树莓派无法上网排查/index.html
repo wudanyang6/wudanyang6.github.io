@@ -1274,7 +1274,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-16T03:23:48.776Z';
+        const searchIndexDate = '2024-04-16T05:15:33.796Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1286,9 +1286,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T03:23:48.776Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T05:15:33.796Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T03:23:48.776Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T05:15:33.796Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1580,7 +1580,7 @@ Saving to: ‘index.html’
       
       
         <hr>
-有志者事竟成
+千里之行，始于足下
       
         <hr>
 <span id="busuanzi_container_site_pv">
