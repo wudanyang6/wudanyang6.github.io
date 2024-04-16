@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-16T05:15:34Z</updated>
+    <updated>2024-04-16T06:24:47Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -480,7 +480,7 @@ done
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-wait/&quot;&gt;linux-wait&lt;/a&gt;:  &lt;em&gt;(created: 2023-12-11)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/101b2%20Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;101b2 Things 工作流&lt;/a&gt;:  &lt;em&gt;(created: 2023-10-9)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#效率&quot;&gt;#效率&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tools&quot;&gt;#tools&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#things3&quot;&gt;#things3&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/mac%20%E8%BF%90%E8%A1%8C%20kafka/&quot;&gt;mac 运行 kafka&lt;/a&gt;:  &lt;em&gt;(created: 2023-9-13)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#kafka&quot;&gt;#kafka&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#学习&quot;&gt;#学习&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/20240415141824%20%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141824 哲学&lt;/a&gt;:  &lt;em&gt;(created: 2023-8-8)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/20240415141824%20%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141824 哲学&lt;/a&gt;:  &lt;em&gt;(created: 2023-8-8)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#index&quot;&gt;#index&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#哲学&quot;&gt;#哲学&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/vscode%20git%20%E5%8F%AA%E6%9A%82%E5%AD%98%E9%83%A8%E5%88%86%E6%94%B9%E5%8A%A8/&quot;&gt;vscode git 只暂存部分改动&lt;/a&gt;:  &lt;em&gt;(created: 2023-6-19)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;:  &lt;em&gt;(created: 2023-5-9)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%92%8C%E4%B8%8B%E4%B8%80%E7%8A%B6%E6%80%81%E7%9A%84%E9%9A%8F%E6%83%B3.excalidraw/&quot;&gt;当前状态和下一状态的随想.excalidraw&lt;/a&gt;:  &lt;em&gt;(created: 2023-4-18)&lt;/em&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#excalidraw&quot;&gt;#excalidraw&lt;/a&gt;&lt;/li&gt;
@@ -629,7 +629,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 20240415142017 哲学的分支
                 
             </title>
-            <updated>2024-04-15T10:37:58.000Z</updated>
+            <updated>2024-04-15T10:47:38.000Z</updated>
             <id>https://wudanyang6.github.io//card/20240415142017 哲学的分支/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240415142017&quot; tabindex=&quot;-1&quot;&gt;20240415142017 哲学的分支&lt;/h1&gt;
@@ -2470,7 +2470,7 @@ for j := 0; j &amp;lt; 4; j++ {
                 20240415141824 哲学
                 
             </title>
-            <updated>2024-04-15T10:37:23.000Z</updated>
+            <updated>2024-04-16T06:24:02.000Z</updated>
             <id>https://wudanyang6.github.io//000 Topic Index/20240415141824 哲学/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240415141824&quot; tabindex=&quot;-1&quot;&gt;20240415141824 哲学&lt;/h1&gt;

@@ -1274,7 +1274,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-16T05:15:33.796Z';
+        const searchIndexDate = '2024-04-16T06:24:46.890Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1286,9 +1286,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T05:15:33.796Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T06:24:46.890Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T05:15:33.796Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T06:24:46.890Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1560,7 +1560,7 @@
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-wait/">linux-wait</a>:  <em>(created: 2023-12-11)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/101b2 Things 工作流/">101b2 Things 工作流</a>:  <em>(created: 2023-10-9)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#things3">#things3</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/mac 运行 kafka/">mac 运行 kafka</a>:  <em>(created: 2023-9-13)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#kafka">#kafka</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#学习">#学习</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/000 Topic Index/20240415141824 哲学/">20240415141824 哲学</a>:  <em>(created: 2023-8-8)</em></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/000 Topic Index/20240415141824 哲学/">20240415141824 哲学</a>:  <em>(created: 2023-8-8)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#index">#index</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#哲学">#哲学</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/vscode git 只暂存部分改动/">vscode git 只暂存部分改动</a>:  <em>(created: 2023-6-19)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a>:  <em>(created: 2023-5-9)</em></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw</a>:  <em>(created: 2023-4-18)</em> <a class="tag" onclick="toggleTagSearch(this)" data-content="#excalidraw">#excalidraw</a></li>
