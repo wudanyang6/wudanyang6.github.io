@@ -1473,7 +1473,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-16T15:19:37.761Z';
+        const searchIndexDate = '2024-04-16T15:35:51.782Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1485,9 +1485,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T15:19:37.761Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T15:35:51.782Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T15:19:37.761Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T15:35:51.782Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1746,9 +1746,15 @@
 </thead>
 <tbody class="table-view-tbody">
 <tr>
+<td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/">202011192023 - 卡片盒笔记法的基本元素</a></td>
+<td>2024-04-07 23:16:10</td>
+<td>2024-04-16 23:34:32</td>
+<td></td>
+</tr>
+<tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/">20240416231513 卡片盒笔记法</a></td>
 <td>2024-04-16 23:15:07</td>
-<td>2024-04-16 23:18:23</td>
+<td>2024-04-16 23:34:27</td>
 <td></td>
 </tr>
 <tr>
@@ -1789,12 +1795,6 @@
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/">202011201315 - 卡片盒笔记法主要关注什么</a></td>
-<td>2024-04-07 23:16:10</td>
-<td>2024-04-16 23:16:56</td>
-<td></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/">202011192023 - 卡片盒笔记法的基本元素</a></td>
 <td>2024-04-07 23:16:10</td>
 <td>2024-04-16 23:16:56</td>
 <td></td>
