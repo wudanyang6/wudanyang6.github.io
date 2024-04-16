@@ -3,350 +3,8 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-16T15:00:01Z</updated>
+    <updated>2024-04-16T15:19:38Z</updated>
     <id>https://wudanyang6.github.io/</id>
-        <entry>
-            <title>
-                生成
-                
-            </title>
-            <updated>2024-03-09T14:05:52.000Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/生成/</id>
-            <content type="html">
-                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#how-to-learn&quot;&gt;#how-to-learn&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;一句话简单描述：自己想出一个答案，如果错了就给出反馈，纠正答案&lt;/p&gt;
-&lt;h1 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;自己想出答案&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;认知天性&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/生成/" />
-        </entry>
-        <entry>
-            <title>
-                20240408201701 卡片盒笔记法
-                
-            </title>
-            <updated>2024-04-08T12:17:09.000Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/20240408201701 卡片盒笔记法/</id>
-            <content type="html">
-                &lt;h1 id=&quot;20240408201701&quot; tabindex=&quot;-1&quot;&gt;20240408201701 卡片盒笔记法&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/384309878/answer/1120682799&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;什么是 zettelkasten 笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.jimmylv.info/2020-06-03-zettelkasten-in-action/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;基于 obsidian 的 zettelkasten 实践&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://flynngao.github.io/2020/07/18/zettelkasten-1&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;拆解Zettelkasten | 卡片盒知识管理体系实践反思&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/136427760&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;聪明人怎么做笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/30216624/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;卡片盒笔记法豆瓣小组&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/20240408201701 卡片盒笔记法/" />
-        </entry>
-        <entry>
-            <title>
-                202011230004 - 如何写出容易理解的卡片
-                
-            </title>
-            <updated>2024-04-16T14:59:50Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
-            <content type="html">
-                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;一句话简单描述这张卡片：几年之后，你可能无法理解这张卡片，&lt;br /&gt;
-那么如何能做到更容易理解呢？&lt;/p&gt;
-&lt;h1 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;一个好的标题，可以是一种注释&lt;/li&gt;
-&lt;li&gt;第一句话应该是关于此卡片的&lt;/li&gt;
-&lt;li&gt;写的话要简单&lt;/li&gt;
-&lt;li&gt;你是在教育你的卡片盒，他会在以后的某个时间点出来跟你对话&lt;/li&gt;
-&lt;li&gt;想象一下，你是在跟以后的自己在对话&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://zettelkasten.de/posts/how-to-write-notes-you-can-understand/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://zettelkasten.de/posts/how-to-write-notes-you-can-understand/&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/" />
-        </entry>
-        <entry>
-            <title>
-                202011222338 - 使用卡片盒笔记法输出的流程
-                
-            </title>
-            <updated>2024-04-16T14:59:50Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
-            <content type="html">
-                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;整体看一下相关的知识&lt;/li&gt;
-&lt;li&gt;为写作列出需要的大纲&lt;/li&gt;
-&lt;li&gt;把永久笔记放到大纲中&lt;/li&gt;
-&lt;li&gt;使用更多的知识（研究）填补空白，重复3-4步，直到满意为止&lt;/li&gt;
-&lt;li&gt;根据提纲复制笔记到文档中&lt;/li&gt;
-&lt;li&gt;重写你的手稿&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://zettelkasten.de/posts/ease-into-writing/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://zettelkasten.de/posts/ease-into-writing/&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/" />
-        </entry>
-        <entry>
-            <title>
-                202011222325 - 信息
-                
-            </title>
-            <updated>2024-04-08T10:34:44.000Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011222325 - 信息/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202011222325&quot; tabindex=&quot;-1&quot;&gt;202011222325 - 信息&lt;/h1&gt;
-&lt;p&gt;信息是死的，一系列数据的陈列&lt;/p&gt;
-&lt;p&gt;信息是 what/when/where/who&lt;/p&gt;
-&lt;p&gt;信息是你应该被告诉什么是事情&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011222325 - 信息/" />
-        </entry>
-        <entry>
-            <title>
-                202011222324 - 知识
-                
-            </title>
-            <updated>2024-04-08T08:44:26.000Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011222324 - 知识/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202011222324&quot; tabindex=&quot;-1&quot;&gt;202011222324 - 知识&lt;/h1&gt;
-&lt;p&gt;知识拿到之后，能让你有借鉴意义，能指导你的下一步工作，是活的&lt;/p&gt;
-&lt;p&gt;知识是 how/why&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011222324 - 知识/" />
-        </entry>
-        <entry>
-            <title>
-                202011222310 - 卡片盒笔记法的模块
-                
-            </title>
-            <updated>2024-02-01T04:53:19.000Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011222310 - 卡片盒笔记法的模块/</id>
-            <content type="html">
-                &lt;h1 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Inbox&lt;/li&gt;
-&lt;li&gt;Archive&lt;/li&gt;
-&lt;li&gt;Reference Database&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020201122231637.png&quot; alt=&quot;Pasted image 20201122231637.png| 总体流程&quot; /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Information is the Basic Unit of Your Throughput&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;如果没有输入，那么知识库就不会成长&lt;/p&gt;
-&lt;p&gt;如果没有输出，那么知识库的增长就毫无意义&lt;/p&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://zettelkasten.de/posts/zettelkasten-building-blocks/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;卡片盒的构建模块&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011222310 - 卡片盒笔记法的模块/" />
-        </entry>
-        <entry>
-            <title>
-                202011222209 - 卡片盒笔记法的步骤
-                
-            </title>
-            <updated>2024-02-01T05:08:08.000Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011222209 - 卡片盒笔记法的步骤/</id>
-            <content type="html">
-                &lt;h1 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h1&gt;
-&lt;p&gt;![](/img/user/attachs/Pasted image 20201122220943.png)&lt;/p&gt;
-&lt;p&gt;卡片盒笔记法的步骤？&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.jimmylv.info/2020-06-03-zettelkasten-in-action/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://blog.jimmylv.info/2020-06-03-zettelkasten-in-action/&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011222209 - 卡片盒笔记法的步骤/" />
-        </entry>
-        <entry>
-            <title>
-                202011220028 - 从输出的角度看卡片盒笔记法的优势
-                
-            </title>
-            <updated>2024-04-16T14:59:50Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
-            <content type="html">
-                &lt;h1 id=&quot;两点优势&quot; tabindex=&quot;-1&quot;&gt;两点优势&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;从输出层面看，如果你在写作的时候才去找资料，那么很容易脱离主线，而如果你之前都整理好了资料，那么在写作的时候，只要顺着自己的卡片写下去就行了&lt;/li&gt;
-&lt;li&gt;在输出的时候能够补全自己的盲点&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/search?type=content&amp;amp;q=Zettelkasten&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.zhihu.com/search?type=content&amp;amp;q=Zettelkasten&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/" />
-        </entry>
-        <entry>
-            <title>
-                202011210003 - 卡片盒笔记法的基本流程
-                
-            </title>
-            <updated>2024-02-01T05:03:53.000Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011210003 - 卡片盒笔记法的基本流程/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202011210003&quot; tabindex=&quot;-1&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;记录：将自己的想法记录到临时卡片&lt;/li&gt;
-&lt;li&gt;提炼：阅读书籍、资料的时候将内容记录到临时卡片&lt;/li&gt;
-&lt;li&gt;参考：将参考目录加上一个简介&lt;/li&gt;
-&lt;li&gt;整理：将记录的临时卡片和文献卡片通过链接联系起来
-&lt;ol&gt;
-&lt;li&gt;建立链接，看一下你的永久笔记，有哪些能连接起来&lt;/li&gt;
-&lt;li&gt;提炼&lt;mark&gt;索引&lt;/mark&gt;&lt;/li&gt;
-&lt;li&gt;建立&lt;mark&gt;入口&lt;/mark&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;回顾：定期进行回顾，通过双向链接回顾全篇文章&lt;/li&gt;
-&lt;li&gt;&lt;mark&gt;产出&lt;/mark&gt;：将卡片内容产出成文章
-&lt;ol&gt;
-&lt;li&gt;选定一个主题，沿着链接将内容(链接)复制出来&lt;br /&gt;
-2. 需要一个 workbench （使用 obsidian 插件）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011210003 - 卡片盒笔记法的基本流程/" />
-        </entry>
-        <entry>
-            <title>
-                202011201315 - 卡片盒笔记法主要关注什么
-                
-            </title>
-            <updated>2024-04-16T14:59:50Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
-            <content type="html">
-                &lt;h1 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;链接 linking&lt;/li&gt;
-&lt;li&gt;回顾 recalling&lt;/li&gt;
-&lt;li&gt;索引 indexing&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=e3YKQ7JTqwU&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Zettelkasten In Notion &amp;amp; How I Use Its Principles&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/" />
-        </entry>
-        <entry>
-            <title>
-                202011201301 - 基础概念
-                
-            </title>
-            <updated>2024-04-16T14:35:51.000Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011201301 - 基础概念/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202011201301&quot; tabindex=&quot;-1&quot;&gt;202011201301 - 基础概念&lt;/h1&gt;
-&lt;h2 id=&quot;四种卡片&quot; tabindex=&quot;-1&quot;&gt;四种卡片&lt;/h2&gt;
-&lt;ol id=&quot;0fnr3ul&quot;&gt;
-&lt;li&gt;&lt;mark&gt;临时卡片&lt;/mark&gt;，把自己的&lt;mark&gt;想法&lt;/mark&gt;记录下来&lt;/li&gt;
-&lt;li&gt;&lt;mark&gt;文献卡片&lt;/mark&gt;，看书或者其他信息，觉得自己能用到就记录下来，注意，用自己的话来描述，不能复制粘贴或者剪藏&lt;/li&gt;
-&lt;li&gt;&lt;mark&gt;永久卡片&lt;/mark&gt;，将临时笔记和文献笔记组织成文，找出笔记之间的联系，将笔记放到卡片盒中&lt;/li&gt;
-&lt;li&gt;&lt;mark&gt;项目卡片&lt;/mark&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;两种卡片盒&quot; tabindex=&quot;-1&quot;&gt;两种卡片盒&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;知识卡片盒&lt;/li&gt;
-&lt;li&gt;文献笔记盒&lt;/li&gt;
-&lt;/ol&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011201301 - 基础概念/" />
-        </entry>
-        <entry>
-            <title>
-                202011201016 - 什么是知识和信息
-                
-            </title>
-            <updated>2024-04-08T10:35:20.000Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011201016 - 什么是知识和信息/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202011201016&quot; tabindex=&quot;-1&quot;&gt;202011201016 - 什么是知识和信息&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://m.xzbu.com/4/view-4572943.htm#:~:text=%E7%9F%A5%E8%AF%86%E6%98%AF%E9%80%9A%E8%BF%87%E7%94%A8%E6%88%B7%E7%9A%84,%E4%BA%8B%E5%AE%9E%E5%92%8C%E6%95%B0%E6%8D%AE%E7%9A%84%E9%99%88%E8%BF%B0%E3%80%82&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://m.xzbu.com/4/view-4572943.htm#:~:text=知识是通过用户的,事实和数据的陈述。&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011201016 - 什么是知识和信息/" />
-        </entry>
-        <entry>
-            <title>
-                202011192023 - 卡片盒笔记法的基本元素
-                
-            </title>
-            <updated>2024-04-16T14:59:50Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/</id>
-            <content type="html">
-                &lt;h1 id=&quot;卡片的基本元素&quot; tabindex=&quot;-1&quot;&gt;卡片的基本元素&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;唯一 id&lt;/li&gt;
-&lt;li&gt;tags 标签&lt;/li&gt;
-&lt;li&gt;内容
-&lt;ol&gt;
-&lt;li&gt;links 连接到其他的笔记&lt;/li&gt;
-&lt;li&gt;content，使用自己的话写下这个想法&lt;/li&gt;
-&lt;li&gt;citation，引用，这个想法是从哪里得到的&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;参考（对书籍等信息的参考）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;![](/img/user/attachs/Pasted image 20201119205351.png)&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The most important aspect of the body of the Zettel is that you write it in your own words.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/" />
-        </entry>
-        <entry>
-            <title>
-                202011192022 - 什么是卡片盒笔记法
-                
-            </title>
-            <updated>2024-02-01T04:53:27.000Z</updated>
-            <id>https://wudanyang6.github.io//阅读/卡片盒笔记法/202011192022 - 什么是卡片盒笔记法/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202011192022&quot; tabindex=&quot;-1&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/h1&gt;
-&lt;p&gt;卡片盒笔记法是德国的一个社会学家发明的&lt;/p&gt;
-&lt;p&gt;是一种处理笔记的流程&lt;/p&gt;
-&lt;p&gt;将自己的想法感悟收集起来，&lt;br /&gt;
-然后使用卡片盒笔记法进行整理，&lt;br /&gt;
-建立笔记之间的联系&lt;/p&gt;
-&lt;p&gt;以便于以后检索和使用&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//阅读/卡片盒笔记法/202011192022 - 什么是卡片盒笔记法/" />
-        </entry>
         <entry>
             <title>
                 当前状态和下一状态的随想.excalidraw
@@ -679,6 +337,348 @@
         </entry>
         <entry>
             <title>
+                生成
+                
+            </title>
+            <updated>2024-04-16T15:18:10.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/生成/</id>
+            <content type="html">
+                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#how-to-learn&quot;&gt;#how-to-learn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一句话简单描述：自己想出一个答案，如果错了就给出反馈，纠正答案&lt;/p&gt;
+&lt;h1 id=&quot;生成&quot; tabindex=&quot;-1&quot;&gt;生成&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;自己想出答案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;认知天性&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/生成/" />
+        </entry>
+        <entry>
+            <title>
+                20240408201701 卡片盒笔记法
+                
+            </title>
+            <updated>2024-04-08T12:17:09.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/20240408201701 卡片盒笔记法/</id>
+            <content type="html">
+                &lt;h1 id=&quot;20240408201701&quot; tabindex=&quot;-1&quot;&gt;20240408201701 卡片盒笔记法&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/384309878/answer/1120682799&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;什么是 zettelkasten 笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.jimmylv.info/2020-06-03-zettelkasten-in-action/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;基于 obsidian 的 zettelkasten 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://flynngao.github.io/2020/07/18/zettelkasten-1&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;拆解Zettelkasten | 卡片盒知识管理体系实践反思&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/136427760&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;聪明人怎么做笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/30216624/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;卡片盒笔记法豆瓣小组&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/20240408201701 卡片盒笔记法/" />
+        </entry>
+        <entry>
+            <title>
+                202011230004 - 如何写出容易理解的卡片
+                
+            </title>
+            <updated>2024-04-16T15:19:27Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
+            <content type="html">
+                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一句话简单描述这张卡片：几年之后，你可能无法理解这张卡片，&lt;br /&gt;
+那么如何能做到更容易理解呢？&lt;/p&gt;
+&lt;h1 id=&quot;202011230004&quot; tabindex=&quot;-1&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;一个好的标题，可以是一种注释&lt;/li&gt;
+&lt;li&gt;第一句话应该是关于此卡片的&lt;/li&gt;
+&lt;li&gt;写的话要简单&lt;/li&gt;
+&lt;li&gt;你是在教育你的卡片盒，他会在以后的某个时间点出来跟你对话&lt;/li&gt;
+&lt;li&gt;想象一下，你是在跟以后的自己在对话&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://zettelkasten.de/posts/how-to-write-notes-you-can-understand/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://zettelkasten.de/posts/how-to-write-notes-you-can-understand/&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/" />
+        </entry>
+        <entry>
+            <title>
+                202011222338 - 使用卡片盒笔记法输出的流程
+                
+            </title>
+            <updated>2024-04-16T15:19:27Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
+            <content type="html">
+                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;202011222338&quot; tabindex=&quot;-1&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;整体看一下相关的知识&lt;/li&gt;
+&lt;li&gt;为写作列出需要的大纲&lt;/li&gt;
+&lt;li&gt;把永久笔记放到大纲中&lt;/li&gt;
+&lt;li&gt;使用更多的知识（研究）填补空白，重复3-4步，直到满意为止&lt;/li&gt;
+&lt;li&gt;根据提纲复制笔记到文档中&lt;/li&gt;
+&lt;li&gt;重写你的手稿&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://zettelkasten.de/posts/ease-into-writing/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://zettelkasten.de/posts/ease-into-writing/&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/" />
+        </entry>
+        <entry>
+            <title>
+                202011222325 - 信息
+                
+            </title>
+            <updated>2024-04-08T10:34:44.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222325 - 信息/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202011222325&quot; tabindex=&quot;-1&quot;&gt;202011222325 - 信息&lt;/h1&gt;
+&lt;p&gt;信息是死的，一系列数据的陈列&lt;/p&gt;
+&lt;p&gt;信息是 what/when/where/who&lt;/p&gt;
+&lt;p&gt;信息是你应该被告诉什么是事情&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011222325 - 信息/" />
+        </entry>
+        <entry>
+            <title>
+                202011222324 - 知识
+                
+            </title>
+            <updated>2024-04-08T08:44:26.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222324 - 知识/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202011222324&quot; tabindex=&quot;-1&quot;&gt;202011222324 - 知识&lt;/h1&gt;
+&lt;p&gt;知识拿到之后，能让你有借鉴意义，能指导你的下一步工作，是活的&lt;/p&gt;
+&lt;p&gt;知识是 how/why&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011222324 - 知识/" />
+        </entry>
+        <entry>
+            <title>
+                202011222310 - 卡片盒笔记法的模块
+                
+            </title>
+            <updated>2024-02-01T04:53:19.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222310 - 卡片盒笔记法的模块/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202011222310&quot; tabindex=&quot;-1&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Inbox&lt;/li&gt;
+&lt;li&gt;Archive&lt;/li&gt;
+&lt;li&gt;Reference Database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020201122231637.png&quot; alt=&quot;Pasted image 20201122231637.png| 总体流程&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Information is the Basic Unit of Your Throughput&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果没有输入，那么知识库就不会成长&lt;/p&gt;
+&lt;p&gt;如果没有输出，那么知识库的增长就毫无意义&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://zettelkasten.de/posts/zettelkasten-building-blocks/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;卡片盒的构建模块&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011222310 - 卡片盒笔记法的模块/" />
+        </entry>
+        <entry>
+            <title>
+                202011222209 - 卡片盒笔记法的步骤
+                
+            </title>
+            <updated>2024-02-01T05:08:08.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222209 - 卡片盒笔记法的步骤/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202011222209&quot; tabindex=&quot;-1&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/h1&gt;
+&lt;p&gt;![](/img/user/attachs/Pasted image 20201122220943.png)&lt;/p&gt;
+&lt;p&gt;卡片盒笔记法的步骤？&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.jimmylv.info/2020-06-03-zettelkasten-in-action/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://blog.jimmylv.info/2020-06-03-zettelkasten-in-action/&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011222209 - 卡片盒笔记法的步骤/" />
+        </entry>
+        <entry>
+            <title>
+                202011220028 - 从输出的角度看卡片盒笔记法的优势
+                
+            </title>
+            <updated>2024-04-16T15:19:27Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;从输出层面看，如果你在写作的时候才去找资料，那么很容易脱离主线，而如果你之前都整理好了资料，那么在写作的时候，只要顺着自己的卡片写下去就行了&lt;/li&gt;
+&lt;li&gt;在输出的时候能够补全自己的盲点&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/search?type=content&amp;amp;q=Zettelkasten&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.zhihu.com/search?type=content&amp;amp;q=Zettelkasten&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/" />
+        </entry>
+        <entry>
+            <title>
+                202011210003 - 卡片盒笔记法的基本流程
+                
+            </title>
+            <updated>2024-02-01T05:03:53.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011210003 - 卡片盒笔记法的基本流程/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202011210003&quot; tabindex=&quot;-1&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;记录：将自己的想法记录到临时卡片&lt;/li&gt;
+&lt;li&gt;提炼：阅读书籍、资料的时候将内容记录到临时卡片&lt;/li&gt;
+&lt;li&gt;参考：将参考目录加上一个简介&lt;/li&gt;
+&lt;li&gt;整理：将记录的临时卡片和文献卡片通过链接联系起来
+&lt;ol&gt;
+&lt;li&gt;建立链接，看一下你的永久笔记，有哪些能连接起来&lt;/li&gt;
+&lt;li&gt;提炼&lt;mark&gt;索引&lt;/mark&gt;&lt;/li&gt;
+&lt;li&gt;建立&lt;mark&gt;入口&lt;/mark&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;回顾：定期进行回顾，通过双向链接回顾全篇文章&lt;/li&gt;
+&lt;li&gt;&lt;mark&gt;产出&lt;/mark&gt;：将卡片内容产出成文章
+&lt;ol&gt;
+&lt;li&gt;选定一个主题，沿着链接将内容(链接)复制出来&lt;br /&gt;
+2. 需要一个 workbench （使用 obsidian 插件）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011210003 - 卡片盒笔记法的基本流程/" />
+        </entry>
+        <entry>
+            <title>
+                202011201315 - 卡片盒笔记法主要关注什么
+                
+            </title>
+            <updated>2024-04-16T15:19:27Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;链接 linking&lt;/li&gt;
+&lt;li&gt;回顾 recalling&lt;/li&gt;
+&lt;li&gt;索引 indexing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=e3YKQ7JTqwU&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Zettelkasten In Notion &amp;amp; How I Use Its Principles&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/" />
+        </entry>
+        <entry>
+            <title>
+                202011201301 - 基础概念
+                
+            </title>
+            <updated>2024-04-16T14:35:51.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201301 - 基础概念/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202011201301&quot; tabindex=&quot;-1&quot;&gt;202011201301 - 基础概念&lt;/h1&gt;
+&lt;h2 id=&quot;四种卡片&quot; tabindex=&quot;-1&quot;&gt;四种卡片&lt;/h2&gt;
+&lt;ol id=&quot;0fnr3ul&quot;&gt;
+&lt;li&gt;&lt;mark&gt;临时卡片&lt;/mark&gt;，把自己的&lt;mark&gt;想法&lt;/mark&gt;记录下来&lt;/li&gt;
+&lt;li&gt;&lt;mark&gt;文献卡片&lt;/mark&gt;，看书或者其他信息，觉得自己能用到就记录下来，注意，用自己的话来描述，不能复制粘贴或者剪藏&lt;/li&gt;
+&lt;li&gt;&lt;mark&gt;永久卡片&lt;/mark&gt;，将临时笔记和文献笔记组织成文，找出笔记之间的联系，将笔记放到卡片盒中&lt;/li&gt;
+&lt;li&gt;&lt;mark&gt;项目卡片&lt;/mark&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;两种卡片盒&quot; tabindex=&quot;-1&quot;&gt;两种卡片盒&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;知识卡片盒&lt;/li&gt;
+&lt;li&gt;文献笔记盒&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011201301 - 基础概念/" />
+        </entry>
+        <entry>
+            <title>
+                202011201016 - 什么是知识和信息
+                
+            </title>
+            <updated>2024-04-08T10:35:20.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201016 - 什么是知识和信息/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202011201016&quot; tabindex=&quot;-1&quot;&gt;202011201016 - 什么是知识和信息&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://m.xzbu.com/4/view-4572943.htm#:~:text=%E7%9F%A5%E8%AF%86%E6%98%AF%E9%80%9A%E8%BF%87%E7%94%A8%E6%88%B7%E7%9A%84,%E4%BA%8B%E5%AE%9E%E5%92%8C%E6%95%B0%E6%8D%AE%E7%9A%84%E9%99%88%E8%BF%B0%E3%80%82&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://m.xzbu.com/4/view-4572943.htm#:~:text=知识是通过用户的,事实和数据的陈述。&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011201016 - 什么是知识和信息/" />
+        </entry>
+        <entry>
+            <title>
+                202011192023 - 卡片盒笔记法的基本元素
+                
+            </title>
+            <updated>2024-04-16T15:19:27Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202011192023&quot; tabindex=&quot;-1&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;唯一 id&lt;/li&gt;
+&lt;li&gt;tags 标签&lt;/li&gt;
+&lt;li&gt;内容
+&lt;ol&gt;
+&lt;li&gt;links 连接到其他的笔记&lt;/li&gt;
+&lt;li&gt;content，使用自己的话写下这个想法&lt;/li&gt;
+&lt;li&gt;citation，引用，这个想法是从哪里得到的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;参考（对书籍等信息的参考）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;![](/img/user/attachs/Pasted image 20201119205351.png)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The most important aspect of the body of the Zettel is that you write it in your own words.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/" />
+        </entry>
+        <entry>
+            <title>
+                202011192022 - 什么是卡片盒笔记法
+                
+            </title>
+            <updated>2024-04-16T15:15:08.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011192022 - 什么是卡片盒笔记法/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202011192022&quot; tabindex=&quot;-1&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/h1&gt;
+&lt;p&gt;卡片盒笔记法是德国的一个社会学家发明的&lt;/p&gt;
+&lt;p&gt;是一种处理笔记的流程&lt;/p&gt;
+&lt;p&gt;将自己的想法感悟收集起来，&lt;br /&gt;
+然后使用卡片盒笔记法进行整理，&lt;br /&gt;
+建立笔记之间的联系&lt;/p&gt;
+&lt;p&gt;以便于以后检索和使用&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011192022 - 什么是卡片盒笔记法/" />
+        </entry>
+        <entry>
+            <title>
                 vscode git 只暂存部分改动
                 
             </title>
@@ -809,92 +809,98 @@ done
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/%E7%AC%94%E8%AE%B0%E6%96%B9%E6%B3%95/20240416231513%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240416231513 卡片盒笔记法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-16 23:15:07&lt;/td&gt;
+&lt;td&gt;2024-04-16 23:18:23&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
-&lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
+&lt;td&gt;2024-04-16 23:18:10&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#how-to-learn&quot;&gt;#how-to-learn&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-08 23:13:20&lt;/td&gt;
-&lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
-&lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
+&lt;td&gt;2024-04-16 23:16:56&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
-&lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
+&lt;td&gt;2024-04-16 23:16:56&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-08 23:13:20&lt;/td&gt;
-&lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-08 23:13:20&lt;/td&gt;
-&lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
+&lt;td&gt;2024-04-16 23:16:56&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
+&lt;td&gt;2024-04-16 23:16:56&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-08 23:13:20&lt;/td&gt;
+&lt;td&gt;2024-04-16 23:16:56&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
+&lt;td&gt;2024-04-16 23:16:56&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
+&lt;td&gt;2024-04-16 23:16:56&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
+&lt;td&gt;2024-04-16 23:15:08&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-08 23:13:20&lt;/td&gt;
 &lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
-&lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-08 23:13:20&lt;/td&gt;
 &lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-08 23:13:20&lt;/td&gt;
+&lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
 &lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
 &lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
-&lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-08 23:13:20&lt;/td&gt;
-&lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
-&lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/%E9%98%85%E8%AF%BB/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-07 23:16:10&lt;/td&gt;
 &lt;td&gt;2024-04-16 22:58:51&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -3191,6 +3197,36 @@ for j := 0; j &amp;lt; 4; j++ {
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/300 Leetcode/leetcode 编码技巧/" />
+        </entry>
+        <entry>
+            <title>
+                20240416231513 卡片盒笔记法
+                
+            </title>
+            <updated>2024-04-16T15:17:36.000Z</updated>
+            <id>https://wudanyang6.github.io//000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/</id>
+            <content type="html">
+                &lt;h1 id=&quot;20240416231513&quot; tabindex=&quot;-1&quot;&gt;20240416231513 卡片盒笔记法&lt;/h1&gt;
+&lt;ul class=&quot;block-language-dataview&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/" />
         </entry>
         <entry>
             <title>
