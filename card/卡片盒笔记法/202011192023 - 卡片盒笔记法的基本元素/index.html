@@ -1473,7 +1473,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-16T15:35:51.782Z';
+        const searchIndexDate = '2024-04-17T02:59:29.799Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1485,9 +1485,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T15:35:51.782Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T02:59:29.799Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T15:35:51.782Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T02:59:29.799Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1728,7 +1728,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-07T23:16:10+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-16T23:34:31+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-07T23:16:10+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-17T10:40:40+08:00"></span></div></div></div>
       
       
       </header>
@@ -1736,7 +1736,7 @@
       
       <h1 id="202011192023" tabindex="-1">202011192023 - 卡片盒笔记法的基本元素</h1>
 <ol>
-<li>唯一 id</li>
+<li>唯一 id ， id后面的标题： <a class="internal-link is-unresolved" href="/404" target="">20240417103919 卡片盒笔记法的标题是对内容的一句话描述</a></li>
 <li>tags 标签</li>
 <li>内容
 <ol>
