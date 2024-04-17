@@ -1517,7 +1517,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-17T05:12:23.662Z';
+        const searchIndexDate = '2024-04-17T05:14:24.542Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1529,9 +1529,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T05:12:23.662Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T05:14:24.542Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T05:12:23.662Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T05:14:24.542Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1772,7 +1772,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2020-11-21T00:03:27+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-02-01T13:03:53+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2020-11-21T00:03:27+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-17T13:13:13+08:00"></span></div></div></div>
       
       
       </header>
@@ -1794,8 +1794,7 @@
 <li>回顾：定期进行回顾，通过双向链接回顾全篇文章</li>
 <li><mark>产出</mark>：将卡片内容产出成文章
 <ol>
-<li>选定一个主题，沿着链接将内容(链接)复制出来<br>
-2. 需要一个 workbench （使用 obsidian 插件）</li>
+<li>选定一个主题，沿着链接将内容(链接)提炼出来</li>
 </ol>
 </li>
 </ol>

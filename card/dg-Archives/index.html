@@ -1517,7 +1517,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-17T05:12:23.662Z';
+        const searchIndexDate = '2024-04-17T05:14:24.542Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1529,9 +1529,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T05:12:23.662Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T05:14:24.542Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T05:12:23.662Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T05:14:24.542Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1792,8 +1792,14 @@
 <tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222209 - 卡片盒笔记法的步骤/">202011222209 - 卡片盒笔记法的步骤</a></td>
 <td>2024-04-17 10:36:35</td>
-<td>2024-04-17 13:11:40</td>
+<td>2024-04-17 13:13:49</td>
 <td></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011210003 - 卡片盒笔记法的基本流程/">202011210003 - 卡片盒笔记法的基本流程</a></td>
+<td>2024-04-17 10:36:35</td>
+<td>2024-04-17 13:13:15</td>
+<td><a class="tag" onclick="toggleTagSearch(this)" data-content="#process">#process</a></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/000 Topic Index/20240415142227 游戏/">20240415142227 游戏</a></td>
@@ -1878,12 +1884,6 @@
 <td>2024-04-17 10:36:35</td>
 <td>2024-04-17 10:36:40</td>
 <td></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011210003 - 卡片盒笔记法的基本流程/">202011210003 - 卡片盒笔记法的基本流程</a></td>
-<td>2024-04-17 10:36:35</td>
-<td>2024-04-17 10:36:40</td>
-<td><a class="tag" onclick="toggleTagSearch(this)" data-content="#process">#process</a></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/">202011201315 - 卡片盒笔记法主要关注什么</a></td>
