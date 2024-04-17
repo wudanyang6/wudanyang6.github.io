@@ -202,6 +202,17 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/000 Topic Index/20240415142227 游戏/">20240415142227 游戏 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -1109,6 +1120,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/20240417125706 部落冲突/">20240417125706 部落冲突 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/About Me/">About Me </a>
                 </div>
             
@@ -1493,7 +1515,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-17T04:39:12.164Z';
+        const searchIndexDate = '2024-04-17T05:00:40.414Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1505,9 +1527,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T04:39:12.164Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T05:00:40.414Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T04:39:12.164Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T05:00:40.414Z', docs}));
             window.docs = docs
             window.index = index;
         }

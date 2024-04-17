@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-17T04:39:12Z</updated>
+    <updated>2024-04-17T05:00:40Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -388,7 +388,7 @@
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-17T04:39:01Z</updated>
+            <updated>2024-04-17T05:00:30Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -413,7 +413,7 @@
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-17T04:39:01Z</updated>
+            <updated>2024-04-17T05:00:30Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -512,7 +512,7 @@
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-17T04:39:01Z</updated>
+            <updated>2024-04-17T05:00:30Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -565,7 +565,7 @@
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-17T04:39:01Z</updated>
+            <updated>2024-04-17T05:00:30Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -809,9 +809,21 @@ done
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/20240415142227%20%E6%B8%B8%E6%88%8F/&quot;&gt;20240415142227 游戏&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-15 14:22:23&lt;/td&gt;
+&lt;td&gt;2024-04-17 13:00:00&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#index&quot;&gt;#index&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417125706%20%E9%83%A8%E8%90%BD%E5%86%B2%E7%AA%81/&quot;&gt;20240417125706 部落冲突&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-17 12:57:06&lt;/td&gt;
+&lt;td&gt;2024-04-17 12:59:08&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/300%20Leetcode/20240409104458%20leetcode-%E4%BC%9A%E5%91%98%E8%B4%AD%E4%B9%B0%E4%BC%98%E6%83%A0-%E5%AE%AB%E6%B0%B4%E4%B8%89%E5%8F%B6/&quot;&gt;20240409104458 leetcode-会员购买优惠-宫水三叶&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-09 10:45:01&lt;/td&gt;
-&lt;td&gt;2024-04-17 12:38:32&lt;/td&gt;
+&lt;td&gt;2024-04-17 12:38:47&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1328,6 +1340,21 @@ $zip-&amp;gt;close(); //关闭压缩包
 
             </content>
             <link href="https://wudanyang6.github.io//card/About Me/" />
+        </entry>
+        <entry>
+            <title>
+                20240417125706 部落冲突
+                
+            </title>
+            <updated>2024-04-17T04:59:08.000Z</updated>
+            <id>https://wudanyang6.github.io//card/20240417125706 部落冲突/</id>
+            <content type="html">
+                &lt;h1 id=&quot;20240417125706&quot; tabindex=&quot;-1&quot;&gt;20240417125706 部落冲突&lt;/h1&gt;
+&lt;p&gt;部落冲突玩到13本了，原来部落联盟的人都没了，然后也没有什么动力能继续玩下去，就这样偶尔上线一次了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/IMG_2971.png&quot; alt=&quot;IMG_2971.png&quot; /&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/20240417125706 部落冲突/" />
         </entry>
         <entry>
             <title>
@@ -3229,7 +3256,7 @@ for j := 0; j &amp;lt; 4; j++ {
                 20240409104458 leetcode-会员购买优惠-宫水三叶
                 
             </title>
-            <updated>2024-04-17T04:38:16.000Z</updated>
+            <updated>2024-04-17T04:38:45.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/300 Leetcode/20240409104458 leetcode-会员购买优惠-宫水三叶/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240409104458-leetcode&quot; tabindex=&quot;-1&quot;&gt;20240409104458 leetcode-会员购买优惠-宫水三叶&lt;/h1&gt;
@@ -3277,6 +3304,23 @@ for j := 0; j &amp;lt; 4; j++ {
 
             </content>
             <link href="https://wudanyang6.github.io//000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/" />
+        </entry>
+        <entry>
+            <title>
+                20240415142227 游戏
+                
+            </title>
+            <updated>2024-04-17T04:59:55.000Z</updated>
+            <id>https://wudanyang6.github.io//000 Topic Index/20240415142227 游戏/</id>
+            <content type="html">
+                &lt;h1 id=&quot;20240415142227&quot; tabindex=&quot;-1&quot;&gt;20240415142227 游戏&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142052%20%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;20240415142052 原神挺好玩&lt;/a&gt; 不怎么玩了&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417125706%20%E9%83%A8%E8%90%BD%E5%86%B2%E7%AA%81/&quot;&gt;20240417125706 部落冲突&lt;/a&gt; 偶尔上线一次打一把&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//000 Topic Index/20240415142227 游戏/" />
         </entry>
         <entry>
             <title>
