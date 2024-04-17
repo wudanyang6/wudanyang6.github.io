@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-17T05:14:25Z</updated>
+    <updated>2024-04-17T09:20:46Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -388,7 +388,7 @@
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-17T05:14:14Z</updated>
+            <updated>2024-04-17T09:20:35Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -413,7 +413,7 @@
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-17T05:14:14Z</updated>
+            <updated>2024-04-17T09:20:35Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -494,7 +494,7 @@
                 202011222209 - 卡片盒笔记法的步骤
                 
             </title>
-            <updated>2024-04-17T05:12:41.000Z</updated>
+            <updated>2024-04-17T05:14:30.000Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222209 - 卡片盒笔记法的步骤/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011222209&quot; tabindex=&quot;-1&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/h1&gt;
@@ -512,7 +512,7 @@
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-17T05:14:14Z</updated>
+            <updated>2024-04-17T09:20:35Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -564,7 +564,7 @@
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-17T05:14:14Z</updated>
+            <updated>2024-04-17T09:20:35Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -808,9 +808,15 @@ done
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404171707/&quot;&gt;202404171707&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-17 17:07:58&lt;/td&gt;
+&lt;td&gt;2024-04-17 17:20:08&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-17 10:36:35&lt;/td&gt;
-&lt;td&gt;2024-04-17 13:13:49&lt;/td&gt;
+&lt;td&gt;2024-04-17 13:14:32&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1339,6 +1345,20 @@ $zip-&amp;gt;close(); //关闭压缩包
 
             </content>
             <link href="https://wudanyang6.github.io//card/About Me/" />
+        </entry>
+        <entry>
+            <title>
+                202404171707
+                
+            </title>
+            <updated>2024-04-17T09:08:00.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202404171707/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202404171707&quot; tabindex=&quot;-1&quot;&gt;202404171707&lt;/h1&gt;
+&lt;p&gt;当你学不下去的时候，闭上眼，想象高考刚刚出分，没考上，你崩溃大哭，问能不能再给我一次机会。睁开眼，这就是你新的机会。&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/202404171707/" />
         </entry>
         <entry>
             <title>
