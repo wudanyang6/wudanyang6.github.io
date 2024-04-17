@@ -323,6 +323,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/300 Leetcode/20240409104458 leetcode-会员购买优惠-宫水三叶/">20240409104458 leetcode-会员购买优惠-宫水三叶 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/300 Leetcode/leetcode 编码技巧/">leetcode 编码技巧 </a>
                 </div>
             
@@ -1484,7 +1495,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-17T03:13:56.948Z';
+        const searchIndexDate = '2024-04-17T04:39:12.164Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1496,9 +1507,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T03:13:56.948Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T04:39:12.164Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T03:13:56.948Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T04:39:12.164Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1756,6 +1767,12 @@
 </tr>
 </thead>
 <tbody class="table-view-tbody">
+<tr>
+<td><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/300 Leetcode/20240409104458 leetcode-会员购买优惠-宫水三叶/">20240409104458 leetcode-会员购买优惠-宫水三叶</a></td>
+<td>2024-04-09 10:45:01</td>
+<td>2024-04-17 12:38:32</td>
+<td></td>
+</tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/20240417103919 卡片盒笔记法的标题是对内容的一句话描述/">20240417103919 卡片盒笔记法的标题是对内容的一句话描述</a></td>
 <td>2024-04-17 10:39:19</td>
@@ -2099,14 +2116,14 @@
 <td><a class="tag" onclick="toggleTagSearch(this)" data-content="#chrome">#chrome</a></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/mac/mac-自定义快捷键/">mac-自定义快捷键</a></td>
-<td>2022-11-16 14:19:58</td>
+<td><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/mac/mac-合上盖子不断网/">mac-合上盖子不断网</a></td>
+<td>2023-02-03 15:47:28</td>
 <td>2024-04-06 23:34:49</td>
 <td><a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/mac/mac-合上盖子不断网/">mac-合上盖子不断网</a></td>
-<td>2023-02-03 15:47:28</td>
+<td><a class="internal-link" target="" data-note-icon="2" href="/101 Tools/mac/mac-自定义快捷键/">mac-自定义快捷键</a></td>
+<td>2022-11-16 14:19:58</td>
 <td>2024-04-06 23:34:49</td>
 <td><a class="tag" onclick="toggleTagSearch(this)" data-content="#mac">#mac</a></td>
 </tr>

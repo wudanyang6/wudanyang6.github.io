@@ -323,6 +323,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/300 Leetcode/20240409104458 leetcode-会员购买优惠-宫水三叶/">20240409104458 leetcode-会员购买优惠-宫水三叶 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/300 Leetcode/leetcode 编码技巧/">leetcode 编码技巧 </a>
                 </div>
             
@@ -1484,7 +1495,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-17T03:13:56.948Z';
+        const searchIndexDate = '2024-04-17T04:39:12.164Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1496,9 +1507,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T03:13:56.948Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T04:39:12.164Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T03:13:56.948Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T04:39:12.164Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1739,7 +1750,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-17T10:39:19+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-17T10:40:13+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-17T10:39:19+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-17T11:13:28+08:00"></span></div></div></div>
       
       
       </header>
