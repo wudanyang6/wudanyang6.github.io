@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>phpstorm 两下 ctrl 可以快速运行程序</title>
+    <title>php-xml 如何解析 cdata</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -828,7 +828,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/phpstorm 两下 ctrl 可以快速运行程序/">phpstorm 两下 ctrl 可以快速运行程序 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/phpstorm 两下 ctrl 可以快速运行程序/">phpstorm 两下 ctrl 可以快速运行程序 </a>
                 </div>
             
         </div>
@@ -1220,7 +1220,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/php-xml 如何解析 cdata/">php-xml 如何解析 cdata </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/php-xml 如何解析 cdata/">php-xml 如何解析 cdata </a>
                 </div>
             
         </div>
@@ -1785,7 +1785,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">phpstorm 两下 ctrl 可以快速运行程序</h1>
+          <h1 data-note-icon="2">php-xml 如何解析 cdata</h1>
         
         <div class="header-meta">
           
@@ -1793,38 +1793,21 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #phpstorm
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #ide
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #tools
-                  </a>
-                
-              
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2020-11-26T20:08:03+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-03-19T11:19:05+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-07-19T13:16:31+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-17T23:08:54+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="code-phpstorm-code-code-ctrl-code" tabindex="-1">使用 <code>phpstorm</code> 双击 <code>ctrl</code> 运行预定义程序</h1>
-<p><img src="/img/user/attachs/Pasted%20image%2020201127112108.png" alt="Pasted image 20201127112108.png"></p>
-<p>在 <code>phpstorm</code> 中的工具栏中，有一个绿色的按钮，可以运行已经定义好的配置</p>
-<p>但是每次切换的时候，都需要点一下切换到具体的程序</p>
-<p>但是如果双击 <code>ctrl</code> 就可以直接弹出运行的搜索栏</p>
-<p><img src="/img/user/attachs/Pasted%20image%2020201127112303.png" alt="Pasted image 20201127112303.png"></p>
-<p>在搜索栏中输入你想运行的程序，上下键选中，然后 <code>enter</code> 即可运行</p>
+      <h1 id="php-xml-cdata" tabindex="-1">php-xml 如何解析 cdata</h1>
+<pre><code class="language-php">$content = simplexml_load_string(
+    '&lt;content&gt;&lt;![CDATA[Hello, world!]]&gt;&lt;/content&gt;'
+    , null
+    , LIBXML_NOCDATA // merge cdata as text node
+);
+</code></pre>
+<p><a href="https://stackoverflow.com/questions/2970602/php-how-to-handle-cdata-with-simplexmlelement" target="_blank" class="external-link">https://stackoverflow.com/questions/2970602/php-how-to-handle-cdata-with-simplexmlelement</a></p>
 
       
       
@@ -2093,7 +2076,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#code-phpstorm-code-code-ctrl-code">使用 phpstorm 双击 ctrl 运行预定义程序</a>
+                    <li><a href="#php-xml-cdata">php-xml 如何解析 cdata</a>
             		</li>
                 </ol>
             </nav>

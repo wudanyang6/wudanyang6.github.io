@@ -1220,6 +1220,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/php-xml 如何解析 cdata/">php-xml 如何解析 cdata </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/PHP生成zip压缩包/">PHP生成zip压缩包 </a>
                 </div>
             
@@ -1528,7 +1539,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-17T09:20:45.316Z';
+        const searchIndexDate = '2024-04-17T15:10:16.860Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1540,9 +1551,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T09:20:45.316Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T15:10:16.860Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T09:20:45.316Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T15:10:16.860Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1783,7 +1794,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-28T22:53:39+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-01-31T13:28:24+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-28T22:53:39+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-17T23:01:35+08:00"></span></div></div></div>
       
       
       </header>
@@ -1823,7 +1834,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/img/user/card/92310.png" alt="92310.png"></p>
+<p><img src="/img/user/attachs/92310.png" alt="92310.png"></p>
 <h2 id="reference" tabindex="-1">Reference</h2>
 <p><a href="https://electronics.stackexchange.com/a/21891" target="_blank" class="external-link">https://electronics.stackexchange.com/a/21891</a></p>
 
