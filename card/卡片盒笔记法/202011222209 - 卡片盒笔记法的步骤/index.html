@@ -1517,7 +1517,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-17T05:00:40.414Z';
+        const searchIndexDate = '2024-04-17T05:12:23.662Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1529,9 +1529,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T05:00:40.414Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-17T05:12:23.662Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T05:00:40.414Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-17T05:12:23.662Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1772,14 +1772,14 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2020-11-22T22:09:41+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-02-01T13:08:08+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2020-11-22T22:09:41+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-17T13:11:38+08:00"></span></div></div></div>
       
       
       </header>
       
       
       <h1 id="202011222209" tabindex="-1">202011222209 - 卡片盒笔记法的步骤</h1>
-<p>![](/img/user/attachs/Pasted image 20201122220943.png)</p>
+<p><img src="/img/user/attachs/Pasted%20image%2020201122220943.png" alt="Pasted image 20201122220943.png"></p>
 <p>卡片盒笔记法的步骤？</p>
 <p><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011210003 - 卡片盒笔记法的基本流程/">202011210003 - 卡片盒笔记法的基本流程</a></p>
 <h1 id="参考" tabindex="-1">参考</h1>
