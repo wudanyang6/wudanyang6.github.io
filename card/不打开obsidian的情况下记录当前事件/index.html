@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>epoll的边缘触发和水平触发</title>
+    <title>不打开obsidian的情况下记录当前事件</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -543,7 +543,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/nginx/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发 </a>
                 </div>
             
         </div>
@@ -1286,7 +1286,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/不打开obsidian的情况下记录当前事件/">不打开obsidian的情况下记录当前事件 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/不打开obsidian的情况下记录当前事件/">不打开obsidian的情况下记录当前事件 </a>
                 </div>
             
         </div>
@@ -1829,7 +1829,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">epoll的边缘触发和水平触发</h1>
+          <h1 data-note-icon="2">不打开obsidian的情况下记录当前事件</h1>
         
         <div class="header-meta">
           
@@ -1838,49 +1838,19 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-28T22:53:39+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-17T23:01:35+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2022-09-25T23:42:01+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T12:48:29+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="epoll" tabindex="-1">epoll的边缘触发和水平触发</h1>
-<p><code>epoll</code> 是 Linux 下用于处理大量文件描述符的高效 I/O 多路复用机制。在 <code>epoll</code> 中，有两种触发模式：水平触发（Level-Triggered，简称 LT）和边缘触发（Edge-Triggered，简称 ET）。</p>
-<ol>
-<li><strong>水平触发（LT，Level-Triggered）</strong>：
-<ul>
-<li>当文件描述符就绪时，<code>epoll_wait</code> 将立即返回。</li>
-<li>如果文件描述符的状态发生变化，<code>epoll_wait</code> 会再次通知应用程序。</li>
-<li>这种模式下，如果文件描述符有数据可读或可写，<code>epoll_wait</code> 将不停地返回通知，直到应用程序处理完数据或者阻塞。</li>
-</ul>
-</li>
-<li><strong>边缘触发（ET，Edge-Triggered）</strong>：
-<ul>
-<li>当文件描述符就绪时，<code>epoll_wait</code> 只会通知一次，直到应用程序处理完数据并清空了文件描述符的缓冲区。</li>
-<li>如果文件描述符的状态没有变化，<code>epoll_wait</code> 不会重复通知应用程序。</li>
-<li>这种模式下，应用程序需要注意，在一个事件通知之后，要一直读或写，直到发生 <code>EAGAIN</code> 或 <code>EWOULDBLOCK</code> 错误。</li>
-</ul>
-</li>
-</ol>
-<p>为什么epoll这里要叫做边缘触发和水平触发呢？</p>
-<p>这源于通信<strong>数字信号处理领域</strong>的术语，边缘和水平通常用于描述信号的特性</p>
-<ol>
-<li><strong>边缘触发（Edge-Triggered）</strong>：
-<ul>
-<li>&quot;边缘&quot; 指的是信号的变化边缘，即信号从一个状态变为另一个状态的瞬间。</li>
-<li>在数字信号处理中，边缘通常用来表示信号的上升沿或下降沿，即信号从低电平到高电平或从高电平到低电平的瞬间。</li>
-</ul>
-</li>
-<li><strong>水平触发（Level-Triggered）</strong>：
-<ul>
-<li>&quot;水平&quot; 指的是信号的水平状态，即信号所处的电平状态。</li>
-<li>在数字信号处理中，水平触发通常用来描述信号保持在某个电平的状态，而不关心信号的变化瞬间。</li>
-</ul>
-</li>
-</ol>
-<p><img src="/img/user/attachs/92310.png" alt="92310.png"></p>
-<h2 id="reference" tabindex="-1">Reference</h2>
-<p><a href="https://electronics.stackexchange.com/a/21891" target="_blank" class="external-link">https://electronics.stackexchange.com/a/21891</a></p>
+      <h1 id="obsidian" tabindex="-1">不打开obsidian的情况下记录当前事件</h1>
+<p>将输入设置成你想附带的文本，传入内容改成“作为参数”</p>
+<p>加上 <code>open --background &quot;$1&quot;</code> 即可实现在不将 <code>obsidian</code> 放到前台的情况下记录日志。</p>
+<p><img src="/img/user/attachs/Pasted%20image%2020220925234214.png" alt="Pasted image 20220925234214.png"></p>
+<p>使用这种方法 obsidian 不会到前台占用注意力，不过仍然会将对应的操作完成</p>
+<h1 id="参考" tabindex="-1">参考</h1>
+<p><a href="https://forum.obsidian.md/t/leave-obsidian-in-background-when-making-uri-call/34091" target="_blank" class="external-link">Leave Obsidian in background when making URI call? - Developers &amp; API - Obsidian Forum</a></p>
 
       
       
@@ -2149,13 +2119,10 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#epoll">epoll的边缘触发和水平触发</a>
-            
-                <ol>
-                    
-                    <li><a href="#reference">Reference</a>
+                    <li><a href="#obsidian">不打开obsidian的情况下记录当前事件</a>
             		</li>
-                </ol>
+
+                    <li><a href="#参考">参考</a>
             		</li>
                 </ol>
             </nav>
@@ -2169,7 +2136,9 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/card/202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便/" data-note-icon="2" class="backlink">202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便</a>
+                                                </div><div class="backlink-card"><a href="/card/202404181240 快捷指令-记录今天的事情 obsidian/" data-note-icon="2" class="backlink">202404181240 快捷指令-记录今天的事情 obsidian</a>
+                                                </div><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
                                                 </div></div>
                               </div>
                         
