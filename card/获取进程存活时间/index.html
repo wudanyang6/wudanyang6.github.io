@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>做事心得</title>
+    <title>获取进程存活时间</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -1319,7 +1319,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/获取进程存活时间/">获取进程存活时间 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/获取进程存活时间/">获取进程存活时间 </a>
                 </div>
             
         </div>
@@ -1393,7 +1393,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thoughts/做事心得/">做事心得 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/thoughts/做事心得/">做事心得 </a>
                 </div>
             
         </div>
@@ -1851,7 +1851,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">做事心得</h1>
+          <h1 data-note-icon="2">获取进程存活时间</h1>
         
         <div class="header-meta">
           
@@ -1859,24 +1859,55 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #linux
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #shell
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:51:12+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-15T16:35:36+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2023-02-27T16:08:40+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T12:54:33+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="做事心得" tabindex="-1">做事心得</h1>
+      <pre><code class="language-Shell">ps -eo lstart,pid,cmd | grep &quot;php-fpm: pool www&quot; | grep -v 'grep'
+</code></pre>
+<p>要在 Linux 中获取子进程的存活时间（以 Unix 时间戳的形式表示），可以使用以下步骤：</p>
 <ol>
-<li>看书只要开始就能看得进去</li>
-<li>不要急着清空代办，如果出了问题，即使代办清空了也没有任何功劳</li>
-<li>周五不上线、不切流</li>
-<li>相信明天更美好，但是要过好当下</li>
-<li>自己的智商又不是很好，毅力也不是很高，算法学习也只能是慢慢学了，也就是为了不让自己的脑子生锈吧</li>
-<li>坚持骑车锻炼 2024年03月08日16:55:41</li>
-<li>最好维护的代码是没有写出来的代码 2024年03月12日13:44:30</li>
-<li>要因为做了什么而赞美，而不是是什么而赞美 2024年04月15日14:12:01</li>
+<li>获取子进程的 PID。</li>
+<li>访问 <code>/proc/&lt;PID&gt;/stat</code> 文件，其中 <code>&lt;PID&gt;</code> 是子进程的 PID。</li>
+<li>从 <code>/proc/&lt;PID&gt;/stat</code> 文件中读取进程的启动时间（start_time），该值以时钟滴答数（clock ticks）的形式存储在第 22 列中。</li>
+<li>获取系统的时钟滴答数，可以使用 <code>getconf CLK_TCK</code> 命令。</li>
+<li>将进程的启动时间除以时钟滴答数，以获取进程的存活时间（单位为秒），然后将其添加到系统启动时间的 Unix 时间戳（即系统启动的时间，以秒为单位）中，即可得到子进程的存活时间（以 Unix 时间戳的形式表示）。</li>
 </ol>
+<pre><code class="language-Shell">以下是获取子进程存活时间的 Unix 时间戳的示例命令：
+# 获取进程存活时间
+PID=&lt;子进程的 PID&gt;
+
+# 获取进程的启动时间（以时钟滴答数的形式存储）
+START_TIME=$(awk '{print $22}' /proc/${PID}/stat)
+
+# 获取系统的时钟滴答数
+CLK_TCK=$(getconf CLK_TCK)
+
+# 计算进程的存活时间（以秒为单位）
+UPTIME=$((($(awk '{print $1}' /proc/uptime) - ${START_TIME} / ${CLK_TCK})))
+
+# 计算子进程的存活时间（以 Unix 时间戳的形式表示）
+CHILD_UPTIME=$(( $(date +%s) - ${UPTIME} ))
+
+echo &quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间戳形式）&quot;
+</code></pre>
+<p>注意，这个方法获取的存活时间不是绝对准确的，因为在读取进程的启动时间和计算子进程的存活时间期间，进程的存活时间可能会发生变化。</p>
+<h1 id="参考" tabindex="-1">参考</h1>
 
       
       
@@ -2145,7 +2176,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#做事心得">做事心得</a>
+                    <li><a href="#参考">参考</a>
             		</li>
                 </ol>
             </nav>
@@ -2159,8 +2190,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="2" class="backlink">0 Home dy-turbo</a>
-                                                </div><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
                                                 </div></div>
                               </div>
                         

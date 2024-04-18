@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-18T04:53:29Z</updated>
+    <updated>2024-04-18T04:55:13Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -320,6 +320,48 @@
         </entry>
         <entry>
             <title>
+                获取进程存活时间
+                
+            </title>
+            <updated>2024-04-18T04:54:33.000Z</updated>
+            <id>https://wudanyang6.github.io//card/获取进程存活时间/</id>
+            <content type="html">
+                &lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;ps -eo lstart,pid,cmd | grep &amp;quot;php-fpm: pool www&amp;quot; | grep -v &#39;grep&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;要在 Linux 中获取子进程的存活时间（以 Unix 时间戳的形式表示），可以使用以下步骤：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;获取子进程的 PID。&lt;/li&gt;
+&lt;li&gt;访问 &lt;code&gt;/proc/&amp;lt;PID&amp;gt;/stat&lt;/code&gt; 文件，其中 &lt;code&gt;&amp;lt;PID&amp;gt;&lt;/code&gt; 是子进程的 PID。&lt;/li&gt;
+&lt;li&gt;从 &lt;code&gt;/proc/&amp;lt;PID&amp;gt;/stat&lt;/code&gt; 文件中读取进程的启动时间（start_time），该值以时钟滴答数（clock ticks）的形式存储在第 22 列中。&lt;/li&gt;
+&lt;li&gt;获取系统的时钟滴答数，可以使用 &lt;code&gt;getconf CLK_TCK&lt;/code&gt; 命令。&lt;/li&gt;
+&lt;li&gt;将进程的启动时间除以时钟滴答数，以获取进程的存活时间（单位为秒），然后将其添加到系统启动时间的 Unix 时间戳（即系统启动的时间，以秒为单位）中，即可得到子进程的存活时间（以 Unix 时间戳的形式表示）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;以下是获取子进程存活时间的 Unix 时间戳的示例命令：
+# 获取进程存活时间
+PID=&amp;lt;子进程的 PID&amp;gt;
+
+# 获取进程的启动时间（以时钟滴答数的形式存储）
+START_TIME=$(awk &#39;{print $22}&#39; /proc/${PID}/stat)
+
+# 获取系统的时钟滴答数
+CLK_TCK=$(getconf CLK_TCK)
+
+# 计算进程的存活时间（以秒为单位）
+UPTIME=$((($(awk &#39;{print $1}&#39; /proc/uptime) - ${START_TIME} / ${CLK_TCK})))
+
+# 计算子进程的存活时间（以 Unix 时间戳的形式表示）
+CHILD_UPTIME=$(( $(date +%s) - ${UPTIME} ))
+
+echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间戳形式）&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;注意，这个方法获取的存活时间不是绝对准确的，因为在读取进程的启动时间和计算子进程的存活时间期间，进程的存活时间可能会发生变化。&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/获取进程存活时间/" />
+        </entry>
+        <entry>
+            <title>
                 网络-最多有多少个a类、b类和c类网络号
                 
             </title>
@@ -415,7 +457,7 @@
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-18T04:53:18Z</updated>
+            <updated>2024-04-18T04:55:01Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -440,7 +482,7 @@
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-18T04:53:18Z</updated>
+            <updated>2024-04-18T04:55:01Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -539,7 +581,7 @@
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-18T04:53:18Z</updated>
+            <updated>2024-04-18T04:55:01Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -591,7 +633,7 @@
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-18T04:53:18Z</updated>
+            <updated>2024-04-18T04:55:01Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -854,6 +896,12 @@ done
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E8%8E%B7%E5%8F%96%E8%BF%9B%E7%A8%8B%E5%AD%98%E6%B4%BB%E6%97%B6%E9%97%B4/&quot;&gt;获取进程存活时间&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2023-02-27 16:08:40&lt;/td&gt;
+&lt;td&gt;2024-04-18 12:54:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#shell&quot;&gt;#shell&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E8%B4%B9%E6%9B%BC%E6%8A%80%E5%B7%A7/&quot;&gt;费曼技巧&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2021-11-29 12:48:53&lt;/td&gt;
