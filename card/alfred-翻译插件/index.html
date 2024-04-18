@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>20240415141824 哲学</title>
+    <title>alfred-翻译插件</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -196,7 +196,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/000 Topic Index/20240415141824 哲学/">20240415141824 哲学 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/000 Topic Index/202404151418 哲学/">202404151418 哲学 </a>
                 </div>
             
         </div>
@@ -207,7 +207,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/000 Topic Index/20240415142227 游戏/">20240415142227 游戏 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/000 Topic Index/202404151422 游戏/">202404151422 游戏 </a>
                 </div>
             
         </div>
@@ -1198,6 +1198,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/alfred-翻译插件/">alfred-翻译插件 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/dg-Archives/">dg-Archives </a>
                 </div>
             
@@ -1605,7 +1616,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T04:55:12.727Z';
+        const searchIndexDate = '2024-04-18T07:32:33.267Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1617,9 +1628,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T04:55:12.727Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T07:32:33.267Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T04:55:12.727Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T07:32:33.267Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1851,7 +1862,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">20240415141824 哲学</h1>
+          <h1 data-note-icon="2">alfred-翻译插件</h1>
         
         <div class="header-meta">
           
@@ -1859,31 +1870,17 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #index
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #哲学
-                  </a>
-                
-              
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2023-08-08T12:54:06+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-16T14:24:02+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-06-26T23:00:22+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T15:31:42+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="20240415141824" tabindex="-1">20240415141824 哲学</h1>
-<ul>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/20240415183533 哲学书单/">20240415183533 哲学书单</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/20240415142017 哲学的分支/">20240415142017 哲学的分支</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/20240415141933 什么是哲学/">20240415141933 什么是哲学</a></li>
-</ul>
+      <h1 id="alfred" tabindex="-1">alfred-翻译插件</h1>
+<p>按照这个文章的步骤就可以创建一个应用</p>
+<p><a href="https://github.com/wensonsmith/YoudaoTranslate" target="_blank" class="external-link">https://github.com/wensonsmith/YoudaoTranslate</a></p>
+<p><img src="/img/user/attachs/Pasted%20image%2020210626230147.png" alt="Pasted image 20210626230147.png"></p>
 
       
       
@@ -2152,7 +2149,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#20240415141824">20240415141824 哲学</a>
+                    <li><a href="#alfred">alfred-翻译插件</a>
             		</li>
                 </ol>
             </nav>
