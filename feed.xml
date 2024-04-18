@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-18T11:36:13Z</updated>
+    <updated>2024-04-18T11:48:18Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -465,7 +465,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-18T11:36:01Z</updated>
+            <updated>2024-04-18T11:48:07Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -490,7 +490,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-18T11:36:01Z</updated>
+            <updated>2024-04-18T11:48:07Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -589,7 +589,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-18T11:36:01Z</updated>
+            <updated>2024-04-18T11:48:07Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -641,7 +641,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-18T11:36:01Z</updated>
+            <updated>2024-04-18T11:48:07Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -1729,12 +1729,6 @@ if err != nil {
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181933%20%E5%BC%80%E5%BE%80%E6%97%A9%E6%99%A8%E7%9A%84%E5%8D%88%E5%A4%9C/&quot;&gt;202404181933 开往早晨的午夜&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-18 19:33:39&lt;/td&gt;
-&lt;td&gt;2024-04-18 19:35:33&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E9%98%85%E8%AF%BB/%E5%A6%82%E4%BD%95%E5%90%88%E5%B9%B6marginnote%E7%AC%94%E8%AE%B0%E6%9C%AC/&quot;&gt;如何合并marginnote笔记本&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2022-08-30 13:14:37&lt;/td&gt;
 &lt;td&gt;2024-04-18 17:02:42&lt;/td&gt;
@@ -2509,20 +2503,6 @@ if err != nil {
 
             </content>
             <link href="https://wudanyang6.github.io//card/About Me/" />
-        </entry>
-        <entry>
-            <title>
-                202404181933 开往早晨的午夜
-                
-            </title>
-            <updated>2024-04-18T11:34:07.000Z</updated>
-            <id>https://wudanyang6.github.io//card/202404181933 开往早晨的午夜/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202404181933&quot; tabindex=&quot;-1&quot;&gt;202404181933 开往早晨的午夜&lt;/h1&gt;
-&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;https://music.163.com/outchain/player?type=2&amp;id=449577636&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/202404181933 开往早晨的午夜/" />
         </entry>
         <entry>
             <title>
