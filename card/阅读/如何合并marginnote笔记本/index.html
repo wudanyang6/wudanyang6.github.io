@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>20240409104458 leetcode-会员购买优惠-宫水三叶</title>
+    <title>如何合并marginnote笔记本</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -212,57 +212,6 @@
             
         </div>
         
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('100 Programmer')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">100 Programmer</span>
-                    </div>
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('100 Programmer/300 Leetcode')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">300 Leetcode</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/300 Leetcode/20240409104458 leetcode-会员购买优惠-宫水三叶/">20240409104458 leetcode-会员购买优惠-宫水三叶 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
     
                     
                 </div>
@@ -669,6 +618,38 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('card/阅读')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">阅读</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/阅读/如何合并marginnote笔记本/">如何合并marginnote笔记本 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202012081017 - php8.0 新特性/">202012081017 - php8.0 新特性 </a>
                 </div>
             
@@ -791,6 +772,17 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404181240 快捷指令-记录今天的事情 obsidian/">202404181240 快捷指令-记录今天的事情 obsidian </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404181933 开往早晨的午夜/">202404181933 开往早晨的午夜 </a>
                 </div>
             
         </div>
@@ -1428,7 +1420,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T09:05:45.112Z';
+        const searchIndexDate = '2024-04-18T11:36:12.556Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1440,9 +1432,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T09:05:45.112Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T11:36:12.556Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T09:05:45.112Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T11:36:12.556Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1674,7 +1666,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">20240409104458 leetcode-会员购买优惠-宫水三叶</h1>
+          <h1 data-note-icon="2">如何合并marginnote笔记本</h1>
         
         <div class="header-meta">
           
@@ -1683,24 +1675,14 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-09T10:45:01+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-17T12:38:45+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2022-08-30T13:14:37+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T17:02:42+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="20240409104458-leetcode" tabindex="-1">20240409104458 leetcode-会员购买优惠-宫水三叶</h1>
-<p>宫水三叶的优惠链接，多 60 天： <a href="https://leetcode.cn/premium/?promoChannel=acoier" target="_blank" class="external-link">https://leetcode.cn/premium/?promoChannel=acoier</a></p>
-<ul>
-<li><em>年度会员 : 加赠 425−365=60 天</em></li>
-<li><em>季度会员 : 加赠 104−90=14 天</em></li>
-</ul>
-<p>同时，同时，同时！！！你还将获取如下福利：</p>
-<ol>
-<li><em>返佣红包：年度会员获得定额红包 ¥66.66（折算后 ¥1.02/天），季度会员获得定额红包 ¥22.22（折算后 ¥1.70/天）</em></li>
-</ol>
-<h2 id="reference" tabindex="-1">Reference</h2>
-<p><a class="internal-link is-unresolved" href="/404" target="">巨划算的 LeetCode 会员专属福利 ~ - 知乎</a></p>
+      <h1 id="marginnote" tabindex="-1">如何合并marginnote笔记本</h1>
+<p><a href="https://bbs.marginnote.cn/t/topic/3651/2" target="_blank" class="external-link">一个文档的多个笔记本中的笔记能否合并？ - 方法、技巧、工作流 - MarginNote 中文社区</a></p>
 
       
       
@@ -1969,13 +1951,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#20240409104458-leetcode">20240409104458 leetcode-会员购买优惠-宫水三叶</a>
-            
-                <ol>
-                    
-                    <li><a href="#reference">Reference</a>
-            		</li>
-                </ol>
+                    <li><a href="#marginnote">如何合并marginnote笔记本</a>
             		</li>
                 </ol>
             </nav>
@@ -1989,9 +1965,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
+                                                </div></div>
                               </div>
                         
                   

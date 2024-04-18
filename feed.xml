@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-18T09:05:45Z</updated>
+    <updated>2024-04-18T11:36:13Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -192,6 +192,20 @@
 
             </content>
             <link href="https://wudanyang6.github.io//thoughts/20240415141933 什么是哲学/" />
+        </entry>
+        <entry>
+            <title>
+                如何合并marginnote笔记本
+                
+            </title>
+            <updated>2024-04-18T09:02:42.000Z</updated>
+            <id>https://wudanyang6.github.io//card/阅读/如何合并marginnote笔记本/</id>
+            <content type="html">
+                &lt;h1 id=&quot;marginnote&quot; tabindex=&quot;-1&quot;&gt;如何合并marginnote笔记本&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://bbs.marginnote.cn/t/topic/3651/2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;一个文档的多个笔记本中的笔记能否合并？ - 方法、技巧、工作流 - MarginNote 中文社区&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/阅读/如何合并marginnote笔记本/" />
         </entry>
         <entry>
             <title>
@@ -451,7 +465,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-18T09:05:35Z</updated>
+            <updated>2024-04-18T11:36:01Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -476,7 +490,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-18T09:05:35Z</updated>
+            <updated>2024-04-18T11:36:01Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -575,7 +589,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-18T09:05:35Z</updated>
+            <updated>2024-04-18T11:36:01Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -627,7 +641,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-18T09:05:35Z</updated>
+            <updated>2024-04-18T11:36:01Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -1715,9 +1729,15 @@ if err != nil {
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;如何合并marginnote笔记本&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181933%20%E5%BC%80%E5%BE%80%E6%97%A9%E6%99%A8%E7%9A%84%E5%8D%88%E5%A4%9C/&quot;&gt;202404181933 开往早晨的午夜&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-18 19:33:39&lt;/td&gt;
+&lt;td&gt;2024-04-18 19:35:33&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E9%98%85%E8%AF%BB/%E5%A6%82%E4%BD%95%E5%90%88%E5%B9%B6marginnote%E7%AC%94%E8%AE%B0%E6%9C%AC/&quot;&gt;如何合并marginnote笔记本&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2022-08-30 13:14:37&lt;/td&gt;
-&lt;td&gt;2024-04-18 17:01:37&lt;/td&gt;
+&lt;td&gt;2024-04-18 17:02:42&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -2489,6 +2509,20 @@ if err != nil {
 
             </content>
             <link href="https://wudanyang6.github.io//card/About Me/" />
+        </entry>
+        <entry>
+            <title>
+                202404181933 开往早晨的午夜
+                
+            </title>
+            <updated>2024-04-18T11:34:07.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202404181933 开往早晨的午夜/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202404181933&quot; tabindex=&quot;-1&quot;&gt;202404181933 开往早晨的午夜&lt;/h1&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;https://music.163.com/outchain/player?type=2&amp;id=449577636&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/202404181933 开往早晨的午夜/" />
         </entry>
         <entry>
             <title>
@@ -3334,30 +3368,6 @@ date_translator = require(&amp;quot;date&amp;quot;)
 
             </content>
             <link href="https://wudanyang6.github.io//card/101 Tools/101b1 obsidian-things3-today插件/" />
-        </entry>
-        <entry>
-            <title>
-                20240409104458 leetcode-会员购买优惠-宫水三叶
-                
-            </title>
-            <updated>2024-04-17T04:38:45.000Z</updated>
-            <id>https://wudanyang6.github.io//100 Programmer/300 Leetcode/20240409104458 leetcode-会员购买优惠-宫水三叶/</id>
-            <content type="html">
-                &lt;h1 id=&quot;20240409104458-leetcode&quot; tabindex=&quot;-1&quot;&gt;20240409104458 leetcode-会员购买优惠-宫水三叶&lt;/h1&gt;
-&lt;p&gt;宫水三叶的优惠链接，多 60 天： &lt;a href=&quot;https://leetcode.cn/premium/?promoChannel=acoier&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://leetcode.cn/premium/?promoChannel=acoier&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;年度会员 : 加赠 425−365=60 天&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;季度会员 : 加赠 104−90=14 天&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;同时，同时，同时！！！你还将获取如下福利：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;em&gt;返佣红包：年度会员获得定额红包 ¥66.66（折算后 ¥1.02/天），季度会员获得定额红包 ¥22.22（折算后 ¥1.70/天）&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;巨划算的 LeetCode 会员专属福利 ~ - 知乎&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//100 Programmer/300 Leetcode/20240409104458 leetcode-会员购买优惠-宫水三叶/" />
         </entry>
         <entry>
             <title>
