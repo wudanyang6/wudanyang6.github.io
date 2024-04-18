@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-18T07:32:33Z</updated>
+    <updated>2024-04-18T07:53:26Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -457,7 +457,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-18T07:32:23Z</updated>
+            <updated>2024-04-18T07:53:15Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -482,7 +482,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-18T07:32:23Z</updated>
+            <updated>2024-04-18T07:53:15Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -581,7 +581,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-18T07:32:23Z</updated>
+            <updated>2024-04-18T07:53:15Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -633,7 +633,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-18T07:32:23Z</updated>
+            <updated>2024-04-18T07:53:15Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -896,6 +896,12 @@ done
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/&quot;&gt;CDN 带宽控制的几种方法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-01-31 21:40:03&lt;/td&gt;
+&lt;td&gt;2024-04-18 15:52:52&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/alfred-%E7%BF%BB%E8%AF%91%E6%8F%92%E4%BB%B6/&quot;&gt;alfred-翻译插件&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2021-06-26 23:00:22&lt;/td&gt;
@@ -1423,7 +1429,7 @@ done
                 alfred-翻译插件
                 
             </title>
-            <updated>2024-04-18T07:31:42.000Z</updated>
+            <updated>2024-04-18T07:31:51.000Z</updated>
             <id>https://wudanyang6.github.io//card/alfred-翻译插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;alfred&quot; tabindex=&quot;-1&quot;&gt;alfred-翻译插件&lt;/h1&gt;
@@ -1481,6 +1487,35 @@ $zip-&amp;gt;close(); //关闭压缩包
 
             </content>
             <link href="https://wudanyang6.github.io//card/GTD/" />
+        </entry>
+        <entry>
+            <title>
+                CDN 带宽控制的几种方法
+                
+            </title>
+            <updated>2024-04-18T07:52:39.000Z</updated>
+            <id>https://wudanyang6.github.io//card/CDN 带宽控制的几种方法/</id>
+            <content type="html">
+                &lt;h1 id=&quot;cdn&quot; tabindex=&quot;-1&quot;&gt;CDN 带宽控制的几种方法&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;refer 限制，禁用非自身域名
+&lt;ol&gt;
+&lt;li&gt;空refer禁用，有一定风险，尽量在站点刚开放时使用此方案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;单请求响应限速，百度CDN可以配置&lt;/li&gt;
+&lt;li&gt;CDN日志回扫分析
+&lt;ol&gt;
+&lt;li&gt;删除肉眼可见的违规图片&lt;/li&gt;
+&lt;li&gt;对图片进行检测，是否包含视频资源（需要一定的策略支持）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;针对访问量、请求数过高的ip进行封禁&lt;/li&gt;
+&lt;li&gt;图片与内容关联，在审核内容时，发现图片违禁直接删除内容并删除图片&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/CDN 带宽控制的几种方法/" />
         </entry>
         <entry>
             <title>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>leetcode-1137第 N 个泰波那契数</title>
+    <title>CDN 带宽控制的几种方法</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -274,7 +274,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/300 Leetcode/具体题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数 </a>
                 </div>
             
         </div>
@@ -1209,7 +1209,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/CDN 带宽控制的几种方法/">CDN 带宽控制的几种方法 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/CDN 带宽控制的几种方法/">CDN 带宽控制的几种方法 </a>
                 </div>
             
         </div>
@@ -1873,7 +1873,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">leetcode-1137第 N 个泰波那契数</h1>
+          <h1 data-note-icon="2">CDN 带宽控制的几种方法</h1>
         
         <div class="header-meta">
           
@@ -1881,45 +1881,30 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #leetcode
-                  </a>
-                
-              
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2023-02-26T18:03:27+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-01-31T13:28:41+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-31T21:40:03+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T15:52:39+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="题目" tabindex="-1">题目</h1>
-<p><a href="https://leetcode-cn.com/problems/n-th-tribonacci-number/" target="_blank" class="external-link">1137. 第 N 个泰波那契数</a><br>
-这个跟斐波那契好像是一样的，一模一样</p>
-<h1 id="解法" tabindex="-1">解法</h1>
-<p>跟斐波纳契数列一样的解法</p>
-<pre><code class="language-php">class Solution {
-
-    /**
-     * @param Integer $n
-     * @return Integer
-     */
-    function tribonacci($n) {
-        if ($n &lt;= 0) {
-            return 0;
-        }
-        
-        $retArr = [0,1,1];
-        for ($i = 3; $i &lt;= $n; $i++) {
-            $retArr[$i] = $retArr[$i-1] + $retArr[$i-2] + $retArr[$i-3];
-        }
-
-        return $retArr[$n];
-    }
-}
-</code></pre>
-<h1 id="参考" tabindex="-1">参考</h1>
+      <h1 id="cdn" tabindex="-1">CDN 带宽控制的几种方法</h1>
+<ol>
+<li>refer 限制，禁用非自身域名
+<ol>
+<li>空refer禁用，有一定风险，尽量在站点刚开放时使用此方案</li>
+</ol>
+</li>
+<li>单请求响应限速，百度CDN可以配置</li>
+<li>CDN日志回扫分析
+<ol>
+<li>删除肉眼可见的违规图片</li>
+<li>对图片进行检测，是否包含视频资源（需要一定的策略支持）</li>
+</ol>
+</li>
+<li>针对访问量、请求数过高的ip进行封禁</li>
+<li>图片与内容关联，在审核内容时，发现图片违禁直接删除内容并删除图片</li>
+</ol>
 
       
       
@@ -2188,13 +2173,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#题目">题目</a>
-            		</li>
-
-                    <li><a href="#解法">解法</a>
-            		</li>
-
-                    <li><a href="#参考">参考</a>
+                    <li><a href="#cdn">CDN 带宽控制的几种方法</a>
             		</li>
                 </ol>
             </nav>
