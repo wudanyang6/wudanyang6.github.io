@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-18T04:27:42Z</updated>
+    <updated>2024-04-18T04:47:16Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -388,7 +388,7 @@
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-18T04:27:30Z</updated>
+            <updated>2024-04-18T04:47:06Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -413,7 +413,7 @@
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-18T04:27:30Z</updated>
+            <updated>2024-04-18T04:47:06Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -512,7 +512,7 @@
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-18T04:27:30Z</updated>
+            <updated>2024-04-18T04:47:06Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -564,7 +564,7 @@
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-18T04:27:30Z</updated>
+            <updated>2024-04-18T04:47:06Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -828,9 +828,15 @@ done
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;补码&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181240%20%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4-%E8%AE%B0%E5%BD%95%E4%BB%8A%E5%A4%A9%E7%9A%84%E4%BA%8B%E6%83%85%20obsidian/&quot;&gt;202404181240 快捷指令-记录今天的事情 obsidian&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-18 12:40:54&lt;/td&gt;
+&lt;td&gt;2024-04-18 12:46:40&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181227%20%E8%A1%A5%E7%A0%81/&quot;&gt;202404181227 补码&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2021-06-26 22:13:12&lt;/td&gt;
-&lt;td&gt;2024-04-18 12:26:59&lt;/td&gt;
+&lt;td&gt;2024-04-18 12:27:12&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1380,13 +1386,32 @@ $zip-&amp;gt;close(); //关闭压缩包
         </entry>
         <entry>
             <title>
+                202404181240 快捷指令-记录今天的事情 obsidian
+                
+            </title>
+            <updated>2024-04-18T04:46:37.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202404181240 快捷指令-记录今天的事情 obsidian/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202404181240-obsidian&quot; tabindex=&quot;-1&quot;&gt;202404181240 快捷指令-记录今天的事情 obsidian&lt;/h1&gt;
+&lt;p&gt;快捷指令地址： &lt;a href=&quot;https://www.icloud.com/shortcuts/6f0552b8622c4b3389b0f53a7af1e919&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.icloud.com/shortcuts/6f0552b8622c4b3389b0f53a7af1e919&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装快捷指令&lt;/p&gt;
+&lt;p&gt;修改快捷指令中的参数&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240418124319.png&quot; alt=&quot;Pasted image 20240418124319.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;最终效果：&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240418124550.png&quot; alt=&quot;Pasted image 20240418124550.png&quot; /&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/202404181240 快捷指令-记录今天的事情 obsidian/" />
+        </entry>
+        <entry>
+            <title>
                 202404181227 补码
                 
             </title>
-            <updated>2024-04-18T04:26:51.000Z</updated>
-            <id>https://wudanyang6.github.io//card/补码/</id>
+            <updated>2024-04-18T04:27:11.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202404181227 补码/</id>
             <content type="html">
-                &lt;h1 id=&quot;补码&quot; tabindex=&quot;-1&quot;&gt;补码&lt;/h1&gt;
+                &lt;h1 id=&quot;202404181227&quot; tabindex=&quot;-1&quot;&gt;202404181227 补码&lt;/h1&gt;
 &lt;p&gt;在计算机中，补码是一种表达有符号整数的方式，特别是在二进制数中。补码不仅可以表示正数，还可以表示负数，这使得负数的运算变得更为简单。&lt;/p&gt;
 &lt;p&gt;补码的生成方法如下：&lt;br /&gt;
 如果是正数，补码与原码相同；&lt;br /&gt;
@@ -1396,7 +1421,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E4%BA%8C%E8%A3%9C%E6%95%B8&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;什么是补码&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/补码/" />
+            <link href="https://wudanyang6.github.io//card/202404181227 补码/" />
         </entry>
         <entry>
             <title>

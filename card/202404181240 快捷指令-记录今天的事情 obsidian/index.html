@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>202404181227 补码</title>
+    <title>202404181240 快捷指令-记录今天的事情 obsidian</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -1143,7 +1143,18 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/补码/">202404181227 补码 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404181227 补码/">202404181227 补码 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404181240 快捷指令-记录今天的事情 obsidian/">202404181240 快捷指令-记录今天的事情 obsidian </a>
                 </div>
             
         </div>
@@ -1550,7 +1561,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T04:27:41.636Z';
+        const searchIndexDate = '2024-04-18T04:47:16.285Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1562,9 +1573,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T04:27:41.636Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T04:47:16.285Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T04:27:41.636Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T04:47:16.285Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1796,7 +1807,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">202404181227 补码</h1>
+          <h1 data-note-icon="2">202404181240 快捷指令-记录今天的事情 obsidian</h1>
         
         <div class="header-meta">
           
@@ -1805,20 +1816,19 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-06-26T22:13:12+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T12:26:51+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-18T12:40:54+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T12:46:37+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="补码" tabindex="-1">补码</h1>
-<p>在计算机中，补码是一种表达有符号整数的方式，特别是在二进制数中。补码不仅可以表示正数，还可以表示负数，这使得负数的运算变得更为简单。</p>
-<p>补码的生成方法如下：<br>
-如果是正数，补码与原码相同；<br>
-如果是负数，补码是其原码中所有位取反（得到反码）后加1。</p>
-<p>例如，如果我们要表示-5，先找到+5的二进制表示，即&quot;0101&quot;（在4位二进制数中），然后取反得到&quot;1010&quot;，接着加1得到&quot;1011&quot;。所以，-5的补码为&quot;1011&quot;。</p>
-<p>补码的主要优点是可以简化计算机中的加减运算。因为<strong>在使用补码的情况下，计算机可以用同样的硬件来处理加法和减法</strong>。</p>
-<p><a href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E8%A3%9C%E6%95%B8" target="_blank" class="external-link">什么是补码</a></p>
+      <h1 id="202404181240-obsidian" tabindex="-1">202404181240 快捷指令-记录今天的事情 obsidian</h1>
+<p>快捷指令地址： <a href="https://www.icloud.com/shortcuts/6f0552b8622c4b3389b0f53a7af1e919" target="_blank" class="external-link">https://www.icloud.com/shortcuts/6f0552b8622c4b3389b0f53a7af1e919</a></p>
+<p>安装快捷指令</p>
+<p>修改快捷指令中的参数</p>
+<p><img src="/img/user/attachs/Pasted%20image%2020240418124319.png" alt="Pasted image 20240418124319.png"></p>
+<p>最终效果：<br>
+<img src="/img/user/attachs/Pasted%20image%2020240418124550.png" alt="Pasted image 20240418124550.png"></p>
 
       
       
@@ -2087,7 +2097,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#补码">补码</a>
+                    <li><a href="#202404181240-obsidian">202404181240 快捷指令-记录今天的事情 obsidian</a>
             		</li>
                 </ol>
             </nav>
@@ -2101,9 +2111,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
+                                                </div></div>
                               </div>
                         
                   
