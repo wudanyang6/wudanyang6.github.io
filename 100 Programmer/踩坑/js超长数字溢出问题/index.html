@@ -511,6 +511,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/nginx master 进程/">Nginx Master 进程主流程 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/文件描述符/">文件描述符 </a>
                 </div>
             
@@ -1297,17 +1308,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/PHP生成zip压缩包/">PHP生成zip压缩包 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/vscode git 只暂存部分改动/">vscode git 只暂存部分改动 </a>
                 </div>
             
@@ -1627,7 +1627,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T07:53:25.542Z';
+        const searchIndexDate = '2024-04-18T08:33:44.626Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1639,9 +1639,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T07:53:25.542Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T08:33:44.626Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T07:53:25.542Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T08:33:44.626Z', docs}));
             window.docs = docs
             window.index = index;
         }

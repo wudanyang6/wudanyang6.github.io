@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-18T07:53:26Z</updated>
+    <updated>2024-04-18T08:33:45Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -457,7 +457,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-18T07:53:15Z</updated>
+            <updated>2024-04-18T08:33:30Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -482,7 +482,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-18T07:53:15Z</updated>
+            <updated>2024-04-18T08:33:30Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -581,7 +581,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-18T07:53:15Z</updated>
+            <updated>2024-04-18T08:33:30Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -633,7 +633,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-18T07:53:15Z</updated>
+            <updated>2024-04-18T08:33:30Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -767,7 +767,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 php-xml 如何解析 cdata
                 
             </title>
-            <updated>2024-04-17T15:16:06.000Z</updated>
+            <updated>2024-04-18T08:27:43.000Z</updated>
             <id>https://wudanyang6.github.io//card/php-xml 如何解析 cdata/</id>
             <content type="html">
                 &lt;h1 id=&quot;php-xml-cdata&quot; tabindex=&quot;-1&quot;&gt;php-xml 如何解析 cdata&lt;/h1&gt;
@@ -863,10 +863,10 @@ done
                 docker-ubuntu-unminimize
                 
             </title>
-            <updated>2024-02-06T09:49:27.000Z</updated>
+            <updated>2024-04-18T07:54:56.000Z</updated>
             <id>https://wudanyang6.github.io//card/docker-ubuntu-unminimize/</id>
             <content type="html">
-                &lt;h1 id=&quot;docker-ubuntu&quot; tabindex=&quot;-1&quot;&gt;docker-ubuntu&lt;/h1&gt;
+                &lt;h1 id=&quot;docker-ubuntu-unminimize&quot; tabindex=&quot;-1&quot;&gt;docker-ubuntu-unminimize&lt;/h1&gt;
 &lt;p&gt;unminimize 命令可以将 &lt;code&gt;ubuntu&lt;/code&gt; 的环境切换成正常的环境，会安装很多软件进去&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://wiki.ubuntu.com/Minimal&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://wiki.ubuntu.com/Minimal&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -896,6 +896,42 @@ done
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/nginx%20master%20%E8%BF%9B%E7%A8%8B/&quot;&gt;nginx master 进程&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-04-14 13:13:57&lt;/td&gt;
+&lt;td&gt;2024-04-18 16:30:09&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#master&quot;&gt;#master&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#进程&quot;&gt;#进程&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#源码分析&quot;&gt;#源码分析&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/nginx/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-04-16 19:22:47&lt;/td&gt;
+&lt;td&gt;2024-04-18 16:29:49&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Process&quot;&gt;#Process&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#source-code&quot;&gt;#source-code&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/php-xml%20%E5%A6%82%E4%BD%95%E8%A7%A3%E6%9E%90%20cdata/&quot;&gt;php-xml 如何解析 cdata&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-18 10:27:20&lt;/td&gt;
+&lt;td&gt;2024-04-18 16:27:43&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/vim%E6%98%BE%E7%A4%BA%E5%88%97%E5%88%86%E9%9A%94%E7%AC%A6/&quot;&gt;vim显示列分隔符&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2022-12-07 15:55:15&lt;/td&gt;
+&lt;td&gt;2024-04-18 16:06:19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-01-19 12:46:25&lt;/td&gt;
+&lt;td&gt;2024-04-18 15:55:19&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/docker-ubuntu-unminimize/&quot;&gt;docker-ubuntu-unminimize&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2022-05-08 17:11:05&lt;/td&gt;
+&lt;td&gt;2024-04-18 15:54:56&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/&quot;&gt;CDN 带宽控制的几种方法&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-01-31 21:40:03&lt;/td&gt;
@@ -970,12 +1006,6 @@ done
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-18 10:27:20&lt;/td&gt;
-&lt;td&gt;2024-04-18 10:27:20&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/php-xml%20%E5%A6%82%E4%BD%95%E8%A7%A3%E6%9E%90%20cdata/&quot;&gt;php-xml 如何解析 cdata&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-18 10:27:20&lt;/td&gt;
 &lt;td&gt;2024-04-18 10:27:20&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -1227,12 +1257,6 @@ done
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/nginx/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021-04-16 19:22:47&lt;/td&gt;
-&lt;td&gt;2024-04-06 23:34:49&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Process&quot;&gt;#Process&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#source-code&quot;&gt;#source-code&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/php/202012081017%20-%20php8.0%20%E6%96%B0%E7%89%B9%E6%80%A7/&quot;&gt;202012081017 - php8.0 新特性&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2020-12-08 10:17:43&lt;/td&gt;
 &lt;td&gt;2024-04-06 23:34:49&lt;/td&gt;
@@ -1341,18 +1365,6 @@ done
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mac&quot;&gt;#mac&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-01-19 12:46:25&lt;/td&gt;
-&lt;td&gt;2024-04-06 23:34:49&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/vim%E6%98%BE%E7%A4%BA%E5%88%97%E5%88%86%E9%9A%94%E7%AC%A6/&quot;&gt;vim显示列分隔符&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2022-12-07 15:55:15&lt;/td&gt;
-&lt;td&gt;2024-04-06 23:34:49&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/obsidian/obsidian%20%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%94%AF%E6%8C%81%E7%9A%84ICON/&quot;&gt;obsidian 开发过程支持的ICON&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-01-25 18:14:03&lt;/td&gt;
 &lt;td&gt;2024-04-06 23:34:49&lt;/td&gt;
@@ -1401,20 +1413,8 @@ done
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/docker-ubuntu-unminimize/&quot;&gt;docker-ubuntu-unminimize&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2022-05-08 17:11:05&lt;/td&gt;
-&lt;td&gt;2024-04-06 23:34:49&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/iso-%E6%97%A5%E6%9C%9F%E8%A1%A8%E7%A4%BA%E6%B3%95/&quot;&gt;iso-日期表示法&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2021-07-25 22:08:39&lt;/td&gt;
-&lt;td&gt;2024-04-06 23:34:49&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/PHP%E7%94%9F%E6%88%90zip%E5%8E%8B%E7%BC%A9%E5%8C%85/&quot;&gt;PHP生成zip压缩包&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021-11-23 14:16:24&lt;/td&gt;
 &lt;td&gt;2024-04-06 23:34:49&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -1439,29 +1439,6 @@ done
 
             </content>
             <link href="https://wudanyang6.github.io//card/alfred-翻译插件/" />
-        </entry>
-        <entry>
-            <title>
-                PHP生成zip压缩包
-                
-            </title>
-            <updated>2024-02-01T16:04:34.000Z</updated>
-            <id>https://wudanyang6.github.io//card/PHP生成zip压缩包/</id>
-            <content type="html">
-                &lt;h1 id=&quot;php-zip&quot; tabindex=&quot;-1&quot;&gt;PHP生成zip压缩包&lt;/h1&gt;
-&lt;h2 id=&quot;zip&quot; tabindex=&quot;-1&quot;&gt;将文件压缩成zip格式&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-$path = &amp;quot;file.txt&amp;quot;;
-$filename = &amp;quot;file.zip&amp;quot;;
-
-$zip = new ZipArchive();
-$zip-&amp;gt;open($filename, ZipArchive::CREATE); //打开压缩包
-$zip-&amp;gt;addFile($path, basename($path)); //向压缩包中添加文件
-$zip-&amp;gt;close(); //关闭压缩包
-&lt;/code&gt;&lt;/pre&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/PHP生成zip压缩包/" />
         </entry>
         <entry>
             <title>
@@ -1493,7 +1470,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 CDN 带宽控制的几种方法
                 
             </title>
-            <updated>2024-04-18T07:52:39.000Z</updated>
+            <updated>2024-04-18T07:52:52.000Z</updated>
             <id>https://wudanyang6.github.io//card/CDN 带宽控制的几种方法/</id>
             <content type="html">
                 &lt;h1 id=&quot;cdn&quot; tabindex=&quot;-1&quot;&gt;CDN 带宽控制的几种方法&lt;/h1&gt;
@@ -1769,7 +1746,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 vim显示列分隔符
                 
             </title>
-            <updated>2024-03-19T03:24:30.000Z</updated>
+            <updated>2024-04-18T08:06:19.000Z</updated>
             <id>https://wudanyang6.github.io//101 Tools/vim显示列分隔符/</id>
             <content type="html">
                 &lt;h1 id=&quot;vim&quot; tabindex=&quot;-1&quot;&gt;vim显示列分隔符&lt;/h1&gt;
@@ -2108,7 +2085,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 10x程序员工作法
                 
             </title>
-            <updated>2024-03-08T09:03:59.000Z</updated>
+            <updated>2024-04-18T07:55:19.000Z</updated>
             <id>https://wudanyang6.github.io//101 Tools/10x程序员工作法/</id>
             <content type="html">
                 &lt;h1 id=&quot;10x&quot; tabindex=&quot;-1&quot;&gt;10x程序员工作法&lt;/h1&gt;
@@ -3084,9 +3061,9 @@ if err != nil {
 &lt;/ol&gt;
 &lt;h2 id=&quot;1-2&quot; tabindex=&quot;-1&quot;&gt;1.2 使用场景&lt;/h2&gt;
 &lt;p&gt;Kafka的这些优点使它在需要处理大量实时数据的系统中特别有价值，包括日志聚合、流式处理、事件源、实时监控和分析等场景。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-16_812.png&quot; alt=&quot;clop_2024-01-16_812.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-16_812.png&quot; alt=&quot;clop_2024-01-16_812.png&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;1-3-kafka&quot; tabindex=&quot;-1&quot;&gt;1.3 kafka生产消费流程&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-16_813.png&quot; alt=&quot;clop_2024-01-16_813.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-16_813.png&quot; alt=&quot;clop_2024-01-16_813.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/mac%20%E8%BF%90%E8%A1%8C%20kafka/&quot;&gt;../100 Programmer/mac 运行 kafka&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;2-kafka&quot; tabindex=&quot;-1&quot;&gt;2 Kafka 整体架构&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/Resources/drawio/Kafka%20%E6%95%B0%E6%8D%AE%E6%B5%81.png&quot; alt=&quot;Kafka 数据流.png&quot; /&gt;&lt;/p&gt;
@@ -3111,7 +3088,7 @@ if err != nil {
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/Resources/drawio/kafka%E5%AD%98%E5%82%A8.drawio.png&quot; alt=&quot;kafka存储.drawio.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;kafka 存储的时候也是使用同样的格式存储到磁盘上，这样可以利用到零拷贝技术&lt;/p&gt;
 &lt;h2 id=&quot;3-2&quot; tabindex=&quot;-1&quot;&gt;3.2 生产者&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-16_814-kafka%E7%94%9F%E4%BA%A7%E8%80%85%E7%BB%84%E4%BB%B6%E5%9B%BE.png&quot; alt=&quot;clop_2024-01-16_814-kafka生产者组件图.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-16_814-kafka%E7%94%9F%E4%BA%A7%E8%80%85%E7%BB%84%E4%BB%B6%E5%9B%BE.png&quot; alt=&quot;clop_2024-01-16_814-kafka生产者组件图.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;流程如下：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;首先，我们需要创建一个 &lt;code&gt;ProducerRecord&lt;/code&gt;，这个对象需要包含消息的主题（topic）和值（value），可以选择性指定一个键值（key）或者分区（partition）。&lt;/li&gt;
@@ -3123,9 +3100,9 @@ if err != nil {
 &lt;/ol&gt;
 &lt;p&gt;生产者并不是将消息发送到任意的Broker，而是发送到管理特定Partition的Leader Broker上，以确保消息的正确存储和分发。&lt;/p&gt;
 &lt;p&gt;消息写入多个分区&lt;br /&gt;
-&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-18_844.png&quot; alt=&quot;clop_2024-01-18_844.png&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-18_844.png&quot; alt=&quot;clop_2024-01-18_844.png&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;3-3&quot; tabindex=&quot;-1&quot;&gt;3.3 消费者&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-17_818-%E4%B8%BB%E9%A2%98%E5%92%8C%E6%B6%88%E8%B4%B9%E8%80%85%E7%BE%A4%E7%BB%84%E7%9A%84%E5%85%B3%E7%B3%BB.png&quot; alt=&quot;clop_2024-01-17_818-主题和消费者群组的关系.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-17_818-%E4%B8%BB%E9%A2%98%E5%92%8C%E6%B6%88%E8%B4%B9%E8%80%85%E7%BE%A4%E7%BB%84%E7%9A%84%E5%85%B3%E7%B3%BB.png&quot; alt=&quot;clop_2024-01-17_818-主题和消费者群组的关系.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/Resources/drawio/kafka%E6%B6%88%E8%B4%B9%E8%80%85.drawio.png&quot; alt=&quot;kafka消费者.drawio&quot; /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;3-3-1-offset&quot; tabindex=&quot;-1&quot;&gt;3.3.1 提交offset&lt;/h3&gt;
 &lt;p&gt;Kafka消费者提交偏移量的过程是为了记录消费者在消费Topic的Partition时当前的位置，以便在消费者重启或发生故障时能从上次处理的位置继续消费，保证消息不会丢失也不会被重复消费。提交偏移量的过程主要包括以下步骤：&lt;/p&gt;
@@ -3156,14 +3133,14 @@ if err != nil {
 &lt;h3 id=&quot;3-4-2&quot; tabindex=&quot;-1&quot;&gt;3.4.2 与首领保持一致&lt;/h3&gt;
 &lt;p&gt;为了与首领保持同步，跟随者向首领发送获取数据的请求，&lt;strong&gt;这种请求与消费者为了读取消息而发送的请求是一样的&lt;/strong&gt;。首领将响应消息发给跟随者。请求消息里包含了跟随者想要获取消息的偏移量，而且这些偏移量总是有序的。&lt;/p&gt;
 &lt;h2 id=&quot;3-5&quot; tabindex=&quot;-1&quot;&gt;3.5 处理请求&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-18_846.png&quot; alt=&quot;clop_2024-01-18_846.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-18_846.png&quot; alt=&quot;clop_2024-01-18_846.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Kafka 使用零复制技术向客户端发送消息——也就是说，顺序读写内容，Kafka 直接把消息从文件(或者更确切地说是 Linux 文件系统缓存)里发送到网络通道，而不需要经过任何中间缓冲区。&lt;/p&gt;
 &lt;p&gt;零拷贝示意图：&lt;br /&gt;
-&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-18_848.png&quot; alt=&quot;clop_2024-01-18_848.png&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-18_848.png&quot; alt=&quot;clop_2024-01-18_848.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;零拷贝省略了数据在内核空间和用户空间之间的重复穿梭；用户态和内核态切换时产生中断，耗时；&lt;/p&gt;
 &lt;p&gt;生产请求和获取请求都必须发送给分区的首领副本。&lt;/p&gt;
 &lt;p&gt;如何获取分区首领所在的broker：&lt;br /&gt;
-&lt;img src=&quot;https://wudanyang6.github.io/img/user/card/clop_2024-01-18_847.png&quot; alt=&quot;clop_2024-01-18_847.png&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-18_847.png&quot; alt=&quot;clop_2024-01-18_847.png&quot; /&gt;&lt;/p&gt;
 &lt;h1 id=&quot;4&quot; tabindex=&quot;-1&quot;&gt;4 可靠性保证&lt;/h1&gt;
 &lt;p&gt;先了解一个概念：不完全的首领选举&lt;/p&gt;
 &lt;h2 id=&quot;4-1&quot; tabindex=&quot;-1&quot;&gt;4.1 消息传递语义&lt;/h2&gt;
@@ -3644,10 +3621,10 @@ for j := 0; j &amp;lt; 4; j++ {
                 nginx-master-start-worker
                 
             </title>
-            <updated>2024-02-22T07:57:08.000Z</updated>
+            <updated>2024-04-18T08:29:49.000Z</updated>
             <id>https://wudanyang6.github.io//100 Programmer/nginx/nginx-master-start-worker/</id>
             <content type="html">
-                &lt;h1 id=&quot;nginx-master&quot; tabindex=&quot;-1&quot;&gt;Nginx Master 进程启动子进程的流程&lt;/h1&gt;
+                &lt;h1 id=&quot;nginx-master-start-worker&quot; tabindex=&quot;-1&quot;&gt;nginx-master-start-worker&lt;/h1&gt;
 &lt;h2 id=&quot;入口&quot; tabindex=&quot;-1&quot;&gt;入口&lt;/h2&gt;
 &lt;p&gt;启动子进程的流程在&lt;code&gt;ngx_start_worker_processes&lt;/code&gt;函数中，具体代码如下：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;static void
@@ -3759,6 +3736,177 @@ if (s == NGX_MAX_PROCESSES) {
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/nginx/nginx-master-start-worker/" />
+        </entry>
+        <entry>
+            <title>
+                nginx master 进程
+                
+            </title>
+            <updated>2024-04-18T08:30:02.000Z</updated>
+            <id>https://wudanyang6.github.io//100 Programmer/linux/nginx master 进程/</id>
+            <content type="html">
+                &lt;h1 id=&quot;nginx-master&quot; tabindex=&quot;-1&quot;&gt;nginx master 进程&lt;/h1&gt;
+&lt;p&gt;之前有说到 &lt;a href=&quot;https://wudanyang.top/post/nginx/nginx-process/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;，下面来看一下 &lt;code&gt;nginx master&lt;/code&gt; 进程的主要工作&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;nginx&lt;/code&gt; 的入口 &lt;code&gt;main&lt;/code&gt; 函数在 &lt;code&gt;nginx.c&lt;/code&gt; 文件中&lt;/p&gt;
+&lt;p&gt;函数原型为：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;int ngx_cdecl
+main(int argc, char *const *argv)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在这个函数中，&lt;code&gt;master&lt;/code&gt; 做了一系列的初始化操作&lt;/p&gt;
+&lt;p&gt;最终在下面这个地方进入了主流程中：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;//...
+    if (ngx_process == NGX_PROCESS_SINGLE) {
+        ngx_single_process_cycle(cycle);
+
+    } else {
+        ngx_master_process_cycle(cycle);
+    }
+//...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;因为我们主要看 &lt;code&gt;master-worker&lt;/code&gt; 这种进程模型，所以进入 &lt;code&gt;ngx_master_process_cycle&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;设置信号屏蔽字，防止创建子进程过程中被信号中断&quot; tabindex=&quot;-1&quot;&gt;设置信号屏蔽字，防止创建子进程过程中被信号中断&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;// 先清空信号集
+    sigemptyset(&amp;amp;set);
+    sigaddset(&amp;amp;set, SIGCHLD);
+    sigaddset(&amp;amp;set, SIGALRM);
+    sigaddset(&amp;amp;set, SIGIO);
+    sigaddset(&amp;amp;set, SIGINT);
+    sigaddset(&amp;amp;set, ngx_signal_value(NGX_RECONFIGURE_SIGNAL));
+    sigaddset(&amp;amp;set, ngx_signal_value(NGX_REOPEN_SIGNAL));
+    sigaddset(&amp;amp;set, ngx_signal_value(NGX_NOACCEPT_SIGNAL));
+    sigaddset(&amp;amp;set, ngx_signal_value(NGX_TERMINATE_SIGNAL));
+    sigaddset(&amp;amp;set, ngx_signal_value(NGX_SHUTDOWN_SIGNAL));
+    sigaddset(&amp;amp;set, ngx_signal_value(NGX_CHANGEBIN_SIGNAL));
+
+// 设置信号屏蔽字，将 set 中的信号设置为阻塞状态，防止创建worker 的过程中，被进来的信号打断
+    if (sigprocmask(SIG_BLOCK, &amp;amp;set, NULL) == -1) {
+        ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, ngx_errno,
+                      &amp;quot;sigprocmask() failed&amp;quot;);
+    }
+
+// 将 set 清空
+    sigemptyset(&amp;amp;set);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;设置信号屏蔽字，防止在创建子进程的过程中被信号处理程序中断&lt;/p&gt;
+&lt;p&gt;关于信号屏蔽字，引用 &lt;code&gt;《UNIX 环境高级编程》 &lt;/code&gt;中信号一节的部分内容：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;进程可以选用&lt;code&gt;“阻塞信号递送”&lt;/code&gt;。如果为进程产生了一个&lt;code&gt;阻塞&lt;/code&gt;的信号,而且对该信号的动作是系统默认动作或捕捉该信号, 则为该进程将此信号保持为&lt;code&gt;未决状态&lt;/code&gt;,直到该进程对此信号解除了阻塞, 或者将对此信号的动作更改为忽略。内核在&lt;code&gt;递送&lt;/code&gt;一个原来被阻塞的信号给进程时(而不是在产生该信号时),才决定对它的处理方式。于是进程在信号递送给它之前仍可改变对该信号的动作。进程调用 &lt;code&gt;sigpending&lt;/code&gt; 函数(见10.13节)来判定哪些信号是设置为阻塞并处于未决状态的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每个进程都有一个&lt;code&gt;信号屏蔽字( signal mask)&lt;/code&gt;,它规定了当前要阻塞递送到该进程的&lt;code&gt;信号集&lt;/code&gt;。对于每种可能的信号,该屏蔽字中都有一位与之对应。对于某种信号,若其对应位已设置,则它当前是被阻塞的。进程可以调用 &lt;code&gt;sigprocmask&lt;/code&gt;(在10.12节中说明)来检测和更改其当前信号屏蔽字。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;当然，在下面创建完子进程之后，会使用 &lt;code&gt;sigsuspend&lt;/code&gt; 解除信号屏蔽，并使 master 进程进入休眠&lt;/p&gt;
+&lt;p&gt;关于 &lt;code&gt;sigsuspend&lt;/code&gt; 函数，简单来说，它是一个 &lt;code&gt;sigprocmask(SIG_SETMASK, &amp;amp;emptyset, NULL)&lt;/code&gt; 和 &lt;code&gt;pause()&lt;/code&gt; 函数的结合体，不过相对于使用两个函数完成上述操作，&lt;code&gt;sigsuspend&lt;/code&gt; 是 &lt;code&gt;原子操作&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;具体的操作如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用新的信号集合设置屏蔽字，在这里是清空屏蔽字&lt;/li&gt;
+&lt;li&gt;调用信号处理函数，并从信号处理程序返回&lt;/li&gt;
+&lt;li&gt;屏蔽字恢复成调用 &lt;code&gt;sigsuspend&lt;/code&gt; 之前的值（再次不让进程被信号打断）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;master-title&quot; tabindex=&quot;-1&quot;&gt;设置 master 进程的 title&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;static u_char  master_process[] = &amp;quot;master process&amp;quot;;
+
+    size = sizeof(master_process);
+
+    for (i = 0; i &amp;lt; ngx_argc; i++) {
+        size += ngx_strlen(ngx_argv[i]) + 1;
+    }
+
+    title = ngx_pnalloc(cycle-&amp;gt;pool, size);
+    if (title == NULL) {
+        /* fatal */
+        exit(2);
+    }
+
+    p = ngx_cpymem(title, master_process, sizeof(master_process) - 1);
+    for (i = 0; i &amp;lt; ngx_argc; i++) {
+        *p++ = &#39; &#39;;
+        p = ngx_cpystrn(p, (u_char *) ngx_argv[i], size);
+    }
+
+    ngx_setproctitle(title);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;将进程&lt;code&gt;title&lt;/code&gt;设置成三个部分：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;固定字符：&lt;code&gt;nginx:&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;主进程标志: &lt;code&gt;master process&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;命令行启动的命令，如：&lt;code&gt;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;所以进程刚开始是这样显示的：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ps aux | grep nginx | grep -v grep
+root      183117  0.0  0.0   4324  2680 ?        ts   17:07   0:00 /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;设置了 title 之后，变成了下面这样：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ps aux | grep nginx | grep -v grep
+root      183117  0.0  0.0   4324  2680 ?        ts   17:07   0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;code-worker-code-code-cache-code&quot; tabindex=&quot;-1&quot;&gt;根据配置启动相应数量的 &lt;code&gt;worker&lt;/code&gt; 和 &lt;code&gt;cache&lt;/code&gt; 管理进程&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;ccf = (ngx_core_conf_t *) ngx_get_conf(cycle-&amp;gt;conf_ctx, ngx_core_module);
+
+ngx_start_worker_processes(cycle, ccf-&amp;gt;worker_processes,
+                           NGX_PROCESS_RESPAWN);
+ngx_start_cache_manager_processes(cycle, 0);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;监听信号，并作出响应&quot; tabindex=&quot;-1&quot;&gt;监听信号，并作出响应&lt;/h2&gt;
+&lt;p&gt;在 &lt;code&gt;ngx_init_signals&lt;/code&gt; 函数中，对原始信号做了变量名映射，具体映射如下：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;信号&lt;/th&gt;
+&lt;th&gt;对应进程中的标志位变量&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;QUIT&lt;/td&gt;
+&lt;td&gt;ngx_quit&lt;/td&gt;
+&lt;td&gt;优雅关闭服务&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TERM 或 INT&lt;/td&gt;
+&lt;td&gt;ngx_terminate&lt;/td&gt;
+&lt;td&gt;强制关闭服务&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;USR1&lt;/td&gt;
+&lt;td&gt;ngx_reopen&lt;/td&gt;
+&lt;td&gt;重新打开服务中的所有文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;WINCH&lt;/td&gt;
+&lt;td&gt;ngx_noaccept&lt;/td&gt;
+&lt;td&gt;所有子进程不再接受处理新的连接，实际相当于对所有的子进程发送 QUIT 信号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;USR2&lt;/td&gt;
+&lt;td&gt;ngx_change_binary&lt;/td&gt;
+&lt;td&gt;平滑升级到新版本的 Nginx 程序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;HUP&lt;/td&gt;
+&lt;td&gt;ngx_reconfigure&lt;/td&gt;
+&lt;td&gt;重新读取配置文件并使服务对新配置项生效&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CHLD&lt;/td&gt;
+&lt;td&gt;ngx_reap&lt;/td&gt;
+&lt;td&gt;有子进程意外结束&lt;br /&gt;master 会监控所有子进程，并在子进程意外退出时调用 ngx_reap_children 方法重启子进程&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;master 并不是时刻不停的执行循环检测这些标志位，而是通过 &lt;code&gt;sigsuspend&lt;/code&gt; 进入休眠，等待有信号唤醒进程时，再循环检测所有信号并处理。&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/midion9/article/details/50605337&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx中的ngx_cdecl&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/33a7502de6e6&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Nginx源码|Nginx信号处理&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://knifefly.cn/2017/09/15/nginx-%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx 信号处理&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/ShaoLiang_Ge/article/details/57984123&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;LINUX C中sigprocmask()函数用法&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/linux_ever/article/details/50344837&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;linux信号的阻塞和未决&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;《UNIX 环境高级编程》&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/nginx/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//100 Programmer/linux/nginx master 进程/" />
         </entry>
         <entry>
             <title>

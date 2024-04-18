@@ -511,6 +511,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/nginx master 进程/">Nginx Master 进程主流程 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/文件描述符/">文件描述符 </a>
                 </div>
             
@@ -1297,17 +1308,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/PHP生成zip压缩包/">PHP生成zip压缩包 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/vscode git 只暂存部分改动/">vscode git 只暂存部分改动 </a>
                 </div>
             
@@ -1627,7 +1627,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T07:53:25.542Z';
+        const searchIndexDate = '2024-04-18T08:33:44.626Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1639,9 +1639,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T07:53:25.542Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T08:33:44.626Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T07:53:25.542Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T08:33:44.626Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1900,13 +1900,13 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-04-16T19:04:00+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-02-22T15:57:08+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-04-16T19:04:00+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T16:29:49+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="nginx-master" tabindex="-1">Nginx Master 进程启动子进程的流程</h1>
+      <h1 id="nginx-master-start-worker" tabindex="-1">nginx-master-start-worker</h1>
 <h2 id="入口" tabindex="-1">入口</h2>
 <p>启动子进程的流程在<code>ngx_start_worker_processes</code>函数中，具体代码如下：</p>
 <pre><code class="language-c">static void
@@ -2283,7 +2283,7 @@ if (s == NGX_MAX_PROCESSES) {
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#nginx-master">Nginx Master 进程启动子进程的流程</a>
+                    <li><a href="#nginx-master-start-worker">nginx-master-start-worker</a>
             
                 <ol>
                     
@@ -2324,7 +2324,8 @@ if (s == NGX_MAX_PROCESSES) {
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/100 Programmer/linux/nginx master 进程/" data-note-icon="2" class="backlink">Nginx Master 进程主流程</a>
+                                                </div><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
                                                 </div></div>
                               </div>
                         

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>PHP生成zip压缩包</title>
+    <title>Nginx Master 进程主流程</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -501,6 +501,17 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/linux-树莓派无法上网排查/">linux-树莓派无法上网排查 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/100 Programmer/linux/nginx master 进程/">Nginx Master 进程主流程 </a>
                 </div>
             
         </div>
@@ -1297,17 +1308,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/PHP生成zip压缩包/">PHP生成zip压缩包 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/vscode git 只暂存部分改动/">vscode git 只暂存部分改动 </a>
                 </div>
             
@@ -1627,7 +1627,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T07:53:25.542Z';
+        const searchIndexDate = '2024-04-18T08:33:44.626Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1639,9 +1639,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T07:53:25.542Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T08:33:44.626Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T07:53:25.542Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T08:33:44.626Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1873,7 +1873,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">PHP生成zip压缩包</h1>
+          <h1 data-note-icon="2">Nginx Master 进程主流程</h1>
         
         <div class="header-meta">
           
@@ -1881,24 +1881,196 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #nginx
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #master
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #进程
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #源码分析
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-11-23T14:16:24+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-02-02T00:04:34+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-04-14T13:13:57+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T16:30:02+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="php-zip" tabindex="-1">PHP生成zip压缩包</h1>
-<h2 id="zip" tabindex="-1">将文件压缩成zip格式</h2>
-<pre><code class="language-php">&lt;?php
-$path = &quot;file.txt&quot;;
-$filename = &quot;file.zip&quot;;
-
-$zip = new ZipArchive();
-$zip-&gt;open($filename, ZipArchive::CREATE); //打开压缩包
-$zip-&gt;addFile($path, basename($path)); //向压缩包中添加文件
-$zip-&gt;close(); //关闭压缩包
+      <h1 id="nginx-master" tabindex="-1">nginx master 进程</h1>
+<p>之前有说到 <a href="https://wudanyang.top/post/nginx/nginx-process/" target="_blank" class="external-link">nginx 进程模型-整体架构</a>，下面来看一下 <code>nginx master</code> 进程的主要工作</p>
+<p><code>nginx</code> 的入口 <code>main</code> 函数在 <code>nginx.c</code> 文件中</p>
+<p>函数原型为：</p>
+<pre><code class="language-c">int ngx_cdecl
+main(int argc, char *const *argv)
 </code></pre>
+<p>在这个函数中，<code>master</code> 做了一系列的初始化操作</p>
+<p>最终在下面这个地方进入了主流程中：</p>
+<pre><code class="language-c">//...
+    if (ngx_process == NGX_PROCESS_SINGLE) {
+        ngx_single_process_cycle(cycle);
+
+    } else {
+        ngx_master_process_cycle(cycle);
+    }
+//...
+</code></pre>
+<p>因为我们主要看 <code>master-worker</code> 这种进程模型，所以进入 <code>ngx_master_process_cycle</code></p>
+<h2 id="设置信号屏蔽字，防止创建子进程过程中被信号中断" tabindex="-1">设置信号屏蔽字，防止创建子进程过程中被信号中断</h2>
+<pre><code class="language-c">// 先清空信号集
+    sigemptyset(&amp;set);
+    sigaddset(&amp;set, SIGCHLD);
+    sigaddset(&amp;set, SIGALRM);
+    sigaddset(&amp;set, SIGIO);
+    sigaddset(&amp;set, SIGINT);
+    sigaddset(&amp;set, ngx_signal_value(NGX_RECONFIGURE_SIGNAL));
+    sigaddset(&amp;set, ngx_signal_value(NGX_REOPEN_SIGNAL));
+    sigaddset(&amp;set, ngx_signal_value(NGX_NOACCEPT_SIGNAL));
+    sigaddset(&amp;set, ngx_signal_value(NGX_TERMINATE_SIGNAL));
+    sigaddset(&amp;set, ngx_signal_value(NGX_SHUTDOWN_SIGNAL));
+    sigaddset(&amp;set, ngx_signal_value(NGX_CHANGEBIN_SIGNAL));
+
+// 设置信号屏蔽字，将 set 中的信号设置为阻塞状态，防止创建worker 的过程中，被进来的信号打断
+    if (sigprocmask(SIG_BLOCK, &amp;set, NULL) == -1) {
+        ngx_log_error(NGX_LOG_ALERT, cycle-&gt;log, ngx_errno,
+                      &quot;sigprocmask() failed&quot;);
+    }
+
+// 将 set 清空
+    sigemptyset(&amp;set);
+</code></pre>
+<p>设置信号屏蔽字，防止在创建子进程的过程中被信号处理程序中断</p>
+<p>关于信号屏蔽字，引用 <code>《UNIX 环境高级编程》 </code>中信号一节的部分内容：</p>
+<blockquote>
+<p>进程可以选用<code>“阻塞信号递送”</code>。如果为进程产生了一个<code>阻塞</code>的信号,而且对该信号的动作是系统默认动作或捕捉该信号, 则为该进程将此信号保持为<code>未决状态</code>,直到该进程对此信号解除了阻塞, 或者将对此信号的动作更改为忽略。内核在<code>递送</code>一个原来被阻塞的信号给进程时(而不是在产生该信号时),才决定对它的处理方式。于是进程在信号递送给它之前仍可改变对该信号的动作。进程调用 <code>sigpending</code> 函数(见10.13节)来判定哪些信号是设置为阻塞并处于未决状态的。</p>
+</blockquote>
+<blockquote>
+<p>每个进程都有一个<code>信号屏蔽字( signal mask)</code>,它规定了当前要阻塞递送到该进程的<code>信号集</code>。对于每种可能的信号,该屏蔽字中都有一位与之对应。对于某种信号,若其对应位已设置,则它当前是被阻塞的。进程可以调用 <code>sigprocmask</code>(在10.12节中说明)来检测和更改其当前信号屏蔽字。</p>
+</blockquote>
+<p>当然，在下面创建完子进程之后，会使用 <code>sigsuspend</code> 解除信号屏蔽，并使 master 进程进入休眠</p>
+<p>关于 <code>sigsuspend</code> 函数，简单来说，它是一个 <code>sigprocmask(SIG_SETMASK, &amp;emptyset, NULL)</code> 和 <code>pause()</code> 函数的结合体，不过相对于使用两个函数完成上述操作，<code>sigsuspend</code> 是 <code>原子操作</code>。</p>
+<p>具体的操作如下：</p>
+<ol>
+<li>使用新的信号集合设置屏蔽字，在这里是清空屏蔽字</li>
+<li>调用信号处理函数，并从信号处理程序返回</li>
+<li>屏蔽字恢复成调用 <code>sigsuspend</code> 之前的值（再次不让进程被信号打断）</li>
+</ol>
+<h2 id="master-title" tabindex="-1">设置 master 进程的 title</h2>
+<pre><code class="language-c">static u_char  master_process[] = &quot;master process&quot;;
+
+    size = sizeof(master_process);
+
+    for (i = 0; i &lt; ngx_argc; i++) {
+        size += ngx_strlen(ngx_argv[i]) + 1;
+    }
+
+    title = ngx_pnalloc(cycle-&gt;pool, size);
+    if (title == NULL) {
+        /* fatal */
+        exit(2);
+    }
+
+    p = ngx_cpymem(title, master_process, sizeof(master_process) - 1);
+    for (i = 0; i &lt; ngx_argc; i++) {
+        *p++ = ' ';
+        p = ngx_cpystrn(p, (u_char *) ngx_argv[i], size);
+    }
+
+    ngx_setproctitle(title);
+</code></pre>
+<p>将进程<code>title</code>设置成三个部分：</p>
+<ol>
+<li>固定字符：<code>nginx:</code></li>
+<li>主进程标志: <code>master process</code></li>
+<li>命令行启动的命令，如：<code>/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx</code></li>
+</ol>
+<p>所以进程刚开始是这样显示的：</p>
+<pre><code class="language-sh">$ ps aux | grep nginx | grep -v grep
+root      183117  0.0  0.0   4324  2680 ?        ts   17:07   0:00 /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
+</code></pre>
+<p>设置了 title 之后，变成了下面这样：</p>
+<pre><code class="language-sh">$ ps aux | grep nginx | grep -v grep
+root      183117  0.0  0.0   4324  2680 ?        ts   17:07   0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
+</code></pre>
+<h2 id="code-worker-code-code-cache-code" tabindex="-1">根据配置启动相应数量的 <code>worker</code> 和 <code>cache</code> 管理进程</h2>
+<pre><code class="language-c">ccf = (ngx_core_conf_t *) ngx_get_conf(cycle-&gt;conf_ctx, ngx_core_module);
+
+ngx_start_worker_processes(cycle, ccf-&gt;worker_processes,
+                           NGX_PROCESS_RESPAWN);
+ngx_start_cache_manager_processes(cycle, 0);
+</code></pre>
+<h2 id="监听信号，并作出响应" tabindex="-1">监听信号，并作出响应</h2>
+<p>在 <code>ngx_init_signals</code> 函数中，对原始信号做了变量名映射，具体映射如下：</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>信号</th>
+<th>对应进程中的标志位变量</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QUIT</td>
+<td>ngx_quit</td>
+<td>优雅关闭服务</td>
+</tr>
+<tr>
+<td>TERM 或 INT</td>
+<td>ngx_terminate</td>
+<td>强制关闭服务</td>
+</tr>
+<tr>
+<td>USR1</td>
+<td>ngx_reopen</td>
+<td>重新打开服务中的所有文件</td>
+</tr>
+<tr>
+<td>WINCH</td>
+<td>ngx_noaccept</td>
+<td>所有子进程不再接受处理新的连接，实际相当于对所有的子进程发送 QUIT 信号</td>
+</tr>
+<tr>
+<td>USR2</td>
+<td>ngx_change_binary</td>
+<td>平滑升级到新版本的 Nginx 程序</td>
+</tr>
+<tr>
+<td>HUP</td>
+<td>ngx_reconfigure</td>
+<td>重新读取配置文件并使服务对新配置项生效</td>
+</tr>
+<tr>
+<td>CHLD</td>
+<td>ngx_reap</td>
+<td>有子进程意外结束<br>master 会监控所有子进程，并在子进程意外退出时调用 ngx_reap_children 方法重启子进程</td>
+</tr>
+</tbody>
+</table></div>
+<p>master 并不是时刻不停的执行循环检测这些标志位，而是通过 <code>sigsuspend</code> 进入休眠，等待有信号唤醒进程时，再循环检测所有信号并处理。</p>
+<h1 id="参考" tabindex="-1">参考</h1>
+<p><a href="https://blog.csdn.net/midion9/article/details/50605337" target="_blank" class="external-link">nginx中的ngx_cdecl</a></p>
+<p><a href="https://www.jianshu.com/p/33a7502de6e6" target="_blank" class="external-link">Nginx源码|Nginx信号处理</a></p>
+<p><a href="https://knifefly.cn/2017/09/15/nginx-%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/" target="_blank" class="external-link">nginx 信号处理</a></p>
+<p><a href="https://blog.csdn.net/ShaoLiang_Ge/article/details/57984123" target="_blank" class="external-link">LINUX C中sigprocmask()函数用法</a></p>
+<p><a href="https://blog.csdn.net/linux_ever/article/details/50344837" target="_blank" class="external-link">linux信号的阻塞和未决</a></p>
+<p>《UNIX 环境高级编程》</p>
+<p><a class="internal-link" target="" data-note-icon="2" href="/100 Programmer/nginx/nginx-master-start-worker/">nginx-master-start-worker</a></p>
 
       
       
@@ -2167,13 +2339,25 @@ $zip-&gt;close(); //关闭压缩包
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#php-zip">PHP生成zip压缩包</a>
+                    <li><a href="#nginx-master">nginx master 进程</a>
             
                 <ol>
                     
-                    <li><a href="#zip">将文件压缩成zip格式</a>
+                    <li><a href="#设置信号屏蔽字，防止创建子进程过程中被信号中断">设置信号屏蔽字，防止创建子进程过程中被信号中断</a>
+            		</li>
+
+                    <li><a href="#master-title">设置 master 进程的 title</a>
+            		</li>
+
+                    <li><a href="#code-worker-code-code-cache-code">根据配置启动相应数量的 worker 和 cache 管理进程</a>
+            		</li>
+
+                    <li><a href="#监听信号，并作出响应">监听信号，并作出响应</a>
             		</li>
                 </ol>
+            		</li>
+
+                    <li><a href="#参考">参考</a>
             		</li>
                 </ol>
             </nav>
