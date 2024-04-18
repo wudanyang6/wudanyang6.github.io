@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-18T08:33:45Z</updated>
+    <updated>2024-04-18T08:34:47Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -457,7 +457,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-18T08:33:30Z</updated>
+            <updated>2024-04-18T08:34:35Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -482,7 +482,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-18T08:33:30Z</updated>
+            <updated>2024-04-18T08:34:35Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -581,7 +581,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-18T08:33:30Z</updated>
+            <updated>2024-04-18T08:34:35Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -633,7 +633,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-18T08:33:30Z</updated>
+            <updated>2024-04-18T08:34:35Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -897,7 +897,7 @@ done
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/linux/nginx%20master%20%E8%BF%9B%E7%A8%8B/&quot;&gt;nginx master 进程&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;nginx master 进程&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2021-04-14 13:13:57&lt;/td&gt;
 &lt;td&gt;2024-04-18 16:30:09&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nginx&quot;&gt;#nginx&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#master&quot;&gt;#master&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#进程&quot;&gt;#进程&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#源码分析&quot;&gt;#源码分析&lt;/a&gt;&lt;/td&gt;
@@ -1439,6 +1439,29 @@ done
 
             </content>
             <link href="https://wudanyang6.github.io//card/alfred-翻译插件/" />
+        </entry>
+        <entry>
+            <title>
+                PHP生成zip压缩包
+                
+            </title>
+            <updated>2024-02-01T16:04:34.000Z</updated>
+            <id>https://wudanyang6.github.io//card/PHP生成zip压缩包/</id>
+            <content type="html">
+                &lt;h1 id=&quot;php-zip&quot; tabindex=&quot;-1&quot;&gt;PHP生成zip压缩包&lt;/h1&gt;
+&lt;h2 id=&quot;zip&quot; tabindex=&quot;-1&quot;&gt;将文件压缩成zip格式&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$path = &amp;quot;file.txt&amp;quot;;
+$filename = &amp;quot;file.zip&amp;quot;;
+
+$zip = new ZipArchive();
+$zip-&amp;gt;open($filename, ZipArchive::CREATE); //打开压缩包
+$zip-&amp;gt;addFile($path, basename($path)); //向压缩包中添加文件
+$zip-&amp;gt;close(); //关闭压缩包
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/PHP生成zip压缩包/" />
         </entry>
         <entry>
             <title>
@@ -3736,177 +3759,6 @@ if (s == NGX_MAX_PROCESSES) {
 
             </content>
             <link href="https://wudanyang6.github.io//100 Programmer/nginx/nginx-master-start-worker/" />
-        </entry>
-        <entry>
-            <title>
-                nginx master 进程
-                
-            </title>
-            <updated>2024-04-18T08:30:02.000Z</updated>
-            <id>https://wudanyang6.github.io//100 Programmer/linux/nginx master 进程/</id>
-            <content type="html">
-                &lt;h1 id=&quot;nginx-master&quot; tabindex=&quot;-1&quot;&gt;nginx master 进程&lt;/h1&gt;
-&lt;p&gt;之前有说到 &lt;a href=&quot;https://wudanyang.top/post/nginx/nginx-process/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;，下面来看一下 &lt;code&gt;nginx master&lt;/code&gt; 进程的主要工作&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;nginx&lt;/code&gt; 的入口 &lt;code&gt;main&lt;/code&gt; 函数在 &lt;code&gt;nginx.c&lt;/code&gt; 文件中&lt;/p&gt;
-&lt;p&gt;函数原型为：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;int ngx_cdecl
-main(int argc, char *const *argv)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;在这个函数中，&lt;code&gt;master&lt;/code&gt; 做了一系列的初始化操作&lt;/p&gt;
-&lt;p&gt;最终在下面这个地方进入了主流程中：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;//...
-    if (ngx_process == NGX_PROCESS_SINGLE) {
-        ngx_single_process_cycle(cycle);
-
-    } else {
-        ngx_master_process_cycle(cycle);
-    }
-//...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;因为我们主要看 &lt;code&gt;master-worker&lt;/code&gt; 这种进程模型，所以进入 &lt;code&gt;ngx_master_process_cycle&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&quot;设置信号屏蔽字，防止创建子进程过程中被信号中断&quot; tabindex=&quot;-1&quot;&gt;设置信号屏蔽字，防止创建子进程过程中被信号中断&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;// 先清空信号集
-    sigemptyset(&amp;amp;set);
-    sigaddset(&amp;amp;set, SIGCHLD);
-    sigaddset(&amp;amp;set, SIGALRM);
-    sigaddset(&amp;amp;set, SIGIO);
-    sigaddset(&amp;amp;set, SIGINT);
-    sigaddset(&amp;amp;set, ngx_signal_value(NGX_RECONFIGURE_SIGNAL));
-    sigaddset(&amp;amp;set, ngx_signal_value(NGX_REOPEN_SIGNAL));
-    sigaddset(&amp;amp;set, ngx_signal_value(NGX_NOACCEPT_SIGNAL));
-    sigaddset(&amp;amp;set, ngx_signal_value(NGX_TERMINATE_SIGNAL));
-    sigaddset(&amp;amp;set, ngx_signal_value(NGX_SHUTDOWN_SIGNAL));
-    sigaddset(&amp;amp;set, ngx_signal_value(NGX_CHANGEBIN_SIGNAL));
-
-// 设置信号屏蔽字，将 set 中的信号设置为阻塞状态，防止创建worker 的过程中，被进来的信号打断
-    if (sigprocmask(SIG_BLOCK, &amp;amp;set, NULL) == -1) {
-        ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, ngx_errno,
-                      &amp;quot;sigprocmask() failed&amp;quot;);
-    }
-
-// 将 set 清空
-    sigemptyset(&amp;amp;set);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;设置信号屏蔽字，防止在创建子进程的过程中被信号处理程序中断&lt;/p&gt;
-&lt;p&gt;关于信号屏蔽字，引用 &lt;code&gt;《UNIX 环境高级编程》 &lt;/code&gt;中信号一节的部分内容：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;进程可以选用&lt;code&gt;“阻塞信号递送”&lt;/code&gt;。如果为进程产生了一个&lt;code&gt;阻塞&lt;/code&gt;的信号,而且对该信号的动作是系统默认动作或捕捉该信号, 则为该进程将此信号保持为&lt;code&gt;未决状态&lt;/code&gt;,直到该进程对此信号解除了阻塞, 或者将对此信号的动作更改为忽略。内核在&lt;code&gt;递送&lt;/code&gt;一个原来被阻塞的信号给进程时(而不是在产生该信号时),才决定对它的处理方式。于是进程在信号递送给它之前仍可改变对该信号的动作。进程调用 &lt;code&gt;sigpending&lt;/code&gt; 函数(见10.13节)来判定哪些信号是设置为阻塞并处于未决状态的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;每个进程都有一个&lt;code&gt;信号屏蔽字( signal mask)&lt;/code&gt;,它规定了当前要阻塞递送到该进程的&lt;code&gt;信号集&lt;/code&gt;。对于每种可能的信号,该屏蔽字中都有一位与之对应。对于某种信号,若其对应位已设置,则它当前是被阻塞的。进程可以调用 &lt;code&gt;sigprocmask&lt;/code&gt;(在10.12节中说明)来检测和更改其当前信号屏蔽字。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;当然，在下面创建完子进程之后，会使用 &lt;code&gt;sigsuspend&lt;/code&gt; 解除信号屏蔽，并使 master 进程进入休眠&lt;/p&gt;
-&lt;p&gt;关于 &lt;code&gt;sigsuspend&lt;/code&gt; 函数，简单来说，它是一个 &lt;code&gt;sigprocmask(SIG_SETMASK, &amp;amp;emptyset, NULL)&lt;/code&gt; 和 &lt;code&gt;pause()&lt;/code&gt; 函数的结合体，不过相对于使用两个函数完成上述操作，&lt;code&gt;sigsuspend&lt;/code&gt; 是 &lt;code&gt;原子操作&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;具体的操作如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;使用新的信号集合设置屏蔽字，在这里是清空屏蔽字&lt;/li&gt;
-&lt;li&gt;调用信号处理函数，并从信号处理程序返回&lt;/li&gt;
-&lt;li&gt;屏蔽字恢复成调用 &lt;code&gt;sigsuspend&lt;/code&gt; 之前的值（再次不让进程被信号打断）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;master-title&quot; tabindex=&quot;-1&quot;&gt;设置 master 进程的 title&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;static u_char  master_process[] = &amp;quot;master process&amp;quot;;
-
-    size = sizeof(master_process);
-
-    for (i = 0; i &amp;lt; ngx_argc; i++) {
-        size += ngx_strlen(ngx_argv[i]) + 1;
-    }
-
-    title = ngx_pnalloc(cycle-&amp;gt;pool, size);
-    if (title == NULL) {
-        /* fatal */
-        exit(2);
-    }
-
-    p = ngx_cpymem(title, master_process, sizeof(master_process) - 1);
-    for (i = 0; i &amp;lt; ngx_argc; i++) {
-        *p++ = &#39; &#39;;
-        p = ngx_cpystrn(p, (u_char *) ngx_argv[i], size);
-    }
-
-    ngx_setproctitle(title);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;将进程&lt;code&gt;title&lt;/code&gt;设置成三个部分：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;固定字符：&lt;code&gt;nginx:&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;主进程标志: &lt;code&gt;master process&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;命令行启动的命令，如：&lt;code&gt;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;所以进程刚开始是这样显示的：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ps aux | grep nginx | grep -v grep
-root      183117  0.0  0.0   4324  2680 ?        ts   17:07   0:00 /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;设置了 title 之后，变成了下面这样：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ps aux | grep nginx | grep -v grep
-root      183117  0.0  0.0   4324  2680 ?        ts   17:07   0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;code-worker-code-code-cache-code&quot; tabindex=&quot;-1&quot;&gt;根据配置启动相应数量的 &lt;code&gt;worker&lt;/code&gt; 和 &lt;code&gt;cache&lt;/code&gt; 管理进程&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;ccf = (ngx_core_conf_t *) ngx_get_conf(cycle-&amp;gt;conf_ctx, ngx_core_module);
-
-ngx_start_worker_processes(cycle, ccf-&amp;gt;worker_processes,
-                           NGX_PROCESS_RESPAWN);
-ngx_start_cache_manager_processes(cycle, 0);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;监听信号，并作出响应&quot; tabindex=&quot;-1&quot;&gt;监听信号，并作出响应&lt;/h2&gt;
-&lt;p&gt;在 &lt;code&gt;ngx_init_signals&lt;/code&gt; 函数中，对原始信号做了变量名映射，具体映射如下：&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;信号&lt;/th&gt;
-&lt;th&gt;对应进程中的标志位变量&lt;/th&gt;
-&lt;th&gt;含义&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;QUIT&lt;/td&gt;
-&lt;td&gt;ngx_quit&lt;/td&gt;
-&lt;td&gt;优雅关闭服务&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;TERM 或 INT&lt;/td&gt;
-&lt;td&gt;ngx_terminate&lt;/td&gt;
-&lt;td&gt;强制关闭服务&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;USR1&lt;/td&gt;
-&lt;td&gt;ngx_reopen&lt;/td&gt;
-&lt;td&gt;重新打开服务中的所有文件&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;WINCH&lt;/td&gt;
-&lt;td&gt;ngx_noaccept&lt;/td&gt;
-&lt;td&gt;所有子进程不再接受处理新的连接，实际相当于对所有的子进程发送 QUIT 信号&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;USR2&lt;/td&gt;
-&lt;td&gt;ngx_change_binary&lt;/td&gt;
-&lt;td&gt;平滑升级到新版本的 Nginx 程序&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;HUP&lt;/td&gt;
-&lt;td&gt;ngx_reconfigure&lt;/td&gt;
-&lt;td&gt;重新读取配置文件并使服务对新配置项生效&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CHLD&lt;/td&gt;
-&lt;td&gt;ngx_reap&lt;/td&gt;
-&lt;td&gt;有子进程意外结束&lt;br /&gt;master 会监控所有子进程，并在子进程意外退出时调用 ngx_reap_children 方法重启子进程&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;master 并不是时刻不停的执行循环检测这些标志位，而是通过 &lt;code&gt;sigsuspend&lt;/code&gt; 进入休眠，等待有信号唤醒进程时，再循环检测所有信号并处理。&lt;/p&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/midion9/article/details/50605337&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx中的ngx_cdecl&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/33a7502de6e6&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Nginx源码|Nginx信号处理&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://knifefly.cn/2017/09/15/nginx-%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx 信号处理&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/ShaoLiang_Ge/article/details/57984123&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;LINUX C中sigprocmask()函数用法&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/linux_ever/article/details/50344837&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;linux信号的阻塞和未决&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《UNIX 环境高级编程》&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/100%20Programmer/nginx/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//100 Programmer/linux/nginx master 进程/" />
         </entry>
         <entry>
             <title>
