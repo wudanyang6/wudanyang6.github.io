@@ -785,6 +785,17 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/101 Tools/obsidian/不打开obsidian的情况下记录当前事件/">不打开obsidian的情况下记录当前事件 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -1286,17 +1297,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/不打开obsidian的情况下记录当前事件/">不打开obsidian的情况下记录当前事件 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/算法新年祝福语/">算法新年祝福语 </a>
                 </div>
             
@@ -1583,7 +1583,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T04:49:23.712Z';
+        const searchIndexDate = '2024-04-18T04:50:12.667Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1595,9 +1595,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T04:49:23.712Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T04:50:12.667Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T04:49:23.712Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T04:50:12.667Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1838,14 +1838,14 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-18T12:27:51+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T12:37:48+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-18T12:27:51+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T12:48:53+08:00"></span></div></div></div>
       
       
       </header>
       
       
       <h1 id="202404181228-code-open-background-code-obsidian" tabindex="-1">202404181228 使用 <code>open --background</code> 的形式打开 obsidian 不够轻便</h1>
-<p>mac 的快捷指令执行太慢，所以 <a class="internal-link" target="" data-note-icon="2" href="/card/不打开obsidian的情况下记录当前事件/">不打开obsidian的情况下记录当前事件</a> 虽然能够实现后台记录日志，但是对流程太过打扰，所以我现在使用了 <a class="internal-link is-unresolved" href="/404" target="">Raycast</a> 的 floating note 进行简单记录一些一闪而过的想法，或者使用 <a class="internal-link is-unresolved" href="/404" target="">Things</a> 的快速捕获功能进行记录</p>
+<p>mac 的快捷指令执行太慢，所以 <a class="internal-link" target="" data-note-icon="2" href="/101 Tools/obsidian/不打开obsidian的情况下记录当前事件/">不打开obsidian的情况下记录当前事件</a> 虽然能够实现后台记录日志，但是对流程太过打扰，所以我现在使用了 <a class="internal-link is-unresolved" href="/404" target="">Raycast</a> 的 floating note 进行简单记录一些一闪而过的想法，或者使用 <a class="internal-link is-unresolved" href="/404" target="">Things</a> 的快速捕获功能进行记录</p>
 
       
       

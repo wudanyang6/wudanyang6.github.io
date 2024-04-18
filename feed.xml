@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-18T04:49:24Z</updated>
+    <updated>2024-04-18T04:50:13Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -388,7 +388,7 @@
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-18T04:49:13Z</updated>
+            <updated>2024-04-18T04:50:02Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -413,7 +413,7 @@
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-18T04:49:13Z</updated>
+            <updated>2024-04-18T04:50:02Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -512,7 +512,7 @@
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-18T04:49:13Z</updated>
+            <updated>2024-04-18T04:50:02Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -564,7 +564,7 @@
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-18T04:49:13Z</updated>
+            <updated>2024-04-18T04:50:02Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -675,25 +675,6 @@
 
             </content>
             <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011192022 - 什么是卡片盒笔记法/" />
-        </entry>
-        <entry>
-            <title>
-                不打开obsidian的情况下记录当前事件
-                
-            </title>
-            <updated>2024-04-18T04:48:29.000Z</updated>
-            <id>https://wudanyang6.github.io//card/不打开obsidian的情况下记录当前事件/</id>
-            <content type="html">
-                &lt;h1 id=&quot;obsidian&quot; tabindex=&quot;-1&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/h1&gt;
-&lt;p&gt;将输入设置成你想附带的文本，传入内容改成“作为参数”&lt;/p&gt;
-&lt;p&gt;加上 &lt;code&gt;open --background &amp;quot;$1&amp;quot;&lt;/code&gt; 即可实现在不将 &lt;code&gt;obsidian&lt;/code&gt; 放到前台的情况下记录日志。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020220925234214.png&quot; alt=&quot;Pasted image 20220925234214.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;使用这种方法 obsidian 不会到前台占用注意力，不过仍然会将对应的操作完成&lt;/p&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://forum.obsidian.md/t/leave-obsidian-in-background-when-making-uri-call/34091&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Leave Obsidian in background when making URI call? - Developers &amp;amp; API - Obsidian Forum&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/不打开obsidian的情况下记录当前事件/" />
         </entry>
         <entry>
             <title>
@@ -847,15 +828,15 @@ done
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;202404181228 使用 &lt;code&gt;open --background&lt;/code&gt; 的形式打开 obsidian 不够轻便&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-18 12:27:51&lt;/td&gt;
-&lt;td&gt;2024-04-18 12:48:48&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/obsidian/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2022-09-25 23:42:01&lt;/td&gt;
+&lt;td&gt;2024-04-18 12:49:33&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2022-09-25 23:42:01&lt;/td&gt;
-&lt;td&gt;2024-04-18 12:48:31&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;202404181228 使用 &lt;code&gt;open --background&lt;/code&gt; 的形式打开 obsidian 不够轻便&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-18 12:27:51&lt;/td&gt;
+&lt;td&gt;2024-04-18 12:48:53&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1430,7 +1411,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240418124319.png&quot; alt=&quot;Pasted image 20240418124319.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;最终效果：&lt;br /&gt;
 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240418124550.png&quot; alt=&quot;Pasted image 20240418124550.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;obsidian 不会到前台占用你的注意力 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;obsidian 不会到前台占用你的注意力 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/obsidian/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/202404181240 快捷指令-记录今天的事情 obsidian/" />
@@ -1440,11 +1421,11 @@ $zip-&amp;gt;close(); //关闭压缩包
                 202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便
                 
             </title>
-            <updated>2024-04-18T04:37:48.000Z</updated>
+            <updated>2024-04-18T04:48:53.000Z</updated>
             <id>https://wudanyang6.github.io//card/202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404181228-code-open-background-code-obsidian&quot; tabindex=&quot;-1&quot;&gt;202404181228 使用 &lt;code&gt;open --background&lt;/code&gt; 的形式打开 obsidian 不够轻便&lt;/h1&gt;
-&lt;p&gt;mac 的快捷指令执行太慢，所以 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt; 虽然能够实现后台记录日志，但是对流程太过打扰，所以我现在使用了 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Raycast&lt;/a&gt; 的 floating note 进行简单记录一些一闪而过的想法，或者使用 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Things&lt;/a&gt; 的快速捕获功能进行记录&lt;/p&gt;
+&lt;p&gt;mac 的快捷指令执行太慢，所以 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/101%20Tools/obsidian/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt; 虽然能够实现后台记录日志，但是对流程太过打扰，所以我现在使用了 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Raycast&lt;/a&gt; 的 floating note 进行简单记录一些一闪而过的想法，或者使用 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Things&lt;/a&gt; 的快速捕获功能进行记录&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便/" />
@@ -1680,6 +1661,25 @@ $zip-&amp;gt;close(); //关闭压缩包
 
             </content>
             <link href="https://wudanyang6.github.io//101 Tools/phpstorm 两下 ctrl 可以快速运行程序/" />
+        </entry>
+        <entry>
+            <title>
+                不打开obsidian的情况下记录当前事件
+                
+            </title>
+            <updated>2024-04-18T04:48:29.000Z</updated>
+            <id>https://wudanyang6.github.io//101 Tools/obsidian/不打开obsidian的情况下记录当前事件/</id>
+            <content type="html">
+                &lt;h1 id=&quot;obsidian&quot; tabindex=&quot;-1&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/h1&gt;
+&lt;p&gt;将输入设置成你想附带的文本，传入内容改成“作为参数”&lt;/p&gt;
+&lt;p&gt;加上 &lt;code&gt;open --background &amp;quot;$1&amp;quot;&lt;/code&gt; 即可实现在不将 &lt;code&gt;obsidian&lt;/code&gt; 放到前台的情况下记录日志。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020220925234214.png&quot; alt=&quot;Pasted image 20220925234214.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;使用这种方法 obsidian 不会到前台占用注意力，不过仍然会将对应的操作完成&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://forum.obsidian.md/t/leave-obsidian-in-background-when-making-uri-call/34091&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Leave Obsidian in background when making URI call? - Developers &amp;amp; API - Obsidian Forum&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//101 Tools/obsidian/不打开obsidian的情况下记录当前事件/" />
         </entry>
         <entry>
             <title>
