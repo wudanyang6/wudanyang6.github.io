@@ -1319,6 +1319,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/费曼技巧/">费曼技巧 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/软装-沙发/">软装-沙发 </a>
                 </div>
             
@@ -1583,7 +1594,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T04:50:12.667Z';
+        const searchIndexDate = '2024-04-18T04:53:29.091Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1595,9 +1606,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T04:50:12.667Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T04:53:29.091Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T04:50:12.667Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T04:53:29.091Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1838,7 +1849,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2022-09-25T23:42:01+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T12:48:29+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2022-09-25T23:42:01+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T12:49:36+08:00"></span></div></div></div>
       
       
       </header>
