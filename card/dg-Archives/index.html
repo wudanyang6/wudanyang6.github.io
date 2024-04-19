@@ -1079,17 +1079,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/redis-rdb 文件分析/">redis-rdb 文件分析 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络 </a>
                 </div>
             
@@ -1420,7 +1409,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-19T07:28:09.685Z';
+        const searchIndexDate = '2024-04-19T07:28:51.069Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1432,9 +1421,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-19T07:28:09.685Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-19T07:28:51.069Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-19T07:28:09.685Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-19T07:28:51.069Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1693,7 +1682,7 @@
 </thead>
 <tbody class="table-view-tbody">
 <tr>
-<td><a class="internal-link" target="" data-note-icon="2" href="/card/redis-rdb 文件分析/">redis-rdb 文件分析</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">redis-rdb 文件分析</a></td>
 <td>2020-11-09 21:44:35</td>
 <td>2024-04-19 15:27:09</td>
 <td><a class="tag" onclick="toggleTagSearch(this)" data-content="#redis">#redis</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#rdb">#rdb</a></td>
