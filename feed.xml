@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-18T11:48:18Z</updated>
+    <updated>2024-04-19T07:28:10Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -465,7 +465,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-18T11:48:07Z</updated>
+            <updated>2024-04-19T07:28:00Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -490,7 +490,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-18T11:48:07Z</updated>
+            <updated>2024-04-19T07:28:00Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -589,7 +589,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-18T11:48:07Z</updated>
+            <updated>2024-04-19T07:28:00Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -641,7 +641,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-18T11:48:07Z</updated>
+            <updated>2024-04-19T07:28:00Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -950,6 +950,156 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
         </entry>
         <entry>
             <title>
+                redis-rdb 文件分析
+                
+            </title>
+            <updated>2024-04-19T07:27:09.000Z</updated>
+            <id>https://wudanyang6.github.io//card/redis-rdb 文件分析/</id>
+            <content type="html">
+                &lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;redis-rdb&quot; tabindex=&quot;-1&quot;&gt;redis-rdb 文件分析&lt;/h1&gt;
+&lt;h2 id=&quot;code-help-code&quot; tabindex=&quot;-1&quot;&gt;命令行工具使用，先看 &lt;code&gt;--help&lt;/code&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;usage: usage: rdb [options] /path/to/dump.rdb
+
+Example : rdb --command json -k &amp;quot;user.*&amp;quot; /var/redis/6379/dump.rdb
+
+positional arguments:
+  dump_file             RDB Dump file to process
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c CMD, --command CMD     
+                        Command to execute. Valid commands are json, diff,
+                        justkeys, justkeyvals, memory and protocol
+  -f FILE, --file FILE  Output file
+  -n DBS, --db DBS      Database Number. Multiple databases can be provided.
+                        If not specified, all databases will be included.
+  -k KEYS, --key KEYS   Keys to export. This can be a regular expression
+  -o NOT_KEYS, --not-key NOT_KEYS
+                        Keys Not to export. This can be a regular expression
+  -t TYPES, --type TYPES
+                        Data types to include. Possible values are string,
+                        hash, set, sortedset, list. Multiple typees can be
+                        provided. If not specified, all data types will be
+                        returned
+  -b BYTES, --bytes BYTES
+                        Limit memory output to keys greater to or equal to
+                        this value (in bytes)
+  -l LARGEST, --largest LARGEST
+                        Limit memory output to only the top N keys (by size)
+  -e {raw,print,utf8,base64}, --escape {raw,print,utf8,base64}
+                        Escape strings to encoding: raw (default), print,
+                        utf8, or base64.
+  -x, --no-expire       With protocol command, remove expiry from all keys
+  -a N, --amend-expire N
+                        With protocol command, add N seconds to key expiry
+                        time
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参数解析&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;-c 执行命令 输出不同格式的数据
+&lt;ol&gt;
+&lt;li&gt;json; 输出 json 格式的字符串  如： &lt;code&gt;[{&amp;quot;int&amp;quot;:&amp;quot;1&amp;quot;}]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;diff; 导出可供 diff 、kdiff 、 vimdiff  比较的数据&lt;/li&gt;
+&lt;li&gt;justkeys; 只输出 key&lt;/li&gt;
+&lt;li&gt;justkeyvals; 只输出键值对，以空格分隔&lt;/li&gt;
+&lt;li&gt;memory; 输出内存分布状态&lt;/li&gt;
+&lt;li&gt;protocol; 输出原始的 RESP 协议&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;-f 指定输出到文件&lt;/li&gt;
+&lt;li&gt;-n 指定输出的 db&lt;/li&gt;
+&lt;li&gt;-k 指定输出哪些 key; 可以使用正则表达式， 如： &lt;code&gt;&#39;^users_&#92;d+$&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;-o 排除哪些 key; 可以使用正则表达式&lt;/li&gt;
+&lt;li&gt;-t 指定输出 value 的类型&lt;/li&gt;
+&lt;li&gt;-b 指定大于此字节数的 key 输出&lt;/li&gt;
+&lt;li&gt;-l 输出最大的多少个 key&lt;/li&gt;
+&lt;li&gt;-e 转义字符串到其他格式
+&lt;ol&gt;
+&lt;li&gt;raw 原始字符串&lt;/li&gt;
+&lt;li&gt;print&lt;/li&gt;
+&lt;li&gt;utf8 输出原始 utf8 格式字符串&lt;/li&gt;
+&lt;li&gt;base64 对于二进制数据来说，可以先 base64 存储到文件，然后在程序中 decode 出来&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;-x 在导出 RESP 协议内容时，去掉过期时间&lt;/li&gt;
+&lt;li&gt;-a 导出 RESP 协议内容时，给有过期时间的 key 加上几秒钟过期时间&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;下面看一下一些常见用法：&lt;/p&gt;
+&lt;h2 id=&quot;生成内存报告&quot; tabindex=&quot;-1&quot;&gt;生成内存报告&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;rdb --command memory dump.rdb &amp;gt; memory.csv
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;生成 CSV 格式的内存报告。包含的列有：&lt;br /&gt;
+数据库 ID，数据类型，key，内存使用量(byte)，编码。内存使用量包含 key、value 和其他值，结果：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-csv&quot;&gt;database,type,key,size_in_bytes,encoding,num_elements,len_largest_element,expiry
+0,set,fruit,252,hashtable,2,6,
+0,hash,webset,81,ziplist,1,13,
+0,string,baiduyun,64,string,5,5,
+0,list,languages,161,quicklist,2,6,
+0,sortedset,page_rank,80,ziplist,1,9
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;使用参数过滤想要的数据&quot; tabindex=&quot;-1&quot;&gt;使用参数过滤想要的数据&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;# 使用这个命令会将存储的 int 值显示为 json 的字符串
+&amp;gt; rdb -c json --db 2 --type hash --key &amp;quot;a.*&amp;quot; /var/redis/6379/dump.rdb
+
+[{},{
+&amp;quot;aroma&amp;quot;:{&amp;quot;pungent&amp;quot;:&amp;quot;vinegar&amp;quot;,&amp;quot;putrid&amp;quot;:&amp;quot;rotten eggs&amp;quot;,&amp;quot;floral&amp;quot;:&amp;quot;roses&amp;quot;}}]
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;rdb&quot; tabindex=&quot;-1&quot;&gt;比较两个 rdb 文件&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;&amp;gt; rdb --command diff /var/redis/6379/dump1.rdb | sort &amp;gt; dump1.txt
+&amp;gt; rdb --command diff /var/redis/6379/dump2.rdb | sort &amp;gt; dump2.txt
+
+# 使用 diff 软件查看 diff
+&amp;gt; kdiff3 dump1.txt dump2.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;key&quot; tabindex=&quot;-1&quot;&gt;查看一个 key 的内存使用情况&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;&amp;gt; redis-memory-for-key person:1
+
+&amp;gt; redis-memory-for-key -s localhost -p 6379 -a mypassword person:1
+
+Key 			person:1
+Bytes				111
+Type				hash
+Encoding			ziplist
+Number of Elements		2
+Length of Largest Element	8          # hash 中占用内存最大的那个 value 的占用字节数
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;faq&quot; tabindex=&quot;-1&quot;&gt;常见问题 FAQ&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;内存报告的精确度如何？&lt;/p&gt;
+&lt;p&gt;答：最多有 10% 的误差&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;存储了一个二进制 binary 数据，但是输出的时候是乱码，不可读，怎么处理？&lt;/p&gt;
+&lt;p&gt;答：可以使用 -e 命令先输出 base64 编码的字符串，然后程序中解码之后使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;这个工具能解析哪个版本的 rdb 文件？&lt;/p&gt;
+&lt;p&gt;答：2~6 版本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我不想用 python，有其他的解析方案吗？&lt;/p&gt;
+&lt;p&gt;答：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/nrk/redis-rdb&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;redis-rdb&lt;/a&gt; is written in Ruby&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/esmooov/rdbhs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;rdbhs&lt;/a&gt; is written in Haskell&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pconstr/rdb-parser&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;rdb-parser&lt;/a&gt; is written in Node.js&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/titanous/rdb&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;rdb&lt;/a&gt; is written in Go&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/badboy/rdb-rs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;rdb-rs&lt;/a&gt; is written in Rust&lt;/li&gt;
+&lt;li&gt;参阅 &lt;a href=&quot;https://github.com/sripathikrishnan/redis-rdb-tools/wiki/Redis-RDB-Dump-File-Format&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;rdb 文件格式&lt;/a&gt; 自己写一个解析&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/sripathikrishnan/redis-rdb-tools&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/sripathikrishnan/redis-rdb-tools&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/redis-rdb 文件分析/" />
+        </entry>
+        <entry>
+            <title>
                 php-xml 如何解析 cdata
                 
             </title>
@@ -1210,13 +1360,12 @@ done
                 leetcode-53. 最大子数组和
                 
             </title>
-            <updated>2024-03-16T05:32:34.000Z</updated>
+            <updated>2024-04-19T06:09:50.000Z</updated>
             <id>https://wudanyang6.github.io//card/leetcode-53. 最大子数组和/</id>
             <content type="html">
-                &lt;h1 id=&quot;题目&quot; tabindex=&quot;-1&quot;&gt;题目&lt;/h1&gt;
+                &lt;h1 id=&quot;leetcode-53&quot; tabindex=&quot;-1&quot;&gt;leetcode-53. 最大子数组和&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/maximum-subarray/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;53. 最大子数组和&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;解法&quot; tabindex=&quot;-1&quot;&gt;解法&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dp&quot;&gt;#dp&lt;/a&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;第一版写的时候，可以加一个 dp 数组，保存每个节点的最大值&lt;/li&gt;
 &lt;/ol&gt;
@@ -1729,6 +1878,24 @@ if err != nil {
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/redis-rdb%20%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90/&quot;&gt;redis-rdb 文件分析&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2020-11-09 21:44:35&lt;/td&gt;
+&lt;td&gt;2024-04-19 15:27:09&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#redis&quot;&gt;#redis&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#rdb&quot;&gt;#rdb&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/101b1%20obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;101b1 obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-01-29 14:23:53&lt;/td&gt;
+&lt;td&gt;2024-04-19 15:24:56&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode-53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/&quot;&gt;leetcode-53. 最大子数组和&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2023-02-26 18:03:28&lt;/td&gt;
+&lt;td&gt;2024-04-19 14:09:51&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dp&quot;&gt;#dp&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E9%98%85%E8%AF%BB/%E5%A6%82%E4%BD%95%E5%90%88%E5%B9%B6marginnote%E7%AC%94%E8%AE%B0%E6%9C%AC/&quot;&gt;如何合并marginnote笔记本&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2022-08-30 13:14:37&lt;/td&gt;
 &lt;td&gt;2024-04-18 17:02:42&lt;/td&gt;
@@ -1883,12 +2050,6 @@ if err != nil {
 &lt;td&gt;2023-02-26 18:03:27&lt;/td&gt;
 &lt;td&gt;2024-04-18 16:48:01&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode-53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/&quot;&gt;leetcode-53. 最大子数组和&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2023-02-26 18:03:28&lt;/td&gt;
-&lt;td&gt;2024-04-18 16:48:01&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dp&quot;&gt;#dp&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode%20%E7%BC%96%E7%A0%81%E6%8A%80%E5%B7%A7/&quot;&gt;leetcode 编码技巧&lt;/a&gt;&lt;/td&gt;
@@ -2159,12 +2320,6 @@ if err != nil {
 &lt;td&gt;2023-10-09 17:20:21&lt;/td&gt;
 &lt;td&gt;2024-04-14 23:27:59&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#效率&quot;&gt;#效率&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tools&quot;&gt;#tools&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#things3&quot;&gt;#things3&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/101b1%20obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;101b1 obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-01-29 14:23:53&lt;/td&gt;
-&lt;td&gt;2024-04-14 22:12:49&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;&lt;/td&gt;
@@ -3332,19 +3487,17 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 101b1 obsidian-things3-today插件
                 
             </title>
-            <updated>2024-04-14T14:12:48.000Z</updated>
+            <updated>2024-04-19T07:24:55.000Z</updated>
             <id>https://wudanyang6.github.io//card/101 Tools/101b1 obsidian-things3-today插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;101b1-obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;101b1 obsidian-things3-today插件&lt;/h1&gt;
 &lt;p&gt;把之前的插件重新搞了搞，把乱七八糟的东西去掉了，然后提交了obsidian插件库&lt;/p&gt;
-&lt;p&gt;正在等着被review： &lt;a href=&quot;https://github.com/obsidianmd/obsidian-releases/pull/2997&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/obsidianmd/obsidian-releases/pull/2997&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;新录了一个gif：&lt;br /&gt;
-见github的readme&lt;br /&gt;
-图中可以看到和things3的Today列表联动还算是顺畅&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/wudanyang6/obsidian-things3-today?tab=readme-ov-file&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;wudanyang6/obsidian-things3-today&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;pr 审核通过了&lt;/p&gt;
-&lt;p&gt;跟着操作手册在论坛上面发了分享贴： &lt;a href=&quot;https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;插件可以在这里找到： &lt;a href=&quot;https://obsidian.md/plugins?id=things3-today&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Plugin - Things3 Today&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;review 审核通过： &lt;a href=&quot;https://github.com/obsidianmd/obsidian-releases/pull/2997&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/obsidianmd/obsidian-releases/pull/2997&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;新录了一个gif：见github的readme，图中可以看到和things3的Today列表联动还算是顺畅&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/wudanyang6/obsidian-things3-today?tab=readme-ov-file&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;github - wudanyang6/obsidian-things3-today&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;跟着操作手册在论坛上面发了分享贴：&lt;br /&gt;
+&lt;a href=&quot;https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;插件： &lt;a href=&quot;https://obsidian.md/plugins?id=things3-today&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Plugin - Things3 Today&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/101 Tools/101b1 obsidian-things3-today插件/" />
@@ -3360,14 +3513,14 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 &lt;h1 id=&quot;20240416231513&quot; tabindex=&quot;-1&quot;&gt;20240416231513 卡片盒笔记法&lt;/h1&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;

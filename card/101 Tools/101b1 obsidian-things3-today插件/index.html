@@ -1079,6 +1079,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/redis-rdb 文件分析/">redis-rdb 文件分析 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络 </a>
                 </div>
             
@@ -1409,7 +1420,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T11:48:17.865Z';
+        const searchIndexDate = '2024-04-19T07:28:09.685Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1421,9 +1432,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T11:48:17.865Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-19T07:28:09.685Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T11:48:17.865Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-19T07:28:09.685Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1664,7 +1675,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-29T14:23:53+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-14T22:12:48+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-29T14:23:53+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-19T15:24:55+08:00"></span></div></div></div>
       
       
       </header>
@@ -1672,14 +1683,12 @@
       
       <h1 id="101b1-obsidian-things3-today" tabindex="-1">101b1 obsidian-things3-today插件</h1>
 <p>把之前的插件重新搞了搞，把乱七八糟的东西去掉了，然后提交了obsidian插件库</p>
-<p>正在等着被review： <a href="https://github.com/obsidianmd/obsidian-releases/pull/2997" target="_blank" class="external-link">https://github.com/obsidianmd/obsidian-releases/pull/2997</a></p>
-<p>新录了一个gif：<br>
-见github的readme<br>
-图中可以看到和things3的Today列表联动还算是顺畅</p>
-<p><a href="https://github.com/wudanyang6/obsidian-things3-today?tab=readme-ov-file" target="_blank" class="external-link">wudanyang6/obsidian-things3-today</a></p>
-<p>pr 审核通过了</p>
-<p>跟着操作手册在论坛上面发了分享贴： <a href="https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916" target="_blank" class="external-link">https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916</a></p>
-<p>插件可以在这里找到： <a href="https://obsidian.md/plugins?id=things3-today" target="_blank" class="external-link">Obsidian Plugin - Things3 Today</a></p>
+<p>review 审核通过： <a href="https://github.com/obsidianmd/obsidian-releases/pull/2997" target="_blank" class="external-link">https://github.com/obsidianmd/obsidian-releases/pull/2997</a></p>
+<p>新录了一个gif：见github的readme，图中可以看到和things3的Today列表联动还算是顺畅</p>
+<p><a href="https://github.com/wudanyang6/obsidian-things3-today?tab=readme-ov-file" target="_blank" class="external-link">github - wudanyang6/obsidian-things3-today</a></p>
+<p>跟着操作手册在论坛上面发了分享贴：<br>
+<a href="https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916" target="_blank" class="external-link">https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916</a></p>
+<p>插件： <a href="https://obsidian.md/plugins?id=things3-today" target="_blank" class="external-link">Obsidian Plugin - Things3 Today</a></p>
 
       
       

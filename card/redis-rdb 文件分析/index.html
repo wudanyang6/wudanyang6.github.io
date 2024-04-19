@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>alfred-翻译插件</title>
+    <title>redis-rdb 文件分析</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -793,7 +793,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/alfred-翻译插件/">alfred-翻译插件 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/alfred-翻译插件/">alfred-翻译插件 </a>
                 </div>
             
         </div>
@@ -1079,7 +1079,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/redis-rdb 文件分析/">redis-rdb 文件分析 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/redis-rdb 文件分析/">redis-rdb 文件分析 </a>
                 </div>
             
         </div>
@@ -1666,7 +1666,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">alfred-翻译插件</h1>
+          <h1 data-note-icon="2">redis-rdb 文件分析</h1>
         
         <div class="header-meta">
           
@@ -1674,17 +1674,163 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #redis
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #rdb
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-06-26T23:00:22+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T15:31:51+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2020-11-09T21:44:35+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-19T15:27:09+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="alfred" tabindex="-1">alfred-翻译插件</h1>
-<p>按照这个文章的步骤就可以创建一个应用</p>
-<p><a href="https://github.com/wensonsmith/YoudaoTranslate" target="_blank" class="external-link">https://github.com/wensonsmith/YoudaoTranslate</a></p>
-<p><img src="/img/user/attachs/Pasted%20image%2020210626230147.png" alt="Pasted image 20210626230147.png"></p>
+      <p><a class="internal-link is-unresolved" href="/404" target="">202011281031 - 安装 rdbtools 工具</a></p>
+<h1 id="redis-rdb" tabindex="-1">redis-rdb 文件分析</h1>
+<h2 id="code-help-code" tabindex="-1">命令行工具使用，先看 <code>--help</code></h2>
+<pre><code class="language-shell">usage: usage: rdb [options] /path/to/dump.rdb
+
+Example : rdb --command json -k &quot;user.*&quot; /var/redis/6379/dump.rdb
+
+positional arguments:
+  dump_file             RDB Dump file to process
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c CMD, --command CMD     
+                        Command to execute. Valid commands are json, diff,
+                        justkeys, justkeyvals, memory and protocol
+  -f FILE, --file FILE  Output file
+  -n DBS, --db DBS      Database Number. Multiple databases can be provided.
+                        If not specified, all databases will be included.
+  -k KEYS, --key KEYS   Keys to export. This can be a regular expression
+  -o NOT_KEYS, --not-key NOT_KEYS
+                        Keys Not to export. This can be a regular expression
+  -t TYPES, --type TYPES
+                        Data types to include. Possible values are string,
+                        hash, set, sortedset, list. Multiple typees can be
+                        provided. If not specified, all data types will be
+                        returned
+  -b BYTES, --bytes BYTES
+                        Limit memory output to keys greater to or equal to
+                        this value (in bytes)
+  -l LARGEST, --largest LARGEST
+                        Limit memory output to only the top N keys (by size)
+  -e {raw,print,utf8,base64}, --escape {raw,print,utf8,base64}
+                        Escape strings to encoding: raw (default), print,
+                        utf8, or base64.
+  -x, --no-expire       With protocol command, remove expiry from all keys
+  -a N, --amend-expire N
+                        With protocol command, add N seconds to key expiry
+                        time
+</code></pre>
+<p>参数解析</p>
+<ol>
+<li>-c 执行命令 输出不同格式的数据
+<ol>
+<li>json; 输出 json 格式的字符串  如： <code>[{&quot;int&quot;:&quot;1&quot;}]</code></li>
+<li>diff; 导出可供 diff 、kdiff 、 vimdiff  比较的数据</li>
+<li>justkeys; 只输出 key</li>
+<li>justkeyvals; 只输出键值对，以空格分隔</li>
+<li>memory; 输出内存分布状态</li>
+<li>protocol; 输出原始的 RESP 协议</li>
+</ol>
+</li>
+<li>-f 指定输出到文件</li>
+<li>-n 指定输出的 db</li>
+<li>-k 指定输出哪些 key; 可以使用正则表达式， 如： <code>'^users_\d+$'</code></li>
+<li>-o 排除哪些 key; 可以使用正则表达式</li>
+<li>-t 指定输出 value 的类型</li>
+<li>-b 指定大于此字节数的 key 输出</li>
+<li>-l 输出最大的多少个 key</li>
+<li>-e 转义字符串到其他格式
+<ol>
+<li>raw 原始字符串</li>
+<li>print</li>
+<li>utf8 输出原始 utf8 格式字符串</li>
+<li>base64 对于二进制数据来说，可以先 base64 存储到文件，然后在程序中 decode 出来</li>
+</ol>
+</li>
+<li>-x 在导出 RESP 协议内容时，去掉过期时间</li>
+<li>-a 导出 RESP 协议内容时，给有过期时间的 key 加上几秒钟过期时间</li>
+</ol>
+<p>下面看一下一些常见用法：</p>
+<h2 id="生成内存报告" tabindex="-1">生成内存报告</h2>
+<pre><code class="language-bash">rdb --command memory dump.rdb &gt; memory.csv
+</code></pre>
+<p>生成 CSV 格式的内存报告。包含的列有：<br>
+数据库 ID，数据类型，key，内存使用量(byte)，编码。内存使用量包含 key、value 和其他值，结果：</p>
+<pre><code class="language-csv">database,type,key,size_in_bytes,encoding,num_elements,len_largest_element,expiry
+0,set,fruit,252,hashtable,2,6,
+0,hash,webset,81,ziplist,1,13,
+0,string,baiduyun,64,string,5,5,
+0,list,languages,161,quicklist,2,6,
+0,sortedset,page_rank,80,ziplist,1,9
+</code></pre>
+<h2 id="使用参数过滤想要的数据" tabindex="-1">使用参数过滤想要的数据</h2>
+<pre><code class="language-shell"># 使用这个命令会将存储的 int 值显示为 json 的字符串
+&gt; rdb -c json --db 2 --type hash --key &quot;a.*&quot; /var/redis/6379/dump.rdb
+
+[{},{
+&quot;aroma&quot;:{&quot;pungent&quot;:&quot;vinegar&quot;,&quot;putrid&quot;:&quot;rotten eggs&quot;,&quot;floral&quot;:&quot;roses&quot;}}]
+
+</code></pre>
+<h2 id="rdb" tabindex="-1">比较两个 rdb 文件</h2>
+<pre><code class="language-bash">&gt; rdb --command diff /var/redis/6379/dump1.rdb | sort &gt; dump1.txt
+&gt; rdb --command diff /var/redis/6379/dump2.rdb | sort &gt; dump2.txt
+
+# 使用 diff 软件查看 diff
+&gt; kdiff3 dump1.txt dump2.txt
+</code></pre>
+<h2 id="key" tabindex="-1">查看一个 key 的内存使用情况</h2>
+<pre><code class="language-bash">&gt; redis-memory-for-key person:1
+
+&gt; redis-memory-for-key -s localhost -p 6379 -a mypassword person:1
+
+Key 			person:1
+Bytes				111
+Type				hash
+Encoding			ziplist
+Number of Elements		2
+Length of Largest Element	8          # hash 中占用内存最大的那个 value 的占用字节数
+</code></pre>
+<h1 id="faq" tabindex="-1">常见问题 FAQ</h1>
+<ul>
+<li>
+<p>内存报告的精确度如何？</p>
+<p>答：最多有 10% 的误差</p>
+</li>
+<li>
+<p>存储了一个二进制 binary 数据，但是输出的时候是乱码，不可读，怎么处理？</p>
+<p>答：可以使用 -e 命令先输出 base64 编码的字符串，然后程序中解码之后使用</p>
+</li>
+<li>
+<p>这个工具能解析哪个版本的 rdb 文件？</p>
+<p>答：2~6 版本</p>
+</li>
+<li>
+<p>我不想用 python，有其他的解析方案吗？</p>
+<p>答：</p>
+<ol>
+<li><a href="https://github.com/nrk/redis-rdb" target="_blank" class="external-link">redis-rdb</a> is written in Ruby</li>
+<li><a href="https://github.com/esmooov/rdbhs" target="_blank" class="external-link">rdbhs</a> is written in Haskell</li>
+<li><a href="https://github.com/pconstr/rdb-parser" target="_blank" class="external-link">rdb-parser</a> is written in Node.js</li>
+<li><a href="https://github.com/titanous/rdb" target="_blank" class="external-link">rdb</a> is written in Go</li>
+<li><a href="https://github.com/badboy/rdb-rs" target="_blank" class="external-link">rdb-rs</a> is written in Rust</li>
+<li>参阅 <a href="https://github.com/sripathikrishnan/redis-rdb-tools/wiki/Redis-RDB-Dump-File-Format" target="_blank" class="external-link">rdb 文件格式</a> 自己写一个解析</li>
+</ol>
+</li>
+</ul>
+<h1 id="参考" tabindex="-1">参考</h1>
+<p><a href="https://github.com/sripathikrishnan/redis-rdb-tools" target="_blank" class="external-link">https://github.com/sripathikrishnan/redis-rdb-tools</a></p>
 
       
       
@@ -1953,7 +2099,31 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#alfred">alfred-翻译插件</a>
+                    <li><a href="#redis-rdb">redis-rdb 文件分析</a>
+            
+                <ol>
+                    
+                    <li><a href="#code-help-code">命令行工具使用，先看 --help</a>
+            		</li>
+
+                    <li><a href="#生成内存报告">生成内存报告</a>
+            		</li>
+
+                    <li><a href="#使用参数过滤想要的数据">使用参数过滤想要的数据</a>
+            		</li>
+
+                    <li><a href="#rdb">比较两个 rdb 文件</a>
+            		</li>
+
+                    <li><a href="#key">查看一个 key 的内存使用情况</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#faq">常见问题 FAQ</a>
+            		</li>
+
+                    <li><a href="#参考">参考</a>
             		</li>
                 </ol>
             </nav>

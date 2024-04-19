@@ -1079,6 +1079,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/redis-rdb 文件分析/">redis-rdb 文件分析 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络 </a>
                 </div>
             
@@ -1409,7 +1420,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T11:48:17.865Z';
+        const searchIndexDate = '2024-04-19T07:28:09.685Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1421,9 +1432,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T11:48:17.865Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-19T07:28:09.685Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T11:48:17.865Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-19T07:28:09.685Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1663,17 +1674,22 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #dp
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2023-02-26T18:03:28+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-03-16T13:32:34+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2023-02-26T18:03:28+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-19T14:09:50+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="题目" tabindex="-1">题目</h1>
+      <h1 id="leetcode-53" tabindex="-1">leetcode-53. 最大子数组和</h1>
 <p><a href="https://leetcode-cn.com/problems/maximum-subarray/" target="_blank" class="external-link">53. 最大子数组和</a></p>
 <h1 id="解法" tabindex="-1">解法</h1>
-<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#dp">#dp</a></p>
 <ol>
 <li>第一版写的时候，可以加一个 dp 数组，保存每个节点的最大值</li>
 </ol>
@@ -1971,7 +1987,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#题目">题目</a>
+                    <li><a href="#leetcode-53">leetcode-53. 最大子数组和</a>
             		</li>
 
                     <li><a href="#解法">解法</a>
