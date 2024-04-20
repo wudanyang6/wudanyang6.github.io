@@ -1215,57 +1215,6 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('Omnivore')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">Omnivore</span>
-                    </div>
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('Omnivore/2024-04-19')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">2024-04-19</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/Omnivore/2024-04-19/重新认识GTD/">重新认识GTD </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('thoughts')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -1504,7 +1453,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-20T16:16:10.598Z';
+        const searchIndexDate = '2024-04-20T16:16:53.904Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1516,9 +1465,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T16:16:10.598Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T16:16:53.904Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T16:16:10.598Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T16:16:53.904Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1759,7 +1708,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2022-05-05T13:26:26+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-19T15:50:52+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2022-05-05T13:26:26+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-21T00:16:11+08:00"></span></div></div></div>
       
       
       </header>
@@ -1777,7 +1726,13 @@
 <img src="/img/user/attachs/Pasted%20image%2020220509232211.png" alt="Pasted image 20220509232211.png"></li>
 </ol>
 <p><a href="https://www.bilibili.com/video/BV1wE411176Q?p=6&amp;spm_id_from=333.880.my_history.page.click" target="_blank" class="external-link">bilibili教程</a></p>
-<p><a class="internal-link" target="" data-note-icon="2" href="/Omnivore/2024-04-19/重新认识GTD/">重新认识GTD</a></p>
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+<h1 id="gtd" tabindex="-1">重新认识GTD</h1>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#Omnivore">#Omnivore</a></p>
+<p><a href="https://omnivore.app/me/topbook-18ef555cd3f" target="_blank" class="external-link">Read on Omnivore</a><br>
+<a href="https://topbook.cc/course/detail/153" target="_blank" class="external-link">Read Original</a></p>
+<h2 id="notes" tabindex="-1">Notes</h2>
+</div></div>
 
       
       
@@ -2047,6 +2002,15 @@
                 <ol>
                     
                     <li><a href="#202404191548-gtd">202404191548 GTD的主要思想</a>
+            		</li>
+
+                    <li><a href="#gtd">重新认识GTD</a>
+            
+                <ol>
+                    
+                    <li><a href="#notes">Notes</a>
+            		</li>
+                </ol>
             		</li>
                 </ol>
             </nav>
