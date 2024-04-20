@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-20T14:38:52Z</updated>
+    <updated>2024-04-20T14:43:16Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -464,7 +464,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-20T14:38:40Z</updated>
+            <updated>2024-04-20T14:43:06Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -489,7 +489,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-20T14:38:40Z</updated>
+            <updated>2024-04-20T14:43:06Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -588,7 +588,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-20T14:38:40Z</updated>
+            <updated>2024-04-20T14:43:06Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -640,7 +640,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-20T14:38:40Z</updated>
+            <updated>2024-04-20T14:43:06Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -1307,6 +1307,38 @@ done
         </entry>
         <entry>
             <title>
+                linux-perf
+                
+            </title>
+            <updated>2024-04-20T14:42:28.000Z</updated>
+            <id>https://wudanyang6.github.io//card/linux-perf/</id>
+            <content type="html">
+                &lt;h1 id=&quot;linux-perf&quot; tabindex=&quot;-1&quot;&gt;linux-perf&lt;/h1&gt;
+&lt;p&gt;linux 下的性能分析工具&lt;/p&gt;
+&lt;h1 id=&quot;用法&quot; tabindex=&quot;-1&quot;&gt;用法&lt;/h1&gt;
+&lt;h2 id=&quot;perf-top&quot; tabindex=&quot;-1&quot;&gt;perf top&lt;/h2&gt;
+&lt;p&gt;显示占用 cpu 时钟最多的函数或指令，可以用来查找热点函数&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020211224200819.png&quot; alt=&quot;Pasted image 20211224200819.png|800&quot; width=&quot;800px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;表头四个字段：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Overhead 百分比&lt;/li&gt;
+&lt;li&gt;Shared 该函数或指令所在的动态共享对象（dynamic Shared Object）&lt;/li&gt;
+&lt;li&gt;Object 动态对象类型，&lt;code&gt;[.]&lt;/code&gt; 代表用户空间可执行程序、动态链接库，&lt;code&gt;[k]&lt;/code&gt; 代表内核空间&lt;/li&gt;
+&lt;li&gt;Symbol 符号名，函数名。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;perf-record&quot; tabindex=&quot;-1&quot;&gt;perf record&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;perf record -a -g --sleep 30
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;perf report -g graph,0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://time.geekbang.org/column/article/70476&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://time.geekbang.org/column/article/70476&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/linux-perf/" />
+        </entry>
+        <entry>
+            <title>
                 linux-man命令使用
                 
             </title>
@@ -1909,6 +1941,12 @@ if err != nil {
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-perf/&quot;&gt;linux-perf&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-05-19 17:19:24&lt;/td&gt;
+&lt;td&gt;2024-04-20 22:42:41&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-mod/&quot;&gt;go-mod&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2021-07-17 23:33:45&lt;/td&gt;
