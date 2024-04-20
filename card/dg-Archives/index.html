@@ -1431,7 +1431,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-20T14:37:11.713Z';
+        const searchIndexDate = '2024-04-20T14:38:51.420Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1443,9 +1443,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T14:37:11.713Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T14:38:51.420Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T14:37:11.713Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T14:38:51.420Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1706,7 +1706,7 @@
 <tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/go-mod/">go-mod</a></td>
 <td>2021-07-17 23:33:45</td>
-<td>2024-04-20 22:36:27</td>
+<td>2024-04-20 22:38:12</td>
 <td></td>
 </tr>
 <tr>

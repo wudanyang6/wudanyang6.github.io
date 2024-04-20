@@ -1431,7 +1431,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-20T14:37:11.713Z';
+        const searchIndexDate = '2024-04-20T14:38:51.420Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1443,9 +1443,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T14:37:11.713Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T14:38:51.420Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T14:37:11.713Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T14:38:51.420Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1686,13 +1686,14 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-07-17T23:33:45+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-20T22:36:17+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-07-17T23:33:45+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-20T22:38:10+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <pre><code class="language-go">module novel-spider  
+      <h1 id="go-mod" tabindex="-1">go-mod</h1>
+<pre><code class="language-go">module novel-spider  
   
 go 1.16  
   
@@ -1709,9 +1710,9 @@ replace (
 <p>require 指定依赖项， 跟  <a class="internal-link is-unresolved" href="/404" target="">go-import</a> 很像</p>
 <p>replace 无法自动获取的资源，可以使用 replace 来用本地资源替代</p>
 <p>参考： <a href="https://www.jianshu.com/p/760c97ff644c" target="_blank" class="external-link">https://www.jianshu.com/p/760c97ff644c</a></p>
-<h1 id="go-mod" tabindex="-1">go-mod</h1>
-<p>go mod init [模块名]</p>
-<p>go mod tidy</p>
+<pre><code class="language-Shell">go mod init [模块名]
+go mod tidy
+</code></pre>
 
       
       

@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-20T14:37:12Z</updated>
+    <updated>2024-04-20T14:38:52Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -464,7 +464,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-20T14:37:02Z</updated>
+            <updated>2024-04-20T14:38:40Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -489,7 +489,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-20T14:37:02Z</updated>
+            <updated>2024-04-20T14:38:40Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -588,7 +588,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-20T14:37:02Z</updated>
+            <updated>2024-04-20T14:38:40Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -640,7 +640,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-20T14:37:02Z</updated>
+            <updated>2024-04-20T14:38:40Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -1660,10 +1660,11 @@ for j := 0; j &amp;lt; 4; j++ {
                 go-mod
                 
             </title>
-            <updated>2024-04-20T14:36:17.000Z</updated>
+            <updated>2024-04-20T14:38:10.000Z</updated>
             <id>https://wudanyang6.github.io//card/go-mod/</id>
             <content type="html">
-                &lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;module novel-spider  
+                &lt;h1 id=&quot;go-mod&quot; tabindex=&quot;-1&quot;&gt;go-mod&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;module novel-spider  
   
 go 1.16  
   
@@ -1680,9 +1681,9 @@ replace (
 &lt;p&gt;require 指定依赖项， 跟  &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;go-import&lt;/a&gt; 很像&lt;/p&gt;
 &lt;p&gt;replace 无法自动获取的资源，可以使用 replace 来用本地资源替代&lt;/p&gt;
 &lt;p&gt;参考： &lt;a href=&quot;https://www.jianshu.com/p/760c97ff644c&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.jianshu.com/p/760c97ff644c&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;go-mod&quot; tabindex=&quot;-1&quot;&gt;go-mod&lt;/h1&gt;
-&lt;p&gt;go mod init [模块名]&lt;/p&gt;
-&lt;p&gt;go mod tidy&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;go mod init [模块名]
+go mod tidy
+&lt;/code&gt;&lt;/pre&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/go-mod/" />
@@ -1911,7 +1912,7 @@ if err != nil {
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-mod/&quot;&gt;go-mod&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2021-07-17 23:33:45&lt;/td&gt;
-&lt;td&gt;2024-04-20 22:36:27&lt;/td&gt;
+&lt;td&gt;2024-04-20 22:38:12&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
