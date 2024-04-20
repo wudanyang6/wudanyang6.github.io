@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>101b2 Things 工作流</title>
+    <title>202404202259 Things 工作流</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -356,7 +356,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/101 Tools/101b2 Things 工作流/">101b2 Things 工作流 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/101 Tools/10x程序员工作法/">10x程序员工作法 </a>
                 </div>
             
         </div>
@@ -367,7 +367,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/101 Tools/10x程序员工作法/">10x程序员工作法 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/101 Tools/202404202259 Things 工作流/">202404202259 Things 工作流 </a>
                 </div>
             
         </div>
@@ -1453,7 +1453,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-20T14:46:14.230Z';
+        const searchIndexDate = '2024-04-20T16:11:38.357Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1465,9 +1465,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T14:46:14.230Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T16:11:38.357Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T14:46:14.230Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T16:11:38.357Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1699,7 +1699,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">101b2 Things 工作流</h1>
+          <h1 data-note-icon="2">202404202259 Things 工作流</h1>
         
         <div class="header-meta">
           
@@ -1726,19 +1726,18 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2023-10-09T17:10:00+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-14T23:27:57+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2023-10-09T17:10:00+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-20T23:16:14+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="101b2-things" tabindex="-1">101b2 Things 工作流</h1>
+      <h1 id="202404202259-things" tabindex="-1">202404202259 Things 工作流</h1>
 <ol>
-<li>有任何事情都记录下来，心中的任何想法都不要放过</li>
+<li>有任何事情都记录下来，心中的任何想法都不要放过，使用Things的快速录入功能 <img src="/img/user/attachs/Pasted%20image%2020240420225952.png" alt="Pasted image 20240420225952.png"></li>
 <li>定时整理收件箱（需要保证整理完收件箱之后，任务都是可执行的）
 <ol>
 <li>如果有事情2分钟就能解决，那么直接去做，属于小事情</li>
-<li>如果需要15-30分钟，则标记上标签 <img src="/img/user/card/Pasted%20image%2020231009172220.png" alt="Pasted image 20231009172220.png"></li>
 <li>如果需要1小时以上，就将任务设置成项目
 <ol>
 <li>做一次任务分解，分解成小任务，小任务以30分钟以内完成最好</li>
@@ -1750,6 +1749,7 @@
 <li>根据时间，选取任务进行处理，打开 <code>Session</code> 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  <img src="/img/user/card/Pasted%20image%2020231107224028.png" alt="Pasted image 20231107224028.png"></li>
 </ol>
 <p>为了让Things工作流更顺畅，我做了一个obsidian插件： <a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/101b1 obsidian-things3-today插件/">101b1 obsidian-things3-today插件</a></p>
+<p><a class="internal-link" target="" data-note-icon="2" href="/card/202404191548 GTD的主要思想/">202404191548 GTD的主要思想</a></p>
 
       
       
@@ -2018,7 +2018,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#101b2-things">101b2 Things 工作流</a>
+                    <li><a href="#202404202259-things">202404202259 Things 工作流</a>
             		</li>
                 </ol>
             </nav>

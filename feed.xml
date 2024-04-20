@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-20T14:46:14Z</updated>
+    <updated>2024-04-20T16:11:38Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -464,7 +464,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-20T14:46:03Z</updated>
+            <updated>2024-04-20T16:11:28Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -489,7 +489,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-20T14:46:03Z</updated>
+            <updated>2024-04-20T16:11:28Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -513,7 +513,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222325 - 信息
                 
             </title>
-            <updated>2024-04-08T10:34:44.000Z</updated>
+            <updated>2024-04-20T14:54:08.000Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222325 - 信息/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011222325&quot; tabindex=&quot;-1&quot;&gt;202011222325 - 信息&lt;/h1&gt;
@@ -588,7 +588,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-20T14:46:03Z</updated>
+            <updated>2024-04-20T16:11:28Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -640,7 +640,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-20T14:46:03Z</updated>
+            <updated>2024-04-20T16:07:54.000Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -685,21 +685,22 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011201016 - 什么是知识和信息
                 
             </title>
-            <updated>2024-04-08T10:35:20.000Z</updated>
+            <updated>2024-04-20T14:58:13.000Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201016 - 什么是知识和信息/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201016&quot; tabindex=&quot;-1&quot;&gt;202011201016 - 什么是知识和信息&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://m.xzbu.com/4/view-4572943.htm#:~:text=%E7%9F%A5%E8%AF%86%E6%98%AF%E9%80%9A%E8%BF%87%E7%94%A8%E6%88%B7%E7%9A%84,%E4%BA%8B%E5%AE%9E%E5%92%8C%E6%95%B0%E6%8D%AE%E7%9A%84%E9%99%88%E8%BF%B0%E3%80%82&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://m.xzbu.com/4/view-4572943.htm#:~:text=知识是通过用户的,事实和数据的陈述。&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;a class=&quot;markdown-embed-link&quot; href=&quot;https://wudanyang6.github.io/card//202011222324/&quot; aria-label=&quot;Open link&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; class=&quot;svg-icon lucide-link&quot;&gt;&lt;path d=&quot;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
+&lt;h1 id=&quot;202011222324&quot; tabindex=&quot;-1&quot;&gt;202011222324 - 知识&lt;/h1&gt;
+&lt;p&gt;知识拿到之后，能让你有借鉴意义，能指导你的下一步工作，是活的&lt;/p&gt;
+&lt;p&gt;知识是 how/why&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;a class=&quot;markdown-embed-link&quot; href=&quot;https://wudanyang6.github.io/card//202011222325/&quot; aria-label=&quot;Open link&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; class=&quot;svg-icon lucide-link&quot;&gt;&lt;path d=&quot;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
+&lt;h1 id=&quot;202011222325&quot; tabindex=&quot;-1&quot;&gt;202011222325 - 信息&lt;/h1&gt;
+&lt;p&gt;信息是死的，一系列数据的陈列&lt;/p&gt;
+&lt;p&gt;信息是 what/when/where/who&lt;/p&gt;
+&lt;p&gt;信息是你应该被告诉什么是事情&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;信息与知识的关系辨析#^fb1c5abf&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011201016 - 什么是知识和信息/" />
@@ -1942,10 +1943,40 @@ if err != nil {
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/202404202259%20Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;202404202259 Things 工作流&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2023-10-09 17:20:21&lt;/td&gt;
+&lt;td&gt;2024-04-21 00:10:54&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#效率&quot;&gt;#效率&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tools&quot;&gt;#tools&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#things3&quot;&gt;#things3&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-17 10:36:35&lt;/td&gt;
+&lt;td&gt;2024-04-21 00:07:56&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-17 17:07:58&lt;/td&gt;
+&lt;td&gt;2024-04-20 23:19:44&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-17 10:36:35&lt;/td&gt;
+&lt;td&gt;2024-04-20 22:58:14&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-17 10:36:35&lt;/td&gt;
+&lt;td&gt;2024-04-20 22:54:08&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/PHP%E7%94%9F%E6%88%90zip%E5%8E%8B%E7%BC%A9%E5%8C%85/&quot;&gt;PHP生成zip压缩包&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2021-11-23 14:16:24&lt;/td&gt;
-&lt;td&gt;2024-04-20 22:45:18&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-20 22:45:32&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#php&quot;&gt;#php&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#压缩&quot;&gt;#压缩&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-perf/&quot;&gt;linux-perf&lt;/a&gt;&lt;/td&gt;
@@ -1969,12 +2000,6 @@ if err != nil {
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-01-19 12:46:25&lt;/td&gt;
 &lt;td&gt;2024-04-19 16:32:41&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-17 17:07:58&lt;/td&gt;
-&lt;td&gt;2024-04-19 16:30:27&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -2290,12 +2315,6 @@ if err != nil {
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-17 10:36:35&lt;/td&gt;
-&lt;td&gt;2024-04-17 10:36:40&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-17 10:36:35&lt;/td&gt;
 &lt;td&gt;2024-04-17 10:36:40&lt;/td&gt;
@@ -2314,19 +2333,7 @@ if err != nil {
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-17 10:36:35&lt;/td&gt;
-&lt;td&gt;2024-04-17 10:36:40&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-17 10:36:35&lt;/td&gt;
-&lt;td&gt;2024-04-17 10:36:39&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-17 10:36:35&lt;/td&gt;
 &lt;td&gt;2024-04-17 10:36:39&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -2402,12 +2409,6 @@ if err != nil {
 &lt;td&gt;2023-04-18 22:39:52&lt;/td&gt;
 &lt;td&gt;2024-04-15 11:21:30&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#excalidraw&quot;&gt;#excalidraw&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/101b2%20Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;101b2 Things 工作流&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2023-10-09 17:20:21&lt;/td&gt;
-&lt;td&gt;2024-04-14 23:27:59&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#效率&quot;&gt;#效率&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tools&quot;&gt;#tools&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#things3&quot;&gt;#things3&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;&lt;/td&gt;
@@ -2496,7 +2497,7 @@ if err != nil {
                 PHP生成zip压缩包
                 
             </title>
-            <updated>2024-04-18T08:27:30.000Z</updated>
+            <updated>2024-04-20T14:45:27.000Z</updated>
             <id>https://wudanyang6.github.io//card/PHP生成zip压缩包/</id>
             <content type="html">
                 &lt;h1 id=&quot;php-zip&quot; tabindex=&quot;-1&quot;&gt;PHP生成zip压缩包&lt;/h1&gt;
@@ -2823,7 +2824,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 202404171707 当你学不下去的时候
                 
             </title>
-            <updated>2024-04-19T08:30:27.000Z</updated>
+            <updated>2024-04-20T15:19:43.000Z</updated>
             <id>https://wudanyang6.github.io//card/202404171707 当你学不下去的时候/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404171707&quot; tabindex=&quot;-1&quot;&gt;202404171707 当你学不下去的时候&lt;/h1&gt;
@@ -3423,6 +3424,36 @@ date_translator = require(&amp;quot;date&amp;quot;)
         </entry>
         <entry>
             <title>
+                202404202259 Things 工作流
+                
+            </title>
+            <updated>2024-04-20T15:16:14.000Z</updated>
+            <id>https://wudanyang6.github.io//card/101 Tools/202404202259 Things 工作流/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202404202259-things&quot; tabindex=&quot;-1&quot;&gt;202404202259 Things 工作流&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;有任何事情都记录下来，心中的任何想法都不要放过，使用Things的快速录入功能 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240420225952.png&quot; alt=&quot;Pasted image 20240420225952.png&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;定时整理收件箱（需要保证整理完收件箱之后，任务都是可执行的）
+&lt;ol&gt;
+&lt;li&gt;如果有事情2分钟就能解决，那么直接去做，属于小事情&lt;/li&gt;
+&lt;li&gt;如果需要1小时以上，就将任务设置成项目
+&lt;ol&gt;
+&lt;li&gt;做一次任务分解，分解成小任务，小任务以30分钟以内完成最好&lt;/li&gt;
+&lt;li&gt;如果分解项目本身也需要很多时间，那么在项目里面加一个【分解任务】的事项&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;根据时间，选取任务进行处理，打开 &lt;code&gt;Session&lt;/code&gt; 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/Pasted%20image%2020231107224028.png&quot; alt=&quot;Pasted image 20231107224028.png&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;为了让Things工作流更顺畅，我做了一个obsidian插件： &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/101b1%20obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;101b1 obsidian-things3-today插件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3/&quot;&gt;202404191548 GTD的主要思想&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/101 Tools/202404202259 Things 工作流/" />
+        </entry>
+        <entry>
+            <title>
                 10x程序员工作法
                 
             </title>
@@ -3556,36 +3587,6 @@ date_translator = require(&amp;quot;date&amp;quot;)
 
             </content>
             <link href="https://wudanyang6.github.io//card/101 Tools/10x程序员工作法/" />
-        </entry>
-        <entry>
-            <title>
-                101b2 Things 工作流
-                
-            </title>
-            <updated>2024-04-14T15:27:57.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/101b2 Things 工作流/</id>
-            <content type="html">
-                &lt;h1 id=&quot;101b2-things&quot; tabindex=&quot;-1&quot;&gt;101b2 Things 工作流&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;有任何事情都记录下来，心中的任何想法都不要放过&lt;/li&gt;
-&lt;li&gt;定时整理收件箱（需要保证整理完收件箱之后，任务都是可执行的）
-&lt;ol&gt;
-&lt;li&gt;如果有事情2分钟就能解决，那么直接去做，属于小事情&lt;/li&gt;
-&lt;li&gt;如果需要15-30分钟，则标记上标签 &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/Pasted%20image%2020231009172220.png&quot; alt=&quot;Pasted image 20231009172220.png&quot; /&gt;&lt;/li&gt;
-&lt;li&gt;如果需要1小时以上，就将任务设置成项目
-&lt;ol&gt;
-&lt;li&gt;做一次任务分解，分解成小任务，小任务以30分钟以内完成最好&lt;/li&gt;
-&lt;li&gt;如果分解项目本身也需要很多时间，那么在项目里面加一个【分解任务】的事项&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;根据时间，选取任务进行处理，打开 &lt;code&gt;Session&lt;/code&gt; 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/Pasted%20image%2020231107224028.png&quot; alt=&quot;Pasted image 20231107224028.png&quot; /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;为了让Things工作流更顺畅，我做了一个obsidian插件： &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/101b1%20obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;101b1 obsidian-things3-today插件&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/101b2 Things 工作流/" />
         </entry>
         <entry>
             <title>

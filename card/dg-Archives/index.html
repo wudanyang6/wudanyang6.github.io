@@ -356,7 +356,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/101 Tools/101b2 Things 工作流/">101b2 Things 工作流 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/101 Tools/10x程序员工作法/">10x程序员工作法 </a>
                 </div>
             
         </div>
@@ -367,7 +367,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/101 Tools/10x程序员工作法/">10x程序员工作法 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/101 Tools/202404202259 Things 工作流/">202404202259 Things 工作流 </a>
                 </div>
             
         </div>
@@ -1453,7 +1453,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-20T14:46:14.230Z';
+        const searchIndexDate = '2024-04-20T16:11:38.357Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1465,9 +1465,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T14:46:14.230Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T16:11:38.357Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T14:46:14.230Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T16:11:38.357Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1726,10 +1726,40 @@
 </thead>
 <tbody class="table-view-tbody">
 <tr>
+<td><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/202404202259 Things 工作流/">202404202259 Things 工作流</a></td>
+<td>2023-10-09 17:20:21</td>
+<td>2024-04-21 00:10:54</td>
+<td><a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#things3">#things3</a></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/">202011201315 - 卡片盒笔记法主要关注什么</a></td>
+<td>2024-04-17 10:36:35</td>
+<td>2024-04-21 00:07:56</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="2" href="/card/202404171707 当你学不下去的时候/">202404171707 当你学不下去的时候</a></td>
+<td>2024-04-17 17:07:58</td>
+<td>2024-04-20 23:19:44</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201016 - 什么是知识和信息/">202011201016 - 什么是知识和信息</a></td>
+<td>2024-04-17 10:36:35</td>
+<td>2024-04-20 22:58:14</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222325 - 信息/">202011222325 - 信息</a></td>
+<td>2024-04-17 10:36:35</td>
+<td>2024-04-20 22:54:08</td>
+<td></td>
+</tr>
+<tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/PHP生成zip压缩包/">PHP生成zip压缩包</a></td>
 <td>2021-11-23 14:16:24</td>
-<td>2024-04-20 22:45:18</td>
-<td></td>
+<td>2024-04-20 22:45:32</td>
+<td><a class="tag" onclick="toggleTagSearch(this)" data-content="#php">#php</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#压缩">#压缩</a></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/linux-perf/">linux-perf</a></td>
@@ -1753,12 +1783,6 @@
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/10x程序员工作法/">10x程序员工作法</a></td>
 <td>2024-01-19 12:46:25</td>
 <td>2024-04-19 16:32:41</td>
-<td></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="2" href="/card/202404171707 当你学不下去的时候/">202404171707 当你学不下去的时候</a></td>
-<td>2024-04-17 17:07:58</td>
-<td>2024-04-19 16:30:27</td>
 <td></td>
 </tr>
 <tr>
@@ -2074,12 +2098,6 @@
 <td><a class="tag" onclick="toggleTagSearch(this)" data-content="#output">#output</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#process">#process</a></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222325 - 信息/">202011222325 - 信息</a></td>
-<td>2024-04-17 10:36:35</td>
-<td>2024-04-17 10:36:40</td>
-<td></td>
-</tr>
-<tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222324 - 知识/">202011222324 - 知识</a></td>
 <td>2024-04-17 10:36:35</td>
 <td>2024-04-17 10:36:40</td>
@@ -2098,19 +2116,7 @@
 <td></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/">202011201315 - 卡片盒笔记法主要关注什么</a></td>
-<td>2024-04-17 10:36:35</td>
-<td>2024-04-17 10:36:40</td>
-<td></td>
-</tr>
-<tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201301 - 基础概念/">202011201301 - 基础概念</a></td>
-<td>2024-04-17 10:36:35</td>
-<td>2024-04-17 10:36:39</td>
-<td></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201016 - 什么是知识和信息/">202011201016 - 什么是知识和信息</a></td>
 <td>2024-04-17 10:36:35</td>
 <td>2024-04-17 10:36:39</td>
 <td></td>
@@ -2186,12 +2192,6 @@
 <td>2023-04-18 22:39:52</td>
 <td>2024-04-15 11:21:30</td>
 <td><a class="tag" onclick="toggleTagSearch(this)" data-content="#excalidraw">#excalidraw</a></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/101b2 Things 工作流/">101b2 Things 工作流</a></td>
-<td>2023-10-09 17:20:21</td>
-<td>2024-04-14 23:27:59</td>
-<td><a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#things3">#things3</a></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a></td>
