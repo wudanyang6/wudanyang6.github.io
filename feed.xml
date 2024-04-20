@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-20T14:43:16Z</updated>
+    <updated>2024-04-20T14:46:14Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -464,7 +464,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-20T14:43:06Z</updated>
+            <updated>2024-04-20T14:46:03Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -489,7 +489,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-20T14:43:06Z</updated>
+            <updated>2024-04-20T14:46:03Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -588,7 +588,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-20T14:43:06Z</updated>
+            <updated>2024-04-20T14:46:03Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -640,7 +640,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-20T14:43:06Z</updated>
+            <updated>2024-04-20T14:46:03Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -1310,7 +1310,7 @@ done
                 linux-perf
                 
             </title>
-            <updated>2024-04-20T14:42:28.000Z</updated>
+            <updated>2024-04-20T14:42:45.000Z</updated>
             <id>https://wudanyang6.github.io//card/linux-perf/</id>
             <content type="html">
                 &lt;h1 id=&quot;linux-perf&quot; tabindex=&quot;-1&quot;&gt;linux-perf&lt;/h1&gt;
@@ -1942,9 +1942,15 @@ if err != nil {
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/PHP%E7%94%9F%E6%88%90zip%E5%8E%8B%E7%BC%A9%E5%8C%85/&quot;&gt;PHP生成zip压缩包&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-11-23 14:16:24&lt;/td&gt;
+&lt;td&gt;2024-04-20 22:45:18&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-perf/&quot;&gt;linux-perf&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2021-05-19 17:19:24&lt;/td&gt;
-&lt;td&gt;2024-04-20 22:42:41&lt;/td&gt;
+&lt;td&gt;2024-04-20 22:42:45&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -2484,6 +2490,29 @@ if err != nil {
 
             </content>
             <link href="https://wudanyang6.github.io//card/alfred-翻译插件/" />
+        </entry>
+        <entry>
+            <title>
+                PHP生成zip压缩包
+                
+            </title>
+            <updated>2024-04-18T08:27:30.000Z</updated>
+            <id>https://wudanyang6.github.io//card/PHP生成zip压缩包/</id>
+            <content type="html">
+                &lt;h1 id=&quot;php-zip&quot; tabindex=&quot;-1&quot;&gt;PHP生成zip压缩包&lt;/h1&gt;
+&lt;h2 id=&quot;zip&quot; tabindex=&quot;-1&quot;&gt;将文件压缩成zip格式&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$path = &amp;quot;file.txt&amp;quot;;
+$filename = &amp;quot;file.zip&amp;quot;;
+
+$zip = new ZipArchive();
+$zip-&amp;gt;open($filename, ZipArchive::CREATE); //打开压缩包
+$zip-&amp;gt;addFile($path, basename($path)); //向压缩包中添加文件
+$zip-&amp;gt;close(); //关闭压缩包
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/PHP生成zip压缩包/" />
         </entry>
         <entry>
             <title>
