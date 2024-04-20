@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-20T16:11:38Z</updated>
+    <updated>2024-04-20T16:16:11Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -464,7 +464,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-20T16:11:28Z</updated>
+            <updated>2024-04-20T16:15:56Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -489,7 +489,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-20T16:11:28Z</updated>
+            <updated>2024-04-20T16:15:56Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -588,7 +588,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-20T16:11:28Z</updated>
+            <updated>2024-04-20T16:15:56Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -1928,10 +1928,22 @@ if err != nil {
                 dg-Archives
                 
             </title>
-            <updated>2024-04-16T08:00:00.000Z</updated>
+            <updated>2024-04-20T16:14:59.000Z</updated>
             <id>https://wudanyang6.github.io//card/dg-Archives/</id>
             <content type="html">
                 &lt;h1 id=&quot;dg-archives&quot; tabindex=&quot;-1&quot;&gt;dg-Archives&lt;/h1&gt;
+&lt;table class=&quot;block-language-dataview&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;总量&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;89&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;table class=&quot;block-language-dataview&quot;&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1943,9 +1955,21 @@ if err != nil {
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/Omnivore/2024-04-19/%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86GTD/&quot;&gt;重新认识GTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-19 15:50:47&lt;/td&gt;
+&lt;td&gt;2024-04-21 00:15:32&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Omnivore&quot;&gt;#Omnivore&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-03-08 16:50:22&lt;/td&gt;
+&lt;td&gt;2024-04-21 00:15:04&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/202404202259%20Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;202404202259 Things 工作流&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2023-10-09 17:20:21&lt;/td&gt;
-&lt;td&gt;2024-04-21 00:10:54&lt;/td&gt;
+&lt;td&gt;2024-04-21 00:12:25&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#效率&quot;&gt;#效率&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tools&quot;&gt;#tools&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#things3&quot;&gt;#things3&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -2351,12 +2375,6 @@ if err != nil {
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#家&quot;&gt;#家&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-03-08 16:50:22&lt;/td&gt;
-&lt;td&gt;2024-04-16 16:00:01&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142017%20%E5%93%B2%E5%AD%A6%E7%9A%84%E5%88%86%E6%94%AF/&quot;&gt;20240415142017 哲学的分支&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-03-18 19:41:54&lt;/td&gt;
 &lt;td&gt;2024-04-15 18:47:40&lt;/td&gt;
@@ -2760,7 +2778,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020220509232211.png&quot; alt=&quot;Pasted image 20220509232211.png&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1wE411176Q?p=6&amp;amp;spm_id_from=333.880.my_history.page.click&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;bilibili教程&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;重新认识GTD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/Omnivore/2024-04-19/%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86GTD/&quot;&gt;重新认识GTD&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/202404191548 GTD的主要思想/" />
@@ -3427,7 +3445,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 202404202259 Things 工作流
                 
             </title>
-            <updated>2024-04-20T15:16:14.000Z</updated>
+            <updated>2024-04-20T16:12:25.000Z</updated>
             <id>https://wudanyang6.github.io//card/101 Tools/202404202259 Things 工作流/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404202259-things&quot; tabindex=&quot;-1&quot;&gt;202404202259 Things 工作流&lt;/h1&gt;
@@ -3691,6 +3709,23 @@ date_translator = require(&amp;quot;date&amp;quot;)
 
             </content>
             <link href="https://wudanyang6.github.io//" />
+        </entry>
+        <entry>
+            <title>
+                重新认识GTD
+                
+            </title>
+            <updated>2024-04-19T00:00:00Z</updated>
+            <id>https://wudanyang6.github.io//Omnivore/2024-04-19/重新认识GTD/</id>
+            <content type="html">
+                &lt;h1 id=&quot;gtd&quot; tabindex=&quot;-1&quot;&gt;重新认识GTD&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Omnivore&quot;&gt;#Omnivore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://omnivore.app/me/topbook-18ef555cd3f&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Read on Omnivore&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://topbook.cc/course/detail/153&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Read Original&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;notes&quot; tabindex=&quot;-1&quot;&gt;Notes&lt;/h2&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//Omnivore/2024-04-19/重新认识GTD/" />
         </entry>
         <entry>
             <title>

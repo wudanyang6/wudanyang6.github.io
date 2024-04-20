@@ -1215,6 +1215,57 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('Omnivore')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">Omnivore</span>
+                    </div>
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('Omnivore/2024-04-19')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">2024-04-19</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/Omnivore/2024-04-19/重新认识GTD/">重新认识GTD </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+    
+        <div x-show="isOpen" style="display:none" class="">
+            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('thoughts')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -1453,7 +1504,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-20T16:11:38.357Z';
+        const searchIndexDate = '2024-04-20T16:16:10.598Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1465,9 +1516,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T16:11:38.357Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T16:16:10.598Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T16:11:38.357Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T16:16:10.598Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1708,13 +1759,25 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:50:22+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-16T16:00:00+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:50:22+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-21T00:14:59+08:00"></span></div></div></div>
       
       
       </header>
       
       
       <h1 id="dg-archives" tabindex="-1">dg-Archives</h1>
+<div class="block-language-dataview table-wrapper"><table class="dataview table-view-table">
+<thead class="table-view-thead">
+<tr class="table-view-tr-header">
+<th class="table-view-th">总量</th>
+</tr>
+</thead>
+<tbody class="table-view-tbody">
+<tr>
+<td>89</td>
+</tr>
+</tbody>
+</table></div>
 <div class="block-language-dataview table-wrapper"><table class="dataview table-view-table">
 <thead class="table-view-thead">
 <tr class="table-view-tr-header">
@@ -1726,9 +1789,21 @@
 </thead>
 <tbody class="table-view-tbody">
 <tr>
+<td><a class="internal-link" target="" data-note-icon="2" href="/Omnivore/2024-04-19/重新认识GTD/">重新认识GTD</a></td>
+<td>2024-04-19 15:50:47</td>
+<td>2024-04-21 00:15:32</td>
+<td><a class="tag" onclick="toggleTagSearch(this)" data-content="#Omnivore">#Omnivore</a></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="2" href="/card/dg-Archives/">dg-Archives</a></td>
+<td>2024-03-08 16:50:22</td>
+<td>2024-04-21 00:15:04</td>
+<td></td>
+</tr>
+<tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/202404202259 Things 工作流/">202404202259 Things 工作流</a></td>
 <td>2023-10-09 17:20:21</td>
-<td>2024-04-21 00:10:54</td>
+<td>2024-04-21 00:12:25</td>
 <td><a class="tag" onclick="toggleTagSearch(this)" data-content="#效率">#效率</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tools">#tools</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#things3">#things3</a></td>
 </tr>
 <tr>
@@ -2132,12 +2207,6 @@
 <td>2024-02-27 17:58:38</td>
 <td>2024-04-16 16:39:46</td>
 <td><a class="tag" onclick="toggleTagSearch(this)" data-content="#家">#家</a></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="2" href="/card/dg-Archives/">dg-Archives</a></td>
-<td>2024-03-08 16:50:22</td>
-<td>2024-04-16 16:00:01</td>
-<td></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="2" href="/card/20240415142017 哲学的分支/">20240415142017 哲学的分支</a></td>

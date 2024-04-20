@@ -1214,6 +1214,57 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('Omnivore')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">Omnivore</span>
+                    </div>
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('Omnivore/2024-04-19')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">2024-04-19</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/Omnivore/2024-04-19/重新认识GTD/">重新认识GTD </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+    
+        <div x-show="isOpen" style="display:none" class="">
+            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('thoughts')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -1451,7 +1502,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-20T16:11:38.357Z';
+        const searchIndexDate = '2024-04-20T16:16:10.598Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1463,9 +1514,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T16:11:38.357Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T16:16:10.598Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T16:11:38.357Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T16:16:10.598Z', docs}));
             window.docs = docs
             window.index = index;
         }
