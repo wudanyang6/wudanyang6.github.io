@@ -738,7 +738,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404171707/">202404171707 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404171707 当你学不下去的时候/">202404171707 当你学不下去的时候 </a>
                 </div>
             
         </div>
@@ -871,6 +871,17 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/go-exec/">go-exec </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/go-mod/">go-mod </a>
                 </div>
             
         </div>
@@ -1420,7 +1431,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-19T07:52:31.863Z';
+        const searchIndexDate = '2024-04-20T14:37:11.713Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1432,9 +1443,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-19T07:52:31.863Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T14:37:11.713Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-19T07:52:31.863Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T14:37:11.713Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1675,7 +1686,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-19T12:46:25+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T15:55:19+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-19T12:46:25+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-19T16:32:40+08:00"></span></div></div></div>
       
       
       </header>
@@ -1713,7 +1724,7 @@
 <ul>
 <li>MVP 最小可行产品</li>
 <li>比较早成型的面向不确定创造新事物的方法论是精益创业，它提出了“开发（build）-测量（measure）-认知（learn）”这样一个反馈循环和最小可行产品的概念。<br>
-如何试出来经过验证的认知 <a href="https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg" target="_blank" class="external-link">https://learn.lianglianglee.com/专栏/10x程序员工作法/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg</a> !<a class="internal-link is-unresolved" href="/404" target="">Paste image 1705900815474image.png</a></li>
+如何试出来经过验证的认知 <img src="/img/user/attachs/Pasted%20image%2020240419163240.png" alt="Pasted image 20240419163240.png"></li>
 <li>精益创业提供给我们的是一个做产品的思考框架，我们能够接触到的大多数产品都可以放在这个框架内思考。</li>
 <li><strong>默认所有需求都不做，直到弄清楚为什么要做这件事。</strong></li>
 </ul>

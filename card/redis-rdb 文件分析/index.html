@@ -738,7 +738,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404171707/">202404171707 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404171707 当你学不下去的时候/">202404171707 当你学不下去的时候 </a>
                 </div>
             
         </div>
@@ -871,6 +871,17 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/go-exec/">go-exec </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/go-mod/">go-mod </a>
                 </div>
             
         </div>
@@ -1420,7 +1431,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-19T07:52:31.863Z';
+        const searchIndexDate = '2024-04-20T14:37:11.713Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1432,9 +1443,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-19T07:52:31.863Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-20T14:37:11.713Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-19T07:52:31.863Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-20T14:37:11.713Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1687,7 +1698,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2020-11-09T21:44:35+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-19T15:27:09+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2020-11-09T21:44:35+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-19T15:52:00+08:00"></span></div></div></div>
       
       
       </header>

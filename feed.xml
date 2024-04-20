@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-19T07:52:32Z</updated>
+    <updated>2024-04-20T14:37:12Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -343,7 +343,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 滑动窗口模板
                 
             </title>
-            <updated>2024-02-01T07:17:30.000Z</updated>
+            <updated>2024-04-20T10:25:52.000Z</updated>
             <id>https://wudanyang6.github.io//card/滑动窗口模板/</id>
             <content type="html">
                 &lt;h1 id=&quot;滑动窗口模板&quot; tabindex=&quot;-1&quot;&gt;滑动窗口模板&lt;/h1&gt;
@@ -401,7 +401,6 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
 &lt;p&gt;多看几个题解：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;lc 的官方题解： &lt;a href=&quot;https://leetcode-cn.com/problems/grumpy-bookstore-owner/solution/ai-sheng-qi-de-shu-dian-lao-ban-by-leetc-dloq/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;爱生气的书店老板&lt;/a&gt;&lt;br /&gt;
@@ -465,7 +464,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-19T07:52:22Z</updated>
+            <updated>2024-04-20T14:37:02Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -490,7 +489,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-04-19T07:52:22Z</updated>
+            <updated>2024-04-20T14:37:02Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -589,7 +588,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-04-19T07:52:22Z</updated>
+            <updated>2024-04-20T14:37:02Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -641,7 +640,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-04-19T07:52:22Z</updated>
+            <updated>2024-04-20T14:37:02Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -953,7 +952,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 redis-rdb 文件分析
                 
             </title>
-            <updated>2024-04-19T07:27:09.000Z</updated>
+            <updated>2024-04-19T07:52:00.000Z</updated>
             <id>https://wudanyang6.github.io//card/redis-rdb 文件分析/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/p&gt;
@@ -1658,6 +1657,38 @@ for j := 0; j &amp;lt; 4; j++ {
         </entry>
         <entry>
             <title>
+                go-mod
+                
+            </title>
+            <updated>2024-04-20T14:36:17.000Z</updated>
+            <id>https://wudanyang6.github.io//card/go-mod/</id>
+            <content type="html">
+                &lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;module novel-spider  
+  
+go 1.16  
+  
+require (  
+   github.com/antchfx/xpath latest  
+)
+
+replace (
+    golang.org/x/crypto v0.0.0-20190313024323-a1f597ede03a =&amp;gt; github.com/golang/crypto v0.0.0-20190313024323-a1f597ede03a
+)
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;module 当前包的名字&lt;/p&gt;
+&lt;p&gt;require 指定依赖项， 跟  &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;go-import&lt;/a&gt; 很像&lt;/p&gt;
+&lt;p&gt;replace 无法自动获取的资源，可以使用 replace 来用本地资源替代&lt;/p&gt;
+&lt;p&gt;参考： &lt;a href=&quot;https://www.jianshu.com/p/760c97ff644c&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.jianshu.com/p/760c97ff644c&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;go-mod&quot; tabindex=&quot;-1&quot;&gt;go-mod&lt;/h1&gt;
+&lt;p&gt;go mod init [模块名]&lt;/p&gt;
+&lt;p&gt;go mod tidy&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/go-mod/" />
+        </entry>
+        <entry>
+            <title>
                 go-exec
                 
             </title>
@@ -1878,9 +1909,33 @@ if err != nil {
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-mod/&quot;&gt;go-mod&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-07-17 23:33:45&lt;/td&gt;
+&lt;td&gt;2024-04-20 22:36:27&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%A8%A1%E6%9D%BF/&quot;&gt;滑动窗口模板&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2021-03-06 18:32:23&lt;/td&gt;
+&lt;td&gt;2024-04-20 18:25:54&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-01-19 12:46:25&lt;/td&gt;
+&lt;td&gt;2024-04-19 16:32:41&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-04-17 17:07:58&lt;/td&gt;
+&lt;td&gt;2024-04-19 16:30:27&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/redis-rdb%20%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90/&quot;&gt;redis-rdb 文件分析&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2020-11-09 21:44:35&lt;/td&gt;
-&lt;td&gt;2024-04-19 15:51:54&lt;/td&gt;
+&lt;td&gt;2024-04-19 15:52:00&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#redis&quot;&gt;#redis&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#rdb&quot;&gt;#rdb&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -2040,12 +2095,6 @@ if err != nil {
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%A8%A1%E6%9D%BF/&quot;&gt;滑动窗口模板&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2021-03-06 18:32:23&lt;/td&gt;
-&lt;td&gt;2024-04-18 16:48:01&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode-1014.%20%E6%9C%80%E4%BD%B3%E8%A7%82%E5%85%89%E7%BB%84%E5%90%88/&quot;&gt;leetcode-1014. 最佳观光组合&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2023-02-26 18:03:28&lt;/td&gt;
 &lt;td&gt;2024-04-18 16:48:01&lt;/td&gt;
@@ -2067,12 +2116,6 @@ if err != nil {
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/php-xml%20%E5%A6%82%E4%BD%95%E8%A7%A3%E6%9E%90%20cdata/&quot;&gt;php-xml 如何解析 cdata&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-18 10:27:20&lt;/td&gt;
 &lt;td&gt;2024-04-18 16:27:43&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-01-19 12:46:25&lt;/td&gt;
-&lt;td&gt;2024-04-18 15:55:19&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -2151,12 +2194,6 @@ if err != nil {
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417125706%20%E9%83%A8%E8%90%BD%E5%86%B2%E7%AA%81/&quot;&gt;20240417125706 部落冲突&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-04-18 10:27:20&lt;/td&gt;
 &lt;td&gt;2024-04-18 10:27:20&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404171707/&quot;&gt;202404171707&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-04-17 17:07:58&lt;/td&gt;
-&lt;td&gt;2024-04-18 10:20:53&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -2715,17 +2752,17 @@ if err != nil {
         </entry>
         <entry>
             <title>
-                202404171707
+                202404171707 当你学不下去的时候
                 
             </title>
-            <updated>2024-04-18T02:20:53.000Z</updated>
-            <id>https://wudanyang6.github.io//card/202404171707/</id>
+            <updated>2024-04-19T08:30:27.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202404171707 当你学不下去的时候/</id>
             <content type="html">
-                &lt;h1 id=&quot;202404171707&quot; tabindex=&quot;-1&quot;&gt;202404171707&lt;/h1&gt;
+                &lt;h1 id=&quot;202404171707&quot; tabindex=&quot;-1&quot;&gt;202404171707 当你学不下去的时候&lt;/h1&gt;
 &lt;p&gt;当你学不下去的时候，闭上眼，想象高考刚刚出分，没考上，你崩溃大哭，问能不能再给我一次机会。睁开眼，这就是你新的机会。&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/202404171707/" />
+            <link href="https://wudanyang6.github.io//card/202404171707 当你学不下去的时候/" />
         </entry>
         <entry>
             <title>
@@ -3321,7 +3358,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 10x程序员工作法
                 
             </title>
-            <updated>2024-04-18T07:55:19.000Z</updated>
+            <updated>2024-04-19T08:32:40.000Z</updated>
             <id>https://wudanyang6.github.io//card/101 Tools/10x程序员工作法/</id>
             <content type="html">
                 &lt;h1 id=&quot;10x&quot; tabindex=&quot;-1&quot;&gt;10x程序员工作法&lt;/h1&gt;
@@ -3356,7 +3393,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;ul&gt;
 &lt;li&gt;MVP 最小可行产品&lt;/li&gt;
 &lt;li&gt;比较早成型的面向不确定创造新事物的方法论是精益创业，它提出了“开发（build）-测量（measure）-认知（learn）”这样一个反馈循环和最小可行产品的概念。&lt;br /&gt;
-如何试出来经过验证的认知 &lt;a href=&quot;https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://learn.lianglianglee.com/专栏/10x程序员工作法/assets/cd2bc0138e5d40e9acfaeb9c974320be.jpg&lt;/a&gt; !&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Paste image 1705900815474image.png&lt;/a&gt;&lt;/li&gt;
+如何试出来经过验证的认知 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240419163240.png&quot; alt=&quot;Pasted image 20240419163240.png&quot; /&gt;&lt;/li&gt;
 &lt;li&gt;精益创业提供给我们的是一个做产品的思考框架，我们能够接触到的大多数产品都可以放在这个框架内思考。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;默认所有需求都不做，直到弄清楚为什么要做这件事。&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -3513,14 +3550,14 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 &lt;h1 id=&quot;20240416231513&quot; tabindex=&quot;-1&quot;&gt;20240416231513 卡片盒笔记法&lt;/h1&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
