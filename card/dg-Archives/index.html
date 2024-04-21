@@ -683,6 +683,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404142147 如何在shell中遍历数字/">202404142147 如何在shell中遍历数字 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/20240415142017 哲学的分支/">20240415142017 哲学的分支 </a>
                 </div>
             
@@ -1453,7 +1464,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-21T08:18:27.252Z';
+        const searchIndexDate = '2024-04-21T14:26:17.653Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1465,9 +1476,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-21T08:18:27.252Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-21T14:26:17.653Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-21T08:18:27.252Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-21T14:26:17.653Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1708,7 +1719,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:50:22+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-21T16:17:28+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:50:22+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-21T16:17:49+08:00"></span></div></div></div>
       
       
       </header>
@@ -1723,7 +1734,7 @@
 </thead>
 <tbody class="table-view-tbody">
 <tr>
-<td>88</td>
+<td>89</td>
 </tr>
 </tbody>
 </table></div>
@@ -1737,7 +1748,7 @@
 <tbody class="table-view-tbody">
 <tr>
 <td>2024-04</td>
-<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">202011230004 - 如何写出容易理解的卡片</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011222338 - 使用卡片盒笔记法输出的流程</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011220028 - 从输出的角度看卡片盒笔记法的优势</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240416231513 卡片盒笔记法</a>	2024-04-2024年4月16日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011201315 - 卡片盒笔记法主要关注什么</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404171707 当你学不下去的时候</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404151422 游戏</a>	2024-04-2024年4月15日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404181228 使用 <code>open --background</code> 的形式打开 obsidian 不够轻便</a>	2024-04-2024年4月18日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404181240 快捷指令-记录今天的事情 obsidian</a>	2024-04-2024年4月18日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240417125706 部落冲突</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011192023 - 卡片盒笔记法的基本元素</a>	2024-04-2024年4月7日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240409104458 leetcode-会员购买优惠-宫水三叶</a>	2024-04-2024年4月9日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240417103919 卡片盒笔记法的标题是对内容的一句话描述</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240415183533 哲学书单</a>	2024-04-2024年4月15日</li></ul></td>
+<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">202404142147 如何在shell中遍历数字</a>	2024-04-2024年4月14日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011230004 - 如何写出容易理解的卡片</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011222338 - 使用卡片盒笔记法输出的流程</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011220028 - 从输出的角度看卡片盒笔记法的优势</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240416231513 卡片盒笔记法</a>	2024-04-2024年4月16日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011201315 - 卡片盒笔记法主要关注什么</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404171707 当你学不下去的时候</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404151422 游戏</a>	2024-04-2024年4月15日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404181228 使用 <code>open --background</code> 的形式打开 obsidian 不够轻便</a>	2024-04-2024年4月18日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404181240 快捷指令-记录今天的事情 obsidian</a>	2024-04-2024年4月18日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240417125706 部落冲突</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011192023 - 卡片盒笔记法的基本元素</a>	2024-04-2024年4月7日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240409104458 leetcode-会员购买优惠-宫水三叶</a>	2024-04-2024年4月9日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240417103919 卡片盒笔记法的标题是对内容的一句话描述</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240415183533 哲学书单</a>	2024-04-2024年4月15日</li></ul></td>
 </tr>
 <tr>
 <td>2024-03</td>
