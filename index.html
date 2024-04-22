@@ -770,7 +770,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便/">202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404181228 使用 open --background 的形式打开 obsidian 不够轻便/">202404181228 使用 open --background 的形式打开 obsidian 不够轻便 </a>
                 </div>
             
         </div>
@@ -1462,7 +1462,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-22T02:50:59.132Z';
+        const searchIndexDate = '2024-04-22T02:57:58.281Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1474,9 +1474,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-22T02:50:59.132Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-22T02:57:58.281Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-22T02:50:59.132Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-22T02:57:58.281Z', docs}));
             window.docs = docs
             window.index = index;
         }

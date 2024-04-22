@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便</title>
+    <title>202404181228 使用 open --background 的形式打开 obsidian 不够轻便</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -771,7 +771,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便/">202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404181228 使用 open --background 的形式打开 obsidian 不够轻便/">202404181228 使用 open --background 的形式打开 obsidian 不够轻便 </a>
                 </div>
             
         </div>
@@ -1464,7 +1464,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-22T02:50:59.132Z';
+        const searchIndexDate = '2024-04-22T02:57:58.281Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1476,9 +1476,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-22T02:50:59.132Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-22T02:57:58.281Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-22T02:50:59.132Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-22T02:57:58.281Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1710,7 +1710,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便</h1>
+          <h1 data-note-icon="2">202404181228 使用 open --background 的形式打开 obsidian 不够轻便</h1>
         
         <div class="header-meta">
           
@@ -1719,13 +1719,13 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-18T12:27:51+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T12:48:53+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-18T12:27:51+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-22T10:57:24+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="202404181228-code-open-background-code-obsidian" tabindex="-1">202404181228 使用 <code>open --background</code> 的形式打开 obsidian 不够轻便</h1>
+      <h1 id="202404181228-open-background-obsidian" tabindex="-1">202404181228 使用 open --background 的形式打开 obsidian 不够轻便</h1>
 <p>mac 的快捷指令执行太慢，所以 <a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/obsidian/不打开obsidian的情况下记录当前事件/">不打开obsidian的情况下记录当前事件</a> 虽然能够实现后台记录日志，但是对流程太过打扰，所以我现在使用了 <a class="internal-link is-unresolved" href="/404" target="">Raycast</a> 的 floating note 进行简单记录一些一闪而过的想法，或者使用 <a class="internal-link is-unresolved" href="/404" target="">Things</a> 的快速捕获功能进行记录</p>
 
       
@@ -1995,7 +1995,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#202404181228-code-open-background-code-obsidian">202404181228 使用 open --background 的形式打开 obsidian 不够轻便</a>
+                    <li><a href="#202404181228-open-background-obsidian">202404181228 使用 open --background 的形式打开 obsidian 不够轻便</a>
             		</li>
                 </ol>
             </nav>

@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-22T02:50:59Z</updated>
+    <updated>2024-04-22T02:57:58Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -1948,6 +1948,7 @@ if err != nil {
 &lt;li&gt;
 &lt;p&gt;2024-04:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181228%20%E4%BD%BF%E7%94%A8%20open%20--background%20%E7%9A%84%E5%BD%A2%E5%BC%8F%E6%89%93%E5%BC%80%20obsidian%20%E4%B8%8D%E5%A4%9F%E8%BD%BB%E4%BE%BF/&quot;&gt;202404181228 使用 open --background 的形式打开 obsidian 不够轻便&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404142147%20%E5%A6%82%E4%BD%95%E5%9C%A8shell%E4%B8%AD%E9%81%8D%E5%8E%86%E6%95%B0%E5%AD%97/&quot;&gt;202404142147 如何在shell中遍历数字&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
@@ -1956,7 +1957,6 @@ if err != nil {
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/202404151422%20%E6%B8%B8%E6%88%8F/&quot;&gt;202404151422 游戏&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;202404181228 使用 &lt;code&gt;open --background&lt;/code&gt; 的形式打开 obsidian 不够轻便&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181240%20%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4-%E8%AE%B0%E5%BD%95%E4%BB%8A%E5%A4%A9%E7%9A%84%E4%BA%8B%E6%83%85%20obsidian/&quot;&gt;202404181240 快捷指令-记录今天的事情 obsidian&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417125706%20%E9%83%A8%E8%90%BD%E5%86%B2%E7%AA%81/&quot;&gt;20240417125706 部落冲突&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
@@ -2501,17 +2501,17 @@ $zip-&amp;gt;close(); //关闭压缩包
         </entry>
         <entry>
             <title>
-                202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便
+                202404181228 使用 open --background 的形式打开 obsidian 不够轻便
                 
             </title>
-            <updated>2024-04-18T04:48:53.000Z</updated>
-            <id>https://wudanyang6.github.io//card/202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便/</id>
+            <updated>2024-04-22T02:57:24.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202404181228 使用 open --background 的形式打开 obsidian 不够轻便/</id>
             <content type="html">
-                &lt;h1 id=&quot;202404181228-code-open-background-code-obsidian&quot; tabindex=&quot;-1&quot;&gt;202404181228 使用 &lt;code&gt;open --background&lt;/code&gt; 的形式打开 obsidian 不够轻便&lt;/h1&gt;
+                &lt;h1 id=&quot;202404181228-open-background-obsidian&quot; tabindex=&quot;-1&quot;&gt;202404181228 使用 open --background 的形式打开 obsidian 不够轻便&lt;/h1&gt;
 &lt;p&gt;mac 的快捷指令执行太慢，所以 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/obsidian/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt; 虽然能够实现后台记录日志，但是对流程太过打扰，所以我现在使用了 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Raycast&lt;/a&gt; 的 floating note 进行简单记录一些一闪而过的想法，或者使用 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Things&lt;/a&gt; 的快速捕获功能进行记录&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/202404181228 使用 `open --background` 的形式打开 obsidian 不够轻便/" />
+            <link href="https://wudanyang6.github.io//card/202404181228 使用 open --background 的形式打开 obsidian 不够轻便/" />
         </entry>
         <entry>
             <title>
