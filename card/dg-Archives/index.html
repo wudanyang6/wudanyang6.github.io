@@ -1464,7 +1464,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-21T14:26:17.653Z';
+        const searchIndexDate = '2024-04-22T02:50:59.132Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1476,9 +1476,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-21T14:26:17.653Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-22T02:50:59.132Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-21T14:26:17.653Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-22T02:50:59.132Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1719,7 +1719,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:50:22+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-21T16:17:49+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-08T16:50:22+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-22T10:50:26+08:00"></span></div></div></div>
       
       
       </header>
@@ -1738,132 +1738,242 @@
 </tr>
 </tbody>
 </table></div>
-<div class="block-language-dataview table-wrapper"><table class="dataview table-view-table">
-<thead class="table-view-thead">
-<tr class="table-view-tr-header">
-<th class="table-view-th">CMONTH</th>
-<th class="table-view-th">files</th>
-</tr>
-</thead>
-<tbody class="table-view-tbody">
-<tr>
-<td>2024-04</td>
-<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">202404142147 如何在shell中遍历数字</a>	2024-04-2024年4月14日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011230004 - 如何写出容易理解的卡片</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011222338 - 使用卡片盒笔记法输出的流程</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011220028 - 从输出的角度看卡片盒笔记法的优势</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240416231513 卡片盒笔记法</a>	2024-04-2024年4月16日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011201315 - 卡片盒笔记法主要关注什么</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404171707 当你学不下去的时候</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404151422 游戏</a>	2024-04-2024年4月15日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404181228 使用 <code>open --background</code> 的形式打开 obsidian 不够轻便</a>	2024-04-2024年4月18日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404181240 快捷指令-记录今天的事情 obsidian</a>	2024-04-2024年4月18日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240417125706 部落冲突</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011192023 - 卡片盒笔记法的基本元素</a>	2024-04-2024年4月7日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240409104458 leetcode-会员购买优惠-宫水三叶</a>	2024-04-2024年4月9日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240417103919 卡片盒笔记法的标题是对内容的一句话描述</a>	2024-04-2024年4月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240415183533 哲学书单</a>	2024-04-2024年4月15日</li></ul></td>
-</tr>
-<tr>
-<td>2024-03</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/dg-Archives/">dg-Archives</a>	2024-03-2024年3月8日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240415142017 哲学的分支</a>	2024-03-2024年3月18日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240415141933 什么是哲学</a>	2024-03-2024年3月18日</li><li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/做事心得/">做事心得</a>	2024-03-2024年3月8日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/go-exec-run/">go-exec-run</a>	2024-03-2024年3月13日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/go-exec/">go-exec</a>	2024-03-2024年3月13日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/ithoughtx破产了/">ithoughtx破产了</a>	2024-03-2024年3月5日</li></ul></td>
-</tr>
-<tr>
-<td>2024-02</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/软装-沙发/">软装-沙发</a>	2024-02-2024年2月27日</li><li><a class="internal-link is-unresolved" href="/404" target="">leetcode 编码技巧</a>	2024-02-2024年2月4日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/创建一个chrome独立APP窗口/">创建一个chrome独立APP窗口</a>	2024-02-2024年2月27日</li></ul></td>
-</tr>
-<tr>
-<td>2024-01</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/10x程序员工作法/">10x程序员工作法</a>	2024-01-2024年1月19日</li><li><a class="internal-link is-unresolved" href="/404" target="">101b1 obsidian-things3-today插件</a>	2024-01-2024年1月29日</li><li><a class="internal-link is-unresolved" href="/404" target="">CDN 带宽控制的几种方法</a>	2024-01-2024年1月31日</li><li><a class="internal-link is-unresolved" href="/404" target="">About Me</a>	2024-01-2024年1月30日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a>	2024-01-2024年1月28日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240415142052 原神挺好玩</a>	2024-01-2024年1月31日</li><li><a class="internal-link is-unresolved" href="/404" target="">0 Home dy-turbo</a>	2024-01-2024年1月28日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/Kafka入门/">Kafka入门</a>	2024-01-2024年1月15日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/算法新年祝福语/">算法新年祝福语</a>	2024-01-2024年1月16日</li><li><a class="internal-link is-unresolved" href="/404" target="">obsidian 开发过程支持的ICON</a>	2024-01-2024年1月25日</li></ul></td>
-</tr>
-<tr>
-<td>2023-12</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-wait/">linux-wait</a>	2023-12-2023年12月11日</li></ul></td>
-</tr>
-<tr>
-<td>2023-10</td>
-<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">202404202259 Things 工作流</a>	2023-10-2023年10月9日</li></ul></td>
-</tr>
-<tr>
-<td>2023-09</td>
-<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">mac 运行 kafka</a>	2023-09-2023年9月13日</li></ul></td>
-</tr>
-<tr>
-<td>2023-08</td>
-<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">202404151418 哲学</a>	2023-08-2023年8月8日</li></ul></td>
-</tr>
-<tr>
-<td>2023-06</td>
-<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">vscode git 只暂存部分改动</a>	2023-06-2023年6月19日</li></ul></td>
-</tr>
-<tr>
-<td>2023-05</td>
-<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">vscode vim 状态下显示提示</a>	2023-05-2023年5月9日</li></ul></td>
-</tr>
-<tr>
-<td>2023-04</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw</a>	2023-04-2023年4月18日</li></ul></td>
-</tr>
-<tr>
-<td>2023-02</td>
-<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">leetcode-53. 最大子数组和</a>	2023-02-2023年2月26日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/获取进程存活时间/">获取进程存活时间</a>	2023-02-2023年2月27日</li><li><a class="internal-link is-unresolved" href="/404" target="">leetcode-1014. 最佳观光组合</a>	2023-02-2023年2月26日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/mac/mac-合上盖子不断网/">mac-合上盖子不断网</a>	2023-02-2023年2月3日</li><li><a class="internal-link is-unresolved" href="/404" target="">leetcode-1137第 N 个泰波那契数</a>	2023-02-2023年2月26日</li></ul></td>
-</tr>
-<tr>
-<td>2023-01</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-查看内存占用情况/">linux-查看内存占用情况</a>	2023-01-2023年1月4日</li></ul></td>
-</tr>
-<tr>
-<td>2022-12</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/vim显示列分隔符/">vim显示列分隔符</a>	2022-12-2022年12月7日</li></ul></td>
-</tr>
-<tr>
-<td>2022-11</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/mac/mac-自定义快捷键/">mac-自定义快捷键</a>	2022-11-2022年11月16日</li></ul></td>
-</tr>
-<tr>
-<td>2022-09</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/obsidian/不打开obsidian的情况下记录当前事件/">不打开obsidian的情况下记录当前事件</a>	2022-09-2022年9月25日</li></ul></td>
-</tr>
-<tr>
-<td>2022-08</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/阅读/如何合并marginnote笔记本/">如何合并marginnote笔记本</a>	2022-08-2022年8月30日</li></ul></td>
-</tr>
-<tr>
-<td>2022-05</td>
-<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">202404191548 GTD的主要思想</a>	2022-05-2022年5月5日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/docker-ubuntu-unminimize/">docker-ubuntu-unminimize</a>	2022-05-2022年5月8日</li></ul></td>
-</tr>
-<tr>
-<td>2022-02</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/js超长数字溢出问题/">js超长数字溢出问题</a>	2022-02-2022年2月26日</li></ul></td>
-</tr>
-<tr>
-<td>2021-12</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/mac/mac-鼠须管-使用lua脚本/">mac-鼠须管-使用lua脚本</a>	2021-12-2021年12月26日</li></ul></td>
-</tr>
-<tr>
-<td>2021-11</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/PHP生成zip压缩包/">PHP生成zip压缩包</a>	2021-11-2021年11月23日</li></ul></td>
-</tr>
-<tr>
-<td>2021-10</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-echo/">linux-echo</a>	2021-10-2021年10月19日</li></ul></td>
-</tr>
-<tr>
-<td>2021-07</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/go-mod/">go-mod</a>	2021-07-2021年7月17日</li><li><a class="internal-link is-unresolved" href="/404" target="">php-xml 如何解析 cdata</a>	2021-07-2021年7月19日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-树莓派无法上网排查/">linux-树莓派无法上网排查</a>	2021-07-2021年7月15日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/iso-日期表示法/">iso-日期表示法</a>	2021-07-2021年7月25日</li></ul></td>
-</tr>
-<tr>
-<td>2021-06</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/alfred-翻译插件/">alfred-翻译插件</a>	2021-06-2021年6月26日</li><li><a class="internal-link is-unresolved" href="/404" target="">202404181227 补码</a>	2021-06-2021年6月26日</li></ul></td>
-</tr>
-<tr>
-<td>2021-05</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-perf/">linux-perf</a>	2021-05-2021年5月19日</li><li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/如何做监控/">如何做监控</a>	2021-05-2021年5月7日</li><li><a class="internal-link is-unresolved" href="/404" target="">网络-最多有多少个a类、b类和c类网络号</a>	2021-05-2021年5月24日</li></ul></td>
-</tr>
-<tr>
-<td>2021-04</td>
-<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">nginx master 进程</a>	2021-04-2021年4月14日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/nginx-master-start-worker/">nginx-master-start-worker</a>	2021-04-2021年4月16日</li><li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/如何追查线上问题/">如何追查线上问题</a>	2021-04-2021年4月12日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-man命令使用/">linux-man命令使用</a>	2021-04-2021年4月7日</li><li><a class="internal-link is-unresolved" href="/404" target="">ubuntu 树莓派启动时配置网络</a>	2021-04-2021年4月27日</li><li><a class="internal-link is-unresolved" href="/404" target="">nginx 进程模型-整体架构</a>	2021-04-2021年4月14日</li></ul></td>
-</tr>
-<tr>
-<td>2021-03</td>
-<td><ul><li><a class="internal-link" target="" data-note-icon="2" href="/card/滑动窗口模板/">滑动窗口模板</a>	2021-03-2021年3月6日</li><li><a class="internal-link is-unresolved" href="/404" target="">202103251606 - linux-科学上网</a>	2021-03-2021年3月25日</li><li><a class="internal-link is-unresolved" href="/404" target="">vscode 调试nginx代码</a>	2021-03-2021年3月25日</li></ul></td>
-</tr>
-<tr>
-<td>2020-12</td>
-<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">202012081017 - php8.0 新特性</a>	2020-12-2020年12月8日</li></ul></td>
-</tr>
-<tr>
-<td>2020-11</td>
-<td><ul><li><a class="internal-link is-unresolved" href="/404" target="">202011201016 - 什么是知识和信息</a>	2020-11-2020年11月20日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011222325 - 信息</a>	2020-11-2020年11月22日</li><li><a class="internal-link is-unresolved" href="/404" target="">redis-rdb 文件分析</a>	2020-11-2020年11月9日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011222209 - 卡片盒笔记法的步骤</a>	2020-11-2020年11月22日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011210003 - 卡片盒笔记法的基本流程</a>	2020-11-2020年11月21日</li><li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/生成/">生成</a>	2020-11-2020年11月24日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011192022 - 什么是卡片盒笔记法</a>	2020-11-2020年11月19日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011201301 - 基础概念</a>	2020-11-2020年11月20日</li><li><a class="internal-link is-unresolved" href="/404" target="">20240408201701 卡片盒笔记法</a>	2020-11-2020年11月19日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011222324 - 知识</a>	2020-11-2020年11月22日</li><li><a class="internal-link is-unresolved" href="/404" target="">phpstorm 两下 ctrl 可以快速运行程序</a>	2020-11-2020年11月26日</li><li><a class="internal-link is-unresolved" href="/404" target="">202011222310 - 卡片盒笔记法的模块</a>	2020-11-2020年11月22日</li></ul></td>
-</tr>
-</tbody>
-</table></div>
+<ul class="block-language-dataview">
+<li>
+<p>2024-04:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/202404142147 如何在shell中遍历数字/">202404142147 如何在shell中遍历数字</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/">202011230004 - 如何写出容易理解的卡片</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/">202011222338 - 使用卡片盒笔记法输出的流程</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/">202011220028 - 从输出的角度看卡片盒笔记法的优势</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/">20240416231513 卡片盒笔记法</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/">202011201315 - 卡片盒笔记法主要关注什么</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/202404171707 当你学不下去的时候/">202404171707 当你学不下去的时候</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/000 Topic Index/202404151422 游戏/">202404151422 游戏</a></li>
+<li><a class="internal-link is-unresolved" href="/404" target="">202404181228 使用 <code>open --background</code> 的形式打开 obsidian 不够轻便</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/202404181240 快捷指令-记录今天的事情 obsidian/">202404181240 快捷指令-记录今天的事情 obsidian</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/20240417125706 部落冲突/">20240417125706 部落冲突</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/">202011192023 - 卡片盒笔记法的基本元素</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/20240409104458 leetcode-会员购买优惠-宫水三叶/">20240409104458 leetcode-会员购买优惠-宫水三叶</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/20240417103919 卡片盒笔记法的标题是对内容的一句话描述/">20240417103919 卡片盒笔记法的标题是对内容的一句话描述</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/20240415183533 哲学书单/">20240415183533 哲学书单</a></li>
+</ul>
+</li>
+<li>
+<p>2024-03:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/dg-Archives/">dg-Archives</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/20240415142017 哲学的分支/">20240415142017 哲学的分支</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/20240415141933 什么是哲学/">20240415141933 什么是哲学</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/做事心得/">做事心得</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/go-exec-run/">go-exec-run</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/go-exec/">go-exec</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/ithoughtx破产了/">ithoughtx破产了</a></li>
+</ul>
+</li>
+<li>
+<p>2024-02:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/软装-沙发/">软装-沙发</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/leetcode 编码技巧/">leetcode 编码技巧</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/创建一个chrome独立APP窗口/">创建一个chrome独立APP窗口</a></li>
+</ul>
+</li>
+<li>
+<p>2024-01:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/10x程序员工作法/">10x程序员工作法</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/101b1 obsidian-things3-today插件/">101b1 obsidian-things3-today插件</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/CDN 带宽控制的几种方法/">CDN 带宽控制的几种方法</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/About Me/">About Me</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/20240415142052 原神挺好玩/">20240415142052 原神挺好玩</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/">0 Home dy-turbo</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/Kafka入门/">Kafka入门</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/算法新年祝福语/">算法新年祝福语</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/obsidian/obsidian 开发过程支持的ICON/">obsidian 开发过程支持的ICON</a></li>
+</ul>
+</li>
+<li>
+<p>2023-12:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-wait/">linux-wait</a></li>
+</ul>
+</li>
+<li>
+<p>2023-10:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/202404202259 Things 工作流/">202404202259 Things 工作流</a></li>
+</ul>
+</li>
+<li>
+<p>2023-09:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/mac 运行 kafka/">mac 运行 kafka</a></li>
+</ul>
+</li>
+<li>
+<p>2023-08:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/000 Topic Index/202404151418 哲学/">202404151418 哲学</a></li>
+</ul>
+</li>
+<li>
+<p>2023-06:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/vscode git 只暂存部分改动/">vscode git 只暂存部分改动</a></li>
+</ul>
+</li>
+<li>
+<p>2023-05:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/vscode vim 状态下显示提示/">vscode vim 状态下显示提示</a></li>
+</ul>
+</li>
+<li>
+<p>2023-04:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw</a></li>
+</ul>
+</li>
+<li>
+<p>2023-02:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/leetcode-53. 最大子数组和/">leetcode-53. 最大子数组和</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/获取进程存活时间/">获取进程存活时间</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/leetcode-1014. 最佳观光组合/">leetcode-1014. 最佳观光组合</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/mac/mac-合上盖子不断网/">mac-合上盖子不断网</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数</a></li>
+</ul>
+</li>
+<li>
+<p>2023-01:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-查看内存占用情况/">linux-查看内存占用情况</a></li>
+</ul>
+</li>
+<li>
+<p>2022-12:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/vim显示列分隔符/">vim显示列分隔符</a></li>
+</ul>
+</li>
+<li>
+<p>2022-11:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/mac/mac-自定义快捷键/">mac-自定义快捷键</a></li>
+</ul>
+</li>
+<li>
+<p>2022-09:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/obsidian/不打开obsidian的情况下记录当前事件/">不打开obsidian的情况下记录当前事件</a></li>
+</ul>
+</li>
+<li>
+<p>2022-08:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/阅读/如何合并marginnote笔记本/">如何合并marginnote笔记本</a></li>
+</ul>
+</li>
+<li>
+<p>2022-05:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/202404191548 GTD的主要思想/">202404191548 GTD的主要思想</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/docker-ubuntu-unminimize/">docker-ubuntu-unminimize</a></li>
+</ul>
+</li>
+<li>
+<p>2022-02:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/js超长数字溢出问题/">js超长数字溢出问题</a></li>
+</ul>
+</li>
+<li>
+<p>2021-12:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/mac/mac-鼠须管-使用lua脚本/">mac-鼠须管-使用lua脚本</a></li>
+</ul>
+</li>
+<li>
+<p>2021-11:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/PHP生成zip压缩包/">PHP生成zip压缩包</a></li>
+</ul>
+</li>
+<li>
+<p>2021-10:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-echo/">linux-echo</a></li>
+</ul>
+</li>
+<li>
+<p>2021-07:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/go-mod/">go-mod</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/php-xml 如何解析 cdata/">php-xml 如何解析 cdata</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-树莓派无法上网排查/">linux-树莓派无法上网排查</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/iso-日期表示法/">iso-日期表示法</a></li>
+</ul>
+</li>
+<li>
+<p>2021-06:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/alfred-翻译插件/">alfred-翻译插件</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/202404181227 补码/">202404181227 补码</a></li>
+</ul>
+</li>
+<li>
+<p>2021-05:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-perf/">linux-perf</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/如何做监控/">如何做监控</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/网络-最多有多少个a类、b类和c类网络号/">网络-最多有多少个a类、b类和c类网络号</a></li>
+</ul>
+</li>
+<li>
+<p>2021-04:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/nginx master 进程/">nginx master 进程</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/nginx-master-start-worker/">nginx-master-start-worker</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/如何追查线上问题/">如何追查线上问题</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-man命令使用/">linux-man命令使用</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/nginx 进程模型-整体架构/">nginx 进程模型-整体架构</a></li>
+</ul>
+</li>
+<li>
+<p>2021-03:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/滑动窗口模板/">滑动窗口模板</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/202103251606 - linux-科学上网/">202103251606 - linux-科学上网</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/vscode 调试nginx代码/">vscode 调试nginx代码</a></li>
+</ul>
+</li>
+<li>
+<p>2020-12:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/202012081017 - php8.0 新特性/">202012081017 - php8.0 新特性</a></li>
+</ul>
+</li>
+<li>
+<p>2020-11:</p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201016 - 什么是知识和信息/">202011201016 - 什么是知识和信息</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222325 - 信息/">202011222325 - 信息</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/redis-rdb 文件分析/">redis-rdb 文件分析</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222209 - 卡片盒笔记法的步骤/">202011222209 - 卡片盒笔记法的步骤</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011210003 - 卡片盒笔记法的基本流程/">202011210003 - 卡片盒笔记法的基本流程</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/生成/">生成</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011192022 - 什么是卡片盒笔记法/">202011192022 - 什么是卡片盒笔记法</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201301 - 基础概念/">202011201301 - 基础概念</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/20240408201701 卡片盒笔记法/">20240408201701 卡片盒笔记法</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222324 - 知识/">202011222324 - 知识</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/phpstorm 两下 ctrl 可以快速运行程序/">phpstorm 两下 ctrl 可以快速运行程序</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222310 - 卡片盒笔记法的模块/">202011222310 - 卡片盒笔记法的模块</a></li>
+</ul>
+</li>
+</ul>
 
       
       

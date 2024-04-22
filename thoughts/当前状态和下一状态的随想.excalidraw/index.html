@@ -1464,7 +1464,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-21T14:26:17.653Z';
+        const searchIndexDate = '2024-04-22T02:50:59.132Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1476,9 +1476,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-21T14:26:17.653Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-22T02:50:59.132Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-21T14:26:17.653Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-22T02:50:59.132Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1996,9 +1996,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
+                                                </div></div>
                               </div>
                         
                   
