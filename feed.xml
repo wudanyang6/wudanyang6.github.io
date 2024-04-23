@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-22T02:57:58Z</updated>
+    <updated>2024-04-23T09:35:20Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -1940,7 +1940,7 @@ if err != nil {
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;89&lt;/td&gt;
+&lt;td&gt;90&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1948,6 +1948,7 @@ if err != nil {
 &lt;li&gt;
 &lt;p&gt;2024-04:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404231624%20%E5%A6%82%E4%BD%95%E5%9C%A8%20Finder%20%E4%B8%AD%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E5%85%A8%E7%A7%B0/&quot;&gt;202404231624 如何在 Finder 中拷贝文件路径全称&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181228%20%E4%BD%BF%E7%94%A8%20open%20--background%20%E7%9A%84%E5%BD%A2%E5%BC%8F%E6%89%93%E5%BC%80%20obsidian%20%E4%B8%8D%E5%A4%9F%E8%BD%BB%E4%BE%BF/&quot;&gt;202404181228 使用 open --background 的形式打开 obsidian 不够轻便&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404142147%20%E5%A6%82%E4%BD%95%E5%9C%A8shell%E4%B8%AD%E9%81%8D%E5%8E%86%E6%95%B0%E5%AD%97/&quot;&gt;202404142147 如何在shell中遍历数字&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
@@ -2447,6 +2448,20 @@ $zip-&amp;gt;close(); //关闭压缩包
 
             </content>
             <link href="https://wudanyang6.github.io//card/About Me/" />
+        </entry>
+        <entry>
+            <title>
+                202404231624 如何在 Finder 中拷贝文件路径全称
+                
+            </title>
+            <updated>2024-04-23T09:34:33.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202404231624 如何在 Finder 中拷贝文件路径全称/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202404231624-finder&quot; tabindex=&quot;-1&quot;&gt;202404231624 如何在 Finder 中拷贝文件路径全称&lt;/h1&gt;
+&lt;p&gt;在文件上右键，按住 opt 键，点击“将xxx拷贝为路径名称”&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/202404231624 如何在 Finder 中拷贝文件路径全称/" />
         </entry>
         <entry>
             <title>

@@ -804,6 +804,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404231624 如何在 Finder 中拷贝文件路径全称/">202404231624 如何在 Finder 中拷贝文件路径全称 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/About Me/">About Me </a>
                 </div>
             
@@ -1464,7 +1475,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-22T02:57:58.281Z';
+        const searchIndexDate = '2024-04-23T09:35:19.504Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1476,9 +1487,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-22T02:57:58.281Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-23T09:35:19.504Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-22T02:57:58.281Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-23T09:35:19.504Z', docs}));
             window.docs = docs
             window.index = index;
         }
