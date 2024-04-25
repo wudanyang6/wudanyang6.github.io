@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>linux-echo</title>
+    <title>如何查看 nginx 的rewrite记录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -1024,7 +1024,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/linux-echo/">linux-echo </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/linux-echo/">linux-echo </a>
                 </div>
             
         </div>
@@ -1211,7 +1211,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/如何查看 nginx 的rewrite记录/">如何查看 nginx 的rewrite记录 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/如何查看 nginx 的rewrite记录/">如何查看 nginx 的rewrite记录 </a>
                 </div>
             
         </div>
@@ -1765,7 +1765,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">linux-echo</h1>
+          <h1 data-note-icon="2">如何查看 nginx 的rewrite记录</h1>
         
         <div class="header-meta">
           
@@ -1773,30 +1773,39 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #linux
-                  </a>
-                
-              
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-10-19T11:27:48+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-02-02T16:15:36+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-04-22T18:14:44+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-25T19:06:11+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="常用" tabindex="-1">常用</h1>
-<p>echo &quot;hello&quot;</p>
-<p>echo -n &quot;hello&quot; # 这种会去掉换行</p>
-<p>sh 不支持这个 -n 参数，很奇怪</p>
-<h1 id="n-zsh" tabindex="-1">使用-n参数zsh 后面会跟着一个百分号</h1>
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-<div class="markdown-embed-title">
-<h1 id="printf-puts-a-percent-sign-after-everything-it-prints" tabindex="-1">Printf puts a percent sign after everything it prints</h1>
-</div>
-<p>This is <code>zsh</code>'s way of telling you that the preceding command outputted a partial line and the shell terminated that line to give you a prompt on a new line.</p>
-</div></div>
+      <h1 id="nginx-rewrite" tabindex="-1">如何查看 nginx 的rewrite记录</h1>
+<p>设置 <code>rewrite_log on;</code></p>
+<p>并且将<code>error_log</code> 的报错等级改成 <code>notice</code>;</p>
+<p>官网对 <code>rewrite_log</code> 的解释：</p>
+<pre><code class="language-plain">Syntax:	rewrite_log on | off;
+Default:	
+rewrite_log off;
+Context:	http, server, location, if
+Enables or disables logging of ngx_http_rewrite_module module directives processing results into the error_log at the notice level.
+</code></pre>
+<p>可以看到，这个指令只能在 <code>http</code> <code>server</code> <code>location</code> <code>if</code> 配置指令中使用，日志等级是 <code>notice</code> 写入到 <code>error_log</code> 配置的文件中。</p>
+<h1 id="示例" tabindex="-1">示例</h1>
+<p>url： <code>/q?someparams</code></p>
+<pre><code class="language-sh">2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+m/question(.*)?qid=\d+(.*)?$&quot; does not match ...
+... 中间省略一些日志
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+question/(\w+.*?)$&quot; does not match ...
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+q\?(.*)?tn=nsatom_qb_main(.*)?$&quot; matches ...
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &quot;^/+q&quot; matches ...
+2021/04/22 18:21:28 [notice] 18131#0: *102982 rewritten data: &quot;/q/q/q/q/q&quot;
+</code></pre>
+<p>从上面的日志中可以看出，当触发了重写规则时，会有关键字 <code>matches</code> 否则会有 <code>does not match</code> 。</p>
+<p>最终重写完成之后，访问的地址会有标记：<code>rewritten data</code></p>
+<p>这里就是 <code>/q/q/q/q/q</code></p>
+<h1 id="参考" tabindex="-1">参考</h1>
+<p><a href="https://serverfault.com/questions/333048/best-way-to-debug-nginx-rewrite-rules-in-config-file" target="_blank" class="external-link">best way to debug nginx rewrite rules in config file?</a></p>
+<p><a href="https://nginx.org/en/docs/http/ngx_http_rewrite_module.html" target="_blank" class="external-link">nginx官方文档：Module ngx_http_rewrite_module</a></p>
 
       
       
@@ -2065,13 +2074,13 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#常用">常用</a>
+                    <li><a href="#nginx-rewrite">如何查看 nginx 的rewrite记录</a>
             		</li>
 
-                    <li><a href="#n-zsh">使用-n参数zsh 后面会跟着一个百分号</a>
+                    <li><a href="#示例">示例</a>
             		</li>
 
-                    <li><a href="#printf-puts-a-percent-sign-after-everything-it-prints">Printf puts a percent sign after everything it prints</a>
+                    <li><a href="#参考">参考</a>
             		</li>
                 </ol>
             </nav>

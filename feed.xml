@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-25T11:05:35Z</updated>
+    <updated>2024-04-25T11:06:49Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -410,6 +410,44 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
 
             </content>
             <link href="https://wudanyang6.github.io//card/滑动窗口模板/" />
+        </entry>
+        <entry>
+            <title>
+                如何查看 nginx 的rewrite记录
+                
+            </title>
+            <updated>2024-04-25T11:06:11.000Z</updated>
+            <id>https://wudanyang6.github.io//card/如何查看 nginx 的rewrite记录/</id>
+            <content type="html">
+                &lt;h1 id=&quot;nginx-rewrite&quot; tabindex=&quot;-1&quot;&gt;如何查看 nginx 的rewrite记录&lt;/h1&gt;
+&lt;p&gt;设置 &lt;code&gt;rewrite_log on;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;并且将&lt;code&gt;error_log&lt;/code&gt; 的报错等级改成 &lt;code&gt;notice&lt;/code&gt;;&lt;/p&gt;
+&lt;p&gt;官网对 &lt;code&gt;rewrite_log&lt;/code&gt; 的解释：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-plain&quot;&gt;Syntax:	rewrite_log on | off;
+Default:	
+rewrite_log off;
+Context:	http, server, location, if
+Enables or disables logging of ngx_http_rewrite_module module directives processing results into the error_log at the notice level.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以看到，这个指令只能在 &lt;code&gt;http&lt;/code&gt; &lt;code&gt;server&lt;/code&gt; &lt;code&gt;location&lt;/code&gt; &lt;code&gt;if&lt;/code&gt; 配置指令中使用，日志等级是 &lt;code&gt;notice&lt;/code&gt; 写入到 &lt;code&gt;error_log&lt;/code&gt; 配置的文件中。&lt;/p&gt;
+&lt;h1 id=&quot;示例&quot; tabindex=&quot;-1&quot;&gt;示例&lt;/h1&gt;
+&lt;p&gt;url： &lt;code&gt;/q?someparams&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;quot;^/+m/question(.*)?qid=&#92;d+(.*)?$&amp;quot; does not match ...
+... 中间省略一些日志
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;quot;^/+question/(&#92;w+.*?)$&amp;quot; does not match ...
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;quot;^/+q&#92;?(.*)?tn=nsatom_qb_main(.*)?$&amp;quot; matches ...
+2021/04/22 18:21:28 [notice] 18131#0: *102982 &amp;quot;^/+q&amp;quot; matches ...
+2021/04/22 18:21:28 [notice] 18131#0: *102982 rewritten data: &amp;quot;/q/q/q/q/q&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;从上面的日志中可以看出，当触发了重写规则时，会有关键字 &lt;code&gt;matches&lt;/code&gt; 否则会有 &lt;code&gt;does not match&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;最终重写完成之后，访问的地址会有标记：&lt;code&gt;rewritten data&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这里就是 &lt;code&gt;/q/q/q/q/q&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://serverfault.com/questions/333048/best-way-to-debug-nginx-rewrite-rules-in-config-file&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;best way to debug nginx rewrite rules in config file?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://nginx.org/en/docs/http/ngx_http_rewrite_module.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx官方文档：Module ngx_http_rewrite_module&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/如何查看 nginx 的rewrite记录/" />
         </entry>
         <entry>
             <title>
@@ -2090,7 +2128,7 @@ if err != nil {
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;93&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2139,9 +2177,9 @@ if err != nil {
 &lt;li&gt;
 &lt;p&gt;2024-01:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/DoD/&quot;&gt;DoD&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/101b1%20obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;101b1 obsidian-things3-today插件&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/DoD/&quot;&gt;DoD&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/&quot;&gt;CDN 带宽控制的几种方法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;&lt;/li&gt;
@@ -2292,6 +2330,7 @@ if err != nil {
 &lt;li&gt;
 &lt;p&gt;2021-04:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx%20master%20%E8%BF%9B%E7%A8%8B/&quot;&gt;nginx master 进程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;/li&gt;
@@ -2561,7 +2600,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 DoD
                 
             </title>
-            <updated>2024-04-18T07:55:06.000Z</updated>
+            <updated>2024-04-25T11:05:37.000Z</updated>
             <id>https://wudanyang6.github.io//card/DoD/</id>
             <content type="html">
                 &lt;h1 id=&quot;do-d&quot; tabindex=&quot;-1&quot;&gt;DoD&lt;/h1&gt;
