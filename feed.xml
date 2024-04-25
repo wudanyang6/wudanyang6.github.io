@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-23T09:35:20Z</updated>
+    <updated>2024-04-25T03:16:08Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -956,7 +956,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
             <updated>2024-04-19T07:52:00.000Z</updated>
             <id>https://wudanyang6.github.io//card/redis-rdb 文件分析/</id>
             <content type="html">
-                &lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202011281031%20-%20%E5%AE%89%E8%A3%85%20rdbtools%20%E5%B7%A5%E5%85%B7/&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;redis-rdb&quot; tabindex=&quot;-1&quot;&gt;redis-rdb 文件分析&lt;/h1&gt;
 &lt;h2 id=&quot;code-help-code&quot; tabindex=&quot;-1&quot;&gt;命令行工具使用，先看 &lt;code&gt;--help&lt;/code&gt;&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;usage: usage: rdb [options] /path/to/dump.rdb
@@ -1097,6 +1097,156 @@ Length of Largest Element	8          # hash 中占用内存最大的那个 value
 
             </content>
             <link href="https://wudanyang6.github.io//card/redis-rdb 文件分析/" />
+        </entry>
+        <entry>
+            <title>
+                rdb 文件分析
+                
+            </title>
+            <updated>2024-04-25T03:15:33.000Z</updated>
+            <id>https://wudanyang6.github.io//card/rdb 文件分析/</id>
+            <content type="html">
+                &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202011281031%20-%20%E5%AE%89%E8%A3%85%20rdbtools%20%E5%B7%A5%E5%85%B7/&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;rdb&quot; tabindex=&quot;-1&quot;&gt;rdb 文件分析&lt;/h1&gt;
+&lt;h2 id=&quot;code-help-code&quot; tabindex=&quot;-1&quot;&gt;命令行工具使用，先看 &lt;code&gt;--help&lt;/code&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;usage: usage: rdb [options] /path/to/dump.rdb
+
+Example : rdb --command json -k &amp;quot;user.*&amp;quot; /var/redis/6379/dump.rdb
+
+positional arguments:
+  dump_file             RDB Dump file to process
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c CMD, --command CMD     
+                        Command to execute. Valid commands are json, diff,
+                        justkeys, justkeyvals, memory and protocol
+  -f FILE, --file FILE  Output file
+  -n DBS, --db DBS      Database Number. Multiple databases can be provided.
+                        If not specified, all databases will be included.
+  -k KEYS, --key KEYS   Keys to export. This can be a regular expression
+  -o NOT_KEYS, --not-key NOT_KEYS
+                        Keys Not to export. This can be a regular expression
+  -t TYPES, --type TYPES
+                        Data types to include. Possible values are string,
+                        hash, set, sortedset, list. Multiple typees can be
+                        provided. If not specified, all data types will be
+                        returned
+  -b BYTES, --bytes BYTES
+                        Limit memory output to keys greater to or equal to
+                        this value (in bytes)
+  -l LARGEST, --largest LARGEST
+                        Limit memory output to only the top N keys (by size)
+  -e {raw,print,utf8,base64}, --escape {raw,print,utf8,base64}
+                        Escape strings to encoding: raw (default), print,
+                        utf8, or base64.
+  -x, --no-expire       With protocol command, remove expiry from all keys
+  -a N, --amend-expire N
+                        With protocol command, add N seconds to key expiry
+                        time
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参数解析&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;-c 执行命令 输出不同格式的数据
+&lt;ol&gt;
+&lt;li&gt;json; 输出 json 格式的字符串  如： &lt;code&gt;[{&amp;quot;int&amp;quot;:&amp;quot;1&amp;quot;}]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;diff; 导出可供 diff 、kdiff 、 vimdiff  比较的数据&lt;/li&gt;
+&lt;li&gt;justkeys; 只输出 key&lt;/li&gt;
+&lt;li&gt;justkeyvals; 只输出键值对，以空格分隔&lt;/li&gt;
+&lt;li&gt;memory; 输出内存分布状态&lt;/li&gt;
+&lt;li&gt;protocol; 输出原始的 RESP 协议&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;-f 指定输出到文件&lt;/li&gt;
+&lt;li&gt;-n 指定输出的 db&lt;/li&gt;
+&lt;li&gt;-k 指定输出哪些 key; 可以使用正则表达式， 如： &lt;code&gt;&#39;^users_&#92;d+$&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;-o 排除哪些 key; 可以使用正则表达式&lt;/li&gt;
+&lt;li&gt;-t 指定输出 value 的类型&lt;/li&gt;
+&lt;li&gt;-b 指定大于此字节数的 key 输出&lt;/li&gt;
+&lt;li&gt;-l 输出最大的多少个 key&lt;/li&gt;
+&lt;li&gt;-e 转义字符串到其他格式
+&lt;ol&gt;
+&lt;li&gt;raw 原始字符串&lt;/li&gt;
+&lt;li&gt;print&lt;/li&gt;
+&lt;li&gt;utf8 输出原始 utf8 格式字符串&lt;/li&gt;
+&lt;li&gt;base64 对于二进制数据来说，可以先 base64 存储到文件，然后在程序中 decode 出来&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;-x 在导出 RESP 协议内容时，去掉过期时间&lt;/li&gt;
+&lt;li&gt;-a 导出 RESP 协议内容时，给有过期时间的 key 加上几秒钟过期时间&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;下面看一下一些常见用法：&lt;/p&gt;
+&lt;h2 id=&quot;生成内存报告&quot; tabindex=&quot;-1&quot;&gt;生成内存报告&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;rdb --command memory dump.rdb &amp;gt; memory.csv
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;生成 CSV 格式的内存报告。包含的列有：&lt;br /&gt;
+数据库 ID，数据类型，key，内存使用量(byte)，编码。内存使用量包含 key、value 和其他值，结果：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-csv&quot;&gt;database,type,key,size_in_bytes,encoding,num_elements,len_largest_element,expiry
+0,set,fruit,252,hashtable,2,6,
+0,hash,webset,81,ziplist,1,13,
+0,string,baiduyun,64,string,5,5,
+0,list,languages,161,quicklist,2,6,
+0,sortedset,page_rank,80,ziplist,1,9
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;使用参数过滤想要的数据&quot; tabindex=&quot;-1&quot;&gt;使用参数过滤想要的数据&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;# 使用这个命令会将存储的 int 值显示为 json 的字符串
+&amp;gt; rdb -c json --db 2 --type hash --key &amp;quot;a.*&amp;quot; /var/redis/6379/dump.rdb
+
+[{},{
+&amp;quot;aroma&amp;quot;:{&amp;quot;pungent&amp;quot;:&amp;quot;vinegar&amp;quot;,&amp;quot;putrid&amp;quot;:&amp;quot;rotten eggs&amp;quot;,&amp;quot;floral&amp;quot;:&amp;quot;roses&amp;quot;}}]
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;rdb-1&quot; tabindex=&quot;-1&quot;&gt;比较两个 rdb 文件&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;&amp;gt; rdb --command diff /var/redis/6379/dump1.rdb | sort &amp;gt; dump1.txt
+&amp;gt; rdb --command diff /var/redis/6379/dump2.rdb | sort &amp;gt; dump2.txt
+
+# 使用 diff 软件查看 diff
+&amp;gt; kdiff3 dump1.txt dump2.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;key&quot; tabindex=&quot;-1&quot;&gt;查看一个 key 的内存使用情况&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;&amp;gt; redis-memory-for-key person:1
+
+&amp;gt; redis-memory-for-key -s localhost -p 6379 -a mypassword person:1
+
+Key 			person:1
+Bytes				111
+Type				hash
+Encoding			ziplist
+Number of Elements		2
+Length of Largest Element	8          # hash 中占用内存最大的那个 value 的占用字节数
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;faq&quot; tabindex=&quot;-1&quot;&gt;常见问题 FAQ&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;内存报告的精确度如何？&lt;/p&gt;
+&lt;p&gt;答：最多有 10% 的误差&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;存储了一个二进制 binary 数据，但是输出的时候是乱码，不可读，怎么处理？&lt;/p&gt;
+&lt;p&gt;答：可以使用 -e 命令先输出 base64 编码的字符串，然后程序中解码之后使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;这个工具能解析哪个版本的 rdb 文件？&lt;/p&gt;
+&lt;p&gt;答：2~6 版本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我不想用 python，有其他的解析方案吗？&lt;/p&gt;
+&lt;p&gt;答：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/nrk/redis-rdb&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;redis-rdb&lt;/a&gt; is written in Ruby&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/esmooov/rdbhs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;rdbhs&lt;/a&gt; is written in Haskell&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pconstr/rdb-parser&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;rdb-parser&lt;/a&gt; is written in Node.js&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/titanous/rdb&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;rdb&lt;/a&gt; is written in Go&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/badboy/rdb-rs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;rdb-rs&lt;/a&gt; is written in Rust&lt;/li&gt;
+&lt;li&gt;参阅 &lt;a href=&quot;https://github.com/sripathikrishnan/redis-rdb-tools/wiki/Redis-RDB-Dump-File-Format&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;rdb 文件格式&lt;/a&gt; 自己写一个解析&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/sripathikrishnan/redis-rdb-tools&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/sripathikrishnan/redis-rdb-tools&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/rdb 文件分析/" />
         </entry>
         <entry>
             <title>
@@ -1940,7 +2090,7 @@ if err != nil {
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;90&lt;/td&gt;
+&lt;td&gt;92&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2166,6 +2316,8 @@ if err != nil {
 &lt;li&gt;
 &lt;p&gt;2020-11:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/rdb%20%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90/&quot;&gt;rdb 文件分析&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202011281031%20-%20%E5%AE%89%E8%A3%85%20rdbtools%20%E5%B7%A5%E5%85%B7/&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/redis-rdb%20%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90/&quot;&gt;redis-rdb 文件分析&lt;/a&gt;&lt;/li&gt;
@@ -2454,7 +2606,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 202404231624 如何在 Finder 中拷贝文件路径全称
                 
             </title>
-            <updated>2024-04-23T09:34:33.000Z</updated>
+            <updated>2024-04-23T09:34:42.000Z</updated>
             <id>https://wudanyang6.github.io//card/202404231624 如何在 Finder 中拷贝文件路径全称/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404231624-finder&quot; tabindex=&quot;-1&quot;&gt;202404231624 如何在 Finder 中拷贝文件路径全称&lt;/h1&gt;
@@ -2787,6 +2939,26 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
             </content>
             <link href="https://wudanyang6.github.io//card/202012081017 - php8.0 新特性/" />
+        </entry>
+        <entry>
+            <title>
+                202011281031 - 安装 rdbtools 工具
+                
+            </title>
+            <updated>2024-04-25T03:12:57.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202011281031 - 安装 rdbtools 工具/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202011281031-rdbtools&quot; tabindex=&quot;-1&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;pip install rdbtools python-lzf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;或者&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;git clone https://github.com/sripathikrishnan/redis-rdb-tools
+cd redis-rdb-tools
+sudo python setup.py install
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/202011281031 - 安装 rdbtools 工具/" />
         </entry>
         <entry>
             <title>
