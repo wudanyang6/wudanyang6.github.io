@@ -672,7 +672,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202103251606 - linux-科学上网/">202103251606 - linux-科学上网 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202103251606 - 如何在 linux 上配置科学上网/">202103251606 - 如何在 linux 上配置科学上网 </a>
                 </div>
             
         </div>
@@ -1519,7 +1519,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-25T11:06:49.014Z';
+        const searchIndexDate = '2024-04-30T13:48:09.242Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1531,9 +1531,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-25T11:06:49.014Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T13:48:09.242Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-25T11:06:49.014Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T13:48:09.242Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1774,7 +1774,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2020-11-20T10:16:00+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-20T22:58:13+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2020-11-20T10:16:00+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-27T20:32:55+08:00"></span></div></div></div>
       
       
       </header>
@@ -1792,7 +1792,11 @@
 <p>信息是 what/when/where/who</p>
 <p>信息是你应该被告诉什么是事情</p>
 </div></div>
-<p><a class="internal-link is-unresolved" href="/404" target="">信息与知识的关系辨析#^fb1c5abf</a></p>
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+<blockquote>
+<p>信息是回答“when，where，what，who”的问题，形成回答某个特定问题的文本，以及被解释具有某些意义的数字、事实、图像等形式的信息，更多关注对事实和数据的陈述。而知识是回答“how，why”的问题，能移积极地指导任务的执行和管理，进行决策和解决问题，更多关注人们如何解释信息的经验、偏见、运用的法则和价值标准。知识与信息的效用处于并列地位，没有层次之分。 <a href="https://omnivore.app/me/-18efbfe2e54#fb1c5abf-53a8-47cd-9f4a-52e1c0b9abba" target="_blank" class="external-link">⤴️</a></p>
+</blockquote>
+</div></div>
 
       
       
@@ -2081,8 +2085,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/" data-note-icon="2" class="backlink">20240416231513 卡片盒笔记法</a>
-                                                </div><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="2" class="backlink">0 Home dy-turbo</a>
+                                                </div><div class="backlink-card"><a href="/000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/" data-note-icon="2" class="backlink">20240416231513 卡片盒笔记法</a>
                                                 </div><div class="backlink-card"><a href="/card/卡片盒笔记法/20240408201701 卡片盒笔记法/" data-note-icon="2" class="backlink">20240408201701 卡片盒笔记法</a>
                                                 </div></div>
                               </div>

@@ -672,7 +672,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202103251606 - linux-科学上网/">202103251606 - linux-科学上网 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202103251606 - 如何在 linux 上配置科学上网/">202103251606 - 如何在 linux 上配置科学上网 </a>
                 </div>
             
         </div>
@@ -1519,7 +1519,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-25T11:06:49.014Z';
+        const searchIndexDate = '2024-04-30T13:48:09.242Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1531,9 +1531,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-25T11:06:49.014Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T13:48:09.242Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-25T11:06:49.014Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T13:48:09.242Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -2236,7 +2236,7 @@ Length of Largest Element	8          # hash 中占用内存最大的那个 value
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="2" class="backlink">0 Home dy-turbo</a>
                                                 </div></div>
                               </div>
                         

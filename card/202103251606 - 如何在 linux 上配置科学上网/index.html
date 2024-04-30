@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>202103251606 - linux-科学上网</title>
+    <title>202103251606 - 如何在 linux 上配置科学上网</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -672,7 +672,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202103251606 - linux-科学上网/">202103251606 - linux-科学上网 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202103251606 - 如何在 linux 上配置科学上网/">202103251606 - 如何在 linux 上配置科学上网 </a>
                 </div>
             
         </div>
@@ -1519,7 +1519,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-25T11:06:49.014Z';
+        const searchIndexDate = '2024-04-30T13:48:09.242Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1531,9 +1531,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-25T11:06:49.014Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T13:48:09.242Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-25T11:06:49.014Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T13:48:09.242Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1765,7 +1765,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">202103251606 - linux-科学上网</h1>
+          <h1 data-note-icon="2">202103251606 - 如何在 linux 上配置科学上网</h1>
         
         <div class="header-meta">
           
@@ -1780,13 +1780,13 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-03-25T16:06:38+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-03-12T17:03:06+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-03-25T16:06:38+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-27T20:32:12+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="clash-x" tabindex="-1">安装 ClashX</h1>
+      <h1 id="202103251606-linux" tabindex="-1">202103251606 - 如何在 linux 上配置科学上网</h1>
 <p>我的机器是树莓派，底层架构是 arm 的，所以下载 arm 版本的安装包：<br>
 <a href="https://github.com/Dreamacro/clash/releases/download/v1.4.2/clash-linux-armv8-v1.4.2.gz" target="_blank" class="external-link">https://github.com/Dreamacro/clash/releases/download/v1.4.2/clash-linux-armv8-v1.4.2.gz</a></p>
 <pre><code class="language-shell">gunzip clash-linux-armv8-v1.4.2.gz
@@ -1801,8 +1801,7 @@ nohup clash -f config.yml &amp;
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 </code></pre>
 <h2 id="最终效果" tabindex="-1">最终效果</h2>
-<p>翻个墙<br>
-<img src="/img/user/attachs/Pasted%20image%2020210325154154.png" alt="Pasted image 20210325154154.png"></p>
+<p><img src="/img/user/attachs/Pasted%20image%2020210325154154.png" alt="Pasted image 20210325154154.png"></p>
 <p>如果不想要 info 日志，可以在 <code>config.yml</code> 中将 log-level 修改成 <code>log-level: warning</code></p>
 <h1 id="参考" tabindex="-1">参考</h1>
 <p><a href="https://nsfwcloud.com/user/tutorial?os=linux&amp;client=clash##" target="_blank" class="external-link">https://nsfwcloud.com/user/tutorial?os=linux&amp;client=clash##</a></p>
@@ -2076,7 +2075,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#clash-x">安装 ClashX</a>
+                    <li><a href="#202103251606-linux">202103251606 - 如何在 linux 上配置科学上网</a>
             
                 <ol>
                     
@@ -2102,7 +2101,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="2" class="backlink">0 Home dy-turbo</a>
                                                 </div></div>
                               </div>
                         

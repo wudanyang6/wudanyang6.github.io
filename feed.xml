@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-25T11:06:49Z</updated>
+    <updated>2024-04-30T13:48:09Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -416,7 +416,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 如何查看 nginx 的rewrite记录
                 
             </title>
-            <updated>2024-04-25T11:06:11.000Z</updated>
+            <updated>2024-04-25T11:06:19.000Z</updated>
             <id>https://wudanyang6.github.io//card/如何查看 nginx 的rewrite记录/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx-rewrite&quot; tabindex=&quot;-1&quot;&gt;如何查看 nginx 的rewrite记录&lt;/h1&gt;
@@ -723,7 +723,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011201016 - 什么是知识和信息
                 
             </title>
-            <updated>2024-04-20T14:58:13.000Z</updated>
+            <updated>2024-04-27T12:32:55.000Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011201016 - 什么是知识和信息/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201016&quot; tabindex=&quot;-1&quot;&gt;202011201016 - 什么是知识和信息&lt;/h1&gt;
@@ -738,7 +738,11 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
 &lt;p&gt;信息是 what/when/where/who&lt;/p&gt;
 &lt;p&gt;信息是你应该被告诉什么是事情&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;信息与知识的关系辨析#^fb1c5abf&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;信息是回答“when，where，what，who”的问题，形成回答某个特定问题的文本，以及被解释具有某些意义的数字、事实、图像等形式的信息，更多关注对事实和数据的陈述。而知识是回答“how，why”的问题，能移积极地指导任务的执行和管理，进行决策和解决问题，更多关注人们如何解释信息的经验、偏见、运用的法则和价值标准。知识与信息的效用处于并列地位，没有层次之分。 &lt;a href=&quot;https://omnivore.app/me/-18efbfe2e54#fb1c5abf-53a8-47cd-9f4a-52e1c0b9abba&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;⤴️&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;&lt;/div&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202011201016 - 什么是知识和信息/" />
@@ -2097,7 +2101,7 @@ if err != nil {
                 docker-ubuntu-unminimize
                 
             </title>
-            <updated>2024-04-18T07:54:56.000Z</updated>
+            <updated>2024-04-30T13:22:35.000Z</updated>
             <id>https://wudanyang6.github.io//card/docker-ubuntu-unminimize/</id>
             <content type="html">
                 &lt;h1 id=&quot;docker-ubuntu-unminimize&quot; tabindex=&quot;-1&quot;&gt;docker-ubuntu-unminimize&lt;/h1&gt;
@@ -2116,7 +2120,7 @@ if err != nil {
                 dg-Archives
                 
             </title>
-            <updated>2024-04-22T02:50:26.000Z</updated>
+            <updated>2024-04-30T13:45:49.000Z</updated>
             <id>https://wudanyang6.github.io//card/dg-Archives/</id>
             <content type="html">
                 &lt;h1 id=&quot;dg-archives&quot; tabindex=&quot;-1&quot;&gt;dg-Archives&lt;/h1&gt;
@@ -2132,247 +2136,6 @@ if err != nil {
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;ul class=&quot;block-language-dataview&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;2024-04:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404231624%20%E5%A6%82%E4%BD%95%E5%9C%A8%20Finder%20%E4%B8%AD%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E5%85%A8%E7%A7%B0/&quot;&gt;202404231624 如何在 Finder 中拷贝文件路径全称&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181228%20%E4%BD%BF%E7%94%A8%20open%20--background%20%E7%9A%84%E5%BD%A2%E5%BC%8F%E6%89%93%E5%BC%80%20obsidian%20%E4%B8%8D%E5%A4%9F%E8%BD%BB%E4%BE%BF/&quot;&gt;202404181228 使用 open --background 的形式打开 obsidian 不够轻便&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404142147%20%E5%A6%82%E4%BD%95%E5%9C%A8shell%E4%B8%AD%E9%81%8D%E5%8E%86%E6%95%B0%E5%AD%97/&quot;&gt;202404142147 如何在shell中遍历数字&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/%E7%AC%94%E8%AE%B0%E6%96%B9%E6%B3%95/20240416231513%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240416231513 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/202404151422%20%E6%B8%B8%E6%88%8F/&quot;&gt;202404151422 游戏&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181240%20%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4-%E8%AE%B0%E5%BD%95%E4%BB%8A%E5%A4%A9%E7%9A%84%E4%BA%8B%E6%83%85%20obsidian/&quot;&gt;202404181240 快捷指令-记录今天的事情 obsidian&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417125706%20%E9%83%A8%E8%90%BD%E5%86%B2%E7%AA%81/&quot;&gt;20240417125706 部落冲突&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240409104458%20leetcode-%E4%BC%9A%E5%91%98%E8%B4%AD%E4%B9%B0%E4%BC%98%E6%83%A0-%E5%AE%AB%E6%B0%B4%E4%B8%89%E5%8F%B6/&quot;&gt;20240409104458 leetcode-会员购买优惠-宫水三叶&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417103919%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A0%87%E9%A2%98%E6%98%AF%E5%AF%B9%E5%86%85%E5%AE%B9%E7%9A%84%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%8F%8F%E8%BF%B0/&quot;&gt;20240417103919 卡片盒笔记法的标题是对内容的一句话描述&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415183533%20%E5%93%B2%E5%AD%A6%E4%B9%A6%E5%8D%95/&quot;&gt;20240415183533 哲学书单&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2024-03:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142017%20%E5%93%B2%E5%AD%A6%E7%9A%84%E5%88%86%E6%94%AF/&quot;&gt;20240415142017 哲学的分支&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/20240415141933%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141933 什么是哲学&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-exec-run/&quot;&gt;go-exec-run&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-exec/&quot;&gt;go-exec&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ithoughtx%E7%A0%B4%E4%BA%A7%E4%BA%86/&quot;&gt;ithoughtx破产了&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2024-02:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E8%BD%AF%E8%A3%85-%E6%B2%99%E5%8F%91/&quot;&gt;软装-沙发&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode%20%E7%BC%96%E7%A0%81%E6%8A%80%E5%B7%A7/&quot;&gt;leetcode 编码技巧&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAchrome%E7%8B%AC%E7%AB%8BAPP%E7%AA%97%E5%8F%A3/&quot;&gt;创建一个chrome独立APP窗口&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2024-01:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/DoD/&quot;&gt;DoD&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/101b1%20obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;101b1 obsidian-things3-today插件&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/&quot;&gt;CDN 带宽控制的几种方法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142052%20%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;20240415142052 原神挺好玩&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;0 Home dy-turbo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95%E6%96%B0%E5%B9%B4%E7%A5%9D%E7%A6%8F%E8%AF%AD/&quot;&gt;算法新年祝福语&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/obsidian/obsidian%20%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%94%AF%E6%8C%81%E7%9A%84ICON/&quot;&gt;obsidian 开发过程支持的ICON&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2023-12:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-wait/&quot;&gt;linux-wait&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2023-10:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/202404202259%20Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;202404202259 Things 工作流&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2023-09:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/mac%20%E8%BF%90%E8%A1%8C%20kafka/&quot;&gt;mac 运行 kafka&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2023-08:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/202404151418%20%E5%93%B2%E5%AD%A6/&quot;&gt;202404151418 哲学&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2023-06:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/vscode%20git%20%E5%8F%AA%E6%9A%82%E5%AD%98%E9%83%A8%E5%88%86%E6%94%B9%E5%8A%A8/&quot;&gt;vscode git 只暂存部分改动&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2023-05:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2023-04:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%92%8C%E4%B8%8B%E4%B8%80%E7%8A%B6%E6%80%81%E7%9A%84%E9%9A%8F%E6%83%B3.excalidraw/&quot;&gt;当前状态和下一状态的随想.excalidraw&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2023-02:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode-53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/&quot;&gt;leetcode-53. 最大子数组和&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E8%8E%B7%E5%8F%96%E8%BF%9B%E7%A8%8B%E5%AD%98%E6%B4%BB%E6%97%B6%E9%97%B4/&quot;&gt;获取进程存活时间&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode-1014.%20%E6%9C%80%E4%BD%B3%E8%A7%82%E5%85%89%E7%BB%84%E5%90%88/&quot;&gt;leetcode-1014. 最佳观光组合&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/mac/mac-%E5%90%88%E4%B8%8A%E7%9B%96%E5%AD%90%E4%B8%8D%E6%96%AD%E7%BD%91/&quot;&gt;mac-合上盖子不断网&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode-1137%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137第 N 个泰波那契数&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2023-01:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-%E6%9F%A5%E7%9C%8B%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/&quot;&gt;linux-查看内存占用情况&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2022-12:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/vim%E6%98%BE%E7%A4%BA%E5%88%97%E5%88%86%E9%9A%94%E7%AC%A6/&quot;&gt;vim显示列分隔符&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2022-11:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/mac/mac-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE/&quot;&gt;mac-自定义快捷键&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2022-09:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/obsidian/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2022-08:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E9%98%85%E8%AF%BB/%E5%A6%82%E4%BD%95%E5%90%88%E5%B9%B6marginnote%E7%AC%94%E8%AE%B0%E6%9C%AC/&quot;&gt;如何合并marginnote笔记本&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2022-05:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3/&quot;&gt;202404191548 GTD的主要思想&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/docker-ubuntu-unminimize/&quot;&gt;docker-ubuntu-unminimize&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2022-02:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/js%E8%B6%85%E9%95%BF%E6%95%B0%E5%AD%97%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/&quot;&gt;js超长数字溢出问题&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2021-12:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/mac/mac-%E9%BC%A0%E9%A1%BB%E7%AE%A1-%E4%BD%BF%E7%94%A8lua%E8%84%9A%E6%9C%AC/&quot;&gt;mac-鼠须管-使用lua脚本&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2021-11:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/PHP%E7%94%9F%E6%88%90zip%E5%8E%8B%E7%BC%A9%E5%8C%85/&quot;&gt;PHP生成zip压缩包&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2021-10:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-echo/&quot;&gt;linux-echo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2021-07:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-mod/&quot;&gt;go-mod&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/php-xml%20%E5%A6%82%E4%BD%95%E8%A7%A3%E6%9E%90%20cdata/&quot;&gt;php-xml 如何解析 cdata&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-%E6%A0%91%E8%8E%93%E6%B4%BE%E6%97%A0%E6%B3%95%E4%B8%8A%E7%BD%91%E6%8E%92%E6%9F%A5/&quot;&gt;linux-树莓派无法上网排查&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/iso-%E6%97%A5%E6%9C%9F%E8%A1%A8%E7%A4%BA%E6%B3%95/&quot;&gt;iso-日期表示法&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2021-06:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/alfred-%E7%BF%BB%E8%AF%91%E6%8F%92%E4%BB%B6/&quot;&gt;alfred-翻译插件&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181227%20%E8%A1%A5%E7%A0%81/&quot;&gt;202404181227 补码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2021-05:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-perf/&quot;&gt;linux-perf&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%A6%82%E4%BD%95%E5%81%9A%E7%9B%91%E6%8E%A7/&quot;&gt;如何做监控&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%BD%91%E7%BB%9C-%E6%9C%80%E5%A4%9A%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AAa%E7%B1%BB%E3%80%81b%E7%B1%BB%E5%92%8Cc%E7%B1%BB%E7%BD%91%E7%BB%9C%E5%8F%B7/&quot;&gt;网络-最多有多少个a类、b类和c类网络号&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2021-04:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx%20master%20%E8%BF%9B%E7%A8%8B/&quot;&gt;nginx master 进程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-man%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/&quot;&gt;linux-man命令使用&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ubuntu%20%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%AF%E5%8A%A8%E6%97%B6%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C/&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx%20%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2021-03:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%A8%A1%E6%9D%BF/&quot;&gt;滑动窗口模板&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202103251606%20-%20linux-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/&quot;&gt;202103251606 - linux-科学上网&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/&quot;&gt;vscode 调试nginx代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2020-12:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202012081017%20-%20php8.0%20%E6%96%B0%E7%89%B9%E6%80%A7/&quot;&gt;202012081017 - php8.0 新特性&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2020-11:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202011281031%20-%20%E5%AE%89%E8%A3%85%20rdbtools%20%E5%B7%A5%E5%85%B7/&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/rdb%20%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90/&quot;&gt;rdb 文件分析&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/redis-rdb%20%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90/&quot;&gt;redis-rdb 文件分析&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/phpstorm%20%E4%B8%A4%E4%B8%8B%20ctrl%20%E5%8F%AF%E4%BB%A5%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F/&quot;&gt;phpstorm 两下 ctrl 可以快速运行程序&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/dg-Archives/" />
@@ -2675,11 +2438,14 @@ $zip-&amp;gt;close(); //关闭压缩包
                 202404231624 如何在 Finder 中拷贝文件路径全称
                 
             </title>
-            <updated>2024-04-23T09:34:42.000Z</updated>
+            <updated>2024-04-27T12:41:44.000Z</updated>
             <id>https://wudanyang6.github.io//card/202404231624 如何在 Finder 中拷贝文件路径全称/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404231624-finder&quot; tabindex=&quot;-1&quot;&gt;202404231624 如何在 Finder 中拷贝文件路径全称&lt;/h1&gt;
-&lt;p&gt;在文件上右键，按住 opt 键，点击“将xxx拷贝为路径名称”&lt;/p&gt;
+&lt;p&gt;在文件上右键，按住 opt 键，点击&amp;quot;将xxx拷贝为路径名称&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240427203958.png&quot; alt=&quot;Pasted image 20240427203958.png|526&quot; width=&quot;526px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;拷贝为了下面的样式的字符串：&lt;/p&gt;
+&lt;p&gt;/Users/wudanyang/Downloads/WeTypeInstaller_1.1.0_322.zip&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/202404231624 如何在 Finder 中拷贝文件路径全称/" />
@@ -2788,7 +2554,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 20240417125706 部落冲突
                 
             </title>
-            <updated>2024-04-17T15:16:12.000Z</updated>
+            <updated>2024-04-30T13:19:25.000Z</updated>
             <id>https://wudanyang6.github.io//card/20240417125706 部落冲突/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240417125706&quot; tabindex=&quot;-1&quot;&gt;20240417125706 部落冲突&lt;/h1&gt;
@@ -2947,13 +2713,13 @@ done
         </entry>
         <entry>
             <title>
-                202103251606 - linux-科学上网
+                202103251606 - 如何在 linux 上配置科学上网
                 
             </title>
-            <updated>2024-03-12T09:03:06.000Z</updated>
-            <id>https://wudanyang6.github.io//card/202103251606 - linux-科学上网/</id>
+            <updated>2024-04-27T12:32:12.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202103251606 - 如何在 linux 上配置科学上网/</id>
             <content type="html">
-                &lt;h1 id=&quot;clash-x&quot; tabindex=&quot;-1&quot;&gt;安装 ClashX&lt;/h1&gt;
+                &lt;h1 id=&quot;202103251606-linux&quot; tabindex=&quot;-1&quot;&gt;202103251606 - 如何在 linux 上配置科学上网&lt;/h1&gt;
 &lt;p&gt;我的机器是树莓派，底层架构是 arm 的，所以下载 arm 版本的安装包：&lt;br /&gt;
 &lt;a href=&quot;https://github.com/Dreamacro/clash/releases/download/v1.4.2/clash-linux-armv8-v1.4.2.gz&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/Dreamacro/clash/releases/download/v1.4.2/clash-linux-armv8-v1.4.2.gz&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;gunzip clash-linux-armv8-v1.4.2.gz
@@ -2968,8 +2734,7 @@ nohup clash -f config.yml &amp;amp;
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;最终效果&quot; tabindex=&quot;-1&quot;&gt;最终效果&lt;/h2&gt;
-&lt;p&gt;翻个墙&lt;br /&gt;
-&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020210325154154.png&quot; alt=&quot;Pasted image 20210325154154.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020210325154154.png&quot; alt=&quot;Pasted image 20210325154154.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;如果不想要 info 日志，可以在 &lt;code&gt;config.yml&lt;/code&gt; 中将 log-level 修改成 &lt;code&gt;log-level: warning&lt;/code&gt;&lt;/p&gt;
 &lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://nsfwcloud.com/user/tutorial?os=linux&amp;amp;client=clash##&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://nsfwcloud.com/user/tutorial?os=linux&amp;amp;client=clash##&lt;/a&gt;&lt;/p&gt;
@@ -2977,7 +2742,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/wudanyang/p/15142036.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.cnblogs.com/wudanyang/p/15142036.html&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/202103251606 - linux-科学上网/" />
+            <link href="https://wudanyang6.github.io//card/202103251606 - 如何在 linux 上配置科学上网/" />
         </entry>
         <entry>
             <title>
@@ -3617,15 +3382,15 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
             </content>
@@ -3671,16 +3436,254 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 0 Home dy-turbo
                 
             </title>
-            <updated>2024-03-22T11:01:00.000Z</updated>
+            <updated>2024-04-30T13:46:34.000Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
-                &lt;h1 id=&quot;home&quot; tabindex=&quot;-1&quot;&gt;Home&lt;/h1&gt;
-&lt;h2 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;心得&quot; tabindex=&quot;-1&quot;&gt;心得&lt;/h1&gt;
+                &lt;h1 id=&quot;0-home-dy-turbo&quot; tabindex=&quot;-1&quot;&gt;0 Home dy-turbo&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;关于我&quot; tabindex=&quot;-1&quot;&gt;关于我&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h2&gt;
+&lt;ul class=&quot;block-language-dataview&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;2024-04:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417125706%20%E9%83%A8%E8%90%BD%E5%86%B2%E7%AA%81/&quot;&gt;20240417125706 部落冲突&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404231624%20%E5%A6%82%E4%BD%95%E5%9C%A8%20Finder%20%E4%B8%AD%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E5%85%A8%E7%A7%B0/&quot;&gt;202404231624 如何在 Finder 中拷贝文件路径全称&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181228%20%E4%BD%BF%E7%94%A8%20open%20--background%20%E7%9A%84%E5%BD%A2%E5%BC%8F%E6%89%93%E5%BC%80%20obsidian%20%E4%B8%8D%E5%A4%9F%E8%BD%BB%E4%BE%BF/&quot;&gt;202404181228 使用 open --background 的形式打开 obsidian 不够轻便&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404142147%20%E5%A6%82%E4%BD%95%E5%9C%A8shell%E4%B8%AD%E9%81%8D%E5%8E%86%E6%95%B0%E5%AD%97/&quot;&gt;202404142147 如何在shell中遍历数字&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/%E7%AC%94%E8%AE%B0%E6%96%B9%E6%B3%95/20240416231513%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240416231513 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/202404151422%20%E6%B8%B8%E6%88%8F/&quot;&gt;202404151422 游戏&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181240%20%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4-%E8%AE%B0%E5%BD%95%E4%BB%8A%E5%A4%A9%E7%9A%84%E4%BA%8B%E6%83%85%20obsidian/&quot;&gt;202404181240 快捷指令-记录今天的事情 obsidian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240409104458%20leetcode-%E4%BC%9A%E5%91%98%E8%B4%AD%E4%B9%B0%E4%BC%98%E6%83%A0-%E5%AE%AB%E6%B0%B4%E4%B8%89%E5%8F%B6/&quot;&gt;20240409104458 leetcode-会员购买优惠-宫水三叶&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417103919%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A0%87%E9%A2%98%E6%98%AF%E5%AF%B9%E5%86%85%E5%AE%B9%E7%9A%84%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%8F%8F%E8%BF%B0/&quot;&gt;20240417103919 卡片盒笔记法的标题是对内容的一句话描述&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415183533%20%E5%93%B2%E5%AD%A6%E4%B9%A6%E5%8D%95/&quot;&gt;20240415183533 哲学书单&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-03:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142017%20%E5%93%B2%E5%AD%A6%E7%9A%84%E5%88%86%E6%94%AF/&quot;&gt;20240415142017 哲学的分支&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/20240415141933%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141933 什么是哲学&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-exec-run/&quot;&gt;go-exec-run&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-exec/&quot;&gt;go-exec&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ithoughtx%E7%A0%B4%E4%BA%A7%E4%BA%86/&quot;&gt;ithoughtx破产了&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-02:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E8%BD%AF%E8%A3%85-%E6%B2%99%E5%8F%91/&quot;&gt;软装-沙发&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode%20%E7%BC%96%E7%A0%81%E6%8A%80%E5%B7%A7/&quot;&gt;leetcode 编码技巧&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAchrome%E7%8B%AC%E7%AB%8BAPP%E7%AA%97%E5%8F%A3/&quot;&gt;创建一个chrome独立APP窗口&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-01:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;0 Home dy-turbo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/DoD/&quot;&gt;DoD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/101b1%20obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;101b1 obsidian-things3-today插件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/&quot;&gt;CDN 带宽控制的几种方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142052%20%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;20240415142052 原神挺好玩&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95%E6%96%B0%E5%B9%B4%E7%A5%9D%E7%A6%8F%E8%AF%AD/&quot;&gt;算法新年祝福语&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/obsidian/obsidian%20%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%94%AF%E6%8C%81%E7%9A%84ICON/&quot;&gt;obsidian 开发过程支持的ICON&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023-12:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-wait/&quot;&gt;linux-wait&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023-10:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/202404202259%20Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;202404202259 Things 工作流&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023-09:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/mac%20%E8%BF%90%E8%A1%8C%20kafka/&quot;&gt;mac 运行 kafka&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023-08:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/202404151418%20%E5%93%B2%E5%AD%A6/&quot;&gt;202404151418 哲学&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023-06:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/vscode%20git%20%E5%8F%AA%E6%9A%82%E5%AD%98%E9%83%A8%E5%88%86%E6%94%B9%E5%8A%A8/&quot;&gt;vscode git 只暂存部分改动&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023-05:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023-04:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%92%8C%E4%B8%8B%E4%B8%80%E7%8A%B6%E6%80%81%E7%9A%84%E9%9A%8F%E6%83%B3.excalidraw/&quot;&gt;当前状态和下一状态的随想.excalidraw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023-02:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode-53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/&quot;&gt;leetcode-53. 最大子数组和&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E8%8E%B7%E5%8F%96%E8%BF%9B%E7%A8%8B%E5%AD%98%E6%B4%BB%E6%97%B6%E9%97%B4/&quot;&gt;获取进程存活时间&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode-1014.%20%E6%9C%80%E4%BD%B3%E8%A7%82%E5%85%89%E7%BB%84%E5%90%88/&quot;&gt;leetcode-1014. 最佳观光组合&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/mac/mac-%E5%90%88%E4%B8%8A%E7%9B%96%E5%AD%90%E4%B8%8D%E6%96%AD%E7%BD%91/&quot;&gt;mac-合上盖子不断网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode-1137%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137第 N 个泰波那契数&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2023-01:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-%E6%9F%A5%E7%9C%8B%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/&quot;&gt;linux-查看内存占用情况&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2022-12:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/vim%E6%98%BE%E7%A4%BA%E5%88%97%E5%88%86%E9%9A%94%E7%AC%A6/&quot;&gt;vim显示列分隔符&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2022-11:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/mac/mac-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE/&quot;&gt;mac-自定义快捷键&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2022-09:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/obsidian/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2022-08:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E9%98%85%E8%AF%BB/%E5%A6%82%E4%BD%95%E5%90%88%E5%B9%B6marginnote%E7%AC%94%E8%AE%B0%E6%9C%AC/&quot;&gt;如何合并marginnote笔记本&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2022-05:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/docker-ubuntu-unminimize/&quot;&gt;docker-ubuntu-unminimize&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3/&quot;&gt;202404191548 GTD的主要思想&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2022-02:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/js%E8%B6%85%E9%95%BF%E6%95%B0%E5%AD%97%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/&quot;&gt;js超长数字溢出问题&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2021-12:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/mac/mac-%E9%BC%A0%E9%A1%BB%E7%AE%A1-%E4%BD%BF%E7%94%A8lua%E8%84%9A%E6%9C%AC/&quot;&gt;mac-鼠须管-使用lua脚本&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2021-11:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/PHP%E7%94%9F%E6%88%90zip%E5%8E%8B%E7%BC%A9%E5%8C%85/&quot;&gt;PHP生成zip压缩包&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2021-10:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-echo/&quot;&gt;linux-echo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2021-07:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-mod/&quot;&gt;go-mod&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/php-xml%20%E5%A6%82%E4%BD%95%E8%A7%A3%E6%9E%90%20cdata/&quot;&gt;php-xml 如何解析 cdata&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-%E6%A0%91%E8%8E%93%E6%B4%BE%E6%97%A0%E6%B3%95%E4%B8%8A%E7%BD%91%E6%8E%92%E6%9F%A5/&quot;&gt;linux-树莓派无法上网排查&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/iso-%E6%97%A5%E6%9C%9F%E8%A1%A8%E7%A4%BA%E6%B3%95/&quot;&gt;iso-日期表示法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2021-06:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/alfred-%E7%BF%BB%E8%AF%91%E6%8F%92%E4%BB%B6/&quot;&gt;alfred-翻译插件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181227%20%E8%A1%A5%E7%A0%81/&quot;&gt;202404181227 补码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2021-05:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-perf/&quot;&gt;linux-perf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%A6%82%E4%BD%95%E5%81%9A%E7%9B%91%E6%8E%A7/&quot;&gt;如何做监控&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%BD%91%E7%BB%9C-%E6%9C%80%E5%A4%9A%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AAa%E7%B1%BB%E3%80%81b%E7%B1%BB%E5%92%8Cc%E7%B1%BB%E7%BD%91%E7%BB%9C%E5%8F%B7/&quot;&gt;网络-最多有多少个a类、b类和c类网络号&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2021-04:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx%20master%20%E8%BF%9B%E7%A8%8B/&quot;&gt;nginx master 进程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-man%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/&quot;&gt;linux-man命令使用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ubuntu%20%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%AF%E5%8A%A8%E6%97%B6%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C/&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx%20%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2021-03:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202103251606%20-%20%E5%A6%82%E4%BD%95%E5%9C%A8%20linux%20%E4%B8%8A%E9%85%8D%E7%BD%AE%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/&quot;&gt;202103251606 - 如何在 linux 上配置科学上网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%A8%A1%E6%9D%BF/&quot;&gt;滑动窗口模板&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/vscode%20%E8%B0%83%E8%AF%95nginx%E4%BB%A3%E7%A0%81/&quot;&gt;vscode 调试nginx代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2020-12:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202012081017%20-%20php8.0%20%E6%96%B0%E7%89%B9%E6%80%A7/&quot;&gt;202012081017 - php8.0 新特性&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2020-11:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202011281031%20-%20%E5%AE%89%E8%A3%85%20rdbtools%20%E5%B7%A5%E5%85%B7/&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/rdb%20%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90/&quot;&gt;rdb 文件分析&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/redis-rdb%20%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90/&quot;&gt;redis-rdb 文件分析&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/phpstorm%20%E4%B8%A4%E4%B8%8B%20ctrl%20%E5%8F%AF%E4%BB%A5%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F/&quot;&gt;phpstorm 两下 ctrl 可以快速运行程序&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//" />
