@@ -1530,7 +1530,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-02T04:58:48.289Z';
+        const searchIndexDate = '2024-05-02T05:01:45.486Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1542,9 +1542,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-02T04:58:48.289Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-02T05:01:45.486Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-02T04:58:48.289Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-02T05:01:45.486Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -2095,8 +2095,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="2" class="backlink">0 Home dy-turbo</a>
-                                                </div><div class="backlink-card"><a href="/000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/" data-note-icon="2" class="backlink">20240416231513 卡片盒笔记法</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/" data-note-icon="2" class="backlink">20240416231513 卡片盒笔记法</a>
                                                 </div><div class="backlink-card"><a href="/card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/" data-note-icon="2" class="backlink">202011220028 - 从输出的角度看卡片盒笔记法的优势</a>
                                                 </div></div>
                               </div>
