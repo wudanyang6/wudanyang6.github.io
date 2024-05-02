@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>202011220028 - 从输出的角度看卡片盒笔记法的优势</title>
+    <title>文件描述符</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -513,7 +513,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/">202011220028 - 从输出的角度看卡片盒笔记法的优势 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/">202011220028 - 从输出的角度看卡片盒笔记法的优势 </a>
                 </div>
             
         </div>
@@ -1222,7 +1222,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/文件描述符/">文件描述符 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/文件描述符/">文件描述符 </a>
                 </div>
             
         </div>
@@ -1776,7 +1776,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">202011220028 - 从输出的角度看卡片盒笔记法的优势</h1>
+          <h1 data-note-icon="2">文件描述符</h1>
         
         <div class="header-meta">
           
@@ -1784,21 +1784,86 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #文件
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #操作系统
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #描述符
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #文件描述符
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-17T10:36:35+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-21T11:01:11+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-04-13T11:24:36+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-05-02T12:58:02+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="202011220028" tabindex="-1">202011220028 - 从输出的角度看卡片盒笔记法的优势</h1>
-<ol>
-<li>从输出层面看，如果你在写作的时候才去找资料，那么很容易脱离主线，而如果你之前都整理好了资料，那么在写作的时候，只要顺着自己的卡片写下去就行了</li>
-<li>在输出的时候能够补全自己的盲点</li>
-</ol>
-<p><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/20240408201701 卡片盒笔记法/">20240408201701 卡片盒笔记法</a></p>
-<h1 id="参考" tabindex="-1">参考</h1>
-<p><a href="https://www.zhihu.com/search?type=content&amp;q=Zettelkasten" target="_blank" class="external-link">https://www.zhihu.com/search?type=content&amp;q=Zettelkasten</a></p>
+      <h1 id="文件描述符" tabindex="-1">文件描述符</h1>
+<p>对于内核而言，所有打开的文件都通过<code>文件描述符（file descriptor）</code>引用。通常也写作 <code>fd</code>。</p>
+<p><code>文件描述符</code>是一个非负整数。</p>
+<p>当打开一个现有文件或者创建一个新文件时，内核向进程返回一个<code>文件描述符</code>。</p>
+<p><code>文件描述符</code>是跟<code>进程</code>相关联的。</p>
+<p>按照惯例，<code>UNIX</code> 系统将 <code>fd 0</code> 对应进程的标准输入， <code>fd 1</code> 对应进程的标准输出， <code>fd 2</code> 对应进程的标准错误。</p>
+<h1 id="系统调用中的文件描述符" tabindex="-1">系统调用中的文件描述符</h1>
+<p><code>UNIX</code> 系统中，一切皆文件，所以一切资源都可以使用文件描述符进程引用。</p>
+<p>以 <code>open</code> 系统调用为例</p>
+<p>使用 <code>man 2 open</code> 查看系统 <code>man</code> 手册</p>
+<pre><code class="language-man">NAME
+     open, openat -- open or create a file for reading or writing
+
+SYNOPSIS
+     <a class="tag" onclick="toggleTagSearch(this)" data-content="#include">#include</a> &lt;fcntl.h&gt;
+
+     int
+     open(const char *path, int oflag, ...);
+
+     int
+     openat(int fd, const char *path, int oflag, ...);
+
+DESCRIPTION
+     The file name specified by path is opened for reading and/or writing,
+     as specified by the argument oflag; the file descriptor is returned to
+     the calling process.
+</code></pre>
+<p>在简介中有一段话：<code>the file descriptor is returned to the calling process.</code></p>
+<p>使用 <code>c</code> 语言打开一个 文件</p>
+<pre><code class="language-c"><a class="tag" onclick="toggleTagSearch(this)" data-content="#include">#include</a> &lt;stdio.h&gt;
+<a class="tag" onclick="toggleTagSearch(this)" data-content="#include">#include</a> &lt;fcntl.h&gt;
+<a class="tag" onclick="toggleTagSearch(this)" data-content="#include">#include</a> &lt;unistd.h&gt;
+
+int main() {
+	int fd;
+	fd = open(&quot;tmp.txt&quot;, O_RDONLY);
+	printf(&quot;%d&quot;, fd);
+	sleep(10);
+}
+</code></pre>
+<p>会发现，在进程运行时 <code>fd</code> 目录下，会出现一个描述符 3 指向了 打开的文件</p>
+<pre><code class="language-sh">$ ll /proc/$(ps aux | grep a.out | grep -v grep | awk '{print $2}')/fd
+total 0
+lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 0 -&gt; /dev/pts/4
+lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 1 -&gt; /dev/pts/4
+lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 2 -&gt; /dev/pts/4
+lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&gt; /home/ubuntu/mydisk/yangblog/codes/file/tmp.txt
+</code></pre>
+<p>我们可以把这个文件描述符当做参数传递给 <code>read</code> 或者 <code>write</code> 等等系统调用。</p>
 
       
       
@@ -2067,10 +2132,10 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#202011220028">202011220028 - 从输出的角度看卡片盒笔记法的优势</a>
+                    <li><a href="#文件描述符">文件描述符</a>
             		</li>
 
-                    <li><a href="#参考">参考</a>
+                    <li><a href="#系统调用中的文件描述符">系统调用中的文件描述符</a>
             		</li>
                 </ol>
             </nav>
@@ -2085,7 +2150,6 @@
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
                                           <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="2" class="backlink">0 Home dy-turbo</a>
-                                                </div><div class="backlink-card"><a href="/000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/" data-note-icon="2" class="backlink">20240416231513 卡片盒笔记法</a>
                                                 </div></div>
                               </div>
                         

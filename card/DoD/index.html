@@ -1222,6 +1222,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/文件描述符/">文件描述符 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/滑动窗口模板/">滑动窗口模板 </a>
                 </div>
             
@@ -1519,7 +1530,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-30T14:01:33.347Z';
+        const searchIndexDate = '2024-05-02T04:58:48.289Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1531,9 +1542,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T14:01:33.347Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-02T04:58:48.289Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T14:01:33.347Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-02T04:58:48.289Z', docs}));
             window.docs = docs
             window.index = index;
         }

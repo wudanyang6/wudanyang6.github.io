@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-04-30T14:01:33Z</updated>
+    <updated>2024-05-02T04:58:48Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -2132,7 +2132,7 @@ if err != nil {
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;94&lt;/td&gt;
+&lt;td&gt;95&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -3436,7 +3436,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 0 Home dy-turbo
                 
             </title>
-            <updated>2024-04-30T13:46:34.000Z</updated>
+            <updated>2024-04-30T13:59:53.000Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;0-home-dy-turbo&quot; tabindex=&quot;-1&quot;&gt;0 Home dy-turbo&lt;/h1&gt;
@@ -3641,6 +3641,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;
 &lt;p&gt;2021-04:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6/&quot;&gt;文件描述符&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx%20master%20%E8%BF%9B%E7%A8%8B/&quot;&gt;nginx master 进程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;&lt;/li&gt;
@@ -3979,6 +3980,67 @@ ngx_start_cache_manager_processes(cycle, 0);
 
             </content>
             <link href="https://wudanyang6.github.io//card/nginx master 进程/" />
+        </entry>
+        <entry>
+            <title>
+                文件描述符
+                
+            </title>
+            <updated>2024-05-02T04:58:02.000Z</updated>
+            <id>https://wudanyang6.github.io//card/文件描述符/</id>
+            <content type="html">
+                &lt;h1 id=&quot;文件描述符&quot; tabindex=&quot;-1&quot;&gt;文件描述符&lt;/h1&gt;
+&lt;p&gt;对于内核而言，所有打开的文件都通过&lt;code&gt;文件描述符（file descriptor）&lt;/code&gt;引用。通常也写作 &lt;code&gt;fd&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;文件描述符&lt;/code&gt;是一个非负整数。&lt;/p&gt;
+&lt;p&gt;当打开一个现有文件或者创建一个新文件时，内核向进程返回一个&lt;code&gt;文件描述符&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;文件描述符&lt;/code&gt;是跟&lt;code&gt;进程&lt;/code&gt;相关联的。&lt;/p&gt;
+&lt;p&gt;按照惯例，&lt;code&gt;UNIX&lt;/code&gt; 系统将 &lt;code&gt;fd 0&lt;/code&gt; 对应进程的标准输入， &lt;code&gt;fd 1&lt;/code&gt; 对应进程的标准输出， &lt;code&gt;fd 2&lt;/code&gt; 对应进程的标准错误。&lt;/p&gt;
+&lt;h1 id=&quot;系统调用中的文件描述符&quot; tabindex=&quot;-1&quot;&gt;系统调用中的文件描述符&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;UNIX&lt;/code&gt; 系统中，一切皆文件，所以一切资源都可以使用文件描述符进程引用。&lt;/p&gt;
+&lt;p&gt;以 &lt;code&gt;open&lt;/code&gt; 系统调用为例&lt;/p&gt;
+&lt;p&gt;使用 &lt;code&gt;man 2 open&lt;/code&gt; 查看系统 &lt;code&gt;man&lt;/code&gt; 手册&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-man&quot;&gt;NAME
+     open, openat -- open or create a file for reading or writing
+
+SYNOPSIS
+     &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#include&quot;&gt;#include&lt;/a&gt; &amp;lt;fcntl.h&amp;gt;
+
+     int
+     open(const char *path, int oflag, ...);
+
+     int
+     openat(int fd, const char *path, int oflag, ...);
+
+DESCRIPTION
+     The file name specified by path is opened for reading and/or writing,
+     as specified by the argument oflag; the file descriptor is returned to
+     the calling process.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在简介中有一段话：&lt;code&gt;the file descriptor is returned to the calling process.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;使用 &lt;code&gt;c&lt;/code&gt; 语言打开一个 文件&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#include&quot;&gt;#include&lt;/a&gt; &amp;lt;stdio.h&amp;gt;
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#include&quot;&gt;#include&lt;/a&gt; &amp;lt;fcntl.h&amp;gt;
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#include&quot;&gt;#include&lt;/a&gt; &amp;lt;unistd.h&amp;gt;
+
+int main() {
+	int fd;
+	fd = open(&amp;quot;tmp.txt&amp;quot;, O_RDONLY);
+	printf(&amp;quot;%d&amp;quot;, fd);
+	sleep(10);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;会发现，在进程运行时 &lt;code&gt;fd&lt;/code&gt; 目录下，会出现一个描述符 3 指向了 打开的文件&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ll /proc/$(ps aux | grep a.out | grep -v grep | awk &#39;{print $2}&#39;)/fd
+total 0
+lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 0 -&amp;gt; /dev/pts/4
+lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 1 -&amp;gt; /dev/pts/4
+lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 2 -&amp;gt; /dev/pts/4
+lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangblog/codes/file/tmp.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我们可以把这个文件描述符当做参数传递给 &lt;code&gt;read&lt;/code&gt; 或者 &lt;code&gt;write&lt;/code&gt; 等等系统调用。&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/文件描述符/" />
         </entry>
         <entry>
             <title>
