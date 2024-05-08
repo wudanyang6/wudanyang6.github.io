@@ -222,36 +222,6 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('001 Inbox')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">001 Inbox</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/001 Inbox/202405081320 IPv6的回环地址是如何表示的/">202405081320 IPv6的回环地址是如何表示的 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('card')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -846,6 +816,17 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202404231624 如何在 Finder 中拷贝文件路径全称/">202404231624 如何在 Finder 中拷贝文件路径全称 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202405081320 IPv6的回环地址是如何表示的/">202405081320 IPv6的回环地址是如何表示的 </a>
                 </div>
             
         </div>
@@ -1571,7 +1552,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-08T05:40:42.004Z';
+        const searchIndexDate = '2024-05-08T05:42:13.819Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1583,9 +1564,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-08T05:40:42.004Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-08T05:42:13.819Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-08T05:40:42.004Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-08T05:42:13.819Z', docs}));
             window.docs = docs
             window.index = index;
         }
