@@ -1552,7 +1552,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-15T10:54:36.370Z';
+        const searchIndexDate = '2024-05-16T15:16:17.538Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1564,9 +1564,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-15T10:54:36.370Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-16T15:16:17.538Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-15T10:54:36.370Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-16T15:16:17.538Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1807,13 +1807,13 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2022-09-25T23:42:01+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T12:49:36+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2022-09-25T23:42:01+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-05-14T14:24:58+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="obsidian" tabindex="-1">不打开obsidian的情况下记录当前事件</h1>
+      <h1 id="obsidian" tabindex="-1">不打开 obsidian 的情况下记录当前事件</h1>
 <p>将输入设置成你想附带的文本，传入内容改成“作为参数”</p>
 <p>加上 <code>open --background &quot;$1&quot;</code> 即可实现在不将 <code>obsidian</code> 放到前台的情况下记录日志。</p>
 <p><img src="/img/user/attachs/Pasted%20image%2020220925234214.png" alt="Pasted image 20220925234214.png"></p>
@@ -2088,7 +2088,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#obsidian">不打开obsidian的情况下记录当前事件</a>
+                    <li><a href="#obsidian">不打开 obsidian 的情况下记录当前事件</a>
             		</li>
 
                     <li><a href="#参考">参考</a>

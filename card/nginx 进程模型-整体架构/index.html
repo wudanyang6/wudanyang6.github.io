@@ -1552,7 +1552,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-15T10:54:36.370Z';
+        const searchIndexDate = '2024-05-16T15:16:17.538Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1564,9 +1564,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-15T10:54:36.370Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-16T15:16:17.538Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-15T10:54:36.370Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-16T15:16:17.538Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1813,13 +1813,13 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-04-14T13:14:29+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-01-31T13:28:34+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-04-14T13:14:29+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-05-14T14:23:31+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="nginx" tabindex="-1">nginx 进程模型-整体架构</h1>
+      <h1 id="nginx" tabindex="-1">nginx 进程模型 - 整体架构</h1>
 <p><img src="/img/user/attachs/713751-20221106220927618-2090658482.png" alt="713751-20221106220927618-2090658482.png"></p>
 <p>从网上找了一个非常好的图片，从图中可以看到很多东西</p>
 <ol>
@@ -2098,7 +2098,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#nginx">nginx 进程模型-整体架构</a>
+                    <li><a href="#nginx">nginx 进程模型 - 整体架构</a>
             		</li>
                 </ol>
             </nav>

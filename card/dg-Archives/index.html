@@ -1552,7 +1552,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-15T10:54:36.370Z';
+        const searchIndexDate = '2024-05-16T15:16:17.538Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1564,9 +1564,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-15T10:54:36.370Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-16T15:16:17.538Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-15T10:54:36.370Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-16T15:16:17.538Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1825,6 +1825,7 @@
 <li>
 <p>2024-04:</p>
 <ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/202404181240 快捷指令-记录今天的事情 obsidian/">202404181240 快捷指令-记录今天的事情 obsidian</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/20240417125706 部落冲突/">20240417125706 部落冲突</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/202404231624 如何在 Finder 中拷贝文件路径全称/">202404231624 如何在 Finder 中拷贝文件路径全称</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/202404181228 使用 open --background 的形式打开 obsidian 不够轻便/">202404181228 使用 open --background 的形式打开 obsidian 不够轻便</a></li>
@@ -1836,7 +1837,6 @@
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/">202011201315 - 卡片盒笔记法主要关注什么</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/202404171707 当你学不下去的时候/">202404171707 当你学不下去的时候</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/000 Topic Index/202404151422 游戏/">202404151422 游戏</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/202404181240 快捷指令-记录今天的事情 obsidian/">202404181240 快捷指令-记录今天的事情 obsidian</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/">202011192023 - 卡片盒笔记法的基本元素</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/20240409104458 leetcode-会员购买优惠-宫水三叶/">20240409104458 leetcode-会员购买优惠-宫水三叶</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/20240417103919 卡片盒笔记法的标题是对内容的一句话描述/">20240417103919 卡片盒笔记法的标题是对内容的一句话描述</a></li>
@@ -1846,26 +1846,27 @@
 <li>
 <p>2024-03:</p>
 <ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/ithoughtx破产了/">ithoughtx破产了</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/dg-Archives/">dg-Archives</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/20240415142017 哲学的分支/">20240415142017 哲学的分支</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/20240415141933 什么是哲学/">20240415141933 什么是哲学</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/做事心得/">做事心得</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/go-exec-run/">go-exec-run</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/go-exec/">go-exec</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/ithoughtx破产了/">ithoughtx破产了</a></li>
 </ul>
 </li>
 <li>
 <p>2024-02:</p>
 <ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/创建一个chrome独立APP窗口/">创建一个chrome独立APP窗口</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/软装-沙发/">软装-沙发</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/leetcode 编码技巧/">leetcode 编码技巧</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/创建一个chrome独立APP窗口/">创建一个chrome独立APP窗口</a></li>
 </ul>
 </li>
 <li>
 <p>2024-01:</p>
 <ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/Kafka入门/">Kafka入门</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/">0 Home dy-turbo</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/About Me/">About Me</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/DoD/">DoD</a></li>
@@ -1874,7 +1875,6 @@
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/CDN 带宽控制的几种方法/">CDN 带宽控制的几种方法</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/20240415142052 原神挺好玩/">20240415142052 原神挺好玩</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/Kafka入门/">Kafka入门</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/算法新年祝福语/">算法新年祝福语</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/obsidian/obsidian 开发过程支持的ICON/">obsidian 开发过程支持的ICON</a></li>
 </ul>
@@ -2019,6 +2019,7 @@
 <li>
 <p>2021-04:</p>
 <ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/nginx 进程模型-整体架构/">nginx 进程模型-整体架构</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/文件描述符/">文件描述符</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/如何查看 nginx 的rewrite记录/">如何查看 nginx 的rewrite记录</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/nginx master 进程/">nginx master 进程</a></li>
@@ -2026,7 +2027,6 @@
 <li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/如何追查线上问题/">如何追查线上问题</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/linux-man命令使用/">linux-man命令使用</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/nginx 进程模型-整体架构/">nginx 进程模型-整体架构</a></li>
 </ul>
 </li>
 <li>
@@ -2046,6 +2046,7 @@
 <li>
 <p>2020-11:</p>
 <ul>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222324 - 知识/">202011222324 - 知识</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201016 - 什么是知识和信息/">202011201016 - 什么是知识和信息</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/202011281031 - 安装 rdbtools 工具/">202011281031 - 安装 rdbtools 工具</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/rdb 文件分析/">rdb 文件分析</a></li>
@@ -2057,7 +2058,6 @@
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011192022 - 什么是卡片盒笔记法/">202011192022 - 什么是卡片盒笔记法</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201301 - 基础概念/">202011201301 - 基础概念</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/20240408201701 卡片盒笔记法/">20240408201701 卡片盒笔记法</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222324 - 知识/">202011222324 - 知识</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/101 Tools/phpstorm 两下 ctrl 可以快速运行程序/">phpstorm 两下 ctrl 可以快速运行程序</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222310 - 卡片盒笔记法的模块/">202011222310 - 卡片盒笔记法的模块</a></li>
 </ul>

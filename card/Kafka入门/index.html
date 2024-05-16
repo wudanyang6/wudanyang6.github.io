@@ -1552,7 +1552,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-15T10:54:36.370Z';
+        const searchIndexDate = '2024-05-16T15:16:17.538Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1564,9 +1564,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-15T10:54:36.370Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-16T15:16:17.538Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-15T10:54:36.370Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-16T15:16:17.538Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1807,51 +1807,51 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-15T21:34:10+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-03-09T22:14:17+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-15T21:34:10+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-05-14T14:26:34+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="1-kafka" tabindex="-1">1 初识Kafka</h1>
-<h2 id="1-1-kafka" tabindex="-1">1.1 什么是Kafka</h2>
-<p>Apache Kafka是一个分布式流处理平台，被设计用来高效地处理高吞吐量的数据流。它广泛应用于实时数据管道和流式应用程序中。以下是Kafka的一些主要优点：</p>
+      <h1 id="kafka" tabindex="-1">Kafka 入门</h1>
+<h2 id="1-1-kafka" tabindex="-1">1.1 什么是 Kafka</h2>
+<p>Apache Kafka 是一个分布式流处理平台，被设计用来高效地处理高吞吐量的数据流。它广泛应用于实时数据管道和流式应用程序中。以下是 Kafka 的一些主要优点：</p>
 <ol>
-<li><strong>高吞吐量</strong>：Kafka支持高吞吐量的数据处理，即使是非常大的数据量也能够快速处理。</li>
-<li><strong>可扩展性</strong>：Kafka集群可以横向扩展以处理更多的数据，可以在不停机的情况下动态添加更多的Broker。</li>
-<li><strong>持久性和可靠性</strong>：Kafka可以将数据持久化到磁盘，因此即使系统发生故障，数据也不会丢失。它使用分区和副本机制来确保数据的高可用性和耐用性。</li>
-<li><strong>容错能力</strong>：通过数据副本，Kafka可以在节点故障时保证数据不丢失，从而提供高可靠性。</li>
-<li><strong>低延迟</strong>：Kafka能够在保持高吞吐量的同时实现低延迟的消息传递。</li>
-<li><strong>可靠的消息传递保证</strong>：Kafka支持几种消息传递保证，包括最多一次、至少一次和精确一次（事务性传递）。</li>
-<li><strong>多客户端支持</strong>：Kafka提供多种编程语言的客户端库，方便不同开发环境下的集成。</li>
-<li><strong>流处理</strong>：Kafka Streams API允许构建实时流处理应用，可以进行复杂的数据处理和分析。</li>
-<li><strong>可观测性</strong>：Kafka提供了监控数据流和系统性能的工具，有助于性能调优和问题诊断。</li>
-<li><strong>大型社区和生态系统</strong>：Kafka拥有一个庞大的社区和丰富的生态系统，提供了大量的工具和插件以及集成方案，可以帮助用户更好地开发和维护Kafka系统。</li>
+<li><strong>高吞吐量</strong>：Kafka 支持高吞吐量的数据处理，即使是非常大的数据量也能够快速处理。</li>
+<li><strong>可扩展性</strong>：Kafka 集群可以横向扩展以处理更多的数据，可以在不停机的情况下动态添加更多的 Broker。</li>
+<li><strong>持久性和可靠性</strong>：Kafka 可以将数据持久化到磁盘，因此即使系统发生故障，数据也不会丢失。它使用分区和副本机制来确保数据的高可用性和耐用性。</li>
+<li><strong>容错能力</strong>：通过数据副本，Kafka 可以在节点故障时保证数据不丢失，从而提供高可靠性。</li>
+<li><strong>低延迟</strong>：Kafka 能够在保持高吞吐量的同时实现低延迟的消息传递。</li>
+<li><strong>可靠的消息传递保证</strong>：Kafka 支持几种消息传递保证，包括最多一次、至少一次和精确一次（事务性传递）。</li>
+<li><strong>多客户端支持</strong>：Kafka 提供多种编程语言的客户端库，方便不同开发环境下的集成。</li>
+<li><strong>流处理</strong>：Kafka Streams API 允许构建实时流处理应用，可以进行复杂的数据处理和分析。</li>
+<li><strong>可观测性</strong>：Kafka 提供了监控数据流和系统性能的工具，有助于性能调优和问题诊断。</li>
+<li><strong>大型社区和生态系统</strong>：Kafka 拥有一个庞大的社区和丰富的生态系统，提供了大量的工具和插件以及集成方案，可以帮助用户更好地开发和维护 Kafka 系统。</li>
 </ol>
 <h2 id="1-2" tabindex="-1">1.2 使用场景</h2>
-<p>Kafka的这些优点使它在需要处理大量实时数据的系统中特别有价值，包括日志聚合、流式处理、事件源、实时监控和分析等场景。</p>
+<p>Kafka 的这些优点使它在需要处理大量实时数据的系统中特别有价值，包括日志聚合、流式处理、事件源、实时监控和分析等场景。</p>
 <p><img src="/img/user/attachs/clop_2024-01-16_812.png" alt="clop_2024-01-16_812.png"></p>
-<h2 id="1-3-kafka" tabindex="-1">1.3 kafka生产消费流程</h2>
+<h2 id="1-3-kafka" tabindex="-1">1.3 kafka 生产消费流程</h2>
 <p><img src="/img/user/attachs/clop_2024-01-16_813.png" alt="clop_2024-01-16_813.png"></p>
 <p><a class="internal-link is-unresolved" href="/404" target="">../100 Programmer/mac 运行 kafka</a></p>
 <h1 id="2-kafka" tabindex="-1">2 Kafka 整体架构</h1>
 <p><img src="/img/user/Resources/drawio/Kafka%20%E6%95%B0%E6%8D%AE%E6%B5%81.png" alt="Kafka 数据流.png"></p>
-<p>Kafka系统的核心概念包括：</p>
+<p>Kafka 系统的核心概念包括：</p>
 <ol>
-<li><strong>Producer（生产者）</strong>：负责发布消息到Kafka的Topic（主题）中。</li>
-<li><strong>Consumer（消费者）</strong>：订阅Topic，并处理发布到这些Topic的消息。</li>
-<li><strong>Consumer Group（消费者组）</strong>：一个消费者组可以有一个或多个消费者实例。当多个消费者实例属于同一个消费者组时，它们会在组内共享Topic的Partition。这意味着，每个Partition只会被消费者组中的一个消费者实例消费，这样可以保证每条消息只被组内的一个消费者处理，从而实现消息的负载均衡。</li>
-<li><strong>Broker（代理）</strong>：Kafka集群中的服务器，负责存储数据并处理Producer和Consumer的请求。</li>
-<li><strong>Topic（主题）</strong>：消息的分类，Producer发布消息到指定的Topic，Consumer订阅并消费Topic中的消息。</li>
-<li><strong>Partition（分区）</strong>：Topic的物理分割，每个Partition在存储层面是独立的，可以在不同的Broker上。Partition内的消息是有序的。</li>
-<li><strong>Offset（偏移量）</strong>：Partition中每条消息的唯一标识，可以看作是消息在Partition中的索引。</li>
-<li><strong>Replica（副本）</strong>：Partition的副本，用于提高数据的可靠性和容错性。</li>
-<li><strong>Zookeeper</strong>：Kafka使用Zookeeper来进行集群管理和协调。</li>
-<li><strong>Stream Processing（流处理）</strong>：Kafka Streams是Kafka的流处理库，用于构建流式应用程序。</li>
-<li><strong>Connect（连接器）</strong>：Kafka Connect是用于构建和运行可重用的数据导入和导出连接器的工具。</li>
+<li><strong>Producer（生产者）</strong>：负责发布消息到 Kafka 的 Topic（主题）中。</li>
+<li><strong>Consumer（消费者）</strong>：订阅 Topic，并处理发布到这些 Topic 的消息。</li>
+<li><strong>Consumer Group（消费者组）</strong>：一个消费者组可以有一个或多个消费者实例。当多个消费者实例属于同一个消费者组时，它们会在组内共享 Topic 的 Partition。这意味着，每个 Partition 只会被消费者组中的一个消费者实例消费，这样可以保证每条消息只被组内的一个消费者处理，从而实现消息的负载均衡。</li>
+<li><strong>Broker（代理）</strong>：Kafka 集群中的服务器，负责存储数据并处理 Producer 和 Consumer 的请求。</li>
+<li><strong>Topic（主题）</strong>：消息的分类，Producer 发布消息到指定的 Topic，Consumer 订阅并消费 Topic 中的消息。</li>
+<li><strong>Partition（分区）</strong>：Topic 的物理分割，每个 Partition 在存储层面是独立的，可以在不同的 Broker 上。Partition 内的消息是有序的。</li>
+<li><strong>Offset（偏移量）</strong>：Partition 中每条消息的唯一标识，可以看作是消息在 Partition 中的索引。</li>
+<li><strong>Replica（副本）</strong>：Partition 的副本，用于提高数据的可靠性和容错性。</li>
+<li><strong>Zookeeper</strong>：Kafka 使用 Zookeeper 来进行集群管理和协调。</li>
+<li><strong>Stream Processing（流处理）</strong>：Kafka Streams 是 Kafka 的流处理库，用于构建流式应用程序。</li>
+<li><strong>Connect（连接器）</strong>：Kafka Connect 是用于构建和运行可重用的数据导入和导出连接器的工具。</li>
 </ol>
-<p>Kafka生产者将消息发送到负责存储目标Topic的Partition的Broker上。在Kafka集群中，每个Topic可以分为多个Partition，而每个Partition可能分布在不同的Broker上。每个Partition有一个Broker充当Leader，其他的Broker充当Follower。所有的读写操作都是通过Leader Broker进行的，Follower负责同步数据以保证高可用性和数据的冗余。</p>
-<h1 id="3-kafka" tabindex="-1">3 Kafka核心逻辑</h1>
+<p>Kafka 生产者将消息发送到负责存储目标 Topic 的 Partition 的 Broker 上。在 Kafka 集群中，每个 Topic 可以分为多个 Partition，而每个 Partition 可能分布在不同的 Broker 上。每个 Partition 有一个 Broker 充当 Leader，其他的 Broker 充当 Follower。所有的读写操作都是通过 Leader Broker 进行的，Follower 负责同步数据以保证高可用性和数据的冗余。</p>
+<h1 id="3-kafka" tabindex="-1">3 Kafka 核心逻辑</h1>
 <h2 id="3-1" tabindex="-1">3.1 物理存储</h2>
 <p>Kafka 的基本存储单元是分区。</p>
 <p><img src="/img/user/Resources/drawio/kafka%E5%AD%98%E5%82%A8.drawio.png" alt="kafka存储.drawio.png"></p>
@@ -1864,31 +1864,31 @@
 <li>发送消息时，生产者会对键值和值<strong>序列化</strong>成字节数组，然后发送到<strong>分配器</strong>。</li>
 <li>如果我们指定了分区，那么分配器返回该分区即可；否则，分配器将会基于键来选择一个分区并返回。</li>
 <li>选择完分区后，生产者知道了消息所属的主题和分区，它将这条记录添加到相同主题和分区的同一批次消息中，另一个线程负责发送这些批量消息到对应的 Kafka Broker。</li>
-<li>当Broker接收到消息后，如果成功写入则返回一个包含消息的主题、分区及位移的RecordMetadata对象，否则返回异常。</li>
+<li>当 Broker 接收到消息后，如果成功写入则返回一个包含消息的主题、分区及位移的 RecordMetadata 对象，否则返回异常。</li>
 <li>生产者接收到结果后，对于异常可能会进行重试。重试几次还是失败会返回错误。</li>
 </ol>
-<p>生产者并不是将消息发送到任意的Broker，而是发送到管理特定Partition的Leader Broker上，以确保消息的正确存储和分发。</p>
+<p>生产者并不是将消息发送到任意的 Broker，而是发送到管理特定 Partition 的 Leader Broker 上，以确保消息的正确存储和分发。</p>
 <p>消息写入多个分区<br>
 <img src="/img/user/attachs/clop_2024-01-18_844.png" alt="clop_2024-01-18_844.png"></p>
 <h2 id="3-3" tabindex="-1">3.3 消费者</h2>
 <p><img src="/img/user/attachs/clop_2024-01-17_818-%E4%B8%BB%E9%A2%98%E5%92%8C%E6%B6%88%E8%B4%B9%E8%80%85%E7%BE%A4%E7%BB%84%E7%9A%84%E5%85%B3%E7%B3%BB.png" alt="clop_2024-01-17_818-主题和消费者群组的关系.png"></p>
 <p><img src="/img/user/Resources/drawio/kafka%E6%B6%88%E8%B4%B9%E8%80%85.drawio.png" alt="kafka消费者.drawio"></p>
-<h3 id="3-3-1-offset" tabindex="-1">3.3.1 提交offset</h3>
-<p>Kafka消费者提交偏移量的过程是为了记录消费者在消费Topic的Partition时当前的位置，以便在消费者重启或发生故障时能从上次处理的位置继续消费，保证消息不会丢失也不会被重复消费。提交偏移量的过程主要包括以下步骤：</p>
+<h3 id="3-3-1-offset" tabindex="-1">3.3.1 提交 offset</h3>
+<p>Kafka 消费者提交偏移量的过程是为了记录消费者在消费 Topic 的 Partition 时当前的位置，以便在消费者重启或发生故障时能从上次处理的位置继续消费，保证消息不会丢失也不会被重复消费。提交偏移量的过程主要包括以下步骤：</p>
 <ol>
-<li><strong>消费消息</strong>：消费者从Broker拉取数据并进行处理。</li>
-<li><strong>提交偏移量</strong>：在成功处理完一批消息后，消费者会将最新的偏移量提交给Kafka。提交的偏移量是消费者下一次预期读取的起始位置。</li>
-<li><strong>偏移量存储</strong>：提交的偏移量存储在Kafka内的一个特殊的Topic中，名为<code>__consumer_offsets</code>。每个消费者组的偏移量都会在这个Topic中维护。</li>
-<li><strong>偏移量读取</strong>：如果消费者发生重启或故障，它会从<code>__consumer_offsets</code> Topic中读取上次提交的偏移量，从而恢复其消费状态。</li>
+<li><strong>消费消息</strong>：消费者从 Broker 拉取数据并进行处理。</li>
+<li><strong>提交偏移量</strong>：在成功处理完一批消息后，消费者会将最新的偏移量提交给 Kafka。提交的偏移量是消费者下一次预期读取的起始位置。</li>
+<li><strong>偏移量存储</strong>：提交的偏移量存储在 Kafka 内的一个特殊的 Topic 中，名为 <code>__consumer_offsets</code>。每个消费者组的偏移量都会在这个 Topic 中维护。</li>
+<li><strong>偏移量读取</strong>：如果消费者发生重启或故障，它会从 <code>__consumer_offsets</code> Topic 中读取上次提交的偏移量，从而恢复其消费状态。</li>
 </ol>
 <p>提交偏移量的方式主要有两种：</p>
 <ol>
-<li><strong>自动提交偏移量</strong>：Kafka消费者默认的偏移量提交方式是自动提交。这是通过在消费者配置中设置<code>enable.auto.commit=true</code>来实现的，并且可以通过<code>auto.commit.interval.ms</code>配置项来指定提交间隔。这种方式简单方便，但是由于提交是周期性进行的，可能会导致消息重复消费（如果在两次提交间隔内消费者失败）。</li>
+<li><strong>自动提交偏移量</strong>：Kafka 消费者默认的偏移量提交方式是自动提交。这是通过在消费者配置中设置 <code>enable.auto.commit=true</code> 来实现的，并且可以通过 <code>auto.commit.interval.ms</code> 配置项来指定提交间隔。这种方式简单方便，但是由于提交是周期性进行的，可能会导致消息重复消费（如果在两次提交间隔内消费者失败）。</li>
 <li><strong>手动提交偏移量</strong>：为了更精确地控制消息的消费状态，可以选择手动提交偏移量。手动提交可以是同步的也可以是异步的：
 <ul>
-<li><strong>同步提交</strong>：通过调用<code>consumer.commitSync()</code>方法，消费者会阻塞直到偏移量提交完成。这种方式会确保偏移量提交成功，如果提交失败，可以立即进行重试处理。</li>
-<li><strong>异步提交</strong>：通过调用<code>consumer.commitAsync()</code>方法，消费者可以在不阻塞当前线程的情况下提交偏移量。异步提交通常会提供一个回调函数来处理可能发生的提交错误。</li>
-<li><strong>异步+同步</strong>：针对异步提交偏移量丢失的问题，通过对消费者进行异步批次提交并且在关闭时同步提交的方式，这样即使上一次的异步提交失败，通过同步提交还能够进行补救，同步会一直重试，直到提交成功。</li>
+<li><strong>同步提交</strong>：通过调用 <code>consumer.commitSync()</code> 方法，消费者会阻塞直到偏移量提交完成。这种方式会确保偏移量提交成功，如果提交失败，可以立即进行重试处理。</li>
+<li><strong>异步提交</strong>：通过调用 <code>consumer.commitAsync()</code> 方法，消费者可以在不阻塞当前线程的情况下提交偏移量。异步提交通常会提供一个回调函数来处理可能发生的提交错误。</li>
+<li><strong>异步 + 同步</strong>：针对异步提交偏移量丢失的问题，通过对消费者进行异步批次提交并且在关闭时同步提交的方式，这样即使上一次的异步提交失败，通过同步提交还能够进行补救，同步会一直重试，直到提交成功。</li>
 </ul>
 </li>
 </ol>
@@ -1903,12 +1903,12 @@
 <p>为了与首领保持同步，跟随者向首领发送获取数据的请求，<strong>这种请求与消费者为了读取消息而发送的请求是一样的</strong>。首领将响应消息发给跟随者。请求消息里包含了跟随者想要获取消息的偏移量，而且这些偏移量总是有序的。</p>
 <h2 id="3-5" tabindex="-1">3.5 处理请求</h2>
 <p><img src="/img/user/attachs/clop_2024-01-18_846.png" alt="clop_2024-01-18_846.png"></p>
-<p>Kafka 使用零复制技术向客户端发送消息——也就是说，顺序读写内容，Kafka 直接把消息从文件(或者更确切地说是 Linux 文件系统缓存)里发送到网络通道，而不需要经过任何中间缓冲区。</p>
+<p>Kafka 使用零复制技术向客户端发送消息——也就是说，顺序读写内容，Kafka 直接把消息从文件 (或者更确切地说是 Linux 文件系统缓存) 里发送到网络通道，而不需要经过任何中间缓冲区。</p>
 <p>零拷贝示意图：<br>
 <img src="/img/user/attachs/clop_2024-01-18_848.png" alt="clop_2024-01-18_848.png"></p>
 <p>零拷贝省略了数据在内核空间和用户空间之间的重复穿梭；用户态和内核态切换时产生中断，耗时；</p>
 <p>生产请求和获取请求都必须发送给分区的首领副本。</p>
-<p>如何获取分区首领所在的broker：<br>
+<p>如何获取分区首领所在的 broker：<br>
 <img src="/img/user/attachs/clop_2024-01-18_847.png" alt="clop_2024-01-18_847.png"></p>
 <h1 id="4" tabindex="-1">4 可靠性保证</h1>
 <p>先了解一个概念：不完全的首领选举</p>
@@ -1929,7 +1929,7 @@
 <li>
 <p>恰好一次（exactly once）：消息不会丢失，也不会被重复发送。</p>
 <ol>
-<li>Kafka通过“幂等生产者”（Idempotent Producer）和“事务”（Transactions）来支持恰好一次的语义。幂等生产者确保即使生产者发送重复的消息，Broker也只会接收一次。事务性生产者可以将消息的发送和偏移量的提交放在同一个事务中，确保它们要么都成功，要么都失败。（恰好一次语义在Kafka 0.11版本及以上被引入。）</li>
+<li>Kafka 通过“幂等生产者”（Idempotent Producer）和“事务”（Transactions）来支持恰好一次的语义。幂等生产者确保即使生产者发送重复的消息，Broker 也只会接收一次。事务性生产者可以将消息的发送和偏移量的提交放在同一个事务中，确保它们要么都成功，要么都失败。（恰好一次语义在 Kafka 0.11 版本及以上被引入。）</li>
 </ol>
 </li>
 </ol>
@@ -1948,7 +1948,7 @@
 <ul>
 <li>acks=0 立即返回，不论是否写入</li>
 <li>acks=1 当前首领副本已经写入</li>
-<li>acks=-1或all 所有同步的副本已经被写入</li>
+<li>acks=-1 或 all 所有同步的副本已经被写入</li>
 </ul>
 <p>重试</p>
 <ul>
@@ -1962,9 +1962,9 @@
 <p><strong>enable.auto.commit = false</strong> 采用手动提交位移的方式。</p>
 <p>对于消费消息重复的情况，业务自己保证幂等性， 保证只成功消费一次即可。</p>
 <h1 id="6" tabindex="-1">6 思考</h1>
-<p>Q: 知道了kafka的物理存储的结构，那么kafka通过offset查找对应的文件位置的过程是什么样的呢？</p>
+<p>Q: 知道了 kafka 的物理存储的结构，那么 kafka 通过 offset 查找对应的文件位置的过程是什么样的呢？</p>
 <p>Q: 从副本在什么情况下被认为是不同步 (OSR) ？</p>
-<p>Q: offset 为什么要从zookeeper挪到kafka本身存储呢？</p>
+<p>Q: offset 为什么要从 zookeeper 挪到 kafka 本身存储呢？</p>
 <p>Q：分区分成多少比较好？</p>
 <p>Q：在主题流量不是很大的情况下，消费者一直轮询会造成浪费，有没有什么方式能够避免这种情况？</p>
 <p>Q：Kafka 为什么要把自己定位成一个分布式流平台？</p>
@@ -2248,17 +2248,17 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#1-kafka">1 初识Kafka</a>
+                    <li><a href="#kafka">Kafka 入门</a>
             
                 <ol>
                     
-                    <li><a href="#1-1-kafka">1.1 什么是Kafka</a>
+                    <li><a href="#1-1-kafka">1.1 什么是 Kafka</a>
             		</li>
 
                     <li><a href="#1-2">1.2 使用场景</a>
             		</li>
 
-                    <li><a href="#1-3-kafka">1.3 kafka生产消费流程</a>
+                    <li><a href="#1-3-kafka">1.3 kafka 生产消费流程</a>
             		</li>
                 </ol>
             		</li>
@@ -2266,7 +2266,7 @@
                     <li><a href="#2-kafka">2 Kafka 整体架构</a>
             		</li>
 
-                    <li><a href="#3-kafka">3 Kafka核心逻辑</a>
+                    <li><a href="#3-kafka">3 Kafka 核心逻辑</a>
             
                 <ol>
                     
@@ -2280,7 +2280,7 @@
             
                 <ol>
                     
-                    <li><a href="#3-3-1-offset">3.3.1 提交offset</a>
+                    <li><a href="#3-3-1-offset">3.3.1 提交 offset</a>
             		</li>
                 </ol>
             		</li>

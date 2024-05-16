@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-05-15T10:54:37Z</updated>
+    <updated>2024-05-16T15:16:18Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -212,10 +212,10 @@
                 软装-沙发
                 
             </title>
-            <updated>2024-04-16T08:39:44.000Z</updated>
+            <updated>2024-05-14T06:23:26.000Z</updated>
             <id>https://wudanyang6.github.io//card/软装-沙发/</id>
             <content type="html">
-                &lt;h1 id=&quot;软装-沙发&quot; tabindex=&quot;-1&quot;&gt;软装-沙发&lt;/h1&gt;
+                &lt;h1 id=&quot;软装 - 沙发&quot; tabindex=&quot;-1&quot;&gt;软装 - 沙发&lt;/h1&gt;
 &lt;h2 id=&quot;材质&quot; tabindex=&quot;-1&quot;&gt;材质&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;布艺&lt;/li&gt;
@@ -224,15 +224,15 @@
 &lt;h2 id=&quot;填充物&quot; tabindex=&quot;-1&quot;&gt;填充物&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;一体成型&lt;/li&gt;
-&lt;li&gt;海绵密度高于50&lt;/li&gt;
+&lt;li&gt;海绵密度高于 50&lt;/li&gt;
 &lt;li&gt;海绵加羽绒&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;尺寸&quot; tabindex=&quot;-1&quot;&gt;尺寸&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;坐深65cm以上&lt;/li&gt;
-&lt;li&gt;坐高40cm左右&lt;/li&gt;
-&lt;li&gt;靠背高度55cm以上&lt;/li&gt;
-&lt;li&gt;长度3.2-3.5米&lt;/li&gt;
+&lt;li&gt;坐深 65cm 以上&lt;/li&gt;
+&lt;li&gt;坐高 40cm 左右&lt;/li&gt;
+&lt;li&gt;靠背高度 55cm 以上&lt;/li&gt;
+&lt;li&gt;长度 3.2-3.5 米&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;框架&quot; tabindex=&quot;-1&quot;&gt;框架&lt;/h2&gt;
 &lt;ul&gt;
@@ -567,7 +567,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011222324 - 知识
                 
             </title>
-            <updated>2024-04-08T08:44:26.000Z</updated>
+            <updated>2024-05-14T06:26:19.000Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011222324 - 知识/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011222324&quot; tabindex=&quot;-1&quot;&gt;202011222324 - 知识&lt;/h1&gt;
@@ -1315,15 +1315,15 @@ Length of Largest Element	8          # hash 中占用内存最大的那个 value
                 mac 运行 kafka
                 
             </title>
-            <updated>2024-02-01T07:37:09.000Z</updated>
+            <updated>2024-05-14T06:22:38.000Z</updated>
             <id>https://wudanyang6.github.io//card/mac 运行 kafka/</id>
             <content type="html">
                 &lt;h1 id=&quot;mac-kafka&quot; tabindex=&quot;-1&quot;&gt;mac 运行 kafka&lt;/h1&gt;
 &lt;h2 id=&quot;安装&quot; tabindex=&quot;-1&quot;&gt;安装&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;brew install kafka
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;broker&quot; tabindex=&quot;-1&quot;&gt;启动broker&lt;/h2&gt;
-&lt;p&gt;手动启动kafka， 同时启动一个使用 2181 端口的 zookeeper&lt;/p&gt;
+&lt;h2 id=&quot;broker&quot; tabindex=&quot;-1&quot;&gt;启动 broker&lt;/h2&gt;
+&lt;p&gt;手动启动 kafka， 同时启动一个使用 2181 端口的 zookeeper&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;/opt/homebrew/opt/kafka/bin/zookeeper-server-start /opt/homebrew/etc/kafka/zookeeper.properties
 /opt/homebrew/opt/kafka/bin/kafka-server-start /opt/homebrew/etc/kafka/server.properties
 &lt;/code&gt;&lt;/pre&gt;
@@ -1336,7 +1336,7 @@ Length of Largest Element	8          # hash 中占用内存最大的那个 value
 &lt;h2 id=&quot;topic&quot; tabindex=&quot;-1&quot;&gt;创建 topic&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;kafka-topics --create  --replication-factor 1 --partitions 5 --topic myTopic --bootstrap-server localhost:9092
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;topic-1&quot; tabindex=&quot;-1&quot;&gt;查看topic列表&lt;/h2&gt;
+&lt;h2 id=&quot;topic-1&quot; tabindex=&quot;-1&quot;&gt;查看 topic 列表&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;/opt/homebrew/opt/kafka/bin/kafka-topics --bootstrap-server localhost:9092   --list
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;数据文件目录&quot; tabindex=&quot;-1&quot;&gt;数据文件目录&lt;/h2&gt;
@@ -1388,20 +1388,20 @@ func main() {
 }
 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;kafka&quot; tabindex=&quot;-1&quot;&gt;《Kafka权威指南》章节列表&lt;/h2&gt;
+&lt;h2 id=&quot;kafka&quot; tabindex=&quot;-1&quot;&gt;《Kafka 权威指南》章节列表&lt;/h2&gt;
 &lt;p&gt;《kafka 权威指南》&lt;br /&gt;
 章节列表：&lt;br /&gt;
-第1章 初识 kafka&lt;br /&gt;
-第2章 安装 Kafka&lt;br /&gt;
-第3章 Kafka 生产者——向 Kafka 写入数据&lt;br /&gt;
-第4章 Kafka 消费者——从 Kafka 读取数据&lt;br /&gt;
-第5章 深入 Kafka&lt;br /&gt;
-第6章 可靠的数据传递&lt;br /&gt;
-第7章 构建数据管道&lt;br /&gt;
-第8章 跨集群数据镜像&lt;br /&gt;
-第9章 管理 Kafka&lt;br /&gt;
-第10章 监控 Kafka&lt;br /&gt;
-第11章 流式处理&lt;/p&gt;
+第 1 章 初识 kafka&lt;br /&gt;
+第 2 章 安装 Kafka&lt;br /&gt;
+第 3 章 Kafka 生产者——向 Kafka 写入数据&lt;br /&gt;
+第 4 章 Kafka 消费者——从 Kafka 读取数据&lt;br /&gt;
+第 5 章 深入 Kafka&lt;br /&gt;
+第 6 章 可靠的数据传递&lt;br /&gt;
+第 7 章 构建数据管道&lt;br /&gt;
+第 8 章 跨集群数据镜像&lt;br /&gt;
+第 9 章 管理 Kafka&lt;br /&gt;
+第 10 章 监控 Kafka&lt;br /&gt;
+第 11 章 流式处理&lt;/p&gt;
 &lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/li1669852599/article/details/113254934&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;mac环境下使用brew安装Kafka(详细过程)_brew kafka-CSDN博客&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/xyqlrjm/p/14939453.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Kafka整体架构、工作流程与文件存储机制 - 细雨骑驴入剑门 - 博客园&lt;/a&gt;&lt;/p&gt;
@@ -1561,14 +1561,14 @@ done
                 linux-echo
                 
             </title>
-            <updated>2024-02-02T08:15:36.000Z</updated>
+            <updated>2024-05-14T06:25:42.000Z</updated>
             <id>https://wudanyang6.github.io//card/linux-echo/</id>
             <content type="html">
-                &lt;h1 id=&quot;常用&quot; tabindex=&quot;-1&quot;&gt;常用&lt;/h1&gt;
+                &lt;h1 id=&quot;linux-echo&quot; tabindex=&quot;-1&quot;&gt;linux-echo&lt;/h1&gt;
 &lt;p&gt;echo &amp;quot;hello&amp;quot;&lt;/p&gt;
 &lt;p&gt;echo -n &amp;quot;hello&amp;quot; # 这种会去掉换行&lt;/p&gt;
 &lt;p&gt;sh 不支持这个 -n 参数，很奇怪&lt;/p&gt;
-&lt;h1 id=&quot;n-zsh&quot; tabindex=&quot;-1&quot;&gt;使用-n参数zsh 后面会跟着一个百分号&lt;/h1&gt;
+&lt;h1 id=&quot;n-zsh&quot; tabindex=&quot;-1&quot;&gt;使用 -n 参数 zsh 后面会跟着一个百分号&lt;/h1&gt;
 &lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
 &lt;div class=&quot;markdown-embed-title&quot;&gt;
 &lt;h1 id=&quot;printf-puts-a-percent-sign-after-everything-it-prints&quot; tabindex=&quot;-1&quot;&gt;Printf puts a percent sign after everything it prints&lt;/h1&gt;
@@ -1834,10 +1834,10 @@ for j := 0; j &amp;lt; 4; j++ {
                 ithoughtx破产了
                 
             </title>
-            <updated>2024-03-05T05:39:09.000Z</updated>
+            <updated>2024-05-14T06:26:45.000Z</updated>
             <id>https://wudanyang6.github.io//card/ithoughtx破产了/</id>
             <content type="html">
-                &lt;h1 id=&quot;ithoughtx&quot; tabindex=&quot;-1&quot;&gt;ithoughtx破产了&lt;/h1&gt;
+                &lt;h1 id=&quot;ithoughtx&quot; tabindex=&quot;-1&quot;&gt;ithoughtx 破产了&lt;/h1&gt;
 &lt;p&gt;ithoughtx 思维导图软件的公司 &lt;a href=&quot;https://www.toketaware.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;toketaWare&lt;/a&gt; 破产了。一个十几年的软件公司就这么没了，这个软件我觉得是非常好用的。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.toketaware.com/about&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.toketaware.com/about&lt;/a&gt;&lt;/p&gt;
 
@@ -2135,6 +2135,7 @@ if err != nil {
 &lt;li&gt;
 &lt;p&gt;2024-04:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181240%20%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4-%E8%AE%B0%E5%BD%95%E4%BB%8A%E5%A4%A9%E7%9A%84%E4%BA%8B%E6%83%85%20obsidian/&quot;&gt;202404181240 快捷指令-记录今天的事情 obsidian&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417125706%20%E9%83%A8%E8%90%BD%E5%86%B2%E7%AA%81/&quot;&gt;20240417125706 部落冲突&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404231624%20%E5%A6%82%E4%BD%95%E5%9C%A8%20Finder%20%E4%B8%AD%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E5%85%A8%E7%A7%B0/&quot;&gt;202404231624 如何在 Finder 中拷贝文件路径全称&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181228%20%E4%BD%BF%E7%94%A8%20open%20--background%20%E7%9A%84%E5%BD%A2%E5%BC%8F%E6%89%93%E5%BC%80%20obsidian%20%E4%B8%8D%E5%A4%9F%E8%BD%BB%E4%BE%BF/&quot;&gt;202404181228 使用 open --background 的形式打开 obsidian 不够轻便&lt;/a&gt;&lt;/li&gt;
@@ -2146,7 +2147,6 @@ if err != nil {
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/202404151422%20%E6%B8%B8%E6%88%8F/&quot;&gt;202404151422 游戏&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181240%20%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4-%E8%AE%B0%E5%BD%95%E4%BB%8A%E5%A4%A9%E7%9A%84%E4%BA%8B%E6%83%85%20obsidian/&quot;&gt;202404181240 快捷指令-记录今天的事情 obsidian&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240409104458%20leetcode-%E4%BC%9A%E5%91%98%E8%B4%AD%E4%B9%B0%E4%BC%98%E6%83%A0-%E5%AE%AB%E6%B0%B4%E4%B8%89%E5%8F%B6/&quot;&gt;20240409104458 leetcode-会员购买优惠-宫水三叶&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417103919%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A0%87%E9%A2%98%E6%98%AF%E5%AF%B9%E5%86%85%E5%AE%B9%E7%9A%84%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%8F%8F%E8%BF%B0/&quot;&gt;20240417103919 卡片盒笔记法的标题是对内容的一句话描述&lt;/a&gt;&lt;/li&gt;
@@ -2156,26 +2156,27 @@ if err != nil {
 &lt;li&gt;
 &lt;p&gt;2024-03:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ithoughtx%E7%A0%B4%E4%BA%A7%E4%BA%86/&quot;&gt;ithoughtx破产了&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142017%20%E5%93%B2%E5%AD%A6%E7%9A%84%E5%88%86%E6%94%AF/&quot;&gt;20240415142017 哲学的分支&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/20240415141933%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141933 什么是哲学&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-exec-run/&quot;&gt;go-exec-run&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-exec/&quot;&gt;go-exec&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ithoughtx%E7%A0%B4%E4%BA%A7%E4%BA%86/&quot;&gt;ithoughtx破产了&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;2024-02:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAchrome%E7%8B%AC%E7%AB%8BAPP%E7%AA%97%E5%8F%A3/&quot;&gt;创建一个chrome独立APP窗口&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E8%BD%AF%E8%A3%85-%E6%B2%99%E5%8F%91/&quot;&gt;软装-沙发&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode%20%E7%BC%96%E7%A0%81%E6%8A%80%E5%B7%A7/&quot;&gt;leetcode 编码技巧&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAchrome%E7%8B%AC%E7%AB%8BAPP%E7%AA%97%E5%8F%A3/&quot;&gt;创建一个chrome独立APP窗口&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;2024-01:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;0 Home dy-turbo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/DoD/&quot;&gt;DoD&lt;/a&gt;&lt;/li&gt;
@@ -2184,7 +2185,6 @@ if err != nil {
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/&quot;&gt;CDN 带宽控制的几种方法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142052%20%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;20240415142052 原神挺好玩&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95%E6%96%B0%E5%B9%B4%E7%A5%9D%E7%A6%8F%E8%AF%AD/&quot;&gt;算法新年祝福语&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/obsidian/obsidian%20%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%94%AF%E6%8C%81%E7%9A%84ICON/&quot;&gt;obsidian 开发过程支持的ICON&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -2329,6 +2329,7 @@ if err != nil {
 &lt;li&gt;
 &lt;p&gt;2021-04:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx%20%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6/&quot;&gt;文件描述符&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx%20master%20%E8%BF%9B%E7%A8%8B/&quot;&gt;nginx master 进程&lt;/a&gt;&lt;/li&gt;
@@ -2336,7 +2337,6 @@ if err != nil {
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-man%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/&quot;&gt;linux-man命令使用&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ubuntu%20%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%AF%E5%8A%A8%E6%97%B6%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C/&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx%20%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -2356,6 +2356,7 @@ if err != nil {
 &lt;li&gt;
 &lt;p&gt;2020-11:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202011281031%20-%20%E5%AE%89%E8%A3%85%20rdbtools%20%E5%B7%A5%E5%85%B7/&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/rdb%20%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90/&quot;&gt;rdb 文件分析&lt;/a&gt;&lt;/li&gt;
@@ -2367,7 +2368,6 @@ if err != nil {
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/phpstorm%20%E4%B8%A4%E4%B8%8B%20ctrl%20%E5%8F%AF%E4%BB%A5%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F/&quot;&gt;phpstorm 两下 ctrl 可以快速运行程序&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -2421,48 +2421,48 @@ $zip-&amp;gt;close(); //关闭压缩包
                 Kafka入门
                 
             </title>
-            <updated>2024-03-09T14:14:17.000Z</updated>
+            <updated>2024-05-14T06:26:34.000Z</updated>
             <id>https://wudanyang6.github.io//card/Kafka入门/</id>
             <content type="html">
-                &lt;h1 id=&quot;1-kafka&quot; tabindex=&quot;-1&quot;&gt;1 初识Kafka&lt;/h1&gt;
-&lt;h2 id=&quot;1-1-kafka&quot; tabindex=&quot;-1&quot;&gt;1.1 什么是Kafka&lt;/h2&gt;
-&lt;p&gt;Apache Kafka是一个分布式流处理平台，被设计用来高效地处理高吞吐量的数据流。它广泛应用于实时数据管道和流式应用程序中。以下是Kafka的一些主要优点：&lt;/p&gt;
+                &lt;h1 id=&quot;kafka&quot; tabindex=&quot;-1&quot;&gt;Kafka 入门&lt;/h1&gt;
+&lt;h2 id=&quot;1-1-kafka&quot; tabindex=&quot;-1&quot;&gt;1.1 什么是 Kafka&lt;/h2&gt;
+&lt;p&gt;Apache Kafka 是一个分布式流处理平台，被设计用来高效地处理高吞吐量的数据流。它广泛应用于实时数据管道和流式应用程序中。以下是 Kafka 的一些主要优点：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;高吞吐量&lt;/strong&gt;：Kafka支持高吞吐量的数据处理，即使是非常大的数据量也能够快速处理。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;可扩展性&lt;/strong&gt;：Kafka集群可以横向扩展以处理更多的数据，可以在不停机的情况下动态添加更多的Broker。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;持久性和可靠性&lt;/strong&gt;：Kafka可以将数据持久化到磁盘，因此即使系统发生故障，数据也不会丢失。它使用分区和副本机制来确保数据的高可用性和耐用性。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容错能力&lt;/strong&gt;：通过数据副本，Kafka可以在节点故障时保证数据不丢失，从而提供高可靠性。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;低延迟&lt;/strong&gt;：Kafka能够在保持高吞吐量的同时实现低延迟的消息传递。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;可靠的消息传递保证&lt;/strong&gt;：Kafka支持几种消息传递保证，包括最多一次、至少一次和精确一次（事务性传递）。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;多客户端支持&lt;/strong&gt;：Kafka提供多种编程语言的客户端库，方便不同开发环境下的集成。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;流处理&lt;/strong&gt;：Kafka Streams API允许构建实时流处理应用，可以进行复杂的数据处理和分析。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;可观测性&lt;/strong&gt;：Kafka提供了监控数据流和系统性能的工具，有助于性能调优和问题诊断。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;大型社区和生态系统&lt;/strong&gt;：Kafka拥有一个庞大的社区和丰富的生态系统，提供了大量的工具和插件以及集成方案，可以帮助用户更好地开发和维护Kafka系统。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;高吞吐量&lt;/strong&gt;：Kafka 支持高吞吐量的数据处理，即使是非常大的数据量也能够快速处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可扩展性&lt;/strong&gt;：Kafka 集群可以横向扩展以处理更多的数据，可以在不停机的情况下动态添加更多的 Broker。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;持久性和可靠性&lt;/strong&gt;：Kafka 可以将数据持久化到磁盘，因此即使系统发生故障，数据也不会丢失。它使用分区和副本机制来确保数据的高可用性和耐用性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容错能力&lt;/strong&gt;：通过数据副本，Kafka 可以在节点故障时保证数据不丢失，从而提供高可靠性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;低延迟&lt;/strong&gt;：Kafka 能够在保持高吞吐量的同时实现低延迟的消息传递。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可靠的消息传递保证&lt;/strong&gt;：Kafka 支持几种消息传递保证，包括最多一次、至少一次和精确一次（事务性传递）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多客户端支持&lt;/strong&gt;：Kafka 提供多种编程语言的客户端库，方便不同开发环境下的集成。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;流处理&lt;/strong&gt;：Kafka Streams API 允许构建实时流处理应用，可以进行复杂的数据处理和分析。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可观测性&lt;/strong&gt;：Kafka 提供了监控数据流和系统性能的工具，有助于性能调优和问题诊断。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;大型社区和生态系统&lt;/strong&gt;：Kafka 拥有一个庞大的社区和丰富的生态系统，提供了大量的工具和插件以及集成方案，可以帮助用户更好地开发和维护 Kafka 系统。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&quot;1-2&quot; tabindex=&quot;-1&quot;&gt;1.2 使用场景&lt;/h2&gt;
-&lt;p&gt;Kafka的这些优点使它在需要处理大量实时数据的系统中特别有价值，包括日志聚合、流式处理、事件源、实时监控和分析等场景。&lt;/p&gt;
+&lt;p&gt;Kafka 的这些优点使它在需要处理大量实时数据的系统中特别有价值，包括日志聚合、流式处理、事件源、实时监控和分析等场景。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-16_812.png&quot; alt=&quot;clop_2024-01-16_812.png&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;1-3-kafka&quot; tabindex=&quot;-1&quot;&gt;1.3 kafka生产消费流程&lt;/h2&gt;
+&lt;h2 id=&quot;1-3-kafka&quot; tabindex=&quot;-1&quot;&gt;1.3 kafka 生产消费流程&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-16_813.png&quot; alt=&quot;clop_2024-01-16_813.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;../100 Programmer/mac 运行 kafka&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;2-kafka&quot; tabindex=&quot;-1&quot;&gt;2 Kafka 整体架构&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/Resources/drawio/Kafka%20%E6%95%B0%E6%8D%AE%E6%B5%81.png&quot; alt=&quot;Kafka 数据流.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Kafka系统的核心概念包括：&lt;/p&gt;
+&lt;p&gt;Kafka 系统的核心概念包括：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Producer（生产者）&lt;/strong&gt;：负责发布消息到Kafka的Topic（主题）中。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Consumer（消费者）&lt;/strong&gt;：订阅Topic，并处理发布到这些Topic的消息。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Consumer Group（消费者组）&lt;/strong&gt;：一个消费者组可以有一个或多个消费者实例。当多个消费者实例属于同一个消费者组时，它们会在组内共享Topic的Partition。这意味着，每个Partition只会被消费者组中的一个消费者实例消费，这样可以保证每条消息只被组内的一个消费者处理，从而实现消息的负载均衡。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Broker（代理）&lt;/strong&gt;：Kafka集群中的服务器，负责存储数据并处理Producer和Consumer的请求。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Topic（主题）&lt;/strong&gt;：消息的分类，Producer发布消息到指定的Topic，Consumer订阅并消费Topic中的消息。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Partition（分区）&lt;/strong&gt;：Topic的物理分割，每个Partition在存储层面是独立的，可以在不同的Broker上。Partition内的消息是有序的。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Offset（偏移量）&lt;/strong&gt;：Partition中每条消息的唯一标识，可以看作是消息在Partition中的索引。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Replica（副本）&lt;/strong&gt;：Partition的副本，用于提高数据的可靠性和容错性。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Zookeeper&lt;/strong&gt;：Kafka使用Zookeeper来进行集群管理和协调。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stream Processing（流处理）&lt;/strong&gt;：Kafka Streams是Kafka的流处理库，用于构建流式应用程序。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Connect（连接器）&lt;/strong&gt;：Kafka Connect是用于构建和运行可重用的数据导入和导出连接器的工具。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Producer（生产者）&lt;/strong&gt;：负责发布消息到 Kafka 的 Topic（主题）中。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Consumer（消费者）&lt;/strong&gt;：订阅 Topic，并处理发布到这些 Topic 的消息。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Consumer Group（消费者组）&lt;/strong&gt;：一个消费者组可以有一个或多个消费者实例。当多个消费者实例属于同一个消费者组时，它们会在组内共享 Topic 的 Partition。这意味着，每个 Partition 只会被消费者组中的一个消费者实例消费，这样可以保证每条消息只被组内的一个消费者处理，从而实现消息的负载均衡。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Broker（代理）&lt;/strong&gt;：Kafka 集群中的服务器，负责存储数据并处理 Producer 和 Consumer 的请求。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Topic（主题）&lt;/strong&gt;：消息的分类，Producer 发布消息到指定的 Topic，Consumer 订阅并消费 Topic 中的消息。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Partition（分区）&lt;/strong&gt;：Topic 的物理分割，每个 Partition 在存储层面是独立的，可以在不同的 Broker 上。Partition 内的消息是有序的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Offset（偏移量）&lt;/strong&gt;：Partition 中每条消息的唯一标识，可以看作是消息在 Partition 中的索引。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Replica（副本）&lt;/strong&gt;：Partition 的副本，用于提高数据的可靠性和容错性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zookeeper&lt;/strong&gt;：Kafka 使用 Zookeeper 来进行集群管理和协调。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stream Processing（流处理）&lt;/strong&gt;：Kafka Streams 是 Kafka 的流处理库，用于构建流式应用程序。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Connect（连接器）&lt;/strong&gt;：Kafka Connect 是用于构建和运行可重用的数据导入和导出连接器的工具。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Kafka生产者将消息发送到负责存储目标Topic的Partition的Broker上。在Kafka集群中，每个Topic可以分为多个Partition，而每个Partition可能分布在不同的Broker上。每个Partition有一个Broker充当Leader，其他的Broker充当Follower。所有的读写操作都是通过Leader Broker进行的，Follower负责同步数据以保证高可用性和数据的冗余。&lt;/p&gt;
-&lt;h1 id=&quot;3-kafka&quot; tabindex=&quot;-1&quot;&gt;3 Kafka核心逻辑&lt;/h1&gt;
+&lt;p&gt;Kafka 生产者将消息发送到负责存储目标 Topic 的 Partition 的 Broker 上。在 Kafka 集群中，每个 Topic 可以分为多个 Partition，而每个 Partition 可能分布在不同的 Broker 上。每个 Partition 有一个 Broker 充当 Leader，其他的 Broker 充当 Follower。所有的读写操作都是通过 Leader Broker 进行的，Follower 负责同步数据以保证高可用性和数据的冗余。&lt;/p&gt;
+&lt;h1 id=&quot;3-kafka&quot; tabindex=&quot;-1&quot;&gt;3 Kafka 核心逻辑&lt;/h1&gt;
 &lt;h2 id=&quot;3-1&quot; tabindex=&quot;-1&quot;&gt;3.1 物理存储&lt;/h2&gt;
 &lt;p&gt;Kafka 的基本存储单元是分区。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/Resources/drawio/kafka%E5%AD%98%E5%82%A8.drawio.png&quot; alt=&quot;kafka存储.drawio.png&quot; /&gt;&lt;/p&gt;
@@ -2475,31 +2475,31 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;li&gt;发送消息时，生产者会对键值和值&lt;strong&gt;序列化&lt;/strong&gt;成字节数组，然后发送到&lt;strong&gt;分配器&lt;/strong&gt;。&lt;/li&gt;
 &lt;li&gt;如果我们指定了分区，那么分配器返回该分区即可；否则，分配器将会基于键来选择一个分区并返回。&lt;/li&gt;
 &lt;li&gt;选择完分区后，生产者知道了消息所属的主题和分区，它将这条记录添加到相同主题和分区的同一批次消息中，另一个线程负责发送这些批量消息到对应的 Kafka Broker。&lt;/li&gt;
-&lt;li&gt;当Broker接收到消息后，如果成功写入则返回一个包含消息的主题、分区及位移的RecordMetadata对象，否则返回异常。&lt;/li&gt;
+&lt;li&gt;当 Broker 接收到消息后，如果成功写入则返回一个包含消息的主题、分区及位移的 RecordMetadata 对象，否则返回异常。&lt;/li&gt;
 &lt;li&gt;生产者接收到结果后，对于异常可能会进行重试。重试几次还是失败会返回错误。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;生产者并不是将消息发送到任意的Broker，而是发送到管理特定Partition的Leader Broker上，以确保消息的正确存储和分发。&lt;/p&gt;
+&lt;p&gt;生产者并不是将消息发送到任意的 Broker，而是发送到管理特定 Partition 的 Leader Broker 上，以确保消息的正确存储和分发。&lt;/p&gt;
 &lt;p&gt;消息写入多个分区&lt;br /&gt;
 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-18_844.png&quot; alt=&quot;clop_2024-01-18_844.png&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;3-3&quot; tabindex=&quot;-1&quot;&gt;3.3 消费者&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-17_818-%E4%B8%BB%E9%A2%98%E5%92%8C%E6%B6%88%E8%B4%B9%E8%80%85%E7%BE%A4%E7%BB%84%E7%9A%84%E5%85%B3%E7%B3%BB.png&quot; alt=&quot;clop_2024-01-17_818-主题和消费者群组的关系.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/Resources/drawio/kafka%E6%B6%88%E8%B4%B9%E8%80%85.drawio.png&quot; alt=&quot;kafka消费者.drawio&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;3-3-1-offset&quot; tabindex=&quot;-1&quot;&gt;3.3.1 提交offset&lt;/h3&gt;
-&lt;p&gt;Kafka消费者提交偏移量的过程是为了记录消费者在消费Topic的Partition时当前的位置，以便在消费者重启或发生故障时能从上次处理的位置继续消费，保证消息不会丢失也不会被重复消费。提交偏移量的过程主要包括以下步骤：&lt;/p&gt;
+&lt;h3 id=&quot;3-3-1-offset&quot; tabindex=&quot;-1&quot;&gt;3.3.1 提交 offset&lt;/h3&gt;
+&lt;p&gt;Kafka 消费者提交偏移量的过程是为了记录消费者在消费 Topic 的 Partition 时当前的位置，以便在消费者重启或发生故障时能从上次处理的位置继续消费，保证消息不会丢失也不会被重复消费。提交偏移量的过程主要包括以下步骤：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;消费消息&lt;/strong&gt;：消费者从Broker拉取数据并进行处理。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;提交偏移量&lt;/strong&gt;：在成功处理完一批消息后，消费者会将最新的偏移量提交给Kafka。提交的偏移量是消费者下一次预期读取的起始位置。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;偏移量存储&lt;/strong&gt;：提交的偏移量存储在Kafka内的一个特殊的Topic中，名为&lt;code&gt;__consumer_offsets&lt;/code&gt;。每个消费者组的偏移量都会在这个Topic中维护。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;偏移量读取&lt;/strong&gt;：如果消费者发生重启或故障，它会从&lt;code&gt;__consumer_offsets&lt;/code&gt; Topic中读取上次提交的偏移量，从而恢复其消费状态。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;消费消息&lt;/strong&gt;：消费者从 Broker 拉取数据并进行处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;提交偏移量&lt;/strong&gt;：在成功处理完一批消息后，消费者会将最新的偏移量提交给 Kafka。提交的偏移量是消费者下一次预期读取的起始位置。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;偏移量存储&lt;/strong&gt;：提交的偏移量存储在 Kafka 内的一个特殊的 Topic 中，名为 &lt;code&gt;__consumer_offsets&lt;/code&gt;。每个消费者组的偏移量都会在这个 Topic 中维护。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;偏移量读取&lt;/strong&gt;：如果消费者发生重启或故障，它会从 &lt;code&gt;__consumer_offsets&lt;/code&gt; Topic 中读取上次提交的偏移量，从而恢复其消费状态。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;提交偏移量的方式主要有两种：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;自动提交偏移量&lt;/strong&gt;：Kafka消费者默认的偏移量提交方式是自动提交。这是通过在消费者配置中设置&lt;code&gt;enable.auto.commit=true&lt;/code&gt;来实现的，并且可以通过&lt;code&gt;auto.commit.interval.ms&lt;/code&gt;配置项来指定提交间隔。这种方式简单方便，但是由于提交是周期性进行的，可能会导致消息重复消费（如果在两次提交间隔内消费者失败）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自动提交偏移量&lt;/strong&gt;：Kafka 消费者默认的偏移量提交方式是自动提交。这是通过在消费者配置中设置 &lt;code&gt;enable.auto.commit=true&lt;/code&gt; 来实现的，并且可以通过 &lt;code&gt;auto.commit.interval.ms&lt;/code&gt; 配置项来指定提交间隔。这种方式简单方便，但是由于提交是周期性进行的，可能会导致消息重复消费（如果在两次提交间隔内消费者失败）。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;手动提交偏移量&lt;/strong&gt;：为了更精确地控制消息的消费状态，可以选择手动提交偏移量。手动提交可以是同步的也可以是异步的：
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;同步提交&lt;/strong&gt;：通过调用&lt;code&gt;consumer.commitSync()&lt;/code&gt;方法，消费者会阻塞直到偏移量提交完成。这种方式会确保偏移量提交成功，如果提交失败，可以立即进行重试处理。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;异步提交&lt;/strong&gt;：通过调用&lt;code&gt;consumer.commitAsync()&lt;/code&gt;方法，消费者可以在不阻塞当前线程的情况下提交偏移量。异步提交通常会提供一个回调函数来处理可能发生的提交错误。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;异步+同步&lt;/strong&gt;：针对异步提交偏移量丢失的问题，通过对消费者进行异步批次提交并且在关闭时同步提交的方式，这样即使上一次的异步提交失败，通过同步提交还能够进行补救，同步会一直重试，直到提交成功。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;同步提交&lt;/strong&gt;：通过调用 &lt;code&gt;consumer.commitSync()&lt;/code&gt; 方法，消费者会阻塞直到偏移量提交完成。这种方式会确保偏移量提交成功，如果提交失败，可以立即进行重试处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异步提交&lt;/strong&gt;：通过调用 &lt;code&gt;consumer.commitAsync()&lt;/code&gt; 方法，消费者可以在不阻塞当前线程的情况下提交偏移量。异步提交通常会提供一个回调函数来处理可能发生的提交错误。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异步 + 同步&lt;/strong&gt;：针对异步提交偏移量丢失的问题，通过对消费者进行异步批次提交并且在关闭时同步提交的方式，这样即使上一次的异步提交失败，通过同步提交还能够进行补救，同步会一直重试，直到提交成功。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -2514,12 +2514,12 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;p&gt;为了与首领保持同步，跟随者向首领发送获取数据的请求，&lt;strong&gt;这种请求与消费者为了读取消息而发送的请求是一样的&lt;/strong&gt;。首领将响应消息发给跟随者。请求消息里包含了跟随者想要获取消息的偏移量，而且这些偏移量总是有序的。&lt;/p&gt;
 &lt;h2 id=&quot;3-5&quot; tabindex=&quot;-1&quot;&gt;3.5 处理请求&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-18_846.png&quot; alt=&quot;clop_2024-01-18_846.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Kafka 使用零复制技术向客户端发送消息——也就是说，顺序读写内容，Kafka 直接把消息从文件(或者更确切地说是 Linux 文件系统缓存)里发送到网络通道，而不需要经过任何中间缓冲区。&lt;/p&gt;
+&lt;p&gt;Kafka 使用零复制技术向客户端发送消息——也就是说，顺序读写内容，Kafka 直接把消息从文件 (或者更确切地说是 Linux 文件系统缓存) 里发送到网络通道，而不需要经过任何中间缓冲区。&lt;/p&gt;
 &lt;p&gt;零拷贝示意图：&lt;br /&gt;
 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-18_848.png&quot; alt=&quot;clop_2024-01-18_848.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;零拷贝省略了数据在内核空间和用户空间之间的重复穿梭；用户态和内核态切换时产生中断，耗时；&lt;/p&gt;
 &lt;p&gt;生产请求和获取请求都必须发送给分区的首领副本。&lt;/p&gt;
-&lt;p&gt;如何获取分区首领所在的broker：&lt;br /&gt;
+&lt;p&gt;如何获取分区首领所在的 broker：&lt;br /&gt;
 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-01-18_847.png&quot; alt=&quot;clop_2024-01-18_847.png&quot; /&gt;&lt;/p&gt;
 &lt;h1 id=&quot;4&quot; tabindex=&quot;-1&quot;&gt;4 可靠性保证&lt;/h1&gt;
 &lt;p&gt;先了解一个概念：不完全的首领选举&lt;/p&gt;
@@ -2540,7 +2540,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;li&gt;
 &lt;p&gt;恰好一次（exactly once）：消息不会丢失，也不会被重复发送。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Kafka通过“幂等生产者”（Idempotent Producer）和“事务”（Transactions）来支持恰好一次的语义。幂等生产者确保即使生产者发送重复的消息，Broker也只会接收一次。事务性生产者可以将消息的发送和偏移量的提交放在同一个事务中，确保它们要么都成功，要么都失败。（恰好一次语义在Kafka 0.11版本及以上被引入。）&lt;/li&gt;
+&lt;li&gt;Kafka 通过“幂等生产者”（Idempotent Producer）和“事务”（Transactions）来支持恰好一次的语义。幂等生产者确保即使生产者发送重复的消息，Broker 也只会接收一次。事务性生产者可以将消息的发送和偏移量的提交放在同一个事务中，确保它们要么都成功，要么都失败。（恰好一次语义在 Kafka 0.11 版本及以上被引入。）&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -2559,7 +2559,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;ul&gt;
 &lt;li&gt;acks=0 立即返回，不论是否写入&lt;/li&gt;
 &lt;li&gt;acks=1 当前首领副本已经写入&lt;/li&gt;
-&lt;li&gt;acks=-1或all 所有同步的副本已经被写入&lt;/li&gt;
+&lt;li&gt;acks=-1 或 all 所有同步的副本已经被写入&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;重试&lt;/p&gt;
 &lt;ul&gt;
@@ -2573,9 +2573,9 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;p&gt;&lt;strong&gt;enable.auto.commit = false&lt;/strong&gt; 采用手动提交位移的方式。&lt;/p&gt;
 &lt;p&gt;对于消费消息重复的情况，业务自己保证幂等性， 保证只成功消费一次即可。&lt;/p&gt;
 &lt;h1 id=&quot;6&quot; tabindex=&quot;-1&quot;&gt;6 思考&lt;/h1&gt;
-&lt;p&gt;Q: 知道了kafka的物理存储的结构，那么kafka通过offset查找对应的文件位置的过程是什么样的呢？&lt;/p&gt;
+&lt;p&gt;Q: 知道了 kafka 的物理存储的结构，那么 kafka 通过 offset 查找对应的文件位置的过程是什么样的呢？&lt;/p&gt;
 &lt;p&gt;Q: 从副本在什么情况下被认为是不同步 (OSR) ？&lt;/p&gt;
-&lt;p&gt;Q: offset 为什么要从zookeeper挪到kafka本身存储呢？&lt;/p&gt;
+&lt;p&gt;Q: offset 为什么要从 zookeeper 挪到 kafka 本身存储呢？&lt;/p&gt;
 &lt;p&gt;Q：分区分成多少比较好？&lt;/p&gt;
 &lt;p&gt;Q：在主题流量不是很大的情况下，消费者一直轮询会造成浪费，有没有什么方式能够避免这种情况？&lt;/p&gt;
 &lt;p&gt;Q：Kafka 为什么要把自己定位成一个分布式流平台？&lt;/p&gt;
@@ -2757,10 +2757,10 @@ $zip-&amp;gt;close(); //关闭压缩包
                 202404181240 快捷指令-记录今天的事情 obsidian
                 
             </title>
-            <updated>2024-04-18T04:47:23.000Z</updated>
+            <updated>2024-05-14T06:25:00.000Z</updated>
             <id>https://wudanyang6.github.io//card/202404181240 快捷指令-记录今天的事情 obsidian/</id>
             <content type="html">
-                &lt;h1 id=&quot;202404181240-obsidian&quot; tabindex=&quot;-1&quot;&gt;202404181240 快捷指令-记录今天的事情 obsidian&lt;/h1&gt;
+                &lt;h1 id=&quot;202404181240-obsidian&quot; tabindex=&quot;-1&quot;&gt;202404181240 快捷指令 - 记录今天的事情 obsidian&lt;/h1&gt;
 &lt;p&gt;快捷指令地址： &lt;a href=&quot;https://www.icloud.com/shortcuts/6f0552b8622c4b3389b0f53a7af1e919&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.icloud.com/shortcuts/6f0552b8622c4b3389b0f53a7af1e919&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;安装快捷指令&lt;/p&gt;
 &lt;p&gt;修改快捷指令中的参数&lt;/p&gt;
@@ -3070,18 +3070,18 @@ sudo python setup.py install
                 创建一个chrome独立APP窗口
                 
             </title>
-            <updated>2024-03-19T03:19:46.000Z</updated>
+            <updated>2024-05-14T06:28:08.000Z</updated>
             <id>https://wudanyang6.github.io//card/101 Tools/创建一个chrome独立APP窗口/</id>
             <content type="html">
-                &lt;h1 id=&quot;chrome-app&quot; tabindex=&quot;-1&quot;&gt;创建一个chrome独立APP窗口&lt;/h1&gt;
-&lt;p&gt;创建出的窗口本质还是一个chrome网页，但是比较方便使用&lt;/p&gt;
+                &lt;h1 id=&quot;chrome-app&quot; tabindex=&quot;-1&quot;&gt;创建一个 chrome 独立 APP 窗口&lt;/h1&gt;
+&lt;p&gt;创建出的窗口本质还是一个 chrome 网页，但是比较方便使用&lt;/p&gt;
 &lt;p&gt;按步骤操作：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;点击chrome右上角的三个点&lt;/li&gt;
+&lt;li&gt;点击 chrome 右上角的三个点&lt;/li&gt;
 &lt;li&gt;点击保存并分享&lt;/li&gt;
 &lt;li&gt;点击创建快捷方式&lt;/li&gt;
-&lt;li&gt;在弹窗中勾选&lt;code&gt;在窗口打开&lt;/code&gt;，点击创建&lt;/li&gt;
-&lt;li&gt;即可得到一个独立APP窗口&lt;/li&gt;
+&lt;li&gt;在弹窗中勾选 &lt;code&gt;在窗口打开&lt;/code&gt;，点击创建&lt;/li&gt;
+&lt;li&gt;即可得到一个独立 APP 窗口&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/clop_2024-02-27_159.png&quot; alt=&quot;clop_2024-02-27_159.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;弹窗出来之后，选择 &lt;code&gt;在窗口中打开&lt;/code&gt;&lt;br /&gt;
@@ -3153,10 +3153,10 @@ sudo python setup.py install
                 不打开obsidian的情况下记录当前事件
                 
             </title>
-            <updated>2024-04-18T04:49:36.000Z</updated>
+            <updated>2024-05-14T06:24:58.000Z</updated>
             <id>https://wudanyang6.github.io//card/101 Tools/obsidian/不打开obsidian的情况下记录当前事件/</id>
             <content type="html">
-                &lt;h1 id=&quot;obsidian&quot; tabindex=&quot;-1&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/h1&gt;
+                &lt;h1 id=&quot;obsidian&quot; tabindex=&quot;-1&quot;&gt;不打开 obsidian 的情况下记录当前事件&lt;/h1&gt;
 &lt;p&gt;将输入设置成你想附带的文本，传入内容改成“作为参数”&lt;/p&gt;
 &lt;p&gt;加上 &lt;code&gt;open --background &amp;quot;$1&amp;quot;&lt;/code&gt; 即可实现在不将 &lt;code&gt;obsidian&lt;/code&gt; 放到前台的情况下记录日志。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020220925234214.png&quot; alt=&quot;Pasted image 20220925234214.png&quot; /&gt;&lt;/p&gt;
@@ -3649,9 +3649,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/li&gt;
@@ -3659,9 +3657,11 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
             </content>
@@ -3707,7 +3707,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 0 Home dy-turbo
                 
             </title>
-            <updated>2024-05-08T05:40:02.000Z</updated>
+            <updated>2024-05-08T08:03:12.000Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;0-home-dy-turbo&quot; tabindex=&quot;-1&quot;&gt;0 Home dy-turbo&lt;/h1&gt;
@@ -3725,6 +3725,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;
 &lt;p&gt;2024-04:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181240%20%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4-%E8%AE%B0%E5%BD%95%E4%BB%8A%E5%A4%A9%E7%9A%84%E4%BA%8B%E6%83%85%20obsidian/&quot;&gt;202404181240 快捷指令-记录今天的事情 obsidian&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417125706%20%E9%83%A8%E8%90%BD%E5%86%B2%E7%AA%81/&quot;&gt;20240417125706 部落冲突&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404231624%20%E5%A6%82%E4%BD%95%E5%9C%A8%20Finder%20%E4%B8%AD%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E5%85%A8%E7%A7%B0/&quot;&gt;202404231624 如何在 Finder 中拷贝文件路径全称&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181228%20%E4%BD%BF%E7%94%A8%20open%20--background%20%E7%9A%84%E5%BD%A2%E5%BC%8F%E6%89%93%E5%BC%80%20obsidian%20%E4%B8%8D%E5%A4%9F%E8%BD%BB%E4%BE%BF/&quot;&gt;202404181228 使用 open --background 的形式打开 obsidian 不够轻便&lt;/a&gt;&lt;/li&gt;
@@ -3736,7 +3737,6 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/202404151422%20%E6%B8%B8%E6%88%8F/&quot;&gt;202404151422 游戏&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404181240%20%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4-%E8%AE%B0%E5%BD%95%E4%BB%8A%E5%A4%A9%E7%9A%84%E4%BA%8B%E6%83%85%20obsidian/&quot;&gt;202404181240 快捷指令-记录今天的事情 obsidian&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240409104458%20leetcode-%E4%BC%9A%E5%91%98%E8%B4%AD%E4%B9%B0%E4%BC%98%E6%83%A0-%E5%AE%AB%E6%B0%B4%E4%B8%89%E5%8F%B6/&quot;&gt;20240409104458 leetcode-会员购买优惠-宫水三叶&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417103919%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A0%87%E9%A2%98%E6%98%AF%E5%AF%B9%E5%86%85%E5%AE%B9%E7%9A%84%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%8F%8F%E8%BF%B0/&quot;&gt;20240417103919 卡片盒笔记法的标题是对内容的一句话描述&lt;/a&gt;&lt;/li&gt;
@@ -3746,26 +3746,27 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;
 &lt;p&gt;2024-03:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ithoughtx%E7%A0%B4%E4%BA%A7%E4%BA%86/&quot;&gt;ithoughtx破产了&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/dg-Archives/&quot;&gt;dg-Archives&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142017%20%E5%93%B2%E5%AD%A6%E7%9A%84%E5%88%86%E6%94%AF/&quot;&gt;20240415142017 哲学的分支&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/20240415141933%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141933 什么是哲学&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-exec-run/&quot;&gt;go-exec-run&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-exec/&quot;&gt;go-exec&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ithoughtx%E7%A0%B4%E4%BA%A7%E4%BA%86/&quot;&gt;ithoughtx破产了&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;2024-02:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAchrome%E7%8B%AC%E7%AB%8BAPP%E7%AA%97%E5%8F%A3/&quot;&gt;创建一个chrome独立APP窗口&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E8%BD%AF%E8%A3%85-%E6%B2%99%E5%8F%91/&quot;&gt;软装-沙发&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode%20%E7%BC%96%E7%A0%81%E6%8A%80%E5%B7%A7/&quot;&gt;leetcode 编码技巧&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAchrome%E7%8B%AC%E7%AB%8BAPP%E7%AA%97%E5%8F%A3/&quot;&gt;创建一个chrome独立APP窗口&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;2024-01:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;0 Home dy-turbo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/DoD/&quot;&gt;DoD&lt;/a&gt;&lt;/li&gt;
@@ -3774,7 +3775,6 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/&quot;&gt;CDN 带宽控制的几种方法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142052%20%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;20240415142052 原神挺好玩&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95%E6%96%B0%E5%B9%B4%E7%A5%9D%E7%A6%8F%E8%AF%AD/&quot;&gt;算法新年祝福语&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/obsidian/obsidian%20%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%94%AF%E6%8C%81%E7%9A%84ICON/&quot;&gt;obsidian 开发过程支持的ICON&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -3919,6 +3919,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;
 &lt;p&gt;2021-04:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx%20%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6/&quot;&gt;文件描述符&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%20nginx%20%E7%9A%84rewrite%E8%AE%B0%E5%BD%95/&quot;&gt;如何查看 nginx 的rewrite记录&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx%20master%20%E8%BF%9B%E7%A8%8B/&quot;&gt;nginx master 进程&lt;/a&gt;&lt;/li&gt;
@@ -3926,7 +3927,6 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/linux-man%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/&quot;&gt;linux-man命令使用&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ubuntu%20%E6%A0%91%E8%8E%93%E6%B4%BE%E5%90%AF%E5%8A%A8%E6%97%B6%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C/&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx%20%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B-%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -3946,6 +3946,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;
 &lt;p&gt;2020-11:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202011281031%20-%20%E5%AE%89%E8%A3%85%20rdbtools%20%E5%B7%A5%E5%85%B7/&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/rdb%20%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90/&quot;&gt;rdb 文件分析&lt;/a&gt;&lt;/li&gt;
@@ -3957,7 +3958,6 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/phpstorm%20%E4%B8%A4%E4%B8%8B%20ctrl%20%E5%8F%AF%E4%BB%A5%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F/&quot;&gt;phpstorm 两下 ctrl 可以快速运行程序&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -4382,10 +4382,10 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 nginx 进程模型-整体架构
                 
             </title>
-            <updated>2024-01-31T05:28:34.000Z</updated>
+            <updated>2024-05-14T06:23:31.000Z</updated>
             <id>https://wudanyang6.github.io//card/nginx 进程模型-整体架构/</id>
             <content type="html">
-                &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型-整体架构&lt;/h1&gt;
+                &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型 - 整体架构&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/713751-20221106220927618-2090658482.png&quot; alt=&quot;713751-20221106220927618-2090658482.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;从网上找了一个非常好的图片，从图中可以看到很多东西&lt;/p&gt;
 &lt;ol&gt;

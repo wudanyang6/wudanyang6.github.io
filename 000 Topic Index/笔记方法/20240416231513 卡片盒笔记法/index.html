@@ -1552,7 +1552,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-15T10:54:36.370Z';
+        const searchIndexDate = '2024-05-16T15:16:17.538Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1564,9 +1564,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-15T10:54:36.370Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-16T15:16:17.538Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-15T10:54:36.370Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-16T15:16:17.538Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1817,9 +1817,7 @@
 <ul class="block-language-dataview">
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011192022 - 什么是卡片盒笔记法/">202011192022 - 什么是卡片盒笔记法</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/">202011192023 - 卡片盒笔记法的基本元素</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201016 - 什么是知识和信息/">202011201016 - 什么是知识和信息</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201301 - 基础概念/">202011201301 - 基础概念</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/">202011201315 - 卡片盒笔记法主要关注什么</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011210003 - 卡片盒笔记法的基本流程/">202011210003 - 卡片盒笔记法的基本流程</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/">202011220028 - 从输出的角度看卡片盒笔记法的优势</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222209 - 卡片盒笔记法的步骤/">202011222209 - 卡片盒笔记法的步骤</a></li>
@@ -1827,9 +1825,11 @@
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222324 - 知识/">202011222324 - 知识</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222325 - 信息/">202011222325 - 信息</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/">202011222338 - 使用卡片盒笔记法输出的流程</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/">202011201315 - 卡片盒笔记法主要关注什么</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011201016 - 什么是知识和信息/">202011201016 - 什么是知识和信息</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/">202011230004 - 如何写出容易理解的卡片</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/生成/">生成</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/20240408201701 卡片盒笔记法/">20240408201701 卡片盒笔记法</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/卡片盒笔记法/生成/">生成</a></li>
 </ul>
 
       

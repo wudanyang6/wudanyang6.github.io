@@ -1552,7 +1552,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-15T10:54:36.370Z';
+        const searchIndexDate = '2024-05-16T15:16:17.538Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1564,9 +1564,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-15T10:54:36.370Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-16T15:16:17.538Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-15T10:54:36.370Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-16T15:16:17.538Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1807,13 +1807,13 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-05T12:05:46+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-03-05T13:39:09+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-05T12:05:46+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-05-14T14:26:45+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="ithoughtx" tabindex="-1">ithoughtx破产了</h1>
+      <h1 id="ithoughtx" tabindex="-1">ithoughtx 破产了</h1>
 <p>ithoughtx 思维导图软件的公司 <a href="https://www.toketaware.com/" target="_blank" class="external-link">toketaWare</a> 破产了。一个十几年的软件公司就这么没了，这个软件我觉得是非常好用的。</p>
 <p><a href="https://www.toketaware.com/about" target="_blank" class="external-link">https://www.toketaware.com/about</a></p>
 
@@ -2084,7 +2084,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#ithoughtx">ithoughtx破产了</a>
+                    <li><a href="#ithoughtx">ithoughtx 破产了</a>
             		</li>
                 </ol>
             </nav>

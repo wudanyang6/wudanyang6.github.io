@@ -1552,7 +1552,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-15T10:54:36.370Z';
+        const searchIndexDate = '2024-05-16T15:16:17.538Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1564,9 +1564,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-15T10:54:36.370Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-16T15:16:17.538Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-15T10:54:36.370Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-16T15:16:17.538Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1813,21 +1813,21 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-02-27T16:20:49+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-03-19T11:19:46+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-02-27T16:20:49+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-05-14T14:28:08+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="chrome-app" tabindex="-1">创建一个chrome独立APP窗口</h1>
-<p>创建出的窗口本质还是一个chrome网页，但是比较方便使用</p>
+      <h1 id="chrome-app" tabindex="-1">创建一个 chrome 独立 APP 窗口</h1>
+<p>创建出的窗口本质还是一个 chrome 网页，但是比较方便使用</p>
 <p>按步骤操作：</p>
 <ol>
-<li>点击chrome右上角的三个点</li>
+<li>点击 chrome 右上角的三个点</li>
 <li>点击保存并分享</li>
 <li>点击创建快捷方式</li>
-<li>在弹窗中勾选<code>在窗口打开</code>，点击创建</li>
-<li>即可得到一个独立APP窗口</li>
+<li>在弹窗中勾选 <code>在窗口打开</code>，点击创建</li>
+<li>即可得到一个独立 APP 窗口</li>
 </ol>
 <p><img src="/img/user/attachs/clop_2024-02-27_159.png" alt="clop_2024-02-27_159.png"></p>
 <p>弹窗出来之后，选择 <code>在窗口中打开</code><br>
@@ -2103,7 +2103,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#chrome-app">创建一个chrome独立APP窗口</a>
+                    <li><a href="#chrome-app">创建一个 chrome 独立 APP 窗口</a>
             
                 <ol>
                     

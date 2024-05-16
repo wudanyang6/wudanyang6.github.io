@@ -1552,7 +1552,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-15T10:54:36.370Z';
+        const searchIndexDate = '2024-05-16T15:16:17.538Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1564,9 +1564,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-15T10:54:36.370Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-16T15:16:17.538Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-15T10:54:36.370Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-16T15:16:17.538Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1807,13 +1807,13 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-18T12:40:54+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T12:47:23+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-18T12:40:54+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-05-14T14:25:00+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="202404181240-obsidian" tabindex="-1">202404181240 快捷指令-记录今天的事情 obsidian</h1>
+      <h1 id="202404181240-obsidian" tabindex="-1">202404181240 快捷指令 - 记录今天的事情 obsidian</h1>
 <p>快捷指令地址： <a href="https://www.icloud.com/shortcuts/6f0552b8622c4b3389b0f53a7af1e919" target="_blank" class="external-link">https://www.icloud.com/shortcuts/6f0552b8622c4b3389b0f53a7af1e919</a></p>
 <p>安装快捷指令</p>
 <p>修改快捷指令中的参数</p>
@@ -2089,7 +2089,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#202404181240-obsidian">202404181240 快捷指令-记录今天的事情 obsidian</a>
+                    <li><a href="#202404181240-obsidian">202404181240 快捷指令 - 记录今天的事情 obsidian</a>
             		</li>
                 </ol>
             </nav>

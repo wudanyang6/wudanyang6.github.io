@@ -1552,7 +1552,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-15T10:54:36.370Z';
+        const searchIndexDate = '2024-05-16T15:16:17.538Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1564,9 +1564,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-15T10:54:36.370Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-16T15:16:17.538Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-15T10:54:36.370Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-16T15:16:17.538Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1813,13 +1813,13 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-02-27T17:58:38+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-16T16:39:44+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-02-27T17:58:38+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-05-14T14:23:26+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="软装-沙发" tabindex="-1">软装-沙发</h1>
+      <h1 id="软装 - 沙发" tabindex="-1">软装 - 沙发</h1>
 <h2 id="材质" tabindex="-1">材质</h2>
 <ul>
 <li>布艺</li>
@@ -1828,15 +1828,15 @@
 <h2 id="填充物" tabindex="-1">填充物</h2>
 <ul>
 <li>一体成型</li>
-<li>海绵密度高于50</li>
+<li>海绵密度高于 50</li>
 <li>海绵加羽绒</li>
 </ul>
 <h2 id="尺寸" tabindex="-1">尺寸</h2>
 <ul>
-<li>坐深65cm以上</li>
-<li>坐高40cm左右</li>
-<li>靠背高度55cm以上</li>
-<li>长度3.2-3.5米</li>
+<li>坐深 65cm 以上</li>
+<li>坐高 40cm 左右</li>
+<li>靠背高度 55cm 以上</li>
+<li>长度 3.2-3.5 米</li>
 </ul>
 <h2 id="框架" tabindex="-1">框架</h2>
 <ul>
@@ -2120,7 +2120,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#软装-沙发">软装-沙发</a>
+                    <li><a href="#软装 - 沙发">软装 - 沙发</a>
             
                 <ol>
                     

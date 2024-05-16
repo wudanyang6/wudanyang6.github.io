@@ -1552,7 +1552,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-15T10:54:36.370Z';
+        const searchIndexDate = '2024-05-16T15:16:17.538Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1564,9 +1564,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-15T10:54:36.370Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-16T15:16:17.538Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-15T10:54:36.370Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-16T15:16:17.538Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1813,17 +1813,17 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-10-19T11:27:48+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-02-02T16:15:36+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2021-10-19T11:27:48+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-05-14T14:25:42+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="常用" tabindex="-1">常用</h1>
+      <h1 id="linux-echo" tabindex="-1">linux-echo</h1>
 <p>echo &quot;hello&quot;</p>
 <p>echo -n &quot;hello&quot; # 这种会去掉换行</p>
 <p>sh 不支持这个 -n 参数，很奇怪</p>
-<h1 id="n-zsh" tabindex="-1">使用-n参数zsh 后面会跟着一个百分号</h1>
+<h1 id="n-zsh" tabindex="-1">使用 -n 参数 zsh 后面会跟着一个百分号</h1>
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 <div class="markdown-embed-title">
 <h1 id="printf-puts-a-percent-sign-after-everything-it-prints" tabindex="-1">Printf puts a percent sign after everything it prints</h1>
@@ -2098,10 +2098,10 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#常用">常用</a>
+                    <li><a href="#linux-echo">linux-echo</a>
             		</li>
 
-                    <li><a href="#n-zsh">使用-n参数zsh 后面会跟着一个百分号</a>
+                    <li><a href="#n-zsh">使用 -n 参数 zsh 后面会跟着一个百分号</a>
             		</li>
 
                     <li><a href="#printf-puts-a-percent-sign-after-everything-it-prints">Printf puts a percent sign after everything it prints</a>
