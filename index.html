@@ -68,6 +68,10 @@
 
 
 
+    <style>
+        body.css-settings-manager { --accent-light-h: 212.4401913875598; --accent-light-s: 92.07048458149781%; --accent-light-l: 44.509803921568626%; --on-border-light:
+    </style>
+
 <style></style>
 
     
@@ -76,7 +80,7 @@
     
     
   </head>
-  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
+  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon css-settings-manager mod-macos obsidian-app native-scrollbars theme-light show-inline-title show-ribbon show-view-header css-settings-manager hider-ribbon hider-scroll obsidian-themepocalypse AT-multirow AT-row oz-show-all-num is-focused colorful-folder new-tab-btn-default new-tab-image-default canvas-card-menu-center theme-light-background-adapt accent-color-override-light mod-left-split-background-primary-light mod-right-split-background-primary-light mod-root-split-background-primary-light background-underlying-default-light activated-file-default-light theme-dark-background-darker mod-left-split-background-primary-dark mod-right-split-background-primary-dark mod-root-split-background-primary-dark background-underlying-default-dark activated-file-default-dark inline-title-color-default h1-divider-on h1-color-default h2-divider-on h2-color-default h3-color-default h4-color-default h5-color-default h6-color-default table-width-default img-center-align zoom-off codeblock-style-one-dark callout-style-customize DB-table-bg-color-default Projects-bg-color-default colorful-checkbox">
     
     
       
@@ -1550,7 +1554,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-06-18T05:23:32.011Z';
+        const searchIndexDate = '2024-06-18T05:26:21.247Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1562,9 +1566,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-06-18T05:23:32.011Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-06-18T05:26:21.247Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-06-18T05:23:32.011Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-06-18T05:26:21.247Z', docs}));
             window.docs = docs
             window.index = index;
         }
