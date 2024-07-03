@@ -56,7 +56,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.9d4c1d9c.css" rel="stylesheet">
+    <link href="/styles/_theme.bf8ed841.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
@@ -1127,6 +1127,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/mysql5.7json支持/">mysql5.7json支持 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/nginx master 进程/">Nginx Master 进程主流程 </a>
                 </div>
             
@@ -1227,6 +1238,17 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/vscode 调试nginx代码/">vscode 调试nginx代码 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/内存问题分析/">内存问题分析 </a>
                 </div>
             
         </div>
@@ -1556,7 +1578,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-06-18T05:30:58.590Z';
+        const searchIndexDate = '2024-07-03T16:49:11.346Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1568,9 +1590,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-06-18T05:30:58.590Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-07-03T16:49:11.346Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-06-18T05:30:58.590Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-07-03T16:49:11.346Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1817,7 +1839,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-15T14:22:23+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-04-18T13:38:02+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-04-15T14:22:23+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-07-02T23:48:40+08:00"></span></div></div></div>
       
       
       </header>

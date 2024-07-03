@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>ithoughtx破产了</title>
+    <title>mysql5.7json支持</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -973,7 +973,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/ithoughtx破产了/">ithoughtx破产了 </a>
+                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/ithoughtx破产了/">ithoughtx破产了 </a>
                 </div>
             
         </div>
@@ -1127,7 +1127,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/mysql5.7json支持/">mysql5.7json支持 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/mysql5.7json支持/">mysql5.7json支持 </a>
                 </div>
             
         </div>
@@ -1824,7 +1824,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">ithoughtx破产了</h1>
+          <h1 data-note-icon="2">mysql5.7json支持</h1>
         
         <div class="header-meta">
           
@@ -1832,16 +1832,40 @@
               
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #mysql
+                  </a>
+                
+              
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-03-05T12:05:46+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-05-14T14:26:45+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2022-12-04T14:32:12+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-07-04T00:09:01+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="ithoughtx" tabindex="-1">ithoughtx 破产了</h1>
-<p>ithoughtx 思维导图软件的公司 <a href="https://www.toketaware.com/" target="_blank" class="external-link">toketaWare</a> 破产了。一个十几年的软件公司就这么没了，这个软件我觉得是非常好用的。</p>
-<p><a href="https://www.toketaware.com/about" target="_blank" class="external-link">https://www.toketaware.com/about</a></p>
+      <h1 id="mysql5-7json" tabindex="-1">mysql5.7json支持</h1>
+<h2 id="内容" tabindex="-1">内容</h2>
+<h3 id="json" tabindex="-1">原生支持 json</h3>
+<pre><code class="language-sql">create table user ( uid int auto_increment, data json,primary key(uid)) engine=innodb;
+</code></pre>
+<p>可以选择使用 json 类型来创建列</p>
+<h3 id="虚拟列，可以创建索引" tabindex="-1">虚拟列，可以创建索引</h3>
+<pre><code class="language-sql">-- 先创建一个虚拟列
+alter table user add user_name varchar(128) generated always as (json_extract(data,'$.name')) virtual;
+
+-- 然后在虚拟列上创建索引
+alter table user add index idx_username (user_name);
+</code></pre>
+<p>这里存疑一点，虚拟列的维护可能会耗费比较多的资源，会导致插入性能降低</p>
+<p>虽然虚拟列的值在实际查询时动态计算，节省了磁盘存储空间，但这种计算确实可能在一定程度上影响插入和更新性能。每次插入或更新记录时，MySQL 都需要计算或重新计算虚拟列的值。</p>
+<p>如果在虚拟列上建立索引，这种效果可能会更加显著，因为每次插入或更新操作还需要更新索引。此外，创建索引本身也会消耗磁盘空间。</p>
+<p>然而，这些影响因情况而异。虚拟列表达式的计算性能，以及查询虚拟列和索引所带来的性能提升，可能会抵消甚至超过额外的插入和更新成本。特别是在对存储空间有严格要求，或者需要频繁查询 JSON 属性的场景中，使用虚拟列和索引可能是一个好的选择。</p>
+<p>总的来说，是否使用虚拟列和在其上建立索引，需要根据实际的数据特性、查询模式和性能要求综合考虑决定。在实际应用中，可能需要进行一些性能测试和调优来找到最适合的解决方案。</p>
+<h2 id="参考" tabindex="-1">参考</h2>
+<p><a href="https://cloud.tencent.com/developer/article/1114387" target="_blank" class="external-link">MySQL 5.7原生JSON格式支持 - 腾讯云开发者社区-腾讯云</a></p>
+<p><a href="https://dev.mysql.com/doc/refman/5.7/en/json.html" target="_blank" class="external-link">MySQL :: MySQL 5.7 Reference Manual :: 11.5 The JSON Data Type</a></p>
 
       
       
@@ -2110,7 +2134,25 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#ithoughtx">ithoughtx 破产了</a>
+                    <li><a href="#mysql5-7json">mysql5.7json支持</a>
+            
+                <ol>
+                    
+                    <li><a href="#内容">内容</a>
+            
+                <ol>
+                    
+                    <li><a href="#json">原生支持 json</a>
+            		</li>
+
+                    <li><a href="#虚拟列，可以创建索引">虚拟列，可以创建索引</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#参考">参考</a>
+            		</li>
+                </ol>
             		</li>
                 </ol>
             </nav>
