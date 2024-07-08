@@ -1578,7 +1578,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-07-03T16:49:11.346Z';
+        const searchIndexDate = '2024-07-08T11:04:10.687Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1590,9 +1590,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-07-03T16:49:11.346Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-07-08T11:04:10.687Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-07-03T16:49:11.346Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-07-08T11:04:10.687Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1833,7 +1833,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-02-04T16:28:43+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-06-28T16:08:46+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-02-04T16:28:43+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-07-04T00:25:26+08:00"></span></div></div></div>
       
       
       </header>
