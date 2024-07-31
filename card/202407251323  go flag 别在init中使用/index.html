@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>202407251323  flag 别在init中使用</title>
+    <title>202407251323  go flag 别在init中使用</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -852,7 +852,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202407251323  flag 别在init中使用/">202407251323  flag 别在init中使用 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/202407251323  go flag 别在init中使用/">202407251323  go flag 别在init中使用 </a>
                 </div>
             
         </div>
@@ -1589,7 +1589,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-07-31T12:05:15.320Z';
+        const searchIndexDate = '2024-07-31T12:05:53.944Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1601,9 +1601,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-07-31T12:05:15.320Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-07-31T12:05:53.944Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-07-31T12:05:15.320Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-07-31T12:05:53.944Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1835,7 +1835,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="2">202407251323  flag 别在init中使用</h1>
+          <h1 data-note-icon="2">202407251323  go flag 别在init中使用</h1>
         
         <div class="header-meta">
           
@@ -1850,18 +1850,18 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-07-25T13:23:53+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-07-31T20:03:55+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-07-25T13:23:53+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-07-31T20:05:13+08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <h1 id="202407251323-flag-init" tabindex="-1">202407251323  flag 别在init中使用</h1>
+      <h1 id="202407251323-go-flag-init" tabindex="-1">202407251323  go flag 别在init中使用</h1>
 <p><a href="https://stackoverflow.com/questions/29699982/go-test-flag-flag-provided-but-not-defined" target="_blank" class="external-link">go test flag: flag provided but not defined</a></p>
-<pre><code class="language-Go">	flag.StringVar(&amp;appConfig, &quot;conf&quot;, filepath.Join(env.ConfDir(), &quot;app.toml&quot;), &quot;app config file&quot;)
-	flag.Parse()
+<pre><code class="language-Go">flag.StringVar(&amp;appConfig, &quot;conf&quot;, filepath.Join(env.ConfDir(), &quot;app.toml&quot;), &quot;app config file&quot;)
+flag.Parse()
 </code></pre>
-<p>flag 别在 init 中使用，否则在 go test 的时候会强制校验</p>
+<p>flag 别在 init 中使用，否则在 go test 的时候会强制校验入参</p>
 
       
       
@@ -2130,7 +2130,7 @@
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#202407251323-flag-init">202407251323  flag 别在init中使用</a>
+                    <li><a href="#202407251323-go-flag-init">202407251323  go flag 别在init中使用</a>
             		</li>
                 </ol>
             </nav>

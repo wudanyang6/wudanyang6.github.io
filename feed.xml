@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-07-31T12:05:16Z</updated>
+    <updated>2024-07-31T12:05:54Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -2192,7 +2192,7 @@ if err != nil {
 &lt;li&gt;
 &lt;p&gt;2024-07:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202407251323%20%20flag%20%E5%88%AB%E5%9C%A8init%E4%B8%AD%E4%BD%BF%E7%94%A8/&quot;&gt;202407251323  flag 别在init中使用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202407251323%20%20go%20flag%20%E5%88%AB%E5%9C%A8init%E4%B8%AD%E4%BD%BF%E7%94%A8/&quot;&gt;202407251323  go flag 别在init中使用&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -2744,21 +2744,21 @@ $zip-&amp;gt;close(); //关闭压缩包
         </entry>
         <entry>
             <title>
-                202407251323  flag 别在init中使用
+                202407251323  go flag 别在init中使用
                 
             </title>
-            <updated>2024-07-31T12:03:55.000Z</updated>
-            <id>https://wudanyang6.github.io//card/202407251323  flag 别在init中使用/</id>
+            <updated>2024-07-31T12:05:13.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202407251323  go flag 别在init中使用/</id>
             <content type="html">
-                &lt;h1 id=&quot;202407251323-flag-init&quot; tabindex=&quot;-1&quot;&gt;202407251323  flag 别在init中使用&lt;/h1&gt;
+                &lt;h1 id=&quot;202407251323-go-flag-init&quot; tabindex=&quot;-1&quot;&gt;202407251323  go flag 别在init中使用&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/29699982/go-test-flag-flag-provided-but-not-defined&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;go test flag: flag provided but not defined&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;	flag.StringVar(&amp;amp;appConfig, &amp;quot;conf&amp;quot;, filepath.Join(env.ConfDir(), &amp;quot;app.toml&amp;quot;), &amp;quot;app config file&amp;quot;)
-	flag.Parse()
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;flag.StringVar(&amp;amp;appConfig, &amp;quot;conf&amp;quot;, filepath.Join(env.ConfDir(), &amp;quot;app.toml&amp;quot;), &amp;quot;app config file&amp;quot;)
+flag.Parse()
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;flag 别在 init 中使用，否则在 go test 的时候会强制校验&lt;/p&gt;
+&lt;p&gt;flag 别在 init 中使用，否则在 go test 的时候会强制校验入参&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/202407251323  flag 别在init中使用/" />
+            <link href="https://wudanyang6.github.io//card/202407251323  go flag 别在init中使用/" />
         </entry>
         <entry>
             <title>
@@ -3808,7 +3808,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;
 &lt;p&gt;2024-07:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202407251323%20%20flag%20%E5%88%AB%E5%9C%A8init%E4%B8%AD%E4%BD%BF%E7%94%A8/&quot;&gt;202407251323  flag 别在init中使用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202407251323%20%20go%20flag%20%E5%88%AB%E5%9C%A8init%E4%B8%AD%E4%BD%BF%E7%94%A8/&quot;&gt;202407251323  go flag 别在init中使用&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
