@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-07-08T11:04:11Z</updated>
+    <updated>2024-07-31T12:05:16Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -2190,6 +2190,12 @@ if err != nil {
                 &lt;h1 id=&quot;dg-archives&quot; tabindex=&quot;-1&quot;&gt;dg-Archives&lt;/h1&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
 &lt;li&gt;
+&lt;p&gt;2024-07:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202407251323%20%20flag%20%E5%88%AB%E5%9C%A8init%E4%B8%AD%E4%BD%BF%E7%94%A8/&quot;&gt;202407251323  flag 别在init中使用&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;2024-05:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202405081320%20IPv6%E7%9A%84%E5%9B%9E%E7%8E%AF%E5%9C%B0%E5%9D%80%E6%98%AF%E5%A6%82%E4%BD%95%E8%A1%A8%E7%A4%BA%E7%9A%84/&quot;&gt;202405081320 IPv6的回环地址是如何表示的&lt;/a&gt;&lt;/li&gt;
@@ -2735,6 +2741,24 @@ $zip-&amp;gt;close(); //关闭压缩包
 
             </content>
             <link href="https://wudanyang6.github.io//card/About Me/" />
+        </entry>
+        <entry>
+            <title>
+                202407251323  flag 别在init中使用
+                
+            </title>
+            <updated>2024-07-31T12:03:55.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202407251323  flag 别在init中使用/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202407251323-flag-init&quot; tabindex=&quot;-1&quot;&gt;202407251323  flag 别在init中使用&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/29699982/go-test-flag-flag-provided-but-not-defined&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;go test flag: flag provided but not defined&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;	flag.StringVar(&amp;amp;appConfig, &amp;quot;conf&amp;quot;, filepath.Join(env.ConfDir(), &amp;quot;app.toml&amp;quot;), &amp;quot;app config file&amp;quot;)
+	flag.Parse()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;flag 别在 init 中使用，否则在 go test 的时候会强制校验&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/202407251323  flag 别在init中使用/" />
         </entry>
         <entry>
             <title>
@@ -3721,13 +3745,13 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
             </content>
@@ -3755,7 +3779,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 202404151418 哲学
                 
             </title>
-            <updated>2024-07-02T15:48:47.000Z</updated>
+            <updated>2024-07-18T06:41:42.000Z</updated>
             <id>https://wudanyang6.github.io//000 Topic Index/202404151418 哲学/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404151418&quot; tabindex=&quot;-1&quot;&gt;202404151418 哲学&lt;/h1&gt;
@@ -3781,6 +3805,12 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h2&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;2024-07:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202407251323%20%20flag%20%E5%88%AB%E5%9C%A8init%E4%B8%AD%E4%BD%BF%E7%94%A8/&quot;&gt;202407251323  flag 别在init中使用&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;2024-05:&lt;/p&gt;
 &lt;ul&gt;
