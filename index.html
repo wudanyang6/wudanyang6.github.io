@@ -68,10 +68,6 @@
 
 
 
-    <style>
-        body.css-settings-manager { } body.theme-light.css-settings-manager { } body.theme-dark.css-settings-manager { }
-    </style>
-
 <style></style>
 
     
@@ -80,7 +76,7 @@
     
     
   </head>
-  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon css-settings-manager mod-macos is-frameless is-hidden-frameless obsidian-app native-scrollbars show-inline-title show-view-header css-settings-manager hider-scroll outliner-plugin-dnd obsidian-themepocalypse AT-multirow AT-row oz-show-all-num theme-dark is-focused">
+  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
     
     
       
@@ -1598,7 +1594,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-08-12T06:56:09.300Z';
+        const searchIndexDate = '2024-08-12T06:56:48.352Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1610,9 +1606,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-08-12T06:56:09.300Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-08-12T06:56:48.352Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-12T06:56:09.300Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-12T06:56:48.352Z', docs}));
             window.docs = docs
             window.index = index;
         }
