@@ -1596,7 +1596,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-08-12T06:56:48.352Z';
+        const searchIndexDate = '2024-08-12T07:19:01.489Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1608,9 +1608,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-08-12T06:56:48.352Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-08-12T07:19:01.489Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-12T06:56:48.352Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-12T07:19:01.489Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1923,7 +1923,7 @@ Saving to: ‘index.html’
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="top"
-        data-theme="transparent_dark"
+        data-theme="cobalt"
         data-lang="zh-CN"
         crossorigin="anonymous"
         async></script>
