@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-07-31T12:13:25Z</updated>
+    <updated>2024-08-12T06:26:16Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -2748,15 +2748,20 @@ $zip-&amp;gt;close(); //关闭压缩包
                 202407251323  go flag 别在init中使用
                 
             </title>
-            <updated>2024-07-31T12:05:13.000Z</updated>
+            <updated>2024-08-12T06:24:59.000Z</updated>
             <id>https://wudanyang6.github.io//card/202407251323  go flag 别在init中使用/</id>
             <content type="html">
                 &lt;h1 id=&quot;202407251323-go-flag-init&quot; tabindex=&quot;-1&quot;&gt;202407251323  go flag 别在init中使用&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/29699982/go-test-flag-flag-provided-but-not-defined&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;go test flag: flag provided but not defined&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;flag.StringVar(&amp;amp;appConfig, &amp;quot;conf&amp;quot;, filepath.Join(env.ConfDir(), &amp;quot;app.toml&amp;quot;), &amp;quot;app config file&amp;quot;)
 flag.Parse()
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;flag 别在 init 中使用，否则在 go test 的时候会强制校验入参&lt;/p&gt;
+&lt;p&gt;参考：&lt;br /&gt;
+&lt;a href=&quot;https://stackoverflow.com/questions/29699982/go-test-flag-flag-provided-but-not-defined&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;go test flag: flag provided but not defined&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag.Parse() is being called before your flag is defined.&lt;br /&gt;
+You have to make sure that all flag definitions happen before calling flag.Parse(), usually by defining all flags inside init() functions.&lt;/p&gt;
+&lt;/blockquote&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/202407251323  go flag 别在init中使用/" />
@@ -2800,7 +2805,7 @@ flag.Parse()
                 202405061046 音乐-圆桌骑士
                 
             </title>
-            <updated>2024-07-31T12:08:13.000Z</updated>
+            <updated>2024-07-31T12:13:47.000Z</updated>
             <id>https://wudanyang6.github.io//card/202405061046 音乐-圆桌骑士/</id>
             <content type="html">
                 &lt;h1 id=&quot;202405061046&quot; tabindex=&quot;-1&quot;&gt;202405061046 音乐-圆桌骑士&lt;/h1&gt;

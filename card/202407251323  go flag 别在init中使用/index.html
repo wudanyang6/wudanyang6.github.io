@@ -1600,7 +1600,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-07-31T12:13:24.413Z';
+        const searchIndexDate = '2024-08-12T06:26:15.125Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1612,9 +1612,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-07-31T12:13:24.413Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-08-12T06:26:15.125Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-07-31T12:13:24.413Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-12T06:26:15.125Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1861,18 +1861,23 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-07-25T13:23:53+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-07-31T20:05:13+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-07-25T13:23:53+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-08-12T14:24:59+08:00"></span></div></div></div>
       
       
       </header>
       
       
       <h1 id="202407251323-go-flag-init" tabindex="-1">202407251323  go flag 别在init中使用</h1>
-<p><a href="https://stackoverflow.com/questions/29699982/go-test-flag-flag-provided-but-not-defined" target="_blank" class="external-link">go test flag: flag provided but not defined</a></p>
 <pre><code class="language-Go">flag.StringVar(&amp;appConfig, &quot;conf&quot;, filepath.Join(env.ConfDir(), &quot;app.toml&quot;), &quot;app config file&quot;)
 flag.Parse()
 </code></pre>
 <p>flag 别在 init 中使用，否则在 go test 的时候会强制校验入参</p>
+<p>参考：<br>
+<a href="https://stackoverflow.com/questions/29699982/go-test-flag-flag-provided-but-not-defined" target="_blank" class="external-link">go test flag: flag provided but not defined</a></p>
+<blockquote>
+<p>flag.Parse() is being called before your flag is defined.<br>
+You have to make sure that all flag definitions happen before calling flag.Parse(), usually by defining all flags inside init() functions.</p>
+</blockquote>
 
       
       
