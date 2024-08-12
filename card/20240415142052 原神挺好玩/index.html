@@ -1596,7 +1596,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-08-12T07:19:01.489Z';
+        const searchIndexDate = '2024-08-12T07:24:16.362Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1608,9 +1608,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-08-12T07:19:01.489Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-08-12T07:24:16.362Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-12T07:19:01.489Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-12T07:24:16.362Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1851,7 +1851,7 @@
                 
               
             </div>
-          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-31T10:50:46+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-07-31T20:06:45+08:00"></span></div></div></div>
+          <div class="timestamps"><div>创建： <span class="human-date" data-date="2024-01-31T10:50:46+08:00"></span></div><div>更新： <span class="human-date" data-date="2024-08-12T15:23:42+08:00"></span></div></div></div>
       
       
       </header>
@@ -1866,7 +1866,7 @@
 <li>剧情比较代入，某些剧情需要努力打怪，不过主线剧情并不是很难。</li>
 <li>大世界地图非常大，如果不是有传送节点估计跑图都得跑断腿。</li>
 <li>大世界里面有很多宝箱，有些宝箱需要解密之后才能获得，不过这些宝箱都是一次性的，我在蒙德、璃月、稻妻的探索度最高才到 50% ，所以也可见大世界有多大东西有多丰富。</li>
-<li>支线剧情也很丰富多彩，比如我就特别喜欢璃月里面的一个支线剧情《神女劈观》，并且剧情最后有一首歌，大家可以先听一下。不过没有了解剧情之前听这首歌触动应该不是很大，还是具体体验一下剧情再说。</li>
+<li>支线剧情也很丰富多彩，比如我就特别喜欢璃月里面的一个支线剧情《神女劈观》，并且剧情最后有一首歌，大家可以先听一下。不过没有了解剧情之前听这首歌触动应该不是很大，还是具体体验一下剧情再说。点击可播放： <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=3&id=2496574602&auto=0&height=66"></iframe></li>
 <li>最后一点，原神不花钱氪金也可以玩的很舒服，每天做做每日任务，开开宝箱，欣赏欣赏美景，然后读一读角色的背景故事。</li>
 </ol>
 <p>对了，游戏社区里的前辈忠告，当深渊不存在，能打到哪里就打到哪里。</p>
