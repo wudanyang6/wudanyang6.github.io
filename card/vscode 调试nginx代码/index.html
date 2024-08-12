@@ -1600,7 +1600,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-08-12T06:26:15.125Z';
+        const searchIndexDate = '2024-08-12T06:48:48.300Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1612,9 +1612,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-08-12T06:26:15.125Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-08-12T06:48:48.300Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-12T06:26:15.125Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-12T06:48:48.300Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1987,7 +1987,7 @@ Maybe someone has attached this process with gdb.</p>
         data-category-id="DIC_kwDOFTtyT84CYlu-"
         data-mapping="pathname"
         data-strict="0"
-        data-reactions-enabled="0"
+        data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="top"
         data-theme="light"
