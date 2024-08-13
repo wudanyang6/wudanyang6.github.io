@@ -1596,7 +1596,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-08-12T07:24:16.362Z';
+        const searchIndexDate = '2024-08-13T02:34:04.543Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1608,9 +1608,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-08-12T07:24:16.362Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-08-13T02:34:04.543Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-12T07:24:16.362Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-13T02:34:04.543Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1917,8 +1917,8 @@
 <li>
 <p>2024-01:</p>
 <ul>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/20240415142052 原神挺好玩/">20240415142052 原神挺好玩</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/">0 Home dy-turbo</a></li>
+<li><a class="internal-link" target="" data-note-icon="2" href="/card/20240415142052 原神挺好玩/">20240415142052 原神挺好玩</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/Kafka入门/">Kafka入门</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/About Me/">About Me</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/DoD/">DoD</a></li>
