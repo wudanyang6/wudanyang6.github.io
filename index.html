@@ -902,17 +902,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/dg-Archives/">dg-Archives </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="2" style="text-decoration: none;" class="filename" href="/card/docker-ubuntu-unminimize/">docker-ubuntu-unminimize </a>
                 </div>
             
@@ -1594,7 +1583,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-08-13T02:34:04.543Z';
+        const searchIndexDate = '2024-08-13T02:36:25.655Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1606,9 +1595,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-08-13T02:34:04.543Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-08-13T02:36:25.655Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-13T02:34:04.543Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-13T02:36:25.655Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1903,7 +1892,6 @@
 <ul>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/202404151420 哲学的分支/">202404151420 哲学的分支</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/ithoughtx破产了/">ithoughtx破产了</a></li>
-<li><a class="internal-link" target="" data-note-icon="2" href="/card/dg-Archives/">dg-Archives</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/20240415141933 什么是哲学/">20240415141933 什么是哲学</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/thoughts/做事心得/">做事心得</a></li>
 <li><a class="internal-link" target="" data-note-icon="2" href="/card/go-exec-run/">go-exec-run</a></li>
@@ -2380,8 +2368,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/card/dg-Archives/" data-note-icon="2" class="backlink">dg-Archives</a>
-                                                </div></div>
+                                          <div class="backlink-list"></div>
                               </div>
                         
                   
