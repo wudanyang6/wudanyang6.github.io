@@ -56,7 +56,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.5d7ff7d4.css" rel="stylesheet">
+    <link href="/styles/_theme.8b2845e1.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
@@ -68,6 +68,10 @@
 
 
 
+    <style>
+        body.css-settings-manager { } body.theme-light.css-settings-manager { } body.theme-dark.css-settings-manager { }
+    </style>
+
 <style></style>
 
     
@@ -76,7 +80,7 @@
     
     
   </head>
-  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon">
+  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon css-settings-manager mod-windows is-frameless is-hidden-frameless obsidian-app theme-light show-inline-title show-view-header AT-multirow AT-row obsidian-themepocalypse is-maximized oz-show-all-num css-settings-manager hider-scroll outliner-plugin-dnd h2-underline is-focused">
     
     
       
@@ -1583,7 +1587,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-08-29T16:14:01.387Z';
+        const searchIndexDate = '2024-08-29T16:16:22.669Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1595,9 +1599,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-08-29T16:14:01.387Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-08-29T16:16:22.669Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-29T16:14:01.387Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-29T16:16:22.669Z', docs}));
             window.docs = docs
             window.index = index;
         }
