@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-08-29T17:55:22Z</updated>
+    <updated>2024-08-29T17:56:11Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -3548,13 +3548,12 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 0 Home dy-turbo
                 
             </title>
-            <updated>2024-08-29T16:34:16.000Z</updated>
+            <updated>2024-08-29T17:55:37.000Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;0-home-dy-turbo&quot; tabindex=&quot;-1&quot;&gt;0 Home dy-turbo&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;test&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h2&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
 &lt;li&gt;
@@ -3595,8 +3594,8 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;
 &lt;p&gt;2024-03:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/20240415141933%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141933 什么是哲学&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404151420%20%E5%93%B2%E5%AD%A6%E7%9A%84%E5%88%86%E6%94%AF/&quot;&gt;202404151420 哲学的分支&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ithoughtx%E7%A0%B4%E4%BA%A7%E4%BA%86/&quot;&gt;ithoughtx破产了&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-exec-run/&quot;&gt;go-exec-run&lt;/a&gt;&lt;/li&gt;
