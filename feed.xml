@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-08-29T16:18:26Z</updated>
+    <updated>2024-08-29T16:21:14Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -16,6 +16,63 @@
                 &lt;style&gt; .container {font-family: sans-serif; text-align: center;} .button-wrapper button {z-index: 1;height: 40px; width: 100px; margin: 10px;padding: 5px;} .excalidraw .App-menu_top .buttonList { display: flex;} .excalidraw-wrapper { height: 800px; margin: 50px; position: relative;} :root[dir=&quot;ltr&quot;] .excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left {transform: none;} &lt;/style&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw@0/dist/excalidraw.production.min.js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;当前状态和下一状态的随想excalidraw.md&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){const InitialData={&quot;type&quot;:&quot;excalidraw&quot;,&quot;version&quot;:2,&quot;source&quot;:&quot;https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.3.0&quot;,&quot;elements&quot;:[{&quot;type&quot;:&quot;rectangle&quot;,&quot;version&quot;:124,&quot;versionNonce&quot;:1939526015,&quot;index&quot;:&quot;a0&quot;,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:-120.83203125,&quot;y&quot;:-187.431640625,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:153,&quot;height&quot;:97,&quot;seed&quot;:1809355819,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;lcXa25o6&quot;},{&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1724947112689,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:107,&quot;versionNonce&quot;:1163151857,&quot;index&quot;:&quot;a1&quot;,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;lcXa25o6&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:-84.33203125,&quot;y&quot;:-163.931640625,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:80,&quot;height&quot;:50,&quot;seed&quot;:1671257323,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1724947112689,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;&#92;n当前状态&quot;,&quot;rawText&quot;:&quot;&#92;n当前状态&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;originalText&quot;:&quot;&#92;n当前状态&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;type&quot;:&quot;rectangle&quot;,&quot;version&quot;:126,&quot;versionNonce&quot;:543312287,&quot;index&quot;:&quot;a2&quot;,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:375.140625,&quot;y&quot;:-190.029296875,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:153,&quot;height&quot;:97,&quot;seed&quot;:1586660869,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;boundElements&quot;:[{&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;Ymxj0WWT&quot;}],&quot;updated&quot;:1724947112689,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:117,&quot;versionNonce&quot;:1157096401,&quot;index&quot;:&quot;a3&quot;,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;Ymxj0WWT&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:411.640625,&quot;y&quot;:-154.029296875,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:80,&quot;height&quot;:25,&quot;seed&quot;:1849985227,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1724947112689,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;下一状态&quot;,&quot;rawText&quot;:&quot;下一状态&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;originalText&quot;:&quot;下一状态&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;type&quot;:&quot;arrow&quot;,&quot;version&quot;:407,&quot;versionNonce&quot;:177013279,&quot;index&quot;:&quot;a4&quot;,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:38.5078125,&quot;y&quot;:-134.16474201184522,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:325.34375000000006,&quot;height&quot;:3.6042259213982675,&quot;seed&quot;:343810891,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;boundElements&quot;:[],&quot;updated&quot;:1724947112992,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;gap&quot;:6.33984375,&quot;focus&quot;:0.11513603277860894,&quot;fixedPoint&quot;:null},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;gap&quot;:11.2890625,&quot;focus&quot;:-0.056492919794349276,&quot;fixedPoint&quot;:null},&quot;lastCommittedPoint&quot;:null,&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;points&quot;:[[0,0],[325.34375000000006,-3.6042259213982675]]},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:169,&quot;versionNonce&quot;:617431473,&quot;index&quot;:&quot;a5&quot;,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;LIFeX9WH&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:95.265625,&quot;y&quot;:-171.51171875,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:182,&quot;height&quot;:25,&quot;seed&quot;:591423115,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1724947112689,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;中间可能过了亿万年&quot;,&quot;rawText&quot;:&quot;中间可能过了亿万年&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;中间可能过了亿万年&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25}],&quot;appState&quot;:{&quot;theme&quot;:&quot;light&quot;,&quot;viewBackgroundColor&quot;:&quot;#ffffff&quot;,&quot;currentItemStrokeColor&quot;:&quot;#000000&quot;,&quot;currentItemBackgroundColor&quot;:&quot;transparent&quot;,&quot;currentItemFillStyle&quot;:&quot;hachure&quot;,&quot;currentItemStrokeWidth&quot;:1,&quot;currentItemStrokeStyle&quot;:&quot;solid&quot;,&quot;currentItemRoughness&quot;:1,&quot;currentItemOpacity&quot;:100,&quot;currentItemFontFamily&quot;:1,&quot;currentItemFontSize&quot;:20,&quot;currentItemTextAlign&quot;:&quot;left&quot;,&quot;currentItemStartArrowhead&quot;:null,&quot;currentItemEndArrowhead&quot;:&quot;arrow&quot;,&quot;scrollX&quot;:249.5113525390625,&quot;scrollY&quot;:552.8409118652344,&quot;zoom&quot;:{&quot;value&quot;:1},&quot;currentItemRoundness&quot;:&quot;round&quot;,&quot;gridSize&quot;:null,&quot;gridColor&quot;:{&quot;Bold&quot;:&quot;#C9C9C9&quot;,&quot;Regular&quot;:&quot;#EDEDED&quot;},&quot;colorPalette&quot;:{},&quot;currentStrokeOptions&quot;:null,&quot;previousGridSize&quot;:null,&quot;frameRendering&quot;:{&quot;enabled&quot;:true,&quot;clip&quot;:true,&quot;name&quot;:true,&quot;outline&quot;:true},&quot;objectsSnapModeEnabled&quot;:false},&quot;files&quot;:{}};InitialData.scrollToContent=true;App=()=&gt;{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener(&quot;resize&quot;,e),()=&gt;window.removeEventListener(&quot;resize&quot;,e)},[t]),React.createElement(React.Fragment,null,React.createElement(&quot;div&quot;,{className:&quot;excalidraw-wrapper&quot;,ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById(&quot;当前状态和下一状态的随想excalidraw.md&quot;);ReactDOM.render(React.createElement(App),excalidrawWrapper);})();&lt;/script&gt;
             </content>
             <link href="https://wudanyang6.github.io//thoughts/当前状态和下一状态的随想.excalidraw/" />
+        </entry>
+        <entry>
+            <title>
+                如何追查线上问题
+                
+            </title>
+            <updated>2024-08-29T15:58:39.000Z</updated>
+            <id>https://wudanyang6.github.io//thoughts/如何追查线上问题/</id>
+            <content type="html">
+                &lt;h1 id=&quot;如何追查线上问题&quot; tabindex=&quot;-1&quot;&gt;如何追查线上问题&lt;/h1&gt;
+&lt;h2 id=&quot;止损优先&quot; tabindex=&quot;-1&quot;&gt;止损优先&lt;/h2&gt;
+&lt;p&gt;不能先追查问题根源， 首先应该&lt;code&gt;止损&lt;/code&gt;，不让问题进一步扩大，&lt;code&gt;代码回滚&lt;/code&gt;、&lt;code&gt;服务降级&lt;/code&gt;等都可以起到止损的效果。&lt;br /&gt;
+对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 &lt;code&gt;配置开关 &lt;/code&gt;控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多&lt;/p&gt;
+&lt;h2 id=&quot;及时通告&quot; tabindex=&quot;-1&quot;&gt;及时通告&lt;/h2&gt;
+&lt;p&gt;在问题发生之后，要及时对处理问题的过程进行&lt;code&gt;通告&lt;/code&gt;。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。&lt;/p&gt;
+&lt;h1 id=&quot;追查问题的方法&quot; tabindex=&quot;-1&quot;&gt;追查问题的方法&lt;/h1&gt;
+&lt;h2 id=&quot;逻辑方法:&quot; tabindex=&quot;-1&quot;&gt;逻辑方法:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;先收集&lt;code&gt;现象&lt;/code&gt;：业务报错、线上报错日志等&lt;br /&gt;
+对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。&lt;/li&gt;
+&lt;li&gt;针对现象假设&lt;code&gt;原因&lt;/code&gt;：
+&lt;ol&gt;
+&lt;li&gt;常见问题依据追查手册&lt;/li&gt;
+&lt;li&gt;其他问题保持思路开放，大胆假设&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;是否&lt;code&gt;有损&lt;/code&gt;的判断：&lt;br /&gt;
+根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 &lt;strong&gt;止损优先&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;质疑&lt;/code&gt;所有数据：&lt;br /&gt;
+各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;知识准备&quot; tabindex=&quot;-1&quot;&gt;知识准备&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;对线上各种&lt;code&gt;日志&lt;/code&gt;的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等&lt;/li&gt;
+&lt;li&gt;对线上的各种&lt;code&gt;配置&lt;/code&gt;更要做到心中有数&lt;/li&gt;
+&lt;li&gt;对&lt;code&gt;细节&lt;/code&gt;的追查，每次都更细一些，这样才能获得更多的信息&lt;/li&gt;
+&lt;li&gt;计算机&lt;code&gt;基本功&lt;/code&gt;，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;总结经验&quot; tabindex=&quot;-1&quot;&gt;总结经验&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;成熟的方法落地成&lt;code&gt;工具&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;对问题的追查形成&lt;code&gt;文档&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;问题解决之后&quot; tabindex=&quot;-1&quot;&gt;问题解决之后&lt;/h1&gt;
+&lt;p&gt;如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。&lt;br /&gt;
+那么，我们可以通过思考以下几点来提升自己&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;线上是否恢复了正常？（&lt;code&gt;最基本的&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;问题的原因是什么？（&lt;code&gt;落到追查文档&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;通过什么手段恢复的？（&lt;code&gt;解决方案&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;怎么可以避免下次再次出现问题？（&lt;code&gt;防患未然&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;除了此次出现的问题，会不会有其他的问题出现（&lt;code&gt;举一反三&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;出现此类问题是否是架构问题造成的？（&lt;code&gt;根本原因&lt;/code&gt;）&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//thoughts/如何追查线上问题/" />
         </entry>
         <entry>
             <title>
@@ -198,7 +255,7 @@
                 如何合并marginnote笔记本
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/阅读/如何合并marginnote笔记本/</id>
             <content type="html">
                 &lt;h1 id=&quot;marginnote&quot; tabindex=&quot;-1&quot;&gt;如何合并marginnote笔记本&lt;/h1&gt;
@@ -212,7 +269,7 @@
                 软装-沙发
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/软装-沙发/</id>
             <content type="html">
                 &lt;h1 id=&quot;软装 - 沙发&quot; tabindex=&quot;-1&quot;&gt;软装 - 沙发&lt;/h1&gt;
@@ -257,7 +314,7 @@
                 获取进程存活时间
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/获取进程存活时间/</id>
             <content type="html">
                 &lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;ps -eo lstart,pid,cmd | grep &amp;quot;php-fpm: pool www&amp;quot; | grep -v &#39;grep&#39;
@@ -299,7 +356,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 网络-最多有多少个a类、b类和c类网络号
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/网络-最多有多少个a类、b类和c类网络号/</id>
             <content type="html">
                 &lt;p&gt;在IPv4地址体系中，网络被分为4个等级，分别是A，B，C和D类。对于A、B、C类，其数量如下：&lt;/p&gt;
@@ -323,7 +380,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 算法新年祝福语
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/算法新年祝福语/</id>
             <content type="html">
                 &lt;h1 id=&quot;算法新年祝福语&quot; tabindex=&quot;-1&quot;&gt;算法新年祝福语&lt;/h1&gt;
@@ -343,7 +400,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 滑动窗口模板
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/滑动窗口模板/</id>
             <content type="html">
                 &lt;h1 id=&quot;滑动窗口模板&quot; tabindex=&quot;-1&quot;&gt;滑动窗口模板&lt;/h1&gt;
@@ -416,7 +473,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 如何查看 nginx 的rewrite记录
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/如何查看 nginx 的rewrite记录/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx-rewrite&quot; tabindex=&quot;-1&quot;&gt;如何查看 nginx 的rewrite记录&lt;/h1&gt;
@@ -454,7 +511,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 生成
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/生成/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#how-to-learn&quot;&gt;#how-to-learn&lt;/a&gt;&lt;/p&gt;
@@ -474,7 +531,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 20240408201701 卡片盒笔记法
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/20240408201701 卡片盒笔记法/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240408201701&quot; tabindex=&quot;-1&quot;&gt;20240408201701 卡片盒笔记法&lt;/h1&gt;
@@ -502,7 +559,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -527,7 +584,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011222338 - 使用卡片盒笔记法输出的流程
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#output&quot;&gt;#output&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#process&quot;&gt;#process&lt;/a&gt;&lt;/p&gt;
@@ -551,7 +608,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011222325 - 信息
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011222325 - 信息/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011222325&quot; tabindex=&quot;-1&quot;&gt;202011222325 - 信息&lt;/h1&gt;
@@ -567,7 +624,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011222324 - 知识
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011222324 - 知识/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011222324&quot; tabindex=&quot;-1&quot;&gt;202011222324 - 知识&lt;/h1&gt;
@@ -582,7 +639,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011222310 - 卡片盒笔记法的模块
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011222310 - 卡片盒笔记法的模块/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011222310&quot; tabindex=&quot;-1&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/h1&gt;
@@ -608,7 +665,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011222209 - 卡片盒笔记法的步骤
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011222209 - 卡片盒笔记法的步骤/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011222209&quot; tabindex=&quot;-1&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/h1&gt;
@@ -626,7 +683,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011220028 - 从输出的角度看卡片盒笔记法的优势
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011220028&quot; tabindex=&quot;-1&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/h1&gt;
@@ -646,7 +703,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011210003 - 卡片盒笔记法的基本流程
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011210003 - 卡片盒笔记法的基本流程/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011210003&quot; tabindex=&quot;-1&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/h1&gt;
@@ -678,7 +735,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011201315 - 卡片盒笔记法主要关注什么
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201315&quot; tabindex=&quot;-1&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/h1&gt;
@@ -698,7 +755,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011201301 - 基础概念
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011201301 - 基础概念/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201301&quot; tabindex=&quot;-1&quot;&gt;202011201301 - 基础概念&lt;/h1&gt;
@@ -723,7 +780,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011201016 - 什么是知识和信息
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011201016 - 什么是知识和信息/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011201016&quot; tabindex=&quot;-1&quot;&gt;202011201016 - 什么是知识和信息&lt;/h1&gt;
@@ -765,7 +822,7 @@ dg-publish: true&lt;/h2&gt;
                 202011192023 - 卡片盒笔记法的基本元素
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011192023&quot; tabindex=&quot;-1&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/h1&gt;
@@ -794,7 +851,7 @@ dg-publish: true&lt;/h2&gt;
                 202011192022 - 什么是卡片盒笔记法
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/卡片盒笔记法/202011192022 - 什么是卡片盒笔记法/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011192022&quot; tabindex=&quot;-1&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/h1&gt;
@@ -813,7 +870,7 @@ dg-publish: true&lt;/h2&gt;
                 内存问题分析
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/内存问题分析/</id>
             <content type="html">
                 &lt;h1 id=&quot;内存问题分析&quot; tabindex=&quot;-1&quot;&gt;内存问题分析&lt;/h1&gt;
@@ -841,7 +898,7 @@ dg-publish: true&lt;/h2&gt;
                 vscode 调试nginx代码
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/vscode 调试nginx代码/</id>
             <content type="html">
                 &lt;h1 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h1&gt;
@@ -951,7 +1008,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 vscode git 只暂存部分改动
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/vscode git 只暂存部分改动/</id>
             <content type="html">
                 &lt;h1 id=&quot;vscode-git&quot; tabindex=&quot;-1&quot;&gt;vscode git 只暂存部分改动&lt;/h1&gt;
@@ -968,7 +1025,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 ubuntu 树莓派启动时配置网络
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/ubuntu 树莓派启动时配置网络/</id>
             <content type="html">
                 &lt;h1 id=&quot;ubuntu&quot; tabindex=&quot;-1&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/h1&gt;
@@ -1036,7 +1093,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 redis-rdb 文件分析
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/redis-rdb 文件分析/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/notes/card-202011281031-rdbtools&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/p&gt;
@@ -1186,7 +1243,7 @@ Length of Largest Element	8          # hash 中占用内存最大的那个 value
                 rdb 文件分析
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/rdb 文件分析/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/notes/card-202011281031-rdbtools&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/p&gt;
@@ -1336,7 +1393,7 @@ Length of Largest Element	8          # hash 中占用内存最大的那个 value
                 php-xml 如何解析 cdata
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/php-xml 如何解析 cdata/</id>
             <content type="html">
                 &lt;h1 id=&quot;php-xml-cdata&quot; tabindex=&quot;-1&quot;&gt;php-xml 如何解析 cdata&lt;/h1&gt;
@@ -1356,7 +1413,7 @@ Length of Largest Element	8          # hash 中占用内存最大的那个 value
                 mysql5.7json支持
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/mysql5.7json支持/</id>
             <content type="html">
                 &lt;h1 id=&quot;mysql5-7json&quot; tabindex=&quot;-1&quot;&gt;mysql5.7json支持&lt;/h1&gt;
@@ -1389,7 +1446,7 @@ alter table user add index idx_username (user_name);
                 mac 运行 kafka
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/mac 运行 kafka/</id>
             <content type="html">
                 &lt;h1 id=&quot;mac-kafka&quot; tabindex=&quot;-1&quot;&gt;mac 运行 kafka&lt;/h1&gt;
@@ -1490,7 +1547,7 @@ func main() {
                 linux-树莓派无法上网排查
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/linux-树莓派无法上网排查/</id>
             <content type="html">
                 &lt;h1 id=&quot;linux&quot; tabindex=&quot;-1&quot;&gt;linux-树莓派无法上网排查&lt;/h1&gt;
@@ -1537,7 +1594,7 @@ Saving to: ‘index.html’
                 linux-查看内存占用情况
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/linux-查看内存占用情况/</id>
             <content type="html">
                 &lt;h1 id=&quot;linux&quot; tabindex=&quot;-1&quot;&gt;linux-查看内存占用情况&lt;/h1&gt;
@@ -1552,7 +1609,7 @@ Saving to: ‘index.html’
                 linux-wait
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/linux-wait/</id>
             <content type="html">
                 &lt;h1 id=&quot;content&quot; tabindex=&quot;-1&quot;&gt;Content&lt;/h1&gt;
@@ -1577,7 +1634,7 @@ done
                 linux-perf
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/linux-perf/</id>
             <content type="html">
                 &lt;h1 id=&quot;linux-perf&quot; tabindex=&quot;-1&quot;&gt;linux-perf&lt;/h1&gt;
@@ -1609,7 +1666,7 @@ done
                 linux-man命令使用
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/linux-man命令使用/</id>
             <content type="html">
                 &lt;h1 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h1&gt;
@@ -1635,7 +1692,7 @@ done
                 linux-echo
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/linux-echo/</id>
             <content type="html">
                 &lt;h1 id=&quot;linux-echo&quot; tabindex=&quot;-1&quot;&gt;linux-echo&lt;/h1&gt;
@@ -1658,7 +1715,7 @@ done
                 leetcode-53. 最大子数组和
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/leetcode-53. 最大子数组和/</id>
             <content type="html">
                 &lt;h1 id=&quot;leetcode-53&quot; tabindex=&quot;-1&quot;&gt;leetcode-53. 最大子数组和&lt;/h1&gt;
@@ -1702,7 +1759,7 @@ done
                 leetcode-1137第 N 个泰波那契数
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/leetcode-1137第 N 个泰波那契数/</id>
             <content type="html">
                 &lt;h1 id=&quot;题目&quot; tabindex=&quot;-1&quot;&gt;题目&lt;/h1&gt;
@@ -1740,7 +1797,7 @@ done
                 leetcode-1014. 最佳观光组合
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/leetcode-1014. 最佳观光组合/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/p&gt;
@@ -1781,7 +1838,7 @@ fn 为最大值&lt;/p&gt;
                 leetcode 编码技巧
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/leetcode 编码技巧/</id>
             <content type="html">
                 &lt;h1 id=&quot;leetcode&quot; tabindex=&quot;-1&quot;&gt;leetcode 编码技巧&lt;/h1&gt;
@@ -1879,7 +1936,7 @@ for j := 0; j &amp;lt; 4; j++ {
                 js超长数字溢出问题
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/js超长数字溢出问题/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#js&quot;&gt;#js&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#联调&quot;&gt;#联调&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#踩坑&quot;&gt;#踩坑&lt;/a&gt;&lt;/p&gt;
@@ -1911,7 +1968,7 @@ for j := 0; j &amp;lt; 4; j++ {
                 ithoughtx破产了
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/ithoughtx破产了/</id>
             <content type="html">
                 &lt;h1 id=&quot;ithoughtx&quot; tabindex=&quot;-1&quot;&gt;ithoughtx 破产了&lt;/h1&gt;
@@ -1926,7 +1983,7 @@ for j := 0; j &amp;lt; 4; j++ {
                 iso-日期表示法
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/iso-日期表示法/</id>
             <content type="html">
                 &lt;p&gt;&lt;strong&gt;国际标准化组织的日期时间表示法&lt;/strong&gt;&lt;/p&gt;
@@ -1962,7 +2019,7 @@ for j := 0; j &amp;lt; 4; j++ {
                 go-mod
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/go-mod/</id>
             <content type="html">
                 &lt;h1 id=&quot;go-mod&quot; tabindex=&quot;-1&quot;&gt;go-mod&lt;/h1&gt;
@@ -1995,7 +2052,7 @@ go mod tidy
                 go-exec
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/go-exec/</id>
             <content type="html">
                 &lt;h1 id=&quot;go-exec&quot; tabindex=&quot;-1&quot;&gt;go-exec&lt;/h1&gt;
@@ -2084,7 +2141,7 @@ fmt.Printf(&amp;quot;The output is %s&#92;n&amp;quot;, out.String())
                 go-exec-run
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/go-exec-run/</id>
             <content type="html">
                 &lt;h1 id=&quot;go-exec-run&quot; tabindex=&quot;-1&quot;&gt;go-exec-run&lt;/h1&gt;
@@ -2129,7 +2186,7 @@ if err != nil {
                 epoll的边缘触发和水平触发
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/epoll的边缘触发和水平触发/</id>
             <content type="html">
                 &lt;h1 id=&quot;epoll&quot; tabindex=&quot;-1&quot;&gt;epoll的边缘触发和水平触发&lt;/h1&gt;
@@ -2178,7 +2235,7 @@ if err != nil {
                 docker-ubuntu-unminimize
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/docker-ubuntu-unminimize/</id>
             <content type="html">
                 &lt;h1 id=&quot;docker-ubuntu-unminimize&quot; tabindex=&quot;-1&quot;&gt;docker-ubuntu-unminimize&lt;/h1&gt;
@@ -2197,7 +2254,7 @@ if err != nil {
                 alfred-翻译插件
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/alfred-翻译插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;alfred&quot; tabindex=&quot;-1&quot;&gt;alfred-翻译插件&lt;/h1&gt;
@@ -2213,7 +2270,7 @@ if err != nil {
                 PHP生成zip压缩包
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/PHP生成zip压缩包/</id>
             <content type="html">
                 &lt;h1 id=&quot;php-zip&quot; tabindex=&quot;-1&quot;&gt;PHP生成zip压缩包&lt;/h1&gt;
@@ -2236,7 +2293,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 Kafka入门
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/Kafka入门/</id>
             <content type="html">
                 &lt;h1 id=&quot;kafka&quot; tabindex=&quot;-1&quot;&gt;Kafka 入门&lt;/h1&gt;
@@ -2415,7 +2472,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 DoD
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/DoD/</id>
             <content type="html">
                 &lt;h1 id=&quot;do-d&quot; tabindex=&quot;-1&quot;&gt;DoD&lt;/h1&gt;
@@ -2444,7 +2501,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 CDN 带宽控制的几种方法
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/CDN 带宽控制的几种方法/</id>
             <content type="html">
                 &lt;h1 id=&quot;cdn&quot; tabindex=&quot;-1&quot;&gt;CDN 带宽控制的几种方法&lt;/h1&gt;
@@ -2473,7 +2530,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 About Me
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/About Me/</id>
             <content type="html">
                 &lt;h1 id=&quot;about-me&quot; tabindex=&quot;-1&quot;&gt;About Me&lt;/h1&gt;
@@ -2490,7 +2547,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 202407251323  go flag 别在init中使用
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202407251323  go flag 别在init中使用/</id>
             <content type="html">
                 &lt;h1 id=&quot;202407251323-go-flag-init&quot; tabindex=&quot;-1&quot;&gt;202407251323  go flag 别在init中使用&lt;/h1&gt;
@@ -2513,7 +2570,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202405081331 rime 如何使用命令行执行同步操作
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202405081331 rime 如何使用命令行执行同步操作/</id>
             <content type="html">
                 &lt;h1 id=&quot;202405081331-rime&quot; tabindex=&quot;-1&quot;&gt;202405081331 rime 如何使用命令行执行同步操作&lt;/h1&gt;
@@ -2532,7 +2589,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202405081320 IPv6的回环地址是如何表示的
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202405081320 IPv6的回环地址是如何表示的/</id>
             <content type="html">
                 &lt;h1 id=&quot;202405081320-i-pv6&quot; tabindex=&quot;-1&quot;&gt;202405081320 IPv6的回环地址是如何表示的&lt;/h1&gt;
@@ -2547,7 +2604,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202405061046 音乐-圆桌骑士
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202405061046 音乐-圆桌骑士/</id>
             <content type="html">
                 &lt;h1 id=&quot;202405061046&quot; tabindex=&quot;-1&quot;&gt;202405061046 音乐-圆桌骑士&lt;/h1&gt;
@@ -2563,7 +2620,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202404231624 如何在 Finder 中拷贝文件路径全称
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202404231624 如何在 Finder 中拷贝文件路径全称/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404231624-finder&quot; tabindex=&quot;-1&quot;&gt;202404231624 如何在 Finder 中拷贝文件路径全称&lt;/h1&gt;
@@ -2580,7 +2637,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202404191548 GTD的主要思想
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202404191548 GTD的主要思想/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404191548-gtd&quot; tabindex=&quot;-1&quot;&gt;202404191548 GTD的主要思想&lt;/h1&gt;
@@ -2613,7 +2670,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202404181240 快捷指令-记录今天的事情 obsidian
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202404181240 快捷指令-记录今天的事情 obsidian/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404181240-obsidian&quot; tabindex=&quot;-1&quot;&gt;202404181240 快捷指令 - 记录今天的事情 obsidian&lt;/h1&gt;
@@ -2633,7 +2690,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202404181228 使用 open --background 的形式打开 obsidian 不够轻便
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202404181228 使用 open --background 的形式打开 obsidian 不够轻便/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404181228-open-background-obsidian&quot; tabindex=&quot;-1&quot;&gt;202404181228 使用 open --background 的形式打开 obsidian 不够轻便&lt;/h1&gt;
@@ -2647,7 +2704,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202404181227 补码
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202404181227 补码/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404181227&quot; tabindex=&quot;-1&quot;&gt;202404181227 补码&lt;/h1&gt;
@@ -2667,7 +2724,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202404171707 当你学不下去的时候
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202404171707 当你学不下去的时候/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404171707&quot; tabindex=&quot;-1&quot;&gt;202404171707 当你学不下去的时候&lt;/h1&gt;
@@ -2681,7 +2738,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 20240417125706 部落冲突
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/20240417125706 部落冲突/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240417125706&quot; tabindex=&quot;-1&quot;&gt;20240417125706 部落冲突&lt;/h1&gt;
@@ -2696,7 +2753,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 20240417103919 卡片盒笔记法的标题是对内容的一句话描述
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/20240417103919 卡片盒笔记法的标题是对内容的一句话描述/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240417103919&quot; tabindex=&quot;-1&quot;&gt;20240417103919 卡片盒笔记法的标题是对内容的一句话描述&lt;/h1&gt;
@@ -2710,7 +2767,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 20240415183533 哲学书单
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/20240415183533 哲学书单/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240415183533&quot; tabindex=&quot;-1&quot;&gt;20240415183533 哲学书单&lt;/h1&gt;
@@ -2724,7 +2781,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 20240415142052 原神挺好玩
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/20240415142052 原神挺好玩/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240415142052&quot; tabindex=&quot;-1&quot;&gt;20240415142052 原神挺好玩&lt;/h1&gt;
@@ -2750,7 +2807,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202404151420 哲学的分支
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202404151420 哲学的分支/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404151420&quot; tabindex=&quot;-1&quot;&gt;202404151420 哲学的分支&lt;/h1&gt;
@@ -2796,7 +2853,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202404142147 如何在shell中遍历数字
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202404142147 如何在shell中遍历数字/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404142147-shell&quot; tabindex=&quot;-1&quot;&gt;202404142147 如何在shell中遍历数字&lt;/h1&gt;
@@ -2819,7 +2876,7 @@ done
                 202404091044 leetcode-会员购买优惠-宫水三叶
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202404091044 leetcode-会员购买优惠-宫水三叶/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404091044-leetcode&quot; tabindex=&quot;-1&quot;&gt;202404091044 leetcode-会员购买优惠-宫水三叶&lt;/h1&gt;
@@ -2843,7 +2900,7 @@ done
                 202103251606 - 如何在 linux 上配置科学上网
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202103251606 - 如何在 linux 上配置科学上网/</id>
             <content type="html">
                 &lt;h1 id=&quot;202103251606-linux&quot; tabindex=&quot;-1&quot;&gt;202103251606 - 如何在 linux 上配置科学上网&lt;/h1&gt;
@@ -2876,7 +2933,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
                 202012081017 - php8.0 新特性
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202012081017 - php8.0 新特性/</id>
             <content type="html">
                 &lt;h1 id=&quot;202012081017-php8-0&quot; tabindex=&quot;-1&quot;&gt;202012081017 - php8.0 新特性&lt;/h1&gt;
@@ -2906,7 +2963,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
                 202011281031 - 安装 rdbtools 工具
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/202011281031 - 安装 rdbtools 工具/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011281031-rdbtools&quot; tabindex=&quot;-1&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/h1&gt;
@@ -2926,7 +2983,7 @@ sudo python setup.py install
                 创建一个chrome独立APP窗口
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/101 Tools/创建一个chrome独立APP窗口/</id>
             <content type="html">
                 &lt;h1 id=&quot;chrome-app&quot; tabindex=&quot;-1&quot;&gt;创建一个 chrome 独立 APP 窗口&lt;/h1&gt;
@@ -2954,7 +3011,7 @@ sudo python setup.py install
                 vscode vim 状态下显示提示
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/101 Tools/vscode vim 状态下显示提示/</id>
             <content type="html">
                 &lt;h1 id=&quot;vscode-vim&quot; tabindex=&quot;-1&quot;&gt;vscode vim 状态下显示提示&lt;/h1&gt;
@@ -2973,7 +3030,7 @@ sudo python setup.py install
                 vim显示列分隔符
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/101 Tools/vim显示列分隔符/</id>
             <content type="html">
                 &lt;h1 id=&quot;vim&quot; tabindex=&quot;-1&quot;&gt;vim显示列分隔符&lt;/h1&gt;
@@ -2990,7 +3047,7 @@ sudo python setup.py install
                 phpstorm 两下 ctrl 可以快速运行程序
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/101 Tools/phpstorm 两下 ctrl 可以快速运行程序/</id>
             <content type="html">
                 &lt;h1 id=&quot;phpstorm-ctrl&quot; tabindex=&quot;-1&quot;&gt;phpstorm 两下 ctrl 可以快速运行程序&lt;/h1&gt;
@@ -3009,7 +3066,7 @@ sudo python setup.py install
                 不打开obsidian的情况下记录当前事件
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/101 Tools/obsidian/不打开obsidian的情况下记录当前事件/</id>
             <content type="html">
                 &lt;h1 id=&quot;obsidian&quot; tabindex=&quot;-1&quot;&gt;不打开 obsidian 的情况下记录当前事件&lt;/h1&gt;
@@ -3028,7 +3085,7 @@ sudo python setup.py install
                 obsidian 开发过程支持的ICON
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/101 Tools/obsidian/obsidian 开发过程支持的ICON/</id>
             <content type="html">
                 &lt;h1 id=&quot;obsidian-icon&quot; tabindex=&quot;-1&quot;&gt;obsidian 开发过程支持的ICON&lt;/h1&gt;
@@ -3196,7 +3253,7 @@ sudo python setup.py install
                 mac-鼠须管-使用lua脚本
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/101 Tools/mac/mac-鼠须管-使用lua脚本/</id>
             <content type="html">
                 &lt;h1 id=&quot;mac-lua&quot; tabindex=&quot;-1&quot;&gt;mac-鼠须管-使用lua脚本&lt;/h1&gt;
@@ -3281,7 +3338,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 mac-自定义快捷键
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/101 Tools/mac/mac-自定义快捷键/</id>
             <content type="html">
                 &lt;h1 id=&quot;mac&quot; tabindex=&quot;-1&quot;&gt;mac-自定义快捷键&lt;/h1&gt;
@@ -3297,7 +3354,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 mac-合上盖子不断网
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/101 Tools/mac/mac-合上盖子不断网/</id>
             <content type="html">
                 &lt;h1 id=&quot;mac&quot; tabindex=&quot;-1&quot;&gt;mac-合上盖子不断网&lt;/h1&gt;
@@ -3312,7 +3369,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 202404202259 Things 工作流
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/101 Tools/202404202259 Things 工作流/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404202259-things&quot; tabindex=&quot;-1&quot;&gt;202404202259 Things 工作流&lt;/h1&gt;
@@ -3342,7 +3399,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 10x程序员工作法
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/101 Tools/10x程序员工作法/</id>
             <content type="html">
                 &lt;h1 id=&quot;10x&quot; tabindex=&quot;-1&quot;&gt;10x程序员工作法&lt;/h1&gt;
@@ -3478,7 +3535,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 101b1 obsidian-things3-today插件
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/card/101 Tools/101b1 obsidian-things3-today插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;101b1-obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;101b1 obsidian-things3-today插件&lt;/h1&gt;
@@ -3498,7 +3555,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 20240416231513 卡片盒笔记法
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240416231513&quot; tabindex=&quot;-1&quot;&gt;20240416231513 卡片盒笔记法&lt;/h1&gt;
@@ -3528,7 +3585,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 202404151422 游戏
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/000 Topic Index/202404151422 游戏/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404151422&quot; tabindex=&quot;-1&quot;&gt;202404151422 游戏&lt;/h1&gt;
@@ -3545,7 +3602,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 202404151418 哲学
                 
             </title>
-            <updated>2024-08-29T16:18:11Z</updated>
+            <updated>2024-08-29T16:21:03Z</updated>
             <id>https://wudanyang6.github.io//notes/000 Topic Index/202404151418 哲学/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404151418&quot; tabindex=&quot;-1&quot;&gt;202404151418 哲学&lt;/h1&gt;
@@ -3563,7 +3620,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 0 Home dy-turbo
                 
             </title>
-            <updated>2024-08-29T16:00:34.000Z</updated>
+            <updated>2024-08-29T16:06:56.000Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
                 &lt;h1 id=&quot;0-home-dy-turbo&quot; tabindex=&quot;-1&quot;&gt;0 Home dy-turbo&lt;/h1&gt;
@@ -4183,63 +4240,6 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//notes/card/文件描述符/" />
-        </entry>
-        <entry>
-            <title>
-                如何追查线上问题
-                
-            </title>
-            <updated>2024-08-29T15:58:39.000Z</updated>
-            <id>https://wudanyang6.github.io//thoughts/如何追查线上问题/</id>
-            <content type="html">
-                &lt;h1 id=&quot;如何追查线上问题&quot; tabindex=&quot;-1&quot;&gt;如何追查线上问题&lt;/h1&gt;
-&lt;h2 id=&quot;止损优先&quot; tabindex=&quot;-1&quot;&gt;止损优先&lt;/h2&gt;
-&lt;p&gt;不能先追查问题根源， 首先应该&lt;code&gt;止损&lt;/code&gt;，不让问题进一步扩大，&lt;code&gt;代码回滚&lt;/code&gt;、&lt;code&gt;服务降级&lt;/code&gt;等都可以起到止损的效果。&lt;br /&gt;
-对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 &lt;code&gt;配置开关 &lt;/code&gt;控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多&lt;/p&gt;
-&lt;h2 id=&quot;及时通告&quot; tabindex=&quot;-1&quot;&gt;及时通告&lt;/h2&gt;
-&lt;p&gt;在问题发生之后，要及时对处理问题的过程进行&lt;code&gt;通告&lt;/code&gt;。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。&lt;/p&gt;
-&lt;h1 id=&quot;追查问题的方法&quot; tabindex=&quot;-1&quot;&gt;追查问题的方法&lt;/h1&gt;
-&lt;h2 id=&quot;逻辑方法:&quot; tabindex=&quot;-1&quot;&gt;逻辑方法:&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;先收集&lt;code&gt;现象&lt;/code&gt;：业务报错、线上报错日志等&lt;br /&gt;
-对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。&lt;/li&gt;
-&lt;li&gt;针对现象假设&lt;code&gt;原因&lt;/code&gt;：
-&lt;ol&gt;
-&lt;li&gt;常见问题依据追查手册&lt;/li&gt;
-&lt;li&gt;其他问题保持思路开放，大胆假设&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;是否&lt;code&gt;有损&lt;/code&gt;的判断：&lt;br /&gt;
-根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 &lt;strong&gt;止损优先&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;质疑&lt;/code&gt;所有数据：&lt;br /&gt;
-各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;知识准备&quot; tabindex=&quot;-1&quot;&gt;知识准备&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;对线上各种&lt;code&gt;日志&lt;/code&gt;的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等&lt;/li&gt;
-&lt;li&gt;对线上的各种&lt;code&gt;配置&lt;/code&gt;更要做到心中有数&lt;/li&gt;
-&lt;li&gt;对&lt;code&gt;细节&lt;/code&gt;的追查，每次都更细一些，这样才能获得更多的信息&lt;/li&gt;
-&lt;li&gt;计算机&lt;code&gt;基本功&lt;/code&gt;，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;总结经验&quot; tabindex=&quot;-1&quot;&gt;总结经验&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;成熟的方法落地成&lt;code&gt;工具&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;对问题的追查形成&lt;code&gt;文档&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;问题解决之后&quot; tabindex=&quot;-1&quot;&gt;问题解决之后&lt;/h1&gt;
-&lt;p&gt;如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。&lt;br /&gt;
-那么，我们可以通过思考以下几点来提升自己&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;线上是否恢复了正常？（&lt;code&gt;最基本的&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;问题的原因是什么？（&lt;code&gt;落到追查文档&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;通过什么手段恢复的？（&lt;code&gt;解决方案&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;怎么可以避免下次再次出现问题？（&lt;code&gt;防患未然&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;除了此次出现的问题，会不会有其他的问题出现（&lt;code&gt;举一反三&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;出现此类问题是否是架构问题造成的？（&lt;code&gt;根本原因&lt;/code&gt;）&lt;/li&gt;
-&lt;/ol&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//thoughts/如何追查线上问题/" />
         </entry>
         <entry>
             <title>
