@@ -1585,7 +1585,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-08-29T16:02:05.788Z';
+        const searchIndexDate = '2024-08-29T16:06:00.435Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1597,9 +1597,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-08-29T16:02:05.788Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-08-29T16:06:00.435Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-29T16:02:05.788Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-08-29T16:06:00.435Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1849,20 +1849,7 @@
       </header>
       
       
-      <hr>
-<h2 id="knowledge-false-br-tags-br-date-created-2024-01-28-t22-46-43-08-00-br-date-modified-2024-08-12-t23-51-58-08-00-br-dg-publish-true-br-dg-home-true-br-dg-pinned-true-br-dg-show-backlinks-false-br-dg-home-link-true-br-dg-show-local-graph-true-br-dg-show-toc-true-br-dg-show-file-tree-true" tabindex="-1">knowledge: false<br>
-tags:<br>
-date created: 2024-01-28T22:46:43+08:00<br>
-date modified: 2024-08-12T23:51:58+08:00<br>
-dg-publish: true<br>
-dg-home: true<br>
-dg-pinned: true<br>
-dg-show-backlinks: false<br>
-dg-home-link: true<br>
-dg-show-local-graph: true<br>
-dg-show-toc: true<br>
-dg-show-file-tree: true</h2>
-<h1 id="0-home-dy-turbo" tabindex="-1">0 Home dy-turbo</h1>
+      <h1 id="0-home-dy-turbo" tabindex="-1">0 Home dy-turbo</h1>
 <p><a class="internal-link" target="" data-note-icon="2" href="/thoughts/做事心得/">做事心得</a></p>
 <p><a class="internal-link" target="" data-note-icon="2" href="/notes/card-about-me">About Me</a></p>
 <h2 id="文章列表" tabindex="-1">文章列表</h2>
@@ -2363,20 +2350,6 @@ dg-show-file-tree: true</h2>
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#knowledge-false-br-tags-br-date-created-2024-01-28-t22-46-43-08-00-br-date-modified-2024-08-12-t23-51-58-08-00-br-dg-publish-true-br-dg-home-true-br-dg-pinned-true-br-dg-show-backlinks-false-br-dg-home-link-true-br-dg-show-local-graph-true-br-dg-show-toc-true-br-dg-show-file-tree-true">knowledge: false
-tags:
-date created: 2024-01-28T22:46:43+08:00
-date modified: 2024-08-12T23:51:58+08:00
-dg-publish: true
-dg-home: true
-dg-pinned: true
-dg-show-backlinks: false
-dg-home-link: true
-dg-show-local-graph: true
-dg-show-toc: true
-dg-show-file-tree: true</a>
-            		</li>
-
                     <li><a href="#0-home-dy-turbo">0 Home dy-turbo</a>
             
                 <ol>
