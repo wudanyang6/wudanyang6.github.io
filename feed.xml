@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-08-31T15:01:28Z</updated>
+    <updated>2024-08-31T15:13:24Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -16,6 +16,63 @@
                 &lt;style&gt; .container {font-family: sans-serif; text-align: center;} .button-wrapper button {z-index: 1;height: 40px; width: 100px; margin: 10px;padding: 5px;} .excalidraw .App-menu_top .buttonList { display: flex;} .excalidraw-wrapper { height: 800px; margin: 50px; position: relative;} :root[dir=&quot;ltr&quot;] .excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left {transform: none;} &lt;/style&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw@0/dist/excalidraw.production.min.js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;当前状态和下一状态的随想excalidraw.md&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){const InitialData={&quot;type&quot;:&quot;excalidraw&quot;,&quot;version&quot;:2,&quot;source&quot;:&quot;https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.3.0&quot;,&quot;elements&quot;:[{&quot;type&quot;:&quot;rectangle&quot;,&quot;version&quot;:124,&quot;versionNonce&quot;:1939526015,&quot;index&quot;:&quot;a0&quot;,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:-120.83203125,&quot;y&quot;:-187.431640625,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:153,&quot;height&quot;:97,&quot;seed&quot;:1809355819,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;lcXa25o6&quot;},{&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1724947112689,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:107,&quot;versionNonce&quot;:1163151857,&quot;index&quot;:&quot;a1&quot;,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;lcXa25o6&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:-84.33203125,&quot;y&quot;:-163.931640625,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:80,&quot;height&quot;:50,&quot;seed&quot;:1671257323,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1724947112689,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;&#92;n当前状态&quot;,&quot;rawText&quot;:&quot;&#92;n当前状态&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;originalText&quot;:&quot;&#92;n当前状态&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;type&quot;:&quot;rectangle&quot;,&quot;version&quot;:126,&quot;versionNonce&quot;:543312287,&quot;index&quot;:&quot;a2&quot;,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:375.140625,&quot;y&quot;:-190.029296875,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:153,&quot;height&quot;:97,&quot;seed&quot;:1586660869,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;boundElements&quot;:[{&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;Ymxj0WWT&quot;}],&quot;updated&quot;:1724947112689,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:117,&quot;versionNonce&quot;:1157096401,&quot;index&quot;:&quot;a3&quot;,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;Ymxj0WWT&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:411.640625,&quot;y&quot;:-154.029296875,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:80,&quot;height&quot;:25,&quot;seed&quot;:1849985227,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1724947112689,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;下一状态&quot;,&quot;rawText&quot;:&quot;下一状态&quot;,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;originalText&quot;:&quot;下一状态&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;type&quot;:&quot;arrow&quot;,&quot;version&quot;:407,&quot;versionNonce&quot;:177013279,&quot;index&quot;:&quot;a4&quot;,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;90yz_m0kH4RaMUXRgR-Br&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:38.5078125,&quot;y&quot;:-134.16474201184522,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:325.34375000000006,&quot;height&quot;:3.6042259213982675,&quot;seed&quot;:343810891,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;boundElements&quot;:[],&quot;updated&quot;:1724947112992,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;XgjAPiQ47fqEwl-LpfWxA&quot;,&quot;gap&quot;:6.33984375,&quot;focus&quot;:0.11513603277860894,&quot;fixedPoint&quot;:null},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;GZ7hQS78e5Q1siEvK33Lx&quot;,&quot;gap&quot;:11.2890625,&quot;focus&quot;:-0.056492919794349276,&quot;fixedPoint&quot;:null},&quot;lastCommittedPoint&quot;:null,&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;points&quot;:[[0,0],[325.34375000000006,-3.6042259213982675]]},{&quot;type&quot;:&quot;text&quot;,&quot;version&quot;:169,&quot;versionNonce&quot;:617431473,&quot;index&quot;:&quot;a5&quot;,&quot;isDeleted&quot;:false,&quot;id&quot;:&quot;LIFeX9WH&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;angle&quot;:0,&quot;x&quot;:95.265625,&quot;y&quot;:-171.51171875,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;width&quot;:182,&quot;height&quot;:25,&quot;seed&quot;:591423115,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;roundness&quot;:null,&quot;boundElements&quot;:[],&quot;updated&quot;:1724947112689,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:1,&quot;text&quot;:&quot;中间可能过了亿万年&quot;,&quot;rawText&quot;:&quot;中间可能过了亿万年&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;中间可能过了亿万年&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25}],&quot;appState&quot;:{&quot;theme&quot;:&quot;light&quot;,&quot;viewBackgroundColor&quot;:&quot;#ffffff&quot;,&quot;currentItemStrokeColor&quot;:&quot;#000000&quot;,&quot;currentItemBackgroundColor&quot;:&quot;transparent&quot;,&quot;currentItemFillStyle&quot;:&quot;hachure&quot;,&quot;currentItemStrokeWidth&quot;:1,&quot;currentItemStrokeStyle&quot;:&quot;solid&quot;,&quot;currentItemRoughness&quot;:1,&quot;currentItemOpacity&quot;:100,&quot;currentItemFontFamily&quot;:1,&quot;currentItemFontSize&quot;:20,&quot;currentItemTextAlign&quot;:&quot;left&quot;,&quot;currentItemStartArrowhead&quot;:null,&quot;currentItemEndArrowhead&quot;:&quot;arrow&quot;,&quot;scrollX&quot;:249.5113525390625,&quot;scrollY&quot;:552.8409118652344,&quot;zoom&quot;:{&quot;value&quot;:1},&quot;currentItemRoundness&quot;:&quot;round&quot;,&quot;gridSize&quot;:null,&quot;gridColor&quot;:{&quot;Bold&quot;:&quot;#C9C9C9&quot;,&quot;Regular&quot;:&quot;#EDEDED&quot;},&quot;colorPalette&quot;:{},&quot;currentStrokeOptions&quot;:null,&quot;previousGridSize&quot;:null,&quot;frameRendering&quot;:{&quot;enabled&quot;:true,&quot;clip&quot;:true,&quot;name&quot;:true,&quot;outline&quot;:true},&quot;objectsSnapModeEnabled&quot;:false},&quot;files&quot;:{}};InitialData.scrollToContent=true;App=()=&gt;{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener(&quot;resize&quot;,e),()=&gt;window.removeEventListener(&quot;resize&quot;,e)},[t]),React.createElement(React.Fragment,null,React.createElement(&quot;div&quot;,{className:&quot;excalidraw-wrapper&quot;,ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById(&quot;当前状态和下一状态的随想excalidraw.md&quot;);ReactDOM.render(React.createElement(App),excalidrawWrapper);})();&lt;/script&gt;
             </content>
             <link href="https://wudanyang6.github.io//thoughts/当前状态和下一状态的随想.excalidraw/" />
+        </entry>
+        <entry>
+            <title>
+                如何追查线上问题
+                
+            </title>
+            <updated>2024-08-29T15:58:39.000Z</updated>
+            <id>https://wudanyang6.github.io//thoughts/如何追查线上问题/</id>
+            <content type="html">
+                &lt;h1 id=&quot;如何追查线上问题&quot; tabindex=&quot;-1&quot;&gt;如何追查线上问题&lt;/h1&gt;
+&lt;h2 id=&quot;止损优先&quot; tabindex=&quot;-1&quot;&gt;止损优先&lt;/h2&gt;
+&lt;p&gt;不能先追查问题根源， 首先应该&lt;code&gt;止损&lt;/code&gt;，不让问题进一步扩大，&lt;code&gt;代码回滚&lt;/code&gt;、&lt;code&gt;服务降级&lt;/code&gt;等都可以起到止损的效果。&lt;br /&gt;
+对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 &lt;code&gt;配置开关 &lt;/code&gt;控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多&lt;/p&gt;
+&lt;h2 id=&quot;及时通告&quot; tabindex=&quot;-1&quot;&gt;及时通告&lt;/h2&gt;
+&lt;p&gt;在问题发生之后，要及时对处理问题的过程进行&lt;code&gt;通告&lt;/code&gt;。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。&lt;/p&gt;
+&lt;h1 id=&quot;追查问题的方法&quot; tabindex=&quot;-1&quot;&gt;追查问题的方法&lt;/h1&gt;
+&lt;h2 id=&quot;逻辑方法:&quot; tabindex=&quot;-1&quot;&gt;逻辑方法:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;先收集&lt;code&gt;现象&lt;/code&gt;：业务报错、线上报错日志等&lt;br /&gt;
+对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。&lt;/li&gt;
+&lt;li&gt;针对现象假设&lt;code&gt;原因&lt;/code&gt;：
+&lt;ol&gt;
+&lt;li&gt;常见问题依据追查手册&lt;/li&gt;
+&lt;li&gt;其他问题保持思路开放，大胆假设&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;是否&lt;code&gt;有损&lt;/code&gt;的判断：&lt;br /&gt;
+根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 &lt;strong&gt;止损优先&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;质疑&lt;/code&gt;所有数据：&lt;br /&gt;
+各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;知识准备&quot; tabindex=&quot;-1&quot;&gt;知识准备&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;对线上各种&lt;code&gt;日志&lt;/code&gt;的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等&lt;/li&gt;
+&lt;li&gt;对线上的各种&lt;code&gt;配置&lt;/code&gt;更要做到心中有数&lt;/li&gt;
+&lt;li&gt;对&lt;code&gt;细节&lt;/code&gt;的追查，每次都更细一些，这样才能获得更多的信息&lt;/li&gt;
+&lt;li&gt;计算机&lt;code&gt;基本功&lt;/code&gt;，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;总结经验&quot; tabindex=&quot;-1&quot;&gt;总结经验&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;成熟的方法落地成&lt;code&gt;工具&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;对问题的追查形成&lt;code&gt;文档&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;问题解决之后&quot; tabindex=&quot;-1&quot;&gt;问题解决之后&lt;/h1&gt;
+&lt;p&gt;如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。&lt;br /&gt;
+那么，我们可以通过思考以下几点来提升自己&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;线上是否恢复了正常？（&lt;code&gt;最基本的&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;问题的原因是什么？（&lt;code&gt;落到追查文档&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;通过什么手段恢复的？（&lt;code&gt;解决方案&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;怎么可以避免下次再次出现问题？（&lt;code&gt;防患未然&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;除了此次出现的问题，会不会有其他的问题出现（&lt;code&gt;举一反三&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;出现此类问题是否是架构问题造成的？（&lt;code&gt;根本原因&lt;/code&gt;）&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//thoughts/如何追查线上问题/" />
         </entry>
         <entry>
             <title>
@@ -183,7 +240,7 @@
                 20240415141933 什么是哲学
                 
             </title>
-            <updated>2024-08-29T15:58:33.000Z</updated>
+            <updated>2024-08-31T14:13:19.000Z</updated>
             <id>https://wudanyang6.github.io//thoughts/20240415141933 什么是哲学/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240415141933&quot; tabindex=&quot;-1&quot;&gt;20240415141933 什么是哲学&lt;/h1&gt;
@@ -410,6 +467,67 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
 
             </content>
             <link href="https://wudanyang6.github.io//card/滑动窗口模板/" />
+        </entry>
+        <entry>
+            <title>
+                文件描述符
+                
+            </title>
+            <updated>2024-05-02T04:58:21.000Z</updated>
+            <id>https://wudanyang6.github.io//card/文件描述符/</id>
+            <content type="html">
+                &lt;h1 id=&quot;文件描述符&quot; tabindex=&quot;-1&quot;&gt;文件描述符&lt;/h1&gt;
+&lt;p&gt;对于内核而言，所有打开的文件都通过&lt;code&gt;文件描述符（file descriptor）&lt;/code&gt;引用。通常也写作 &lt;code&gt;fd&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;文件描述符&lt;/code&gt;是一个非负整数。&lt;/p&gt;
+&lt;p&gt;当打开一个现有文件或者创建一个新文件时，内核向进程返回一个&lt;code&gt;文件描述符&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;文件描述符&lt;/code&gt;是跟&lt;code&gt;进程&lt;/code&gt;相关联的。&lt;/p&gt;
+&lt;p&gt;按照惯例，&lt;code&gt;UNIX&lt;/code&gt; 系统将 &lt;code&gt;fd 0&lt;/code&gt; 对应进程的标准输入， &lt;code&gt;fd 1&lt;/code&gt; 对应进程的标准输出， &lt;code&gt;fd 2&lt;/code&gt; 对应进程的标准错误。&lt;/p&gt;
+&lt;h1 id=&quot;系统调用中的文件描述符&quot; tabindex=&quot;-1&quot;&gt;系统调用中的文件描述符&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;UNIX&lt;/code&gt; 系统中，一切皆文件，所以一切资源都可以使用文件描述符进程引用。&lt;/p&gt;
+&lt;p&gt;以 &lt;code&gt;open&lt;/code&gt; 系统调用为例&lt;/p&gt;
+&lt;p&gt;使用 &lt;code&gt;man 2 open&lt;/code&gt; 查看系统 &lt;code&gt;man&lt;/code&gt; 手册&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-man&quot;&gt;NAME
+     open, openat -- open or create a file for reading or writing
+
+SYNOPSIS
+     &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#include&quot;&gt;#include&lt;/a&gt; &amp;lt;fcntl.h&amp;gt;
+
+     int
+     open(const char *path, int oflag, ...);
+
+     int
+     openat(int fd, const char *path, int oflag, ...);
+
+DESCRIPTION
+     The file name specified by path is opened for reading and/or writing,
+     as specified by the argument oflag; the file descriptor is returned to
+     the calling process.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在简介中有一段话：&lt;code&gt;the file descriptor is returned to the calling process.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;使用 &lt;code&gt;c&lt;/code&gt; 语言打开一个 文件&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#include&quot;&gt;#include&lt;/a&gt; &amp;lt;stdio.h&amp;gt;
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#include&quot;&gt;#include&lt;/a&gt; &amp;lt;fcntl.h&amp;gt;
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#include&quot;&gt;#include&lt;/a&gt; &amp;lt;unistd.h&amp;gt;
+
+int main() {
+	int fd;
+	fd = open(&amp;quot;tmp.txt&amp;quot;, O_RDONLY);
+	printf(&amp;quot;%d&amp;quot;, fd);
+	sleep(10);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;会发现，在进程运行时 &lt;code&gt;fd&lt;/code&gt; 目录下，会出现一个描述符 3 指向了 打开的文件&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ll /proc/$(ps aux | grep a.out | grep -v grep | awk &#39;{print $2}&#39;)/fd
+total 0
+lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 0 -&amp;gt; /dev/pts/4
+lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 1 -&amp;gt; /dev/pts/4
+lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 2 -&amp;gt; /dev/pts/4
+lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangblog/codes/file/tmp.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我们可以把这个文件描述符当做参数传递给 &lt;code&gt;read&lt;/code&gt; 或者 &lt;code&gt;write&lt;/code&gt; 等等系统调用。&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/文件描述符/" />
         </entry>
         <entry>
             <title>
@@ -1337,6 +1455,321 @@ Length of Largest Element	8          # hash 中占用内存最大的那个 value
 
             </content>
             <link href="https://wudanyang6.github.io//card/php-xml 如何解析 cdata/" />
+        </entry>
+        <entry>
+            <title>
+                nginx-master-start-worker
+                
+            </title>
+            <updated>2024-04-18T08:29:49.000Z</updated>
+            <id>https://wudanyang6.github.io//card/nginx-master-start-worker/</id>
+            <content type="html">
+                &lt;h1 id=&quot;nginx-master-start-worker&quot; tabindex=&quot;-1&quot;&gt;nginx-master-start-worker&lt;/h1&gt;
+&lt;h2 id=&quot;入口&quot; tabindex=&quot;-1&quot;&gt;入口&lt;/h2&gt;
+&lt;p&gt;启动子进程的流程在&lt;code&gt;ngx_start_worker_processes&lt;/code&gt;函数中，具体代码如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;static void
+ngx_start_worker_processes(ngx_cycle_t *cycle, ngx_int_t n, ngx_int_t type)
+{
+    ngx_int_t  i;
+
+    ngx_log_error(NGX_LOG_NOTICE, cycle-&amp;gt;log, 0, &amp;quot;start worker processes&amp;quot;);
+
+    for (i = 0; i &amp;lt; n; i++) {
+
+        ngx_spawn_process(cycle, ngx_worker_process_cycle,
+                          (void *) (intptr_t) i, &amp;quot;worker process&amp;quot;, type);
+
+        ngx_pass_open_channel(cycle);
+    }
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;创建子进程&quot; tabindex=&quot;-1&quot;&gt;创建子进程&lt;/h2&gt;
+&lt;p&gt;其中创建子进程的函数为 &lt;code&gt;ngx_spawn_process&lt;/code&gt;，主要就是封装了 &lt;code&gt;fork&lt;/code&gt; 函数。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;ngx_pid_t
+ngx_spawn_process(ngx_cycle_t *cycle, ngx_spawn_proc_pt proc, void *data,
+    char *name, ngx_int_t respawn)
+{
+    // ...
+    pid = fork();
+
+    switch (pid) {
+
+    case -1:
+        ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, ngx_errno,
+                      &amp;quot;fork() failed while spawning &#92;&amp;quot;%s&#92;&amp;quot;&amp;quot;, name);
+        ngx_close_channel(ngx_processes[s].channel, cycle-&amp;gt;log);
+        return NGX_INVALID_PID;
+
+    case 0:
+        ngx_parent = ngx_pid;
+        ngx_pid = ngx_getpid();
+        proc(cycle, data);
+        break;
+
+    default:
+        break;
+    }
+
+    ngx_log_error(NGX_LOG_NOTICE, cycle-&amp;gt;log, 0, &amp;quot;start %s %P&amp;quot;, name, pid);
+
+    ngx_processes[s].pid = pid;
+    ngx_processes[s].exited = 0;
+
+  // ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;fork&lt;/code&gt; 函数的返回值：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;子进程返回0，父进程返回子进程id，若出错，返回 -1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;子进程在 &lt;code&gt;case 0&lt;/code&gt; 中执行 &lt;code&gt;proc&lt;/code&gt; 函数，&lt;code&gt;proc&lt;/code&gt; 函数是 &lt;code&gt;ngx_start_worker_processes&lt;/code&gt; 函数中传进来的第二个参数 &lt;code&gt;ngx_worker_process_cycle&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ngx_worker_process_cycle&lt;/code&gt; 函数，就是 worker 进程的主要流程，以后会继续分析。&lt;/p&gt;
+&lt;h2 id=&quot;最大子进程数量&quot; tabindex=&quot;-1&quot;&gt;最大子进程数量&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;if (s == NGX_MAX_PROCESSES) {
+    ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, 0,
+                    &amp;quot;no more than %d processes can be spawned&amp;quot;,
+                    NGX_MAX_PROCESSES);
+    return NGX_INVALID_PID;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_MAX_PROCESSES         1024
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;最大子进程数量定义成了 &lt;code&gt;NGX_MAX_PROCESSES&lt;/code&gt; 也就是 1024，如果超过了 1024个进程，就会报错&lt;/p&gt;
+&lt;h2 id=&quot;code-respawn-code&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;respawn&lt;/code&gt; 参数的意义&lt;/h2&gt;
+&lt;h3 id=&quot;code-respawn-code-0&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;respawn&lt;/code&gt; 大于等于0时&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;respawn&lt;/code&gt; 大于等于0时，代表重启子进程，respawn 代表给 &lt;code&gt;ngx_processes&lt;/code&gt; 数组的下标&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;if (respawn &amp;gt;= 0) {
+    s = respawn;
+} else {
+    ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;code-respawn-code-0-1&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;respawn&lt;/code&gt; 小于0时&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;respawn&lt;/code&gt; 小于0时，代表启动的子进程的属性，子进程的几种属性：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_NORESPAWN     -1
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_JUST_SPAWN    -2
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_RESPAWN       -3
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_JUST_RESPAWN  -4
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_DETACHED      -5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;那么 &lt;code&gt;respawn&lt;/code&gt; 小于0时，子进程在 &lt;code&gt;ngx_processes&lt;/code&gt;数组中的下标是多少呢？&lt;/p&gt;
+&lt;p&gt;看下面这段代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;for (s = 0; s &amp;lt; ngx_last_process; s++) {
+    if (ngx_processes[s].pid == -1) {
+        break;
+    }
+}
+
+if (s == NGX_MAX_PROCESSES) {
+    ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, 0,
+                  &amp;quot;no more than %d processes can be spawned&amp;quot;,
+                  NGX_MAX_PROCESSES);
+    return NGX_INVALID_PID;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;实际上就是在找 &lt;code&gt;ngx_processes&lt;/code&gt; 数组中未使用的最小下标。&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;《UNIX 环境高级编程》&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ivanzz1001.github.io/records/post/nginx/2017/12/02/nginx-source_part15_2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;os/unix/ngx_process.c源代码分析&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/nginx-master-start-worker/" />
+        </entry>
+        <entry>
+            <title>
+                nginx 进程模型-整体架构
+                
+            </title>
+            <updated>2024-05-14T06:23:31.000Z</updated>
+            <id>https://wudanyang6.github.io//card/nginx 进程模型-整体架构/</id>
+            <content type="html">
+                &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型 - 整体架构&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/713751-20221106220927618-2090658482.png&quot; alt=&quot;713751-20221106220927618-2090658482.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;从网上找了一个非常好的图片，从图中可以看到很多东西&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Nginx&lt;/code&gt; 会生成多个进程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 使用了 &lt;code&gt;io&lt;/code&gt; 多路复用的事件驱动框架&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 内部有很多模块&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 处理磁盘 &lt;code&gt;I/O&lt;/code&gt; 时，使用了标准 &lt;code&gt;I/O&lt;/code&gt; ， &lt;code&gt;sendfile&lt;/code&gt; ， &lt;code&gt;AIO&lt;/code&gt; ，&lt;code&gt;mmap&lt;/code&gt; 等 &lt;code&gt;I/O&lt;/code&gt; 技术&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Cache loader&lt;/code&gt; 和 &lt;code&gt;Cache manager&lt;/code&gt; 操作 proxy cache&lt;/li&gt;
+&lt;li&gt;后端支持多种基于 &lt;code&gt;tcp&lt;/code&gt; 的网络协议&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/nginx 进程模型-整体架构/" />
+        </entry>
+        <entry>
+            <title>
+                nginx master 进程
+                
+            </title>
+            <updated>2024-04-18T08:30:16.000Z</updated>
+            <id>https://wudanyang6.github.io//card/nginx master 进程/</id>
+            <content type="html">
+                &lt;h1 id=&quot;nginx-master&quot; tabindex=&quot;-1&quot;&gt;nginx master 进程&lt;/h1&gt;
+&lt;p&gt;之前有说到 &lt;a href=&quot;https://wudanyang.top/post/nginx/nginx-process/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;，下面来看一下 &lt;code&gt;nginx master&lt;/code&gt; 进程的主要工作&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;nginx&lt;/code&gt; 的入口 &lt;code&gt;main&lt;/code&gt; 函数在 &lt;code&gt;nginx.c&lt;/code&gt; 文件中&lt;/p&gt;
+&lt;p&gt;函数原型为：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;int ngx_cdecl
+main(int argc, char *const *argv)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在这个函数中，&lt;code&gt;master&lt;/code&gt; 做了一系列的初始化操作&lt;/p&gt;
+&lt;p&gt;最终在下面这个地方进入了主流程中：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;//...
+    if (ngx_process == NGX_PROCESS_SINGLE) {
+        ngx_single_process_cycle(cycle);
+
+    } else {
+        ngx_master_process_cycle(cycle);
+    }
+//...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;因为我们主要看 &lt;code&gt;master-worker&lt;/code&gt; 这种进程模型，所以进入 &lt;code&gt;ngx_master_process_cycle&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;设置信号屏蔽字，防止创建子进程过程中被信号中断&quot; tabindex=&quot;-1&quot;&gt;设置信号屏蔽字，防止创建子进程过程中被信号中断&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;// 先清空信号集
+    sigemptyset(&amp;amp;set);
+    sigaddset(&amp;amp;set, SIGCHLD);
+    sigaddset(&amp;amp;set, SIGALRM);
+    sigaddset(&amp;amp;set, SIGIO);
+    sigaddset(&amp;amp;set, SIGINT);
+    sigaddset(&amp;amp;set, ngx_signal_value(NGX_RECONFIGURE_SIGNAL));
+    sigaddset(&amp;amp;set, ngx_signal_value(NGX_REOPEN_SIGNAL));
+    sigaddset(&amp;amp;set, ngx_signal_value(NGX_NOACCEPT_SIGNAL));
+    sigaddset(&amp;amp;set, ngx_signal_value(NGX_TERMINATE_SIGNAL));
+    sigaddset(&amp;amp;set, ngx_signal_value(NGX_SHUTDOWN_SIGNAL));
+    sigaddset(&amp;amp;set, ngx_signal_value(NGX_CHANGEBIN_SIGNAL));
+
+// 设置信号屏蔽字，将 set 中的信号设置为阻塞状态，防止创建worker 的过程中，被进来的信号打断
+    if (sigprocmask(SIG_BLOCK, &amp;amp;set, NULL) == -1) {
+        ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, ngx_errno,
+                      &amp;quot;sigprocmask() failed&amp;quot;);
+    }
+
+// 将 set 清空
+    sigemptyset(&amp;amp;set);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;设置信号屏蔽字，防止在创建子进程的过程中被信号处理程序中断&lt;/p&gt;
+&lt;p&gt;关于信号屏蔽字，引用 &lt;code&gt;《UNIX 环境高级编程》 &lt;/code&gt;中信号一节的部分内容：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;进程可以选用&lt;code&gt;“阻塞信号递送”&lt;/code&gt;。如果为进程产生了一个&lt;code&gt;阻塞&lt;/code&gt;的信号,而且对该信号的动作是系统默认动作或捕捉该信号, 则为该进程将此信号保持为&lt;code&gt;未决状态&lt;/code&gt;,直到该进程对此信号解除了阻塞, 或者将对此信号的动作更改为忽略。内核在&lt;code&gt;递送&lt;/code&gt;一个原来被阻塞的信号给进程时(而不是在产生该信号时),才决定对它的处理方式。于是进程在信号递送给它之前仍可改变对该信号的动作。进程调用 &lt;code&gt;sigpending&lt;/code&gt; 函数(见10.13节)来判定哪些信号是设置为阻塞并处于未决状态的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每个进程都有一个&lt;code&gt;信号屏蔽字( signal mask)&lt;/code&gt;,它规定了当前要阻塞递送到该进程的&lt;code&gt;信号集&lt;/code&gt;。对于每种可能的信号,该屏蔽字中都有一位与之对应。对于某种信号,若其对应位已设置,则它当前是被阻塞的。进程可以调用 &lt;code&gt;sigprocmask&lt;/code&gt;(在10.12节中说明)来检测和更改其当前信号屏蔽字。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;当然，在下面创建完子进程之后，会使用 &lt;code&gt;sigsuspend&lt;/code&gt; 解除信号屏蔽，并使 master 进程进入休眠&lt;/p&gt;
+&lt;p&gt;关于 &lt;code&gt;sigsuspend&lt;/code&gt; 函数，简单来说，它是一个 &lt;code&gt;sigprocmask(SIG_SETMASK, &amp;amp;emptyset, NULL)&lt;/code&gt; 和 &lt;code&gt;pause()&lt;/code&gt; 函数的结合体，不过相对于使用两个函数完成上述操作，&lt;code&gt;sigsuspend&lt;/code&gt; 是 &lt;code&gt;原子操作&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;具体的操作如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用新的信号集合设置屏蔽字，在这里是清空屏蔽字&lt;/li&gt;
+&lt;li&gt;调用信号处理函数，并从信号处理程序返回&lt;/li&gt;
+&lt;li&gt;屏蔽字恢复成调用 &lt;code&gt;sigsuspend&lt;/code&gt; 之前的值（再次不让进程被信号打断）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;master-title&quot; tabindex=&quot;-1&quot;&gt;设置 master 进程的 title&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;static u_char  master_process[] = &amp;quot;master process&amp;quot;;
+
+    size = sizeof(master_process);
+
+    for (i = 0; i &amp;lt; ngx_argc; i++) {
+        size += ngx_strlen(ngx_argv[i]) + 1;
+    }
+
+    title = ngx_pnalloc(cycle-&amp;gt;pool, size);
+    if (title == NULL) {
+        /* fatal */
+        exit(2);
+    }
+
+    p = ngx_cpymem(title, master_process, sizeof(master_process) - 1);
+    for (i = 0; i &amp;lt; ngx_argc; i++) {
+        *p++ = &#39; &#39;;
+        p = ngx_cpystrn(p, (u_char *) ngx_argv[i], size);
+    }
+
+    ngx_setproctitle(title);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;将进程&lt;code&gt;title&lt;/code&gt;设置成三个部分：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;固定字符：&lt;code&gt;nginx:&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;主进程标志: &lt;code&gt;master process&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;命令行启动的命令，如：&lt;code&gt;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;所以进程刚开始是这样显示的：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ps aux | grep nginx | grep -v grep
+root      183117  0.0  0.0   4324  2680 ?        ts   17:07   0:00 /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;设置了 title 之后，变成了下面这样：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ps aux | grep nginx | grep -v grep
+root      183117  0.0  0.0   4324  2680 ?        ts   17:07   0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;code-worker-code-code-cache-code&quot; tabindex=&quot;-1&quot;&gt;根据配置启动相应数量的 &lt;code&gt;worker&lt;/code&gt; 和 &lt;code&gt;cache&lt;/code&gt; 管理进程&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;ccf = (ngx_core_conf_t *) ngx_get_conf(cycle-&amp;gt;conf_ctx, ngx_core_module);
+
+ngx_start_worker_processes(cycle, ccf-&amp;gt;worker_processes,
+                           NGX_PROCESS_RESPAWN);
+ngx_start_cache_manager_processes(cycle, 0);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;监听信号，并作出响应&quot; tabindex=&quot;-1&quot;&gt;监听信号，并作出响应&lt;/h2&gt;
+&lt;p&gt;在 &lt;code&gt;ngx_init_signals&lt;/code&gt; 函数中，对原始信号做了变量名映射，具体映射如下：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;信号&lt;/th&gt;
+&lt;th&gt;对应进程中的标志位变量&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;QUIT&lt;/td&gt;
+&lt;td&gt;ngx_quit&lt;/td&gt;
+&lt;td&gt;优雅关闭服务&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TERM 或 INT&lt;/td&gt;
+&lt;td&gt;ngx_terminate&lt;/td&gt;
+&lt;td&gt;强制关闭服务&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;USR1&lt;/td&gt;
+&lt;td&gt;ngx_reopen&lt;/td&gt;
+&lt;td&gt;重新打开服务中的所有文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;WINCH&lt;/td&gt;
+&lt;td&gt;ngx_noaccept&lt;/td&gt;
+&lt;td&gt;所有子进程不再接受处理新的连接，实际相当于对所有的子进程发送 QUIT 信号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;USR2&lt;/td&gt;
+&lt;td&gt;ngx_change_binary&lt;/td&gt;
+&lt;td&gt;平滑升级到新版本的 Nginx 程序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;HUP&lt;/td&gt;
+&lt;td&gt;ngx_reconfigure&lt;/td&gt;
+&lt;td&gt;重新读取配置文件并使服务对新配置项生效&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CHLD&lt;/td&gt;
+&lt;td&gt;ngx_reap&lt;/td&gt;
+&lt;td&gt;有子进程意外结束&lt;br /&gt;master 会监控所有子进程，并在子进程意外退出时调用 ngx_reap_children 方法重启子进程&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;master 并不是时刻不停的执行循环检测这些标志位，而是通过 &lt;code&gt;sigsuspend&lt;/code&gt; 进入休眠，等待有信号唤醒进程时，再循环检测所有信号并处理。&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/midion9/article/details/50605337&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx中的ngx_cdecl&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/33a7502de6e6&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Nginx源码|Nginx信号处理&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://knifefly.cn/2017/09/15/nginx-%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx 信号处理&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/ShaoLiang_Ge/article/details/57984123&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;LINUX C中sigprocmask()函数用法&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/linux_ever/article/details/50344837&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;linux信号的阻塞和未决&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;《UNIX 环境高级编程》&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/nginx master 进程/" />
         </entry>
         <entry>
             <title>
@@ -3577,6 +4010,12 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;h2 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h2&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
 &lt;li&gt;
+&lt;p&gt;2024-08:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202408312248%20%E7%94%B2%E6%B2%9F%E7%82%8E%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95/&quot;&gt;202408312248 甲沟炎的处理办法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;2024-07:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202407251323%20%20go%20flag%20%E5%88%AB%E5%9C%A8init%E4%B8%AD%E4%BD%BF%E7%94%A8/&quot;&gt;202407251323  go flag 别在init中使用&lt;/a&gt;&lt;/li&gt;
@@ -3614,8 +4053,8 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;
 &lt;p&gt;2024-03:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/20240415141933%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141933 什么是哲学&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/thoughts/%E5%81%9A%E4%BA%8B%E5%BF%83%E5%BE%97/&quot;&gt;做事心得&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404151420%20%E5%93%B2%E5%AD%A6%E7%9A%84%E5%88%86%E6%94%AF/&quot;&gt;202404151420 哲学的分支&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/ithoughtx%E7%A0%B4%E4%BA%A7%E4%BA%86/&quot;&gt;ithoughtx破产了&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go-exec-run/&quot;&gt;go-exec-run&lt;/a&gt;&lt;/li&gt;
@@ -3835,438 +4274,5 @@ date_translator = require(&amp;quot;date&amp;quot;)
 
             </content>
             <link href="https://wudanyang6.github.io//" />
-        </entry>
-        <entry>
-            <title>
-                nginx-master-start-worker
-                
-            </title>
-            <updated>2024-04-18T08:29:49.000Z</updated>
-            <id>https://wudanyang6.github.io//card/nginx-master-start-worker/</id>
-            <content type="html">
-                &lt;h1 id=&quot;nginx-master-start-worker&quot; tabindex=&quot;-1&quot;&gt;nginx-master-start-worker&lt;/h1&gt;
-&lt;h2 id=&quot;入口&quot; tabindex=&quot;-1&quot;&gt;入口&lt;/h2&gt;
-&lt;p&gt;启动子进程的流程在&lt;code&gt;ngx_start_worker_processes&lt;/code&gt;函数中，具体代码如下：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;static void
-ngx_start_worker_processes(ngx_cycle_t *cycle, ngx_int_t n, ngx_int_t type)
-{
-    ngx_int_t  i;
-
-    ngx_log_error(NGX_LOG_NOTICE, cycle-&amp;gt;log, 0, &amp;quot;start worker processes&amp;quot;);
-
-    for (i = 0; i &amp;lt; n; i++) {
-
-        ngx_spawn_process(cycle, ngx_worker_process_cycle,
-                          (void *) (intptr_t) i, &amp;quot;worker process&amp;quot;, type);
-
-        ngx_pass_open_channel(cycle);
-    }
-}
-
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;创建子进程&quot; tabindex=&quot;-1&quot;&gt;创建子进程&lt;/h2&gt;
-&lt;p&gt;其中创建子进程的函数为 &lt;code&gt;ngx_spawn_process&lt;/code&gt;，主要就是封装了 &lt;code&gt;fork&lt;/code&gt; 函数。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;ngx_pid_t
-ngx_spawn_process(ngx_cycle_t *cycle, ngx_spawn_proc_pt proc, void *data,
-    char *name, ngx_int_t respawn)
-{
-    // ...
-    pid = fork();
-
-    switch (pid) {
-
-    case -1:
-        ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, ngx_errno,
-                      &amp;quot;fork() failed while spawning &#92;&amp;quot;%s&#92;&amp;quot;&amp;quot;, name);
-        ngx_close_channel(ngx_processes[s].channel, cycle-&amp;gt;log);
-        return NGX_INVALID_PID;
-
-    case 0:
-        ngx_parent = ngx_pid;
-        ngx_pid = ngx_getpid();
-        proc(cycle, data);
-        break;
-
-    default:
-        break;
-    }
-
-    ngx_log_error(NGX_LOG_NOTICE, cycle-&amp;gt;log, 0, &amp;quot;start %s %P&amp;quot;, name, pid);
-
-    ngx_processes[s].pid = pid;
-    ngx_processes[s].exited = 0;
-
-  // ...
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;fork&lt;/code&gt; 函数的返回值：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;子进程返回0，父进程返回子进程id，若出错，返回 -1&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;子进程在 &lt;code&gt;case 0&lt;/code&gt; 中执行 &lt;code&gt;proc&lt;/code&gt; 函数，&lt;code&gt;proc&lt;/code&gt; 函数是 &lt;code&gt;ngx_start_worker_processes&lt;/code&gt; 函数中传进来的第二个参数 &lt;code&gt;ngx_worker_process_cycle&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ngx_worker_process_cycle&lt;/code&gt; 函数，就是 worker 进程的主要流程，以后会继续分析。&lt;/p&gt;
-&lt;h2 id=&quot;最大子进程数量&quot; tabindex=&quot;-1&quot;&gt;最大子进程数量&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;if (s == NGX_MAX_PROCESSES) {
-    ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, 0,
-                    &amp;quot;no more than %d processes can be spawned&amp;quot;,
-                    NGX_MAX_PROCESSES);
-    return NGX_INVALID_PID;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_MAX_PROCESSES         1024
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;最大子进程数量定义成了 &lt;code&gt;NGX_MAX_PROCESSES&lt;/code&gt; 也就是 1024，如果超过了 1024个进程，就会报错&lt;/p&gt;
-&lt;h2 id=&quot;code-respawn-code&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;respawn&lt;/code&gt; 参数的意义&lt;/h2&gt;
-&lt;h3 id=&quot;code-respawn-code-0&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;respawn&lt;/code&gt; 大于等于0时&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;respawn&lt;/code&gt; 大于等于0时，代表重启子进程，respawn 代表给 &lt;code&gt;ngx_processes&lt;/code&gt; 数组的下标&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;if (respawn &amp;gt;= 0) {
-    s = respawn;
-} else {
-    ...
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;code-respawn-code-0-1&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;respawn&lt;/code&gt; 小于0时&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;respawn&lt;/code&gt; 小于0时，代表启动的子进程的属性，子进程的几种属性：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_NORESPAWN     -1
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_JUST_SPAWN    -2
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_RESPAWN       -3
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_JUST_RESPAWN  -4
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#define&quot;&gt;#define&lt;/a&gt; NGX_PROCESS_DETACHED      -5
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;那么 &lt;code&gt;respawn&lt;/code&gt; 小于0时，子进程在 &lt;code&gt;ngx_processes&lt;/code&gt;数组中的下标是多少呢？&lt;/p&gt;
-&lt;p&gt;看下面这段代码：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;for (s = 0; s &amp;lt; ngx_last_process; s++) {
-    if (ngx_processes[s].pid == -1) {
-        break;
-    }
-}
-
-if (s == NGX_MAX_PROCESSES) {
-    ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, 0,
-                  &amp;quot;no more than %d processes can be spawned&amp;quot;,
-                  NGX_MAX_PROCESSES);
-    return NGX_INVALID_PID;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;实际上就是在找 &lt;code&gt;ngx_processes&lt;/code&gt; 数组中未使用的最小下标。&lt;/p&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;《UNIX 环境高级编程》&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://ivanzz1001.github.io/records/post/nginx/2017/12/02/nginx-source_part15_2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;os/unix/ngx_process.c源代码分析&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/nginx-master-start-worker/" />
-        </entry>
-        <entry>
-            <title>
-                nginx master 进程
-                
-            </title>
-            <updated>2024-04-18T08:30:16.000Z</updated>
-            <id>https://wudanyang6.github.io//card/nginx master 进程/</id>
-            <content type="html">
-                &lt;h1 id=&quot;nginx-master&quot; tabindex=&quot;-1&quot;&gt;nginx master 进程&lt;/h1&gt;
-&lt;p&gt;之前有说到 &lt;a href=&quot;https://wudanyang.top/post/nginx/nginx-process/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx 进程模型-整体架构&lt;/a&gt;，下面来看一下 &lt;code&gt;nginx master&lt;/code&gt; 进程的主要工作&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;nginx&lt;/code&gt; 的入口 &lt;code&gt;main&lt;/code&gt; 函数在 &lt;code&gt;nginx.c&lt;/code&gt; 文件中&lt;/p&gt;
-&lt;p&gt;函数原型为：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;int ngx_cdecl
-main(int argc, char *const *argv)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;在这个函数中，&lt;code&gt;master&lt;/code&gt; 做了一系列的初始化操作&lt;/p&gt;
-&lt;p&gt;最终在下面这个地方进入了主流程中：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;//...
-    if (ngx_process == NGX_PROCESS_SINGLE) {
-        ngx_single_process_cycle(cycle);
-
-    } else {
-        ngx_master_process_cycle(cycle);
-    }
-//...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;因为我们主要看 &lt;code&gt;master-worker&lt;/code&gt; 这种进程模型，所以进入 &lt;code&gt;ngx_master_process_cycle&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&quot;设置信号屏蔽字，防止创建子进程过程中被信号中断&quot; tabindex=&quot;-1&quot;&gt;设置信号屏蔽字，防止创建子进程过程中被信号中断&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;// 先清空信号集
-    sigemptyset(&amp;amp;set);
-    sigaddset(&amp;amp;set, SIGCHLD);
-    sigaddset(&amp;amp;set, SIGALRM);
-    sigaddset(&amp;amp;set, SIGIO);
-    sigaddset(&amp;amp;set, SIGINT);
-    sigaddset(&amp;amp;set, ngx_signal_value(NGX_RECONFIGURE_SIGNAL));
-    sigaddset(&amp;amp;set, ngx_signal_value(NGX_REOPEN_SIGNAL));
-    sigaddset(&amp;amp;set, ngx_signal_value(NGX_NOACCEPT_SIGNAL));
-    sigaddset(&amp;amp;set, ngx_signal_value(NGX_TERMINATE_SIGNAL));
-    sigaddset(&amp;amp;set, ngx_signal_value(NGX_SHUTDOWN_SIGNAL));
-    sigaddset(&amp;amp;set, ngx_signal_value(NGX_CHANGEBIN_SIGNAL));
-
-// 设置信号屏蔽字，将 set 中的信号设置为阻塞状态，防止创建worker 的过程中，被进来的信号打断
-    if (sigprocmask(SIG_BLOCK, &amp;amp;set, NULL) == -1) {
-        ngx_log_error(NGX_LOG_ALERT, cycle-&amp;gt;log, ngx_errno,
-                      &amp;quot;sigprocmask() failed&amp;quot;);
-    }
-
-// 将 set 清空
-    sigemptyset(&amp;amp;set);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;设置信号屏蔽字，防止在创建子进程的过程中被信号处理程序中断&lt;/p&gt;
-&lt;p&gt;关于信号屏蔽字，引用 &lt;code&gt;《UNIX 环境高级编程》 &lt;/code&gt;中信号一节的部分内容：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;进程可以选用&lt;code&gt;“阻塞信号递送”&lt;/code&gt;。如果为进程产生了一个&lt;code&gt;阻塞&lt;/code&gt;的信号,而且对该信号的动作是系统默认动作或捕捉该信号, 则为该进程将此信号保持为&lt;code&gt;未决状态&lt;/code&gt;,直到该进程对此信号解除了阻塞, 或者将对此信号的动作更改为忽略。内核在&lt;code&gt;递送&lt;/code&gt;一个原来被阻塞的信号给进程时(而不是在产生该信号时),才决定对它的处理方式。于是进程在信号递送给它之前仍可改变对该信号的动作。进程调用 &lt;code&gt;sigpending&lt;/code&gt; 函数(见10.13节)来判定哪些信号是设置为阻塞并处于未决状态的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;每个进程都有一个&lt;code&gt;信号屏蔽字( signal mask)&lt;/code&gt;,它规定了当前要阻塞递送到该进程的&lt;code&gt;信号集&lt;/code&gt;。对于每种可能的信号,该屏蔽字中都有一位与之对应。对于某种信号,若其对应位已设置,则它当前是被阻塞的。进程可以调用 &lt;code&gt;sigprocmask&lt;/code&gt;(在10.12节中说明)来检测和更改其当前信号屏蔽字。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;当然，在下面创建完子进程之后，会使用 &lt;code&gt;sigsuspend&lt;/code&gt; 解除信号屏蔽，并使 master 进程进入休眠&lt;/p&gt;
-&lt;p&gt;关于 &lt;code&gt;sigsuspend&lt;/code&gt; 函数，简单来说，它是一个 &lt;code&gt;sigprocmask(SIG_SETMASK, &amp;amp;emptyset, NULL)&lt;/code&gt; 和 &lt;code&gt;pause()&lt;/code&gt; 函数的结合体，不过相对于使用两个函数完成上述操作，&lt;code&gt;sigsuspend&lt;/code&gt; 是 &lt;code&gt;原子操作&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;具体的操作如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;使用新的信号集合设置屏蔽字，在这里是清空屏蔽字&lt;/li&gt;
-&lt;li&gt;调用信号处理函数，并从信号处理程序返回&lt;/li&gt;
-&lt;li&gt;屏蔽字恢复成调用 &lt;code&gt;sigsuspend&lt;/code&gt; 之前的值（再次不让进程被信号打断）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;master-title&quot; tabindex=&quot;-1&quot;&gt;设置 master 进程的 title&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;static u_char  master_process[] = &amp;quot;master process&amp;quot;;
-
-    size = sizeof(master_process);
-
-    for (i = 0; i &amp;lt; ngx_argc; i++) {
-        size += ngx_strlen(ngx_argv[i]) + 1;
-    }
-
-    title = ngx_pnalloc(cycle-&amp;gt;pool, size);
-    if (title == NULL) {
-        /* fatal */
-        exit(2);
-    }
-
-    p = ngx_cpymem(title, master_process, sizeof(master_process) - 1);
-    for (i = 0; i &amp;lt; ngx_argc; i++) {
-        *p++ = &#39; &#39;;
-        p = ngx_cpystrn(p, (u_char *) ngx_argv[i], size);
-    }
-
-    ngx_setproctitle(title);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;将进程&lt;code&gt;title&lt;/code&gt;设置成三个部分：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;固定字符：&lt;code&gt;nginx:&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;主进程标志: &lt;code&gt;master process&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;命令行启动的命令，如：&lt;code&gt;/home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;所以进程刚开始是这样显示的：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ps aux | grep nginx | grep -v grep
-root      183117  0.0  0.0   4324  2680 ?        ts   17:07   0:00 /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;设置了 title 之后，变成了下面这样：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ps aux | grep nginx | grep -v grep
-root      183117  0.0  0.0   4324  2680 ?        ts   17:07   0:00 nginx: master process /home/ubuntu/mydisk/var/nginx-debug-1/sbin/nginx
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;code-worker-code-code-cache-code&quot; tabindex=&quot;-1&quot;&gt;根据配置启动相应数量的 &lt;code&gt;worker&lt;/code&gt; 和 &lt;code&gt;cache&lt;/code&gt; 管理进程&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;ccf = (ngx_core_conf_t *) ngx_get_conf(cycle-&amp;gt;conf_ctx, ngx_core_module);
-
-ngx_start_worker_processes(cycle, ccf-&amp;gt;worker_processes,
-                           NGX_PROCESS_RESPAWN);
-ngx_start_cache_manager_processes(cycle, 0);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;监听信号，并作出响应&quot; tabindex=&quot;-1&quot;&gt;监听信号，并作出响应&lt;/h2&gt;
-&lt;p&gt;在 &lt;code&gt;ngx_init_signals&lt;/code&gt; 函数中，对原始信号做了变量名映射，具体映射如下：&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;信号&lt;/th&gt;
-&lt;th&gt;对应进程中的标志位变量&lt;/th&gt;
-&lt;th&gt;含义&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;QUIT&lt;/td&gt;
-&lt;td&gt;ngx_quit&lt;/td&gt;
-&lt;td&gt;优雅关闭服务&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;TERM 或 INT&lt;/td&gt;
-&lt;td&gt;ngx_terminate&lt;/td&gt;
-&lt;td&gt;强制关闭服务&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;USR1&lt;/td&gt;
-&lt;td&gt;ngx_reopen&lt;/td&gt;
-&lt;td&gt;重新打开服务中的所有文件&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;WINCH&lt;/td&gt;
-&lt;td&gt;ngx_noaccept&lt;/td&gt;
-&lt;td&gt;所有子进程不再接受处理新的连接，实际相当于对所有的子进程发送 QUIT 信号&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;USR2&lt;/td&gt;
-&lt;td&gt;ngx_change_binary&lt;/td&gt;
-&lt;td&gt;平滑升级到新版本的 Nginx 程序&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;HUP&lt;/td&gt;
-&lt;td&gt;ngx_reconfigure&lt;/td&gt;
-&lt;td&gt;重新读取配置文件并使服务对新配置项生效&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CHLD&lt;/td&gt;
-&lt;td&gt;ngx_reap&lt;/td&gt;
-&lt;td&gt;有子进程意外结束&lt;br /&gt;master 会监控所有子进程，并在子进程意外退出时调用 ngx_reap_children 方法重启子进程&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;master 并不是时刻不停的执行循环检测这些标志位，而是通过 &lt;code&gt;sigsuspend&lt;/code&gt; 进入休眠，等待有信号唤醒进程时，再循环检测所有信号并处理。&lt;/p&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/midion9/article/details/50605337&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx中的ngx_cdecl&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/33a7502de6e6&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Nginx源码|Nginx信号处理&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://knifefly.cn/2017/09/15/nginx-%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nginx 信号处理&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/ShaoLiang_Ge/article/details/57984123&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;LINUX C中sigprocmask()函数用法&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/linux_ever/article/details/50344837&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;linux信号的阻塞和未决&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《UNIX 环境高级编程》&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/nginx master 进程/" />
-        </entry>
-        <entry>
-            <title>
-                文件描述符
-                
-            </title>
-            <updated>2024-05-02T04:58:21.000Z</updated>
-            <id>https://wudanyang6.github.io//card/文件描述符/</id>
-            <content type="html">
-                &lt;h1 id=&quot;文件描述符&quot; tabindex=&quot;-1&quot;&gt;文件描述符&lt;/h1&gt;
-&lt;p&gt;对于内核而言，所有打开的文件都通过&lt;code&gt;文件描述符（file descriptor）&lt;/code&gt;引用。通常也写作 &lt;code&gt;fd&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;文件描述符&lt;/code&gt;是一个非负整数。&lt;/p&gt;
-&lt;p&gt;当打开一个现有文件或者创建一个新文件时，内核向进程返回一个&lt;code&gt;文件描述符&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;文件描述符&lt;/code&gt;是跟&lt;code&gt;进程&lt;/code&gt;相关联的。&lt;/p&gt;
-&lt;p&gt;按照惯例，&lt;code&gt;UNIX&lt;/code&gt; 系统将 &lt;code&gt;fd 0&lt;/code&gt; 对应进程的标准输入， &lt;code&gt;fd 1&lt;/code&gt; 对应进程的标准输出， &lt;code&gt;fd 2&lt;/code&gt; 对应进程的标准错误。&lt;/p&gt;
-&lt;h1 id=&quot;系统调用中的文件描述符&quot; tabindex=&quot;-1&quot;&gt;系统调用中的文件描述符&lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;UNIX&lt;/code&gt; 系统中，一切皆文件，所以一切资源都可以使用文件描述符进程引用。&lt;/p&gt;
-&lt;p&gt;以 &lt;code&gt;open&lt;/code&gt; 系统调用为例&lt;/p&gt;
-&lt;p&gt;使用 &lt;code&gt;man 2 open&lt;/code&gt; 查看系统 &lt;code&gt;man&lt;/code&gt; 手册&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-man&quot;&gt;NAME
-     open, openat -- open or create a file for reading or writing
-
-SYNOPSIS
-     &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#include&quot;&gt;#include&lt;/a&gt; &amp;lt;fcntl.h&amp;gt;
-
-     int
-     open(const char *path, int oflag, ...);
-
-     int
-     openat(int fd, const char *path, int oflag, ...);
-
-DESCRIPTION
-     The file name specified by path is opened for reading and/or writing,
-     as specified by the argument oflag; the file descriptor is returned to
-     the calling process.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;在简介中有一段话：&lt;code&gt;the file descriptor is returned to the calling process.&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;使用 &lt;code&gt;c&lt;/code&gt; 语言打开一个 文件&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#include&quot;&gt;#include&lt;/a&gt; &amp;lt;stdio.h&amp;gt;
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#include&quot;&gt;#include&lt;/a&gt; &amp;lt;fcntl.h&amp;gt;
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#include&quot;&gt;#include&lt;/a&gt; &amp;lt;unistd.h&amp;gt;
-
-int main() {
-	int fd;
-	fd = open(&amp;quot;tmp.txt&amp;quot;, O_RDONLY);
-	printf(&amp;quot;%d&amp;quot;, fd);
-	sleep(10);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;会发现，在进程运行时 &lt;code&gt;fd&lt;/code&gt; 目录下，会出现一个描述符 3 指向了 打开的文件&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ll /proc/$(ps aux | grep a.out | grep -v grep | awk &#39;{print $2}&#39;)/fd
-total 0
-lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 0 -&amp;gt; /dev/pts/4
-lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 1 -&amp;gt; /dev/pts/4
-lrwx------ 1 ubuntu ubuntu 64 Apr 13 13:48 2 -&amp;gt; /dev/pts/4
-lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangblog/codes/file/tmp.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;我们可以把这个文件描述符当做参数传递给 &lt;code&gt;read&lt;/code&gt; 或者 &lt;code&gt;write&lt;/code&gt; 等等系统调用。&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/文件描述符/" />
-        </entry>
-        <entry>
-            <title>
-                如何追查线上问题
-                
-            </title>
-            <updated>2024-08-29T15:58:39.000Z</updated>
-            <id>https://wudanyang6.github.io//thoughts/如何追查线上问题/</id>
-            <content type="html">
-                &lt;h1 id=&quot;如何追查线上问题&quot; tabindex=&quot;-1&quot;&gt;如何追查线上问题&lt;/h1&gt;
-&lt;h2 id=&quot;止损优先&quot; tabindex=&quot;-1&quot;&gt;止损优先&lt;/h2&gt;
-&lt;p&gt;不能先追查问题根源， 首先应该&lt;code&gt;止损&lt;/code&gt;，不让问题进一步扩大，&lt;code&gt;代码回滚&lt;/code&gt;、&lt;code&gt;服务降级&lt;/code&gt;等都可以起到止损的效果。&lt;br /&gt;
-对于止损有一个比较好的实践，新业务或者重构业务上线时，可以加一个 &lt;code&gt;配置开关 &lt;/code&gt;控制是否启用逻辑，在发现有损时，可以及时关掉业务逻辑，比重新上线要快特别多&lt;/p&gt;
-&lt;h2 id=&quot;及时通告&quot; tabindex=&quot;-1&quot;&gt;及时通告&lt;/h2&gt;
-&lt;p&gt;在问题发生之后，要及时对处理问题的过程进行&lt;code&gt;通告&lt;/code&gt;。特别是应对线上有损的问题时，更应该及时通告。在内部群中，简单描述一下问题与可能的原因，处理的进度。而在外部群里，可以只说一下处理的进度。如果有必要，可以将问题上诉到领导，如果还解决不了问题，可以逐级继续上诉。&lt;/p&gt;
-&lt;h1 id=&quot;追查问题的方法&quot; tabindex=&quot;-1&quot;&gt;追查问题的方法&lt;/h1&gt;
-&lt;h2 id=&quot;逻辑方法:&quot; tabindex=&quot;-1&quot;&gt;逻辑方法:&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;先收集&lt;code&gt;现象&lt;/code&gt;：业务报错、线上报错日志等&lt;br /&gt;
-对紧急的问题来说，需要对线上业务、服务器等非常熟悉，才能迅速收集到有用的报错信息。&lt;/li&gt;
-&lt;li&gt;针对现象假设&lt;code&gt;原因&lt;/code&gt;：
-&lt;ol&gt;
-&lt;li&gt;常见问题依据追查手册&lt;/li&gt;
-&lt;li&gt;其他问题保持思路开放，大胆假设&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;是否&lt;code&gt;有损&lt;/code&gt;的判断：&lt;br /&gt;
-根据现象假设出可能的原因，判断是否是有损的，如果是有损的问题，参考 &lt;strong&gt;止损优先&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;质疑&lt;/code&gt;所有数据：&lt;br /&gt;
-各个数据、监控系统等的有效性也需要质疑，不能完全相信，需要小心求证&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;知识准备&quot; tabindex=&quot;-1&quot;&gt;知识准备&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;对线上各种&lt;code&gt;日志&lt;/code&gt;的熟悉，从日志中能看到具体的问题，比如 nginx 日志 php 日志等&lt;/li&gt;
-&lt;li&gt;对线上的各种&lt;code&gt;配置&lt;/code&gt;更要做到心中有数&lt;/li&gt;
-&lt;li&gt;对&lt;code&gt;细节&lt;/code&gt;的追查，每次都更细一些，这样才能获得更多的信息&lt;/li&gt;
-&lt;li&gt;计算机&lt;code&gt;基本功&lt;/code&gt;，有时问题追查不下去，不是没有线索，而是追查到了一个未知的领域，没有相关的知识，无法追查&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;总结经验&quot; tabindex=&quot;-1&quot;&gt;总结经验&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;成熟的方法落地成&lt;code&gt;工具&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;对问题的追查形成&lt;code&gt;文档&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;问题解决之后&quot; tabindex=&quot;-1&quot;&gt;问题解决之后&lt;/h1&gt;
-&lt;p&gt;如果问题解决之后，我们就不再跟进了，那么我们就沦为了解决问题的工具，问题也随之越来越多，解决不完。&lt;br /&gt;
-那么，我们可以通过思考以下几点来提升自己&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;线上是否恢复了正常？（&lt;code&gt;最基本的&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;问题的原因是什么？（&lt;code&gt;落到追查文档&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;通过什么手段恢复的？（&lt;code&gt;解决方案&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;怎么可以避免下次再次出现问题？（&lt;code&gt;防患未然&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;除了此次出现的问题，会不会有其他的问题出现（&lt;code&gt;举一反三&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;出现此类问题是否是架构问题造成的？（&lt;code&gt;根本原因&lt;/code&gt;）&lt;/li&gt;
-&lt;/ol&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//thoughts/如何追查线上问题/" />
-        </entry>
-        <entry>
-            <title>
-                nginx 进程模型-整体架构
-                
-            </title>
-            <updated>2024-05-14T06:23:31.000Z</updated>
-            <id>https://wudanyang6.github.io//card/nginx 进程模型-整体架构/</id>
-            <content type="html">
-                &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;nginx 进程模型 - 整体架构&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/713751-20221106220927618-2090658482.png&quot; alt=&quot;713751-20221106220927618-2090658482.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;从网上找了一个非常好的图片，从图中可以看到很多东西&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Nginx&lt;/code&gt; 会生成多个进程&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 使用了 &lt;code&gt;io&lt;/code&gt; 多路复用的事件驱动框架&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 内部有很多模块&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;worker&lt;/code&gt; 处理磁盘 &lt;code&gt;I/O&lt;/code&gt; 时，使用了标准 &lt;code&gt;I/O&lt;/code&gt; ， &lt;code&gt;sendfile&lt;/code&gt; ， &lt;code&gt;AIO&lt;/code&gt; ，&lt;code&gt;mmap&lt;/code&gt; 等 &lt;code&gt;I/O&lt;/code&gt; 技术&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Cache loader&lt;/code&gt; 和 &lt;code&gt;Cache manager&lt;/code&gt; 操作 proxy cache&lt;/li&gt;
-&lt;li&gt;后端支持多种基于 &lt;code&gt;tcp&lt;/code&gt; 的网络协议&lt;/li&gt;
-&lt;/ol&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/nginx 进程模型-整体架构/" />
         </entry>
 </feed>
