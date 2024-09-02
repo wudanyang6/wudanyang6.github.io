@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-08-31T15:18:30Z</updated>
+    <updated>2024-09-02T03:14:48Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -2907,6 +2907,34 @@ $zip-&amp;gt;close(); //关闭压缩包
         </entry>
         <entry>
             <title>
+                202409021102 marginote 从 Web 网页导入内容
+                
+            </title>
+            <updated>2024-09-02T03:13:52.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202409021102 marginote 从 Web 网页导入内容/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202409021102-marginote-web&quot; tabindex=&quot;-1&quot;&gt;202409021102 marginote 从 Web 网页导入内容&lt;/h1&gt;
+&lt;p&gt;选择学习集或文件夹，点击导入按钮，选择【从Web网页】&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240902110611.png&quot; alt=&quot;Pasted image 20240902110611.png|492&quot; width=&quot;492px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;使用原始的页面样式，会比较难看，但是 MN 没有抓取页面部分的功能&lt;/p&gt;
+&lt;p&gt;有一个折中方案，拖动右边的边框，将软件框变小，就变成了下面这样的图片，会比较好看一些&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240902110726.png&quot; alt=&quot;Pasted image 20240902110726.png|312&quot; width=&quot;312px&quot; /&gt;&lt;br /&gt;
+点击软件下面中间的按钮，下载下来即可&lt;/p&gt;
+&lt;p&gt;有时候代码片段等渲染不是很好 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240902110953.png&quot; alt=&quot;Pasted image 20240902110953.png|332&quot; width=&quot;332px&quot; /&gt;&lt;br /&gt;
+这种情况只能使用 chrome 截图来解决了，在chrome中，可以开启开发者工具进行长截图&lt;/p&gt;
+&lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
+&lt;h1 id=&quot;chrome&quot; tabindex=&quot;-1&quot;&gt;利用 Chrome 原生工具进行网页长截图 - 一日一技 - 少数派&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Omnivore&quot;&gt;#Omnivore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://omnivore.app/me/chrome-1915a0dcd73&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Read on Omnivore&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://sspai.com/post/42193&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Read Original&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;notes&quot; tabindex=&quot;-1&quot;&gt;Notes&lt;/h2&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/202409021102 marginote 从 Web 网页导入内容/" />
+        </entry>
+        <entry>
+            <title>
                 202408312248 甲沟炎的处理办法
                 
             </title>
@@ -4008,6 +4036,12 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h2&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;2024-09:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409021102%20marginote%20%E4%BB%8E%20Web%20%E7%BD%91%E9%A1%B5%E5%AF%BC%E5%85%A5%E5%86%85%E5%AE%B9/&quot;&gt;202409021102 marginote 从 Web 网页导入内容&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;2024-08:&lt;/p&gt;
 &lt;ul&gt;
