@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-09-02T03:14:48Z</updated>
+    <updated>2024-09-02T13:08:04Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -2907,10 +2907,26 @@ $zip-&amp;gt;close(); //关闭压缩包
         </entry>
         <entry>
             <title>
+                202409022100 things3 与 mac 备忘录联动
+                
+            </title>
+            <updated>2024-09-02T13:06:18.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202409022100 things3 与 mac 备忘录联动/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202409022100-things3-mac&quot; tabindex=&quot;-1&quot;&gt;202409022100 things3 与 mac 备忘录联动&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240902210102.png&quot; alt=&quot;Pasted image 20240902210102.png|511&quot; width=&quot;511px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;在备忘录中选择【添加App链接】后，当打开对应的页面时，对应的备忘录会在右下角露出一个小图标&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240902210326.png&quot; alt=&quot;Pasted image 20240902210326.png|521&quot; width=&quot;521px&quot; /&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/202409022100 things3 与 mac 备忘录联动/" />
+        </entry>
+        <entry>
+            <title>
                 202409021102 marginote 从 Web 网页导入内容
                 
             </title>
-            <updated>2024-09-02T03:13:52.000Z</updated>
+            <updated>2024-09-02T03:18:42.000Z</updated>
             <id>https://wudanyang6.github.io//card/202409021102 marginote 从 Web 网页导入内容/</id>
             <content type="html">
                 &lt;h1 id=&quot;202409021102-marginote-web&quot; tabindex=&quot;-1&quot;&gt;202409021102 marginote 从 Web 网页导入内容&lt;/h1&gt;
@@ -4039,6 +4055,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;
 &lt;p&gt;2024-09:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409022100%20things3%20%E4%B8%8E%20mac%20%E5%A4%87%E5%BF%98%E5%BD%95%E8%81%94%E5%8A%A8/&quot;&gt;202409022100 things3 与 mac 备忘录联动&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409021102%20marginote%20%E4%BB%8E%20Web%20%E7%BD%91%E9%A1%B5%E5%AF%BC%E5%85%A5%E5%86%85%E5%AE%B9/&quot;&gt;202409021102 marginote 从 Web 网页导入内容&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
