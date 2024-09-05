@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-09-05T17:01:24Z</updated>
+    <updated>2024-09-05T17:19:22Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -481,8 +481,8 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
 &lt;li&gt;
 &lt;p&gt;2024-09:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/digital-garden%20%E5%9C%A8%20windows%20%E4%B8%8A%E9%9D%A2%20diff%20%E5%87%BA%E9%94%99/&quot;&gt;digital-garden 在 windows 上面 diff 出错&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409052343%20github%20%E9%83%A8%E7%BD%B2%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE%20reviewer/&quot;&gt;202409052343 github 部署任务设置 reviewer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/digital-garden%E5%9C%A8windows%E4%B8%8A%E9%9D%A2%E7%9A%84bug/&quot;&gt;digital-garden在windows上面的bug&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/&quot;&gt;文章列表&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409022100%20things3%20%E4%B8%8E%20mac%20%E5%A4%87%E5%BF%98%E5%BD%95%E8%81%94%E5%8A%A8/&quot;&gt;202409022100 things3 与 mac 备忘录联动&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409021102%20marginote%20%E4%BB%8E%20Web%20%E7%BD%91%E9%A1%B5%E5%AF%BC%E5%85%A5%E5%86%85%E5%AE%B9/&quot;&gt;202409021102 marginote 从 Web 网页导入内容&lt;/a&gt;&lt;/li&gt;
@@ -2900,13 +2900,13 @@ if err != nil {
         </entry>
         <entry>
             <title>
-                digital-garden在windows上面的bug
+                digital-garden 在 windows 上面 diff 出错
                 
             </title>
-            <updated>2024-09-05T16:57:14.000Z</updated>
-            <id>https://wudanyang6.github.io//card/digital-garden在windows上面的bug/</id>
+            <updated>2024-09-05T17:18:28.000Z</updated>
+            <id>https://wudanyang6.github.io//card/digital-garden 在 windows 上面 diff 出错/</id>
             <content type="html">
-                &lt;h1 id=&quot;digital-garden-windows-bug&quot; tabindex=&quot;-1&quot;&gt;digital-garden在windows上面的bug&lt;/h1&gt;
+                &lt;h1 id=&quot;digital-garden-windows-diff&quot; tabindex=&quot;-1&quot;&gt;digital-garden 在 windows 上面 diff 出错&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/oleeskild/obsidian-digital-garden&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/oleeskild/obsidian-digital-garden&lt;/a&gt;&lt;br /&gt;
 obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontmatter 全部透传&lt;br /&gt;
 推到代码库中是这样的： &lt;a href=&quot;https://github.com/wudanyang6/dy_turbo/commit/7b66296c349fb067d3d62c43d5f04b6a784a2197&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/wudanyang6/dy_turbo/commit/7b66296c349fb067d3d62c43d5f04b6a784a2197&lt;/a&gt;&lt;/p&gt;
@@ -2916,7 +2916,7 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
 &lt;p&gt;从而导致的问题是，我的网站上面所有的文章全都使用新路径重新发布了一遍&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/digital-garden在windows上面的bug/" />
+            <link href="https://wudanyang6.github.io//card/digital-garden 在 windows 上面 diff 出错/" />
         </entry>
         <entry>
             <title>
@@ -3220,7 +3220,7 @@ $zip-&amp;gt;close(); //关闭压缩包
             <id>https://wudanyang6.github.io//card/202409052343 github 部署任务设置 reviewer/</id>
             <content type="html">
                 &lt;h1 id=&quot;202409052343-github-reviewer&quot; tabindex=&quot;-1&quot;&gt;202409052343 github 部署任务设置 reviewer&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/digital-garden%E5%9C%A8windows%E4%B8%8A%E9%9D%A2%E7%9A%84bug/&quot;&gt;digital-garden在windows上面的bug&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/digital-garden%20%E5%9C%A8%20windows%20%E4%B8%8A%E9%9D%A2%20diff%20%E5%87%BA%E9%94%99/&quot;&gt;digital-garden 在 windows 上面 diff 出错&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;鉴于以上问题，在站点部署时，增加了一个确认环节&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240906005953.png&quot; alt=&quot;Pasted image 20240906005953.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;下次部署的时候就会先等着我点确认后才能部署&lt;/p&gt;
