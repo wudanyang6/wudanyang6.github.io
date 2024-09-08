@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-09-08T15:44:39Z</updated>
+    <updated>2024-09-08T15:59:34Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -1445,6 +1445,44 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/ubuntu 树莓派启动时配置网络/" />
+        </entry>
+        <entry>
+            <title>
+                shell-循环
+                
+            </title>
+            <updated>2024-09-08T15:58:59.000Z</updated>
+            <id>https://wudanyang6.github.io//card/shell-循环/</id>
+            <content type="html">
+                &lt;h1 id=&quot;shell&quot; tabindex=&quot;-1&quot;&gt;shell-循环&lt;/h1&gt;
+&lt;h2 id=&quot;for&quot; tabindex=&quot;-1&quot;&gt;for&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;
+# 遍历数字
+for i in {0..10}; do
+    echo 133
+done
+
+# 遍历文件
+for file in split_??????; do
+    echo ${file}
+done
+
+# 数组：
+arr=(list0 list1 list2 list3)
+
+# 遍历数组
+for list in ${arr[@]}; do
+	echo ${list}
+done
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;while&quot; tabindex=&quot;-1&quot;&gt;while&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;while read line; do
+    echo $line
+done &amp;lt; file.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/shell-循环/" />
         </entry>
         <entry>
             <title>
@@ -3637,7 +3675,7 @@ for i in $(seq 1 10); do
 	echo ${i}
 done
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;shell-循环&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/shell-%E5%BE%AA%E7%8E%AF/&quot;&gt;shell-循环&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/202404142147 如何在shell中遍历数字/" />
