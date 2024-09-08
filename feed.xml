@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-09-05T17:19:22Z</updated>
+    <updated>2024-09-08T03:53:44Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -814,6 +814,30 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//card/文件描述符/" />
+        </entry>
+        <entry>
+            <title>
+                搜索引擎技巧
+                
+            </title>
+            <updated>2024-07-26T11:20:29.000Z</updated>
+            <id>https://wudanyang6.github.io//card/搜索引擎技巧/</id>
+            <content type="html">
+                &lt;h1 id=&quot;搜索引擎技巧&quot; tabindex=&quot;-1&quot;&gt;搜索引擎技巧&lt;/h1&gt;
+&lt;p&gt;在使用搜索时，可选用的几个参数&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;双引号限定关键词 &lt;code&gt;图片&amp;quot;你好&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;intitle 标题关键词 &lt;code&gt;intitle:你好&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;allintitle 多个标题关键词 &lt;code&gt;allintitle:你好 世界&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;intext 内容关键词 &lt;code&gt;intext:世界&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;inurl 网址关键词 &lt;code&gt;inurl:nginx&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;site 限定网站域名 &lt;code&gt;site:github.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;imagesize 限定尺寸 &lt;code&gt;imagesize:1920x1080 风景&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;filetype 文件格式 &lt;code&gt;filetype:pdf OR filetype:doc 机器学习教程&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/搜索引擎技巧/" />
         </entry>
         <entry>
             <title>
