@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-09-11T09:09:36Z</updated>
+    <updated>2024-09-11T15:58:30Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -481,6 +481,8 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
 &lt;li&gt;
 &lt;p&gt;2024-09:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode/5.%20%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2/&quot;&gt;5. 最长回文子串&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409112305%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%BE%88%E5%A4%9A%E6%97%B6%E5%80%99%E5%B0%B1%E6%98%AF%E5%9C%A8%E5%A1%AB%E8%A1%A8/&quot;&gt;202409112305 动态规划很多时候就是在填表&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/digital-garden%20%E5%9C%A8%20windows%20%E4%B8%8A%E9%9D%A2%20diff%20%E5%87%BA%E9%94%99/&quot;&gt;digital-garden 在 windows 上面 diff 出错&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409052343%20github%20%E9%83%A8%E7%BD%B2%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE%20reviewer/&quot;&gt;202409052343 github 部署任务设置 reviewer&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/&quot;&gt;文章列表&lt;/a&gt;&lt;/li&gt;
@@ -2430,6 +2432,79 @@ done
         </entry>
         <entry>
             <title>
+                5. 最长回文子串
+                
+            </title>
+            <updated>2024-09-11T15:57:26.000Z</updated>
+            <id>https://wudanyang6.github.io//card/leetcode/5. 最长回文子串/</id>
+            <content type="html">
+                &lt;h1 id=&quot;5&quot; tabindex=&quot;-1&quot;&gt;5. 最长回文子串&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409112305%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%BE%88%E5%A4%9A%E6%97%B6%E5%80%99%E5%B0%B1%E6%98%AF%E5%9C%A8%E5%A1%AB%E8%A1%A8/&quot;&gt;202409112305 动态规划很多时候就是在填表&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;暴力解法&lt;/li&gt;
+&lt;li&gt;动态规划&lt;/li&gt;
+&lt;li&gt;马拉车算法，没仔细看&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;动态规划算法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;func longestPalindrome(s string) string {
+    return dynamic(s)    
+}
+
+func dynamic(s string) string {
+
+    dp := make([][]bool, len(s))
+
+    for i := range dp {
+        dp[i] = make([]bool, len(s))
+        dp[i][i] = true
+    }
+
+    ret := s[0:1]
+    mxLen := 1
+    for j := 1; j &amp;lt; len(s); j++ {
+        for i := 0; i&amp;lt;j; i++ {
+            if s[i] == s[j] {
+                if j-i &amp;lt; 3 {
+                    dp[i][j] = true
+                } else {
+                    dp[i][j] = dp[i+1][j-1]
+                }
+                if dp[i][j] &amp;amp;&amp;amp; j-i+1 &amp;gt; mxLen {
+                    mxLen = j-i+1
+                    ret = s[i:j+1]
+                }
+            } else {
+                dp[i][j] = false
+            }
+        }
+    }
+
+    return ret
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;初始化：&lt;/p&gt;
+&lt;p&gt;填表格，对角线，也就是 i=j 时，单个字符，都是回文串，设置为 true &lt;code&gt;dp[i][i] = true&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;遍历顺序：&lt;/p&gt;
+&lt;p&gt;因为初始化的是对角线，也就是如图所示：&lt;br /&gt;
+图中对角线坐标写错了，应该是 &lt;code&gt;[0,0] [1,1] [2,2] [3,3]&lt;/code&gt;&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/%E6%88%AA%E5%B1%8F%202024-09-11%2023.48.54.png&quot; alt=&quot;截屏 2024-09-11 23.48.54.png&quot; /&gt;&lt;br /&gt;
+如果按照平常的顺序，这么写代码遍历&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;for i := 0; i &amp;lt; len(s); i++ {
+	for j := i+1; j&amp;lt;len(s); j++ {
+		...
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;那么会有如图所示的问题，&lt;code&gt;[0,3]&lt;/code&gt; 会因为需要 &lt;code&gt;[1,2]&lt;/code&gt; 的结果从而导致无法推算出正确的结果&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/%E6%88%AA%E5%B1%8F%202024-09-11%2023.52.06.png&quot; alt=&quot;截屏 2024-09-11 23.52.06.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;所以需要这么遍历，就能够使用到上一列的数据&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/%E6%88%AA%E5%B1%8F%202024-09-11%2023.56.01.png&quot; alt=&quot;截屏 2024-09-11 23.56.01.png&quot; /&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/leetcode/5. 最长回文子串/" />
+        </entry>
+        <entry>
+            <title>
                 leetcode-53. 最大子数组和
                 
             </title>
@@ -3279,6 +3354,21 @@ $zip-&amp;gt;close(); //关闭压缩包
 
             </content>
             <link href="https://wudanyang6.github.io//card/About Me/" />
+        </entry>
+        <entry>
+            <title>
+                202409112305 动态规划很多时候就是在填表
+                
+            </title>
+            <updated>2024-09-11T15:44:10.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202409112305 动态规划很多时候就是在填表/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202409112305&quot; tabindex=&quot;-1&quot;&gt;202409112305 动态规划很多时候就是在填表&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/problems/longest-palindromic-substring/solutions/7792/zhong-xin-kuo-san-dong-tai-gui-hua-by-liweiwei1419&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://leetcode.cn/problems/longest-palindromic-substring/solutions/7792/zhong-xin-kuo-san-dong-tai-gui-hua-by-liweiwei1419&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;填表的顺序是非常重要的&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/202409112305 动态规划很多时候就是在填表/" />
         </entry>
         <entry>
             <title>
