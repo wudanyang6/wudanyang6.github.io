@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-09-14T07:54:27Z</updated>
+    <updated>2024-09-14T08:24:42Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -473,7 +473,7 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
                 文章列表
                 
             </title>
-            <updated>2024-09-05T04:13:49.000Z</updated>
+            <updated>2024-09-14T08:24:02.000Z</updated>
             <id>https://wudanyang6.github.io//card/文章列表/</id>
             <content type="html">
                 &lt;h1 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h1&gt;
@@ -481,11 +481,11 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
 &lt;li&gt;
 &lt;p&gt;2024-09:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/&quot;&gt;文章列表&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode/5.%20%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2/&quot;&gt;5. 最长回文子串&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409112305%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%BE%88%E5%A4%9A%E6%97%B6%E5%80%99%E5%B0%B1%E6%98%AF%E5%9C%A8%E5%A1%AB%E8%A1%A8/&quot;&gt;202409112305 动态规划很多时候就是在填表&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/digital-garden%20%E5%9C%A8%20windows%20%E4%B8%8A%E9%9D%A2%20diff%20%E5%87%BA%E9%94%99/&quot;&gt;digital-garden 在 windows 上面 diff 出错&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409052343%20github%20%E9%83%A8%E7%BD%B2%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE%20reviewer/&quot;&gt;202409052343 github 部署任务设置 reviewer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/&quot;&gt;文章列表&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409022100%20things3%20%E4%B8%8E%20mac%20%E5%A4%87%E5%BF%98%E5%BD%95%E8%81%94%E5%8A%A8/&quot;&gt;202409022100 things3 与 mac 备忘录联动&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409021102%20marginote%20%E4%BB%8E%20Web%20%E7%BD%91%E9%A1%B5%E5%AF%BC%E5%85%A5%E5%86%85%E5%AE%B9/&quot;&gt;202409021102 marginote 从 Web 网页导入内容&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
