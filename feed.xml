@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-09-14T08:24:42Z</updated>
+    <updated>2024-09-14T08:37:11Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -553,10 +553,10 @@ echo &amp;quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间�
 &lt;li&gt;
 &lt;p&gt;2024-01:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142052%20%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;20240415142052 原神挺好玩&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/DoD/&quot;&gt;DoD&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/101b1%20obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;101b1 obsidian-things3-today插件&lt;/a&gt;&lt;/li&gt;
@@ -3344,13 +3344,12 @@ $zip-&amp;gt;close(); //关闭压缩包
                 About Me
                 
             </title>
-            <updated>2024-05-06T02:51:50.000Z</updated>
+            <updated>2024-09-14T08:35:05.000Z</updated>
             <id>https://wudanyang6.github.io//card/About Me/</id>
             <content type="html">
                 &lt;h1 id=&quot;about-me&quot; tabindex=&quot;-1&quot;&gt;About Me&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/u/wudanyang/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;leetcode 个人主页&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/wudanyang6&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;github 个人主页&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;music&quot; tabindex=&quot;-1&quot;&gt;music&lt;/h2&gt;
+&lt;h2 id=&quot;1-music&quot; tabindex=&quot;-1&quot;&gt;1. music&lt;/h2&gt;
 &lt;iframe width=&quot;100%&quot; height=&quot;650px&quot; src=&quot;https://music.163.com/playlist?id=13022777&amp;userid=16553655&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;false&quot;&gt; &lt;/iframe&gt;
 
             </content>
@@ -4465,11 +4464,11 @@ date_translator = require(&amp;quot;date&amp;quot;)
             <updated>2024-09-11T09:07:12.000Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
-                &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/IMG_2579.jpg&quot; alt=&quot;IMG_2579.jpg&quot; /&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/IMG_2579.jpg&quot; alt=&quot;IMG_2579.jpg|512&quot; width=&quot;512px&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/&quot;&gt;文章列表&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;https://music.163.com/outchain/player?type=2&amp;id=2612654282&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
             </content>
             <link href="https://wudanyang6.github.io//" />
         </entry>
