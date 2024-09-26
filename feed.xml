@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-09-25T02:50:03Z</updated>
+    <updated>2024-09-26T05:38:12Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -760,7 +760,7 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E8%BF%9B%E7%A8%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%88%87%E6%8D%A2%E8%AF%A6%E6%83%85/&quot;&gt;进程上下文切换详情&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8%E6%97%B6%E4%B8%8A%E4%B8%8B%E6%96%87%E8%B0%83%E5%BA%A6/&quot;&gt;系统调用时上下文调度&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/CPU%20%E4%BD%BF%E7%94%A8%E7%8E%87/&quot;&gt;CPU 使用率&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/202409121624%20Linux%20%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-CPU/&quot;&gt;202409121624 Linux 性能优化-CPU&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/202409121624%20Linux%20%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E4%BC%98%E5%8C%96-CPU/&quot;&gt;202409121624 Linux 性能分析优化-CPU&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202409112305%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%BE%88%E5%A4%9A%E6%97%B6%E5%80%99%E5%B0%B1%E6%98%AF%E5%9C%A8%E5%A1%AB%E8%A1%A8/&quot;&gt;202409112305 动态规划很多时候就是在填表&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode/5.%20%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2/&quot;&gt;5. 最长回文子串&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/digital-garden%20%E5%9C%A8%20windows%20%E4%B8%8A%E9%9D%A2%20diff%20%E5%87%BA%E9%94%99/&quot;&gt;digital-garden 在 windows 上面 diff 出错&lt;/a&gt;&lt;/li&gt;
@@ -785,7 +785,7 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;li&gt;
 &lt;p&gt;2024-05:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202405081331%20rime%20%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%89%A7%E8%A1%8C%E5%90%8C%E6%AD%A5%E6%93%8D%E4%BD%9C/&quot;&gt;202405081331 rime 如何使用命令行执行同步操作&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202405081331%20mac%20%E9%BC%A0%E9%A1%BB%E7%AE%A1%20-%20rime%20%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%89%A7%E8%A1%8C%E5%90%8C%E6%AD%A5%E6%93%8D%E4%BD%9C/&quot;&gt;202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202405081320%20IPv6%E7%9A%84%E5%9B%9E%E7%8E%AF%E5%9C%B0%E5%9D%80%E6%98%AF%E5%A6%82%E4%BD%95%E8%A1%A8%E7%A4%BA%E7%9A%84/&quot;&gt;202405081320 IPv6的回环地址是如何表示的&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202405061046%20%E9%9F%B3%E4%B9%90-%E5%9C%86%E6%A1%8C%E9%AA%91%E5%A3%AB/&quot;&gt;202405061046 音乐-圆桌骑士&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -801,8 +801,8 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417103919%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A0%87%E9%A2%98%E6%98%AF%E5%AF%B9%E5%86%85%E5%AE%B9%E7%9A%84%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%8F%8F%E8%BF%B0/&quot;&gt;20240417103919 卡片盒笔记法的标题是对内容的一句话描述&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/%E7%AC%94%E8%AE%B0%E6%96%B9%E6%B3%95/20240416231513%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240416231513 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/202404151422%20%E6%B8%B8%E6%88%8F/&quot;&gt;202404151422 游戏&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415183533%20%E5%93%B2%E5%AD%A6%E4%B9%A6%E5%8D%95/&quot;&gt;20240415183533 哲学书单&lt;/a&gt;&lt;/li&gt;
@@ -826,7 +826,7 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;p&gt;2024-02:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E8%BD%AF%E8%A3%85-%E6%B2%99%E5%8F%91/&quot;&gt;软装-沙发&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAchrome%E7%8B%AC%E7%AB%8BAPP%E7%AA%97%E5%8F%A3/&quot;&gt;创建一个chrome独立APP窗口&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAchrome%E7%8B%AC%E7%AB%8BAPP%E7%AA%97%E5%8F%A3/&quot;&gt;创建一个chrome独立APP窗口&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode%20%E7%BC%96%E7%A0%81%E6%8A%80%E5%B7%A7/&quot;&gt;leetcode 编码技巧&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -836,12 +836,12 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/&quot;&gt;CDN 带宽控制的几种方法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142052%20%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;20240415142052 原神挺好玩&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/About%20Me/&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/101b1%20obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;101b1 obsidian-things3-today插件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/epoll%E7%9A%84%E8%BE%B9%E7%BC%98%E8%A7%A6%E5%8F%91%E5%92%8C%E6%B0%B4%E5%B9%B3%E8%A7%A6%E5%8F%91/&quot;&gt;epoll的边缘触发和水平触发&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/obsidian/obsidian%20%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%94%AF%E6%8C%81%E7%9A%84ICON/&quot;&gt;obsidian 开发过程支持的ICON&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/obsidian/obsidian%20%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%94%AF%E6%8C%81%E7%9A%84ICON/&quot;&gt;obsidian 开发过程支持的ICON&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/DoD/&quot;&gt;DoD&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95%E6%96%B0%E5%B9%B4%E7%A5%9D%E7%A6%8F%E8%AF%AD/&quot;&gt;算法新年祝福语&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -856,7 +856,7 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;p&gt;2023-10:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%8A%80%E5%B7%A7/&quot;&gt;搜索引擎技巧&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/202404202259%20Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;202404202259 Things 工作流&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/202404202259%20Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;202404202259 Things 工作流&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -880,7 +880,7 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;li&gt;
 &lt;p&gt;2023-05:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -896,7 +896,7 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode-1014.%20%E6%9C%80%E4%BD%B3%E8%A7%82%E5%85%89%E7%BB%84%E5%90%88/&quot;&gt;leetcode-1014. 最佳观光组合&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode-53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/&quot;&gt;leetcode-53. 最大子数组和&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/leetcode-1137%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137第 N 个泰波那契数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/mac/mac-%E5%90%88%E4%B8%8A%E7%9B%96%E5%AD%90%E4%B8%8D%E6%96%AD%E7%BD%91/&quot;&gt;mac-合上盖子不断网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/mac/mac-%E5%90%88%E4%B8%8A%E7%9B%96%E5%AD%90%E4%B8%8D%E6%96%AD%E7%BD%91/&quot;&gt;mac-合上盖子不断网&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -909,20 +909,20 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;li&gt;
 &lt;p&gt;2022-12:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/vim%E6%98%BE%E7%A4%BA%E5%88%97%E5%88%86%E9%9A%94%E7%AC%A6/&quot;&gt;vim显示列分隔符&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/vim%E6%98%BE%E7%A4%BA%E5%88%97%E5%88%86%E9%9A%94%E7%AC%A6/&quot;&gt;vim显示列分隔符&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/mysql5.7json%E6%94%AF%E6%8C%81/&quot;&gt;mysql5.7json支持&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;2022-11:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/mac/mac-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE/&quot;&gt;mac-自定义快捷键&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/mac/mac-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE/&quot;&gt;mac-自定义快捷键&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;2022-09:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/obsidian/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/obsidian/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -953,7 +953,7 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;li&gt;
 &lt;p&gt;2021-12:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/mac/mac-%E9%BC%A0%E9%A1%BB%E7%AE%A1-%E4%BD%BF%E7%94%A8lua%E8%84%9A%E6%9C%AC/&quot;&gt;mac-鼠须管-使用lua脚本&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/mac/mac-%E9%BC%A0%E9%A1%BB%E7%AE%A1-%E4%BD%BF%E7%94%A8lua%E8%84%9A%E6%9C%AC/&quot;&gt;mac-鼠须管-使用lua脚本&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -1024,7 +1024,7 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;p&gt;2020-11:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202011281031%20-%20%E5%AE%89%E8%A3%85%20rdbtools%20%E5%B7%A5%E5%85%B7/&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/phpstorm%20%E4%B8%A4%E4%B8%8B%20ctrl%20%E5%8F%AF%E4%BB%A5%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F/&quot;&gt;phpstorm 两下 ctrl 可以快速运行程序&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/phpstorm%20%E4%B8%A4%E4%B8%8B%20ctrl%20%E5%8F%AF%E4%BB%A5%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F/&quot;&gt;phpstorm 两下 ctrl 可以快速运行程序&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
@@ -1049,7 +1049,7 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
                 文件描述符
                 
             </title>
-            <updated>2024-05-02T04:58:21.000Z</updated>
+            <updated>2024-09-24T11:02:21.000Z</updated>
             <id>https://wudanyang6.github.io//card/文件描述符/</id>
             <content type="html">
                 &lt;h1 id=&quot;文件描述符&quot; tabindex=&quot;-1&quot;&gt;文件描述符&lt;/h1&gt;
@@ -1058,7 +1058,7 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;p&gt;当打开一个现有文件或者创建一个新文件时，内核向进程返回一个&lt;code&gt;文件描述符&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;文件描述符&lt;/code&gt;是跟&lt;code&gt;进程&lt;/code&gt;相关联的。&lt;/p&gt;
 &lt;p&gt;按照惯例，&lt;code&gt;UNIX&lt;/code&gt; 系统将 &lt;code&gt;fd 0&lt;/code&gt; 对应进程的标准输入， &lt;code&gt;fd 1&lt;/code&gt; 对应进程的标准输出， &lt;code&gt;fd 2&lt;/code&gt; 对应进程的标准错误。&lt;/p&gt;
-&lt;h1 id=&quot;系统调用中的文件描述符&quot; tabindex=&quot;-1&quot;&gt;系统调用中的文件描述符&lt;/h1&gt;
+&lt;h2 id=&quot;系统调用中的文件描述符&quot; tabindex=&quot;-1&quot;&gt;系统调用中的文件描述符&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;UNIX&lt;/code&gt; 系统中，一切皆文件，所以一切资源都可以使用文件描述符进程引用。&lt;/p&gt;
 &lt;p&gt;以 &lt;code&gt;open&lt;/code&gt; 系统调用为例&lt;/p&gt;
 &lt;p&gt;使用 &lt;code&gt;man 2 open&lt;/code&gt; 查看系统 &lt;code&gt;man&lt;/code&gt; 手册&lt;/p&gt;
@@ -1251,17 +1251,17 @@ IPI5:       198       2356       IRQ work interrupts
                 模拟软中断特别多的情况
                 
             </title>
-            <updated>2024-09-20T13:18:51.000Z</updated>
+            <updated>2024-09-26T05:20:33.000Z</updated>
             <id>https://wudanyang6.github.io//card/操作系统/CPU性能优化/模拟软中断特别多的情况/</id>
             <content type="html">
                 &lt;h1 id=&quot;模拟软中断特别多的情况&quot; tabindex=&quot;-1&quot;&gt;模拟软中断特别多的情况&lt;/h1&gt;
-&lt;h2 id=&quot;1&quot; tabindex=&quot;-1&quot;&gt;1) 客户端请求&lt;/h2&gt;
+&lt;h2 id=&quot;1&quot; tabindex=&quot;-1&quot;&gt;1 客户端请求&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;sudo hping -S -p 8080 -i u100 192.168.135.130
 
 # 如果上面的命令没有显著提高软中断的占用率，可以将 -i 间隔取消，加上 --flood 忽略回复消息
 sudo hping -S -p 8080 --flood 192.168.135.130
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;2) 服务端情况&lt;/h2&gt;
+&lt;h2 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;2 服务端情况&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;watch -d cat /proc/softirqs
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;观察服务端软中断情况&lt;/p&gt;
@@ -1312,12 +1312,12 @@ while true;do stress -t 1 -d 1 2&amp;gt;&amp;amp;1 ;done
                 linux-perf
                 
             </title>
-            <updated>2024-09-19T13:34:26.000Z</updated>
+            <updated>2024-09-26T05:18:48.000Z</updated>
             <id>https://wudanyang6.github.io//card/操作系统/CPU性能优化/linux-perf/</id>
             <content type="html">
                 &lt;h1 id=&quot;linux-perf&quot; tabindex=&quot;-1&quot;&gt;linux-perf&lt;/h1&gt;
 &lt;p&gt;linux 下的性能分析工具&lt;/p&gt;
-&lt;h2 id=&quot;1-perf-top&quot; tabindex=&quot;-1&quot;&gt;1) perf top&lt;/h2&gt;
+&lt;h2 id=&quot;1-perf-top&quot; tabindex=&quot;-1&quot;&gt;1 perf top&lt;/h2&gt;
 &lt;p&gt;显示占用 cpu 时钟最多的函数或指令，可以用来查找热点函数&lt;br /&gt;
 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020211224200819.png&quot; alt=&quot;Pasted image 20211224200819.png|800&quot; width=&quot;800px&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;表头四个字段：&lt;/p&gt;
@@ -1327,14 +1327,14 @@ while true;do stress -t 1 -d 1 2&amp;gt;&amp;amp;1 ;done
 &lt;li&gt;Object 动态对象类型，&lt;code&gt;[.]&lt;/code&gt; 代表用户空间可执行程序、动态链接库，&lt;code&gt;[k]&lt;/code&gt; 代表内核空间&lt;/li&gt;
 &lt;li&gt;Symbol 符号名，函数名。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;2) 常用命令&lt;/h2&gt;
+&lt;h2 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;2 常用命令&lt;/h2&gt;
 &lt;p&gt;记录当前状态&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;perf record -a -g -- sleep 30
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;产出一份图标报告&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;perf report -g graph,0
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;3&quot; tabindex=&quot;-1&quot;&gt;3) 参考&lt;/h2&gt;
+&lt;h2 id=&quot;3&quot; tabindex=&quot;-1&quot;&gt;3 参考&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://time.geekbang.org/column/article/70476&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://time.geekbang.org/column/article/70476&lt;/a&gt;&lt;/p&gt;
 
             </content>
@@ -1437,7 +1437,7 @@ load average: 0.62, 0.72, 0.76
                 CPU 使用率
                 
             </title>
-            <updated>2024-09-20T13:16:31.000Z</updated>
+            <updated>2024-09-25T10:51:53.000Z</updated>
             <id>https://wudanyang6.github.io//card/操作系统/CPU性能优化/CPU 使用率/</id>
             <content type="html">
                 &lt;h1 id=&quot;cpu&quot; tabindex=&quot;-1&quot;&gt;CPU 使用率&lt;/h1&gt;
@@ -1508,7 +1508,7 @@ that the system (&amp;quot;cpu&amp;quot; line) or the specific CPU&lt;br /&gt;
 &lt;li&gt;&lt;code&gt;htop&lt;/code&gt; 命令 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240919184348.png&quot; alt=&quot;Pasted image 20240919184348.png|600&quot; width=&quot;600px&quot; /&gt;&lt;br /&gt;
 优势：可以响应鼠标点击事件，滚动查看，查看进程树&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;vmstat 1&lt;/code&gt;  每秒输出一次 &lt;code&gt;vmstat reports information about processes, memory, paging, block IO, traps, disks and cpu activity&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mpstat&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mpstat&lt;/code&gt; 或者 &lt;code&gt;mpstat -u 1 10&lt;/code&gt; 获取一段时间内的CPU使用率&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;a class=&quot;markdown-embed-link&quot; href=&quot;https://wudanyang6.github.io/card/mpstat/&quot; aria-label=&quot;Open link&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; class=&quot;svg-icon lucide-link&quot;&gt;&lt;path d=&quot;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
 &lt;h1 id=&quot;mpstat&quot; tabindex=&quot;-1&quot;&gt;mpstat命令输出&lt;/h1&gt;
@@ -1658,18 +1658,21 @@ vmstat 5
         </entry>
         <entry>
             <title>
-                202409121624 Linux 性能优化-CPU
+                202409121624 Linux 性能分析优化-CPU
                 
             </title>
-            <updated>2024-09-20T13:15:29.000Z</updated>
-            <id>https://wudanyang6.github.io//card/操作系统/CPU性能优化/202409121624 Linux 性能优化-CPU/</id>
+            <updated>2024-09-25T10:45:14.000Z</updated>
+            <id>https://wudanyang6.github.io//card/操作系统/CPU性能优化/202409121624 Linux 性能分析优化-CPU/</id>
             <content type="html">
-                &lt;h1 id=&quot;202409121624-linux-cpu&quot; tabindex=&quot;-1&quot;&gt;202409121624 Linux 性能优化-CPU&lt;/h1&gt;
+                &lt;h1 id=&quot;202409121624-linux-cpu&quot; tabindex=&quot;-1&quot;&gt;202409121624 Linux 性能分析优化-CPU&lt;/h1&gt;
 &lt;h2 id=&quot;1-linux&quot; tabindex=&quot;-1&quot;&gt;1 Linux 系统概览&lt;/h2&gt;
-&lt;h3 id=&quot;1-1-linux&quot; tabindex=&quot;-1&quot;&gt;1.1 Linux 内核概览&lt;/h3&gt;
+&lt;h3 id=&quot;1-1-cpu&quot; tabindex=&quot;-1&quot;&gt;1.1 CPU 概览&lt;/h3&gt;
+&lt;p&gt;冯诺依曼结构：&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240925184443.png&quot; alt=&quot;Pasted image 20240925184443.png|600&quot; width=&quot;600px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;CPU大概内部结构：&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240920211004.png&quot; alt=&quot;Pasted image 20240920211004.png|600&quot; width=&quot;600px&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-2-linux&quot; tabindex=&quot;-1&quot;&gt;1.2 Linux 内核概览&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240919000041.png&quot; alt=&quot;Pasted image 20240919000041.png&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;1-2-cpu&quot; tabindex=&quot;-1&quot;&gt;1.2 CPU 概览&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240920211004.png&quot; alt=&quot;Pasted image 20240920211004.png|600&quot; width=&quot;600px&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;2 基本概念&lt;/h2&gt;
 &lt;h3 id=&quot;2-1&quot; tabindex=&quot;-1&quot;&gt;2.1 平均负载&lt;/h3&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/CPU%20%E5%B9%B3%E5%9D%87%E8%B4%9F%E8%BD%BD/&quot;&gt;CPU 平均负载&lt;/a&gt;&lt;/p&gt;
@@ -1735,7 +1738,7 @@ vmstat 5
 &lt;/ul&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/操作系统/CPU性能优化/202409121624 Linux 性能优化-CPU/" />
+            <link href="https://wudanyang6.github.io//card/操作系统/CPU性能优化/202409121624 Linux 性能分析优化-CPU/" />
         </entry>
         <entry>
             <title>
@@ -2102,7 +2105,7 @@ Enables or disables logging of ngx_http_rewrite_module module directives process
                 202011192023 - 卡片盒笔记法的基本元素
                 
             </title>
-            <updated>2024-04-17T14:48:01.000Z</updated>
+            <updated>2024-09-24T11:00:29.000Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011192023&quot; tabindex=&quot;-1&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/h1&gt;
@@ -2373,14 +2376,14 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
                 ubuntu 树莓派启动时配置网络
                 
             </title>
-            <updated>2024-08-19T12:32:18.000Z</updated>
+            <updated>2024-09-24T10:53:22.000Z</updated>
             <id>https://wudanyang6.github.io//card/ubuntu 树莓派启动时配置网络/</id>
             <content type="html">
                 &lt;h1 id=&quot;ubuntu&quot; tabindex=&quot;-1&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/h1&gt;
 &lt;p&gt;树莓派现在可以安装很多操作系统，其中 &lt;code&gt;ubuntu&lt;/code&gt; 也提供了树莓派版本，因为对 &lt;code&gt;ubuntu&lt;/code&gt; 更加熟悉，所以就往 &lt;code&gt;SD&lt;/code&gt; 卡中烧录了 &lt;code&gt;ubuntu&lt;/code&gt; 的 &lt;code&gt;20.04 lts 64位&lt;/code&gt; 版本。&lt;a href=&quot;https://www.raspberrypi.org/software/operating-systems/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;这里有可供选择的操作系统。&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;简单提一嘴烧录操作系统到 &lt;code&gt;SD&lt;/code&gt; 卡上面的方法，树莓派提供了一个&lt;a href=&quot;https://www.raspberrypi.org/software/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;傻瓜式的软件&lt;/a&gt;给大家使用，直接打开之后选择系统，就可以烧录了，烧录过程大概会有几分钟。&lt;/p&gt;
 &lt;p&gt;烧录完成之后，如果你按照树莓派官网的教程进行操作，肯定都行不通，因为树莓派的官方操作系统 &lt;code&gt;Raspberry Pi OS&lt;/code&gt; 和 &lt;code&gt;Ubuntu For Raspberry&lt;/code&gt; 上面的网络配置方式完全不一样。&lt;/p&gt;
-&lt;h2 id=&quot;ubuntu-1&quot; tabindex=&quot;-1&quot;&gt;安装了 ubuntu 的树莓派怎么配置网络？&lt;/h2&gt;
+&lt;h2 id=&quot;1-ubuntu&quot; tabindex=&quot;-1&quot;&gt;1 安装了 ubuntu 的树莓派怎么配置网络？&lt;/h2&gt;
 &lt;p&gt;打开你烧录好的 &lt;code&gt;SD&lt;/code&gt; 卡&lt;/p&gt;
 &lt;p&gt;找到 &lt;code&gt;network-config&lt;/code&gt; 文件&lt;/p&gt;
 &lt;p&gt;写入如下配置：&lt;/p&gt;
@@ -2412,7 +2415,7 @@ Maybe someone has attached this process with gdb.&lt;/p&gt;
 &lt;p&gt;Note: During the first boot, your Raspberry Pi will try to connect to this network. It will fail the first time around. Simply reboot &lt;code&gt;sudo reboot&lt;/code&gt; and it will work.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;引用&lt;code&gt;ubuntu&lt;/code&gt;官网的一段话，第一次会失败，直接重启，&lt;strong&gt;第二次就能连上了&lt;/strong&gt;。&lt;/p&gt;
-&lt;h2 id=&quot;开启网络之后，如何登录树莓派？&quot; tabindex=&quot;-1&quot;&gt;开启网络之后，如何登录树莓派？&lt;/h2&gt;
+&lt;h2 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;2 开启网络之后，如何登录树莓派？&lt;/h2&gt;
 &lt;p&gt;安装好之后默认用户名和密码都是 &lt;code&gt;ubuntu&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ssh ubuntu@&amp;lt;raspberry ip&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;ip 地址的获取这里列举几种方法，不详细介绍：&lt;/p&gt;
@@ -4387,7 +4390,7 @@ $zip-&amp;gt;close(); //关闭压缩包
 &lt;h3 id=&quot;do-d-do-d&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;开发完成-DoD&lt;/a&gt;&lt;/h3&gt;
 &lt;h3 id=&quot;card-do-d-do-d-1&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;需求完成-DoD&lt;/a&gt;&lt;/h3&gt;
 &lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
-&lt;h3 id=&quot;card-101-tools-10x-10x&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;card-101-10x-10x&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/&quot;&gt;10x程序员工作法&lt;/a&gt;&lt;/h3&gt;
 &lt;h3 id=&quot;a-href-https-learn-lianglianglee-com-e4-b8-93-e6-a0-8-f-10x-e7-a8-8-b-e5-ba-8-f-e5-91-98-e5-b7-a5-e4-bd-9-c-e6-b3-95-03-20-do-d-e7-9-a-84-e4-bb-b7-e5-80-bc-ef-bc-9-a-e4-bd-a0-e5-ae-8-c-e6-88-90-e4-ba-86-e5-b7-a5-e4-bd-9-c-ef-bc-8-c-e4-b8-ba-e4-bb-80-e4-b9-88-e4-bb-96-e4-bb-ac-e8-bf-98-e4-b8-8-d-e6-bb-a1-e6-84-8-f-ef-bc-9-f-md-target-blank-class-external-link-https-learn-lianglianglee-com-10x-03-do-d-md-a&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/03%20DoD%E7%9A%84%E4%BB%B7%E5%80%BC%EF%BC%9A%E4%BD%A0%E5%AE%8C%E6%88%90%E4%BA%86%E5%B7%A5%E4%BD%9C%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BB%96%E4%BB%AC%E8%BF%98%E4%B8%8D%E6%BB%A1%E6%84%8F%EF%BC%9F.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://learn.lianglianglee.com/专栏/10x程序员工作法/03 DoD的价值：你完成了工作，为什么他们还不满意？.md&lt;/a&gt;&lt;/h3&gt;
 
             </content>
@@ -4558,13 +4561,13 @@ You have to make sure that all flag definitions happen before calling flag.Parse
         </entry>
         <entry>
             <title>
-                202405081331 rime 如何使用命令行执行同步操作
+                202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作
                 
             </title>
-            <updated>2024-05-08T05:36:57.000Z</updated>
-            <id>https://wudanyang6.github.io//card/202405081331 rime 如何使用命令行执行同步操作/</id>
+            <updated>2024-09-25T16:07:16.000Z</updated>
+            <id>https://wudanyang6.github.io//card/202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作/</id>
             <content type="html">
-                &lt;h1 id=&quot;202405081331-rime&quot; tabindex=&quot;-1&quot;&gt;202405081331 rime 如何使用命令行执行同步操作&lt;/h1&gt;
+                &lt;h1 id=&quot;202405081331-mac-rime&quot; tabindex=&quot;-1&quot;&gt;202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作&lt;/h1&gt;
 &lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;/Library/Input&#92; Methods/Squirrel.app/Contents/MacOS/Squirrel --sync
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;配置一个定时任务：&lt;/p&gt;
@@ -4573,7 +4576,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
 &lt;/code&gt;&lt;/pre&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/202405081331 rime 如何使用命令行执行同步操作/" />
+            <link href="https://wudanyang6.github.io//card/202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作/" />
         </entry>
         <entry>
             <title>
@@ -4669,7 +4672,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240418124319.png&quot; alt=&quot;Pasted image 20240418124319.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;最终效果：&lt;br /&gt;
 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240418124550.png&quot; alt=&quot;Pasted image 20240418124550.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;obsidian 不会到前台占用你的注意力 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/obsidian/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;obsidian 不会到前台占用你的注意力 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/obsidian/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/202404181240 快捷指令-记录今天的事情 obsidian/" />
@@ -4683,7 +4686,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
             <id>https://wudanyang6.github.io//card/202404181228 使用 open --background 的形式打开 obsidian 不够轻便/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404181228-open-background-obsidian&quot; tabindex=&quot;-1&quot;&gt;202404181228 使用 open --background 的形式打开 obsidian 不够轻便&lt;/h1&gt;
-&lt;p&gt;mac 的快捷指令执行太慢，所以 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/obsidian/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt; 虽然能够实现后台记录日志，但是对流程太过打扰，所以我现在使用了 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Raycast&lt;/a&gt; 的 floating note 进行简单记录一些一闪而过的想法，或者使用 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Things&lt;/a&gt; 的快速捕获功能进行记录&lt;/p&gt;
+&lt;p&gt;mac 的快捷指令执行太慢，所以 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/obsidian/%E4%B8%8D%E6%89%93%E5%BC%80obsidian%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E8%AE%B0%E5%BD%95%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6/&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/a&gt; 虽然能够实现后台记录日志，但是对流程太过打扰，所以我现在使用了 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Raycast&lt;/a&gt; 的 floating note 进行简单记录一些一闪而过的想法，或者使用 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;Things&lt;/a&gt; 的快速捕获功能进行记录&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/202404181228 使用 open --background 的形式打开 obsidian 不够轻便/" />
@@ -4973,9 +4976,9 @@ sudo python setup.py install
                 
             </title>
             <updated>2024-05-14T06:28:08.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/创建一个chrome独立APP窗口/</id>
+            <id>https://wudanyang6.github.io//card/101 工具/创建一个chrome独立APP窗口/</id>
             <content type="html">
-                &lt;h1 id=&quot;chrome-app&quot; tabindex=&quot;-1&quot;&gt;创建一个 chrome 独立 APP 窗口&lt;/h1&gt;
+                &lt;h1 id=&quot;chrome-app&quot; tabindex=&quot;-1&quot;&gt;创建一个chrome独立APP窗口&lt;/h1&gt;
 &lt;p&gt;创建出的窗口本质还是一个 chrome 网页，但是比较方便使用&lt;/p&gt;
 &lt;p&gt;按步骤操作：&lt;/p&gt;
 &lt;ol&gt;
@@ -4993,7 +4996,7 @@ sudo python setup.py install
 &lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/创建一个chrome独立APP窗口/" />
+            <link href="https://wudanyang6.github.io//card/101 工具/创建一个chrome独立APP窗口/" />
         </entry>
         <entry>
             <title>
@@ -5001,7 +5004,7 @@ sudo python setup.py install
                 
             </title>
             <updated>2024-03-19T03:23:42.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/vscode vim 状态下显示提示/</id>
+            <id>https://wudanyang6.github.io//card/101 工具/vscode vim 状态下显示提示/</id>
             <content type="html">
                 &lt;h1 id=&quot;vscode-vim&quot; tabindex=&quot;-1&quot;&gt;vscode vim 状态下显示提示&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/32279384/keyboard-shortcut-to-show-hover-tooltip#:~:text=The%20trick%20is%20timing.,CMD%2FCtrl%20%2B%20press%20K.&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;visual studio code - Keyboard shortcut to show hover tooltip - Stack Overflow&lt;/a&gt;&lt;/p&gt;
@@ -5012,7 +5015,7 @@ sudo python setup.py install
 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240319112212.png&quot; alt=&quot;Pasted image 20240319112212.png&quot; /&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/vscode vim 状态下显示提示/" />
+            <link href="https://wudanyang6.github.io//card/101 工具/vscode vim 状态下显示提示/" />
         </entry>
         <entry>
             <title>
@@ -5020,7 +5023,7 @@ sudo python setup.py install
                 
             </title>
             <updated>2024-04-18T08:06:19.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/vim显示列分隔符/</id>
+            <id>https://wudanyang6.github.io//card/101 工具/vim显示列分隔符/</id>
             <content type="html">
                 &lt;h1 id=&quot;vim&quot; tabindex=&quot;-1&quot;&gt;vim显示列分隔符&lt;/h1&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;:set list
@@ -5029,7 +5032,7 @@ sudo python setup.py install
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020221207155541.png&quot; alt=&quot;Pasted image 20221207155541.png&quot; /&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/vim显示列分隔符/" />
+            <link href="https://wudanyang6.github.io//card/101 工具/vim显示列分隔符/" />
         </entry>
         <entry>
             <title>
@@ -5037,7 +5040,7 @@ sudo python setup.py install
                 
             </title>
             <updated>2024-03-19T03:19:05.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/phpstorm 两下 ctrl 可以快速运行程序/</id>
+            <id>https://wudanyang6.github.io//card/101 工具/phpstorm 两下 ctrl 可以快速运行程序/</id>
             <content type="html">
                 &lt;h1 id=&quot;phpstorm-ctrl&quot; tabindex=&quot;-1&quot;&gt;phpstorm 两下 ctrl 可以快速运行程序&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020201127112108.png&quot; alt=&quot;Pasted image 20201127112108.png&quot; /&gt;&lt;/p&gt;
@@ -5048,7 +5051,7 @@ sudo python setup.py install
 &lt;p&gt;在搜索栏中输入你想运行的程序，上下键选中，然后 &lt;code&gt;enter&lt;/code&gt; 即可运行&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/phpstorm 两下 ctrl 可以快速运行程序/" />
+            <link href="https://wudanyang6.github.io//card/101 工具/phpstorm 两下 ctrl 可以快速运行程序/" />
         </entry>
         <entry>
             <title>
@@ -5056,9 +5059,9 @@ sudo python setup.py install
                 
             </title>
             <updated>2024-05-14T06:24:58.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/obsidian/不打开obsidian的情况下记录当前事件/</id>
+            <id>https://wudanyang6.github.io//card/101 工具/obsidian/不打开obsidian的情况下记录当前事件/</id>
             <content type="html">
-                &lt;h1 id=&quot;obsidian&quot; tabindex=&quot;-1&quot;&gt;不打开 obsidian 的情况下记录当前事件&lt;/h1&gt;
+                &lt;h1 id=&quot;obsidian&quot; tabindex=&quot;-1&quot;&gt;不打开obsidian的情况下记录当前事件&lt;/h1&gt;
 &lt;p&gt;将输入设置成你想附带的文本，传入内容改成“作为参数”&lt;/p&gt;
 &lt;p&gt;加上 &lt;code&gt;open --background &amp;quot;$1&amp;quot;&lt;/code&gt; 即可实现在不将 &lt;code&gt;obsidian&lt;/code&gt; 放到前台的情况下记录日志。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020220925234214.png&quot; alt=&quot;Pasted image 20220925234214.png&quot; /&gt;&lt;/p&gt;
@@ -5067,7 +5070,7 @@ sudo python setup.py install
 &lt;p&gt;&lt;a href=&quot;https://forum.obsidian.md/t/leave-obsidian-in-background-when-making-uri-call/34091&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Leave Obsidian in background when making URI call? - Developers &amp;amp; API - Obsidian Forum&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/obsidian/不打开obsidian的情况下记录当前事件/" />
+            <link href="https://wudanyang6.github.io//card/101 工具/obsidian/不打开obsidian的情况下记录当前事件/" />
         </entry>
         <entry>
             <title>
@@ -5075,7 +5078,7 @@ sudo python setup.py install
                 
             </title>
             <updated>2024-02-01T07:25:33.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/obsidian/obsidian 开发过程支持的ICON/</id>
+            <id>https://wudanyang6.github.io//card/101 工具/obsidian/obsidian 开发过程支持的ICON/</id>
             <content type="html">
                 &lt;h1 id=&quot;obsidian-icon&quot; tabindex=&quot;-1&quot;&gt;obsidian 开发过程支持的ICON&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -5235,7 +5238,32 @@ sudo python setup.py install
 &lt;h2 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h2&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/obsidian/obsidian 开发过程支持的ICON/" />
+            <link href="https://wudanyang6.github.io//card/101 工具/obsidian/obsidian 开发过程支持的ICON/" />
+        </entry>
+        <entry>
+            <title>
+                obsidian-things3-today插件
+                
+            </title>
+            <updated>2024-09-26T05:37:25.000Z</updated>
+            <id>https://wudanyang6.github.io//card/101 工具/obsidian-things3-today插件/</id>
+            <content type="html">
+                &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
+&lt;p&gt;插件： &lt;a href=&quot;https://obsidian.md/plugins?id=things3-today&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Plugin - Things3 Today&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;把之前的插件重新搞了搞，把乱七八糟的东西去掉了，然后提交了obsidian插件库&lt;/li&gt;
+&lt;li&gt;review 审核通过： &lt;a href=&quot;https://github.com/obsidianmd/obsidian-releases/pull/2997&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/obsidianmd/obsidian-releases/pull/2997&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;新录了一个gif：见github的readme，图中可以看到和things3的Today列表联动还算是顺畅&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/wudanyang6/obsidian-things3-today?tab=readme-ov-file&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;github - wudanyang6/obsidian-things3-today&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;跟着操作手册在论坛上面发了分享贴：
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/101 工具/obsidian-things3-today插件/" />
         </entry>
         <entry>
             <title>
@@ -5243,7 +5271,7 @@ sudo python setup.py install
                 
             </title>
             <updated>2024-06-24T09:06:14.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/mac/mac-鼠须管-使用lua脚本/</id>
+            <id>https://wudanyang6.github.io//card/101 工具/mac/mac-鼠须管-使用lua脚本/</id>
             <content type="html">
                 &lt;h1 id=&quot;mac-lua&quot; tabindex=&quot;-1&quot;&gt;mac-鼠须管-使用lua脚本&lt;/h1&gt;
 &lt;ol&gt;
@@ -5320,7 +5348,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;p&gt;&lt;a href=&quot;https://github.com/hchunhui/librime-lua&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/hchunhui/librime-lua&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/mac/mac-鼠须管-使用lua脚本/" />
+            <link href="https://wudanyang6.github.io//card/101 工具/mac/mac-鼠须管-使用lua脚本/" />
         </entry>
         <entry>
             <title>
@@ -5328,7 +5356,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 
             </title>
             <updated>2024-02-01T05:14:57.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/mac/mac-自定义快捷键/</id>
+            <id>https://wudanyang6.github.io//card/101 工具/mac/mac-自定义快捷键/</id>
             <content type="html">
                 &lt;h1 id=&quot;mac&quot; tabindex=&quot;-1&quot;&gt;mac-自定义快捷键&lt;/h1&gt;
 &lt;h2 id=&quot;内容&quot; tabindex=&quot;-1&quot;&gt;内容&lt;/h2&gt;
@@ -5336,7 +5364,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;h2 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h2&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/mac/mac-自定义快捷键/" />
+            <link href="https://wudanyang6.github.io//card/101 工具/mac/mac-自定义快捷键/" />
         </entry>
         <entry>
             <title>
@@ -5344,14 +5372,14 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 
             </title>
             <updated>2024-02-01T15:06:29.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/mac/mac-合上盖子不断网/</id>
+            <id>https://wudanyang6.github.io//card/101 工具/mac/mac-合上盖子不断网/</id>
             <content type="html">
                 &lt;h1 id=&quot;mac&quot; tabindex=&quot;-1&quot;&gt;mac-合上盖子不断网&lt;/h1&gt;
 &lt;p&gt;将电池的设置 【唤醒以供网络访问】改成【始终】就会生效了&lt;br /&gt;
 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020230203154729.png&quot; alt=&quot;Pasted image 20230203154729.png&quot; /&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/mac/mac-合上盖子不断网/" />
+            <link href="https://wudanyang6.github.io//card/101 工具/mac/mac-合上盖子不断网/" />
         </entry>
         <entry>
             <title>
@@ -5359,7 +5387,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 
             </title>
             <updated>2024-04-20T16:12:25.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/202404202259 Things 工作流/</id>
+            <id>https://wudanyang6.github.io//card/101 工具/202404202259 Things 工作流/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404202259-things&quot; tabindex=&quot;-1&quot;&gt;202404202259 Things 工作流&lt;/h1&gt;
 &lt;ol&gt;
@@ -5377,11 +5405,11 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;/li&gt;
 &lt;li&gt;根据时间，选取任务进行处理，打开 &lt;code&gt;Session&lt;/code&gt; 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  &lt;img src=&quot;https://wudanyang6.github.io/img/user/card/Pasted%20image%2020231107224028.png&quot; alt=&quot;Pasted image 20231107224028.png&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;为了让Things工作流更顺畅，我做了一个obsidian插件： &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20Tools/101b1%20obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;101b1 obsidian-things3-today插件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为了让Things工作流更顺畅，我做了一个obsidian插件： &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/101%20%E5%B7%A5%E5%85%B7/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3/&quot;&gt;202404191548 GTD的主要思想&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/202404202259 Things 工作流/" />
+            <link href="https://wudanyang6.github.io//card/101 工具/202404202259 Things 工作流/" />
         </entry>
         <entry>
             <title>
@@ -5389,7 +5417,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 
             </title>
             <updated>2024-04-19T08:32:40.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/10x程序员工作法/</id>
+            <id>https://wudanyang6.github.io//card/101 工具/10x程序员工作法/</id>
             <content type="html">
                 &lt;h1 id=&quot;10x&quot; tabindex=&quot;-1&quot;&gt;10x程序员工作法&lt;/h1&gt;
 &lt;h2 id=&quot;content&quot; tabindex=&quot;-1&quot;&gt;Content&lt;/h2&gt;
@@ -5517,27 +5545,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;h3 id=&quot;a-href-https-learn-lianglianglee-com-e4-b8-93-e6-a0-8-f-10x-e7-a8-8-b-e5-ba-8-f-e5-91-98-e5-b7-a5-e4-bd-9-c-e6-b3-95-e6-80-bb-e5-a4-8-d-e4-b9-a0-20-e9-87-8-d-e6-96-b0-e6-9-d-a5-e2-80-9-c-e7-9-c-8-b-e4-b9-a6-e2-80-9-d-md-target-blank-class-external-link-https-learn-lianglianglee-com-10x-md-a&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/10x%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B7%A5%E4%BD%9C%E6%B3%95/%E6%80%BB%E5%A4%8D%E4%B9%A0%20%E9%87%8D%E6%96%B0%E6%9D%A5%E2%80%9C%E7%9C%8B%E4%B9%A6%E2%80%9D.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://learn.lianglianglee.com/专栏/10x程序员工作法/总复习 重新来“看书”.md&lt;/a&gt;&lt;/h3&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/10x程序员工作法/" />
-        </entry>
-        <entry>
-            <title>
-                101b1 obsidian-things3-today插件
-                
-            </title>
-            <updated>2024-04-19T07:24:55.000Z</updated>
-            <id>https://wudanyang6.github.io//card/101 Tools/101b1 obsidian-things3-today插件/</id>
-            <content type="html">
-                &lt;h1 id=&quot;101b1-obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;101b1 obsidian-things3-today插件&lt;/h1&gt;
-&lt;p&gt;把之前的插件重新搞了搞，把乱七八糟的东西去掉了，然后提交了obsidian插件库&lt;/p&gt;
-&lt;p&gt;review 审核通过： &lt;a href=&quot;https://github.com/obsidianmd/obsidian-releases/pull/2997&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/obsidianmd/obsidian-releases/pull/2997&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;新录了一个gif：见github的readme，图中可以看到和things3的Today列表联动还算是顺畅&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/wudanyang6/obsidian-things3-today?tab=readme-ov-file&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;github - wudanyang6/obsidian-things3-today&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;跟着操作手册在论坛上面发了分享贴：&lt;br /&gt;
-&lt;a href=&quot;https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://forum.obsidian.md/t/new-plugin-things3-today-manage-todays-tasks-with-things3/77916&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;插件： &lt;a href=&quot;https://obsidian.md/plugins?id=things3-today&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Plugin - Things3 Today&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/101 Tools/101b1 obsidian-things3-today插件/" />
+            <link href="https://wudanyang6.github.io//card/101 工具/10x程序员工作法/" />
         </entry>
         <entry>
             <title>
@@ -5560,26 +5568,26 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 20240416231513 卡片盒笔记法
                 
             </title>
-            <updated>2024-07-02T15:48:12.000Z</updated>
+            <updated>2024-09-26T05:33:45.000Z</updated>
             <id>https://wudanyang6.github.io//000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240416231513&quot; tabindex=&quot;-1&quot;&gt;20240416231513 卡片盒笔记法&lt;/h1&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
             </content>
@@ -5590,13 +5598,14 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 202404151422 游戏
                 
             </title>
-            <updated>2024-07-02T15:48:40.000Z</updated>
+            <updated>2024-09-26T05:27:02.000Z</updated>
             <id>https://wudanyang6.github.io//000 Topic Index/202404151422 游戏/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404151422&quot; tabindex=&quot;-1&quot;&gt;202404151422 游戏&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415142052%20%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;20240415142052 原神挺好玩&lt;/a&gt; 不怎么玩了&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417125706%20%E9%83%A8%E8%90%BD%E5%86%B2%E7%AA%81/&quot;&gt;20240417125706 部落冲突&lt;/a&gt; 偶尔上线一次打一把&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417125706%20%E9%83%A8%E8%90%BD%E5%86%B2%E7%AA%81/&quot;&gt;20240417125706 部落冲突&lt;/a&gt; 已经不玩了&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;剑与远征：启程&lt;/a&gt; 正在玩，挂机游戏&lt;/li&gt;
 &lt;/ul&gt;
 
             </content>
