@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-08T13:23:37Z</updated>
+    <updated>2024-10-11T15:02:22Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -743,6 +743,12 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
                 &lt;h1 id=&quot;文章列表&quot; tabindex=&quot;-1&quot;&gt;文章列表&lt;/h1&gt;
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
 &lt;li&gt;
+&lt;p&gt;2024-10:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/journal/2024-10-11/&quot;&gt;2024-10-11&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;2024-09:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E5%BF%AB%E9%80%9F%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9FCPU%E7%93%B6%E9%A2%88%E7%9A%84%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/&quot;&gt;快速分析系统CPU瓶颈的命令工具&lt;/a&gt;&lt;/li&gt;
@@ -783,6 +789,12 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;2024-06:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/go-%20make%20%E5%92%8C%20new%20%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E5%8C%BA%E5%88%AB/&quot;&gt;go- make 和 new 关键字的区别&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;2024-05:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202405081331%20mac%20%E9%BC%A0%E9%A1%BB%E7%AE%A1%20-%20rime%20%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%89%A7%E8%A1%8C%E5%90%8C%E6%AD%A5%E6%93%8D%E4%BD%9C/&quot;&gt;202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作&lt;/a&gt;&lt;/li&gt;
@@ -801,8 +813,8 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240417103919%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A0%87%E9%A2%98%E6%98%AF%E5%AF%B9%E5%86%85%E5%AE%B9%E7%9A%84%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%8F%8F%E8%BF%B0/&quot;&gt;20240417103919 卡片盒笔记法的标题是对内容的一句话描述&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/%E7%AC%94%E8%AE%B0%E6%96%B9%E6%B3%95/20240416231513%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240416231513 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20Topic%20Index/202404151422%20%E6%B8%B8%E6%88%8F/&quot;&gt;202404151422 游戏&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/20240415183533%20%E5%93%B2%E5%AD%A6%E4%B9%A6%E5%8D%95/&quot;&gt;20240415183533 哲学书单&lt;/a&gt;&lt;/li&gt;
@@ -2507,7 +2519,7 @@ Average:        all      0.03      0.00      0.13      0.00      0.00     99.85
                 redis-rdb 文件分析
                 
             </title>
-            <updated>2024-04-19T07:52:00.000Z</updated>
+            <updated>2024-10-07T04:15:55.000Z</updated>
             <id>https://wudanyang6.github.io//card/redis-rdb 文件分析/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/202011281031%20-%20%E5%AE%89%E8%A3%85%20rdbtools%20%E5%B7%A5%E5%85%B7/&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/p&gt;
@@ -3895,6 +3907,37 @@ for j := 0; j &amp;lt; 4; j++ {
 &lt;div style=&quot;display: block; position: relative; width: 100%; height: 0px; --aspect-ratio:9/16; padding-bottom: calc(var(--aspect-ratio) * 100%);&quot;&gt;&lt;iframe src=&quot;https://zh.wikipedia.org/wiki/ISO_8601&quot; allow=&quot;fullscreen&quot; style=&quot;position: absolute; top: 0px; left: 0px; height: 100%; width: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
             </content>
             <link href="https://wudanyang6.github.io//card/iso-日期表示法/" />
+        </entry>
+        <entry>
+            <title>
+                go- make 和 new 关键字的区别
+                
+            </title>
+            <updated>2024-10-11T15:00:42.000Z</updated>
+            <id>https://wudanyang6.github.io//card/go/go- make 和 new 关键字的区别/</id>
+            <content type="html">
+                &lt;h1 id=&quot;go-make-new&quot; tabindex=&quot;-1&quot;&gt;go- make 和 new 关键字的区别&lt;/h1&gt;
+&lt;h2 id=&quot;1-make-new&quot; tabindex=&quot;-1&quot;&gt;1 make 和 new 关键字的区别&lt;/h2&gt;
+&lt;h3 id=&quot;1-1-new&quot; tabindex=&quot;-1&quot;&gt;1.1 new&lt;/h3&gt;
+&lt;p&gt;Go语言中 new 和 make 是两个内置函数，主要用来创建并分配类型的内存。在我们定义变量的时候，可能会觉得有点迷惑，不知道应该使用哪个函数来声明变量，其实他们的规则很简单，new 只分配内存，而 make 只能用于 slice、map 和 channel 的初始化&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-GO&quot;&gt;// The new built-in function allocates memory. The first argument is a type,
+// not a value, and the value returned is a pointer to a newly
+// allocated zero value of that type.
+func new(Type) *Type
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;new 关键字分配内存，返回指向此内存的指针，并且内存值为此类型的 &lt;a href=&quot;https://wudanyang6.github.io/card/go.md#%E9%9B%B6%E5%80%BC&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;code&gt;零值&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这就是 new 函数，它返回的永远是类型的指针，指针指向分配类型的内存地址。&lt;/p&gt;
+&lt;h3 id=&quot;1-2-make&quot; tabindex=&quot;-1&quot;&gt;1.2 make&lt;/h3&gt;
+&lt;p&gt;make 也是用于内存分配的，但是和 new 不同，它只用于 &lt;code&gt;chan&lt;/code&gt;、&lt;code&gt;map&lt;/code&gt; 以及 &lt;code&gt;slice&lt;/code&gt; 的内存创建，而且它返回的类型就是这三个类型本身，而不是他们的指针类型，因为这三种类型就是引用类型，所以就没有必要返回他们的指针了。&lt;/p&gt;
+&lt;p&gt;Go语言中的 new 和 make 主要区别如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;make&lt;/code&gt; 只能用来分配及初始化类型为 &lt;code&gt;slice&lt;/code&gt;、&lt;code&gt;map&lt;/code&gt;、&lt;code&gt;chan&lt;/code&gt; 的数据。&lt;code&gt;new&lt;/code&gt; 可以分配任意类型的数据；&lt;/li&gt;
+&lt;li&gt;new 分配返回的是指针，即类型 *Type。make 返回引用，即 Type；&lt;/li&gt;
+&lt;li&gt;new 分配的空间被清零。make 分配空间后，会进行初始化；&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/go/go- make 和 new 关键字的区别/" />
         </entry>
         <entry>
             <title>
@@ -5593,8 +5636,8 @@ date_translator = require(&amp;quot;date&amp;quot;)
             <updated>2024-09-11T09:07:12.000Z</updated>
             <id>https://wudanyang6.github.io//</id>
             <content type="html">
-                &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/IMG_2579.jpg&quot; alt=&quot;IMG_2579.jpg|300&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
+                &lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/IMG_2579.jpg&quot; alt=&quot;IMG_2579.jpg|300&quot; width=&quot;300px&quot; /&gt;&lt;/li&gt;
 &lt;li&gt;查看 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/&quot;&gt;文章列表&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;听首歌 &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;https://music.163.com/outchain/player?type=2&amp;id=2612654282&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -5614,8 +5657,8 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;ul class=&quot;block-language-dataview&quot;&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
@@ -5623,10 +5666,10 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
             </content>
@@ -5667,5 +5710,22 @@ date_translator = require(&amp;quot;date&amp;quot;)
 
             </content>
             <link href="https://wudanyang6.github.io//000 Topic Index/202404151418 哲学/" />
+        </entry>
+        <entry>
+            <title>
+                2024-10-11
+                
+            </title>
+            <updated>2024-10-11T13:35:19.000Z</updated>
+            <id>https://wudanyang6.github.io//journal/2024-10-11/</id>
+            <content type="html">
+                &lt;h1 id=&quot;2024-10-11&quot; tabindex=&quot;-1&quot;&gt;2024-10-11&lt;/h1&gt;
+&lt;p&gt;换了一个新的工作电脑 &lt;code&gt;Apple M3 16G&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;新电脑的刘海把很多图标都挡住了，太难受了，看网上教程，找了个软件 &lt;code&gt;Bartender&lt;/code&gt; 能够解决&lt;/p&gt;
+&lt;p&gt;带刘海屏的 Macbook, 状态栏图标多了被刘海挡住看不到了，咋办？ - V2EX: &lt;a href=&quot;https://v2ex.com/t/1019165#&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://v2ex.com/t/1019165#&lt;/a&gt;;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020241011213412.png&quot; alt=&quot;Pasted image 20241011213412.png&quot; /&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//journal/2024-10-11/" />
         </entry>
 </feed>
