@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-12T15:38:52Z</updated>
+    <updated>2024-10-12T15:45:59Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -2607,6 +2607,55 @@ date_translator = require(&amp;quot;date&amp;quot;)
 
             </content>
             <link href="https://wudanyang6.github.io//card/卡片盒笔记法/20240408201701 卡片盒笔记法/" />
+        </entry>
+        <entry>
+            <title>
+                202404081818 为什么建立笔记时要指明原因
+                
+            </title>
+            <updated>2024-10-12T08:59:25.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202404081818 为什么建立笔记时要指明原因/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202404081818&quot; tabindex=&quot;-1&quot;&gt;202404081818 为什么建立笔记时要指明原因&lt;/h1&gt;
+&lt;p&gt;建立笔记连接的同时，还需要指明原因，不然回顾的时候会感觉到困惑&lt;/p&gt;
+&lt;p&gt;比如：&lt;/p&gt;
+&lt;p&gt;什么是知识： &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在链接前面增加解释语言&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202404081818 为什么建立笔记时要指明原因/" />
+        </entry>
+        <entry>
+            <title>
+                202404081701 针对过时的想法怎么处理
+                
+            </title>
+            <updated>2024-10-12T15:45:15.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202404081701 针对过时的想法怎么处理/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202404081701&quot; tabindex=&quot;-1&quot;&gt;202404081701 针对过时的想法怎么处理&lt;/h1&gt;
+&lt;p&gt;一些过时的想法，该删就删，别犹豫&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202404081701 针对过时的想法怎么处理/" />
+        </entry>
+        <entry>
+            <title>
+                202404081646 卡片笔记应该记录什么
+                
+            </title>
+            <updated>2024-10-12T15:45:03.000Z</updated>
+            <id>https://wudanyang6.github.io//card/卡片盒笔记法/202404081646 卡片笔记应该记录什么/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202404081646&quot; tabindex=&quot;-1&quot;&gt;202404081646 卡片笔记应该记录什么&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt; 应该是记录知识&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;而不是&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt; 的&lt;/p&gt;
+&lt;p&gt;知识，也许应该就是想法，思考，或者闪念&lt;/p&gt;
+&lt;p&gt;但是信息怎么记录呢？记录到哪里呢？比较有疑问&lt;/p&gt;
+&lt;h2 id=&quot;1-reference&quot; tabindex=&quot;-1&quot;&gt;1 Reference&lt;/h2&gt;
+&lt;p&gt;卢曼卡片盒笔记法介绍 (Introduction to the Zettelkasten Method) • Zettelkasten Method: &lt;a href=&quot;https://zettelkasten.de/introduction/zh/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://zettelkasten.de/introduction/zh/&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/卡片盒笔记法/202404081646 卡片笔记应该记录什么/" />
         </entry>
         <entry>
             <title>
@@ -5298,9 +5347,9 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;202404081646 卡片笔记应该记录什么&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;202404081701 针对过时的想法怎么处理&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;202404081818 为什么建立笔记时要指明原因&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202404081646%20%E5%8D%A1%E7%89%87%E7%AC%94%E8%AE%B0%E5%BA%94%E8%AF%A5%E8%AE%B0%E5%BD%95%E4%BB%80%E4%B9%88/&quot;&gt;202404081646 卡片笔记应该记录什么&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202404081701%20%E9%92%88%E5%AF%B9%E8%BF%87%E6%97%B6%E7%9A%84%E6%83%B3%E6%B3%95%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86/&quot;&gt;202404081701 针对过时的想法怎么处理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202404081818%20%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BB%BA%E7%AB%8B%E7%AC%94%E8%AE%B0%E6%97%B6%E8%A6%81%E6%8C%87%E6%98%8E%E5%8E%9F%E5%9B%A0/&quot;&gt;202404081818 为什么建立笔记时要指明原因&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240417103919%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A0%87%E9%A2%98%E6%98%AF%E5%AF%B9%E5%86%85%E5%AE%B9%E7%9A%84%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%8F%8F%E8%BF%B0/&quot;&gt;20240417103919 卡片盒笔记法的标题是对内容的一句话描述&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
