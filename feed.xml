@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-12T15:49:37Z</updated>
+    <updated>2024-10-14T10:46:47Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -4380,6 +4380,240 @@ func main() {
 
             </content>
             <link href="https://wudanyang6.github.io//card/kafka/Kafka入门/" />
+        </entry>
+        <entry>
+            <title>
+                快速创建一个可访问的服务
+                
+            </title>
+            <updated>2024-10-14T07:45:27.000Z</updated>
+            <id>https://wudanyang6.github.io//card/k8s/快速创建一个可访问的服务/</id>
+            <content type="html">
+                &lt;h1 id=&quot;快速创建一个可访问的服务&quot; tabindex=&quot;-1&quot;&gt;快速创建一个可访问的服务&lt;/h1&gt;
+&lt;h2 id=&quot;1-k8s&quot; tabindex=&quot;-1&quot;&gt;1 创建一个 k8s 集群&lt;/h2&gt;
+&lt;p&gt;安装 &lt;code&gt;Docker Desktop&lt;/code&gt;，并在设置中开启&lt;code&gt;Kubernetes&lt;/code&gt; 功能 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020241014143603.png&quot; alt=&quot;Pasted image 20241014143603.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;这时，你会得到一个单节点的 &lt;code&gt;k8s&lt;/code&gt; 集群&lt;/p&gt;
+&lt;p&gt;通过 &lt;code&gt;kubectl get nodes&lt;/code&gt; 查看，会输出以下内容：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;➜  qsk-book git:(main) ✗ kubectl get nodes
+NAME             STATUS   ROLES           AGE   VERSION
+docker-desktop   Ready    control-plane   14h   v1.30.2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;现在启动了一个名为 &lt;code&gt;docker-desktop&lt;/code&gt; 的 &lt;code&gt;control-plane&lt;/code&gt; （控制面） 节点&lt;/p&gt;
+&lt;h2 id=&quot;2-code-k8s-code&quot; tabindex=&quot;-1&quot;&gt;2 将应用部署到 &lt;code&gt;k8s&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;下载示例文件（示例文件是《Kubernetes 快速入门》一书的附带内容）：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;git clone https://github.com/nigelpoulton/qsk-book.git
+cd qsk-book
+ls -l 
+
+# 输出内容
+total 24
+drwxr-xr-x 7 wudanyang 224 10 13 15:50 App
+drwxr-xr-x 8 wudanyang 256 10 13 15:50 Appv1.1
+-rw-r--r-- 1 wudanyang 509 10 14 13:04 deploy.yml
+-rw-r--r-- 1 wudanyang 225 10 13 15:50 pod.yml
+-rw-r--r-- 1 wudanyang 929 10 13 15:50 readme.md
+-rw-r--r-- 1 wudanyang 509 10 13 15:50 rolling-update.yml
+-rw-r--r-- 1 wudanyang 178 10 13 15:50 svc-cloud.yml
+-rw-r--r-- 1 wudanyang 217 10 13 15:50 svc-local.yml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;部署 Pod：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;kubectl apply -f pod.yml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;➜  qsk-book git:(main) ✗ kubectl get pods
+NAME                          READY   STATUS    RESTARTS   AGE
+first-pod                     1/1     Running   0          6s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;查看部署的 &lt;code&gt;Pod&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;kubectl describe pod first-pod
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以看到，现在 Pod 是运行中了，端口号监听的是 8080&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Name:             first-pod
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.3
+Start Time:       Mon, 14 Oct 2024 14:49:56 +0800
+Labels:           project=qsk-book
+Annotations:      &amp;lt;none&amp;gt;
+Status:           Running
+IP:               10.1.0.27
+IPs:
+  IP:  10.1.0.27
+Containers:
+  web-ctr:
+    Container ID:   docker://d06da3abd9e749933edc798a99571e3540bf8a16059823a78e4483530157e323
+    Image:          nigelpoulton/qsk-book:latest
+    Image ID:       docker-pullable://nigelpoulton/qsk-book@sha256:ea4422925917a5d957aab20603bbd2521e811088dc68ca3f5703458966733d72
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 14 Oct 2024 14:50:00 +0800
+    Ready:          True
+    Restart Count:  0
+    Environment:    &amp;lt;none&amp;gt;
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-j8kn6 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True
+  Initialized                 True
+  Ready                       True
+  ContainersReady             True
+  PodScheduled                True
+Volumes:
+  kube-api-access-j8kn6:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       &amp;lt;nil&amp;gt;
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              &amp;lt;none&amp;gt;
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  16m   default-scheduler  Successfully assigned default/first-pod to docker-desktop
+  Normal  Pulling    16m   kubelet            Pulling image &amp;quot;nigelpoulton/qsk-book:latest&amp;quot;
+  Normal  Pulled     16m   kubelet            Successfully pulled image &amp;quot;nigelpoulton/qsk-book:latest&amp;quot; in 3.231s (3.231s including waiting). Image size: 193578060 bytes.
+  Normal  Created    16m   kubelet            Created container web-ctr
+  Normal  Started    16m   kubelet            Started container web-ctr
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;3&quot; tabindex=&quot;-1&quot;&gt;3 连接到应用&lt;/h2&gt;
+&lt;p&gt;如果只是部署了一个应用，那么在外部是不能访问到这个应用的，因为它的网络只工作在 k8s 的内部&lt;/p&gt;
+&lt;p&gt;要想在外部访问应用，还得使用  &lt;code&gt;Service&lt;/code&gt; 才行&lt;/p&gt;
+&lt;p&gt;使用 svc-local.yml 文件部署一个 Service 对象&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl apply -f svc-local.yml
+service/svc-local created
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yml&quot;&gt;# 2022 version
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-local
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+    nodePort: 31111
+  selector:
+    project: qsk-book
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;配置文件的内容大概意思就是将 label 为 &lt;em&gt;project: qsk-book&lt;/em&gt; 的应用的8080 端口映射到节点的 31111 端口，细节再去看书&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl get svc
+NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+kubernetes   ClusterIP   10.96.0.1       &amp;lt;none&amp;gt;        443/TCP          15h
+svc-local    NodePort    10.101.54.180   &amp;lt;none&amp;gt;        8080:31111/TCP   2m34s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;访问 &lt;a href=&quot;http://localhost:31111/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://localhost:31111/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;出现下面的情况，就代表访问通了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020241014152010.png&quot; alt=&quot;Pasted image 20241014152010.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;4&quot; tabindex=&quot;-1&quot;&gt;4 清理应用&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;kubectl delete pod first-pod
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;5&quot; tabindex=&quot;-1&quot;&gt;5 应用自我修复&lt;/h2&gt;
+&lt;p&gt;自我修复需要一个新的对象：&lt;code&gt;Deployment&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kubectl apply -f deploy.yml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;replicas 副本数 5 个&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yml&quot;&gt;# 2022 version
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: qsk-deploy
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      project: qsk-book
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        project: qsk-book
+    spec:
+      containers:
+      - name: qsk-pod
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        image: nigelpoulton/qsk-book:1.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl get deploy
+NAME         READY   UP-TO-DATE   AVAILABLE   AGE
+qsk-deploy   5/5     5            5           4h5m
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl get pods
+NAME                          READY   STATUS    RESTARTS   AGE
+qsk-deploy-668c8bdb95-6cw5d   1/1     Running   0          141m
+qsk-deploy-668c8bdb95-dgtx5   1/1     Running   0          140m
+qsk-deploy-668c8bdb95-f97mk   1/1     Running   0          140m
+qsk-deploy-668c8bdb95-qhzl4   1/1     Running   0          141m
+qsk-deploy-668c8bdb95-xssrf   1/1     Running   0          141m
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;5-1-pod&quot; tabindex=&quot;-1&quot;&gt;5.1 Pod 故障重新拉起&lt;/h3&gt;
+&lt;p&gt;使用命令删除掉一个 pod，模拟有一个 pod 故障了&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kubectl delete pod qsk-deploy-668c8bdb95-6cw5d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以看到立刻有一个 pod 被创建&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl get pods
+NAME                          READY   STATUS              RESTARTS   AGE
+qsk-deploy-668c8bdb95-6cw5d   1/1     Terminating         0          143m
+qsk-deploy-668c8bdb95-dgtx5   1/1     Running             0          141m
+qsk-deploy-668c8bdb95-f97mk   1/1     Running             0          141m
+qsk-deploy-668c8bdb95-qbhtg   0/1     ContainerCreating   0          3s
+qsk-deploy-668c8bdb95-qhzl4   1/1     Running             0          142m
+qsk-deploy-668c8bdb95-xssrf   1/1     Running             0          142m
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;5-2&quot; tabindex=&quot;-1&quot;&gt;5.2 工作节点故障重新部署&lt;/h3&gt;
+&lt;p&gt;本地没有多节点环境，所以无法模拟&lt;/p&gt;
+&lt;p&gt;具体现象是，如果故障节点上面有 2 个 pod，那么这 2 个 pod 会被部署到仍存在的节点上&lt;/p&gt;
+&lt;p&gt;如果节点机器提供者也有故障恢复，那么故障的节点会重新加入到 k8s 集群中，但是已经被迁移走的 pod 不会重新回来&lt;/p&gt;
+&lt;h2 id=&quot;6&quot; tabindex=&quot;-1&quot;&gt;6 应用扩缩容&lt;/h2&gt;
+&lt;p&gt;修改 deploy.yml 将 replicas 修改成你想要的数量&lt;/p&gt;
+&lt;p&gt;重新执行： &lt;code&gt;kubectl apply -f deploy.yml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;扩容时，会重新创建新 pod&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl get pods
+NAME                          READY   STATUS              RESTARTS   AGE
+qsk-deploy-668c8bdb95-dgtx5   1/1     Running             0          148m
+qsk-deploy-668c8bdb95-f97mk   1/1     Running             0          149m
+qsk-deploy-668c8bdb95-fxh4n   0/1     ContainerCreating   0          4s
+qsk-deploy-668c8bdb95-hn5bq   0/1     ContainerCreating   0          4s
+qsk-deploy-668c8bdb95-qbhtg   1/1     Running             0          7m8s
+qsk-deploy-668c8bdb95-qhzl4   1/1     Running             0          149m
+qsk-deploy-668c8bdb95-tj4wv   0/1     ContainerCreating   0          4s
+qsk-deploy-668c8bdb95-xssrf   1/1     Running             0          149m
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;缩容时，会将多余的 pod 删掉（我发现都是删除的运行时间比较短的 pod）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl get pods
+NAME                          READY   STATUS        RESTARTS   AGE
+qsk-deploy-668c8bdb95-dgtx5   1/1     Running       0          149m
+qsk-deploy-668c8bdb95-f97mk   1/1     Terminating   0          149m
+qsk-deploy-668c8bdb95-fxh4n   1/1     Terminating   0          48s
+qsk-deploy-668c8bdb95-hn5bq   1/1     Terminating   0          48s
+qsk-deploy-668c8bdb95-qbhtg   1/1     Terminating   0          7m52s
+qsk-deploy-668c8bdb95-qhzl4   1/1     Running       0          150m
+qsk-deploy-668c8bdb95-tj4wv   1/1     Terminating   0          48s
+qsk-deploy-668c8bdb95-xssrf   1/1     Running       0          150m
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;7&quot; tabindex=&quot;-1&quot;&gt;7 应用滚动更新&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;kubectl apply -f rolling-update.yml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;rolling-update.yml 和 原来的配置的区别：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020241014154350.png&quot; alt=&quot;Pasted image 20241014154350.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;执行之后，会新创建一个新的 Pod，将老的 pod 删掉&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/k8s/快速创建一个可访问的服务/" />
         </entry>
         <entry>
             <title>

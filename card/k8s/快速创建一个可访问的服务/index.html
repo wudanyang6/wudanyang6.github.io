@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh">
 <head>
-<title>iso-日期表示法</title>
+<title>快速创建一个可访问的服务</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -170,7 +170,7 @@ CTRL + K
 <span class="foldername">k8s</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/k8s/快速创建一个可访问的服务/">快速创建一个可访问的服务 </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/k8s/快速创建一个可访问的服务/">快速创建一个可访问的服务 </a>
 </div>
 </div>
 </div>
@@ -229,7 +229,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/iso-日期表示法/">iso-日期表示法 </a>
+<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/iso-日期表示法/">iso-日期表示法 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -922,37 +922,234 @@ CTRL + K
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2024-10-14T10:46:46.589Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2024-10-14T10:46:46.589Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2024-10-14T10:46:46.589Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="2">iso-日期表示法</h1>
+<h1 data-note-icon="2">快速创建一个可访问的服务</h1>
 <div class="header-meta">
 <div class="header-tags">
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-07-25T22:08:39+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-10-12T23:19:09+08:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-10-14T14:23:50+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-10-14T15:45:27+08:00"></span></div></div></div>
 </header>
-<p><strong>国际标准化组织的日期时间表示法</strong></p>
-<h1 id="iso" tabindex="-1">iso-日期表示法</h1>
-<h2 id="1" tabindex="-1">1 零时区</h2>
-<p>在最后加上大写 的 Z<br>
-2004-05-03T17:30:08Z</p>
-<h2 id="2" tabindex="-1">2 其他时区</h2>
-<p>合并表示时，要在时间前面加一大写字母T，如要表示东八区时间2004年5月3日下午5点30分8秒，可以写成<strong>2004-05-03T17:30:08+08:00</strong>或<strong>20040503T173008+08</strong>。</p>
-<h1 id="时间点表示法" tabindex="-1">时间点表示法</h1>
-<p>首字母为 P，其他字母为年月日时分秒，中间加上 T<br>
-<strong>P1Y3M5DT6H7M30S</strong></p>
-<h1 id="时间间隔表示法" tabindex="-1">时间间隔表示法</h1>
-<h2 id="1-1" tabindex="-1">1 从一个时间开始，到另一个时间结束</h2>
-<p><em>19850412/19860101</em></p>
-<h2 id="2-1" tabindex="-1">2 从指定时间开始持续一段时间</h2>
-<p><em>19850412/P6M</em></p>
-<h1 id="循环时间表示法" tabindex="-1">循环时间表示法</h1>
-<blockquote>
-<p>R【循环次数】【/开始时间】/时间间隔【/结束时间】</p>
-</blockquote>
-<p>从2004年5月6日北京时间下午1点起时间间隔半年零5天3小时循环，且循环3次<br>
-<strong>R3/20040506T130000+08/P0Y6M5DT3H0M0S</strong>。</p>
-<p>以1年2个月为循环间隔，无限次循环，最后循环终止于2025年1月1日<br>
-<strong>R/P1Y2M/20250101</strong></p>
-<h1 id="参考" tabindex="-1">参考</h1>
-<div style="display:block;position:relative;width:100%;height:0;--aspect-ratio:9/16;padding-bottom:calc(var(--aspect-ratio) * 100%)"><iframe src="https://zh.wikipedia.org/wiki/ISO_8601" allow="fullscreen" style="position:absolute;top:0;left:0;height:100%;width:100%"></iframe></div>
+<h1 id="快速创建一个可访问的服务" tabindex="-1">快速创建一个可访问的服务</h1>
+<h2 id="1-k8s" tabindex="-1">1 创建一个 k8s 集群</h2>
+<p>安装 <code>Docker Desktop</code>，并在设置中开启<code>Kubernetes</code> 功能 <img src="/img/user/attachs/Pasted%20image%2020241014143603.png" alt="Pasted image 20241014143603.png"></p>
+<p>这时，你会得到一个单节点的 <code>k8s</code> 集群</p>
+<p>通过 <code>kubectl get nodes</code> 查看，会输出以下内容：</p>
+<pre><code class="language-Shell">➜  qsk-book git:(main) ✗ kubectl get nodes
+NAME             STATUS   ROLES           AGE   VERSION
+docker-desktop   Ready    control-plane   14h   v1.30.2
+</code></pre>
+<p>现在启动了一个名为 <code>docker-desktop</code> 的 <code>control-plane</code> （控制面） 节点</p>
+<h2 id="2-code-k8s-code" tabindex="-1">2 将应用部署到 <code>k8s</code></h2>
+<p>下载示例文件（示例文件是《Kubernetes 快速入门》一书的附带内容）：</p>
+<pre><code class="language-shell">git clone https://github.com/nigelpoulton/qsk-book.git
+cd qsk-book
+ls -l 
+
+# 输出内容
+total 24
+drwxr-xr-x 7 wudanyang 224 10 13 15:50 App
+drwxr-xr-x 8 wudanyang 256 10 13 15:50 Appv1.1
+-rw-r--r-- 1 wudanyang 509 10 14 13:04 deploy.yml
+-rw-r--r-- 1 wudanyang 225 10 13 15:50 pod.yml
+-rw-r--r-- 1 wudanyang 929 10 13 15:50 readme.md
+-rw-r--r-- 1 wudanyang 509 10 13 15:50 rolling-update.yml
+-rw-r--r-- 1 wudanyang 178 10 13 15:50 svc-cloud.yml
+-rw-r--r-- 1 wudanyang 217 10 13 15:50 svc-local.yml
+</code></pre>
+<p>部署 Pod：</p>
+<pre><code class="language-shell">kubectl apply -f pod.yml
+</code></pre>
+<pre><code class="language-shell">➜  qsk-book git:(main) ✗ kubectl get pods
+NAME                          READY   STATUS    RESTARTS   AGE
+first-pod                     1/1     Running   0          6s
+</code></pre>
+<p>查看部署的 <code>Pod</code></p>
+<pre><code class="language-shell">kubectl describe pod first-pod
+</code></pre>
+<p>可以看到，现在 Pod 是运行中了，端口号监听的是 8080</p>
+<pre><code>Name:             first-pod
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             docker-desktop/192.168.65.3
+Start Time:       Mon, 14 Oct 2024 14:49:56 +0800
+Labels:           project=qsk-book
+Annotations:      &lt;none&gt;
+Status:           Running
+IP:               10.1.0.27
+IPs:
+  IP:  10.1.0.27
+Containers:
+  web-ctr:
+    Container ID:   docker://d06da3abd9e749933edc798a99571e3540bf8a16059823a78e4483530157e323
+    Image:          nigelpoulton/qsk-book:latest
+    Image ID:       docker-pullable://nigelpoulton/qsk-book@sha256:ea4422925917a5d957aab20603bbd2521e811088dc68ca3f5703458966733d72
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 14 Oct 2024 14:50:00 +0800
+    Ready:          True
+    Restart Count:  0
+    Environment:    &lt;none&gt;
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-j8kn6 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True
+  Initialized                 True
+  Ready                       True
+  ContainersReady             True
+  PodScheduled                True
+Volumes:
+  kube-api-access-j8kn6:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       &lt;nil&gt;
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              &lt;none&gt;
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  16m   default-scheduler  Successfully assigned default/first-pod to docker-desktop
+  Normal  Pulling    16m   kubelet            Pulling image &quot;nigelpoulton/qsk-book:latest&quot;
+  Normal  Pulled     16m   kubelet            Successfully pulled image &quot;nigelpoulton/qsk-book:latest&quot; in 3.231s (3.231s including waiting). Image size: 193578060 bytes.
+  Normal  Created    16m   kubelet            Created container web-ctr
+  Normal  Started    16m   kubelet            Started container web-ctr
+</code></pre>
+<h2 id="3" tabindex="-1">3 连接到应用</h2>
+<p>如果只是部署了一个应用，那么在外部是不能访问到这个应用的，因为它的网络只工作在 k8s 的内部</p>
+<p>要想在外部访问应用，还得使用 <code>Service</code> 才行</p>
+<p>使用 svc-local.yml 文件部署一个 Service 对象</p>
+<pre><code>➜  qsk-book git:(main) ✗ kubectl apply -f svc-local.yml
+service/svc-local created
+</code></pre>
+<pre><code class="language-yml"># 2022 version
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-local
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+    nodePort: 31111
+  selector:
+    project: qsk-book
+</code></pre>
+<p>配置文件的内容大概意思就是将 label 为 <em>project: qsk-book</em> 的应用的8080 端口映射到节点的 31111 端口，细节再去看书</p>
+<pre><code>➜  qsk-book git:(main) ✗ kubectl get svc
+NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+kubernetes   ClusterIP   10.96.0.1       &lt;none&gt;        443/TCP          15h
+svc-local    NodePort    10.101.54.180   &lt;none&gt;        8080:31111/TCP   2m34s
+</code></pre>
+<p>访问 <a href="http://localhost:31111/" target="_blank" class="external-link">http://localhost:31111/</a></p>
+<p>出现下面的情况，就代表访问通了</p>
+<p><img src="/img/user/attachs/Pasted%20image%2020241014152010.png" alt="Pasted image 20241014152010.png"></p>
+<h2 id="4" tabindex="-1">4 清理应用</h2>
+<pre><code>kubectl delete pod first-pod
+</code></pre>
+<h2 id="5" tabindex="-1">5 应用自我修复</h2>
+<p>自我修复需要一个新的对象：<code>Deployment</code></p>
+<pre><code>kubectl apply -f deploy.yml
+</code></pre>
+<ul>
+<li>replicas 副本数 5 个</li>
+</ul>
+<pre><code class="language-yml"># 2022 version
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: qsk-deploy
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      project: qsk-book
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        project: qsk-book
+    spec:
+      containers:
+      - name: qsk-pod
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        image: nigelpoulton/qsk-book:1.1
+</code></pre>
+<pre><code>➜  qsk-book git:(main) ✗ kubectl get deploy
+NAME         READY   UP-TO-DATE   AVAILABLE   AGE
+qsk-deploy   5/5     5            5           4h5m
+</code></pre>
+<pre><code>➜  qsk-book git:(main) ✗ kubectl get pods
+NAME                          READY   STATUS    RESTARTS   AGE
+qsk-deploy-668c8bdb95-6cw5d   1/1     Running   0          141m
+qsk-deploy-668c8bdb95-dgtx5   1/1     Running   0          140m
+qsk-deploy-668c8bdb95-f97mk   1/1     Running   0          140m
+qsk-deploy-668c8bdb95-qhzl4   1/1     Running   0          141m
+qsk-deploy-668c8bdb95-xssrf   1/1     Running   0          141m
+</code></pre>
+<h3 id="5-1-pod" tabindex="-1">5.1 Pod 故障重新拉起</h3>
+<p>使用命令删除掉一个 pod，模拟有一个 pod 故障了</p>
+<pre><code>kubectl delete pod qsk-deploy-668c8bdb95-6cw5d
+</code></pre>
+<p>可以看到立刻有一个 pod 被创建</p>
+<pre><code>➜  qsk-book git:(main) ✗ kubectl get pods
+NAME                          READY   STATUS              RESTARTS   AGE
+qsk-deploy-668c8bdb95-6cw5d   1/1     Terminating         0          143m
+qsk-deploy-668c8bdb95-dgtx5   1/1     Running             0          141m
+qsk-deploy-668c8bdb95-f97mk   1/1     Running             0          141m
+qsk-deploy-668c8bdb95-qbhtg   0/1     ContainerCreating   0          3s
+qsk-deploy-668c8bdb95-qhzl4   1/1     Running             0          142m
+qsk-deploy-668c8bdb95-xssrf   1/1     Running             0          142m
+</code></pre>
+<h3 id="5-2" tabindex="-1">5.2 工作节点故障重新部署</h3>
+<p>本地没有多节点环境，所以无法模拟</p>
+<p>具体现象是，如果故障节点上面有 2 个 pod，那么这 2 个 pod 会被部署到仍存在的节点上</p>
+<p>如果节点机器提供者也有故障恢复，那么故障的节点会重新加入到 k8s 集群中，但是已经被迁移走的 pod 不会重新回来</p>
+<h2 id="6" tabindex="-1">6 应用扩缩容</h2>
+<p>修改 deploy.yml 将 replicas 修改成你想要的数量</p>
+<p>重新执行： <code>kubectl apply -f deploy.yml</code></p>
+<p>扩容时，会重新创建新 pod</p>
+<pre><code>➜  qsk-book git:(main) ✗ kubectl get pods
+NAME                          READY   STATUS              RESTARTS   AGE
+qsk-deploy-668c8bdb95-dgtx5   1/1     Running             0          148m
+qsk-deploy-668c8bdb95-f97mk   1/1     Running             0          149m
+qsk-deploy-668c8bdb95-fxh4n   0/1     ContainerCreating   0          4s
+qsk-deploy-668c8bdb95-hn5bq   0/1     ContainerCreating   0          4s
+qsk-deploy-668c8bdb95-qbhtg   1/1     Running             0          7m8s
+qsk-deploy-668c8bdb95-qhzl4   1/1     Running             0          149m
+qsk-deploy-668c8bdb95-tj4wv   0/1     ContainerCreating   0          4s
+qsk-deploy-668c8bdb95-xssrf   1/1     Running             0          149m
+</code></pre>
+<p>缩容时，会将多余的 pod 删掉（我发现都是删除的运行时间比较短的 pod）</p>
+<pre><code>➜  qsk-book git:(main) ✗ kubectl get pods
+NAME                          READY   STATUS        RESTARTS   AGE
+qsk-deploy-668c8bdb95-dgtx5   1/1     Running       0          149m
+qsk-deploy-668c8bdb95-f97mk   1/1     Terminating   0          149m
+qsk-deploy-668c8bdb95-fxh4n   1/1     Terminating   0          48s
+qsk-deploy-668c8bdb95-hn5bq   1/1     Terminating   0          48s
+qsk-deploy-668c8bdb95-qbhtg   1/1     Terminating   0          7m52s
+qsk-deploy-668c8bdb95-qhzl4   1/1     Running       0          150m
+qsk-deploy-668c8bdb95-tj4wv   1/1     Terminating   0          48s
+qsk-deploy-668c8bdb95-xssrf   1/1     Running       0          150m
+</code></pre>
+<h2 id="7" tabindex="-1">7 应用滚动更新</h2>
+<pre><code>kubectl apply -f rolling-update.yml
+</code></pre>
+<p>rolling-update.yml 和 原来的配置的区别：</p>
+<p><img src="/img/user/attachs/Pasted%20image%2020241014154350.png" alt="Pasted image 20241014154350.png"></p>
+<p>执行之后，会新创建一个新的 Pod，将老的 pod 删掉</p>
 <hr>
 <script src="https://giscus.app/client.js" data-repo="wudanyang6/wudanyang6.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM=" data-category="Announcements" data-category-id="DIC_kwDOFTtyT84CYlu-" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-CN" crossorigin="anonymous" async></script>
 <span id="busuanzi_container_page_pv">
@@ -999,27 +1196,29 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#iso">iso-日期表示法</a>
+<li><a href="#快速创建一个可访问的服务">快速创建一个可访问的服务</a>
 <ol>
-<li><a href="#1">1 零时区</a>
+<li><a href="#1-k8s">1 创建一个 k8s 集群</a>
 </li>
-<li><a href="#2">2 其他时区</a>
+<li><a href="#2-code-k8s-code">2 将应用部署到 k8s</a>
+</li>
+<li><a href="#3">3 连接到应用</a>
+</li>
+<li><a href="#4">4 清理应用</a>
+</li>
+<li><a href="#5">5 应用自我修复</a>
+<ol>
+<li><a href="#5-1-pod">5.1 Pod 故障重新拉起</a>
+</li>
+<li><a href="#5-2">5.2 工作节点故障重新部署</a>
 </li>
 </ol>
 </li>
-<li><a href="#时间点表示法">时间点表示法</a>
+<li><a href="#6">6 应用扩缩容</a>
 </li>
-<li><a href="#时间间隔表示法">时间间隔表示法</a>
-<ol>
-<li><a href="#1-1">1 从一个时间开始，到另一个时间结束</a>
-</li>
-<li><a href="#2-1">2 从指定时间开始持续一段时间</a>
+<li><a href="#7">7 应用滚动更新</a>
 </li>
 </ol>
-</li>
-<li><a href="#循环时间表示法">循环时间表示法</a>
-</li>
-<li><a href="#参考">参考</a>
 </li>
 </ol>
 </nav>
