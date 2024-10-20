@@ -3,14 +3,14 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-20T14:48:00Z</updated>
+    <updated>2024-10-20T15:05:24Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
                 我的音乐歌手关键词
                 
             </title>
-            <updated>2024-10-20T10:01:03.000Z</updated>
+            <updated>2024-10-20T10:01:35.000Z</updated>
             <id>https://wudanyang6.github.io//card/音乐/我的音乐歌手关键词/</id>
             <content type="html">
                 &lt;h1 id=&quot;我的音乐歌手关键词&quot; tabindex=&quot;-1&quot;&gt;我的音乐歌手关键词&lt;/h1&gt;
@@ -3294,11 +3294,11 @@ sudo python setup.py install
                 PHP生成zip压缩包
                 
             </title>
-            <updated>2024-04-20T14:45:27.000Z</updated>
+            <updated>2024-10-20T09:53:15.000Z</updated>
             <id>https://wudanyang6.github.io//card/php/PHP生成zip压缩包/</id>
             <content type="html">
                 &lt;h1 id=&quot;php-zip&quot; tabindex=&quot;-1&quot;&gt;PHP生成zip压缩包&lt;/h1&gt;
-&lt;h2 id=&quot;zip&quot; tabindex=&quot;-1&quot;&gt;将文件压缩成zip格式&lt;/h2&gt;
+&lt;h2 id=&quot;1-zip&quot; tabindex=&quot;-1&quot;&gt;1 将文件压缩成zip格式&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
 $path = &amp;quot;file.txt&amp;quot;;
 $filename = &amp;quot;file.zip&amp;quot;;
@@ -4380,7 +4380,7 @@ func main() {
                 快速创建一个可访问的服务
                 
             </title>
-            <updated>2024-10-14T07:45:27.000Z</updated>
+            <updated>2024-10-20T04:43:32.000Z</updated>
             <id>https://wudanyang6.github.io//card/k8s/快速创建一个可访问的服务/</id>
             <content type="html">
                 &lt;h1 id=&quot;快速创建一个可访问的服务&quot; tabindex=&quot;-1&quot;&gt;快速创建一个可访问的服务&lt;/h1&gt;
@@ -4421,7 +4421,7 @@ first-pod                     1/1     Running   0          6s
 &lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;kubectl describe pod first-pod
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;可以看到，现在 Pod 是运行中了，端口号监听的是 8080&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Name:             first-pod
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;Name:             first-pod
 Namespace:        default
 Priority:         0
 Service Account:  default
@@ -4478,7 +4478,7 @@ Events:
 &lt;p&gt;如果只是部署了一个应用，那么在外部是不能访问到这个应用的，因为它的网络只工作在 k8s 的内部&lt;/p&gt;
 &lt;p&gt;要想在外部访问应用，还得使用  &lt;code&gt;Service&lt;/code&gt; 才行&lt;/p&gt;
 &lt;p&gt;使用 svc-local.yml 文件部署一个 Service 对象&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl apply -f svc-local.yml
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;➜  qsk-book git:(main) ✗ kubectl apply -f svc-local.yml
 service/svc-local created
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code class=&quot;language-yml&quot;&gt;# 2022 version
@@ -4497,7 +4497,7 @@ spec:
     project: qsk-book
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;配置文件的内容大概意思就是将 label 为 &lt;em&gt;project: qsk-book&lt;/em&gt; 的应用的8080 端口映射到节点的 31111 端口，细节再去看书&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl get svc
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;➜  qsk-book git:(main) ✗ kubectl get svc
 NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
 kubernetes   ClusterIP   10.96.0.1       &amp;lt;none&amp;gt;        443/TCP          15h
 svc-local    NodePort    10.101.54.180   &amp;lt;none&amp;gt;        8080:31111/TCP   2m34s
@@ -4506,11 +4506,11 @@ svc-local    NodePort    10.101.54.180   &amp;lt;none&amp;gt;        8080:31111/
 &lt;p&gt;出现下面的情况，就代表访问通了&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020241014152010.png&quot; alt=&quot;Pasted image 20241014152010.png&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;4&quot; tabindex=&quot;-1&quot;&gt;4 清理应用&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;kubectl delete pod first-pod
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;kubectl delete pod first-pod
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;5&quot; tabindex=&quot;-1&quot;&gt;5 应用自我修复&lt;/h2&gt;
 &lt;p&gt;自我修复需要一个新的对象：&lt;code&gt;Deployment&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;kubectl apply -f deploy.yml
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;kubectl apply -f deploy.yml
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;replicas 副本数 5 个&lt;/li&gt;
@@ -4542,11 +4542,11 @@ spec:
         - containerPort: 8080
         image: nigelpoulton/qsk-book:1.1
 &lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl get deploy
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;➜  qsk-book git:(main) ✗ kubectl get deploy
 NAME         READY   UP-TO-DATE   AVAILABLE   AGE
 qsk-deploy   5/5     5            5           4h5m
 &lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl get pods
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;➜  qsk-book git:(main) ✗ kubectl get pods
 NAME                          READY   STATUS    RESTARTS   AGE
 qsk-deploy-668c8bdb95-6cw5d   1/1     Running   0          141m
 qsk-deploy-668c8bdb95-dgtx5   1/1     Running   0          140m
@@ -4556,10 +4556,10 @@ qsk-deploy-668c8bdb95-xssrf   1/1     Running   0          141m
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;5-1-pod&quot; tabindex=&quot;-1&quot;&gt;5.1 Pod 故障重新拉起&lt;/h3&gt;
 &lt;p&gt;使用命令删除掉一个 pod，模拟有一个 pod 故障了&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;kubectl delete pod qsk-deploy-668c8bdb95-6cw5d
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;kubectl delete pod qsk-deploy-668c8bdb95-6cw5d
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;可以看到立刻有一个 pod 被创建&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl get pods
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;➜  qsk-book git:(main) ✗ kubectl get pods
 NAME                          READY   STATUS              RESTARTS   AGE
 qsk-deploy-668c8bdb95-6cw5d   1/1     Terminating         0          143m
 qsk-deploy-668c8bdb95-dgtx5   1/1     Running             0          141m
@@ -4576,7 +4576,7 @@ qsk-deploy-668c8bdb95-xssrf   1/1     Running             0          142m
 &lt;p&gt;修改 deploy.yml 将 replicas 修改成你想要的数量&lt;/p&gt;
 &lt;p&gt;重新执行： &lt;code&gt;kubectl apply -f deploy.yml&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;扩容时，会重新创建新 pod&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl get pods
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;➜  qsk-book git:(main) ✗ kubectl get pods
 NAME                          READY   STATUS              RESTARTS   AGE
 qsk-deploy-668c8bdb95-dgtx5   1/1     Running             0          148m
 qsk-deploy-668c8bdb95-f97mk   1/1     Running             0          149m
@@ -4588,7 +4588,7 @@ qsk-deploy-668c8bdb95-tj4wv   0/1     ContainerCreating   0          4s
 qsk-deploy-668c8bdb95-xssrf   1/1     Running             0          149m
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;缩容时，会将多余的 pod 删掉（我发现都是删除的运行时间比较短的 pod）&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;➜  qsk-book git:(main) ✗ kubectl get pods
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;➜  qsk-book git:(main) ✗ kubectl get pods
 NAME                          READY   STATUS        RESTARTS   AGE
 qsk-deploy-668c8bdb95-dgtx5   1/1     Running       0          149m
 qsk-deploy-668c8bdb95-f97mk   1/1     Terminating   0          149m
@@ -4600,7 +4600,7 @@ qsk-deploy-668c8bdb95-tj4wv   1/1     Terminating   0          48s
 qsk-deploy-668c8bdb95-xssrf   1/1     Running       0          150m
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;7&quot; tabindex=&quot;-1&quot;&gt;7 应用滚动更新&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;kubectl apply -f rolling-update.yml
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;kubectl apply -f rolling-update.yml
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;rolling-update.yml 和 原来的配置的区别：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020241014154350.png&quot; alt=&quot;Pasted image 20241014154350.png&quot; /&gt;&lt;/p&gt;
@@ -5126,7 +5126,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 shell-生成随机数
                 
             </title>
-            <updated>2024-10-20T10:33:32.000Z</updated>
+            <updated>2024-10-20T10:33:56.000Z</updated>
             <id>https://wudanyang6.github.io//card/Linux/shell/shell-生成随机数/</id>
             <content type="html">
                 &lt;h1 id=&quot;shell&quot; tabindex=&quot;-1&quot;&gt;shell-生成随机数&lt;/h1&gt;
@@ -5160,6 +5160,7 @@ if it is subsequently reset.&lt;/p&gt;
 你可以在循环中使用 &lt;code&gt;$RANDOM&lt;/code&gt; 来生成一系列随机数：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;for i in {1..5}
 do
+
     echo $((RANDOM % 100))
 done
 &lt;/code&gt;&lt;/pre&gt;
@@ -5813,7 +5814,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
                 202404151418 哲学
                 
             </title>
-            <updated>2024-10-12T15:48:35.000Z</updated>
+            <updated>2024-10-20T04:43:19.000Z</updated>
             <id>https://wudanyang6.github.io//000 Topic Index/202404151418 哲学/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404151418&quot; tabindex=&quot;-1&quot;&gt;202404151418 哲学&lt;/h1&gt;
