@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-20T14:25:58Z</updated>
+    <updated>2024-10-20T14:48:00Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -4640,6 +4640,36 @@ qsk-deploy-668c8bdb95-xssrf   1/1     Running       0          150m
 
             </content>
             <link href="https://wudanyang6.github.io//card/js/js超长数字溢出问题/" />
+        </entry>
+        <entry>
+            <title>
+                go-时间处理
+                
+            </title>
+            <updated>2024-10-20T14:47:27.000Z</updated>
+            <id>https://wudanyang6.github.io//card/go/go-时间处理/</id>
+            <content type="html">
+                &lt;h1 id=&quot;go&quot; tabindex=&quot;-1&quot;&gt;go-时间处理&lt;/h1&gt;
+&lt;p&gt;carbon 库&lt;/p&gt;
+&lt;p&gt;官网的示例也非常丰富&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;import &amp;quot;github.com/golang-module/carbon/v2&amp;quot;
+
+func main() {
+	cTime := carbon.SetTimezone(carbon.Shanghai)  
+	// 获取明天凌晨0点的时间戳
+	tomorrowUnixTime := cTime.Tomorrow().StartOfDay().Timestamp()  
+	// 获取当前时间的时间戳
+	currentUnixTime := cTime.Now().Timestamp()  
+	fmt.Println(tomorrowUnixTime, currentUnixTime)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/golang-module/carbon&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/golang-module/carbon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/go/go-时间处理/" />
         </entry>
         <entry>
             <title>
