@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh">
 <head>
-<title>mac 运行 kafka</title>
+<title>shell-生成随机数</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -187,7 +187,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/kafka/mac 运行 kafka/">mac 运行 kafka </a>
+<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/kafka/mac 运行 kafka/">mac 运行 kafka </a>
 </div>
 </div>
 </div>
@@ -211,7 +211,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/shell/shell-生成随机数/">shell-生成随机数 </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/shell/shell-生成随机数/">shell-生成随机数 </a>
 </div>
 </div>
 </div>
@@ -921,107 +921,67 @@ CTRL + K
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2024-10-20T10:34:12.561Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2024-10-20T10:34:12.561Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2024-10-20T10:34:12.561Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="2">mac 运行 kafka</h1>
+<h1 data-note-icon="2">shell-生成随机数</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#kafka
-</a>
-<a class="tag" onclick="toggleTagSearch(this)">
-#学习
+#aigc-kimi
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-09-13T21:55:10+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-05-14T14:22:38+08:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2021-08-05T14:07:06+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-10-20T18:33:32+08:00"></span></div></div></div>
 </header>
-<h1 id="mac-kafka" tabindex="-1">mac 运行 kafka</h1>
-<h2 id="安装" tabindex="-1">安装</h2>
-<pre><code class="language-bash">brew install kafka
+<h1 id="shell" tabindex="-1">shell-生成随机数</h1>
+<p>变量范围是：<code>[0, 32767]</code> <code>echo $RANDOM</code></p>
+<div class="callout" data-callout="note"><div class="callout-title"><div class="callout-title-inner">Note</div></div>
+<div class="callout-content">
+<p>
+<strong>RANDOM</strong> Each time this parameter is referenced, it expands to a<br>
+random integer between 0 and 32767. Assigning a value to<br>
+<strong>RANDOM</strong> initializes (seeds) the sequence of random numbers.<br>
+If <strong>RANDOM</strong> is unset, it loses its special properties, even<br>
+if it is subsequently reset.</p>
+</div></div>
+<p>在 Linux 的 Bash 脚本中，<code>$RANDOM</code> 是一个特殊的变量，它用于生成一个随机整数。每次引用 <code>$RANDOM</code> 时，它都会返回一个介于 0 到 32767 之间的随机数。这个变量是由 Bash 内置的，不需要任何外部程序或模块支持。</p>
+<p>以下是一些使用 <code>$RANDOM</code> 的常见方式：</p>
+<ol>
+<li>
+<p><strong>生成随机数</strong>：</p>
+<pre><code class="language-bash">echo $RANDOM
 </code></pre>
-<h2 id="broker" tabindex="-1">启动 broker</h2>
-<p>手动启动 kafka， 同时启动一个使用 2181 端口的 zookeeper</p>
-<pre><code class="language-bash">/opt/homebrew/opt/kafka/bin/zookeeper-server-start /opt/homebrew/etc/kafka/zookeeper.properties
-/opt/homebrew/opt/kafka/bin/kafka-server-start /opt/homebrew/etc/kafka/server.properties
+<p>这将输出一个 0 到 32767 之间的随机整数。</p>
+</li>
+<li>
+<p><strong>生成特定范围内的随机数</strong>：<br>
+如果你想要生成一个在特定范围内的随机数，可以使用算术扩展。例如，生成一个 1 到 10 之间的随机数：</p>
+<pre><code class="language-bash">echo $((RANDOM % 10 + 1))
 </code></pre>
-<h2 id="启动生产者" tabindex="-1">启动生产者</h2>
-<pre><code class="language-bash">/opt/homebrew/opt/kafka/bin/kafka-console-producer --topic test --bootstrap-server localhost:9092 
+<p>这里，<code>%</code> 是取模运算符，用于得到除法的余数，<code>+ 1</code> 是为了将范围从 0 到 9 调整为 1 到 10。</p>
+</li>
+<li>
+<p><strong>在循环中使用</strong>：<br>
+你可以在循环中使用 <code>$RANDOM</code> 来生成一系列随机数：</p>
+<pre><code class="language-bash">for i in {1..5}
+do
+    echo $((RANDOM % 100))
+done
 </code></pre>
-<h2 id="启动消费者" tabindex="-1">启动消费者</h2>
-<pre><code class="language-bash">/opt/homebrew/opt/kafka/bin/kafka-console-consumer --topic test --bootstrap-server localhost:9092  --from-beginning
+<p>这将输出 5 个 0 到 99 之间的随机数。</p>
+</li>
+<li>
+<p><strong>生成随机选择</strong>：<br>
+你可以通过比较 <code>$RANDOM</code> 和一个上限值来随机选择一个选项：</p>
+<pre><code class="language-bash">choice=$((RANDOM % 2))
+if [ $choice -eq 0 ]; then
+    echo &quot;Heads&quot;
+else
+    echo &quot;Tails&quot;
+fi
 </code></pre>
-<h2 id="topic" tabindex="-1">创建 topic</h2>
-<pre><code class="language-bash">kafka-topics --create  --replication-factor 1 --partitions 5 --topic myTopic --bootstrap-server localhost:9092
-</code></pre>
-<h2 id="topic-1" tabindex="-1">查看 topic 列表</h2>
-<pre><code class="language-bash">/opt/homebrew/opt/kafka/bin/kafka-topics --bootstrap-server localhost:9092   --list
-</code></pre>
-<h2 id="数据文件目录" tabindex="-1">数据文件目录</h2>
-<pre><code class="language-bash">/opt/homebrew/var/lib/kafka-logs/
-</code></pre>
-<h2 id="go" tabindex="-1">简易 go 程序</h2>
-<pre><code class="language-GO">package main
-
-import (
-	&quot;fmt&quot;
-
-	&quot;github.com/confluentinc/confluent-kafka-go/v2/kafka&quot;
-)
-
-func main() {
-
-	p, err := kafka.NewProducer(&amp;kafka.ConfigMap{&quot;bootstrap.servers&quot;: &quot;localhost&quot;})
-	if err != nil {
-		panic(err)
-	}
-
-	defer p.Close()
-
-	// Delivery report handler for produced messages
-	go func() {
-		for e := range p.Events() {
-			switch ev := e.(type) {
-			case *kafka.Message:
-				if ev.TopicPartition.Error != nil {
-					fmt.Printf(&quot;Delivery failed: %v\n&quot;, ev.TopicPartition)
-				} else {
-					fmt.Printf(&quot;Delivered message to %v\n&quot;, ev.TopicPartition)
-				}
-			}
-		}
-	}()
-
-	// Produce messages to topic (asynchronously)
-	topic := &quot;myTopic&quot;
-	for _, word := range []string{&quot;Welcome&quot;, &quot;to&quot;, &quot;the&quot;, &quot;Confluent&quot;, &quot;Kafka&quot;, &quot;Golang&quot;, &quot;client&quot;} {
-		p.Produce(&amp;kafka.Message{
-			TopicPartition: kafka.TopicPartition{Topic: &amp;topic, Partition: kafka.PartitionAny},
-			Value:          []byte(word),
-		}, nil)
-	}
-
-	// Wait for message deliveries before shutting down
-	p.Flush(15 * 1000)
-}
-
-</code></pre>
-<h2 id="kafka" tabindex="-1">《Kafka 权威指南》章节列表</h2>
-<p>《kafka 权威指南》<br>
-章节列表：<br>
-第 1 章 初识 kafka<br>
-第 2 章 安装 Kafka<br>
-第 3 章 Kafka 生产者——向 Kafka 写入数据<br>
-第 4 章 Kafka 消费者——从 Kafka 读取数据<br>
-第 5 章 深入 Kafka<br>
-第 6 章 可靠的数据传递<br>
-第 7 章 构建数据管道<br>
-第 8 章 跨集群数据镜像<br>
-第 9 章 管理 Kafka<br>
-第 10 章 监控 Kafka<br>
-第 11 章 流式处理</p>
-<h2 id="reference" tabindex="-1">Reference</h2>
-<p><a href="https://blog.csdn.net/li1669852599/article/details/113254934" target="_blank" class="external-link">mac环境下使用brew安装Kafka(详细过程)_brew kafka-CSDN博客</a></p>
-<p><a href="https://www.cnblogs.com/xyqlrjm/p/14939453.html" target="_blank" class="external-link">Kafka整体架构、工作流程与文件存储机制 - 细雨骑驴入剑门 - 博客园</a></p>
-<p><a href="https://www.cnblogs.com/jingdongkeji/p/17879177.html" target="_blank" class="external-link">扫盲Kafka？看这一篇就够了！ - 京东云技术团队 - 博客园</a></p>
-<p><a href="https://www.cnblogs.com/huxi2b/p/8440429.html" target="_blank" class="external-link">Kafka元数据缓存(metadata cache) - huxihx - 博客园</a></p>
+<p>这将随机输出 &quot;Heads&quot; 或 &quot;Tails&quot;。</p>
+</li>
+</ol>
+<p>请注意，虽然 <code>$RANDOM</code> 可以用于简单的随机数生成需求，但它并不适用于需要高质量随机性的场景，比如密码生成或加密应用。对于这些场景，你可能需要使用更专业的随机数生成器，如 <code>/dev/urandom</code> 或 <code>/dev/random</code> 设备，或者使用其他编程语言提供的加密安全的随机数生成函数。</p>
+<p><a href="https://www.man7.org/linux/man-pages/man1/bash.1.html" target="_blank" class="external-link">bash(1) - Linux manual page</a></p>
 <hr>
 <script src="https://giscus.app/client.js" data-repo="wudanyang6/wudanyang6.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM=" data-category="Announcements" data-category-id="DIC_kwDOFTtyT84CYlu-" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-CN" crossorigin="anonymous" async></script>
 <span id="busuanzi_container_page_pv">
@@ -1068,29 +1028,7 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#mac-kafka">mac 运行 kafka</a>
-<ol>
-<li><a href="#安装">安装</a>
-</li>
-<li><a href="#broker">启动 broker</a>
-</li>
-<li><a href="#启动生产者">启动生产者</a>
-</li>
-<li><a href="#启动消费者">启动消费者</a>
-</li>
-<li><a href="#topic">创建 topic</a>
-</li>
-<li><a href="#topic-1">查看 topic 列表</a>
-</li>
-<li><a href="#数据文件目录">数据文件目录</a>
-</li>
-<li><a href="#go">简易 go 程序</a>
-</li>
-<li><a href="#kafka">《Kafka 权威指南》章节列表</a>
-</li>
-<li><a href="#reference">Reference</a>
-</li>
-</ol>
+<li><a href="#shell">shell-生成随机数</a>
 </li>
 </ol>
 </nav>

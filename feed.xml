@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-20T10:01:52Z</updated>
+    <updated>2024-10-20T10:34:13Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -5090,6 +5090,69 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//card/Linux/ubuntu 树莓派启动时配置网络/" />
+        </entry>
+        <entry>
+            <title>
+                shell-生成随机数
+                
+            </title>
+            <updated>2024-10-20T10:33:32.000Z</updated>
+            <id>https://wudanyang6.github.io//card/Linux/shell/shell-生成随机数/</id>
+            <content type="html">
+                &lt;h1 id=&quot;shell&quot; tabindex=&quot;-1&quot;&gt;shell-生成随机数&lt;/h1&gt;
+&lt;p&gt;变量范围是：&lt;code&gt;[0, 32767]&lt;/code&gt;  &lt;code&gt;echo $RANDOM&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+&lt;strong&gt;RANDOM&lt;/strong&gt; Each time this parameter is referenced, it expands to a&lt;br /&gt;
+random integer between 0 and 32767.  Assigning a value to&lt;br /&gt;
+&lt;strong&gt;RANDOM&lt;/strong&gt; initializes (seeds) the sequence of random numbers.&lt;br /&gt;
+If &lt;strong&gt;RANDOM&lt;/strong&gt; is unset, it loses its special properties, even&lt;br /&gt;
+if it is subsequently reset.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在 Linux 的 Bash 脚本中，&lt;code&gt;$RANDOM&lt;/code&gt; 是一个特殊的变量，它用于生成一个随机整数。每次引用 &lt;code&gt;$RANDOM&lt;/code&gt; 时，它都会返回一个介于 0 到 32767 之间的随机数。这个变量是由 Bash 内置的，不需要任何外部程序或模块支持。&lt;/p&gt;
+&lt;p&gt;以下是一些使用 &lt;code&gt;$RANDOM&lt;/code&gt; 的常见方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;生成随机数&lt;/strong&gt;：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;echo $RANDOM
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这将输出一个 0 到 32767 之间的随机整数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;生成特定范围内的随机数&lt;/strong&gt;：&lt;br /&gt;
+如果你想要生成一个在特定范围内的随机数，可以使用算术扩展。例如，生成一个 1 到 10 之间的随机数：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;echo $((RANDOM % 10 + 1))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这里，&lt;code&gt;%&lt;/code&gt; 是取模运算符，用于得到除法的余数，&lt;code&gt;+ 1&lt;/code&gt; 是为了将范围从 0 到 9 调整为 1 到 10。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;在循环中使用&lt;/strong&gt;：&lt;br /&gt;
+你可以在循环中使用 &lt;code&gt;$RANDOM&lt;/code&gt; 来生成一系列随机数：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;for i in {1..5}
+do
+    echo $((RANDOM % 100))
+done
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这将输出 5 个 0 到 99 之间的随机数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;生成随机选择&lt;/strong&gt;：&lt;br /&gt;
+你可以通过比较 &lt;code&gt;$RANDOM&lt;/code&gt; 和一个上限值来随机选择一个选项：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;choice=$((RANDOM % 2))
+if [ $choice -eq 0 ]; then
+    echo &amp;quot;Heads&amp;quot;
+else
+    echo &amp;quot;Tails&amp;quot;
+fi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这将随机输出 &amp;quot;Heads&amp;quot; 或 &amp;quot;Tails&amp;quot;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;请注意，虽然 &lt;code&gt;$RANDOM&lt;/code&gt; 可以用于简单的随机数生成需求，但它并不适用于需要高质量随机性的场景，比如密码生成或加密应用。对于这些场景，你可能需要使用更专业的随机数生成器，如 &lt;code&gt;/dev/urandom&lt;/code&gt; 或 &lt;code&gt;/dev/random&lt;/code&gt; 设备，或者使用其他编程语言提供的加密安全的随机数生成函数。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.man7.org/linux/man-pages/man1/bash.1.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;bash(1) - Linux manual page&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/Linux/shell/shell-生成随机数/" />
         </entry>
         <entry>
             <title>
