@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-21T09:15:34Z</updated>
+    <updated>2024-10-21T11:18:22Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -2205,6 +2205,20 @@ vmstat 5
         </entry>
         <entry>
             <title>
+                202404251145 破解软件的成本如果比较高就不要去花时间破解了
+                
+            </title>
+            <updated>2024-10-21T11:14:36.000Z</updated>
+            <id>https://wudanyang6.github.io//card/思考/202404251145 破解软件的成本如果比较高就不要去花时间破解了/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202404251145&quot; tabindex=&quot;-1&quot;&gt;202404251145 破解软件的成本如果比较高就不要去花时间破解了&lt;/h1&gt;
+&lt;p&gt;你的时间值得去做其他的事情，即使是睡觉 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/202404251146%20%E7%A0%B4%E8%A7%A3mindnode/&quot;&gt;202404251146 破解mindnode&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/思考/202404251145 破解软件的成本如果比较高就不要去花时间破解了/" />
+        </entry>
+        <entry>
+            <title>
                 202404171707 当你学不下去的时候
                 
             </title>
@@ -3908,6 +3922,60 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
         </entry>
         <entry>
             <title>
+                编译 nginx
+                
+            </title>
+            <updated>2024-10-21T11:13:29.000Z</updated>
+            <id>https://wudanyang6.github.io//card/nginx/编译 nginx/</id>
+            <content type="html">
+                &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;编译 nginx&lt;/h1&gt;
+&lt;h2 id=&quot;1-mac&quot; tabindex=&quot;-1&quot;&gt;1 在 mac 上面编译&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;./configure --with-debug --with-cc=/usr/bin/cc --with-cc-opt=&#39;-O0 -g&#39; --prefix=&amp;quot;/Users/wudanyang/workspace/reading-code-of-nginx-1.9.2/nginx-compile&amp;quot; --with-stream
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在 vagrant 上面编译&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;在 vagrant 上面安装
+./configure &#92;
+--with-debug &#92;
+--with-cc=/usr/bin/cc &#92;
+--with-cc-opt=&#39;-O0 -g&#39; &#92;
+--prefix=&amp;quot;/vagrant/reading-code-of-nginx-1.9.2/nginx-compile/&amp;quot; &#92;
+--with-stream &#92;
+--with-file-aio
+
+./configure &#92;
+--with-debug &#92;
+--with-cc=/usr/bin/cc &#92;
+--with-cc-opt=&#39;-O0 -g&#39; &#92;
+--prefix=&amp;quot;/mnt/mydisk/var/nginx&amp;quot; &#92;
+--with-stream &#92;
+--with-file-aio
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;安装 pcre 库，http rewrite module 需要使用&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo apt-get install libpcre3 libpcre3-dev&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;make&lt;/p&gt;
+&lt;p&gt;make install&lt;/p&gt;
+&lt;h2 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;2 树莓派上面编译&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;auto/configure --prefix=/home/ubuntu/mydisk/var/nginx-debug-1 --with-http_v2_module --with-http_ssl_module
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;2-1&quot; tabindex=&quot;-1&quot;&gt;2.1 编译时遇到的报错&lt;/h3&gt;
+&lt;h4 id=&quot;2-1-1-implicit-fallthrough-error&quot; tabindex=&quot;-1&quot;&gt;2.1.1 implicit fallthrough error&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/jaybill/article/details/80164370&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;linux下编译nginx1.0.15报错：Implicit fallthrough error&lt;/a&gt;&lt;br /&gt;
+&lt;img src=&quot;https://img-blog.csdn.net/2018050211282675?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2pheWJpbGw=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70&quot; alt=&quot;这里写图片描述&quot; /&gt;&lt;br /&gt;
+CFLAGS表示编译的可选参数，我们只需要在后面加上**-Wno-implicit-fallthrough**，即可忽略gcc7编译时switch-case中缺少break的错误。&lt;/p&gt;
+&lt;h4 id=&quot;2-1-2-struct-crypt-data-has-no-member-named-current-salt&quot; tabindex=&quot;-1&quot;&gt;2.1.2 &#39;struct crypt_data&#39; has no member named &#39;current_salt&#39;&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/hxlinux/p/12900503.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;编译nginx时struct crypt_data’没有名为‘current_salt’的成员：cd.current_salt[0] = ~salt[0]；的解决方案&lt;/a&gt;&lt;br /&gt;
+在源码中注释掉那行代码&lt;/p&gt;
+&lt;h4 id=&quot;2-1-3-cast-between-incompatible-function-types&quot; tabindex=&quot;-1&quot;&gt;2.1.3 cast between incompatible function types&lt;/h4&gt;
+&lt;p&gt;cast function type&lt;br /&gt;
+&lt;a href=&quot;https://github.com/SELinuxProject/setools/issues/2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/SELinuxProject/setools/issues/2&lt;/a&gt;&lt;br /&gt;
+&lt;code&gt;-Wno-cast-function-type&lt;/code&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/nginx/编译 nginx/" />
+        </entry>
+        <entry>
+            <title>
                 如何查看 nginx 的rewrite记录
                 
             </title>
@@ -5340,6 +5408,33 @@ You have to make sure that all flag definitions happen before calling flag.Parse
 
             </content>
             <link href="https://wudanyang6.github.io//card/docker/docker 和 Kubernetes 的异同/" />
+        </entry>
+        <entry>
+            <title>
+                费曼技巧
+                
+            </title>
+            <updated>2024-10-21T11:13:44.000Z</updated>
+            <id>https://wudanyang6.github.io//card/Personal/费曼技巧/</id>
+            <content type="html">
+                &lt;h1 id=&quot;费曼技巧&quot; tabindex=&quot;-1&quot;&gt;费曼技巧&lt;/h1&gt;
+&lt;p&gt;一种有目标的学习技巧，适用于学习【是什么】这类知识&lt;/p&gt;
+&lt;h1 id=&quot;步骤&quot; tabindex=&quot;-1&quot;&gt;步骤&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;确定学习目标&lt;/li&gt;
+&lt;li&gt;寻找资料（网络、书籍、报刊等）学习&amp;quot;费曼技巧&amp;quot;，直到自己认为已经理解了&amp;quot;费曼技巧&amp;quot;，想象现在要给一个完全没有听说过&amp;quot;费曼技巧&amp;quot;的人，记下来所要讲解的内容。&lt;/li&gt;
+&lt;li&gt;在记下内容的时候，会发现有很多讲不通的地方，那么需要重复第2步骤直到通顺。&lt;/li&gt;
+&lt;li&gt;简化自己的描述&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;原理&quot; tabindex=&quot;-1&quot;&gt;原理&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;温故而知新，可以为师矣&lt;/li&gt;
+&lt;li&gt;从被动到主动的状态&lt;/li&gt;
+&lt;li&gt;回忆知识，可以加固神经回路&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/Personal/费曼技巧/" />
         </entry>
         <entry>
             <title>
