@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-21T05:35:02Z</updated>
+    <updated>2024-10-21T09:07:20Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -319,6 +319,171 @@ func swapStrBytes(s []byte, left, right int) {
 
             </content>
             <link href="https://wudanyang6.github.io//card/算法/leetcode-53. 最大子数组和/" />
+        </entry>
+        <entry>
+            <title>
+                leetcode-401. 二进制手表
+                
+            </title>
+            <updated>2024-10-21T08:54:48.000Z</updated>
+            <id>https://wudanyang6.github.io//card/算法/leetcode-401. 二进制手表/</id>
+            <content type="html">
+                &lt;h1 id=&quot;leetcode-401&quot; tabindex=&quot;-1&quot;&gt;leetcode-401. 二进制手表&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/binary-watch/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;401. 二进制手表&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#算法/回溯算法&quot;&gt;#算法/回溯算法&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1,2,4,8&lt;br /&gt;
+取 2 个&lt;/p&gt;
+&lt;p&gt;1，2 = 3&lt;br /&gt;
+1，4 = 5&lt;br /&gt;
+1，8 = 9&lt;br /&gt;
+2，4 = 6&lt;br /&gt;
+2，8 = 10&lt;br /&gt;
+4，8 = 12&lt;/p&gt;
+&lt;p&gt;1，2，4 = 7&lt;br /&gt;
+1，2，8 = 11&lt;br /&gt;
+1，4，8 = 13&lt;br /&gt;
+2，4，8 = 14&lt;/p&gt;
+&lt;p&gt;1，2，4，8&lt;/p&gt;
+&lt;p&gt;1,2,4,8,16,32&lt;/p&gt;
+&lt;p&gt;1,2 = 3&lt;br /&gt;
+1,4 = 5&lt;br /&gt;
+1,8 = 9&lt;br /&gt;
+1,16 =17&lt;br /&gt;
+1,32 = 33&lt;br /&gt;
+2,4 = 6&lt;br /&gt;
+2,8 = 10&lt;br /&gt;
+2,16 = 18&lt;br /&gt;
+2,32 = 34&lt;br /&gt;
+4,8 = 12&lt;br /&gt;
+4,16 = 20&lt;br /&gt;
+4,32 = 36&lt;br /&gt;
+8,16 = 24&lt;br /&gt;
+8,32 = 40&lt;br /&gt;
+16,32 = 48&lt;/p&gt;
+&lt;p&gt;1,2,4 = 7&lt;br /&gt;
+1,2,8 = 11&lt;br /&gt;
+1,2,16 = 19&lt;br /&gt;
+1,2,32 = 35&lt;br /&gt;
+1,4,8 = 13&lt;br /&gt;
+1,4,16 = 21&lt;br /&gt;
+1,4,32 = 37&lt;br /&gt;
+1,8,16 = 25&lt;br /&gt;
+1,8,32 = 41&lt;br /&gt;
+1,16,32 = 49&lt;br /&gt;
+2,4,8 = 14&lt;br /&gt;
+2,4,16 = 22&lt;br /&gt;
+2,4,32 = 38&lt;br /&gt;
+4,8,16 = 28&lt;br /&gt;
+4,8,32 = 44&lt;br /&gt;
+8,16,32 = 56&lt;/p&gt;
+&lt;p&gt;1,2,4,8,16,32&lt;/p&gt;
+&lt;p&gt;1,2,4,8 = 15&lt;br /&gt;
+1,2,4,16 = 23&lt;br /&gt;
+1,2,4,32 = 39&lt;br /&gt;
+1,4,8,16 = 29&lt;br /&gt;
+1,4,8,32 = 45&lt;br /&gt;
+1,8,16,32 = 57&lt;br /&gt;
+2,4,8,16 = 30&lt;br /&gt;
+2,4,8,32 = 46&lt;br /&gt;
+4,8,16,32 = 60&lt;/p&gt;
+&lt;p&gt;1,2,4,8,16 = 31&lt;br /&gt;
+1,2,4,8,32 = 47&lt;br /&gt;
+2,4,8,16,32 = 62&lt;/p&gt;
+&lt;p&gt;1,2,4,8,16,32 =&lt;/p&gt;
+&lt;p&gt;枚举出来所有的集合&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;        $hourSet   = [
+            0 =&amp;gt; [0],
+            1 =&amp;gt; [1, 2, 4, 8],
+            2 =&amp;gt; [3, 5, 9, 6, 10],
+            3 =&amp;gt; [7, 11],
+        ];
+        $minuteSet = [
+            0 =&amp;gt; [0],
+            1 =&amp;gt; [1, 2, 4, 8, 16, 32],
+            2 =&amp;gt; [3, 5, 9, 17, 33, 6, 10, 18, 34, 12, 20, 36, 24, 40, 48],
+            3 =&amp;gt; [7, 11, 19, 35, 13, 21, 37, 25, 41, 49, 14, 22, 38, 28, 44, 56],
+            4 =&amp;gt; [15, 23, 39, 29, 45, 57, 30, 46],
+            5 =&amp;gt; [31, 47],
+        ];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;话不多说，上代码，差点栽在一个简单题手里，也是我没有想到的&lt;/p&gt;
+&lt;p&gt;其实呢，我有两种思路&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一种就是把小时和分钟的所有位表示的数字都枚举出来，然后最后处理一下最后的输出格式就行了，这个可行，但是废手，而且容易出错&lt;/li&gt;
+&lt;li&gt;另外一种就是利用递归的方式，计算出每一步的所有可能值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;第二种方式：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class Solution {
+    
+    /**
+     * @param Integer $turnedOn
+     * @return String[]
+     */
+    public function readBinaryWatch($turnedOn) {
+        // 时针最多有 4 个
+        // 分针最多亮 6 个
+        
+        $hour    = [1, 2, 4, 8];
+        $minutes = [1, 2, 4, 8, 16, 32];
+        
+        $ret = [];
+        for ($i = 0; $i &amp;lt;= $turnedOn &amp;amp;&amp;amp; $i &amp;lt; 4; $i++) {
+            $hourPossible   = $this-&amp;gt;getSetPossible($hour, $i, 11);
+            $minutePossible = $this-&amp;gt;getSetPossible($minutes, $turnedOn - $i, 59);
+            
+            foreach ($hourPossible as $hItem) {
+                foreach ($minutePossible as $mItem) {
+                    if ($mItem &amp;lt; 10) {
+                        $mItem = &#39;0&#39; . $mItem;
+                    }
+                    $ret[] = $hItem . &#39;:&#39; . $mItem;
+                }
+            }
+        }
+        
+
+        
+        return $ret;
+    }
+    
+    /**
+     * @param $set
+     * @param $count
+     * @param $maxValue
+     * @return array
+     */
+    public function getSetPossible($set, $count, $maxValue) {
+        if ($count == 0) {
+            return [0];
+        }
+        if ($count == 1) {
+            return $set;
+        }
+        
+        $setLen = count($set);
+        
+        $ret = [];
+        
+        // 第一个值的取值范围
+        $maxIndex = $setLen - $count;
+        
+        // 第一个值的取值范围如果超过,那么退出
+        for ($i = 0; $i &amp;lt;= $maxIndex; $i++) {
+            $possibleSet = $this-&amp;gt;getSetPossible(array_slice($set, $i + 1), $count - 1, $maxValue);
+            foreach ($possibleSet as $setItem) {
+                if ($setItem + $set[$i] &amp;lt;= $maxValue) {
+                    $ret[] = $set[$i] + $setItem;
+                }
+            }
+        }
+        
+        return $ret;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/算法/leetcode-401. 二进制手表/" />
         </entry>
         <entry>
             <title>
@@ -649,6 +814,151 @@ func dynamic(s string) string {
 
             </content>
             <link href="https://wudanyang6.github.io//card/游戏/20240415142052 原神挺好玩/" />
+        </entry>
+        <entry>
+            <title>
+                202103251635 - 获取树莓派温度
+                
+            </title>
+            <updated>2024-10-21T08:54:22.000Z</updated>
+            <id>https://wudanyang6.github.io//card/树莓派/202103251635 - 获取树莓派温度/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202103251635&quot; tabindex=&quot;-1&quot;&gt;202103251635 - 获取树莓派温度&lt;/h1&gt;
+&lt;p&gt;cat /sys/class/thermal/thermal_zone0/temp&lt;/p&gt;
+&lt;p&gt;取出值后除以 &lt;code&gt;1000&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020210325163653.png&quot; alt=&quot;Pasted image 20210325163653.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;写个脚本获取&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import commands
+​
+def main():
+# 查看GPU温度
+    gpu = commands.getoutput( &#39;/opt/vc/bin/vcgencmd measure_temp&#39; ).replace( &#39;temp=&#39;, &#39;&#39; ).replace( &#39;&#92;&#39;C&#39;, &#39;&#39; )
+    gpu = float(gpu)
+    print(&#39;gpu Temp: %.2f &#39; % gpu)
+	
+# 查看CPU温度
+    file = open(&amp;quot;/sys/class/thermal/thermal_zone0/temp&amp;quot;)
+    cpu = float(file.read()) / 1000
+    file.close()
+    print(&#39;cpu Temp: %2.2f&#39; % cpu)
+​
+if __name__ == &#39;__main__&#39;:
+    main()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;https://my.oschina.net/zhenggao/blog/4336898&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://my.oschina.net/zhenggao/blog/4336898&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/树莓派/202103251635 - 获取树莓派温度/" />
+        </entry>
+        <entry>
+            <title>
+                操作系统-内核态与用户态
+                
+            </title>
+            <updated>2024-10-21T08:56:43.000Z</updated>
+            <id>https://wudanyang6.github.io//card/操作系统/操作系统-内核态与用户态/</id>
+            <content type="html">
+                &lt;h1 id=&quot;操作系统-内核态与用户态&quot; tabindex=&quot;-1&quot;&gt;操作系统-内核态与用户态&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;System&lt;/strong&gt;: You are a helpful AI assistant.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;User&lt;/strong&gt;: 请说明linux操作系统的系统调用过程的全过程，并配上必要的mermaid图解&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assistant&lt;/strong&gt;: 在Linux操作系统中，系统调用是用户空间进程与内核空间通交流的主要方式。以下是系统调用过程的全过程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;用户空间进程通过库函数发起系统调用。这些库函数通常是glibc库中的封装函数，如&lt;code&gt;open()&lt;/code&gt;, &lt;code&gt;read()&lt;/code&gt;, &lt;code&gt;write()&lt;/code&gt;等。这些函数内部实际上是通过使用特定的系统调用号和参数来发起系统调用的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;库函数将系统调用号和参数放入适当的寄存器，然后执行一个特殊的陷阱指令（如&lt;code&gt;int 0x80&lt;/code&gt;或&lt;code&gt;syscall&lt;/code&gt;）。这个指令将CPU从用户模式切换到内核模式，并跳转到内核中预定义的固定地址开始执行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内核检查系统调用号和参数的有效性，然后找到对应的内核函数并执行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内核函数执行完毕后，将返回结果放入一个寄存器，然后执行一个特殊的指令（如&lt;code&gt;iret&lt;/code&gt;）来将CPU从内核模式切换回用户模式，并跳回到库函数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;库函数从寄存器取出返回结果，然后返回给用户空间进程。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以下是对应的mermaid图解：&lt;/p&gt;
+&lt;pre class=&quot;mermaid&quot;&gt;sequenceDiagram
+    participant P as 用户空间进程
+    participant L as 库函数
+    participant K as 内核
+    P-&gt;&gt;L: 发起系统调用
+    L-&gt;&gt;K: 执行陷阱指令
+    K-&gt;&gt;K: 检查系统调用号和参数
+    K-&gt;&gt;K: 执行内核函数
+    K-&gt;&gt;L: 返回结果
+    L-&gt;&gt;P: 返回结果&lt;/pre&gt;&lt;p&gt;这个图解描述了用户空间进程、库函数和内核之间在系统调用过程中的交互。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;User&lt;/strong&gt;: 从进程或者线程的角度看系统调用是怎样的&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assistant&lt;/strong&gt;: 从进程或线程的角度来看，系统调用可以被视为一个函数调用。进程或线程通过调用特定的库函数（如&lt;code&gt;open()&lt;/code&gt;, &lt;code&gt;read()&lt;/code&gt;, &lt;code&gt;write()&lt;/code&gt;等）来发起系统调用。然而，与普通的函数调用不同，系统调用涉及到用户空间和内核空间之间的切换。&lt;/p&gt;
+&lt;p&gt;当进程或线程发起系统调用时，它将被挂起，直到系统调用完成。此时，CPU从用户模式切换到内核模式，开始执行内核中的代码。这种模式切换是必要的，因为内核空间可以访问硬件和所有系统资源，而用户空间的访问权限则被严格限制。&lt;/p&gt;
+&lt;p&gt;系统调用完成后，结果会被返回到用户空间，CPU模式切换回用户模式，进程或线程继续执行。&lt;/p&gt;
+&lt;p&gt;因此，即使系统调用看起来像一个简单的函数调用，但它实际上涉及到了许多复杂的步骤，包括模式切换、权限检查、参数验证等。&lt;/p&gt;
+&lt;p&gt;以下是对应的mermaid图解：&lt;/p&gt;
+&lt;pre class=&quot;mermaid&quot;&gt;sequenceDiagram
+    participant T as 线程/进程
+    participant L as 库函数
+    participant K as 内核
+    T-&gt;&gt;L: 调用库函数（如open(), read()等）
+    L-&gt;&gt;K: 执行陷阱指令，将CPU从用户模式切换到内核模式
+    K-&gt;&gt;K: 检查参数，执行对应的内核函数
+    K-&gt;&gt;L: 执行完毕，将结果返回到用户空间，CPU切换回用户模式
+    L-&gt;&gt;T: 返回结果&lt;/pre&gt;&lt;p&gt;这个图解描述了线程/进程、库函数和内核之间在系统调用过程中的交互。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;User&lt;/strong&gt;: 进程做完系统调用操作之后，处理系统调用的进程还是原来的进程吗？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assistant&lt;/strong&gt;: 是的，处理系统调用的仍然是原来的进程。当一个进程发起系统调用时，它并没有改变，也没有被替换或转换。相反，它只是暂时地切换到了内核模式，以便内核可以代表它执行特定的操作，如读取文件、打开网络连接等。&lt;/p&gt;
+&lt;p&gt;在系统调用完成后，控制权将返回到原来的进程，进程将继续从系统调用返回点开始执行。因此，尽管系统调用涉及到用户空间和内核空间之间的上下文切换，但发起系统调用的进程始终保持不变。&lt;/p&gt;
+&lt;p&gt;这也是为什么系统调用常常被描述为&amp;quot;昂贵&amp;quot;或&amp;quot;耗时&amp;quot;的操作，因为涉及到上下文切换和模式切换，这些都是需要消耗处理器时间的操作。但是，这是必要的，因为它使得用户空间的进程能够安全地访问硬件和系统资源，而不需要关心底层的细节。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;User&lt;/strong&gt;: 为什么有的地方说是先通过软中断陷入系统内核，然后由内核线程执行系统调用，然后再返回给用户线程？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assistant&lt;/strong&gt;: 首先，我们需要理解这里的&amp;quot;软中断&amp;quot;和&amp;quot;内核线程&amp;quot;。&lt;/p&gt;
+&lt;p&gt;软中断（也被称为软件中断或陷阱）是一种 CPU 指令，它会引发 CPU 切换到内核模式并开始执行内核代码。这就是进程如何发起系统调用的：它通过执行一个软中断指令（如 int 0x80 或 syscall），将 CPU 从用户模式切换到内核模式，并跳转到内核中的预定义地址开始执行。&lt;/p&gt;
+&lt;p&gt;内核线程是内核的一部分，它在内核空间中运行，并且可以访问所有的系统资源和硬件。当进程发起系统调用时，实际上是由内核线程来完成这个调用的。内核线程会检查系统调用的参数、执行相应的内核函数，然后将结果返回给用户空间。&lt;/p&gt;
+&lt;p&gt;所以，当我们说&amp;quot;通过软中断陷入系统内核，然后由内核线程执行系统调用，然后再返回给用户线程&amp;quot;，其实是这样的过程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;用户线程（或进程）通过执行一个软中断指令，发起一个系统调用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CPU 切换到内核模式，开始执行内核代码。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内核线程接管，检查系统调用的参数、执行相应的内核函数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内核线程执行完毕，将结果返回给用户空间。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CPU 切换回用户模式，用户线程（或进程）继续执行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这就是为什么有的地方会说是通过软中断陷入系统内核，然后由内核线程执行系统调用，然后再返回给用户线程。这个表述可能会让人误解为系统调用是由另一个线程来完成的，但实际上是由同一个进程（只不过是在内核模式下）来完成的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;User&lt;/strong&gt;: 但是你上文所说的：【当一个进程发起系统调用时，它并没有改变，也没有被替换或转换。相反，它只是暂时地切换到了内核模式，以便内核可以代表它执行特定的操作，如读取文件、打开网络连接等。】  和现在说的需要一个内核线程执行，不是自相矛盾的吗？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assistant&lt;/strong&gt;: 对不起，让我们来澄清一下。当我们说“内核线程执行系统调用”时，实际上是指在内核模式下的原始进程（或线程）。&lt;/p&gt;
+&lt;p&gt;在大多数情况下，当一个用户进程发起一个系统调用时，该进程会切换到内核模式并继续执行。在这种情况下，我们可以将其视为“内核线程”，因为它现在正在执行内核代码，尽管它实际上仍然是原始的用户进程。&lt;/p&gt;
+&lt;p&gt;所以，当我们说“内核线程执行系统调用”时，我们实际上是指原始的用户进程，但现在它正在内核模式下执行。&lt;/p&gt;
+&lt;p&gt;这是一个复杂的概念，因为它涉及到操作系统的用户模式和内核模式之间的切换，以及用户进程和内核线程之间的区别。我希望这个解释能够帮助你理解。再次对之前可能造成的混淆表示歉意。&lt;/p&gt;
+&lt;p&gt;总结：&lt;br /&gt;
+当然，让我们总结一下关于Linux系统调用和进程在用户空间和内核空间之间交互的讨论：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;系统调用概念&lt;/strong&gt;：系统调用是用户空间进程请求操作系统内核提供服务的机制。这些服务包括文件操作、进程控制、网络通信等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;发起系统调用&lt;/strong&gt;：用户进程通过库函数（如C标准库中的封装函数）发起系统调用。这些库函数将系统调用号和参数放入适当的寄存器，并执行一个特殊的软中断指令（如&lt;code&gt;int 0x80&lt;/code&gt;或&lt;code&gt;syscall&lt;/code&gt;）来触发系统调用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用户模式和内核模式&lt;/strong&gt;：当软中断指令执行时，CPU从用户模式（低权限模式）切换到内核模式（高权限模式），这样进程就可以安全地执行需要更高权限的操作。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;内核处理&lt;/strong&gt;：在内核模式下，操作系统内核接管，验证系统调用参数，执行相应的内核服务，并将结果准备好返回。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;返回用户空间&lt;/strong&gt;：一旦内核完成了系统调用请求的处理，它将结果放入寄存器，并将控制权返回给用户空间进程，同时将CPU模式切换回用户模式。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;进程和内核线程&lt;/strong&gt;：执行系统调用的实际上还是原始的用户进程，只是它现在以内核模式运行。它在执行系统调用期间，可以认为是一个“内核线程”，但这并不意味着它是一个完全独立的线程实体。一旦系统调用完成，原始的用户进程将继续在用户空间执行。这里的“内核线程”描述并不意味着有一个新的、独立的线程被创建来处理系统调用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;概念澄清&lt;/strong&gt;：在前面的对话中，使用“内核线程执行系统调用”这样的表述可能会导致理解上的混淆。为了澄清，执行系统调用的是在内核模式下运行的用户进程本身，而不是一个单独的内核线程实体。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;希望这次的总结能够更加清晰地阐述了Linux系统调用的全过程，以及进程在用户模式和内核模式之间切换的概念。&lt;/p&gt;
+&lt;h1 id=&quot;reference&quot; tabindex=&quot;-1&quot;&gt;Reference&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/57124847/does-each-system-call-create-a-process&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Does each system call create a process?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No, they don&#39;t. The operating system uses software interrupt to execute the system call operation within the same process. You can imagine them as a function call but they are executed with kernel privileges.&lt;br /&gt;
+不，它们不是。操作系统使用软件中断在同一进程内执行系统调用操作。你可以将它们想象为函数调用，但它们是以内核特权执行的。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ofstack.com/C++/8673/based-on-the-difference-between-select--poll--epoll.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Based on the difference between select poll epoll&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/操作系统/操作系统-内核态与用户态/" />
         </entry>
         <entry>
             <title>
@@ -1909,6 +2219,28 @@ vmstat 5
         </entry>
         <entry>
             <title>
+                202404082353 取乎其上得乎其中
+                
+            </title>
+            <updated>2024-10-21T08:49:31.000Z</updated>
+            <id>https://wudanyang6.github.io//card/思考/202404082353 取乎其上得乎其中/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202404082353&quot; tabindex=&quot;-1&quot;&gt;202404082353 取乎其上得乎其中&lt;/h1&gt;
+&lt;p&gt;将目标定的高一些，最后的结果可能是中间的效果。目标是通过卡片【笔记】【写作】法创作几十本书出来，那么最后应该是可以写出来一本书的吧。&lt;/p&gt;
+&lt;p&gt;就如同这个视频中说的，将卡片笔记法一直践行下去：&lt;/p&gt;
+&lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
+&lt;h1 id=&quot;神奇的笔记法！你也能轻松开始写作【卡片笔记写作法】 - 哔哩哔哩&quot; tabindex=&quot;-1&quot;&gt;神奇的笔记法！你也能轻松开始写作【卡片笔记写作法】 - 哔哩哔哩&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Omnivore&quot;&gt;#Omnivore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://omnivore.app/me/-1927ff742c7&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Read on Omnivore&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.bilibili.com/read/cv13952736/?jump_opus=1&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Read Original&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;notes&quot; tabindex=&quot;-1&quot;&gt;Notes&lt;/h2&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/思考/202404082353 取乎其上得乎其中/" />
+        </entry>
+        <entry>
+            <title>
                 搜索引擎技巧
                 
             </title>
@@ -1930,6 +2262,32 @@ vmstat 5
 
             </content>
             <link href="https://wudanyang6.github.io//card/工具/搜索引擎技巧/" />
+        </entry>
+        <entry>
+            <title>
+                各种资源国内镜像
+                
+            </title>
+            <updated>2024-10-21T08:54:05.000Z</updated>
+            <id>https://wudanyang6.github.io//card/工具/各种资源国内镜像/</id>
+            <content type="html">
+                &lt;h1 id=&quot;各种资源国内镜像&quot; tabindex=&quot;-1&quot;&gt;各种资源国内镜像&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://mirrors.tuna.tsinghua.edu.cn/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;清华&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://mirrors.ustc.edu.cn/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;中科大&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://mirrors.163.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;网易&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://developer.aliyun.com/mirror/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;阿里&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;应用独立镜像&quot; tabindex=&quot;-1&quot;&gt;应用独立镜像&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://pkg.phpcomposer.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;PHP composer 镜像&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gitee.com/mirrors&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;github - gitee 镜像&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://rsproxy.cn/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;crates.io 镜像&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;github&quot; tabindex=&quot;-1&quot;&gt;github 镜像&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://ghproxy.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://ghproxy.com/&lt;/a&gt;&lt;br /&gt;
+速度非常快&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/engchina/article/details/91350012&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;国内开源镜像站点汇总(Centos、Apache、MySQL等各种软件源)&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/工具/各种资源国内镜像/" />
         </entry>
         <entry>
             <title>
@@ -2055,6 +2413,27 @@ vmstat 5
 
             </content>
             <link href="https://wudanyang6.github.io//card/工具/obsidian-things3-today插件/" />
+        </entry>
+        <entry>
+            <title>
+                marginnote 使用方法
+                
+            </title>
+            <updated>2024-10-21T08:57:13.000Z</updated>
+            <id>https://wudanyang6.github.io//card/工具/marginnote/marginnote 使用方法/</id>
+            <content type="html">
+                &lt;h1 id=&quot;marginnote&quot; tabindex=&quot;-1&quot;&gt;marginnote 使用方法&lt;/h1&gt;
+&lt;h2 id=&quot;1&quot; tabindex=&quot;-1&quot;&gt;1 标记&lt;/h2&gt;
+&lt;p&gt;跟红绿灯联系起来，应该会比较好记住&lt;/p&gt;
+&lt;p&gt;红色：理解并记住&lt;br /&gt;
+黄色：理解&lt;br /&gt;
+绿色：了解&lt;br /&gt;
+灰色：稍微注意一下&lt;/p&gt;
+&lt;h2 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;2 网页内容剪藏&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/202409021102%20marginnote%20%E4%BB%8E%20Web%20%E7%BD%91%E9%A1%B5%E5%AF%BC%E5%85%A5%E5%86%85%E5%AE%B9/&quot;&gt;202409021102 marginnote 从 Web 网页导入内容&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/工具/marginnote/marginnote 使用方法/" />
         </entry>
         <entry>
             <title>
@@ -2319,6 +2698,25 @@ date_translator = require(&amp;quot;date&amp;quot;)
 
             </content>
             <link href="https://wudanyang6.github.io//card/工具/202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作/" />
+        </entry>
+        <entry>
+            <title>
+                202404251146 破解mindnode
+                
+            </title>
+            <updated>2024-10-21T08:49:53.000Z</updated>
+            <id>https://wudanyang6.github.io//card/工具/202404251146 破解mindnode/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202404251146-mindnode&quot; tabindex=&quot;-1&quot;&gt;202404251146 破解mindnode&lt;/h1&gt;
+&lt;p&gt;下载mindnode：&lt;br /&gt;
+MindNode Pro 2023.3.1 思维导图工具 - 精品MAC应用分享&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://xclient.info/s/mind-node-pro.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://xclient.info/s/mind-node-pro.html&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如遇：&lt;code&gt;「xxx.app已损坏，打不开。你应该将它移到废纸篓」&lt;/code&gt;，请参考：&lt;a href=&quot;https://xclient.info/a/b4d2370e-f0e0-8011-aa0e-81391ad11d1f.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;《新手常见问题》&lt;/a&gt;中“下载好的DMG 打不开”第二项中内容；如果仅是部分TNT软件闪退打不开，参考&lt;a href=&quot;https://xclient.info/a/e66ab41a-62a9-cbe6-656c-f818044cd738.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;《修复TNT和谐软件闪退问题》&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/工具/202404251146 破解mindnode/" />
         </entry>
         <entry>
             <title>
@@ -5027,6 +5425,24 @@ You have to make sure that all flag definitions happen before calling flag.Parse
         </entry>
         <entry>
             <title>
+                202405061043 go 抽象的一个例子
+                
+            </title>
+            <updated>2024-10-21T08:55:53.000Z</updated>
+            <id>https://wudanyang6.github.io//card/go/202405061043 go 抽象的一个例子/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202405061043-go&quot; tabindex=&quot;-1&quot;&gt;202405061043 go 抽象的一个例子&lt;/h1&gt;
+&lt;p&gt;Go 语言的标准库 database/sql 是一个抽象层的经典例子&lt;br /&gt;
+虽然关系型数据库的功能相对比较复杂&lt;br /&gt;
+但是我们仍然可以通过定义一系列构成树形结构的接口提供合理的抽象&lt;br /&gt;
+这也是我们在编写框架和中间层时应该注意的&lt;br /&gt;
+即面向接口编程 —— 只依赖抽象的接口，不要依赖具体的实现。&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/go/202405061043 go 抽象的一个例子/" />
+        </entry>
+        <entry>
+            <title>
                 ubuntu-unminimize
                 
             </title>
@@ -5043,6 +5459,37 @@ You have to make sure that all flag definitions happen before calling flag.Parse
 
             </content>
             <link href="https://wudanyang6.github.io//card/docker/ubuntu-unminimize/" />
+        </entry>
+        <entry>
+            <title>
+                docker 和 Kubernetes 的异同
+                
+            </title>
+            <updated>2024-10-21T08:52:55.000Z</updated>
+            <id>https://wudanyang6.github.io//card/docker/docker 和 Kubernetes 的异同/</id>
+            <content type="html">
+                &lt;h1 id=&quot;docker-kubernetes&quot; tabindex=&quot;-1&quot;&gt;docker 和 Kubernetes 的异同&lt;/h1&gt;
+&lt;p&gt;Docker 和 Kubernetes 是两个不同的技术，但它们可以一起使用来构建和管理容器化应用程序。下面是 Docker 和 Kubernetes 的异同：&lt;/p&gt;
+&lt;p&gt;异同点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;目的不同：Docker 是一种容器化技术，用于打包和部署应用程序。Kubernetes 是一种容器编排平台，用于管理和编排容器化应用程序。&lt;/li&gt;
+&lt;li&gt;架构不同：Docker 是一个单节点容器引擎，而 Kubernetes 是一个分布式系统，由多个节点组成。&lt;/li&gt;
+&lt;li&gt;功能不同：Docker 提供容器的构建、打包、发布和运行等功能。Kubernetes 提供容器编排、自动扩展、负载均衡、服务发现等功能。&lt;/li&gt;
+&lt;li&gt;使用场景不同：Docker 适用于单个应用程序或微服务的部署。Kubernetes 适用于多个应用程序或微服务的管理和编排。&lt;/li&gt;
+&lt;li&gt;学习成本不同：Docker 学习成本较低，容易上手。Kubernetes 学习成本较高，需要掌握更多的概念和技术。&lt;/li&gt;
+&lt;li&gt;部署方式不同：Docker 可以直接在本地或云端部署。Kubernetes 需要在集群中部署，需要更多的配置和管理。&lt;/li&gt;
+&lt;li&gt;可扩展性不同：Docker 可以扩展到多个节点，但需要手动管理。Kubernetes 可以自动扩展和管理多个节点。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;相同点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;都是容器化技术，用于构建和部署应用程序。&lt;/li&gt;
+&lt;li&gt;都支持多种编程语言和框架，如 Java、Python、Node.js 等。&lt;/li&gt;
+&lt;li&gt;都可以在本地或云端部署。&lt;/li&gt;
+&lt;li&gt;都可以提高应用程序的可移植性和可伸缩性。&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/docker/docker 和 Kubernetes 的异同/" />
         </entry>
         <entry>
             <title>
@@ -5256,6 +5703,35 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
         </entry>
         <entry>
             <title>
+                shell替换字符串
+                
+            </title>
+            <updated>2024-10-21T08:58:59.000Z</updated>
+            <id>https://wudanyang6.github.io//card/Linux/shell/shell替换字符串/</id>
+            <content type="html">
+                &lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;# shell替换字符串
+${hellohe/he/ae}
+
+# 全局替换，多了一个斜杠
+${hellohe//he/ae}
+
+# sed 命令， 后面修饰的 g 代表全局替换，否则只替换第一个
+echo &amp;quot;hellohe&amp;quot; | sed &#39;s/he/ae/g&#39;
+
+#  awk 的函数
+echo &amp;quot;hellohe&amp;quot; | awk &#39;{gsub(/he/, &amp;quot;ae&amp;quot;); print $0}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/whatday/article/details/104963945&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;linux shell 替换字符串的几种方法，变量替换${}，sed，awk_whatday的博客-CSDN博客_shell 字符串替换&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;替换文本&quot; tabindex=&quot;-1&quot;&gt;替换文本&lt;/h1&gt;
+&lt;p&gt;每一行最后添加一个逗号&lt;br /&gt;
+&lt;code&gt;sed -e &#39;s/$/,/&#39;&lt;/code&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/Linux/shell/shell替换字符串/" />
+        </entry>
+        <entry>
+            <title>
                 shell-生成随机数
                 
             </title>
@@ -5357,6 +5833,24 @@ done &amp;lt; file.txt
         </entry>
         <entry>
             <title>
+                shell 命令，替换逗号为tab符号
+                
+            </title>
+            <updated>2024-10-21T08:59:49.000Z</updated>
+            <id>https://wudanyang6.github.io//card/Linux/shell/shell 命令，替换逗号为tab符号/</id>
+            <content type="html">
+                &lt;h1 id=&quot;shell-tab&quot; tabindex=&quot;-1&quot;&gt;shell 命令，替换逗号为tab符号&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#shell&quot;&gt;#shell&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;cat daily_pushed_data_ori  | grep -v error | sed &#39;s/,/&#92;t/g&#39; &amp;gt; daily_pushed_data
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参考：&lt;br /&gt;
+&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/shell/shell%E6%9B%BF%E6%8D%A2%E5%AD%97%E7%AC%A6%E4%B8%B2/&quot;&gt;shell替换字符串&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/Linux/shell/shell 命令，替换逗号为tab符号/" />
+        </entry>
+        <entry>
+            <title>
                 linux-树莓派无法上网排查
                 
             </title>
@@ -5422,7 +5916,7 @@ Saving to: ‘index.html’
                 linux-wrk
                 
             </title>
-            <updated>2024-10-21T04:50:39.000Z</updated>
+            <updated>2024-10-21T07:50:21.000Z</updated>
             <id>https://wudanyang6.github.io//card/Linux/linux-wrk/</id>
             <content type="html">
                 &lt;h1 id=&quot;linux-wrk&quot; tabindex=&quot;-1&quot;&gt;linux-wrk&lt;/h1&gt;
@@ -5643,6 +6137,37 @@ hello%
 
             </content>
             <link href="https://wudanyang6.github.io//card/Linux/linux-echo/" />
+        </entry>
+        <entry>
+            <title>
+                linux-dnsmasq
+                
+            </title>
+            <updated>2024-10-21T08:52:22.000Z</updated>
+            <id>https://wudanyang6.github.io//card/Linux/linux-dnsmasq/</id>
+            <content type="html">
+                &lt;h1 id=&quot;linux-dnsmasq&quot; tabindex=&quot;-1&quot;&gt;linux-dnsmasq&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;whatis dnsmasq
+dnsmasq (8)          - A lightweight DHCP and caching DNS server.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;一个 &lt;code&gt;dns&lt;/code&gt; 缓存&lt;/p&gt;
+&lt;p&gt;Dnsmasq是一个轻量级的、易于配置的DNS转发器和DHCP服务器。它适用于小型网络，可以提供DNS缓存和BOOTP/TFTP服务，以帮助网络引导基于网络的操作系统。&lt;/p&gt;
+&lt;p&gt;Dnsmasq具有以下主要作用：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;DNS 转发与缓存：&lt;/strong&gt; Dnsmasq可以接受DNS查询并将其转发至网络中配置的真实DNS服务器，同时将查询结果缓存起来，提高网络访问速度。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DHCP 服务器：&lt;/strong&gt; Dnsmasq可以作为一个DHCP服务器，为网络设备分配IP地址。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TFTP 服务器：&lt;/strong&gt; Dnsmasq还可以提供TFTP服务，为网络启动的设备提供所需文件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dnsmasq的主要应用场景是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;小型网络和家庭网络：&lt;/strong&gt; 对于小型网络和家庭网络，通常无需专门的DNS和DHCP服务器，Dnsmasq就可以满足需求，省去配置和维护复杂设备的麻烦。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;虚拟化和容器环境：&lt;/strong&gt; 在虚拟机和容器这样的环境中，Dnsmasq可以提供DNS和DHCP服务，使得虚拟机和容器间的通信更容易。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;网络引导：&lt;/strong&gt; 对于依赖于网络引导的系统或者设备，例如网络启动的计算机，Dnsmasq的TFTP服务也非常有用。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.enkichen.com/2017/05/23/dnsmasq-introduce/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Dnsmasq 介绍与使用 | Enki&#39;s Notes&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/Linux/linux-dnsmasq/" />
         </entry>
         <entry>
             <title>
@@ -5948,75 +6473,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
             </content>
             <link href="https://wudanyang6.github.io//" />
-        </entry>
-        <entry>
-            <title>
-                20240416231513 卡片盒笔记法
-                
-            </title>
-            <updated>2024-09-26T05:33:45.000Z</updated>
-            <id>https://wudanyang6.github.io//000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/</id>
-            <content type="html">
-                &lt;h1 id=&quot;20240416231513&quot; tabindex=&quot;-1&quot;&gt;20240416231513 卡片盒笔记法&lt;/h1&gt;
-&lt;ul class=&quot;block-language-dataview&quot;&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192023%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0/&quot;&gt;202011192023 - 卡片盒笔记法的基本元素&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201301%20-%20%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201315%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E4%B8%BB%E8%A6%81%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88/&quot;&gt;202011201315 - 卡片盒笔记法主要关注什么&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011210003%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/&quot;&gt;202011210003 - 卡片盒笔记法的基本流程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011220028%20-%20%E4%BB%8E%E8%BE%93%E5%87%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E4%BC%98%E5%8A%BF/&quot;&gt;202011220028 - 从输出的角度看卡片盒笔记法的优势&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222209%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%AD%A5%E9%AA%A4/&quot;&gt;202011222209 - 卡片盒笔记法的步骤&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222324%20-%20%E7%9F%A5%E8%AF%86/&quot;&gt;202011222324 - 知识&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222325%20-%20%E4%BF%A1%E6%81%AF/&quot;&gt;202011222325 - 信息&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222338%20-%20%E4%BD%BF%E7%94%A8%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E8%BE%93%E5%87%BA%E7%9A%84%E6%B5%81%E7%A8%8B/&quot;&gt;202011222338 - 使用卡片盒笔记法输出的流程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202404081646%20%E5%8D%A1%E7%89%87%E7%AC%94%E8%AE%B0%E5%BA%94%E8%AF%A5%E8%AE%B0%E5%BD%95%E4%BB%80%E4%B9%88/&quot;&gt;202404081646 卡片笔记应该记录什么&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202404081701%20%E9%92%88%E5%AF%B9%E8%BF%87%E6%97%B6%E7%9A%84%E6%83%B3%E6%B3%95%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86/&quot;&gt;202404081701 针对过时的想法怎么处理&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202404081818%20%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BB%BA%E7%AB%8B%E7%AC%94%E8%AE%B0%E6%97%B6%E8%A6%81%E6%8C%87%E6%98%8E%E5%8E%9F%E5%9B%A0/&quot;&gt;202404081818 为什么建立笔记时要指明原因&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240417103919%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A0%87%E9%A2%98%E6%98%AF%E5%AF%B9%E5%86%85%E5%AE%B9%E7%9A%84%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%8F%8F%E8%BF%B0/&quot;&gt;20240417103919 卡片盒笔记法的标题是对内容的一句话描述&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//000 Topic Index/笔记方法/20240416231513 卡片盒笔记法/" />
-        </entry>
-        <entry>
-            <title>
-                202404151422 游戏
-                
-            </title>
-            <updated>2024-09-26T05:27:02.000Z</updated>
-            <id>https://wudanyang6.github.io//000 Topic Index/202404151422 游戏/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202404151422&quot; tabindex=&quot;-1&quot;&gt;202404151422 游戏&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%B8%B8%E6%88%8F/20240415142052%20%E5%8E%9F%E7%A5%9E%E6%8C%BA%E5%A5%BD%E7%8E%A9/&quot;&gt;20240415142052 原神挺好玩&lt;/a&gt; 不怎么玩了&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%B8%B8%E6%88%8F/20240417125706%20%E9%83%A8%E8%90%BD%E5%86%B2%E7%AA%81/&quot;&gt;20240417125706 部落冲突&lt;/a&gt; 已经不玩了&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;剑与远征：启程&lt;/a&gt; 正在玩，挂机游戏&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//000 Topic Index/202404151422 游戏/" />
-        </entry>
-        <entry>
-            <title>
-                202404151418 哲学
-                
-            </title>
-            <updated>2024-10-20T04:43:19.000Z</updated>
-            <id>https://wudanyang6.github.io//000 Topic Index/202404151418 哲学/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202404151418&quot; tabindex=&quot;-1&quot;&gt;202404151418 哲学&lt;/h1&gt;
-&lt;ul class=&quot;block-language-dataview&quot;&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%93%B2%E5%AD%A6/20240415141933%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141933 什么是哲学&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%93%B2%E5%AD%A6/202404151420%20%E5%93%B2%E5%AD%A6%E7%9A%84%E5%88%86%E6%94%AF/&quot;&gt;202404151420 哲学的分支&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//000 Topic Index/202404151418 哲学/" />
         </entry>
         <entry>
             <title>
