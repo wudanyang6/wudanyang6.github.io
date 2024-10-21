@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-21T14:20:19Z</updated>
+    <updated>2024-10-21T15:36:06Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -626,11 +626,11 @@ func dynamic(s string) string {
                 200. 岛屿数量
                 
             </title>
-            <updated>2024-10-21T14:19:20.000Z</updated>
+            <updated>2024-10-21T14:37:10.000Z</updated>
             <id>https://wudanyang6.github.io//card/算法/leetcode题目/200. 岛屿数量/</id>
             <content type="html">
                 &lt;h1 id=&quot;200&quot; tabindex=&quot;-1&quot;&gt;200. 岛屿数量&lt;/h1&gt;
-&lt;p&gt;原始写的是这段代码，虽然能执行成功，但是&lt;/p&gt;
+&lt;p&gt;原始写的是这段代码，虽然能执行成功，但是不是很优雅&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;
 import &amp;quot;fmt&amp;quot;
 var cnt int
@@ -5559,25 +5559,6 @@ You have to make sure that all flag definitions happen before calling flag.Parse
         </entry>
         <entry>
             <title>
-                ubuntu-unminimize
-                
-            </title>
-            <updated>2024-10-19T04:24:31.000Z</updated>
-            <id>https://wudanyang6.github.io//card/docker/ubuntu-unminimize/</id>
-            <content type="html">
-                &lt;h1 id=&quot;ubuntu-unminimize&quot; tabindex=&quot;-1&quot;&gt;ubuntu-unminimize&lt;/h1&gt;
-&lt;p&gt;unminimize 命令可以将 &lt;code&gt;ubuntu&lt;/code&gt; 的环境切换成正常的环境，会安装很多软件进去&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://wiki.ubuntu.com/Minimal&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://wiki.ubuntu.com/Minimal&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The &#39;unminimize&#39; command will install the standard Ubuntu Server packages if you want to convert a Minimal instance to a standard Server environment for interactive use.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;但是这些软件里面没有 ping 、 traceroute 等网络实用工具&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/docker/ubuntu-unminimize/" />
-        </entry>
-        <entry>
-            <title>
                 docker 和 Kubernetes 的异同
                 
             </title>
@@ -5775,6 +5756,25 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
 
             </content>
             <link href="https://wudanyang6.github.io//card/Linux/什么是 mdns/" />
+        </entry>
+        <entry>
+            <title>
+                ubuntu-unminimize
+                
+            </title>
+            <updated>2024-10-19T04:24:31.000Z</updated>
+            <id>https://wudanyang6.github.io//card/Linux/ubuntu-unminimize/</id>
+            <content type="html">
+                &lt;h1 id=&quot;ubuntu-unminimize&quot; tabindex=&quot;-1&quot;&gt;ubuntu-unminimize&lt;/h1&gt;
+&lt;p&gt;unminimize 命令可以将 &lt;code&gt;ubuntu&lt;/code&gt; 的环境切换成正常的环境，会安装很多软件进去&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://wiki.ubuntu.com/Minimal&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://wiki.ubuntu.com/Minimal&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &#39;unminimize&#39; command will install the standard Ubuntu Server packages if you want to convert a Minimal instance to a standard Server environment for interactive use.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;但是这些软件里面没有 ping 、 traceroute 等网络实用工具&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/Linux/ubuntu-unminimize/" />
         </entry>
         <entry>
             <title>
