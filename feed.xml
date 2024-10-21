@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-21T03:18:14Z</updated>
+    <updated>2024-10-21T05:35:02Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -232,6 +232,49 @@
 
             </content>
             <link href="https://wudanyang6.github.io//card/算法/滑动窗口模板/" />
+        </entry>
+        <entry>
+            <title>
+                leetcode-557. 反转字符串中的单词 III
+                
+            </title>
+            <updated>2024-10-21T04:41:35.000Z</updated>
+            <id>https://wudanyang6.github.io//card/算法/leetcode-557. 反转字符串中的单词 III/</id>
+            <content type="html">
+                &lt;h1 id=&quot;leetcode-557-iii&quot; tabindex=&quot;-1&quot;&gt;leetcode-557. 反转字符串中的单词 III&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/problems/reverse-words-in-a-string-iii/description/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;557. 反转字符串中的单词 III - 力扣（Leetcode）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;与代码 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;leetcode-541. 反转字符串 II&lt;/a&gt; 相关联，&lt;code&gt;swapStrBytes&lt;/code&gt; 函数，使用了上次的代码&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;func reverseWords(s string) string {
+    sBytes := []byte(s)
+    
+    for left, right := 0, 0; right &amp;lt; len(sBytes);  right++ {
+        if sBytes[right] == &#39; &#39; {
+            swapStrBytes(sBytes, left, right-1)
+            left = right+1
+        }
+        if right == len(sBytes) - 1 {
+            swapStrBytes(sBytes, left, right)
+        }
+    }
+
+    return string(sBytes)
+}
+
+func swapStrBytes(s []byte, left, right int) {
+	if left &amp;gt;= right {
+		return
+	}
+
+	for left &amp;lt; right {
+		s[left], s[right] = s[right], s[left]
+		left++
+		right--
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/算法/leetcode-557. 反转字符串中的单词 III/" />
         </entry>
         <entry>
             <title>
@@ -2012,6 +2055,22 @@ vmstat 5
 
             </content>
             <link href="https://wudanyang6.github.io//card/工具/obsidian-things3-today插件/" />
+        </entry>
+        <entry>
+            <title>
+                marginnote 实现阅读历史跳转
+                
+            </title>
+            <updated>2024-10-21T04:48:12.000Z</updated>
+            <id>https://wudanyang6.github.io//card/工具/marginnote 实现阅读历史跳转/</id>
+            <content type="html">
+                &lt;h1 id=&quot;marginnote&quot; tabindex=&quot;-1&quot;&gt;marginnote 实现阅读历史跳转&lt;/h1&gt;
+&lt;p&gt;进入系统设置=键盘=快捷键=App快捷键&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020220827233551.png&quot; alt=&quot;Pasted image 20220827233551.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://bbs.marginnote.cn/t/topic/1241&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;【全局自定义快捷键方法】MarginNote 3 阅读跳转的 Back 功能快捷键 - 方法、技巧、工作流 - MarginNote 中文社区&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/工具/marginnote 实现阅读历史跳转/" />
         </entry>
         <entry>
             <title>
@@ -4706,6 +4765,80 @@ go mod tidy
         </entry>
         <entry>
             <title>
+                go-gorm-FindInBatches
+                
+            </title>
+            <updated>2024-10-21T04:44:45.000Z</updated>
+            <id>https://wudanyang6.github.io//card/go/go-gorm-FindInBatches/</id>
+            <content type="html">
+                &lt;h1 id=&quot;go-gorm-find-in-batches&quot; tabindex=&quot;-1&quot;&gt;go-gorm-FindInBatches&lt;/h1&gt;
+&lt;p&gt;FindInBatches 用于简化批量操作，防止数据量及过大导致超时&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;	var accountSlice []ainote.UserOnline
+	t.DB.Where(&amp;quot;deleted = ?&amp;quot;, ainote.UnDeleted).
+		Where(&amp;quot;status = ?&amp;quot;, ainote.Available).
+		FindInBatches(&amp;amp;accountSlice, 5, func(tx *gorm.DB, batch int) error {
+			resource.LoggerService.Debug(ctx, &amp;quot;debug-wdy&amp;quot;, logit.AutoField(&amp;quot;data&amp;quot;, batch))
+
+			totalCnt += int64(len(accountSlice))
+			resource.LoggerService.Debug(ctx, &amp;quot;debug-wdy&amp;quot;, logit.AutoField(&amp;quot;data&amp;quot;, accountSlice))
+
+			// 遍历所有账号，计算其他数据
+			for _, v := range accountSlice {
+				intervalOfThisAccount := 72000 / v.Bound
+				availableUseCnt := (tomorrowUnixTime - currentUnixTime) / int64(intervalOfThisAccount)
+
+				totalRemainCnt += int64(v.Remains)
+				AvailableAccountUseCnt += availableUseCnt
+
+				if v.Remains &amp;gt; 0 &amp;amp;&amp;amp; v.AvailableTime &amp;lt; tomorrowUnixTime {
+					availableAccountCnt++
+				}
+			}
+
+			return nil
+		})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;FindInBatches&lt;/code&gt; 是 GORM 中的一个函数，用于分批处理记录，避免一次性加载所有数据导致内存占用过高，特别适合处理大数据集。&lt;/p&gt;
+&lt;h2 id=&quot;1&quot; tabindex=&quot;-1&quot;&gt;1 语法：&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;func (tx *DB) FindInBatches(dest interface{}, batchSize int, fc func(tx *DB, batch int) error) *DB
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dest&lt;/code&gt;: 目标，查询结果会扫描到这个变量中。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;batchSize&lt;/code&gt;: 每批处理的记录数量。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fc&lt;/code&gt;: 每批处理时执行的回调函数，参数包括当前事务 &lt;code&gt;tx&lt;/code&gt; 和当前批次号 &lt;code&gt;batch&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;2 示例：&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;type User struct {
+    ID   uint
+    Name string
+}
+
+var users []User
+result := db.Model(&amp;amp;User{}).Where(&amp;quot;active = ?&amp;quot;, true).FindInBatches(&amp;amp;users, 100, func(tx *gorm.DB, batch int) error {
+    fmt.Printf(&amp;quot;处理第 %d 批数据&#92;n&amp;quot;, batch)
+    for _, user := range users {
+        // 处理每个用户
+    }
+    return nil
+})
+
+if result.Error != nil {
+    fmt.Println(result.Error)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;3&quot; tabindex=&quot;-1&quot;&gt;3 工作原理：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;目标 (&lt;code&gt;users&lt;/code&gt;)&lt;/strong&gt;：查询结果会存储在这个切片中，每批的数据会覆盖前一批的数据。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;批量大小 (&lt;code&gt;100&lt;/code&gt;)&lt;/strong&gt;：定义每次处理的记录数量。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;处理函数 (&lt;code&gt;func&lt;/code&gt;)&lt;/strong&gt;：这个函数会在每批数据处理时调用，允许你对每批数据进行操作。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这种方式非常适合处理大数据，避免一次性加载过多数据占用内存，并且能够分批次地进行处理。&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/go/go-gorm-FindInBatches/" />
+        </entry>
+        <entry>
+            <title>
                 go-exec
                 
             </title>
@@ -5126,7 +5259,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 shell-生成随机数
                 
             </title>
-            <updated>2024-10-20T10:33:56.000Z</updated>
+            <updated>2024-10-20T15:57:33.000Z</updated>
             <id>https://wudanyang6.github.io//card/Linux/shell/shell-生成随机数/</id>
             <content type="html">
                 &lt;h1 id=&quot;shell&quot; tabindex=&quot;-1&quot;&gt;shell-生成随机数&lt;/h1&gt;
@@ -5160,7 +5293,6 @@ if it is subsequently reset.&lt;/p&gt;
 你可以在循环中使用 &lt;code&gt;$RANDOM&lt;/code&gt; 来生成一系列随机数：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;for i in {1..5}
 do
-
     echo $((RANDOM % 100))
 done
 &lt;/code&gt;&lt;/pre&gt;
@@ -5287,10 +5419,65 @@ Saving to: ‘index.html’
         </entry>
         <entry>
             <title>
+                linux-wrk
+                
+            </title>
+            <updated>2024-10-21T04:50:39.000Z</updated>
+            <id>https://wudanyang6.github.io//card/Linux/linux-wrk/</id>
+            <content type="html">
+                &lt;h1 id=&quot;linux-wrk&quot; tabindex=&quot;-1&quot;&gt;linux-wrk&lt;/h1&gt;
+&lt;p&gt;wrk 是一个压测工具，底层使用 epoll ，多线程执行，性能非常好&lt;/p&gt;
+&lt;h1 id=&quot;使用说明：&quot; tabindex=&quot;-1&quot;&gt;使用说明：&lt;/h1&gt;
+&lt;p&gt;安装：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;git clone https://github.com/wg/wrk 
+
+make
+cp wrk /usr/local/bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;示例用法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;wrk -t12 -c400 -d30s http://127.0.0.1:8080/index.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参数含义：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;Usage: wrk &amp;lt;options&amp;gt; &amp;lt;url&amp;gt;
+  Options:
+    -c, --connections &amp;lt;N&amp;gt;  Connections to keep open
+    -d, --duration    &amp;lt;T&amp;gt;  Duration of test
+    -t, --threads     &amp;lt;N&amp;gt;  Number of threads to use
+
+    -s, --script      &amp;lt;S&amp;gt;  Load Lua script file
+    -H, --header      &amp;lt;H&amp;gt;  Add header to request
+        --latency          Print latency statistics
+        --timeout     &amp;lt;T&amp;gt;  Socket/request timeout
+    -v, --version          Print version details
+
+  Numeric arguments may include a SI unit (1k, 1M, 1G)
+  Time arguments may include a time unit (2s, 2m, 2h)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;示例 lua 脚本文件位置&lt;br /&gt;
+&lt;code&gt;/workspace/wrk/scripts/*.lua&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/wrk-lua%E8%84%9A%E6%9C%AC.png&quot; alt=&quot;wrk-lua脚本.png&quot; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-lua&quot;&gt;-- example HTTP POST script which demonstrates setting the
+-- HTTP method, body, and adding a header
+
+wrk.method = &amp;quot;POST&amp;quot;
+wrk.body   = &amp;quot;foo=bar&amp;amp;baz=quux&amp;quot;
+wrk.headers[&amp;quot;Content-Type&amp;quot;] = &amp;quot;application/x-www-form-urlencoded&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;wrk lua 函数的生命周期&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020220508214336.png&quot; alt=&quot;Pasted image 20220508214336.png&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://juejin.cn/post/6844903550288396296&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http 性能测试 wrk使用教程&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://segmentfault.com/a/1190000023212126&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;性能测试神器 wrk 使用教程&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/Linux/linux-wrk/" />
+        </entry>
+        <entry>
+            <title>
                 linux-wait
                 
             </title>
-            <updated>2024-02-01T16:03:28.000Z</updated>
+            <updated>2024-10-21T02:49:09.000Z</updated>
             <id>https://wudanyang6.github.io//card/Linux/linux-wait/</id>
             <content type="html">
                 &lt;h1 id=&quot;linux-wait&quot; tabindex=&quot;-1&quot;&gt;linux-wait&lt;/h1&gt;
@@ -5434,14 +5621,19 @@ sudo yum install sysstat      # 对于 CentOS/RHEL
                 linux-echo
                 
             </title>
-            <updated>2024-05-14T06:25:42.000Z</updated>
+            <updated>2024-10-20T15:59:24.000Z</updated>
             <id>https://wudanyang6.github.io//card/Linux/linux-echo/</id>
             <content type="html">
                 &lt;h1 id=&quot;linux-echo&quot; tabindex=&quot;-1&quot;&gt;linux-echo&lt;/h1&gt;
 &lt;p&gt;echo &amp;quot;hello&amp;quot;&lt;/p&gt;
 &lt;p&gt;echo -n &amp;quot;hello&amp;quot; # 这种会去掉换行&lt;/p&gt;
 &lt;p&gt;sh 不支持这个 -n 参数，很奇怪&lt;/p&gt;
-&lt;h1 id=&quot;n-zsh&quot; tabindex=&quot;-1&quot;&gt;使用 -n 参数 zsh 后面会跟着一个百分号&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ echo -n &amp;quot;hello&amp;quot;
+hello%
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用 -n 参数 zsh 后面会跟着一个百分号&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
 &lt;div class=&quot;markdown-embed-title&quot;&gt;
 &lt;h1 id=&quot;printf-puts-a-percent-sign-after-everything-it-prints&quot; tabindex=&quot;-1&quot;&gt;Printf puts a percent sign after everything it prints&lt;/h1&gt;
