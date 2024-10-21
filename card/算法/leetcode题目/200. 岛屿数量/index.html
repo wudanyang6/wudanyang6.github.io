@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh">
 <head>
-<title>202409112305 动态规划很多时候就是在填表</title>
+<title>200. 岛屿数量</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -843,7 +843,40 @@ CTRL + K
 <span class="foldername">算法</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/5. 最长回文子串/">5. 最长回文子串 </a>
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/算法/leetcode题目')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">leetcode题目</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/5. 最长回文子串/">5. 最长回文子串 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/200. 岛屿数量/">200. 岛屿数量 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-1014. 最佳观光组合/">leetcode-1014. 最佳观光组合 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-401. 二进制手表/">leetcode-401. 二进制手表 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-53. 最大子数组和/">leetcode-53. 最大子数组和 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-557. 反转字符串中的单词 III/">leetcode-557. 反转字符串中的单词 III </a>
+</div>
+</div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -851,31 +884,11 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/202409112305 动态规划很多时候就是在填表/">202409112305 动态规划很多时候就是在填表 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
 <div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode 编码技巧/">leetcode 编码技巧 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode-1014. 最佳观光组合/">leetcode-1014. 最佳观光组合 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode-401. 二进制手表/">leetcode-401. 二进制手表 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode-53. 最大子数组和/">leetcode-53. 最大子数组和 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode-557. 反转字符串中的单词 III/">leetcode-557. 反转字符串中的单词 III </a>
+<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/动态规划很多时候就是在填表/">动态规划很多时候就是在填表 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -982,18 +995,208 @@ CTRL + K
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2024-10-21T11:18:21.142Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2024-10-21T11:18:21.142Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2024-10-21T11:18:21.142Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2024-10-21T14:20:18.613Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2024-10-21T14:20:18.613Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2024-10-21T14:20:18.613Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="2">202409112305 动态规划很多时候就是在填表</h1>
+<h1 data-note-icon="2">200. 岛屿数量</h1>
 <div class="header-meta">
 <div class="header-tags">
+<a class="tag" onclick="toggleTagSearch(this)">
+#aigc
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#leetcode
+</a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-09-11T23:05:30+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-09-11T23:44:10+08:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-10-21T21:50:04+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-10-21T22:19:20+08:00"></span></div></div></div>
 </header>
-<h1 id="202409112305" tabindex="-1">202409112305 动态规划很多时候就是在填表</h1>
-<p><a href="https://leetcode.cn/problems/longest-palindromic-substring/solutions/7792/zhong-xin-kuo-san-dong-tai-gui-hua-by-liweiwei1419" target="_blank" class="external-link">https://leetcode.cn/problems/longest-palindromic-substring/solutions/7792/zhong-xin-kuo-san-dong-tai-gui-hua-by-liweiwei1419</a></p>
-<p>填表的顺序是非常重要的</p>
+<h1 id="200" tabindex="-1">200. 岛屿数量</h1>
+<p>原始写的是这段代码，虽然能执行成功，但是</p>
+<pre><code class="language-go">
+import &quot;fmt&quot;
+var cnt int
+
+func numIslands(grid [][]byte) int {
+    cnt=0
+    used := map[[2]int]bool{}
+
+    for i := 0; i &lt; len(grid); i++ {
+        for j := 0; j &lt; len(grid[i]); j++ {
+            dfs(i,j,grid, used, 0)
+            // fmt.Println(i,j)
+        }
+    }
+
+    return cnt
+}
+
+func dfs(i int, j int, grid [][]byte, used map[[2]int]bool, depth int) {
+    if used[[2]int{i,j}] {
+        return
+    }
+
+    if grid[i][j] == 48 {
+        return
+    }
+    
+    if depth == 0 {
+        cnt++
+        // fmt.Println(cnt)
+    }
+
+    used[[2]int{i,j}] = true
+
+    depth++
+
+    // 上
+    if i&gt; 0 {
+        dfs(i-1, j, grid, used, depth)
+    }
+
+    // 下
+    if i &lt; len(grid)-1 {
+        dfs(i+1,j,grid,used, depth)
+    }
+
+    // 左
+    if j&gt;0 {
+        dfs(i, j-1, grid, used, depth)
+    }
+
+    // 右
+    if j &lt; len(grid[i])-1 {
+        dfs(i, j+1, grid, used, depth)
+    }
+}
+
+
+</code></pre>
+<h2 id="优化这段代码：" tabindex="-1">优化这段代码：</h2>
+<p>这段代码的目的是计算一个二维 <code>grid</code> 中的岛屿数量（岛屿由值为 <code>1</code> 的相邻单元格组成）。优化点主要在于减少冗余逻辑和提升代码可读性。我们可以进行以下几个优化：</p>
+<ol>
+<li><strong>移除不必要的 <code>depth</code> 参数</strong>：<code>depth</code> 仅用于判断是否递归的第一层，可以通过直接判断当前格子是否已经访问过和是否为岛屿来增加 <code>cnt</code>。</li>
+<li><strong>减少重复的 <code>used</code> 判断</strong>：在 <code>dfs</code> 中每次递归之前判断是否已经访问过，可以减少逻辑冗余。</li>
+<li><strong>直接在 <code>numIslands</code> 函数中判断是否需要调用 <code>dfs</code></strong>：如果当前格子已经访问或不是岛屿，则不需要调用 <code>dfs</code>。</li>
+</ol>
+<p>以下是优化后的代码：</p>
+<pre><code class="language-go">import &quot;fmt&quot;
+
+var cnt int
+
+func numIslands(grid [][]byte) int {
+    cnt = 0
+    used := map[[2]int]bool{}
+
+    for i := 0; i &lt; len(grid); i++ {
+        for j := 0; j &lt; len(grid[i]); j++ {
+            // 如果当前格子是岛屿并且没有被访问过，才进行 DFS
+            if grid[i][j] == '1' &amp;&amp; !used[[2]int{i, j}] {
+                cnt++
+                dfs(i, j, grid, used)
+            }
+        }
+    }
+
+    return cnt
+}
+
+func dfs(i, j int, grid [][]byte, used map[[2]int]bool) {
+    if i &lt; 0 || i &gt;= len(grid) || j &lt; 0 || j &gt;= len(grid[i]) || grid[i][j] == '0' || used[[2]int{i, j}] {
+        return
+    }
+
+    used[[2]int{i, j}] = true
+
+    // 上
+    dfs(i-1, j, grid, used)
+    // 下
+    dfs(i+1, j, grid, used)
+    // 左
+    dfs(i, j-1, grid, used)
+    // 右
+    dfs(i, j+1, grid, used)
+}
+</code></pre>
+<h3 id="优化细节：" tabindex="-1">优化细节：</h3>
+<ol>
+<li><strong>简化了 <code>dfs</code> 函数调用的逻辑</strong>：通过提前判断边界和条件来<em>减少递归深度的传递</em>，不需要再维护 <code>depth</code>。</li>
+<li><strong>减少了冗余的判断</strong>：在 <code>numIslands</code> 中，只有当当前格子是 <code>1</code> 并且没有被访问过时，才开始深度优先搜索，避免了不必要的 <code>dfs</code> 调用。</li>
+<li><strong>代码更简洁可读</strong>：直接通过坐标来判断上下左右的格子，没有再单独去处理 <code>depth</code> 相关的逻辑。</li>
+</ol>
+<p>这样，代码运行效率会更高，并且可读性也更好。</p>
+<h2 id="进一步优化" tabindex="-1">进一步优化</h2>
+<p>在进一步优化这段代码时，可以考虑以下几个方面：</p>
+<ol>
+<li>
+<p><strong>移除 <code>used</code> 变量</strong>：由于我们可以直接修改 <code>grid</code>，将访问过的岛屿格子改为 <code>'0'</code>，这样不需要额外维护一个 <code>used</code> 哈希表来记录访问状态。这样还能减少空间复杂度。</p>
+</li>
+<li>
+<p><strong>减少递归开销</strong>：由于递归调用可能在深度较大时导致栈溢出，可以使用非递归的方式实现深度优先搜索 (DFS)。但为了简单起见，保持递归的实现并优化它。</p>
+</li>
+<li>
+<p><strong>整合重复代码</strong>：可以将上、下、左、右的逻辑整合成方向数组，以减少重复的代码行。</p>
+</li>
+</ol>
+<p>优化后的代码如下：</p>
+<pre><code class="language-go">import &quot;fmt&quot;
+
+func numIslands(grid [][]byte) int {
+    cnt := 0
+
+    for i := 0; i &lt; len(grid); i++ {
+        for j := 0; j &lt; len(grid[i]); j++ {
+            if grid[i][j] == '1' {
+                cnt++
+                dfs(i, j, grid)
+            }
+        }
+    }
+
+    return cnt
+}
+
+func dfs(i, j int, grid [][]byte) {
+    if i &lt; 0 || i &gt;= len(grid) || j &lt; 0 || j &gt;= len(grid[i]) || grid[i][j] == '0' {
+        return
+    }
+
+    // 标记已访问
+    grid[i][j] = '0'
+
+    // 定义方向数组，上下左右
+    directions := [][2]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}
+
+    // 遍历四个方向
+    for _, dir := range directions {
+        ni, nj := i+dir[0], j+dir[1]
+        dfs(ni, nj, grid)
+    }
+}
+</code></pre>
+<h3 id="进一步优化后的改进点：" tabindex="-1">进一步优化后的改进点：</h3>
+<ol>
+<li><strong>移除了 <code>used</code> 变量</strong>：我们直接修改 <code>grid</code> 来标记已经访问过的节点，这样节省了空间复杂度，不需要额外维护一个哈希表。</li>
+<li><strong>方向数组简化代码</strong>：用一个方向数组代替上下左右的手动递归调用，代码更加简洁，易于扩展到其他问题。</li>
+<li><strong>递归更加直观</strong>：去掉了不必要的条件检查，将条件判断直接放在 <code>dfs</code> 开头，逻辑更加简洁。</li>
+</ol>
+<h3 id="时间和空间复杂度：" tabindex="-1">时间和空间复杂度：</h3>
+<ul>
+<li><strong>时间复杂度</strong>: O(M * N)，其中 M 和 N 分别是 <code>grid</code> 的行数和列数，每个元素最多访问一次。</li>
+<li><strong>空间复杂度</strong>: O(M * N)，最坏情况下，递归深度可能达到 M * N。</li>
+</ul>
+<p>这段代码的性能已经比较接近理论最优，并且代码结构更加简洁，维护和理解成本更低。</p>
+<h2 id="总结：" tabindex="-1">总结：</h2>
+<p>最大的优化，通过 grid 中的1改成0，直接省略掉used或者叫visited数组。时间直接从超越5%升到80%</p>
+<p>一个小技巧，方向遍历时定义方向数组：</p>
+<pre><code class="language-go">// 定义方向数组，上下左右
+directions := [][2]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}
+// 遍历四个方向
+for _, dir := range directions {
+	ni, nj := i+dir[0], j+dir[1]
+	dfs(ni, nj, grid)
+}
+</code></pre>
+<p>感慨一下，现在的chatgpt真的好用，学习东西时非常有用</p>
 <hr>
 <script src="https://giscus.app/client.js" data-repo="wudanyang6/wudanyang6.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM=" data-category="Announcements" data-category-id="DIC_kwDOFTtyT84CYlu-" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-CN" crossorigin="anonymous" async></script>
 <span id="busuanzi_container_page_pv">
@@ -1040,7 +1243,25 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#202409112305">202409112305 动态规划很多时候就是在填表</a>
+<li><a href="#200">200. 岛屿数量</a>
+<ol>
+<li><a href="#优化这段代码：">优化这段代码：</a>
+<ol>
+<li><a href="#优化细节：">优化细节：</a>
+</li>
+</ol>
+</li>
+<li><a href="#进一步优化">进一步优化</a>
+<ol>
+<li><a href="#进一步优化后的改进点：">进一步优化后的改进点：</a>
+</li>
+<li><a href="#时间和空间复杂度：">时间和空间复杂度：</a>
+</li>
+</ol>
+</li>
+<li><a href="#总结：">总结：</a>
+</li>
+</ol>
 </li>
 </ol>
 </nav>
@@ -1048,7 +1269,8 @@ On this page
 </div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><a href="/card/算法/5. 最长回文子串/" data-note-icon="2" class="backlink">5. 最长回文子串</a>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
 </div></div>
 </div>
 </div>
