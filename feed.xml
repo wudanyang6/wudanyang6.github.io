@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-23T12:20:51Z</updated>
+    <updated>2024-10-23T12:28:51Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -4073,7 +4073,7 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 dg-publish=true的标签云
                 
             </title>
-            <updated>2024-10-23T12:19:32.000Z</updated>
+            <updated>2024-10-23T12:28:06.000Z</updated>
             <id>https://wudanyang6.github.io//card/obsidian/dg-publish=true的标签云/</id>
             <content type="html">
                 &lt;h1 id=&quot;dg-publish-true&quot; tabindex=&quot;-1&quot;&gt;dg-publish=true的标签云&lt;/h1&gt;
@@ -4262,6 +4262,43 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;家&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;
+&lt;p&gt;digital-garden 还是很牛的，居然是能用的&lt;/p&gt;
+&lt;p&gt;贴一下完整代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;``dataviewjs
+let tagCounts = {};
+
+// 遍历所有包含标签的笔记，收集标签并统计出现次数
+for (let page of dv.pages().where(p =&amp;gt; p.tags &amp;amp;&amp;amp; p[&amp;quot;dg-publish&amp;quot;] === true)) {  // 只处理包含标签的页面
+	let tags = page.tags.toString()
+	let tagArr = tags.split(&#39;,&#39;)
+	
+    for (let tag of tagArr) {
+        tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+    }
+}
+
+// 找到标签的最大频次，以便调整大小
+let maxCount = Math.max(...Object.values(tagCounts));
+
+// 设置字体大小范围（最小10px，最大40px）
+const minSize = 10;
+const maxSize = 40;
+
+// 生成标签云，根据频次调整标签字体大小
+dv.container.innerHTML = Object.entries(tagCounts)
+    .map(([tag, count]) =&amp;gt; {
+        // 根据标签出现的频次计算字体大小
+        let size = minSize + ((count / maxCount) * (maxSize - minSize));
+        // 创建可点击的链接，链接到搜索栏
+        return `&amp;lt;span style=&amp;quot;font-size:${size}px; margin-right:20px;&amp;quot;&amp;gt;
+                    &amp;lt;a href=&amp;quot;obsidian://search?query=tag:${encodeURIComponent(tag)}&amp;quot; style=&amp;quot;text-decoration:none; color:inherit;&amp;quot;&amp;gt;
+                        &amp;lt;strong&amp;gt;${tag}&amp;lt;/strong&amp;gt; (${count})
+                    &amp;lt;/a&amp;gt;
+                &amp;lt;/span&amp;gt;`;
+    })
+    .join(&#39;&#39;);  // 每个标签后换行
+``
+&lt;/code&gt;&lt;/pre&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/obsidian/dg-publish=true的标签云/" />
