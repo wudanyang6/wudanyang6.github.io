@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-23T12:45:31Z</updated>
+    <updated>2024-10-23T14:10:19Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -981,6 +981,53 @@ for j := 0; j &amp;lt; 4; j++ {
 
             </content>
             <link href="https://wudanyang6.github.io//card/游戏/20240415142052 原神挺好玩/" />
+        </entry>
+        <entry>
+            <title>
+                树莓派无法上网排查
+                
+            </title>
+            <updated>2024-10-23T14:09:35.000Z</updated>
+            <id>https://wudanyang6.github.io//card/树莓派/树莓派无法上网排查/</id>
+            <content type="html">
+                &lt;h1 id=&quot;树莓派无法上网排查&quot; tabindex=&quot;-1&quot;&gt;树莓派无法上网排查&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;wget -v &lt;a href=&quot;http://baidu.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;baidu.com&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;会有输出：&lt;/li&gt;
+&lt;li&gt;如何处理呢&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;--2021-07-15 10:52:24--  http://baidu.com/
+Resolving baidu.com (baidu.com)... 39.156.69.79, 220.181.38.148
+Connecting to baidu.com (baidu.com)|39.156.69.79|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 81 [text/html]
+Saving to: ‘index.html’
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上次我就卡在了 解析 &lt;a href=&quot;http://baidu.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;baidu.com&lt;/a&gt; 域名这个地方&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;通过 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;linux-nslookup&lt;/a&gt; 命令查看路由解析&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发现解析不通&lt;/li&gt;
+&lt;li&gt;查看 &lt;code&gt;/etc/resolv.conf&lt;/code&gt; 将 &lt;code&gt;nameserver&lt;/code&gt; 改成： &lt;code&gt;114.114.114.114&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;再次查看路由解析，发现已经 OK 了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如何修改 &lt;code&gt;/etc/resolv.conf&lt;/code&gt; ，重启机器之后会发现文件又被改回去了，导致无法联网，正确的做法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo vi /etc/systemd/resolved.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;重启网络服务 &lt;code&gt;sudo service networking restart&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq_42820594/article/details/107325437&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;树莓派4B】三、笔记本给树莓派Ubuntu 18.04提供网络|为什么Ubuntu18.04更改/etc/resolv.conf修改nameserver重启网络被重置&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/树莓派/树莓派无法上网排查/" />
         </entry>
         <entry>
             <title>
@@ -4094,10 +4141,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;压力测试&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:13.75px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E6%A0%91%E8%8E%93%E6%B4%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;树莓派&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:13.75px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:aigc-kimi&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;aigc-kimi&lt;/strong&gt; (1)
                     &lt;/a&gt;
@@ -4244,6 +4287,10 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:13.75px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:linux%E5%91%BD%E4%BB%A4&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;linux命令&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:13.75px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E6%A0%91%E8%8E%93%E6%B4%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;树莓派&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:32.5px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:leetcode&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -6229,53 +6276,6 @@ done &amp;lt; file.txt
         </entry>
         <entry>
             <title>
-                linux-树莓派无法上网排查
-                
-            </title>
-            <updated>2024-08-19T10:48:15.000Z</updated>
-            <id>https://wudanyang6.github.io//card/Linux/linux-树莓派无法上网排查/</id>
-            <content type="html">
-                &lt;h1 id=&quot;linux&quot; tabindex=&quot;-1&quot;&gt;linux-树莓派无法上网排查&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;wget -v &lt;a href=&quot;http://baidu.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;baidu.com&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;会有输出：&lt;/li&gt;
-&lt;li&gt;如何处理呢&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;--2021-07-15 10:52:24--  http://baidu.com/
-Resolving baidu.com (baidu.com)... 39.156.69.79, 220.181.38.148
-Connecting to baidu.com (baidu.com)|39.156.69.79|:80... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 81 [text/html]
-Saving to: ‘index.html’
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;上次我就卡在了 解析 &lt;a href=&quot;http://baidu.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;baidu.com&lt;/a&gt; 域名这个地方&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;通过 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;linux-nslookup&lt;/a&gt; 命令查看路由解析&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;发现解析不通&lt;/li&gt;
-&lt;li&gt;查看 &lt;code&gt;/etc/resolv.conf&lt;/code&gt; 将 &lt;code&gt;nameserver&lt;/code&gt; 改成： &lt;code&gt;114.114.114.114&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;再次查看路由解析，发现已经 OK 了&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如何修改 &lt;code&gt;/etc/resolv.conf&lt;/code&gt; ，重启机器之后会发现文件又被改回去了，导致无法联网，正确的做法&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sudo vi /etc/systemd/resolved.conf&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;重启网络服务 &lt;code&gt;sudo service networking restart&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq_42820594/article/details/107325437&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;树莓派4B】三、笔记本给树莓派Ubuntu 18.04提供网络|为什么Ubuntu18.04更改/etc/resolv.conf修改nameserver重启网络被重置&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//card/Linux/linux-树莓派无法上网排查/" />
-        </entry>
-        <entry>
-            <title>
                 linux-查看内存占用情况
                 
             </title>
@@ -6859,6 +6859,11 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%97%A0%E6%B3%95%E4%B8%8A%E7%BD%91%E6%8E%92%E6%9F%A5/&quot;&gt;树莓派无法上网排查&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-10-23 22:09:36&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#树莓派&quot;&gt;#树莓派&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Home&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-10-23 20:44:48&lt;/td&gt;
 &lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
@@ -6901,11 +6906,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/linux-perf/&quot;&gt;linux-perf&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-10-21 21:32:00&lt;/td&gt;
-&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404251145%20%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%88%90%E6%9C%AC%E5%A6%82%E6%9E%9C%E6%AF%94%E8%BE%83%E9%AB%98%E5%B0%B1%E4%B8%8D%E8%A6%81%E5%8E%BB%E8%8A%B1%E6%97%B6%E9%97%B4%E7%A0%B4%E8%A7%A3%E4%BA%86/&quot;&gt;202404251145 破解软件的成本如果比较高就不要去花时间破解了&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-10-21 19:14:36&lt;/td&gt;
 &lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
