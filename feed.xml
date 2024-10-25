@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-25T05:32:26Z</updated>
+    <updated>2024-10-25T13:44:25Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -265,7 +265,7 @@ func swapStrBytes(s []byte, left, right int) {
                 leetcode-541. 反转字符串 II
                 
             </title>
-            <updated>2024-10-25T05:20:08.000Z</updated>
+            <updated>2024-10-25T06:50:18.000Z</updated>
             <id>https://wudanyang6.github.io//card/算法/leetcode题目/leetcode-541. 反转字符串 II/</id>
             <content type="html">
                 &lt;h1 id=&quot;leetcode-541-ii&quot; tabindex=&quot;-1&quot;&gt;leetcode-541. 反转字符串 II&lt;/h1&gt;
@@ -949,6 +949,73 @@ for _, dir := range directions {
 
             </content>
             <link href="https://wudanyang6.github.io//card/算法/leetcode题目/200. 岛屿数量/" />
+        </entry>
+        <entry>
+            <title>
+                14. 最长公共前缀
+                
+            </title>
+            <updated>2024-10-25T13:43:31.000Z</updated>
+            <id>https://wudanyang6.github.io//card/算法/leetcode题目/14. 最长公共前缀/</id>
+            <content type="html">
+                &lt;h1 id=&quot;14&quot; tabindex=&quot;-1&quot;&gt;14. 最长公共前缀&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/problems/longest-common-prefix/description/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;14. 最长公共前缀 - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;第一版&quot; tabindex=&quot;-1&quot;&gt;第一版&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;
+import (
+	&amp;quot;math&amp;quot;
+)
+func longestCommonPrefix(strs []string) string {
+    ret := []byte{}
+
+    minLen := math.MaxInt
+    for _, s := range strs {
+        minLen = min(minLen, len(s))
+    }
+
+    for i := 0; i &amp;lt; minLen; i++ {
+
+        for j := range strs {
+            if j == 0 {
+                continue
+            }
+
+            if strs[j][i] != strs[0][i] {
+                return string(ret)
+            }
+        }
+
+        ret = append(ret, strs[0][i])
+    }
+
+    return string(ret)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;可以将长度判断放到循环里面去做&lt;/li&gt;
+&lt;li&gt;直接遍历第一个元素就行了，如果遇到不相等的，直接返回prefix，遇到相等的就继续，最多也就是第一个元素这么长&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;第二版&quot; tabindex=&quot;-1&quot;&gt;第二版&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;
+func longestCommonPrefix(strs []string) string {
+    for j, b := range []byte(strs[0]) {
+        for _, s := range strs {
+            if j == len(s) || s[j] != b {
+                return strs[0][:j]
+            }
+        }
+    }
+
+    return strs[0]
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参考了一下灵神的答案，优雅&lt;/p&gt;
+&lt;p&gt;贴个灵神答案的链接： &lt;a href=&quot;https://leetcode.cn/problems/longest-common-prefix/solutions/2801713/jian-dan-ti-jian-dan-zuo-pythonjavaccgoj-478q&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;简单题，简单做（Python/Java/C++/C/Go/JS/Rust）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;希望我以后做题也是这么举重若轻&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/算法/leetcode题目/14. 最长公共前缀/" />
         </entry>
         <entry>
             <title>
@@ -4362,6 +4429,14 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;甲沟炎&lt;/strong&gt; (1)
                     &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:21.25px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:Go&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;Go&lt;/strong&gt; (3)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:13.75px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:chatgpt&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;chatgpt&lt;/strong&gt; (1)
+                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:13.75px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:kafka&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;kafka&lt;/strong&gt; (1)
@@ -4389,14 +4464,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:17.5px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:source-code&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;source-code&lt;/strong&gt; (2)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:21.25px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:Go&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;Go&lt;/strong&gt; (3)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:13.75px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:chatgpt&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;chatgpt&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:17.5px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:php&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -4486,6 +4553,10 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:linux%E5%91%BD%E4%BB%A4&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;linux命令&lt;/strong&gt; (1)
                     &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:13.75px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E6%A0%91%E8%8E%93%E6%B4%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;树莓派&lt;/strong&gt; (1)
+                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:40px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:leetcode&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;leetcode&lt;/strong&gt; (8)
@@ -4501,10 +4572,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:13.75px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%AE%B6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;家&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:13.75px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E6%A0%91%E8%8E%93%E6%B4%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;树莓派&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;
 &lt;p&gt;digital-garden 还是很牛的，居然是能用的&lt;/p&gt;
@@ -6989,8 +7056,13 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/14.%20%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%89%8D%E7%BC%80/&quot;&gt;14. 最长公共前缀&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-10-25 21:43:46&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-541.%20%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%20II/&quot;&gt;leetcode-541. 反转字符串 II&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-10-25 13:20:30&lt;/td&gt;
+&lt;td&gt;2024-10-25 14:50:18&lt;/td&gt;
 &lt;td&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -7033,11 +7105,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;2024-10-21 21:53:52&lt;/td&gt;
 &lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%BE%88%E5%A4%9A%E6%97%B6%E5%80%99%E5%B0%B1%E6%98%AF%E5%9C%A8%E5%A1%AB%E8%A1%A8/&quot;&gt;动态规划很多时候就是在填表&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-10-21 21:52:03&lt;/td&gt;
-&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
-&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&quot;最近创建的文章&quot; tabindex=&quot;-1&quot;&gt;最近创建的文章&lt;/h3&gt;
@@ -7050,6 +7117,11 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/14.%20%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%89%8D%E7%BC%80/&quot;&gt;14. 最长公共前缀&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-10-25 21:31:33&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/56.%20%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/&quot;&gt;56. 合并区间&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-10-24 23:45:03&lt;/td&gt;
@@ -7093,11 +7165,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E7%A1%AC%E4%BB%B6%E4%B8%AD%E6%96%AD%E8%BE%93%E5%87%BA%E7%A4%BA%E4%BE%8B/&quot;&gt;硬件中断输出示例&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-09-20 19:40:46&lt;/td&gt;
-&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E6%96%AD/&quot;&gt;计算机中断&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-09-20 16:31:26&lt;/td&gt;
 &lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
