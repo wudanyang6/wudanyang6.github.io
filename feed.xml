@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-10-25T16:02:57Z</updated>
+    <updated>2024-10-26T08:50:43Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -353,6 +353,95 @@ func swapStrBytes(s []byte, left, right int) {
 
             </content>
             <link href="https://wudanyang6.github.io//card/算法/leetcode题目/leetcode-53. 最大子数组和/" />
+        </entry>
+        <entry>
+            <title>
+                leetcode-49. 字母异位词分组
+                
+            </title>
+            <updated>2024-10-26T08:48:23.000Z</updated>
+            <id>https://wudanyang6.github.io//card/算法/leetcode题目/leetcode-49. 字母异位词分组/</id>
+            <content type="html">
+                &lt;h1 id=&quot;leetcode-49&quot; tabindex=&quot;-1&quot;&gt;leetcode-49. 字母异位词分组&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/problems/group-anagrams/description/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;49. 字母异位词分组 - 力扣（Leetcode）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;两种方法，都是把 key 聚合起来&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;func groupAnagrams(strs []string) [][]string {
+    mp := make(map[[26]int][]string)
+
+    for _, str := range strs {
+        var cCnt [26]int
+
+        for _, b := range str {
+            cCnt[b-&#39;a&#39;] ++
+        }
+
+        mp[cCnt] = append(mp[cCnt], str)
+    }
+
+    var ret [][]string
+
+    for _, m := range mp {
+        ret = append(ret, m)
+    }
+
+    return ret
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;2024-10-26-16-44&quot; tabindex=&quot;-1&quot;&gt;2024-10-26 16:44&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;func groupAnagrams(strs []string) [][]string {
+    retMap := map[[26]byte][]string{}
+
+    for _, s := range strs {
+        var key [26]byte
+        for _, b := range []byte(s) {
+            key[b-97] ++
+        }
+
+        retMap[key] = append(retMap[key], s)
+    }
+
+    ret := [][]string{}
+    for _, r := range retMap {
+        ret = append(ret, r)
+    }
+
+    return ret
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这两个版本的 &lt;code&gt;groupAnagrams&lt;/code&gt; 函数基本实现相同，都是通过构造字母计数数组 &lt;code&gt;key&lt;/code&gt; 来对字母异位词进行分组，但有一些细节上的优化空间：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;变量类型优化&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第二个版本使用 &lt;code&gt;[26]byte&lt;/code&gt; 而不是 &lt;code&gt;[26]int&lt;/code&gt; 作为 &lt;code&gt;key&lt;/code&gt; 的类型。&lt;code&gt;byte&lt;/code&gt; 是 &lt;code&gt;uint8&lt;/code&gt; 的别名，占用更小的内存，在这种场景下是合理的选择，因为字母计数不会超过 &lt;code&gt;255&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;在性能上，&lt;code&gt;byte&lt;/code&gt; 数组的哈希处理可能稍微快一点，因为它是更小的数值类型。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;字符索引转换&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一版使用 &lt;code&gt;cCnt[b-&#39;a&#39;]&lt;/code&gt;，而第二版使用 &lt;code&gt;key[b-97]&lt;/code&gt;。两者在功能上是一样的，只是 &lt;code&gt;97&lt;/code&gt; 是 &lt;code&gt;&#39;a&#39;&lt;/code&gt; 的 ASCII 值，显式的 &lt;code&gt;97&lt;/code&gt; 有助于代码执行更直接的索引定位。&lt;/li&gt;
+&lt;li&gt;为了提升可读性，使用 &lt;code&gt;&#39;a&#39;&lt;/code&gt; 可以更直观地说明这个值是为了计算字母位置。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;初始化变量的方式&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第二个版本直接使用 &lt;code&gt;map[...][]string{}&lt;/code&gt; 作为 &lt;code&gt;retMap&lt;/code&gt; 的初始化方式，写法上更简洁，减少了 &lt;code&gt;make&lt;/code&gt; 的调用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;结构一致性&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;retMap&lt;/code&gt; 和 &lt;code&gt;ret&lt;/code&gt; 在两版代码中分别表示分组字典和结果容器。虽然功能一致，但如果你更喜欢语义化的命名，可以考虑更贴近业务逻辑的命名。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;总的来说，这些修改带来了代码的更紧凑写法和微小的内存性能优化。&lt;/p&gt;
+&lt;p&gt;后面写的这一版明显比之前的要好很多了，而且很快&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/算法/leetcode题目/leetcode-49. 字母异位词分组/" />
         </entry>
         <entry>
             <title>
@@ -955,7 +1044,7 @@ for _, dir := range directions {
                 14. 最长公共前缀
                 
             </title>
-            <updated>2024-10-25T13:43:31.000Z</updated>
+            <updated>2024-10-25T15:47:26.000Z</updated>
             <id>https://wudanyang6.github.io//card/算法/leetcode题目/14. 最长公共前缀/</id>
             <content type="html">
                 &lt;h1 id=&quot;14&quot; tabindex=&quot;-1&quot;&gt;14. 最长公共前缀&lt;/h1&gt;
@@ -7056,8 +7145,18 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-49.%20%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%E5%88%86%E7%BB%84/&quot;&gt;leetcode-49. 字母异位词分组&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-10-26 16:49:55&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Home&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-10-25 23:56:14&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/14.%20%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%89%8D%E7%BC%80/&quot;&gt;14. 最长公共前缀&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-10-25 21:43:46&lt;/td&gt;
+&lt;td&gt;2024-10-25 23:47:28&lt;/td&gt;
 &lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -7081,11 +7180,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#树莓派&quot;&gt;#树莓派&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Home&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-10-23 20:44:48&lt;/td&gt;
-&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/obsidian/dg-publish=true%E7%9A%84%E6%A0%87%E7%AD%BE%E4%BA%91/&quot;&gt;dg-publish=true的标签云&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-10-23 20:28:07&lt;/td&gt;
 &lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
@@ -7099,11 +7193,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/200.%20%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F/&quot;&gt;200. 岛屿数量&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-10-21 22:37:10&lt;/td&gt;
 &lt;td&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#aigc&quot;&gt;#aigc&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/202404091044%20leetcode-%E4%BC%9A%E5%91%98%E8%B4%AD%E4%B9%B0%E4%BC%98%E6%83%A0-%E5%AE%AB%E6%B0%B4%E4%B8%89%E5%8F%B6/&quot;&gt;202404091044 leetcode-会员购买优惠-宫水三叶&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-10-21 21:53:52&lt;/td&gt;
-&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
