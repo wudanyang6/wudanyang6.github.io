@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-11-07T03:37:09Z</updated>
+    <updated>2024-11-08T16:09:34Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -807,6 +807,55 @@ fn 为最大值&lt;/p&gt;
         </entry>
         <entry>
             <title>
+                72. 编辑距离
+                
+            </title>
+            <updated>2024-11-08T04:32:31.000Z</updated>
+            <id>https://wudanyang6.github.io//card/算法/leetcode题目/72. 编辑距离/</id>
+            <content type="html">
+                &lt;h1 id=&quot;72&quot; tabindex=&quot;-1&quot;&gt;72. 编辑距离&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/problems/edit-distance/description/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;72. 编辑距离 - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;学习&quot; tabindex=&quot;-1&quot;&gt;学习&lt;/h2&gt;
+&lt;p&gt;chatgpt对话&lt;br /&gt;
+&lt;a href=&quot;https://chatgpt.com/share/672cf317-1db4-8002-88ab-097738bce5b1&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://chatgpt.com/share/672cf317-1db4-8002-88ab-097738bce5b1&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;代码&quot; tabindex=&quot;-1&quot;&gt;代码&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;func minDistance(word1 string, word2 string) int {
+    if len(word1) == 0 || len(word2) == 0 {
+        return max(len(word1), len(word2))
+    }
+
+    dp := make([][]int, len(word1)+1)
+
+    for i := range dp {
+        dp[i] = make([]int, len(word2)+1)
+        dp[i][0] = i
+    }
+
+    for j := range dp[0] {
+        dp[0][j]= j
+    }
+
+    for i:=1;i&amp;lt;len(dp);i++ {
+        for j:=1;j&amp;lt;len(dp[i]);j++ {
+            if word1[i-1] == word2[j-1] {
+                dp[i][j] = dp[i-1][j-1]
+            } else {
+                dp[i][j] = min(dp[i][j-1], dp[i-1][j], dp[i-1][j-1])+1
+            }
+        }
+    }
+
+    return dp[len(word1)][len(word2)]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;关键在于填表&lt;/p&gt;
+&lt;p&gt;这个解法能打败50%，还有其他的解法，灵神的视频讲解的很清楚： &lt;a href=&quot;https://www.bilibili.com/video/BV1TM4y1o7ug/?vd_source=cdeb63885c1e7687c8d443ba7d3f4fd9&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;最长公共子序列 编辑距离_哔哩哔哩_bilibili&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/算法/leetcode题目/72. 编辑距离/" />
+        </entry>
+        <entry>
+            <title>
                 560. 和为 K 的子数组
                 
             </title>
@@ -1118,6 +1167,57 @@ func dynamic(s string) string {
 
             </content>
             <link href="https://wudanyang6.github.io//card/算法/leetcode题目/5. 最长回文子串/" />
+        </entry>
+        <entry>
+            <title>
+                239. 滑动窗口最大值
+                
+            </title>
+            <updated>2024-11-08T16:08:45.000Z</updated>
+            <id>https://wudanyang6.github.io//card/算法/leetcode题目/239. 滑动窗口最大值/</id>
+            <content type="html">
+                &lt;h1 id=&quot;239&quot; tabindex=&quot;-1&quot;&gt;239. 滑动窗口最大值&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode.cn/problems/sliding-window-maximum/description/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;239. 滑动窗口最大值 - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这是一道困难题，虽然我看了题解，但是我感觉没有这么困难&lt;/p&gt;
+&lt;h2 id=&quot;代码&quot; tabindex=&quot;-1&quot;&gt;代码&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;
+func maxSlidingWindow(nums []int, k int) []int {
+    res := make([]int, 0, len(nums)-k+1)
+
+    deque := make([]int, 0, k)
+
+    for i := 0; i &amp;lt; len(nums); i++ {
+        for len(deque) &amp;gt; 0 &amp;amp;&amp;amp; nums[deque[len(deque)-1]] &amp;lt; nums[i] {
+            // 将最后一个元素去掉
+            deque = deque[:len(deque)-1]
+        }
+
+        deque = append(deque, i)
+
+        if i - deque[0] &amp;gt;= k {
+            deque = deque[1:]
+        }
+
+        // fmt.Println(deque)
+
+        // 获取当前窗口结果
+        if i &amp;gt;= k-1 {
+            res = append(res, nums[deque[0]])
+        }
+    }
+
+    return res
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;chatgpt 聊天内容： &lt;a href=&quot;https://chatgpt.com/c/672e2ed7-8a7c-8002-abe2-a8bc52af9e74&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://chatgpt.com/c/672e2ed7-8a7c-8002-abe2-a8bc52af9e74&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;deque&lt;/code&gt; 维护了一个单调递减的双端队列，存储的是索引值。&lt;/li&gt;
+&lt;li&gt;每次遍历时，先清理不在窗口范围内的元素，然后清除比当前值小的所有元素（保证队列从大到小）。&lt;/li&gt;
+&lt;li&gt;每当窗口达到大小 &lt;code&gt;k&lt;/code&gt; 时，将队列的第一个元素（最大值）添加到结果数组中。&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/算法/leetcode题目/239. 滑动窗口最大值/" />
         </entry>
         <entry>
             <title>
@@ -4797,193 +4897,193 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
             <id>https://wudanyang6.github.io//card/obsidian/dg-publish=true的标签云/</id>
             <content type="html">
                 &lt;h1 id=&quot;dg-publish-true&quot; tabindex=&quot;-1&quot;&gt;dg-publish=true的标签云&lt;/h1&gt;
-&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;甲沟炎&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:30px; margin-right:20px;&quot;&gt;
+&lt;span style=&quot;font-size:28.461538461538463px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:linux&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;linux&lt;/strong&gt; (8)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:25px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:aigc&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;aigc&lt;/strong&gt; (6)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.615384615384617px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:shell&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;shell&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:23.846153846153847px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:aigc&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;aigc&lt;/strong&gt; (6)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;压力测试&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:aigc-kimi&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;aigc-kimi&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%96%87%E4%BB%B6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;文件&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;操作系统&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%8F%8F%E8%BF%B0%E7%AC%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;描述符&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;文件描述符&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:17.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;甲沟炎&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:16.923076923076923px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:Go&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;Go&lt;/strong&gt; (3)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:chatgpt&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;chatgpt&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:kafka&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;kafka&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%AD%A6%E4%B9%A0&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;学习&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:mysql&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;mysql&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:20px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:19.230769230769234px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:nginx&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;nginx&lt;/strong&gt; (4)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:master&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;master&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.615384615384617px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:Process&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;Process&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.615384615384617px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:source-code&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;source-code&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.615384615384617px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:php&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;php&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%8E%8B%E7%BC%A9&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;压缩&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:redis&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;redis&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:rdb&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;rdb&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.615384615384617px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;哲学&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:rime&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;rime&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:marginnote&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;marginnote&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E9%98%85%E8%AF%BB%E5%99%A8&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;阅读器&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:things3&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;things3&lt;/strong&gt; (2)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:20px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:mac&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;mac&lt;/strong&gt; (4)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E8%BE%93%E5%85%A5%E6%B3%95&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;输入法&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;思维导图&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:phpstorm&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;phpstorm&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:ide&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;ide&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:tools&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;tools&lt;/strong&gt; (2)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%95%88%E7%8E%87&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;效率&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E9%95%9C%E5%83%8F&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;镜像&lt;/strong&gt; (1)
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.615384615384617px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:tools&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;tools&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.615384615384617px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:things3&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;things3&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;思维导图&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:rime&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;rime&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:marginnote&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;marginnote&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E9%98%85%E8%AF%BB%E5%99%A8&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;阅读器&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:19.230769230769234px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:mac&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;mac&lt;/strong&gt; (4)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E8%BE%93%E5%85%A5%E6%B3%95&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;输入法&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:phpstorm&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;phpstorm&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:ide&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;ide&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:chrome&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;chrome&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E9%95%9C%E5%83%8F&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;镜像&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;开发经验&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:excalidraw&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;excalidraw&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:linux%E5%91%BD%E4%BB%A4&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;linux命令&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%A0%91%E8%8E%93%E6%B4%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;树莓派&lt;/strong&gt; (1)
                     &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:network&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;network&lt;/strong&gt; (1)
+                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:40px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:leetcode&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;leetcode&lt;/strong&gt; (12)
+                        &lt;strong&gt;leetcode&lt;/strong&gt; (13)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.615384615384617px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%89%8D%E7%BC%80%E5%92%8C&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;前缀和&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:dp&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;dp&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%AE%B6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;家&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.5px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:network&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;network&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;
 &lt;p&gt;digital-garden 还是很牛的，居然是能用的&lt;/p&gt;
@@ -7468,6 +7568,16 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/239.%20%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC/&quot;&gt;239. 滑动窗口最大值&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-09 00:08:47&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/72.%20%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB/&quot;&gt;72. 编辑距离&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-08 12:32:31&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE%E9%9A%BE%E5%BA%A6%E6%9B%B4%E6%96%B0%E4%BA%86/&quot;&gt;leetcode题目难度更新了&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-11-06 00:28:37&lt;/td&gt;
 &lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
@@ -7507,16 +7617,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;2024-10-26 18:01:13&lt;/td&gt;
 &lt;td&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-49.%20%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%E5%88%86%E7%BB%84/&quot;&gt;leetcode-49. 字母异位词分组&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-10-26 16:58:09&lt;/td&gt;
-&lt;td&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Home&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-10-25 23:56:14&lt;/td&gt;
-&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
-&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&quot;最近创建的文章&quot; tabindex=&quot;-1&quot;&gt;最近创建的文章&lt;/h3&gt;
@@ -7529,6 +7629,16 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/239.%20%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC/&quot;&gt;239. 滑动窗口最大值&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-09 00:00:13&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/72.%20%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB/&quot;&gt;72. 编辑距离&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-08 01:03:57&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE%E9%9A%BE%E5%BA%A6%E6%9B%B4%E6%96%B0%E4%BA%86/&quot;&gt;leetcode题目难度更新了&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-11-06 00:26:39&lt;/td&gt;
@@ -7568,16 +7678,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/200.%20%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F/&quot;&gt;200. 岛屿数量&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-10-21 21:50:04&lt;/td&gt;
 &lt;td&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#aigc&quot;&gt;#aigc&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#leetcode&quot;&gt;#leetcode&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/k8s/%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8F%AF%E8%AE%BF%E9%97%AE%E7%9A%84%E6%9C%8D%E5%8A%A1/&quot;&gt;快速创建一个可访问的服务&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-10-20 18:07:41&lt;/td&gt;
-&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E9%9F%B3%E4%B9%90/%E6%88%91%E7%9A%84%E9%9F%B3%E4%B9%90%E6%AD%8C%E6%89%8B%E5%85%B3%E9%94%AE%E8%AF%8D/&quot;&gt;我的音乐歌手关键词&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-10-20 18:00:18&lt;/td&gt;
-&lt;td&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
