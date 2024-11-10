@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-11-10T11:40:04Z</updated>
+    <updated>2024-11-10T11:43:39Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -1587,7 +1587,7 @@ func longestCommonPrefix(strs []string) string {
                 1143. 最长公共子序列
                 
             </title>
-            <updated>2024-11-10T11:38:54.000Z</updated>
+            <updated>2024-11-10T11:42:56.000Z</updated>
             <id>https://wudanyang6.github.io//card/算法/leetcode题目/1143. 最长公共子序列/</id>
             <content type="html">
                 &lt;h1 id=&quot;1143&quot; tabindex=&quot;-1&quot;&gt;1143. 最长公共子序列&lt;/h1&gt;
@@ -7669,8 +7669,12 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/journal/2024-10-11/&quot;&gt;2024-10-11&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-10 19:43:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/1143.%20%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/&quot;&gt;1143. 最长公共子序列&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-11-10 19:39:06&lt;/td&gt;
+&lt;td&gt;2024-11-10 19:42:56&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Home&lt;/a&gt;&lt;/td&gt;
@@ -7695,10 +7699,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mac/mac-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE/&quot;&gt;mac-自定义快捷键&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-11-05 12:49:59&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/journal/2024-10-11/&quot;&gt;2024-10-11&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-11-04 11:10:14&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/&quot;&gt;leetcode-53. 最大子数组和&lt;/a&gt;&lt;/td&gt;
@@ -7858,7 +7858,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
                 2024-10-11
                 
             </title>
-            <updated>2024-10-11T13:35:19.000Z</updated>
+            <updated>2024-11-10T11:43:00.000Z</updated>
             <id>https://wudanyang6.github.io//journal/2024-10-11/</id>
             <content type="html">
                 &lt;h1 id=&quot;2024-10-11&quot; tabindex=&quot;-1&quot;&gt;2024-10-11&lt;/h1&gt;
@@ -7866,13 +7866,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;p&gt;新电脑的刘海把很多图标都挡住了，太难受了，看网上教程，找了个软件 &lt;code&gt;Bartender&lt;/code&gt; 能够解决&lt;/p&gt;
 &lt;p&gt;带刘海屏的 Macbook, 状态栏图标多了被刘海挡住看不到了，咋办？ - V2EX: &lt;a href=&quot;https://v2ex.com/t/1019165#&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://v2ex.com/t/1019165#&lt;/a&gt;;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020241011213412.png&quot; alt=&quot;Pasted image 20241011213412.png&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;logbook&quot; tabindex=&quot;-1&quot;&gt;Logbook&lt;/h2&gt;
-&lt;ul class=&quot;task-list&quot;&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; checked=&quot;true&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_0&quot;&gt; &lt;a href=&quot;things:///show?id=8MsskfYr9RVh5YWsxgznjk&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;写周报-OKR&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_1&quot; checked=&quot;true&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_1&quot;&gt; &lt;a href=&quot;things:///show?id=Sbuk6iWDraSFGvUMqbAixG&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;本周事项 review&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_2&quot; checked=&quot;true&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_2&quot;&gt; &lt;a href=&quot;things:///show?id=BkXFXrAobchHAu1r4Qr1SC&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;每天记录体重&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;[c] &lt;a href=&quot;things:///show?id=RFxZ6bJayjWhmvoS6RHQig&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ucloud 机器未加入集群问题 @张琼 @庆阳 @连战标&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//journal/2024-10-11/" />
