@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2024-12-24T03:13:24Z</updated>
+    <updated>2024-12-31T02:28:23Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -5111,9 +5111,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;甲沟炎&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:16px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:Go&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;Go&lt;/strong&gt; (3)
+                        &lt;strong&gt;Go&lt;/strong&gt; (4)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:chatgpt&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5135,10 +5135,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:nginx&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;nginx&lt;/strong&gt; (4)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:master&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;master&lt;/strong&gt; (1)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:Process&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;Process&lt;/strong&gt; (2)
@@ -5146,6 +5142,10 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:source-code&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;source-code&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:master&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;master&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:php&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5155,6 +5155,14 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%8E%8B%E7%BC%A9&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;压缩&lt;/strong&gt; (1)
                     &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
+                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:redis&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;redis&lt;/strong&gt; (1)
@@ -5162,14 +5170,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:rdb&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;rdb&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%95%88%E7%8E%87&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5182,10 +5182,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:things3&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;things3&lt;/strong&gt; (2)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;思维导图&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:rime&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5216,12 +5212,16 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;ide&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:chrome&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;chrome&lt;/strong&gt; (1)
+                    &lt;a href=&quot;obsidian://search?query=tag:%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;思维导图&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E9%95%9C%E5%83%8F&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;镜像&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:chrome&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;chrome&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5232,12 +5232,12 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;excalidraw&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:linux%E5%91%BD%E4%BB%A4&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;linux命令&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%A0%91%E8%8E%93%E6%B4%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;树莓派&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:linux%E5%91%BD%E4%BB%A4&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;linux命令&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:40px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:leetcode&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5256,12 +5256,12 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;dp&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:network&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;network&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%AE%B6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;家&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:network&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;network&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;
 &lt;p&gt;digital-garden 还是很牛的，居然是能用的&lt;/p&gt;
@@ -6453,6 +6453,86 @@ qsk-deploy-668c8bdb95-xssrf   1/1     Running       0          150m
         </entry>
         <entry>
             <title>
+                golang-cobra
+                
+            </title>
+            <updated>2024-12-31T02:27:43.000Z</updated>
+            <id>https://wudanyang6.github.io//card/go/golang-cobra/</id>
+            <content type="html">
+                &lt;h1 id=&quot;golang-cobra&quot; tabindex=&quot;-1&quot;&gt;golang-cobra&lt;/h1&gt;
+&lt;h2 id=&quot;简介&quot; tabindex=&quot;-1&quot;&gt;简介&lt;/h2&gt;
+&lt;p&gt;cobra 可以帮助快速构建命令行程序&lt;/p&gt;
+&lt;h2 id=&quot;用法&quot; tabindex=&quot;-1&quot;&gt;用法&lt;/h2&gt;
+&lt;h3 id=&quot;快速搭建脚手架&quot; tabindex=&quot;-1&quot;&gt;快速搭建脚手架&lt;/h3&gt;
+&lt;p&gt;安装&lt;code&gt;cobra-cli&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;go install github.com/spf13/cobra-cli@latest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在一个已有的代码库中，使用 &lt;code&gt;cobra-cli init&lt;/code&gt; 可以初始化一个代码库，然后执行 &lt;code&gt;go run main.go&lt;/code&gt; 会展示出当前支持的命令&lt;br /&gt;
+初始化之后的目录结构如下所示：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  ▾ app/
+    ▾ cmd/
+        root.go
+      main.go
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;新增命令&quot; tabindex=&quot;-1&quot;&gt;新增命令&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;cobra-cli add serve
+cobra-cli add config
+cobra-cli add create -p &#39;configCmd&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;细节安装后查看&lt;/p&gt;
+&lt;h3 id=&quot;命令代码编写&quot; tabindex=&quot;-1&quot;&gt;命令代码编写&lt;/h3&gt;
+&lt;p&gt;以我的一个代码上传开发机的小程序为例： &lt;a href=&quot;https://github.com/wudanyang6/simple-file-sync.git&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/wudanyang6/simple-file-sync.git&lt;/a&gt;&lt;br /&gt;
+我增加了两个命令，一个是&lt;code&gt;client&lt;/code&gt;一个是&lt;code&gt;server&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;拿简单点的 server 来看：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;var serverCmd = &amp;amp;cobra.Command{  
+    Use:   &amp;quot;server --port&amp;quot;,  
+    Short: &amp;quot;server for simple file sync&amp;quot;,  
+    Long:  `A server for simple file sync. For example: simple-file-sync server `,  
+    Run: func(cmd *cobra.Command, args []string) {  
+       server.NewServer(ServerPort, ServerToken, ServerLimitDir).Start()  
+    },  
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Use&lt;/code&gt; 这里代表应该在主命令后面写什么才能运行子命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Short&lt;/code&gt; &amp;amp; &lt;code&gt;Long&lt;/code&gt; 代表子命令的描述&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Run&lt;/code&gt; 是真正的代码逻辑，我一般习惯将逻辑写在其他包里面，这里只做命令初始化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;参数传递&quot; tabindex=&quot;-1&quot;&gt;参数传递&lt;/h4&gt;
+&lt;p&gt;参数传递非常方便，并且使用 spf13 大神的 pflag 包，长短命令形式都支持&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;serverCmd.Flags().IntVar(&amp;amp;ServerPort, &amp;quot;port&amp;quot;, 8120, &amp;quot;port to listen on&amp;quot;)  
+serverCmd.Flags().StringVar(&amp;amp;ServerToken, &amp;quot;token&amp;quot;, serverToken, &amp;quot;token for authentication&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;效果&quot; tabindex=&quot;-1&quot;&gt;效果&lt;/h2&gt;
+&lt;p&gt;-h 命令&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ simple-file-sync server -h
+A server for simple file sync. For example: simple-file-sync server
+
+Usage:
+  simple-file-sync server --port [flags]
+
+Flags:
+  -h, --help               help for server
+      --limit-dir string   You can’t upload to anything other than the limit-dir folder, default is your home directory (default &amp;quot;/your/homeDir&amp;quot;)
+      --port int           port to listen on (default 8120)
+      --token string       token for authentication (default &amp;quot;kfcvme50&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;执行效果：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;$ simple-file-sync server   
+2024/12/31 10:26:34 Starting server at port 8120...
+2024/12/31 10:26:34 Limit directory:  /Users/wudanyang
+2024/12/31 10:26:34 Token:  kfcvme50
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h2&gt;
+&lt;p&gt;官方库：&lt;a href=&quot;https://github.com/spf13/cobra&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;spf13/cobra: A Commander for modern Go CLI interactions&lt;/a&gt;&lt;br /&gt;
+cobra 库介绍：&lt;a href=&quot;https://darjun.github.io/2020/01/17/godailylib/cobra/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Go 每日一库之 cobra - 大俊的博客&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/spf13/cobra-cli/blob/main/README.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;cobra-cli/README.md at main · spf13/cobra-cli&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/go/golang-cobra/" />
+        </entry>
+        <entry>
+            <title>
                 go-时间处理
                 
             </title>
@@ -6830,7 +6910,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 驾驶证期满换证
                 
             </title>
-            <updated>2024-11-16T14:45:44.000Z</updated>
+            <updated>2024-11-16T14:48:39.000Z</updated>
             <id>https://wudanyang6.github.io//card/Personal/驾驶证期满换证/</id>
             <content type="html">
                 &lt;ol&gt;
@@ -7755,8 +7835,12 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/golang-cobra/&quot;&gt;golang-cobra&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-12-31 10:27:44&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Personal/%E9%A9%BE%E9%A9%B6%E8%AF%81%E6%9C%9F%E6%BB%A1%E6%8D%A2%E8%AF%81/&quot;&gt;驾驶证期满换证&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-11-16 22:45:56&lt;/td&gt;
+&lt;td&gt;2024-11-16 22:48:39&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/55.%20%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F/&quot;&gt;55. 跳跃游戏&lt;/a&gt;&lt;/td&gt;
@@ -7834,10 +7918,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/linux-pidstat/&quot;&gt;linux-pidstat&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-10-24 23:44:35&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%97%A0%E6%B3%95%E4%B8%8A%E7%BD%91%E6%8E%92%E6%9F%A5/&quot;&gt;树莓派无法上网排查&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-10-23 22:09:36&lt;/td&gt;
-&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&quot;最近创建的文章&quot; tabindex=&quot;-1&quot;&gt;最近创建的文章&lt;/h3&gt;
@@ -7849,6 +7929,10 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/golang-cobra/&quot;&gt;golang-cobra&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-12-20 14:31:47&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/55.%20%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F/&quot;&gt;55. 跳跃游戏&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-11-13 23:46:30&lt;/td&gt;
@@ -7928,10 +8012,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E6%96%AD/&quot;&gt;计算机中断&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-09-20 16:31:26&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/linux-execsnoop/&quot;&gt;linux-execsnoop&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-09-20 16:00:50&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

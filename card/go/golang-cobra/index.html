@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh">
 <head>
-<title>获取进程存活时间</title>
+<title>golang-cobra</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
@@ -132,7 +132,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/golang-cobra/">golang-cobra </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/golang-cobra/">golang-cobra </a>
 </div>
 </div>
 </div>
@@ -277,7 +277,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/获取进程存活时间/">获取进程存活时间 </a>
+<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/获取进程存活时间/">获取进程存活时间 </a>
 </div>
 </div>
 </div>
@@ -1077,48 +1077,83 @@ CTRL + K
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2024-12-31T02:28:21.813Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2024-12-31T02:28:21.813Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2024-12-31T02:28:21.813Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="2">获取进程存活时间</h1>
+<h1 data-note-icon="2">golang-cobra</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#linux
-</a>
-<a class="tag" onclick="toggleTagSearch(this)">
-#shell
+#Go
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-02-27T16:08:40+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-18T12:54:33+08:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-12-20T14:31:47+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-12-31T10:27:43+08:00"></span></div></div></div>
 </header>
-<pre><code class="language-Shell">ps -eo lstart,pid,cmd | grep &quot;php-fpm: pool www&quot; | grep -v 'grep'
+<h1 id="golang-cobra" tabindex="-1">golang-cobra</h1>
+<h2 id="简介" tabindex="-1">简介</h2>
+<p>cobra 可以帮助快速构建命令行程序</p>
+<h2 id="用法" tabindex="-1">用法</h2>
+<h3 id="快速搭建脚手架" tabindex="-1">快速搭建脚手架</h3>
+<p>安装<code>cobra-cli</code></p>
+<pre><code class="language-bash">go install github.com/spf13/cobra-cli@latest
 </code></pre>
-<p>要在 Linux 中获取子进程的存活时间（以 Unix 时间戳的形式表示），可以使用以下步骤：</p>
-<ol>
-<li>获取子进程的 PID。</li>
-<li>访问 <code>/proc/&lt;PID&gt;/stat</code> 文件，其中 <code>&lt;PID&gt;</code> 是子进程的 PID。</li>
-<li>从 <code>/proc/&lt;PID&gt;/stat</code> 文件中读取进程的启动时间（start_time），该值以时钟滴答数（clock ticks）的形式存储在第 22 列中。</li>
-<li>获取系统的时钟滴答数，可以使用 <code>getconf CLK_TCK</code> 命令。</li>
-<li>将进程的启动时间除以时钟滴答数，以获取进程的存活时间（单位为秒），然后将其添加到系统启动时间的 Unix 时间戳（即系统启动的时间，以秒为单位）中，即可得到子进程的存活时间（以 Unix 时间戳的形式表示）。</li>
-</ol>
-<pre><code class="language-Shell">以下是获取子进程存活时间的 Unix 时间戳的示例命令：
-# 获取进程存活时间
-PID=&lt;子进程的 PID&gt;
-
-# 获取进程的启动时间（以时钟滴答数的形式存储）
-START_TIME=$(awk '{print $22}' /proc/${PID}/stat)
-
-# 获取系统的时钟滴答数
-CLK_TCK=$(getconf CLK_TCK)
-
-# 计算进程的存活时间（以秒为单位）
-UPTIME=$((($(awk '{print $1}' /proc/uptime) - ${START_TIME} / ${CLK_TCK})))
-
-# 计算子进程的存活时间（以 Unix 时间戳的形式表示）
-CHILD_UPTIME=$(( $(date +%s) - ${UPTIME} ))
-
-echo &quot;子进程的存活时间为：${CHILD_UPTIME} 秒（Unix 时间戳形式）&quot;
+<p>在一个已有的代码库中，使用 <code>cobra-cli init</code> 可以初始化一个代码库，然后执行 <code>go run main.go</code> 会展示出当前支持的命令<br>
+初始化之后的目录结构如下所示：</p>
+<pre><code class="language-bash">  ▾ app/
+    ▾ cmd/
+        root.go
+      main.go
 </code></pre>
-<p>注意，这个方法获取的存活时间不是绝对准确的，因为在读取进程的启动时间和计算子进程的存活时间期间，进程的存活时间可能会发生变化。</p>
-<h1 id="参考" tabindex="-1">参考</h1>
+<h3 id="新增命令" tabindex="-1">新增命令</h3>
+<pre><code class="language-bash">cobra-cli add serve
+cobra-cli add config
+cobra-cli add create -p 'configCmd'
+</code></pre>
+<p>细节安装后查看</p>
+<h3 id="命令代码编写" tabindex="-1">命令代码编写</h3>
+<p>以我的一个代码上传开发机的小程序为例： <a href="https://github.com/wudanyang6/simple-file-sync.git" target="_blank" class="external-link">https://github.com/wudanyang6/simple-file-sync.git</a><br>
+我增加了两个命令，一个是<code>client</code>一个是<code>server</code></p>
+<p>拿简单点的 server 来看：</p>
+<pre><code class="language-go">var serverCmd = &amp;cobra.Command{  
+    Use:   &quot;server --port&quot;,  
+    Short: &quot;server for simple file sync&quot;,  
+    Long:  `A server for simple file sync. For example: simple-file-sync server `,  
+    Run: func(cmd *cobra.Command, args []string) {  
+       server.NewServer(ServerPort, ServerToken, ServerLimitDir).Start()  
+    },  
+}
+</code></pre>
+<ul>
+<li><code>Use</code> 这里代表应该在主命令后面写什么才能运行子命令</li>
+<li><code>Short</code> &amp; <code>Long</code> 代表子命令的描述</li>
+<li><code>Run</code> 是真正的代码逻辑，我一般习惯将逻辑写在其他包里面，这里只做命令初始化</li>
+</ul>
+<h4 id="参数传递" tabindex="-1">参数传递</h4>
+<p>参数传递非常方便，并且使用 spf13 大神的 pflag 包，长短命令形式都支持</p>
+<pre><code class="language-go">serverCmd.Flags().IntVar(&amp;ServerPort, &quot;port&quot;, 8120, &quot;port to listen on&quot;)  
+serverCmd.Flags().StringVar(&amp;ServerToken, &quot;token&quot;, serverToken, &quot;token for authentication&quot;)
+</code></pre>
+<h2 id="效果" tabindex="-1">效果</h2>
+<p>-h 命令</p>
+<pre><code class="language-bash">$ simple-file-sync server -h
+A server for simple file sync. For example: simple-file-sync server
+
+Usage:
+  simple-file-sync server --port [flags]
+
+Flags:
+  -h, --help               help for server
+      --limit-dir string   You can’t upload to anything other than the limit-dir folder, default is your home directory (default &quot;/your/homeDir&quot;)
+      --port int           port to listen on (default 8120)
+      --token string       token for authentication (default &quot;kfcvme50&quot;)
+</code></pre>
+<p>执行效果：</p>
+<pre><code class="language-go">$ simple-file-sync server   
+2024/12/31 10:26:34 Starting server at port 8120...
+2024/12/31 10:26:34 Limit directory:  /Users/wudanyang
+2024/12/31 10:26:34 Token:  kfcvme50
+</code></pre>
+<h2 id="参考" tabindex="-1">参考</h2>
+<p>官方库：<a href="https://github.com/spf13/cobra" target="_blank" class="external-link">spf13/cobra: A Commander for modern Go CLI interactions</a><br>
+cobra 库介绍：<a href="https://darjun.github.io/2020/01/17/godailylib/cobra/" target="_blank" class="external-link">Go 每日一库之 cobra - 大俊的博客</a><br>
+<a href="https://github.com/spf13/cobra-cli/blob/main/README.md" target="_blank" class="external-link">cobra-cli/README.md at main · spf13/cobra-cli</a></p>
 <hr>
 <script src="https://giscus.app/client.js" data-repo="wudanyang6/wudanyang6.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM=" data-category="Announcements" data-category-id="DIC_kwDOFTtyT84CYlu-" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-CN" crossorigin="anonymous" async></script>
 <span id="busuanzi_container_page_pv">
@@ -1165,7 +1200,29 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
+<li><a href="#golang-cobra">golang-cobra</a>
+<ol>
+<li><a href="#简介">简介</a>
+</li>
+<li><a href="#用法">用法</a>
+<ol>
+<li><a href="#快速搭建脚手架">快速搭建脚手架</a>
+</li>
+<li><a href="#新增命令">新增命令</a>
+</li>
+<li><a href="#命令代码编写">命令代码编写</a>
+<ol>
+<li><a href="#参数传递">参数传递</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#效果">效果</a>
+</li>
 <li><a href="#参考">参考</a>
+</li>
+</ol>
 </li>
 </ol>
 </nav>
@@ -1173,8 +1230,7 @@ On this page
 </div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card">
-<span class="no-backlinks-message">No other pages mentions this page</span>
+<div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="2" class="backlink">Home</a>
 </div></div>
 </div>
 </div>
