@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-01-23T20:48:28Z</updated>
+    <updated>2025-01-23T20:50:21Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -2634,11 +2634,11 @@ while true;do stress -t 1 -d 1 2&amp;gt;&amp;amp;1 ;done
                 快速分析系统CPU瓶颈的命令工具
                 
             </title>
-            <updated>2024-09-20T13:19:38.000Z</updated>
+            <updated>2025-01-23T20:49:12.000Z</updated>
             <id>https://wudanyang6.github.io//card/操作系统/CPU性能优化/快速分析系统CPU瓶颈的命令工具/</id>
             <content type="html">
                 &lt;h1 id=&quot;cpu&quot; tabindex=&quot;-1&quot;&gt;快速分析系统CPU瓶颈的命令工具&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240920205108.png&quot; alt=&quot;Pasted image 20240920205108.png|600&quot; width=&quot;600px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/Pasted%20image%2020240920205108.png%7C600.md&quot; alt=&quot;Pasted image 20240920205108.png|600&quot; width=&quot;600px&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;1&quot; tabindex=&quot;-1&quot;&gt;1 参考&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;11 | 套路篇：如何迅速分析出系统CPU的瓶颈在哪里？-Linux 性能优化实战-极客时间: &lt;a href=&quot;https://time.geekbang.org/column/article/72685&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://time.geekbang.org/column/article/72685&lt;/a&gt;&lt;/li&gt;
@@ -3124,7 +3124,7 @@ vmstat 5
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240919000041.png&quot; alt=&quot;Pasted image 20240919000041.png&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;2 基本概念&lt;/h2&gt;
 &lt;h3 id=&quot;2-1&quot; tabindex=&quot;-1&quot;&gt;2.1 平均负载&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/CPU%20%E5%B9%B3%E5%9D%87%E8%B4%9F%E8%BD%BD/&quot;&gt;CPU 平均负载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/CPU%20%E5%B9%B3%E5%9D%87%E8%B4%9F%E8%BD%BD/&quot;&gt;CPU 平均负载.md&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;2-2-cpu&quot; tabindex=&quot;-1&quot;&gt;2.2 CPU 使用率&lt;/h3&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/CPU%20%E4%BD%BF%E7%94%A8%E7%8E%87/&quot;&gt;CPU 使用率&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;2-3-cpu&quot; tabindex=&quot;-1&quot;&gt;2.3 CPU 上下文切换&lt;/h3&gt;
@@ -7779,8 +7779,16 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/202409121624%20Linux%20%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E4%BC%98%E5%8C%96-CPU/&quot;&gt;202409121624 Linux 性能分析优化-CPU&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-24 04:49:35&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E5%BF%AB%E9%80%9F%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9FCPU%E7%93%B6%E9%A2%88%E7%9A%84%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/&quot;&gt;快速分析系统CPU瓶颈的命令工具&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-24 04:49:12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;Things 工作流&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-01-24 04:11:09&lt;/td&gt;
+&lt;td&gt;2025-01-24 04:48:25&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
@@ -7853,14 +7861,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE%E9%9A%BE%E5%BA%A6%E6%9B%B4%E6%96%B0%E4%BA%86/&quot;&gt;leetcode题目难度更新了&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-11-06 00:28:37&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mac/mac-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE/&quot;&gt;mac-自定义快捷键&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-11-05 12:49:59&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/&quot;&gt;leetcode-53. 最大子数组和&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-11-01 10:48:24&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -7993,7 +7993,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
                 Things 工作流
                 
             </title>
-            <updated>2025-01-23T18:43:35.000Z</updated>
+            <updated>2025-01-23T20:48:23.000Z</updated>
             <id>https://wudanyang6.github.io//0000 publish/Things 工作流/</id>
             <content type="html">
                 &lt;h1 id=&quot;things&quot; tabindex=&quot;-1&quot;&gt;Things 工作流&lt;/h1&gt;
@@ -8013,8 +8013,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;li&gt;根据时间，选取任务进行处理，打开 &lt;code&gt;Session&lt;/code&gt; 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020231107224028.png&quot; alt=&quot;Pasted image 20231107224028.png&quot; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;为了让Things工作流更顺畅，我做了一个obsidian插件：&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件.md&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3/&quot;&gt;202404191548 GTD的主要思想.md&lt;/a&gt;&lt;br /&gt;
-&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3/&quot;&gt;202404191548 GTD的主要思想.md&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3/&quot;&gt;202404191548 GTD的主要思想.md&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//0000 publish/Things 工作流/" />
