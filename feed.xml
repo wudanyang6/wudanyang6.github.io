@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-01-23T08:31:14Z</updated>
+    <updated>2025-01-23T17:15:07Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -7780,7 +7780,11 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;Things 工作流&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-01-23 00:44:01&lt;/td&gt;
+&lt;td&gt;2025-01-24 01:14:05&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-23 01:16:54&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/&quot;&gt;CDN 带宽控制的几种方法&lt;/a&gt;&lt;/td&gt;
@@ -7792,10 +7796,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -7968,7 +7968,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
                 obsidian-things3-today插件
                 
             </title>
-            <updated>2025-01-22T15:54:04.000Z</updated>
+            <updated>2025-01-22T17:16:54.000Z</updated>
             <id>https://wudanyang6.github.io//0000 publish/obsidian-things3-today插件/</id>
             <content type="html">
                 &lt;h1 id=&quot;obsidian-things3-today&quot; tabindex=&quot;-1&quot;&gt;obsidian-things3-today插件&lt;/h1&gt;
@@ -7993,7 +7993,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
                 Things 工作流
                 
             </title>
-            <updated>2025-01-22T16:44:01.000Z</updated>
+            <updated>2025-01-23T17:14:03.000Z</updated>
             <id>https://wudanyang6.github.io//0000 publish/Things 工作流/</id>
             <content type="html">
                 &lt;h1 id=&quot;things&quot; tabindex=&quot;-1&quot;&gt;Things 工作流&lt;/h1&gt;
@@ -8013,7 +8013,8 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;li&gt;根据时间，选取任务进行处理，打开 &lt;code&gt;Session&lt;/code&gt; 软件进行专注于做事，太喜欢 Session 的页面了，从而订阅了 setapp 使用  ![Pasted image 20231107224028.png](/img/user/attachs/Pasted image 20231107224028.png)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;为了让Things工作流更顺畅，我做了一个obsidian插件：&lt;a href=&quot;https://wudanyang6.github.io/obsidian-things3-today%E6%8F%92%E4%BB%B6.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3/&quot;&gt;202404191548 GTD的主要思想&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://wudanyang6.github.io/card/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;202404191548 GTD的主要思想&lt;/a&gt;&lt;a href=&quot;https://wudanyang6.github.io/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://wudanyang6.github.io/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;202404191548 GTD的主要思想&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//0000 publish/Things 工作流/" />
