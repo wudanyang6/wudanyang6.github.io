@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-01-26T13:25:20Z</updated>
+    <updated>2025-01-26T13:39:04Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -2953,7 +2953,7 @@ that the system (&amp;quot;cpu&amp;quot; line) or the specific CPU&lt;br /&gt;
 &lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot; display=&quot;true&quot; style=&quot;direction: ltr; display: block; text-align: center; margin: 1em 0; position: relative;&quot;&gt;&lt;svg style=&quot;overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -2.156ex;&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;58.833ex&quot; height=&quot;5.444ex&quot; role=&quot;img&quot; focusable=&quot;false&quot; viewBox=&quot;0 -1453.1 26004.4 2406.3&quot; aria-hidden=&quot;true&quot;&gt;&lt;g stroke=&quot;currentColor&quot; fill=&quot;currentColor&quot; stroke-width=&quot;0&quot; transform=&quot;scale(1,-1)&quot;&gt;&lt;g data-mml-node=&quot;math&quot;&gt;&lt;g data-mml-node=&quot;mtext&quot;&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;平&lt;/text&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(1000,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;均&lt;/text&gt;&lt;path data-c=&quot;20&quot; d=&quot;&quot; transform=&quot;translate(2000,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;43&quot; d=&quot;M56 342Q56 428 89 500T174 615T283 681T391 705Q394 705 400 705T408 704Q499 704 569 636L582 624L612 663Q639 700 643 704Q644 704 647 704T653 705H657Q660 705 666 699V419L660 413H626Q620 419 619 430Q610 512 571 572T476 651Q457 658 426 658Q322 658 252 588Q173 509 173 342Q173 221 211 151Q232 111 263 84T328 45T384 29T428 24Q517 24 571 93T626 244Q626 251 632 257H660L666 251V236Q661 133 590 56T403 -21Q262 -21 159 83T56 342Z&quot; transform=&quot;translate(2250,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;50&quot; d=&quot;M130 622Q123 629 119 631T103 634T60 637H27V683H214Q237 683 276 683T331 684Q419 684 471 671T567 616Q624 563 624 489Q624 421 573 372T451 307Q429 302 328 301H234V181Q234 62 237 58Q245 47 304 46H337V0H326Q305 3 182 3Q47 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM507 488Q507 514 506 528T500 564T483 597T450 620T397 635Q385 637 307 637H286Q237 637 234 628Q231 624 231 483V342H302H339Q390 342 423 349T481 382Q507 411 507 488Z&quot; transform=&quot;translate(2972,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;55&quot; d=&quot;M128 622Q121 629 117 631T101 634T58 637H25V683H36Q57 680 180 680Q315 680 324 683H335V637H302Q262 636 251 634T233 622L232 418V291Q232 189 240 145T280 67Q325 24 389 24Q454 24 506 64T571 183Q575 206 575 410V598Q569 608 565 613T541 627T489 637H472V683H481Q496 680 598 680T715 683H724V637H707Q634 633 622 598L621 399Q620 194 617 180Q617 179 615 171Q595 83 531 31T389 -22Q304 -22 226 33T130 192Q129 201 128 412V622Z&quot; transform=&quot;translate(3653,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;20&quot; d=&quot;&quot; transform=&quot;translate(4403,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(4653,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;使&lt;/text&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(5653,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;用&lt;/text&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(6653,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;率&lt;/text&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(7930.8,0)&quot;&gt;&lt;path data-c=&quot;3D&quot; d=&quot;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mn&quot; transform=&quot;translate(8986.6,0)&quot;&gt;&lt;path data-c=&quot;31&quot; d=&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(9708.8,0)&quot;&gt;&lt;path data-c=&quot;2212&quot; d=&quot;M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mfrac&quot; transform=&quot;translate(10709,0)&quot;&gt;&lt;g data-mml-node=&quot;mrow&quot; transform=&quot;translate(1873,703.1)&quot;&gt;&lt;g data-mml-node=&quot;msub&quot;&gt;&lt;g data-mml-node=&quot;mtext&quot;&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;空&lt;/text&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(1000,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;闲&lt;/text&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(2000,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;时&lt;/text&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(3000,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;间&lt;/text&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;TeXAtom&quot; transform=&quot;translate(4033,-235.4) scale(0.707)&quot; data-mjx-texclass=&quot;ORD&quot;&gt;&lt;g data-mml-node=&quot;mtext&quot;&gt;&lt;path data-c=&quot;6E&quot; d=&quot;M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;65&quot; d=&quot;M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z&quot; transform=&quot;translate(556,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;77&quot; d=&quot;M90 368Q84 378 76 380T40 385H18V431H24L43 430Q62 430 84 429T116 428Q206 428 221 431H229V385H215Q177 383 177 368Q177 367 221 239L265 113L339 328L333 345Q323 374 316 379Q308 384 278 385H258V431H264Q270 428 348 428Q439 428 454 431H461V385H452Q404 385 404 369Q404 366 418 324T449 234T481 143L496 100L537 219Q579 341 579 347Q579 363 564 373T530 385H522V431H529Q541 428 624 428Q692 428 698 431H703V385H697Q696 385 691 385T682 384Q635 377 619 334L559 161Q546 124 528 71Q508 12 503 1T487 -11H479Q460 -11 456 -4Q455 -3 407 133L361 267Q359 263 266 -4Q261 -11 243 -11H238Q225 -11 220 -3L90 368Z&quot; transform=&quot;translate(1000,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(5522.9,0)&quot;&gt;&lt;path data-c=&quot;2212&quot; d=&quot;M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;msub&quot; transform=&quot;translate(6523.1,0)&quot;&gt;&lt;g data-mml-node=&quot;mtext&quot;&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;空&lt;/text&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(1000,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;闲&lt;/text&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(2000,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;时&lt;/text&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(3000,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;间&lt;/text&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;TeXAtom&quot; transform=&quot;translate(4033,-235.4) scale(0.707)&quot; data-mjx-texclass=&quot;ORD&quot;&gt;&lt;g data-mml-node=&quot;mtext&quot;&gt;&lt;path data-c=&quot;6F&quot; d=&quot;M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;6C&quot; d=&quot;M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z&quot; transform=&quot;translate(500,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;64&quot; d=&quot;M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z&quot; transform=&quot;translate(778,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mrow&quot; transform=&quot;translate(220,-710)&quot;&gt;&lt;g data-mml-node=&quot;msub&quot;&gt;&lt;g data-mml-node=&quot;mtext&quot;&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;总&lt;/text&gt;&lt;path data-c=&quot;20&quot; d=&quot;&quot; transform=&quot;translate(1000,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;43&quot; d=&quot;M56 342Q56 428 89 500T174 615T283 681T391 705Q394 705 400 705T408 704Q499 704 569 636L582 624L612 663Q639 700 643 704Q644 704 647 704T653 705H657Q660 705 666 699V419L660 413H626Q620 419 619 430Q610 512 571 572T476 651Q457 658 426 658Q322 658 252 588Q173 509 173 342Q173 221 211 151Q232 111 263 84T328 45T384 29T428 24Q517 24 571 93T626 244Q626 251 632 257H660L666 251V236Q661 133 590 56T403 -21Q262 -21 159 83T56 342Z&quot; transform=&quot;translate(1250,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;50&quot; d=&quot;M130 622Q123 629 119 631T103 634T60 637H27V683H214Q237 683 276 683T331 684Q419 684 471 671T567 616Q624 563 624 489Q624 421 573 372T451 307Q429 302 328 301H234V181Q234 62 237 58Q245 47 304 46H337V0H326Q305 3 182 3Q47 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM507 488Q507 514 506 528T500 564T483 597T450 620T397 635Q385 637 307 637H286Q237 637 234 628Q231 624 231 483V342H302H339Q390 342 423 349T481 382Q507 411 507 488Z&quot; transform=&quot;translate(1972,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;55&quot; d=&quot;M128 622Q121 629 117 631T101 634T58 637H25V683H36Q57 680 180 680Q315 680 324 683H335V637H302Q262 636 251 634T233 622L232 418V291Q232 189 240 145T280 67Q325 24 389 24Q454 24 506 64T571 183Q575 206 575 410V598Q569 608 565 613T541 627T489 637H472V683H481Q496 680 598 680T715 683H724V637H707Q634 633 622 598L621 399Q620 194 617 180Q617 179 615 171Q595 83 531 31T389 -22Q304 -22 226 33T130 192Q129 201 128 412V622Z&quot; transform=&quot;translate(2653,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;20&quot; d=&quot;&quot; transform=&quot;translate(3403,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(3653,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;时&lt;/text&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(4653,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;间&lt;/text&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;TeXAtom&quot; transform=&quot;translate(5686,-235.4) scale(0.707)&quot; data-mjx-texclass=&quot;ORD&quot;&gt;&lt;g data-mml-node=&quot;mtext&quot;&gt;&lt;path data-c=&quot;6E&quot; d=&quot;M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;65&quot; d=&quot;M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z&quot; transform=&quot;translate(556,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;77&quot; d=&quot;M90 368Q84 378 76 380T40 385H18V431H24L43 430Q62 430 84 429T116 428Q206 428 221 431H229V385H215Q177 383 177 368Q177 367 221 239L265 113L339 328L333 345Q323 374 316 379Q308 384 278 385H258V431H264Q270 428 348 428Q439 428 454 431H461V385H452Q404 385 404 369Q404 366 418 324T449 234T481 143L496 100L537 219Q579 341 579 347Q579 363 564 373T530 385H522V431H529Q541 428 624 428Q692 428 698 431H703V385H697Q696 385 691 385T682 384Q635 377 619 334L559 161Q546 124 528 71Q508 12 503 1T487 -11H479Q460 -11 456 -4Q455 -3 407 133L361 267Q359 263 266 -4Q261 -11 243 -11H238Q225 -11 220 -3L90 368Z&quot; transform=&quot;translate(1000,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(7175.9,0)&quot;&gt;&lt;path data-c=&quot;2212&quot; d=&quot;M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;msub&quot; transform=&quot;translate(8176.1,0)&quot;&gt;&lt;g data-mml-node=&quot;mtext&quot;&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;总&lt;/text&gt;&lt;path data-c=&quot;20&quot; d=&quot;&quot; transform=&quot;translate(1000,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;43&quot; d=&quot;M56 342Q56 428 89 500T174 615T283 681T391 705Q394 705 400 705T408 704Q499 704 569 636L582 624L612 663Q639 700 643 704Q644 704 647 704T653 705H657Q660 705 666 699V419L660 413H626Q620 419 619 430Q610 512 571 572T476 651Q457 658 426 658Q322 658 252 588Q173 509 173 342Q173 221 211 151Q232 111 263 84T328 45T384 29T428 24Q517 24 571 93T626 244Q626 251 632 257H660L666 251V236Q661 133 590 56T403 -21Q262 -21 159 83T56 342Z&quot; transform=&quot;translate(1250,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;50&quot; d=&quot;M130 622Q123 629 119 631T103 634T60 637H27V683H214Q237 683 276 683T331 684Q419 684 471 671T567 616Q624 563 624 489Q624 421 573 372T451 307Q429 302 328 301H234V181Q234 62 237 58Q245 47 304 46H337V0H326Q305 3 182 3Q47 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM507 488Q507 514 506 528T500 564T483 597T450 620T397 635Q385 637 307 637H286Q237 637 234 628Q231 624 231 483V342H302H339Q390 342 423 349T481 382Q507 411 507 488Z&quot; transform=&quot;translate(1972,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;55&quot; d=&quot;M128 622Q121 629 117 631T101 634T58 637H25V683H36Q57 680 180 680Q315 680 324 683H335V637H302Q262 636 251 634T233 622L232 418V291Q232 189 240 145T280 67Q325 24 389 24Q454 24 506 64T571 183Q575 206 575 410V598Q569 608 565 613T541 627T489 637H472V683H481Q496 680 598 680T715 683H724V637H707Q634 633 622 598L621 399Q620 194 617 180Q617 179 615 171Q595 83 531 31T389 -22Q304 -22 226 33T130 192Q129 201 128 412V622Z&quot; transform=&quot;translate(2653,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;20&quot; d=&quot;&quot; transform=&quot;translate(3403,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(3653,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;时&lt;/text&gt;&lt;text data-variant=&quot;normal&quot; transform=&quot;translate(4653,0) scale(1,-1)&quot; font-size=&quot;884px&quot; font-family=&quot;serif&quot;&gt;间&lt;/text&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;TeXAtom&quot; transform=&quot;translate(5686,-235.4) scale(0.707)&quot; data-mjx-texclass=&quot;ORD&quot;&gt;&lt;g data-mml-node=&quot;mtext&quot;&gt;&lt;path data-c=&quot;6F&quot; d=&quot;M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;6C&quot; d=&quot;M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z&quot; transform=&quot;translate(500,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;path data-c=&quot;64&quot; d=&quot;M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z&quot; transform=&quot;translate(778,0)&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;rect width=&quot;15055.4&quot; height=&quot;60&quot; x=&quot;120&quot; y=&quot;220&quot;&gt;&lt;/rect&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;mjx-assistive-mml unselectable=&quot;on&quot; display=&quot;block&quot; style=&quot;top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; overflow: hidden; width: 100%;&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;mtext&gt;平均 CPU 使用率&lt;/mtext&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mtext&gt;空闲时间&lt;/mtext&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mtext&gt;new&lt;/mtext&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;msub&gt;&lt;mtext&gt;空闲时间&lt;/mtext&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mtext&gt;old&lt;/mtext&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mtext&gt;总 CPU 时间&lt;/mtext&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mtext&gt;new&lt;/mtext&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;msub&gt;&lt;mtext&gt;总 CPU 时间&lt;/mtext&gt;&lt;mrow data-mjx-texclass=&quot;ORD&quot;&gt;&lt;mtext&gt;old&lt;/mtext&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/math&gt;&lt;/mjx-assistive-mml&gt;&lt;/mjx-container&gt;&lt;h2 id=&quot;4-cpu&quot; tabindex=&quot;-1&quot;&gt;4 获得CPU使用率的几种方法&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;top&lt;/code&gt;命令&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240919184300.png&quot; alt=&quot;Pasted image 20240919184300.png|600&quot; width=&quot;600px&quot; /&gt;&lt;br /&gt;
-按&lt;code&gt;1&lt;/code&gt;可以看每个CPU单独的数据 &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang6.github.io/404&quot; target=&quot;&quot;&gt;linux-top&lt;/a&gt;&lt;/li&gt;
+按&lt;code&gt;1&lt;/code&gt;可以看每个CPU单独的数据 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/linux-top/&quot;&gt;linux-top&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;htop&lt;/code&gt; 命令 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240919184348.png&quot; alt=&quot;Pasted image 20240919184348.png|600&quot; width=&quot;600px&quot; /&gt;&lt;br /&gt;
 优势：可以响应鼠标点击事件，滚动查看，查看进程树&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;vmstat 1&lt;/code&gt;  每秒输出一次 &lt;code&gt;vmstat reports information about processes, memory, paging, block IO, traps, disks and cpu activity&lt;/code&gt;&lt;/li&gt;
@@ -5015,7 +5015,19 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
             <id>https://wudanyang6.github.io//card/obsidian/dg-publish=true的标签云/</id>
             <content type="html">
                 &lt;h1 id=&quot;dg-publish-true&quot; tabindex=&quot;-1&quot;&gt;dg-publish=true的标签云&lt;/h1&gt;
-&lt;span style=&quot;font-size:26px; margin-right:20px;&quot;&gt;
+&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E6%95%88%E7%8E%87&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;效率&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:tools&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;tools&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:things3&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;things3&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:26px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:linux&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;linux&lt;/strong&gt; (8)
                     &lt;/a&gt;
@@ -5055,6 +5067,14 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;甲沟炎&lt;/strong&gt; (1)
                     &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:Go&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;Go&lt;/strong&gt; (4)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:chatgpt&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;chatgpt&lt;/strong&gt; (1)
+                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:kafka&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;kafka&lt;/strong&gt; (1)
@@ -5083,13 +5103,13 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:source-code&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;source-code&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:Go&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;Go&lt;/strong&gt; (4)
+                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:php&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;php&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:chatgpt&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;chatgpt&lt;/strong&gt; (1)
+                    &lt;a href=&quot;obsidian://search?query=tag:%E5%8E%8B%E7%BC%A9&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;压缩&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:redis&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5123,10 +5143,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E9%98%85%E8%AF%BB%E5%99%A8&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;阅读器&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:things3&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;things3&lt;/strong&gt; (2)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:mac&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;mac&lt;/strong&gt; (4)
@@ -5142,10 +5158,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:ide&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;ide&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:tools&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;tools&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:chrome&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5171,14 +5183,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%A0%91%E8%8E%93%E6%B4%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;树莓派&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:php&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;php&lt;/strong&gt; (2)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%8E%8B%E7%BC%A9&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;压缩&lt;/strong&gt; (1)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:40px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:leetcode&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;leetcode&lt;/strong&gt; (15)
@@ -5196,16 +5200,12 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;dp&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%AE%B6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;家&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:network&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;network&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E6%95%88%E7%8E%87&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;效率&lt;/strong&gt; (1)
+                    &lt;a href=&quot;obsidian://search?query=tag:%E5%AE%B6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;家&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;
 &lt;p&gt;digital-garden 还是很牛的，居然是能用的&lt;/p&gt;
@@ -7299,6 +7299,60 @@ done
         </entry>
         <entry>
             <title>
+                linux-top
+                
+            </title>
+            <updated>2024-09-26T03:05:34.000Z</updated>
+            <id>https://wudanyang6.github.io//card/Linux/linux-top/</id>
+            <content type="html">
+                &lt;h1 id=&quot;linux-top&quot; tabindex=&quot;-1&quot;&gt;linux-top&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;Help for Interactive Commands - procps-ng UNKNOWN
+Window 1:Def: Cumulative mode Off.  System: Delay 3.0 secs; Secure mode Off.
+
+  Z,B,E,e   Global: &#39;Z&#39; colors; &#39;B&#39; bold; &#39;E&#39;/&#39;e&#39; summary/task memory scale
+  l,t,m     Toggle Summary: &#39;l&#39; load avg; &#39;t&#39; task/cpu stats; &#39;m&#39; memory info
+  0,1,2,3,I Toggle: &#39;0&#39; zeros; &#39;1/2/3&#39; cpus or numa node views; &#39;I&#39; Irix mode
+  f,F,X     Fields: &#39;f&#39;/&#39;F&#39; add/remove/order/sort; &#39;X&#39; increase fixed-width
+
+  L,&amp;amp;,&amp;lt;,&amp;gt; . Locate: &#39;L&#39;/&#39;&amp;amp;&#39; find/again; Move sort column: &#39;&amp;lt;&#39;/&#39;&amp;gt;&#39; left/right
+  R,H,J,C . Toggle: &#39;R&#39; Sort; &#39;H&#39; Threads; &#39;J&#39; Num justify; &#39;C&#39; Coordinates
+  c,i,S,j . Toggle: &#39;c&#39; Cmd name/line; &#39;i&#39; Idle; &#39;S&#39; Time; &#39;j&#39; Str justify
+  x,y     . Toggle highlights: &#39;x&#39; sort field; &#39;y&#39; running tasks
+  z,b     . Toggle: &#39;z&#39; color/mono; &#39;b&#39; bold/reverse (only if &#39;x&#39; or &#39;y&#39;)
+  u,U,o,O . Filter by: &#39;u&#39;/&#39;U&#39; effective/any user; &#39;o&#39;/&#39;O&#39; other criteria
+  n,#,^O  . Set: &#39;n&#39;/&#39;#&#39; max tasks displayed; Show: Ctrl+&#39;O&#39; other filter(s)
+  V,v     . Toggle: &#39;V&#39; forest view; &#39;v&#39; hide/show forest view children
+
+  k,r       Manipulate tasks: &#39;k&#39; kill; &#39;r&#39; renice
+  d or s    Set update interval
+  W,Y       Write configuration file &#39;W&#39;; Inspect other output &#39;Y&#39;
+  q         Quit
+          ( commands shown with &#39;.&#39; require a visible task display window )
+Press &#39;h&#39; or &#39;?&#39; for help with Windows,
+Type &#39;q&#39; or &amp;lt;Esc&amp;gt; to continue
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;常用指令&quot; tabindex=&quot;-1&quot;&gt;常用指令&lt;/h1&gt;
+&lt;p&gt;m 显示内存信息，可以显示成内存条&lt;/p&gt;
+&lt;p&gt;x：高亮显示排序字段&lt;/p&gt;
+&lt;p&gt;z：彩色显示各个区域&lt;/p&gt;
+&lt;p&gt;R：反向排序&lt;/p&gt;
+&lt;p&gt;&amp;lt;：排序字段 左移&lt;/p&gt;
+&lt;p&gt;&amp;gt;：排序字段 右移&lt;/p&gt;
+&lt;p&gt;zx 打开高亮显示排序字段&lt;/p&gt;
+&lt;p&gt;可以看到，默认是按照 cpu 使用率排序的&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt;&lt;/code&gt; 可以移到内存使用率排序&lt;/p&gt;
+&lt;h1 id=&quot;存储到文件&quot; tabindex=&quot;-1&quot;&gt;存储到文件&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;top -c -b -n 10000 -d 3 &amp;gt;&amp;gt;top.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;字段含义&quot; tabindex=&quot;-1&quot;&gt;字段含义&lt;/h1&gt;
+&lt;p&gt;top 字段的含义&lt;br /&gt;
+&lt;a href=&quot;https://www.cnblogs.com/zhoug2020/p/6336453.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.cnblogs.com/zhoug2020/p/6336453.html&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/Linux/linux-top/" />
+        </entry>
+        <entry>
+            <title>
                 linux-pidstat
                 
             </title>
@@ -7779,6 +7833,10 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/linux-top/&quot;&gt;linux-top&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-26 21:38:23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E5%BF%AB%E9%80%9F%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9FCPU%E7%93%B6%E9%A2%88%E7%9A%84%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/&quot;&gt;快速分析系统CPU瓶颈的命令工具&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-01-26 21:24:20&lt;/td&gt;
 &lt;/tr&gt;
@@ -7858,10 +7916,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/72.%20%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB/&quot;&gt;72. 编辑距离&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-11-08 12:32:31&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE%E9%9A%BE%E5%BA%A6%E6%9B%B4%E6%96%B0%E4%BA%86/&quot;&gt;leetcode题目难度更新了&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-11-06 00:28:37&lt;/td&gt;
-&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&quot;最近创建的文章&quot; tabindex=&quot;-1&quot;&gt;最近创建的文章&lt;/h3&gt;
@@ -7882,11 +7936,11 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;Things 工作流&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;Things 工作流&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
