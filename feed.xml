@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-01-26T05:48:07Z</updated>
+    <updated>2025-01-26T13:25:20Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -2634,11 +2634,11 @@ while true;do stress -t 1 -d 1 2&amp;gt;&amp;amp;1 ;done
                 快速分析系统CPU瓶颈的命令工具
                 
             </title>
-            <updated>2025-01-23T20:49:12.000Z</updated>
+            <updated>2025-01-26T13:24:20.000Z</updated>
             <id>https://wudanyang6.github.io//card/操作系统/CPU性能优化/快速分析系统CPU瓶颈的命令工具/</id>
             <content type="html">
                 &lt;h1 id=&quot;cpu&quot; tabindex=&quot;-1&quot;&gt;快速分析系统CPU瓶颈的命令工具&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/Pasted%20image%2020240920205108.png%7C600.md&quot; alt=&quot;Pasted image 20240920205108.png|600&quot; width=&quot;600px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240920205108.png&quot; alt=&quot;Pasted image 20240920205108.png|600&quot; width=&quot;600px&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;1&quot; tabindex=&quot;-1&quot;&gt;1 参考&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;11 | 套路篇：如何迅速分析出系统CPU的瓶颈在哪里？-Linux 性能优化实战-极客时间: &lt;a href=&quot;https://time.geekbang.org/column/article/72685&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://time.geekbang.org/column/article/72685&lt;/a&gt;&lt;/li&gt;
@@ -3110,7 +3110,7 @@ vmstat 5
                 202409121624 Linux 性能分析优化-CPU
                 
             </title>
-            <updated>2024-09-25T10:45:14.000Z</updated>
+            <updated>2025-01-24T09:11:52.000Z</updated>
             <id>https://wudanyang6.github.io//card/操作系统/CPU性能优化/202409121624 Linux 性能分析优化-CPU/</id>
             <content type="html">
                 &lt;h1 id=&quot;202409121624-linux-cpu&quot; tabindex=&quot;-1&quot;&gt;202409121624 Linux 性能分析优化-CPU&lt;/h1&gt;
@@ -7779,12 +7779,12 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/202409121624%20Linux%20%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E4%BC%98%E5%8C%96-CPU/&quot;&gt;202409121624 Linux 性能分析优化-CPU&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-01-24 04:49:35&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E5%BF%AB%E9%80%9F%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9FCPU%E7%93%B6%E9%A2%88%E7%9A%84%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/&quot;&gt;快速分析系统CPU瓶颈的命令工具&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-26 21:24:20&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E5%BF%AB%E9%80%9F%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9FCPU%E7%93%B6%E9%A2%88%E7%9A%84%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/&quot;&gt;快速分析系统CPU瓶颈的命令工具&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-01-24 04:49:12&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/202409121624%20Linux%20%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E4%BC%98%E5%8C%96-CPU/&quot;&gt;202409121624 Linux 性能分析优化-CPU&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-24 17:11:53&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;Things 工作流&lt;/a&gt;&lt;/td&gt;
