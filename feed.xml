@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-02-05T16:39:37Z</updated>
+    <updated>2025-02-06T03:27:35Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -3475,23 +3475,40 @@ vmstat 5
                 各种资源国内镜像
                 
             </title>
-            <updated>2024-10-21T08:54:05.000Z</updated>
+            <updated>2025-02-06T03:26:40.000Z</updated>
             <id>https://wudanyang6.github.io//card/工具/各种资源国内镜像/</id>
             <content type="html">
                 &lt;h1 id=&quot;各种资源国内镜像&quot; tabindex=&quot;-1&quot;&gt;各种资源国内镜像&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://mirrors.tuna.tsinghua.edu.cn/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;清华&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://mirrors.ustc.edu.cn/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;中科大&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;http://mirrors.163.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;网易&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://developer.aliyun.com/mirror/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;阿里&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;应用独立镜像&quot; tabindex=&quot;-1&quot;&gt;应用独立镜像&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://pkg.phpcomposer.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;PHP composer 镜像&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://gitee.com/mirrors&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;github - gitee 镜像&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://rsproxy.cn/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;crates.io 镜像&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;github&quot; tabindex=&quot;-1&quot;&gt;github 镜像&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://ghproxy.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://ghproxy.com/&lt;/a&gt;&lt;br /&gt;
-速度非常快&lt;/p&gt;
-&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/engchina/article/details/91350012&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;国内开源镜像站点汇总(Centos、Apache、MySQL等各种软件源)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;出现了一个杀死比赛的工具：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/RubyMetric/chsrc&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;RubyMetric/chsrc: chsrc 全平台通用换源工具与框架. Change Source everywhere for every software&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;使用: chsrc &amp;lt;command&amp;gt; [options] [target] [mirror]
+
+help                      # 打印此帮助，或 h, -h, --help
+issue                     # 查看相关issue
+
+list (或 ls, 或 l)        # 列出可用镜像源，和可换源目标
+list mirror/target        # 列出可用镜像源，或可换源目标
+list os/lang/ware         # 列出可换源的操作系统/编程语言/软件
+
+measure &amp;lt;target&amp;gt;          # 对该目标所有源测速
+cesu    &amp;lt;target&amp;gt;
+
+list &amp;lt;target&amp;gt;             # 查看该目标可用源与支持功能
+get  &amp;lt;target&amp;gt;             # 查看该目标当前源的使用情况
+
+set  &amp;lt;target&amp;gt;             # 换源，自动测速后挑选最快源
+set  &amp;lt;target&amp;gt;  first      # 换源，使用维护团队测速第一的源
+set  &amp;lt;target&amp;gt; &amp;lt;mirror&amp;gt;    # 换源，指定使用某镜像站 (通过list命令查看)
+set  &amp;lt;target&amp;gt; https://url # 换源，用户自定义源URL
+reset &amp;lt;target&amp;gt;            # 重置，使用上游默认使用的源
+
+选项:
+-dry                      # Dry Run，模拟换源过程，命令仅打印并不运行
+-local                    # 仅对某项目而非全局换源 (仅部分软件如bundler,pdm支持)
+-ipv6                     # 使用IPv6测速
+-en(glish)                # 使用英文输出
+-no-color                 # 无颜色输出
+&lt;/code&gt;&lt;/pre&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/工具/各种资源国内镜像/" />
@@ -7833,6 +7850,10 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/%E5%90%84%E7%A7%8D%E8%B5%84%E6%BA%90%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/&quot;&gt;各种资源国内镜像&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-06 11:26:42&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;Things 工作流&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-02-06 00:38:28&lt;/td&gt;
 &lt;/tr&gt;
@@ -7911,10 +7932,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/59.%20%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5%20II/&quot;&gt;59. 螺旋矩阵 II&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-11-09 18:21:10&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/239.%20%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC/&quot;&gt;239. 滑动窗口最大值&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-11-09 00:09:03&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
