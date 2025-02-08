@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-02-06T12:42:19Z</updated>
+    <updated>2025-02-08T03:15:39Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -4109,7 +4109,7 @@ MindNode Pro 2023.3.1 思维导图工具 - 精品MAC应用分享&lt;/p&gt;
                 如果一生只读6本书，推荐哪几本？
                 
             </title>
-            <updated>2025-02-06T07:46:32.000Z</updated>
+            <updated>2025-02-06T15:05:29.000Z</updated>
             <id>https://wudanyang6.github.io//card/如果一生只读6本书，推荐哪几本？/</id>
             <content type="html">
                 &lt;h1 id=&quot;6&quot; tabindex=&quot;-1&quot;&gt;如果一生只读6本书，推荐哪几本？&lt;/h1&gt;
@@ -5089,29 +5089,17 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
             <id>https://wudanyang6.github.io//card/obsidian/dg-publish=true的标签云/</id>
             <content type="html">
                 &lt;h1 id=&quot;dg-publish-true&quot; tabindex=&quot;-1&quot;&gt;dg-publish=true的标签云&lt;/h1&gt;
-&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E6%95%88%E7%8E%87&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;效率&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:tools&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;tools&lt;/strong&gt; (2)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:things3&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;things3&lt;/strong&gt; (2)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:26px; margin-right:20px;&quot;&gt;
+&lt;span style=&quot;font-size:26px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:linux&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;linux&lt;/strong&gt; (8)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:shell&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;shell&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:22px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:aigc&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;aigc&lt;/strong&gt; (6)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:shell&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;shell&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5141,14 +5129,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;甲沟炎&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:Go&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;Go&lt;/strong&gt; (4)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:chatgpt&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;chatgpt&lt;/strong&gt; (1)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:kafka&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;kafka&lt;/strong&gt; (1)
@@ -5160,6 +5140,14 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:mysql&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;mysql&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:Go&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;Go&lt;/strong&gt; (4)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:chatgpt&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;chatgpt&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:nginx&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5186,6 +5174,10 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;压缩&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:redis&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;redis&lt;/strong&gt; (1)
                     &lt;/a&gt;
@@ -5193,21 +5185,13 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:rdb&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;rdb&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
+                    &lt;a href=&quot;obsidian://search?query=tag:things3&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;things3&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;思维导图&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:rime&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;rime&lt;/strong&gt; (1)
+                &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:mac&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;mac&lt;/strong&gt; (4)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:marginnote&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5217,9 +5201,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E9%98%85%E8%AF%BB%E5%99%A8&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;阅读器&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:mac&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;mac&lt;/strong&gt; (4)
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:rime&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;rime&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E8%BE%93%E5%85%A5%E6%B3%95&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5232,6 +5216,14 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:ide&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;ide&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:tools&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;tools&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;思维导图&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:chrome&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5252,6 +5244,14 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:linux%E5%91%BD%E4%BB%A4&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;linux命令&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:aigc-deepseek&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;aigc-deepseek&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%A0%91%E8%8E%93%E6%B4%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5274,16 +5274,16 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;dp&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:network&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;network&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%AE%B6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;家&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:aigc-deepseek&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;aigc-deepseek&lt;/strong&gt; (1)
+                    &lt;a href=&quot;obsidian://search?query=tag:network&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;network&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E6%95%88%E7%8E%87&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;效率&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;
 &lt;p&gt;digital-garden 还是很牛的，居然是能用的&lt;/p&gt;
@@ -6976,7 +6976,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202408312248 甲沟炎的处理办法
                 
             </title>
-            <updated>2024-08-31T15:17:56.000Z</updated>
+            <updated>2025-02-08T03:14:51.000Z</updated>
             <id>https://wudanyang6.github.io//card/Personal/202408312248 甲沟炎的处理办法/</id>
             <content type="html">
                 &lt;h1 id=&quot;202408312248&quot; tabindex=&quot;-1&quot;&gt;202408312248 甲沟炎的处理办法&lt;/h1&gt;
@@ -6986,6 +6986,9 @@ You have to make sure that all flag definitions happen before calling flag.Parse
 &lt;li&gt;后来突发奇想，在网上买了一个指甲锉，每次疼了就用这个指甲锉磨一磨，竟然神奇的没有再去过修脚店，而且左边的趾甲经过我的良好引导已经不往肉里长了。 &lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020240831230016.png&quot; alt=&quot;Pasted image 20240831230016.png|351&quot; width=&quot;351px&quot; /&gt;&lt;br /&gt;
 有需要的可以试试： &lt;a href=&quot;https://item.jd.com/100015138940.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://item.jd.com/100015138940.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;2025-02-08 更新：&lt;br /&gt;
+2025年春节前，因为某次忘了带指甲锉，便使用普通指甲剪剪了一次，导致春节期间右脚大拇指内侧肿成灯笼。&lt;br /&gt;
+后来使用指甲锉磨完上了云南白药，几天后消肿了。&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/Personal/202408312248 甲沟炎的处理办法/" />
@@ -7911,8 +7914,12 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Personal/202408312248%20%E7%94%B2%E6%B2%9F%E7%82%8E%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95/&quot;&gt;202408312248 甲沟炎的处理办法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-08 11:14:53&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%A6%82%E6%9E%9C%E4%B8%80%E7%94%9F%E5%8F%AA%E8%AF%BB6%E6%9C%AC%E4%B9%A6%EF%BC%8C%E6%8E%A8%E8%8D%90%E5%93%AA%E5%87%A0%E6%9C%AC%EF%BC%9F/&quot;&gt;如果一生只读6本书，推荐哪几本？&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-06 20:41:00&lt;/td&gt;
+&lt;td&gt;2025-02-06 23:05:29&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/kafka/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/td&gt;
@@ -7989,10 +7996,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Home&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-01-15 14:44:07&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/golang-cobra/&quot;&gt;golang-cobra&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-12-31 10:27:44&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
