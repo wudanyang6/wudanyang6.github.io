@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<title>CPU 上下文切换</title>
+<title>python-为什么 {} 不能作为默认参数？</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <script async type="module">import mermaid from"/scripts/mermaid.esm.min.mjs"</script>
@@ -83,7 +83,7 @@ CTRL + K
 <span class="foldername">000 inbox</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/000 inbox/python-为什么 {} 不能作为默认参数？/">python-为什么 {} 不能作为默认参数？ </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/000 inbox/python-为什么 {} 不能作为默认参数？/">python-为什么 {} 不能作为默认参数？ </a>
 </div>
 </div>
 </div>
@@ -751,7 +751,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/CPU 上下文切换/">CPU 上下文切换 </a>
+<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/CPU 上下文切换/">CPU 上下文切换 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -1109,113 +1109,49 @@ CTRL + K
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2025-02-11T14:48:51.109Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2025-02-11T14:48:51.109Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2025-02-11T14:48:51.109Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="2">CPU 上下文切换</h1>
+<h1 data-note-icon="2">python-为什么 {} 不能作为默认参数？</h1>
 <div class="header-meta">
 <div class="header-tags">
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-09-18T22:08:02+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-09-20T21:17:31+08:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2025-02-10T14:56:03+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-02-11T22:48:01+08:00"></span></div></div></div>
 </header>
-<h1 id="cpu" tabindex="-1">CPU 上下文切换</h1>
-<p><strong>上下文切换（Context Switch）</strong> 是操作系统中，当 CPU 在多个进程或线程之间切换执行时发生的操作。它是多任务系统实现并发执行的核心机制之一。</p>
-<p><strong>上下文</strong> 是指 CPU 运行一个进程或线程时的状态，包括以下内容：</p>
-<ol>
-<li><strong>寄存器</strong>：存储当前进程的运行状态（如指令指针、程序计数器、栈指针等）。</li>
-<li><strong>内存映射</strong>：包括进程的地址空间、虚拟内存页表等。</li>
-<li><strong>CPU 状态</strong>：进程当前的运行模式（用户态或内核态）。</li>
-<li><strong>进程控制块（PCB）</strong>：保存进程的上下文信息。</li>
-</ol>
-<p><strong>上下文切换的场景</strong>：</p>
-<ol>
-<li><strong>进程上下文切换</strong>：当操作系统调度器决定暂停一个进程并切换到另一个进程时，需要保存当前进程的上下文，并恢复目标进程的上下文。</li>
-<li><strong>线程上下文切换</strong>：线程属于同一个进程，但每个线程有自己独立的执行上下文（如寄存器状态、栈指针），切换时也会涉及上下文保存与恢复。</li>
-<li><strong>中断上下文处理</strong>：当硬件或软件中断发生时，CPU 会暂停当前进程处理中断，完成后恢复原进程的上下文。</li>
-</ol>
-<p><strong>上下文切换的步骤</strong>：</p>
-<ol>
-<li><strong>保存上下文</strong>：将当前进程/线程的寄存器、栈指针等信息保存到进程控制块（PCB）中。</li>
-<li><strong>加载新上下文</strong>：从目标进程的 PCB 中加载该进程的寄存器状态、栈指针等信息。</li>
-<li><strong>切换内存映射</strong>：切换虚拟内存的页表，以确保 CPU 访问的是新进程的内存空间。</li>
-</ol>
-<p><strong>上下文切换的开销</strong>： 上下文切换涉及保存和恢复进程状态、切换内存映射等操作，这需要 CPU 额外的时间。频繁的上下文切换会导致性能下降，因为每次切换时，CPU 需要停下来保存/加载状态，而不是执行有用的工作。因此，系统设计通常会尽量减少不必要的上下文切换。</p>
-<h2 id="1" tabindex="-1">1 进程上下文切换</h2>
-<p><a class="internal-link" target="" data-note-icon="2" href="/card/操作系统/CPU性能优化/进程上下文切换详情/">进程上下文切换详情</a></p>
-<p>调度的时机：</p>
+<h1 id="python" tabindex="-1">python-为什么 {} 不能作为默认参数？</h1>
+<p><img src="/img/user/attachs/Pasted%20image%2020250210145605.png" alt=""></p>
+<p>这里会有个提示，但不是报错</p>
+<p><strong>为什么 {} 不能作为默认参数？</strong></p>
+<p>在 Python 中，<strong>函数的默认参数只在函数定义时计算一次</strong>，所以如果你使用 {} 作为默认值，它会在所有函数调用之间<strong>共享</strong>。这意味着：</p>
 <ul>
-<li>进程进行系统调用时，可能会发生<a class="internal-link" target="" data-note-icon="2" href="/card/操作系统/CPU性能优化/系统调用时上下文调度/">系统调用时上下文调度</a></li>
-<li>时间片耗尽</li>
-<li>进程阻塞</li>
-<li>优先级调度</li>
-<li>中断</li>
-</ul>
-<h2 id="2" tabindex="-1">2 线程上下文切换</h2>
-<p><a class="internal-link" target="" data-note-icon="2" href="/card/操作系统/CPU性能优化/线程上下文切换详情/">线程上下文切换详情</a></p>
-<ul>
-<li>线程属于不同的进程
-<ul>
-<li>同进程上下文调度</li>
-</ul>
+<li>
+<p><strong>多次调用 resp_success() 时，data 会共享同一个字典</strong></p>
 </li>
-<li>线程间属于同一进程
-<ul>
-<li>共享相同的虚拟内存、全局变量等资源</li>
-<li>切换栈、寄存器等线程私有数据</li>
-</ul>
+<li>
+<p><strong>如果 data 在一个调用中被修改，后续调用也会受到影响</strong>（因为所有调用都引用同一个 {}）</p>
 </li>
 </ul>
-<h2 id="3" tabindex="-1">3 中断上下文切换</h2>
-<p><a class="internal-link" target="" data-note-icon="2" href="/card/操作系统/CPU性能优化/中断上下文切换详情/">中断上下文切换详情</a></p>
-<ul>
-<li>硬件&amp;软件中断时</li>
-<li>优先级比进程、线程优先级高</li>
-<li>中断只需要内核态的状态，CPU 寄存器，内核堆栈，硬件中断参数等</li>
-</ul>
-<h2 id="4-cpu" tabindex="-1">4 CPU 上下文切换的问题</h2>
-<p>会将大量的CPU时间浪费保存和恢复程序状态上面，缩短真正的运行时间，导致系统整体性能大幅下降</p>
-<h2 id="5-cpu" tabindex="-1">5 查看CPU上下文切换</h2>
-<pre><code class="language-Shell"># CPU 上下文切换
-vmstat 5
-</code></pre>
-<p>输出内容：</p>
-<pre><code class="language-Shell">procs -----------memory---------- ---swap-- -----io---- -system-- -------cpu-------
- r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st gu
- 1  0      0 3230412  44980 526092    0    0     5     8   49    0  0  0 99  0  0  0
-</code></pre>
-<p>内容含义查看：</p>
-<p>vmstat(8) - Linux 手册页 --- vmstat(8) - Linux manual page: <a href="https://man7.org/linux/man-pages/man8/vmstat.8.html" target="_blank" class="external-link">https://man7.org/linux/man-pages/man8/vmstat.8.html</a></p>
-<p>重要字段：</p>
-<ul>
-<li>cs（context switch）是每秒上下文切换的次数。</li>
-<li>in（interrupt）则是每秒中断的次数。</li>
-<li>r（Running or Runnable）是就绪队列的长度，也就是正在运行和等待 CPU 的进程数。</li>
-<li>b（Blocked）则是处于不可中断睡眠状态的进程数。</li>
-</ul>
-<pre><code class="language-Shell">pidstat -w 5
-</code></pre>
-<p>内容输出：</p>
-<pre><code class="language-Shell">Linux 6.8.0-44-generic (dy-turbo-vm) 	09/14/2024 	_aarch64_	(2 CPU)
+<p>比如下面的代码：</p>
+<pre><code class="language-python">def add_item(item, items=[]):
+    items.append(item)
+    return items
 
-11:54:39 AM   UID       PID   cswch/s nvcswch/s  Command
-11:54:44 AM     0        16      0.20      0.00  ksoftirqd/0
-11:54:44 AM     0        17      0.40      0.00  rcu_preempt
-11:54:44 AM     0        18      0.40      0.00  migration/0
-11:54:44 AM     0        23      0.40      0.00  migration/1
-11:54:44 AM     0        34      1.98      0.00  kcompactd0
-11:54:44 AM     0        48      0.20      0.00  kworker/0:1H-kblockd
-11:54:44 AM     0       470      1.39      0.00  multipathd
-11:54:44 AM     0       712     10.69      0.00  vmtoolsd
-11:54:44 AM     0      5892      3.17      0.00  kworker/0:1-events
-11:54:44 AM     0      6488      1.98      0.00  kworker/u4:0-events_power_efficient
-11:54:44 AM     0      6501      6.34      0.00  kworker/1:3-events
-11:54:44 AM     0      6677      4.75      0.00  kworker/u4:2-events_unbound
-11:54:44 AM  1000      6969     18.22      0.00  sshd
-11:54:44 AM  1000      7085      0.20      0.00  pidstat
+# 第一次调用，期望返回 [1]
+print(add_item(1))  # 输出 [1]
+
+# 第二次调用，期望返回 [2]，但实际输出 [1, 2]
+print(add_item(2))  # 输出 [1, 2]
 </code></pre>
-<p>pidstat(1) - Linux manual page: <a href="https://man7.org/linux/man-pages/man1/pidstat.1.html" target="_blank" class="external-link">https://man7.org/linux/man-pages/man1/pidstat.1.html</a></p>
-<p>重要字段：</p>
-<ul>
-<li>cswch/s ： 每秒自愿上下文切换次数（自愿：I/O等待，申请内存等需要等待资源ready的操作）</li>
-<li>nvcswch/s ： 每秒非自愿上下文切换次数（非资源：时间片达到等）</li>
-</ul>
+<p>解决方法，默认参数改成不可变的变量，或者 <code>None</code></p>
+<pre><code class="language-python">def add_item_fixed(item, items=None):
+    if items is None:
+        items = []
+    items.append(item)
+    return items
+
+# 第一次调用返回 [1]
+print(add_item_fixed(1))  # 输出 [1]
+
+# 第二次调用返回 [2]
+print(add_item_fixed(2))  # 输出 [2]
+</code></pre>
 <hr>
 <script src="https://giscus.app/client.js" data-repo="wudanyang6/wudanyang6.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkzNTYyMTc0MjM=" data-category="Announcements" data-category-id="DIC_kwDOFTtyT84CYlu-" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-CN" crossorigin="anonymous" async></script>
 <span id="busuanzi_container_page_pv">
@@ -1262,19 +1198,7 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#cpu">CPU 上下文切换</a>
-<ol>
-<li><a href="#1">1 进程上下文切换</a>
-</li>
-<li><a href="#2">2 线程上下文切换</a>
-</li>
-<li><a href="#3">3 中断上下文切换</a>
-</li>
-<li><a href="#4-cpu">4 CPU 上下文切换的问题</a>
-</li>
-<li><a href="#5-cpu">5 查看CPU上下文切换</a>
-</li>
-</ol>
+<li><a href="#python">python-为什么 {} 不能作为默认参数？</a>
 </li>
 </ol>
 </nav>
@@ -1282,7 +1206,7 @@ On this page
 </div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><a href="/card/操作系统/CPU性能优化/202409121624 Linux 性能分析优化-CPU/" data-note-icon="2" class="backlink">202409121624 Linux 性能分析优化-CPU</a>
+<div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="2" class="backlink">Home</a>
 </div></div>
 </div>
 </div>
