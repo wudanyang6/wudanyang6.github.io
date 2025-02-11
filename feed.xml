@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-02-11T14:48:52Z</updated>
+    <updated>2025-02-11T15:13:29Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -4802,6 +4802,55 @@ sudo python setup.py install
         </entry>
         <entry>
             <title>
+                python-为什么 {} 不能作为默认参数？
+                
+            </title>
+            <updated>2025-02-11T14:48:01.000Z</updated>
+            <id>https://wudanyang6.github.io//card/python-为什么 {} 不能作为默认参数？/</id>
+            <content type="html">
+                &lt;h1 id=&quot;python&quot; tabindex=&quot;-1&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020250210145605.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;这里会有个提示，但不是报错&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为什么 {} 不能作为默认参数？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 Python 中，&lt;strong&gt;函数的默认参数只在函数定义时计算一次&lt;/strong&gt;，所以如果你使用 {} 作为默认值，它会在所有函数调用之间&lt;strong&gt;共享&lt;/strong&gt;。这意味着：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;多次调用 resp_success() 时，data 会共享同一个字典&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;如果 data 在一个调用中被修改，后续调用也会受到影响&lt;/strong&gt;（因为所有调用都引用同一个 {}）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;比如下面的代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;def add_item(item, items=[]):
+    items.append(item)
+    return items
+
+# 第一次调用，期望返回 [1]
+print(add_item(1))  # 输出 [1]
+
+# 第二次调用，期望返回 [2]，但实际输出 [1, 2]
+print(add_item(2))  # 输出 [1, 2]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;解决方法，默认参数改成不可变的变量，或者 &lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;def add_item_fixed(item, items=None):
+    if items is None:
+        items = []
+    items.append(item)
+    return items
+
+# 第一次调用返回 [1]
+print(add_item_fixed(1))  # 输出 [1]
+
+# 第二次调用返回 [2]
+print(add_item_fixed(2))  # 输出 [2]
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/python-为什么 {} 不能作为默认参数？/" />
+        </entry>
+        <entry>
+            <title>
                 php-xml 如何解析 cdata
                 
             </title>
@@ -7914,7 +7963,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/python-%E4%B8%BA%E4%BB%80%E4%B9%88%20%7B%7D%20%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9F/&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python-%E4%B8%BA%E4%BB%80%E4%B9%88%20%7B%7D%20%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9F/&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-02-11 22:48:05&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -8009,7 +8058,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/python-%E4%B8%BA%E4%BB%80%E4%B9%88%20%7B%7D%20%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9F/&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python-%E4%B8%BA%E4%BB%80%E4%B9%88%20%7B%7D%20%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9F/&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-02-10 14:56:03&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -8181,55 +8230,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
             </content>
             <link href="https://wudanyang6.github.io//0000 publish/CDN 带宽控制的几种方法/" />
-        </entry>
-        <entry>
-            <title>
-                python-为什么 {} 不能作为默认参数？
-                
-            </title>
-            <updated>2025-02-11T14:48:01.000Z</updated>
-            <id>https://wudanyang6.github.io//000 inbox/python-为什么 {} 不能作为默认参数？/</id>
-            <content type="html">
-                &lt;h1 id=&quot;python&quot; tabindex=&quot;-1&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020250210145605.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;这里会有个提示，但不是报错&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;为什么 {} 不能作为默认参数？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在 Python 中，&lt;strong&gt;函数的默认参数只在函数定义时计算一次&lt;/strong&gt;，所以如果你使用 {} 作为默认值，它会在所有函数调用之间&lt;strong&gt;共享&lt;/strong&gt;。这意味着：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;多次调用 resp_success() 时，data 会共享同一个字典&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;如果 data 在一个调用中被修改，后续调用也会受到影响&lt;/strong&gt;（因为所有调用都引用同一个 {}）&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;比如下面的代码：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;def add_item(item, items=[]):
-    items.append(item)
-    return items
-
-# 第一次调用，期望返回 [1]
-print(add_item(1))  # 输出 [1]
-
-# 第二次调用，期望返回 [2]，但实际输出 [1, 2]
-print(add_item(2))  # 输出 [1, 2]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;解决方法，默认参数改成不可变的变量，或者 &lt;code&gt;None&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;def add_item_fixed(item, items=None):
-    if items is None:
-        items = []
-    items.append(item)
-    return items
-
-# 第一次调用返回 [1]
-print(add_item_fixed(1))  # 输出 [1]
-
-# 第二次调用返回 [2]
-print(add_item_fixed(2))  # 输出 [2]
-&lt;/code&gt;&lt;/pre&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//000 inbox/python-为什么 {} 不能作为默认参数？/" />
         </entry>
         <entry>
             <title>
