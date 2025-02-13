@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-02-13T05:14:58Z</updated>
+    <updated>2025-02-13T15:09:41Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -2259,7 +2259,7 @@ if __name__ == &#39;__main__&#39;:
                 计算机中断
                 
             </title>
-            <updated>2024-09-20T13:17:52.000Z</updated>
+            <updated>2025-02-12T12:59:21.000Z</updated>
             <id>https://wudanyang6.github.io//card/操作系统/CPU性能优化/计算机中断/</id>
             <content type="html">
                 &lt;h1 id=&quot;计算机中断&quot; tabindex=&quot;-1&quot;&gt;计算机中断&lt;/h1&gt;
@@ -3429,7 +3429,7 @@ vmstat 5
                 202404082353 取乎其上得乎其中
                 
             </title>
-            <updated>2025-01-22T15:54:40.000Z</updated>
+            <updated>2025-02-13T04:55:34.000Z</updated>
             <id>https://wudanyang6.github.io//card/思考/202404082353 取乎其上得乎其中/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404082353&quot; tabindex=&quot;-1&quot;&gt;202404082353 取乎其上得乎其中&lt;/h1&gt;
@@ -3546,7 +3546,7 @@ reset &amp;lt;target&amp;gt;            # 重置，使用上游默认使用的�
                 vscode vim 状态下显示提示
                 
             </title>
-            <updated>2024-03-19T03:23:42.000Z</updated>
+            <updated>2025-02-13T04:59:33.000Z</updated>
             <id>https://wudanyang6.github.io//card/工具/vscode vim 状态下显示提示/</id>
             <content type="html">
                 &lt;h1 id=&quot;vscode-vim&quot; tabindex=&quot;-1&quot;&gt;vscode vim 状态下显示提示&lt;/h1&gt;
@@ -3663,6 +3663,23 @@ reset &amp;lt;target&amp;gt;            # 重置，使用上游默认使用的�
 
             </content>
             <link href="https://wudanyang6.github.io//card/工具/marginnote 实现阅读历史跳转/" />
+        </entry>
+        <entry>
+            <title>
+                网易云音乐mac端回退到2.x版本
+                
+            </title>
+            <updated>2025-02-13T15:08:44.000Z</updated>
+            <id>https://wudanyang6.github.io//card/工具/mac/网易云音乐mac端回退到2.x版本/</id>
+            <content type="html">
+                &lt;h1 id=&quot;mac-2-x&quot; tabindex=&quot;-1&quot;&gt;网易云音乐mac端回退到2.x版本&lt;/h1&gt;
+&lt;p&gt;3.x版本，进入播放页面时，还需要滑动一下（非常吃力的滑动），才能看到精彩评论&lt;/p&gt;
+&lt;p&gt;决定回退到老版本&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://music.163.com/#/download&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://music.163.com/#/download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020250213230806.png&quot; alt=&quot;怀旧版客户端&quot; /&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/工具/mac/网易云音乐mac端回退到2.x版本/" />
         </entry>
         <entry>
             <title>
@@ -4337,7 +4354,7 @@ MindNode Pro 2023.3.1 思维导图工具 - 精品MAC应用分享&lt;/p&gt;
                 202011230004 - 如何写出容易理解的卡片
                 
             </title>
-            <updated>2024-04-21T03:08:31.000Z</updated>
+            <updated>2025-02-13T04:56:42.000Z</updated>
             <id>https://wudanyang6.github.io//card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/</id>
             <content type="html">
                 &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#communicate&quot;&gt;#communicate&lt;/a&gt;&lt;/p&gt;
@@ -4349,7 +4366,7 @@ MindNode Pro 2023.3.1 思维导图工具 - 精品MAC应用分享&lt;/p&gt;
 &lt;li&gt;第一句话应该是关于此卡片的&lt;/li&gt;
 &lt;li&gt;写的话要简单&lt;/li&gt;
 &lt;li&gt;你是在教育你的卡片盒，他会在以后的某个时间点出来跟你对话&lt;/li&gt;
-&lt;li&gt;想象一下，你是在跟以后的自己在对话&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;想象一下，你是在跟以后的自己在对话&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://zettelkasten.de/posts/how-to-write-notes-you-can-understand/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://zettelkasten.de/posts/how-to-write-notes-you-can-understand/&lt;/a&gt;&lt;/p&gt;
@@ -4897,7 +4914,7 @@ $zip-&amp;gt;close(); //关闭压缩包
                 202012081017 - php8.0 新特性
                 
             </title>
-            <updated>2024-02-02T08:16:28.000Z</updated>
+            <updated>2025-02-13T05:11:20.000Z</updated>
             <id>https://wudanyang6.github.io//card/php/202012081017 - php8.0 新特性/</id>
             <content type="html">
                 &lt;h1 id=&quot;202012081017-php8-0&quot; tabindex=&quot;-1&quot;&gt;202012081017 - php8.0 新特性&lt;/h1&gt;
@@ -5295,12 +5312,12 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;镜像&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;开发经验&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:excalidraw&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;excalidraw&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;开发经验&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:linux%E5%91%BD%E4%BB%A4&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -6082,7 +6099,7 @@ func main() {
                 Kafka入门
                 
             </title>
-            <updated>2024-10-12T15:20:09.000Z</updated>
+            <updated>2025-02-13T05:12:00.000Z</updated>
             <id>https://wudanyang6.github.io//card/kafka/Kafka入门/</id>
             <content type="html">
                 &lt;h1 id=&quot;kafka&quot; tabindex=&quot;-1&quot;&gt;Kafka入门&lt;/h1&gt;
@@ -6607,11 +6624,17 @@ cobra 库介绍：&lt;a href=&quot;https://darjun.github.io/2020/01/17/godailyli
                 go-时间处理
                 
             </title>
-            <updated>2024-10-20T14:47:27.000Z</updated>
+            <updated>2025-02-13T05:03:59.000Z</updated>
             <id>https://wudanyang6.github.io//card/go/go-时间处理/</id>
             <content type="html">
                 &lt;h1 id=&quot;go&quot; tabindex=&quot;-1&quot;&gt;go-时间处理&lt;/h1&gt;
-&lt;p&gt;carbon 库&lt;/p&gt;
+&lt;p&gt;golang carbon 库的使用&lt;/p&gt;
+&lt;p&gt;Golang 中的 Carbon 库是一个用于处理日期和时间的强大工具，它提供了丰富的功能来简化时间操作。Carbon 库的设计灵感来源于 PHP 的 Carbon 库，但在 Go 语言中进行了优化和扩展，使其更适合 Go 的编程风格和需求。&lt;/p&gt;
+&lt;p&gt;首先，Carbon 库可以帮助开发者轻松地解析、格式化和操作日期和时间。例如，你可以使用 &lt;code&gt;carbon.Parse&lt;/code&gt; 函数来解析字符串格式的日期，并将其转换为 Carbon 对象。这个对象可以进一步用于计算时间差、添加或减去时间间隔等操作。例如，你可以使用 &lt;code&gt;carbon.Now().AddDays(5)&lt;/code&gt; 来获取当前时间五天后的日期。&lt;/p&gt;
+&lt;p&gt;其次，Carbon 库支持多种时间格式的转换和比较。你可以使用 &lt;code&gt;carbon.Format&lt;/code&gt; 函数将时间对象格式化为指定的字符串格式，如 &lt;code&gt;YYYY-MM-DD HH:mm:ss&lt;/code&gt;。此外，Carbon 还提供了 &lt;code&gt;carbon.DiffInDays&lt;/code&gt;、&lt;code&gt;carbon.DiffInHours&lt;/code&gt; 等函数来计算两个时间点之间的差异。例如，你可以轻松计算两个日期之间相差的天数或小时数。&lt;/p&gt;
+&lt;p&gt;Carbon 库还支持时区处理，这对于处理跨时区的应用程序尤为重要。你可以使用 &lt;code&gt;carbon.SetTimezone&lt;/code&gt; 函数来设置时区，确保时间操作在不同时区下保持一致。例如，如果你需要处理一个全球用户的应用程序，Carbon 可以帮助你轻松地将时间转换为用户所在的时区。&lt;/p&gt;
+&lt;p&gt;此外，Carbon 库还提供了丰富的工具来处理时间的常见操作，如获取当前时间的开始或结束时间、判断某一天是星期几、计算某个月的天数等。例如，你可以使用 &lt;code&gt;carbon.StartOfDay&lt;/code&gt; 来获取某一天的开始时间，或者使用 &lt;code&gt;carbon.IsWeekend&lt;/code&gt; 来判断某一天是否是周末。&lt;/p&gt;
+&lt;p&gt;总的来说，Golang 中的 Carbon 库是一个功能强大且易于使用的工具，特别适合需要频繁处理日期和时间的应用程序。无论是简单的日期格式化，还是复杂的时间计算，Carbon 都能提供简洁而高效的解决方案。通过合理使用 Carbon 库，开发者可以显著减少时间处理相关的代码量，并提高代码的可读性和可维护性。&lt;/p&gt;
 &lt;p&gt;官网的示例也非常丰富&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;import &amp;quot;github.com/golang-module/carbon/v2&amp;quot;
 
@@ -7963,6 +7986,42 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mac/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90mac%E7%AB%AF%E5%9B%9E%E9%80%80%E5%88%B02.x%E7%89%88%E6%9C%AC/&quot;&gt;网易云音乐mac端回退到2.x版本&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 23:08:46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/kafka/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 13:12:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/php/202012081017%20-%20php8.0%20%E6%96%B0%E7%89%B9%E6%80%A7/&quot;&gt;202012081017 - php8.0 新特性&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 13:11:20&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/go-%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86/&quot;&gt;go-时间处理&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 13:04:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 12:59:33&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 12:56:42&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404082353%20%E5%8F%96%E4%B9%8E%E5%85%B6%E4%B8%8A%E5%BE%97%E4%B9%8E%E5%85%B6%E4%B8%AD/&quot;&gt;202404082353 取乎其上得乎其中&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 12:55:34&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6/&quot;&gt;CDN 带宽控制&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-12 21:06:39&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E6%96%AD/&quot;&gt;计算机中断&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-12 20:59:21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python-%E4%B8%BA%E4%BB%80%E4%B9%88%20%7B%7D%20%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9F/&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-02-11 22:48:05&lt;/td&gt;
 &lt;/tr&gt;
@@ -7975,15 +8034,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;2025-02-06 23:05:29&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/kafka/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-06 20:16:57&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3/&quot;&gt;202404191548 GTD的主要思想&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-06 20:16:43&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404082353%20%E5%8F%96%E4%B9%8E%E5%85%B6%E4%B8%8A%E5%BE%97%E4%B9%8E%E5%85%B6%E4%B8%AD/&quot;&gt;202404082353 取乎其上得乎其中&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-02-06 20:16:43&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -8018,34 +8069,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/202409121624%20Linux%20%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E4%BC%98%E5%8C%96-CPU/&quot;&gt;202409121624 Linux 性能分析优化-CPU&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-01-24 17:11:53&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-01-23 01:16:54&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/&quot;&gt;CDN 带宽控制的几种方法&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-01-23 00:14:15&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAchrome%E7%8B%AC%E7%AB%8BAPP%E7%AA%97%E5%8F%A3/&quot;&gt;创建一个chrome独立APP窗口&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-01-21 17:27:50&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/nginx/nginx-master-start-worker/&quot;&gt;nginx-master-start-worker&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-01-20 21:13:27&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/ai-%E5%8A%A8%E7%94%BB%E5%88%B6%E4%BD%9C/&quot;&gt;ai-动画制作&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-01-16 15:07:13&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mermaid%20%E5%9B%BE%E8%A1%A8%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90/&quot;&gt;mermaid 图表自动生成&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-01-16 13:35:31&lt;/td&gt;
-&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&quot;最近创建的文章&quot; tabindex=&quot;-1&quot;&gt;最近创建的文章&lt;/h3&gt;
@@ -8057,6 +8080,10 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mac/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90mac%E7%AB%AF%E5%9B%9E%E9%80%80%E5%88%B02.x%E7%89%88%E6%9C%AC/&quot;&gt;网易云音乐mac端回退到2.x版本&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 23:05:00&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python-%E4%B8%BA%E4%BB%80%E4%B9%88%20%7B%7D%20%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9F/&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-02-10 14:56:03&lt;/td&gt;
@@ -8082,7 +8109,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/&quot;&gt;CDN 带宽控制的几种方法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6/&quot;&gt;CDN 带宽控制&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -8136,10 +8163,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/14.%20%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%89%8D%E7%BC%80/&quot;&gt;14. 最长公共前缀&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2024-10-25 21:31:33&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/56.%20%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/&quot;&gt;56. 合并区间&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2024-10-24 23:45:03&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -8204,13 +8227,13 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
         </entry>
         <entry>
             <title>
-                CDN 带宽控制的几种方法
+                CDN 带宽控制
                 
             </title>
-            <updated>2025-01-22T16:14:15.000Z</updated>
-            <id>https://wudanyang6.github.io//0000 publish/CDN 带宽控制的几种方法/</id>
+            <updated>2025-02-12T13:06:38.000Z</updated>
+            <id>https://wudanyang6.github.io//0000 publish/CDN 带宽控制/</id>
             <content type="html">
-                &lt;h1 id=&quot;cdn&quot; tabindex=&quot;-1&quot;&gt;CDN 带宽控制的几种方法&lt;/h1&gt;
+                &lt;h1 id=&quot;cdn&quot; tabindex=&quot;-1&quot;&gt;CDN 带宽控制&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;refer 限制，禁用非自身域名
 &lt;ol&gt;
@@ -8221,7 +8244,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;li&gt;CDN日志回扫分析
 &lt;ol&gt;
 &lt;li&gt;删除肉眼可见的违规图片&lt;/li&gt;
-&lt;li&gt;对图片进行检测，是否包含视频资源（需要一定的策略支持）&lt;/li&gt;
+&lt;li&gt;对图片进行检测，是否包含视频资源（需要策略算法支持）&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;针对访问量、请求数过高的ip进行封禁&lt;/li&gt;
@@ -8229,7 +8252,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/ol&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//0000 publish/CDN 带宽控制的几种方法/" />
+            <link href="https://wudanyang6.github.io//0000 publish/CDN 带宽控制/" />
         </entry>
         <entry>
             <title>
