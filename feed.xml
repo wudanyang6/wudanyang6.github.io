@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-02-28T05:39:01Z</updated>
+    <updated>2025-03-28T07:15:14Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -3915,8 +3915,8 @@ date_translator = require(&amp;quot;date&amp;quot;)
 &lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
 &lt;h1 id=&quot;chrome&quot; tabindex=&quot;-1&quot;&gt;利用 Chrome 原生工具进行网页长截图 - 一日一技 - 少数派&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Omnivore&quot;&gt;#Omnivore&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://omnivore.app/me/chrome-1915a0dcd73&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Read on Omnivore&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://sspai.com/post/42193&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Read Original&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://omnivore.app/me/chrome-1915a0dcd73&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Read on Omnivore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://sspai.com/post/42193&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Read Original&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;notes&quot; tabindex=&quot;-1&quot;&gt;Notes&lt;/h2&gt;
 &lt;/div&gt;&lt;/div&gt;
 
@@ -5171,13 +5171,13 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:linux&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;linux&lt;/strong&gt; (8)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:16px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:shell&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;shell&lt;/strong&gt; (3)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:22px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:aigc&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;aigc&lt;/strong&gt; (6)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:16px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:shell&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;shell&lt;/strong&gt; (3)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5216,24 +5216,12 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;chatgpt&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:kafka&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;kafka&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%AD%A6%E4%B9%A0&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;学习&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:mysql&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;mysql&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:nginx&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;nginx&lt;/strong&gt; (4)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:master&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;master&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:Process&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5243,6 +5231,18 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:source-code&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;source-code&lt;/strong&gt; (2)
                     &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:master&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;master&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:kafka&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;kafka&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E5%AD%A6%E4%B9%A0&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;学习&lt;/strong&gt; (1)
+                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:php&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;php&lt;/strong&gt; (2)
@@ -5251,6 +5251,10 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%8E%8B%E7%BC%A9&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;压缩&lt;/strong&gt; (1)
                     &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
+                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:redis&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;redis&lt;/strong&gt; (1)
@@ -5258,18 +5262,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:rdb&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;rdb&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:aigc-deepseek&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;aigc-deepseek&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5324,20 +5316,28 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;linux命令&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:aigc-deepseek&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;aigc-deepseek&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%A0%91%E8%8E%93%E6%B4%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;树莓派&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:40px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:leetcode&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;leetcode&lt;/strong&gt; (15)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;&lt;/strong&gt; (1)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%89%8D%E7%BC%80%E5%92%8C&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;前缀和&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:dp&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -6278,7 +6278,7 @@ func main() {
                 快速创建一个可访问的服务
                 
             </title>
-            <updated>2024-10-20T04:43:32.000Z</updated>
+            <updated>2025-02-24T07:29:43.000Z</updated>
             <id>https://wudanyang6.github.io//card/k8s/快速创建一个可访问的服务/</id>
             <content type="html">
                 &lt;h1 id=&quot;快速创建一个可访问的服务&quot; tabindex=&quot;-1&quot;&gt;快速创建一个可访问的服务&lt;/h1&gt;
@@ -7212,7 +7212,7 @@ lr-x------ 1 ubuntu ubuntu 64 Apr 13 13:48 3 -&amp;gt; /home/ubuntu/mydisk/yangb
                 使用shell脚本快速并行启动指定数量的进程
                 
             </title>
-            <updated>2025-02-18T14:05:47.000Z</updated>
+            <updated>2025-02-18T14:06:12.000Z</updated>
             <id>https://wudanyang6.github.io//card/Linux/使用shell脚本快速并行启动指定数量的进程/</id>
             <content type="html">
                 &lt;h1 id=&quot;shell&quot; tabindex=&quot;-1&quot;&gt;使用shell脚本快速并行启动指定数量的进程&lt;/h1&gt;
@@ -7450,7 +7450,7 @@ done &amp;lt; file.txt
                 linux-wrk
                 
             </title>
-            <updated>2024-10-21T07:50:21.000Z</updated>
+            <updated>2025-03-13T08:47:19.000Z</updated>
             <id>https://wudanyang6.github.io//card/Linux/linux-wrk/</id>
             <content type="html">
                 &lt;h1 id=&quot;linux-wrk&quot; tabindex=&quot;-1&quot;&gt;linux-wrk&lt;/h1&gt;
@@ -7481,8 +7481,8 @@ cp wrk /usr/local/bin
   Numeric arguments may include a SI unit (1k, 1M, 1G)
   Time arguments may include a time unit (2s, 2m, 2h)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;示例 lua 脚本文件位置&lt;br /&gt;
-&lt;code&gt;/workspace/wrk/scripts/*.lua&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;示例 lua 脚本文件位置&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/workspace/wrk/scripts/*.lua&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/wrk-lua%E8%84%9A%E6%9C%AC.png&quot; alt=&quot;wrk-lua脚本.png&quot; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-lua&quot;&gt;-- example HTTP POST script which demonstrates setting the
 -- HTTP method, body, and adding a header
@@ -7494,8 +7494,8 @@ wrk.headers[&amp;quot;Content-Type&amp;quot;] = &amp;quot;application/x-www-form
 &lt;p&gt;wrk lua 函数的生命周期&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020220508214336.png&quot; alt=&quot;Pasted image 20220508214336.png&quot; /&gt;&lt;/p&gt;
 &lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://juejin.cn/post/6844903550288396296&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http 性能测试 wrk使用教程&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://segmentfault.com/a/1190000023212126&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;性能测试神器 wrk 使用教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://juejin.cn/post/6844903550288396296&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http 性能测试 wrk使用教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000023212126&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;性能测试神器 wrk 使用教程&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang6.github.io//card/Linux/linux-wrk/" />
@@ -8061,88 +8061,88 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/go%20%E8%8E%B7%E5%8F%96%E5%87%8C%E6%99%A80%E7%82%B9%E7%9A%84%E6%97%B6%E9%97%B4%E6%88%B3/&quot;&gt;go 获取凌晨0点的时间戳&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:44:31&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/python%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/&quot;&gt;python 虚拟环境&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-26 14:57:27&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3/&quot;&gt;202404191548 GTD的主要思想&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404251145%20%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%88%90%E6%9C%AC%E5%A6%82%E6%9E%9C%E6%AF%94%E8%BE%83%E9%AB%98%E5%B0%B1%E4%B8%8D%E8%A6%81%E5%8E%BB%E8%8A%B1%E6%97%B6%E9%97%B4%E7%A0%B4%E8%A7%A3%E4%BA%86/&quot;&gt;202404251145 破解软件的成本如果比较高就不要去花时间破解了&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-19 11:14:34&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E6%96%AD/&quot;&gt;计算机中断&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/%E4%BD%BF%E7%94%A8shell%E8%84%9A%E6%9C%AC%E5%BF%AB%E9%80%9F%E5%B9%B6%E8%A1%8C%E5%90%AF%E5%8A%A8%E6%8C%87%E5%AE%9A%E6%95%B0%E9%87%8F%E7%9A%84%E8%BF%9B%E7%A8%8B/&quot;&gt;使用shell脚本快速并行启动指定数量的进程&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-19 11:14:34&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E5%BF%AB%E9%80%9F%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9FCPU%E7%93%B6%E9%A2%88%E7%9A%84%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/&quot;&gt;快速分析系统CPU瓶颈的命令工具&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/202409121624%20Linux%20%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E4%BC%98%E5%8C%96-CPU/&quot;&gt;202409121624 Linux 性能分析优化-CPU&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404082353%20%E5%8F%96%E4%B9%8E%E5%85%B6%E4%B8%8A%E5%BE%97%E4%B9%8E%E5%85%B6%E4%B8%AD/&quot;&gt;202404082353 取乎其上得乎其中&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/%E5%90%84%E7%A7%8D%E8%B5%84%E6%BA%90%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/&quot;&gt;各种资源国内镜像&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/202409021102%20marginnote%20%E4%BB%8E%20Web%20%E7%BD%91%E9%A1%B5%E5%AF%BC%E5%85%A5%E5%86%85%E5%AE%B9/&quot;&gt;202409021102 marginnote 从 Web 网页导入内容&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/linux-wait/&quot;&gt;linux-wait&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-19 11:14:34&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mac/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90mac%E7%AB%AF%E5%9B%9E%E9%80%80%E5%88%B02.x%E7%89%88%E6%9C%AC/&quot;&gt;网易云音乐mac端回退到2.x版本&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%A6%82%E6%9E%9C%E4%B8%80%E7%94%9F%E5%8F%AA%E8%AF%BB6%E6%9C%AC%E4%B9%A6%EF%BC%8C%E6%8E%A8%E8%8D%90%E5%93%AA%E5%87%A0%E6%9C%AC%EF%BC%9F/&quot;&gt;如果一生只读6本书，推荐哪几本？&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/php/202012081017%20-%20php8.0%20%E6%96%B0%E7%89%B9%E6%80%A7/&quot;&gt;202012081017 - php8.0 新特性&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;2025-02-13 23:05:00&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python-%E4%B8%BA%E4%BB%80%E4%B9%88%20%7B%7D%20%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9F/&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;2025-02-10 14:56:03&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/kafka/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%A6%82%E6%9E%9C%E4%B8%80%E7%94%9F%E5%8F%AA%E8%AF%BB6%E6%9C%AC%E4%B9%A6%EF%BC%8C%E6%8E%A8%E8%8D%90%E5%93%AA%E5%87%A0%E6%9C%AC%EF%BC%9F/&quot;&gt;如果一生只读6本书，推荐哪几本？&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-06 15:45:15&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/go-%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86/&quot;&gt;go-时间处理&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404082353%20%E5%8F%96%E4%B9%8E%E5%85%B6%E4%B8%8A%E5%BE%97%E4%B9%8E%E5%85%B6%E4%B8%AD/&quot;&gt;202404082353 取乎其上得乎其中&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Personal/202408312248%20%E7%94%B2%E6%B2%9F%E7%82%8E%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95/&quot;&gt;202408312248 甲沟炎的处理办法&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6/&quot;&gt;文件描述符&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/obsidian-things3-today%E6%8F%92%E4%BB%B6/&quot;&gt;obsidian-things3-today插件&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/linux-top/&quot;&gt;linux-top&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;Things 工作流&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6/&quot;&gt;CDN 带宽控制&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-23 00:00:04&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mermaid%20%E5%9B%BE%E8%A1%A8%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90/&quot;&gt;mermaid 图表自动生成&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-16 11:03:36&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/ai-%E5%8A%A8%E7%94%BB%E5%88%B6%E4%BD%9C/&quot;&gt;ai-动画制作&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-02 00:47:27&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/golang-cobra/&quot;&gt;golang-cobra&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-12-20 14:31:47&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/55.%20%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F/&quot;&gt;55. 跳跃游戏&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-13 23:46:30&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/1143.%20%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/&quot;&gt;1143. 最长公共子序列&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-10 19:28:30&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/59.%20%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5%20II/&quot;&gt;59. 螺旋矩阵 II&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-09 18:16:21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/239.%20%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC/&quot;&gt;239. 滑动窗口最大值&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-09 00:00:13&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/72.%20%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB/&quot;&gt;72. 编辑距离&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-08 01:03:57&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE%E9%9A%BE%E5%BA%A6%E6%9B%B4%E6%96%B0%E4%BA%86/&quot;&gt;leetcode题目难度更新了&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-06 00:26:39&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -8156,88 +8156,88 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/%E4%BD%BF%E7%94%A8shell%E8%84%9A%E6%9C%AC%E5%BF%AB%E9%80%9F%E5%B9%B6%E8%A1%8C%E5%90%AF%E5%8A%A8%E6%8C%87%E5%AE%9A%E6%95%B0%E9%87%8F%E7%9A%84%E8%BF%9B%E7%A8%8B/&quot;&gt;使用shell脚本快速并行启动指定数量的进程&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 22:06:14&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/python%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/&quot;&gt;python 虚拟环境&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-03-28 15:14:35&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/linux-wait/&quot;&gt;linux-wait&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 22:05:51&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/linux-wrk/&quot;&gt;linux-wrk&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-03-13 16:47:19&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/go%20%E8%8E%B7%E5%8F%96%E5%87%8C%E6%99%A80%E7%82%B9%E7%9A%84%E6%97%B6%E9%97%B4%E6%88%B3/&quot;&gt;go 获取凌晨0点的时间戳&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:44:31&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/k8s/%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8F%AF%E8%AE%BF%E9%97%AE%E7%9A%84%E6%9C%8D%E5%8A%A1/&quot;&gt;快速创建一个可访问的服务&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-24 15:29:43&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404251145%20%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%88%90%E6%9C%AC%E5%A6%82%E6%9E%9C%E6%AF%94%E8%BE%83%E9%AB%98%E5%B0%B1%E4%B8%8D%E8%A6%81%E5%8E%BB%E8%8A%B1%E6%97%B6%E9%97%B4%E7%A0%B4%E8%A7%A3%E4%BA%86/&quot;&gt;202404251145 破解软件的成本如果比较高就不要去花时间破解了&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:43:13&lt;/td&gt;
+&lt;td&gt;2025-02-19 11:14:34&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/202404191548%20GTD%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3/&quot;&gt;202404191548 GTD的主要思想&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/%E4%BD%BF%E7%94%A8shell%E8%84%9A%E6%9C%AC%E5%BF%AB%E9%80%9F%E5%B9%B6%E8%A1%8C%E5%90%AF%E5%8A%A8%E6%8C%87%E5%AE%9A%E6%95%B0%E9%87%8F%E7%9A%84%E8%BF%9B%E7%A8%8B/&quot;&gt;使用shell脚本快速并行启动指定数量的进程&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-19 11:14:34&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E6%96%AD/&quot;&gt;计算机中断&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/linux-wait/&quot;&gt;linux-wait&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-19 11:14:34&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E5%BF%AB%E9%80%9F%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9FCPU%E7%93%B6%E9%A2%88%E7%9A%84%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/&quot;&gt;快速分析系统CPU瓶颈的命令工具&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/202409121624%20Linux%20%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E4%BC%98%E5%8C%96-CPU/&quot;&gt;202409121624 Linux 性能分析优化-CPU&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/go%20%E8%8E%B7%E5%8F%96%E5%87%8C%E6%99%A80%E7%82%B9%E7%9A%84%E6%97%B6%E9%97%B4%E6%88%B3/&quot;&gt;go 获取凌晨0点的时间戳&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-18 20:15:20&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;2025-02-14 16:40:58&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/%E5%90%84%E7%A7%8D%E8%B5%84%E6%BA%90%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/&quot;&gt;各种资源国内镜像&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404082353%20%E5%8F%96%E4%B9%8E%E5%85%B6%E4%B8%8A%E5%BE%97%E4%B9%8E%E5%85%B6%E4%B8%AD/&quot;&gt;202404082353 取乎其上得乎其中&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/202409021102%20marginnote%20%E4%BB%8E%20Web%20%E7%BD%91%E9%A1%B5%E5%AF%BC%E5%85%A5%E5%86%85%E5%AE%B9/&quot;&gt;202409021102 marginnote 从 Web 网页导入内容&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/&quot;&gt;Home&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-14 15:37:17&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mac/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90mac%E7%AB%AF%E5%9B%9E%E9%80%80%E5%88%B02.x%E7%89%88%E6%9C%AC/&quot;&gt;网易云音乐mac端回退到2.x版本&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%A6%82%E6%9E%9C%E4%B8%80%E7%94%9F%E5%8F%AA%E8%AF%BB6%E6%9C%AC%E4%B9%A6%EF%BC%8C%E6%8E%A8%E8%8D%90%E5%93%AA%E5%87%A0%E6%9C%AC%EF%BC%9F/&quot;&gt;如果一生只读6本书，推荐哪几本？&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/php/202012081017%20-%20php8.0%20%E6%96%B0%E7%89%B9%E6%80%A7/&quot;&gt;202012081017 - php8.0 新特性&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python-%E4%B8%BA%E4%BB%80%E4%B9%88%20%7B%7D%20%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9F/&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;2025-02-13 23:08:46&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/kafka/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;2025-02-13 13:12:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/php/202012081017%20-%20php8.0%20%E6%96%B0%E7%89%B9%E6%80%A7/&quot;&gt;202012081017 - php8.0 新特性&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 13:11:20&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/go-%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86/&quot;&gt;go-时间处理&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-18 21:42:28&lt;/td&gt;
+&lt;td&gt;2025-02-13 13:04:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 12:59:33&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 12:56:42&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404082353%20%E5%8F%96%E4%B9%8E%E5%85%B6%E4%B8%8A%E5%BE%97%E4%B9%8E%E5%85%B6%E4%B8%AD/&quot;&gt;202404082353 取乎其上得乎其中&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 12:55:34&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/0000%20publish/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6/&quot;&gt;CDN 带宽控制&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-12 21:06:39&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E6%96%AD/&quot;&gt;计算机中断&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-12 20:59:21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python-%E4%B8%BA%E4%BB%80%E4%B9%88%20%7B%7D%20%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9F/&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-11 22:48:05&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Personal/202408312248%20%E7%94%B2%E6%B2%9F%E7%82%8E%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95/&quot;&gt;202408312248 甲沟炎的处理办法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-08 11:14:53&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%A6%82%E6%9E%9C%E4%B8%80%E7%94%9F%E5%8F%AA%E8%AF%BB6%E6%9C%AC%E4%B9%A6%EF%BC%8C%E6%8E%A8%E8%8D%90%E5%93%AA%E5%87%A0%E6%9C%AC%EF%BC%9F/&quot;&gt;如果一生只读6本书，推荐哪几本？&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-06 23:05:29&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -8328,6 +8328,34 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
             </content>
             <link href="https://wudanyang6.github.io//0000 publish/CDN 带宽控制/" />
+        </entry>
+        <entry>
+            <title>
+                python 虚拟环境
+                
+            </title>
+            <updated>2025-03-28T07:14:28.000Z</updated>
+            <id>https://wudanyang6.github.io//000 inbox/python 虚拟环境/</id>
+            <content type="html">
+                &lt;h1 id=&quot;python&quot; tabindex=&quot;-1&quot;&gt;python 虚拟环境&lt;/h1&gt;
+&lt;p&gt;venv： python 内置的模块，用于创建隔离的python环境&lt;/p&gt;
+&lt;p&gt;Conda：一个开源的包管理系统和环境管理系统，用于安装多种包，且可以创建多个独立的环境&lt;/p&gt;
+&lt;h2 id=&quot;venv&quot; tabindex=&quot;-1&quot;&gt;venv&lt;/h2&gt;
+&lt;p&gt;jetbrains 会自动创建 venv 环境&lt;/p&gt;
+&lt;p&gt;vscode中，需要执行命令&lt;code&gt;Python: Create Environment&lt;/code&gt; 进行创建&lt;/p&gt;
+&lt;p&gt;创建完之后，会在项目根目录创建一个文件夹 &lt;code&gt;.venv&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;# 终端开启虚拟环境
+source .venv/bin/activate
+# 安装依赖， -i 使用镜像
+pip3 install -r requirements.txt -i 镜像源 https://pip.baidu-int.com/simple/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;vscode 的python扩展会在打开内置terminal的时候自动加载虚拟环境&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020250328151348.png&quot; alt=&quot;594&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1eM411D7rR/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=cdeb63885c1e7687c8d443ba7d3f4fd9&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Python虚拟环境venv（和我一起玩Python）_哔哩哔哩_bilibili&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//000 inbox/python 虚拟环境/" />
         </entry>
         <entry>
             <title>
