@@ -3,7 +3,7 @@
     <title>dy-turbo</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-05-28T03:28:23Z</updated>
+    <updated>2025-06-06T05:09:43Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -3870,7 +3870,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 ai-动画制作
                 
             </title>
-            <updated>2025-01-16T07:07:13.000Z</updated>
+            <updated>2025-06-05T12:57:59.000Z</updated>
             <id>https://wudanyang6.github.io//card/工具/ai-动画制作/</id>
             <content type="html">
                 &lt;h1 id=&quot;ai&quot; tabindex=&quot;-1&quot;&gt;ai-动画制作&lt;/h1&gt;
@@ -5304,6 +5304,10 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;思维导图&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:rime&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;rime&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:marginnote&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;marginnote&lt;/strong&gt; (1)
                     &lt;/a&gt;
@@ -5311,13 +5315,13 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E9%98%85%E8%AF%BB%E5%99%A8&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;阅读器&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:rime&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;rime&lt;/strong&gt; (1)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:mac&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;mac&lt;/strong&gt; (4)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E8%BE%93%E5%85%A5%E6%B3%95&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5358,10 +5362,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:40px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:leetcode&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;leetcode&lt;/strong&gt; (15)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%89%8D%E7%BC%80%E5%92%8C&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -8173,8 +8173,8 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/journal/2025-05-28/&quot;&gt;2025-05-28&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-05-28 10:58:55&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/202506061308%20vscode%20There%20is%20no%20formatter%20for%20&#39;go&#39;%20files%20installed%20%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/&quot;&gt;202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-06-06 13:08:31&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python/python%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/&quot;&gt;python 虚拟环境&lt;/a&gt;&lt;/td&gt;
@@ -8268,8 +8268,12 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/journal/2025-05-28/&quot;&gt;2025-05-28&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-05-28 11:27:31&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/202506061308%20vscode%20There%20is%20no%20formatter%20for%20&#39;go&#39;%20files%20installed%20%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/&quot;&gt;202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-06-06 13:08:57&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/ai-%E5%8A%A8%E7%94%BB%E5%88%B6%E4%BD%9C/&quot;&gt;ai-动画制作&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-06-05 20:57:59&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python/python%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/&quot;&gt;python 虚拟环境&lt;/a&gt;&lt;/td&gt;
@@ -8347,10 +8351,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/0000%20publish/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6/&quot;&gt;CDN 带宽控制&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-02-12 21:06:39&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E6%96%AD/&quot;&gt;计算机中断&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-12 20:59:21&lt;/td&gt;
-&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -8359,21 +8359,23 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
         </entry>
         <entry>
             <title>
-                2025-05-28
+                202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理
                 
             </title>
-            <updated></updated>
-            <id>https://wudanyang6.github.io//journal/2025-05-28/</id>
+            <updated>2025-06-06T05:08:52.000Z</updated>
+            <id>https://wudanyang6.github.io//000 inbox/202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理/</id>
             <content type="html">
-                &lt;h1 id=&quot;2025-05-28&quot; tabindex=&quot;-1&quot;&gt;2025-05-28&lt;/h1&gt;
-&lt;p&gt;1&lt;br /&gt;
-2&lt;br /&gt;
-f&lt;/p&gt;
-&lt;p&gt;你好&lt;br /&gt;
-hello&lt;/p&gt;
+                &lt;h1 id=&quot;202506061308-vscode-there-is-no-formatter-for-go-files-installed&quot; tabindex=&quot;-1&quot;&gt;202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;There is no formatter for &#39;go&#39; files installed.&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+What is the output of &lt;code&gt;go version&lt;/code&gt; and &lt;code&gt;go env&lt;/code&gt;? Also, can you run the &lt;code&gt;Go: Locate Configured Go Tools&lt;/code&gt; command from the Command Palette (Ctrl+Shift+P) and share its output?&lt;br /&gt;
+The &amp;quot;Error: TypeError: Cannot read property &#39;lt&#39; of undefined&amp;quot; error might indicate that the extension is not finding your go version.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/golang/vscode-go/issues/633&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;There is no formatter for &#39;go&#39; files installed. · Issue &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#633&quot;&gt;#633&lt;/a&gt; · golang/vscode-go&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//journal/2025-05-28/" />
+            <link href="https://wudanyang6.github.io//000 inbox/202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理/" />
         </entry>
         <entry>
             <title>
