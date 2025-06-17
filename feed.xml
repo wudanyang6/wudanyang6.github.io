@@ -3,7 +3,7 @@
     <title>宁静之森</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-06-17T15:08:33Z</updated>
+    <updated>2025-06-17T15:33:20Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -3878,6 +3878,22 @@ date_translator = require(&amp;quot;date&amp;quot;)
 
             </content>
             <link href="https://wudanyang6.github.io//card/工具/ai-动画制作/" />
+        </entry>
+        <entry>
+            <title>
+                202506171613 vscode 如何粘贴文件不覆盖
+                
+            </title>
+            <updated>2025-06-17T15:07:42.000Z</updated>
+            <id>https://wudanyang6.github.io//card/工具/202506171613 vscode 如何粘贴文件不覆盖/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202506171613-vscode&quot; tabindex=&quot;-1&quot;&gt;202506171613 vscode 如何粘贴文件不覆盖&lt;/h1&gt;
+&lt;p&gt;vscode 配置， Incremental Naming   选 default =&amp;gt; simple&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020250617230716.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;重复文件自动命名&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/工具/202506171613 vscode 如何粘贴文件不覆盖/" />
         </entry>
         <entry>
             <title>
@@ -8197,84 +8213,88 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;2025-06-17 22:51:58&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/journal/2024-10-11/&quot;&gt;2024-10-11&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/202506171613%20vscode%20%E5%A6%82%E4%BD%95%E7%B2%98%E8%B4%B4%E6%96%87%E4%BB%B6%E4%B8%8D%E8%A6%86%E7%9B%96/&quot;&gt;202506171613 vscode 如何粘贴文件不覆盖&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-06-17 16:13:46&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E9%9F%B3%E4%B9%90/%E6%88%91%E7%9A%84%E9%9F%B3%E4%B9%90%E6%AD%8C%E6%89%8B%E5%85%B3%E9%94%AE%E8%AF%8D/&quot;&gt;我的音乐歌手关键词&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/202506061308%20vscode%20There%20is%20no%20formatter%20for%20&#39;go&#39;%20files%20installed%20%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/&quot;&gt;202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-06-06 13:08:31&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E9%9F%B3%E4%B9%90/202405061046%20%E9%9F%B3%E4%B9%90-%E5%9C%86%E6%A1%8C%E9%AA%91%E5%A3%AB/&quot;&gt;202405061046 音乐-圆桌骑士&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python/python%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/&quot;&gt;python 虚拟环境&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-26 14:57:27&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E9%98%85%E8%AF%BB/%E5%A6%82%E4%BD%95%E5%90%88%E5%B9%B6marginnote%E7%AC%94%E8%AE%B0%E6%9C%AC/&quot;&gt;如何合并marginnote笔记本&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mac/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90mac%E7%AB%AF%E5%9B%9E%E9%80%80%E5%88%B02.x%E7%89%88%E6%9C%AC/&quot;&gt;网易云音乐mac端回退到2.x版本&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 23:05:00&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E8%A3%85%E4%BF%AE/%E8%BD%AF%E8%A3%85-%E6%B2%99%E5%8F%91/&quot;&gt;软装-沙发&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python/python-%E4%B8%BA%E4%BB%80%E4%B9%88%20%7B%7D%20%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9F/&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-10 14:56:03&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%BD%91%E7%BB%9C/202405081320%20IPv6%E7%9A%84%E5%9B%9E%E7%8E%AF%E5%9C%B0%E5%9D%80%E6%98%AF%E5%A6%82%E4%BD%95%E8%A1%A8%E7%A4%BA%E7%9A%84/&quot;&gt;202405081320 IPv6的回环地址是如何表示的&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%A6%82%E6%9E%9C%E4%B8%80%E7%94%9F%E5%8F%AA%E8%AF%BB6%E6%9C%AC%E4%B9%A6%EF%BC%8C%E6%8E%A8%E8%8D%90%E5%93%AA%E5%87%A0%E6%9C%AC%EF%BC%9F/&quot;&gt;如果一生只读6本书，推荐哪几本？&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-06 15:45:15&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%96%B0%E5%B9%B4%E7%A5%9D%E7%A6%8F%E8%AF%AD/&quot;&gt;算法新年祝福语&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mermaid%20%E5%9B%BE%E8%A1%A8%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90/&quot;&gt;mermaid 图表自动生成&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-16 11:03:36&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%A8%A1%E6%9D%BF/&quot;&gt;滑动窗口模板&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/ai-%E5%8A%A8%E7%94%BB%E5%88%B6%E4%BD%9C/&quot;&gt;ai-动画制作&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-01-02 00:47:27&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%BE%88%E5%A4%9A%E6%97%B6%E5%80%99%E5%B0%B1%E6%98%AF%E5%9C%A8%E5%A1%AB%E8%A1%A8/&quot;&gt;动态规划很多时候就是在填表&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/golang-cobra/&quot;&gt;golang-cobra&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-12-20 14:31:47&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE%E9%9A%BE%E5%BA%A6%E6%9B%B4%E6%96%B0%E4%BA%86/&quot;&gt;leetcode题目难度更新了&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/55.%20%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F/&quot;&gt;55. 跳跃游戏&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-13 23:46:30&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-557.%20%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%8D%95%E8%AF%8D%20III/&quot;&gt;leetcode-557. 反转字符串中的单词 III&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/&quot;&gt;leetcode-53. 最大子数组和&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-541.%20%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%20II/&quot;&gt;leetcode-541. 反转字符串 II&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-49.%20%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%E5%88%86%E7%BB%84/&quot;&gt;leetcode-49. 字母异位词分组&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-401.%20%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%89%8B%E8%A1%A8/&quot;&gt;leetcode-401. 二进制手表&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-303.%20%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2%20-%20%E6%95%B0%E7%BB%84%E4%B8%8D%E5%8F%AF%E5%8F%98/&quot;&gt;leetcode-303. 区域和检索 - 数组不可变&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-1137%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137第 N 个泰波那契数&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-1014.%20%E6%9C%80%E4%BD%B3%E8%A7%82%E5%85%89%E7%BB%84%E5%90%88/&quot;&gt;leetcode-1014. 最佳观光组合&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/560.%20%E5%92%8C%E4%B8%BA%20K%20%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/&quot;&gt;560. 和为 K 的子数组&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/1143.%20%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/&quot;&gt;1143. 最长公共子序列&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-10 19:28:30&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/59.%20%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5%20II/&quot;&gt;59. 螺旋矩阵 II&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;2024-11-09 18:16:21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/239.%20%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC/&quot;&gt;239. 滑动窗口最大值&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-09 00:00:13&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/72.%20%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB/&quot;&gt;72. 编辑距离&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-08 01:03:57&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE%E9%9A%BE%E5%BA%A6%E6%9B%B4%E6%96%B0%E4%BA%86/&quot;&gt;leetcode题目难度更新了&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-11-06 00:26:39&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/560.%20%E5%92%8C%E4%B8%BA%20K%20%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/&quot;&gt;560. 和为 K 的子数组&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-10-30 23:25:53&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/54.%20%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5/&quot;&gt;54. 螺旋矩阵&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-10-28 20:39:41&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/128.%20%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E5%BA%8F%E5%88%97/&quot;&gt;128. 最长连续序列&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-10-26 17:52:46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/14.%20%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%89%8D%E7%BC%80/&quot;&gt;14. 最长公共前缀&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-10-25 21:31:33&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/56.%20%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/&quot;&gt;56. 合并区间&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-10-24 23:45:03&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/obsidian/dg-publish=true%E7%9A%84%E6%A0%87%E7%AD%BE%E4%BA%91/&quot;&gt;dg-publish=true的标签云&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2024-10-23 20:19:22&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -8288,88 +8308,92 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/202506171613%20vscode%20%E5%A6%82%E4%BD%95%E7%B2%98%E8%B4%B4%E6%96%87%E4%BB%B6%E4%B8%8D%E8%A6%86%E7%9B%96/&quot;&gt;202506171613 vscode 如何粘贴文件不覆盖&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 23:07:43&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/202506171613%20vscode%20%E5%A6%82%E4%BD%95%E7%B2%98%E8%B4%B4%E6%96%87%E4%BB%B6%E4%B8%8D%E8%A6%86%E7%9B%96/&quot;&gt;202506171613 vscode 如何粘贴文件不覆盖&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-06-17 23:07:42&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/202506172251%20mac%20%E5%BC%BA%E5%88%B6%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/&quot;&gt;202506172251 mac 强制程序使用代理&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:56:11&lt;/td&gt;
+&lt;td&gt;2025-06-17 22:53:59&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/journal/2024-10-11/&quot;&gt;2024-10-11&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/202506061308%20vscode%20There%20is%20no%20formatter%20for%20&#39;go&#39;%20files%20installed%20%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/&quot;&gt;202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-06-06 13:08:59&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E9%9F%B3%E4%B9%90/%E6%88%91%E7%9A%84%E9%9F%B3%E4%B9%90%E6%AD%8C%E6%89%8B%E5%85%B3%E9%94%AE%E8%AF%8D/&quot;&gt;我的音乐歌手关键词&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/ai-%E5%8A%A8%E7%94%BB%E5%88%B6%E4%BD%9C/&quot;&gt;ai-动画制作&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-06-05 20:57:59&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E9%9F%B3%E4%B9%90/202405061046%20%E9%9F%B3%E4%B9%90-%E5%9C%86%E6%A1%8C%E9%AA%91%E5%A3%AB/&quot;&gt;202405061046 音乐-圆桌骑士&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python/python%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/&quot;&gt;python 虚拟环境&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-05-13 22:32:53&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E9%98%85%E8%AF%BB/%E5%A6%82%E4%BD%95%E5%90%88%E5%B9%B6marginnote%E7%AC%94%E8%AE%B0%E6%9C%AC/&quot;&gt;如何合并marginnote笔记本&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/linux-wrk/&quot;&gt;linux-wrk&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-03-13 16:47:19&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E8%A3%85%E4%BF%AE/%E8%BD%AF%E8%A3%85-%E6%B2%99%E5%8F%91/&quot;&gt;软装-沙发&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/k8s/%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8F%AF%E8%AE%BF%E9%97%AE%E7%9A%84%E6%9C%8D%E5%8A%A1/&quot;&gt;快速创建一个可访问的服务&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-24 15:29:43&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%BD%91%E7%BB%9C/202405081320%20IPv6%E7%9A%84%E5%9B%9E%E7%8E%AF%E5%9C%B0%E5%9D%80%E6%98%AF%E5%A6%82%E4%BD%95%E8%A1%A8%E7%A4%BA%E7%9A%84/&quot;&gt;202405081320 IPv6的回环地址是如何表示的&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/%E4%BD%BF%E7%94%A8shell%E8%84%9A%E6%9C%AC%E5%BF%AB%E9%80%9F%E5%B9%B6%E8%A1%8C%E5%90%AF%E5%8A%A8%E6%8C%87%E5%AE%9A%E6%95%B0%E9%87%8F%E7%9A%84%E8%BF%9B%E7%A8%8B/&quot;&gt;使用shell脚本快速并行启动指定数量的进程&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-18 22:06:12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%96%B0%E5%B9%B4%E7%A5%9D%E7%A6%8F%E8%AF%AD/&quot;&gt;算法新年祝福语&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/linux-wait/&quot;&gt;linux-wait&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-18 22:05:49&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%A8%A1%E6%9D%BF/&quot;&gt;滑动窗口模板&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404251145%20%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%88%90%E6%9C%AC%E5%A6%82%E6%9E%9C%E6%AF%94%E8%BE%83%E9%AB%98%E5%B0%B1%E4%B8%8D%E8%A6%81%E5%8E%BB%E8%8A%B1%E6%97%B6%E9%97%B4%E7%A0%B4%E8%A7%A3%E4%BA%86/&quot;&gt;202404251145 破解软件的成本如果比较高就不要去花时间破解了&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-18 21:43:13&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%BE%88%E5%A4%9A%E6%97%B6%E5%80%99%E5%B0%B1%E6%98%AF%E5%9C%A8%E5%A1%AB%E8%A1%A8/&quot;&gt;动态规划很多时候就是在填表&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/go%20%E8%8E%B7%E5%8F%96%E5%87%8C%E6%99%A80%E7%82%B9%E7%9A%84%E6%97%B6%E9%97%B4%E6%88%B3/&quot;&gt;go 获取凌晨0点的时间戳&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-18 20:15:16&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE%E9%9A%BE%E5%BA%A6%E6%9B%B4%E6%96%B0%E4%BA%86/&quot;&gt;leetcode题目难度更新了&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404171707%20%E5%BD%93%E4%BD%A0%E5%AD%A6%E4%B8%8D%E4%B8%8B%E5%8E%BB%E7%9A%84%E6%97%B6%E5%80%99/&quot;&gt;202404171707 当你学不下去的时候&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-14 16:40:58&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-557.%20%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%8D%95%E8%AF%8D%20III/&quot;&gt;leetcode-557. 反转字符串中的单词 III&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mac/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90mac%E7%AB%AF%E5%9B%9E%E9%80%80%E5%88%B02.x%E7%89%88%E6%9C%AC/&quot;&gt;网易云音乐mac端回退到2.x版本&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 23:08:44&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-541.%20%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%20II/&quot;&gt;leetcode-541. 反转字符串 II&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/kafka/Kafka%E5%85%A5%E9%97%A8/&quot;&gt;Kafka入门&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 13:12:00&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-53.%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/&quot;&gt;leetcode-53. 最大子数组和&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/php/202012081017%20-%20php8.0%20%E6%96%B0%E7%89%B9%E6%80%A7/&quot;&gt;202012081017 - php8.0 新特性&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 13:11:20&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-49.%20%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%E5%88%86%E7%BB%84/&quot;&gt;leetcode-49. 字母异位词分组&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/go/go-%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86/&quot;&gt;go-时间处理&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 13:03:59&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-401.%20%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%89%8B%E8%A1%A8/&quot;&gt;leetcode-401. 二进制手表&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/vscode%20vim%20%E7%8A%B6%E6%80%81%E4%B8%8B%E6%98%BE%E7%A4%BA%E6%8F%90%E7%A4%BA/&quot;&gt;vscode vim 状态下显示提示&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 12:59:33&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-303.%20%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2%20-%20%E6%95%B0%E7%BB%84%E4%B8%8D%E5%8F%AF%E5%8F%98/&quot;&gt;leetcode-303. 区域和检索 - 数组不可变&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011230004%20-%20%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%E7%9A%84%E5%8D%A1%E7%89%87/&quot;&gt;202011230004 - 如何写出容易理解的卡片&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 12:56:42&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-1137%E7%AC%AC%20N%20%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0/&quot;&gt;leetcode-1137第 N 个泰波那契数&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404082353%20%E5%8F%96%E4%B9%8E%E5%85%B6%E4%B8%8A%E5%BE%97%E4%B9%8E%E5%85%B6%E4%B8%AD/&quot;&gt;202404082353 取乎其上得乎其中&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-13 12:55:34&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-1014.%20%E6%9C%80%E4%BD%B3%E8%A7%82%E5%85%89%E7%BB%84%E5%90%88/&quot;&gt;leetcode-1014. 最佳观光组合&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/0000%20publish/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6/&quot;&gt;CDN 带宽控制&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-12 21:06:38&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/72.%20%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB/&quot;&gt;72. 编辑距离&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CPU%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E6%96%AD/&quot;&gt;计算机中断&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-12 20:59:21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python/python-%E4%B8%BA%E4%BB%80%E4%B9%88%20%7B%7D%20%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9F/&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-02-11 22:48:01&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -8395,22 +8419,6 @@ open /Applications/Obsidian.app
 
             </content>
             <link href="https://wudanyang6.github.io//000 inbox/202506172251 mac 强制程序使用代理/" />
-        </entry>
-        <entry>
-            <title>
-                202506171613 vscode 如何粘贴文件不覆盖
-                
-            </title>
-            <updated>2025-06-17T15:07:30.000Z</updated>
-            <id>https://wudanyang6.github.io//000 inbox/202506171613 vscode 如何粘贴文件不覆盖/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202506171613-vscode&quot; tabindex=&quot;-1&quot;&gt;202506171613 vscode 如何粘贴文件不覆盖&lt;/h1&gt;
-&lt;p&gt;vscode 配置， Incremental Naming   选 default =&amp;gt; simple&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020250617230716.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;重复文件自动命名&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//000 inbox/202506171613 vscode 如何粘贴文件不覆盖/" />
         </entry>
         <entry>
             <title>
