@@ -3,7 +3,7 @@
     <title>宁静之森</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-06-17T14:54:39Z</updated>
+    <updated>2025-06-17T15:08:33Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -5183,11 +5183,7 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
             <id>https://wudanyang6.github.io//card/obsidian/dg-publish=true的标签云/</id>
             <content type="html">
                 &lt;h1 id=&quot;dg-publish-true&quot; tabindex=&quot;-1&quot;&gt;dg-publish=true的标签云&lt;/h1&gt;
-&lt;span style=&quot;font-size:16px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;&lt;/strong&gt; (3)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%95%88%E7%8E%87&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;效率&lt;/strong&gt; (1)
                     &lt;/a&gt;
@@ -5246,6 +5242,10 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:chatgpt&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;chatgpt&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:16px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;&lt;/strong&gt; (3)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:kafka&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -6996,6 +6996,26 @@ func main() {
         </entry>
         <entry>
             <title>
+                202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理
+                
+            </title>
+            <updated>2025-06-06T05:08:59.000Z</updated>
+            <id>https://wudanyang6.github.io//card/go/202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202506061308-vscode-there-is-no-formatter-for-go-files-installed&quot; tabindex=&quot;-1&quot;&gt;202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;There is no formatter for &#39;go&#39; files installed.&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+What is the output of &lt;code&gt;go version&lt;/code&gt; and &lt;code&gt;go env&lt;/code&gt;? Also, can you run the &lt;code&gt;Go: Locate Configured Go Tools&lt;/code&gt; command from the Command Palette (Ctrl+Shift+P) and share its output?&lt;br /&gt;
+The &amp;quot;Error: TypeError: Cannot read property &#39;lt&#39; of undefined&amp;quot; error might indicate that the extension is not finding your go version.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/golang/vscode-go/issues/633&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;There is no formatter for &#39;go&#39; files installed. · Issue &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#633&quot;&gt;#633&lt;/a&gt; · golang/vscode-go&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/go/202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理/" />
+        </entry>
+        <entry>
+            <title>
                 202407251323  go flag 别在init中使用
                 
             </title>
@@ -8173,7 +8193,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/202506172251/&quot;&gt;202506172251&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/202506172251%20mac%20%E5%BC%BA%E5%88%B6%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/&quot;&gt;202506172251 mac 强制程序使用代理&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-06-17 22:51:58&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -8268,8 +8288,12 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/202506172251/&quot;&gt;202506172251&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:53:49&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/202506171613%20vscode%20%E5%A6%82%E4%BD%95%E7%B2%98%E8%B4%B4%E6%96%87%E4%BB%B6%E4%B8%8D%E8%A6%86%E7%9B%96/&quot;&gt;202506171613 vscode 如何粘贴文件不覆盖&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-06-17 23:07:43&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/202506172251%20mac%20%E5%BC%BA%E5%88%B6%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/&quot;&gt;202506172251 mac 强制程序使用代理&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-06-17 22:56:11&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/journal/2024-10-11/&quot;&gt;2024-10-11&lt;/a&gt;&lt;/td&gt;
@@ -8347,10 +8371,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/72.%20%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB/&quot;&gt;72. 编辑距离&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/56.%20%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/&quot;&gt;56. 合并区间&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-06-17 22:26:36&lt;/td&gt;
-&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -8359,13 +8379,13 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
         </entry>
         <entry>
             <title>
-                202506172251
+                202506172251 mac 强制程序使用代理
                 
             </title>
-            <updated>2025-06-17T14:53:26.000Z</updated>
-            <id>https://wudanyang6.github.io//000 inbox/202506172251/</id>
+            <updated>2025-06-17T14:53:59.000Z</updated>
+            <id>https://wudanyang6.github.io//000 inbox/202506172251 mac 强制程序使用代理/</id>
             <content type="html">
-                &lt;h1 id=&quot;202506172251&quot; tabindex=&quot;-1&quot;&gt;202506172251&lt;/h1&gt;
+                &lt;h1 id=&quot;202506172251-mac&quot; tabindex=&quot;-1&quot;&gt;202506172251 mac 强制程序使用代理&lt;/h1&gt;
 &lt;p&gt;不知道为什么有时候 obsidian 无法使用到代理&lt;/p&gt;
 &lt;p&gt;可以在命令行启动&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
@@ -8374,27 +8394,23 @@ open /Applications/Obsidian.app
 &lt;p&gt;然后就可以使用到代理了&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//000 inbox/202506172251/" />
+            <link href="https://wudanyang6.github.io//000 inbox/202506172251 mac 强制程序使用代理/" />
         </entry>
         <entry>
             <title>
-                202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理
+                202506171613 vscode 如何粘贴文件不覆盖
                 
             </title>
-            <updated>2025-06-06T05:08:59.000Z</updated>
-            <id>https://wudanyang6.github.io//000 inbox/202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理/</id>
+            <updated>2025-06-17T15:07:30.000Z</updated>
+            <id>https://wudanyang6.github.io//000 inbox/202506171613 vscode 如何粘贴文件不覆盖/</id>
             <content type="html">
-                &lt;h1 id=&quot;202506061308-vscode-there-is-no-formatter-for-go-files-installed&quot; tabindex=&quot;-1&quot;&gt;202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理&lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;There is no formatter for &#39;go&#39; files installed.&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]&lt;br /&gt;
-What is the output of &lt;code&gt;go version&lt;/code&gt; and &lt;code&gt;go env&lt;/code&gt;? Also, can you run the &lt;code&gt;Go: Locate Configured Go Tools&lt;/code&gt; command from the Command Palette (Ctrl+Shift+P) and share its output?&lt;br /&gt;
-The &amp;quot;Error: TypeError: Cannot read property &#39;lt&#39; of undefined&amp;quot; error might indicate that the extension is not finding your go version.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/golang/vscode-go/issues/633&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;There is no formatter for &#39;go&#39; files installed. · Issue &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#633&quot;&gt;#633&lt;/a&gt; · golang/vscode-go&lt;/a&gt;&lt;/p&gt;
+                &lt;h1 id=&quot;202506171613-vscode&quot; tabindex=&quot;-1&quot;&gt;202506171613 vscode 如何粘贴文件不覆盖&lt;/h1&gt;
+&lt;p&gt;vscode 配置， Incremental Naming   选 default =&amp;gt; simple&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang6.github.io/img/user/attachs/Pasted%20image%2020250617230716.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;重复文件自动命名&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang6.github.io//000 inbox/202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理/" />
+            <link href="https://wudanyang6.github.io//000 inbox/202506171613 vscode 如何粘贴文件不覆盖/" />
         </entry>
         <entry>
             <title>
