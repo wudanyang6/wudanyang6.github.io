@@ -3,7 +3,7 @@
     <title>宁静之森</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-06-19T06:35:44Z</updated>
+    <updated>2025-06-19T07:19:58Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -3831,6 +3831,25 @@ date_translator = require(&amp;quot;date&amp;quot;)
 
             </content>
             <link href="https://wudanyang6.github.io//card/工具/mac/mac-合上盖子不断网/" />
+        </entry>
+        <entry>
+            <title>
+                202506172251 mac 强制程序使用代理
+                
+            </title>
+            <updated>2025-06-17T14:53:59.000Z</updated>
+            <id>https://wudanyang6.github.io//card/工具/mac/202506172251 mac 强制程序使用代理/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202506172251-mac&quot; tabindex=&quot;-1&quot;&gt;202506172251 mac 强制程序使用代理&lt;/h1&gt;
+&lt;p&gt;不知道为什么有时候 obsidian 无法使用到代理&lt;/p&gt;
+&lt;p&gt;可以在命令行启动&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+open /Applications/Obsidian.app
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后就可以使用到代理了&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/工具/mac/202506172251 mac 强制程序使用代理/" />
         </entry>
         <entry>
             <title>
@@ -8285,7 +8304,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/202506172251%20mac%20%E5%BC%BA%E5%88%B6%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/&quot;&gt;202506172251 mac 强制程序使用代理&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mac/202506172251%20mac%20%E5%BC%BA%E5%88%B6%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/&quot;&gt;202506172251 mac 强制程序使用代理&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-06-17 22:51:58&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -8392,7 +8411,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;td&gt;2025-06-17 23:07:42&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/000%20inbox/202506172251%20mac%20%E5%BC%BA%E5%88%B6%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/&quot;&gt;202506172251 mac 强制程序使用代理&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E5%B7%A5%E5%85%B7/mac/202506172251%20mac%20%E5%BC%BA%E5%88%B6%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/&quot;&gt;202506172251 mac 强制程序使用代理&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-06-17 22:53:59&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -8476,25 +8495,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
             </content>
             <link href="https://wudanyang6.github.io//" />
-        </entry>
-        <entry>
-            <title>
-                202506172251 mac 强制程序使用代理
-                
-            </title>
-            <updated>2025-06-17T14:53:59.000Z</updated>
-            <id>https://wudanyang6.github.io//000 inbox/202506172251 mac 强制程序使用代理/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202506172251-mac&quot; tabindex=&quot;-1&quot;&gt;202506172251 mac 强制程序使用代理&lt;/h1&gt;
-&lt;p&gt;不知道为什么有时候 obsidian 无法使用到代理&lt;/p&gt;
-&lt;p&gt;可以在命令行启动&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
-open /Applications/Obsidian.app
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;然后就可以使用到代理了&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang6.github.io//000 inbox/202506172251 mac 强制程序使用代理/" />
         </entry>
         <entry>
             <title>
