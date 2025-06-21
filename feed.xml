@@ -3,7 +3,7 @@
     <title>宁静之森</title>
     <link href="https://wudanyang6.github.io//feed.xml" rel="self" />
     <link href="https://wudanyang6.github.io/" />
-    <updated>2025-06-19T07:19:58Z</updated>
+    <updated>2025-06-21T15:18:08Z</updated>
     <id>https://wudanyang6.github.io/</id>
         <entry>
             <title>
@@ -7606,6 +7606,21 @@ done &amp;lt; file.txt
         </entry>
         <entry>
             <title>
+                linux-什么是anon_inode
+                
+            </title>
+            <updated>2025-06-21T15:17:24.000Z</updated>
+            <id>https://wudanyang6.github.io//card/Linux/linux-什么是anon_inode/</id>
+            <content type="html">
+                &lt;p&gt;无法和文件系统的 inode 关联上的文件描述符，在 &lt;code&gt;/proc&lt;/code&gt; 系统中统称为 anon_inode&lt;/p&gt;
+&lt;h1 id=&quot;linux-anon-inode&quot; tabindex=&quot;-1&quot;&gt;linux-什么是anon_inode&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://unix.stackexchange.com/questions/463548/what-is-anon-inode-in-the-output-of-ls-l-proc-pid-fd&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://unix.stackexchange.com/questions/463548/what-is-anon-inode-in-the-output-of-ls-l-proc-pid-fd&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang6.github.io//card/Linux/linux-什么是anon_inode/" />
+        </entry>
+        <entry>
+            <title>
                 linux-wrk
                 
             </title>
@@ -8403,6 +8418,10 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/Linux/linux-%E4%BB%80%E4%B9%88%E6%98%AFanon_inode/&quot;&gt;linux-什么是anon_inode&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2025-06-21 23:17:24&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/python/python%20fastapi%20%E9%BB%98%E8%AE%A4%E7%BA%BF%E7%A8%8B%E6%95%B0/&quot;&gt;python fastapi 默认线程数&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-06-19 13:34:56&lt;/td&gt;
 &lt;/tr&gt;
@@ -8485,10 +8504,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/%E6%80%9D%E8%80%83/202404082353%20%E5%8F%96%E4%B9%8E%E5%85%B6%E4%B8%8A%E5%BE%97%E4%B9%8E%E5%85%B6%E4%B8%AD/&quot;&gt;202404082353 取乎其上得乎其中&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2025-02-13 12:55:34&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang6.github.io/card/0000%20publish/CDN%20%E5%B8%A6%E5%AE%BD%E6%8E%A7%E5%88%B6/&quot;&gt;CDN 带宽控制&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2025-02-12 21:06:38&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
