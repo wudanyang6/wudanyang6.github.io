@@ -1,0 +1,44 @@
+name: Restrict Issue Creation to Owner Only
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  check-issue-author:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    
+    steps:
+      - name: Check if author is repository owner
+        id: check-owner
+        run: |
+          ISSUE_AUTHOR="${{ github.event.issue.user.login }}"
+          REPO_OWNER="${{ github.repository_owner }}"
+          echo "Issue author: $ISSUE_AUTHOR"
+          echo "Repository owner: $REPO_OWNER"
+          if [ "$ISSUE_AUTHOR" != "$REPO_OWNER" ]; then
+            echo "is_owner=false" >> $GITHUB_OUTPUT
+          else
+            echo "is_owner=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Close issue if not from owner
+        if: steps.check-owner.outputs.is_owner == 'false'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: '❌ 对不起，仅允许仓库所有者创建 Issues。\n\nSorry, only the repository owner can create issues.\n\n此 Issue 已被自动关闭。'
+            });
