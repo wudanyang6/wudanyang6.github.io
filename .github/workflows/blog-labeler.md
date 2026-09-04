@@ -8,7 +8,17 @@ permissions:
   issues: read
   pull-requests: read
 
-network: defaults
+engine:
+  id: codex
+  model: deepseek-v4-flash
+  env:
+    OPENAI_BASE_URL: "https://api.deepseek.com/v1"
+    OPENAI_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+
+network:
+  allowed:
+    - defaults
+    - api.deepseek.com
 
 safe-outputs:
   add-labels:
