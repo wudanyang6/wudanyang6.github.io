@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 给 issue 打技术标签：读 issue -> pi 单轮调用 DeepSeek 分类 -> create-if-missing + add-label
+# 给 issue 打技术标签 + 内容审核：读 issue -> pi 单轮分类审核 -> 打标签 + 问题评论
 # 依赖 env: GH_TOKEN, DEEPSEEK_API_KEY, ISSUE_NUMBER, GITHUB_REPOSITORY, MODEL
 # 依赖命令: gh, jq, pi（npm install -g @earendil-works/pi-coding-agent）
 set -euo pipefail
@@ -28,30 +28,30 @@ existing_labels=$(gh label list --repo "$repo" --limit 200 --json name --jq '.[]
 # 3. 拼 prompt：静态规则文件 + 动态上下文（printf %s 原样输出，防内容转义）
 prompt_file=$(mktemp)
 {
-  cat "$script_dir/label-prompt.md"
+  cat "$script_dir/label-prompt.md" "$script_dir/review-prompt.md"
   printf '\nExisting labels in this repository (prefer these when they fit):\n\n%s\n\n' "$existing_labels"
   printf 'Issue title: %s\n\nIssue body:\n\n%s\n' "$title" "$body"
 } > "$prompt_file"
 
-# 4. pi 单轮调用完成分类（-p 打印模式输出回复后退出，-na 跳过项目信任）
+# 4. pi 单轮调用完成分类 + 审核（-p 打印模式输出回复后退出，-na 跳过项目信任）
 output=$(pi -p -na --model "$MODEL" "$(cat "$prompt_file")")
 echo "pi output: $output"
 
-# 5. 解析标签列表，三级宽容提取：纯 JSON -> 剥 ``` 围栏 -> 单行提取 {.*}
+# 5. 解析结果，三级宽容提取：纯 JSON -> 剥 ``` 围栏 -> 单行提取 {.*}
 #    模型即使被要求 JSON only 也可能带说明文字，全部失败才报错，红叉可查
-extract_labels() {
+extract_json() {
   local text="$1"
-  jq -er '.labels[]?' <<<"$text" 2>/dev/null && return 0
-  jq -er '.labels[]?' <<<"$(sed '/^```/d' <<<"$text")" 2>/dev/null && return 0
-  jq -er '.labels[]?' <<<"$(grep -o '{.*}' <<<"$text" | head -1)" 2>/dev/null && return 0
+  jq -er '.' <<<"$text" 2>/dev/null && return 0
+  jq -er '.' <<<"$(sed '/^```/d' <<<"$text")" 2>/dev/null && return 0
+  jq -er '.' <<<"$(grep -o '{.*}' <<<"$text")" 2>/dev/null && return 0
   return 1
 }
-labels=$(extract_labels "$output") || {
-  echo "::error::Failed to parse labels from pi output"
+content=$(extract_json "$output") || {
+  echo "::error::Failed to parse result from pi output"
   exit 1
 }
 
-# 6. 逐个打标签：规整格式、create-if-missing、上限 5 个
+# 6. 打标签：规整格式、create-if-missing、上限 5 个
 added=0
 while IFS= read -r label && [ "$added" -lt 5 ]; do
   # 小写、空格转连字符、只留合法字符
@@ -64,6 +64,58 @@ while IFS= read -r label && [ "$added" -lt 5 ]; do
   gh issue edit "$issue_number" --repo "$repo" --add-label "$label"
   echo "Added label: $label"
   added=$((added + 1))
-done <<<"$labels"
+done < <(jq -r '.labels[]?' <<<"$content")
 
 echo "Done: added $added label(s) to issue #$issue_number"
+
+# 7. 审核结果：有问题时评论告知；评论带规范化标记，相同结论只评一次
+#    （issue 反复编辑触发多次运行，避免重复刷屏）
+review_json=$(jq -c '.review // empty' <<<"$content")
+if [ -z "$review_json" ] || [ "$(jq -r '.status' <<<"$review_json")" != "flagged" ]; then
+  echo "Review: pass, no comment needed"
+  exit 0
+fi
+
+# 查重标记：规范化 problems 的 JSON，作为 HTML 注释藏在评论末尾
+marker="issue-review:$(jq -cS '.problems' <<<"$review_json")"
+
+existing_comments=$(gh issue view "$issue_number" --repo "$repo" --json comments --jq '[.comments[].body] | join("\n")')
+if grep -qF "<!-- $marker -->" <<<"$existing_comments"; then
+  echo "Review: unchanged problems, skip duplicate comment"
+  exit 0
+fi
+
+category_cn() {
+  case "$1" in
+    secrets) echo "密钥泄露" ;;
+    security) echo "安全性问题" ;;
+    inappropriate-wording) echo "措辞不当" ;;
+    political) echo "政治敏感" ;;
+    porn) echo "涉黄" ;;
+    gambling) echo "涉赌" ;;
+    *) echo "$1" ;;
+  esac
+}
+
+comment_file=$(mktemp)
+{
+  echo "⚠️ **内容审核发现以下问题**（自动审核，[Issue Labeler](https://github.com/wudanyang6/wiki/actions/workflows/issue-labeler.yml)）"
+  echo ""
+  n=0
+  while IFS= read -r problem; do
+    n=$((n + 1))
+    category=$(jq -r '.category' <<<"$problem")
+    quote=$(jq -r '.quote' <<<"$problem")
+    reason=$(jq -r '.reason' <<<"$problem")
+    suggestion=$(jq -r '.suggestion' <<<"$problem")
+    echo "$n. **$(category_cn "$category")**（${category}）"
+    echo "   > $quote"
+    echo "   - 原因：$reason"
+    echo "   - 建议：$suggestion"
+    echo ""
+  done < <(jq -c '.problems[]?' <<<"$review_json")
+  echo "<!-- $marker -->"
+} > "$comment_file"
+
+gh issue comment "$issue_number" --repo "$repo" --body-file "$comment_file"
+echo "Review: commented with $(jq '.problems | length' <<<"$review_json") problem(s)"
