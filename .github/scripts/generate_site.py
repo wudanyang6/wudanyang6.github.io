@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-"""从 open issues 生成静态博客站点。
+"""从 open issues 生成博客索引页与 RSS。
 
-产物（写入 ./public/）：
-  index.html          文章列表
-  posts/<n>.html      每篇文章全文
-  feed.xml            RSS 2.0（含全文）
-  sitemap.xml         指向站内全部页面
-  robots.txt          指向 sitemap
+GitHub issues 是唯一内容源：文章正文、评论都在 GitHub 上，
+本脚本只生成两个文件——
+
+  index.html   文章列表（链接直接指向 GitHub issues）
+  feed.xml     RSS 2.0（全文输出，标题链接指向 GitHub issues）
 
 依赖 env：GH_TOKEN、REPO（默认 wudanyang6/wiki）、BASE_URL（Pages 地址）。
 可选 env：GOOGLE_SITE_VERIFICATION（Search Console 验证码，注入 meta 标签）。
@@ -29,21 +28,9 @@ SITE_DESC = "Personal notes on engineering and everyday life"
 OUT = Path(os.environ.get("OUT_DIR", "public"))
 VERIFICATION = os.environ.get("GOOGLE_SITE_VERIFICATION", "")
 
-CSS = """
-:root { color-scheme: light dark; }
-body { font-family: -apple-system, "Segoe UI", Roboto, "PingFang SC", sans-serif;
-       max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; }
-a { color: inherit; }
-h1 a, h2 a { text-decoration: none; }
-.meta { color: gray; font-size: 0.9rem; }
-.tag { background: color-mix(in srgb, currentColor 12%, transparent);
-       border-radius: 1em; padding: 0.1em 0.7em; font-size: 0.85rem; }
-pre { overflow-x: auto; padding: 1em; border-radius: 0.5em;
-      background: rgba(127,127,127,0.12); }
-code { font-size: 0.9em; }
-img { max-width: 100%; }
-footer { margin-top: 3rem; color: gray; font-size: 0.85rem; }
-"""
+
+def issue_url(n):
+    return f"https://github.com/{REPO}/issues/{n}"
 
 
 def fetch_issues():
@@ -76,7 +63,7 @@ def excerpt(body, limit=200):
     return text[:limit] + ("…" if len(text) > limit else "")
 
 
-def head(title, extra=""):
+def head(title):
     meta = (f'<meta name="google-site-verification" content="{VERIFICATION}" />\n'
             if VERIFICATION else "")
     return f"""<!DOCTYPE html>
@@ -84,36 +71,28 @@ def head(title, extra=""):
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-{meta}{extra}<title>{html.escape(title)}</title>
-<style>{CSS}</style>
+{meta}<title>{html.escape(title)}</title>
+<style>
+:root {{ color-scheme: light dark; }}
+body {{ font-family: -apple-system, "Segoe UI", Roboto, "PingFang SC", sans-serif;
+       max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; }}
+a {{ color: inherit; }}
+h1 a {{ text-decoration: none; }}
+.meta {{ color: gray; font-size: 0.9rem; }}
+.tag {{ background: rgba(127,127,127,0.15);
+       border-radius: 1em; padding: 0.1em 0.7em; font-size: 0.85rem; }}
+footer {{ margin-top: 3rem; color: gray; font-size: 0.85rem; }}
+</style>
 </head>
 <body>
 """
 
 
-def render_post(issue):
-    """单篇文章页。"""
-    n, title = issue["number"], issue["title"]
-    created = parse_time(issue["createdAt"])
-    tags = " ".join(f'<span class="tag">{html.escape(t)}</span>' for t in
-                    sorted(l["name"] for l in issue["labels"]))
-    github_link = f"https://github.com/{REPO}/issues/{n}"
-    return f"""{head(title)}<article>
-<h1>{html.escape(title)}</h1>
-<p class="meta">{created.strftime('%Y-%m-%d')} &nbsp; {tags}</p>
-{md_to_html(issue['body'])}
-</article>
-<footer>原文与评论：<a href="{github_link}">issue #{n}</a></footer>
-</body>
-</html>
-"""
-
-
 def render_index(issues):
-    """文章列表页。"""
+    """文章列表页，链接直接指向 GitHub issues。"""
     items = "\n".join(
         f"""<li>
-<a href="posts/{i['number']}.html">{html.escape(i['title'])}</a>
+<a href="{issue_url(i['number'])}">{html.escape(i['title'])}</a>
 <span class="meta">{parse_time(i['createdAt']).strftime('%Y-%m-%d')}</span>
 </li>"""
         for i in issues
@@ -123,7 +102,7 @@ def render_index(issues):
 <ul>
 {items}
 </ul>
-<footer>由 <a href="https://github.com/{REPO}">{REPO}</a> 的 issues 自动生成</footer>
+<footer>由 <a href="https://github.com/{REPO}">{REPO}</a> 的 issues 自动生成，正文与评论均在 GitHub</footer>
 </body>
 </html>
 """
@@ -134,13 +113,13 @@ def xml_escape(text):
 
 
 def render_feed(issues):
-    """RSS 2.0，含全文（content:encoded）。"""
+    """RSS 2.0：标题链接指向 GitHub issues，正文全文内嵌。"""
     now = format_datetime(datetime.now(timezone.utc))
     items = "\n".join(
         f"""    <item>
       <title>{xml_escape(i['title'])}</title>
-      <link>{BASE_URL}/posts/{i['number']}.html</link>
-      <guid isPermaLink="true">{BASE_URL}/posts/{i['number']}.html</guid>
+      <link>{issue_url(i['number'])}</link>
+      <guid isPermaLink="true">{issue_url(i['number'])}</guid>
       <pubDate>{format_datetime(parse_time(i['createdAt']))}</pubDate>
       <description>{xml_escape(excerpt(i['body']))}</description>
       <content:encoded><![CDATA[{md_to_html(i['body'])}]]></content:encoded>
@@ -162,43 +141,16 @@ def render_feed(issues):
 """
 
 
-def render_sitemap(issues):
-    """sitemap：首页 + 全部文章页。"""
-    urls = [f"""  <url>
-    <loc>{BASE_URL}/</loc>
-    <changefreq>daily</changefreq>
-  </url>"""]
-    urls += [
-        f"""  <url>
-    <loc>{BASE_URL}/posts/{i['number']}.html</loc>
-    <lastmod>{parse_time(i['updatedAt']).date()}</lastmod>
-  </url>"
-""".rstrip('"\n ')
-        for i in issues
-    ]
-    return f"""<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{chr(10).join(urls)}
-</urlset>
-"""
-
-
 def main():
     if "GH_TOKEN" not in os.environ:
         sys.exit("GH_TOKEN is required")
     issues = fetch_issues()
     print(f"fetched {len(issues)} open issue(s) from {REPO}")
 
-    (OUT / "posts").mkdir(parents=True, exist_ok=True)
-    for i in issues:
-        (OUT / "posts" / f"{i['number']}.html").write_text(render_post(i), encoding="utf-8")
+    OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "index.html").write_text(render_index(issues), encoding="utf-8")
     (OUT / "feed.xml").write_text(render_feed(issues), encoding="utf-8")
-    (OUT / "sitemap.xml").write_text(render_sitemap(issues), encoding="utf-8")
-    (OUT / "robots.txt").write_text(
-        f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8"
-    )
-    print(f"site written to {OUT}/")
+    print(f"index + feed written to {OUT}/")
 
 
 if __name__ == "__main__":
