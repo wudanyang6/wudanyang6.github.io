@@ -54,8 +54,9 @@ content=$(extract_json "$output") || {
 # 6. 打标签：规整格式、create-if-missing、上限 5 个
 added=0
 while IFS= read -r label && [ "$added" -lt 5 ]; do
-  # 小写、空格转连字符、只留合法字符
-  label=$(tr '[:upper:] ' '[:lower:]-' <<<"$label" | tr -cd 'a-z0-9-')
+  # 规整：ASCII 转小写、空白转连字符、去首尾连字符
+  # 用 jq 而非 tr：tr 是字节级操作会删掉中文等非 ASCII 字符
+  label=$(jq -rR 'ascii_downcase | gsub("\\s+"; "-") | gsub("^-+|-+$"; "")' <<<"$label")
   [ -z "$label" ] && continue
 
   if ! grep -qx "$label" <<<"$existing_labels"; then
