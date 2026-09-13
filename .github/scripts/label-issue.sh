@@ -70,8 +70,10 @@ echo "Done: added $added label(s) to issue #$issue_number"
 
 # 7. 审核结果：有问题时评论告知；评论带规范化标记，相同结论只评一次
 #    （issue 反复编辑触发多次运行，避免重复刷屏）
+#    判断依据是 problems 数量而非 status 字符串——模型对枚举值的输出不完全可靠
 review_json=$(jq -c '.review // empty' <<<"$content")
-if [ -z "$review_json" ] || [ "$(jq -r '.status' <<<"$review_json")" != "flagged" ]; then
+problem_count=$(jq -r '.problems // [] | length' <<<"$review_json" 2>/dev/null || echo 0)
+if [ "${problem_count:-0}" -eq 0 ]; then
   echo "Review: pass, no comment needed"
   exit 0
 fi
