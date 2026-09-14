@@ -1,7 +1,10 @@
-# Hugo 站点的生成产物与运行时目录（content 每次由 issues 全量重建）
-site/content/
+# Hugo 站点的生成产物与运行时目录（posts 每次由 issues 全量重建，
+# traffic.md 是页面源文件，随仓库走）
+site/content/*
+!site/content/traffic.md
+!site/content/about.md
 site/public/
 site/resources/
+site/data/
 site/layouts/partials/verification.html
-site/static/traffic.html
 site/.hugo_build.lock
