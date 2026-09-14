@@ -27,17 +27,24 @@ jobs:
       - id: pages
         uses: actions/configure-pages@v5
 
-      - name: Generate site from open issues
+      - name: Generate Hugo content from open issues
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BASE_URL: ${{ steps.pages.outputs.base_url }}
+          GH_TOKEN: ${{ secrets.TRAFFIC_TOKEN || secrets.GITHUB_TOKEN }}
           GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
         run: |
-          pip install markdown
+          pip3 install pyyaml
           # 采集失败不阻塞站点生成（traffic 页显示暂无数据）
           python3 .github/scripts/fetch_traffic.py \
             || echo "::warning::traffic fetch failed, site generated without fresh data"
-          python3 .github/scripts/generate_site.py
+          python3 .github/scripts/generate_content.py
+
+      - name: Build with Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: false
+
+      - run: hugo --source site --destination public
 
       - name: Commit traffic history
         run: |

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+{{ partial "verification.html" . }}
+{{ if .Params.externalURL }}
+<meta http-equiv="refresh" content="0; url={{ .Params.externalURL }}" />
+<link rel="canonical" href="{{ .Params.externalURL }}" />
+<meta name="robots" content="noindex" />
+{{ end }}
+<style>
+:root { color-scheme: light dark; }
+body { font-family: -apple-system, "Segoe UI", Roboto, "PingFang SC", sans-serif;
+       max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; }
+a { color: inherit; }
+h1 a { text-decoration: none; }
+.meta { color: gray; font-size: 0.9rem; }
+.tag { background: rgba(127,127,127,0.15);
+       border-radius: 1em; padding: 0.1em 0.7em; font-size: 0.85rem;
+       text-decoration: none; display: inline-block; margin: 0.2em; }
+footer { margin-top: 3rem; color: gray; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header>
+<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+<p class="meta">{{ .Site.Params.description }} ·
+  <a href="{{ "tags/" | relURL }}">标签</a> ·
+  <a href="{{ "feed.xml" | relURL }}">RSS</a> ·
+  <a href="{{ "traffic.html" | relURL }}">访问统计</a></p>
+</header>
+{{ block "main" . }}{{ end }}
+<footer>由 <a href="https://github.com/{{ .Site.Params.repo }}">issues</a> 自动生成，正文与评论均在 GitHub<br />
+<span id="busuanzi_container_site_pv" class="meta">本站总访问量 <span id="busuanzi_site_pv"></span> 次 · 总访客 <span id="busuanzi_site_uv"></span> 人</span></footer>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

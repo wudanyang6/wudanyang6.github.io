@@ -1,0 +1,5 @@
+# Hugo 站点的生成产物与运行时目录（content 每次由 issues 全量重建）
+site/content/
+site/public/
+site/resources/
+site/layouts/partials/verification.html

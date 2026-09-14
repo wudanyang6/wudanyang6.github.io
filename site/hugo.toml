@@ -1,0 +1,25 @@
+baseURL = "https://wudanyang6.github.io/wiki/"
+languageCode = "zh-CN"
+title = "wudanyang's wiki"
+description = "Personal notes on engineering and everyday life"
+disableKinds = ["section"]  # 站内无文章页，/posts/ section 列表页无意义
+
+[params]
+description = "Personal notes on engineering and everyday life"
+repo = "wudanyang6/wiki"
+
+# RSS 输出为 feed.xml（保持既有订阅地址）
+[outputFormats.RSS]
+baseName = "feed"
+
+[taxonomies]
+tag = "tags"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true  # 正文里偶尔有内嵌 HTML
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.typographer]
+# 关掉引号转 HTML 命名实体（&ldquo; 等）：RSS 是 XML，未定义实体会破坏良构
+enabled = false

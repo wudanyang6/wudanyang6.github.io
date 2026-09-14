@@ -1,0 +1,12 @@
+{{ define "main" }}
+<ul>
+{{ range .Site.RegularPages.ByDate.Reverse }}
+<li>
+<a href="{{ .Params.externalURL }}" rel="noopener">{{ .Title }}</a>
+<span class="meta">{{ .Date.Format "2006-01-02" }}</span>
+</li>
+{{ else }}
+<li class="meta">（还没有文章）</li>
+{{ end }}
+</ul>
+{{ end }}

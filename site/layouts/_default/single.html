@@ -1,0 +1,6 @@
+{{ define "main" }}
+<p>正文与评论在 GitHub，正在跳转：<a href="{{ .Params.externalURL }}" rel="noopener">{{ .Params.externalURL }}</a></p>
+<p class="meta">{{ .Title }} · {{ .Date.Format "2006-01-02" }}
+{{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</p>
+<p>{{ .Summary }}</p>
+{{ end }}
