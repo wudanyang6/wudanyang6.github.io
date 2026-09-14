@@ -5,8 +5,7 @@ build:
   list: false  # 静态页面，不进首页文章列表与 RSS
 ---
 
-<!-- TODO: 把这里替换成你的自我介绍 -->
+Hello，我是 wudanyang，一个普通人。
 
-Hello，我是 wudanyang。
-
-这里写自我介绍：在做什么、关注什么、这个 wiki 记录什么。
+- GitHub 主页：<https://github.com/wudanyang6>
+- 博客正文与评论都在 GitHub issues：<https://github.com/wudanyang6/wiki/issues>
