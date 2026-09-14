@@ -22,11 +22,15 @@ DATA = Path(os.environ.get("TRAFFIC_DATA") or REPO_ROOT / "traffic/history.json"
 
 
 def gh_api(endpoint):
-    result = subprocess.run(
-        ["gh", "api", f"repos/{REPO}/{endpoint}"],
-        check=True, capture_output=True, text=True,
-        env={**os.environ, "GH_TOKEN": os.environ["GH_TOKEN"]},
-    )
+    try:
+        result = subprocess.run(
+            ["gh", "api", f"repos/{REPO}/{endpoint}"],
+            check=True, capture_output=True, text=True,
+            env={**os.environ, "GH_TOKEN": os.environ["GH_TOKEN"]},
+        )
+    except subprocess.CalledProcessError as e:
+        # stderr 里有 HTTP 状态与错误 message，必须让它出现在 CI 日志里
+        sys.exit(f"gh api {endpoint} failed ({e.returncode}): {e.stderr.strip()}")
     return json.loads(result.stdout)
 
 
