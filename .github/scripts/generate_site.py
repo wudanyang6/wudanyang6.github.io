@@ -102,7 +102,9 @@ def render_index(issues):
 <ul>
 {items}
 </ul>
-<footer>由 <a href="https://github.com/{REPO}">{REPO}</a> 的 issues 自动生成，正文与评论均在 GitHub</footer>
+<footer>由 <a href="https://github.com/{REPO}">{REPO}</a> 的 issues 自动生成，正文与评论均在 GitHub<br/>
+<span id="busuanzi_container_site_pv" class="meta">本站总访问量 <span id="busuanzi_site_pv"></span> 次 · 总访客 <span id="busuanzi_site_uv"></span> 人</span></footer>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 </html>
 """
