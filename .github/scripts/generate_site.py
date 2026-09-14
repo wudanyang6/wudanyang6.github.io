@@ -13,6 +13,7 @@ GitHub issues 是唯一内容源：文章正文、评论都在 GitHub 上，
 import html
 import json
 import os
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -26,6 +27,9 @@ BASE_URL = os.environ.get("BASE_URL", "https://wudanyang6.github.io/wiki/").rstr
 SITE_TITLE = os.environ.get("SITE_TITLE", "wudanyang's wiki")
 SITE_DESC = "Personal notes on engineering and everyday life"
 OUT = Path(os.environ.get("OUT_DIR", "public"))
+# 数据文件相对脚本位置解析（.github/scripts/ -> 仓库根），不依赖运行时 cwd
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+TRAFFIC_DATA = Path(os.environ.get("TRAFFIC_DATA") or REPO_ROOT / "traffic/history.json")
 VERIFICATION = os.environ.get("GOOGLE_SITE_VERIFICATION", "")
 
 
@@ -82,6 +86,13 @@ h1 a {{ text-decoration: none; }}
 .tag {{ background: rgba(127,127,127,0.15);
        border-radius: 1em; padding: 0.1em 0.7em; font-size: 0.85rem; }}
 footer {{ margin-top: 3rem; color: gray; font-size: 0.85rem; }}
+.bars {{ display: flex; align-items: flex-end; gap: 2px; height: 120px; margin: 1rem 0; }}
+.bar {{ flex: 1; min-height: 2px; background: rgba(127,127,127,0.4);
+       border-radius: 2px 2px 0 0; }}
+.bar:hover {{ background: rgba(127,127,127,0.7); }}
+table {{ border-collapse: collapse; width: 100%; margin: 1rem 0; }}
+td, th {{ padding: 0.3rem 0.6rem; text-align: left; border-bottom: 1px solid rgba(127,127,127,0.25); }}
+td.num, th.num {{ text-align: right; }}
 </style>
 </head>
 <body>
@@ -98,7 +109,7 @@ def render_index(issues):
         for i in issues
     )
     return f"""{head(SITE_TITLE)}<h1><a href="./">{SITE_TITLE}</a></h1>
-<p class="meta">{SITE_DESC} · <a href="feed.xml">RSS</a></p>
+<p class="meta">{SITE_DESC} · <a href="feed.xml">RSS</a> · <a href="traffic.html">访问统计</a></p>
 <ul>
 {items}
 </ul>
@@ -143,6 +154,70 @@ def render_feed(issues):
 """
 
 
+def link_path(path):
+    """热门路径转链接：issue 页链接化，其余保持文本。"""
+    m = re.search(r"issues/(\d+)", path)
+    if m:
+        n = m.group(1)
+        return f'<a href="{issue_url(n)}">{html.escape(path)}</a>'
+    return html.escape(path)
+
+
+def render_traffic(history):
+    """访问统计报告页。
+
+    数据口径：
+    - 每日 views/uniques —— 自己累积的历史序列（首次采集日起）
+    - 热门路径/来源 —— GitHub Traffic 当前快照（仅近 14 天）
+    """
+    days = history.get("days", [])
+    if not days:
+        body = "<p class='meta'>暂无访问数据，等待第一次采集。</p>"
+    else:
+        total_views = sum(d["views"] for d in days)
+        total_uniques = sum(d["uniques"] for d in days)
+        updated = history.get("updated", "")[:19].replace("T", " ")
+        recent = days[-30:]
+        peak = max((d["views"] for d in recent), default=1) or 1
+        bars = "\n".join(
+            f'<div class="bar" style="height:{max(2, round(d["views"] * 100 / peak))}%"'
+            f' title="{d["date"]}: {d["views"]} views / {d["uniques"]} uniques"></div>'
+            for d in recent
+        )
+        rows = "\n".join(
+            f"<tr><td>{link_path(p['path'])}</td><td>{html.escape(p.get('title') or '')}"
+            f"</td><td class='num'>{p['count']}</td><td class='num'>{p['uniques']}</td></tr>"
+            for p in history.get("paths", [])
+        )
+        referrers = " · ".join(
+            f"{html.escape(r['referrer'])} {r['count']}" for r in history.get("referrers", [])
+        )
+        body = f"""
+<p class="meta">累计浏览 {total_views} 次 · 独立访客 {total_uniques} 人 · 更新于 {updated} UTC</p>
+<h2>每日浏览（最近 30 天，悬停看明细）</h2>
+<div class="bars">
+{bars}
+</div>
+<p class="meta">{recent[0]['date']} ~ {recent[-1]['date']}</p>
+<h2>热门内容（GitHub 近 14 天快照）</h2>
+<table>
+<tr><th>路径</th><th>标题</th><th class="num">浏览</th><th class="num">访客</th></tr>
+{rows}
+</table>
+<h2>来源（近 14 天）</h2>
+<p class="meta">{referrers or '（无）'}</p>
+<p class="meta">注：每日趋势自首次采集日起累积；热门内容为 GitHub Traffic API 的
+14 天滑动窗口，不含更早历史。文章页在 github.com 上，由 GitHub 统计；
+Pages 首页另由不蒜子计数。</p>
+"""
+    return f"""{head("访问统计 · " + SITE_TITLE)}<h1>访问统计</h1>
+<p class="meta"><a href="./">← {SITE_TITLE}</a></p>
+{body}
+</body>
+</html>
+"""
+
+
 def main():
     if "GH_TOKEN" not in os.environ:
         sys.exit("GH_TOKEN is required")
@@ -152,7 +227,10 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "index.html").write_text(render_index(issues), encoding="utf-8")
     (OUT / "feed.xml").write_text(render_feed(issues), encoding="utf-8")
-    print(f"index + feed written to {OUT}/")
+    history = (json.loads(TRAFFIC_DATA.read_text(encoding="utf-8"))
+               if TRAFFIC_DATA.exists() else {})
+    (OUT / "traffic.html").write_text(render_traffic(history), encoding="utf-8")
+    print(f"index + feed + traffic written to {OUT}/")
 
 
 if __name__ == "__main__":

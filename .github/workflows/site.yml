@@ -9,7 +9,7 @@ on:
 
 permissions:
   issues: read
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -34,7 +34,22 @@ jobs:
           GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
         run: |
           pip install markdown
+          # 采集失败不阻塞站点生成（traffic 页显示暂无数据）
+          python3 .github/scripts/fetch_traffic.py \
+            || echo "::warning::traffic fetch failed, site generated without fresh data"
           python3 .github/scripts/generate_site.py
+
+      - name: Commit traffic history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add traffic/
+          if git diff --cached --quiet; then
+            echo "no traffic change to commit"
+          else
+            git commit -m "chore: update traffic history [skip ci]"
+            git push
+          fi
 
       - uses: actions/upload-pages-artifact@v3
         with:
