@@ -1,7 +1,7 @@
 ---
 title: 关于
 layout: about
-_build:
+build:
   list: false  # 静态页面，不进首页文章列表与 RSS
 ---
 
