@@ -3,3 +3,5 @@ site/content/
 site/public/
 site/resources/
 site/layouts/partials/verification.html
+site/static/traffic.html
+site/.hugo_build.lock
