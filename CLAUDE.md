@@ -4,13 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 仓库定位
 
-个人博客（wudanyang6/wiki）：**文章本体是 GitHub issues**——open 即发布、关闭即下线。CI 把 open issues 转成 Hugo 站点并发布到 GitHub Pages。没有测试、没有 lint，不要虚构。
+个人博客（wudanyang6/wudanyang6.github.io，即 user-site 仓库名，Pages 发布在 `https://wudanyang6.github.io/` 根路径）：**文章本体是 GitHub issues**——open 即发布、关闭即下线。CI 把 open issues 转成 Hugo 站点并发布到 GitHub Pages。没有测试、没有 lint，不要虚构。
 
 ## 常用命令
 
 ```bash
 # 从 issues 全量重建站点内容（先清空旧 posts，需 gh CLI + GH_TOKEN + pyyaml）
-GH_TOKEN=<token> REPO=wudanyang6/wiki python3 .github/scripts/generate_content.py
+GH_TOKEN=<token> REPO=wudanyang6/wudanyang6.github.io python3 .github/scripts/generate_content.py
 
 # 拉取访问统计快照，合并进 traffic/history.json（失败退出码 1，调用方需容忍）
 GH_TOKEN=<token> python3 .github/scripts/fetch_traffic.py

@@ -14,7 +14,7 @@
 文章正文仍外指 GitHub issues（Hugo 只做列表/标签/RSS 的数据源），
 content 每次全量重建，已关闭 issue 的旧文件自然清除。
 
-依赖 env：GH_TOKEN、REPO（默认 wudanyang6/wiki）。
+依赖 env：GH_TOKEN、REPO（默认 wudanyang6/wudanyang6.github.io）。
 可选 env：GOOGLE_SITE_VERIFICATION。无第三方 Python 依赖（正文与
 访问统计页的渲染都交给 Hugo）。
 """
@@ -27,7 +27,7 @@ from pathlib import Path
 
 import yaml
 
-REPO = os.environ.get("REPO", "wudanyang6/wiki")
+REPO = os.environ.get("REPO", "wudanyang6/wudanyang6.github.io")
 VERIFICATION = os.environ.get("GOOGLE_SITE_VERIFICATION", "")
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 SITE = Path(os.environ.get("SITE_DIR") or REPO_ROOT / "site")

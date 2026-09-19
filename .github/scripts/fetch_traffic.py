@@ -15,7 +15,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-REPO = os.environ.get("REPO", "wudanyang6/wiki")
+REPO = os.environ.get("REPO", "wudanyang6/wudanyang6.github.io")
 # 数据文件相对脚本位置解析（.github/scripts/ -> 仓库根），不依赖运行时 cwd
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 DATA = Path(os.environ.get("TRAFFIC_DATA") or REPO_ROOT / "traffic/history.json")

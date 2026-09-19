@@ -102,7 +102,7 @@ category_cn() {
 
 comment_file=$(mktemp)
 {
-  echo "⚠️ **内容审核发现以下问题**（自动审核，[Issue Labeler](https://github.com/wudanyang6/wiki/actions/workflows/issue-labeler.yml)）"
+  echo "⚠️ **内容审核发现以下问题**（自动审核，[Issue Labeler](https://github.com/wudanyang6/wudanyang6.github.io/actions/workflows/issue-labeler.yml)）"
   echo ""
   n=0
   while IFS= read -r problem; do

@@ -1,4 +1,4 @@
-baseURL = "https://wudanyang6.github.io/wiki/"
+baseURL = "https://wudanyang6.github.io/"
 languageCode = "zh-CN"
 title = "wudanyang's wiki"
 description = "Personal notes on engineering and everyday life"
@@ -6,7 +6,7 @@ disableKinds = ["section"]  # 站内无文章页，/posts/ section 列表页无�
 
 [params]
 description = "Personal notes on engineering and everyday life"
-repo = "wudanyang6/wiki"
+repo = "wudanyang6/wudanyang6.github.io"
 
 # RSS 输出为 feed.xml（保持既有订阅地址）
 [outputFormats.RSS]
