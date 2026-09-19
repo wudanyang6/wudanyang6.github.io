@@ -94,36 +94,35 @@
       "date": "2026-09-17",
       "views": 6,
       "uniques": 2
+    },
+    {
+      "date": "2026-09-18",
+      "views": 8,
+      "uniques": 2
     }
   ],
   "paths": [
     {
-      "path": "/wudanyang6/wiki/issues",
-      "title": "/issues",
-      "count": 26,
-      "uniques": 1
-    },
-    {
       "path": "/wudanyang6/wiki/issues/3",
       "title": "/issues/3",
-      "count": 20,
-      "uniques": 14
+      "count": 17,
+      "uniques": 13
     },
     {
-      "path": "/wudanyang6/wiki/actions",
-      "title": "/actions",
-      "count": 13,
-      "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wiki/issues/new",
-      "title": "/issues/new",
-      "count": 10,
+      "path": "/wudanyang6/wiki/issues",
+      "title": "/issues",
+      "count": 17,
       "uniques": 1
     },
     {
       "path": "/wudanyang6/wiki",
       "title": "Overview",
+      "count": 10,
+      "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wiki/issues/new",
+      "title": "/issues/new",
       "count": 9,
       "uniques": 1
     },
@@ -140,15 +139,15 @@
       "uniques": 1
     },
     {
-      "path": "/wudanyang6/wiki/issues/9",
-      "title": "/issues/9",
-      "count": 4,
+      "path": "/wudanyang6/wiki/actions",
+      "title": "/actions",
+      "count": 6,
       "uniques": 1
     },
     {
       "path": "/wudanyang6/wiki/issues/17",
       "title": "/issues/17",
-      "count": 3,
+      "count": 4,
       "uniques": 3
     },
     {
@@ -156,12 +155,18 @@
       "title": "/issues/18",
       "count": 3,
       "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wiki/issues/19",
+      "title": "/issues/19",
+      "count": 3,
+      "uniques": 1
     }
   ],
   "referrers": [
     {
       "referrer": "github.com",
-      "count": 29,
+      "count": 30,
       "uniques": 16
     },
     {
@@ -170,5 +175,5 @@
       "uniques": 1
     }
   ],
-  "updated": "2026-09-19T07:23:42.714624+00:00"
+  "updated": "2026-09-19T11:56:37.203947+00:00"
 }
