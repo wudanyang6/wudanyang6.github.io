@@ -21,6 +21,15 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 DATA = Path(os.environ.get("TRAFFIC_DATA") or REPO_ROOT / "traffic/history.json")
 
 
+def fail(msg):
+    # Actions 会把 ::error:: 行解析成 run summary 上的红色 annotation，
+    # message 里的换行需转义成 %0A 否则会被截断
+    if os.environ.get("GITHUB_ACTIONS"):
+        safe = msg.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+        print(f"::error::{safe}", file=sys.stderr)
+    sys.exit(msg)
+
+
 def gh_api(endpoint):
     try:
         result = subprocess.run(
@@ -30,13 +39,19 @@ def gh_api(endpoint):
         )
     except subprocess.CalledProcessError as e:
         # stderr 里有 HTTP 状态与错误 message，必须让它出现在 CI 日志里
-        sys.exit(f"gh api {endpoint} failed ({e.returncode}): {e.stderr.strip()}")
+        stderr = e.stderr.strip()
+        if "HTTP 401" in stderr or "HTTP 403" in stderr:
+            fail(f"gh api {endpoint} failed ({e.returncode}): {stderr}\n"
+                 "token cannot access the traffic API — TRAFFIC_TOKEN missing, "
+                 "expired, or lacking repo scope")
+        sys.exit(f"gh api {endpoint} failed ({e.returncode}): {stderr}")
     return json.loads(result.stdout)
 
 
 def main():
-    if "GH_TOKEN" not in os.environ:
-        sys.exit("GH_TOKEN is required")
+    if not os.environ.get("GH_TOKEN"):
+        fail("GH_TOKEN is required — set the TRAFFIC_TOKEN secret "
+             "(GITHUB_TOKEN cannot access the traffic API)")
 
     history = {"days": [], "paths": [], "referrers": [], "updated": None}
     if DATA.exists():

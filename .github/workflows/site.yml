@@ -27,15 +27,27 @@ jobs:
       - id: pages
         uses: actions/configure-pages@v5
 
+      - name: Fetch traffic data
+        # 失败不阻塞建站（traffic 页显示旧数据），但 continue-on-error + error annotation
+        # 让失败在 run summary 上显眼，而不是埋在日志里
+        continue-on-error: true
+        env:
+          # traffic API 只认用户级 PAT，GITHUB_TOKEN 恒 403，不做回退
+          GH_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+        run: |
+          python3 .github/scripts/fetch_traffic.py \
+            || {
+              echo "### ⚠️ Traffic fetch failed — statistics page is stale" >> "$GITHUB_STEP_SUMMARY"
+              echo "TRAFFIC_TOKEN secret is missing, expired, or lacks repo scope. GITHUB_TOKEN cannot access the traffic API." >> "$GITHUB_STEP_SUMMARY"
+              exit 1
+            }
+
       - name: Generate Hugo content from open issues
         env:
           GH_TOKEN: ${{ secrets.TRAFFIC_TOKEN || secrets.GITHUB_TOKEN }}
           GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
         run: |
           pip3 install pyyaml
-          # 采集失败不阻塞站点生成（traffic 页显示暂无数据）
-          python3 .github/scripts/fetch_traffic.py \
-            || echo "::warning::traffic fetch failed, site generated without fresh data"
           python3 .github/scripts/generate_content.py
 
       - name: Build with Hugo
