@@ -15,14 +15,26 @@ jobs:
         with:
           script: |
             const { owner, repo } = context.repo;
-            const labels = {
-              day60: '60天前',
-              day180: '半年前',
-              day365: '一年前'
-            };
+
+            // 年龄档位从小到大排列，匹配时取满足的最大一档；新增档位只需在此追加一行
+            const ageTiers = [
+              { days: 60, name: '60天前' },
+              { days: 180, name: '半年前' },
+              { days: 365, name: '一年前' },
+              { days: 3650, name: '十年前', milestone: true },
+              { days: 7300, name: '二十年前', milestone: true },
+              { days: 10950, name: '三十年前', milestone: true },
+              { days: 14600, name: '四十年前', milestone: true },
+              { days: 18250, name: '五十年前', milestone: true },
+              { days: 21900, name: '六十年前', milestone: true },
+              { days: 25550, name: '七十年前', milestone: true }
+            ];
+            const ageLabelNames = ageTiers.map(t => t.name);
+            // milestone 档位首次出现在任何 issue 上时通知 owner，且只通知一次
+            const milestoneNames = new Set(ageTiers.filter(t => t.milestone).map(t => t.name));
 
             // 确保这些 label 存在（不存在就创建）
-            for (const name of Object.values(labels)) {
+            for (const name of ageLabelNames) {
               try {
                 await github.rest.issues.getLabel({ owner, repo, name });
               } catch (e) {
@@ -41,41 +53,71 @@ jobs:
               }
             }
 
-            // 列出所有 open issues（含分页）
-            const issues = await github.paginate(
+            // 列出所有 issues（含分页、含已关闭）：
+            // open 子集参与打标，全集用于判断里程碑标签是否已经通知过
+            // （已关闭的文章也曾通知过，不查全集会导致里程碑重复通知）
+            const allIssues = await github.paginate(
               github.rest.issues.listForRepo,
-              { owner, repo, state: 'open', per_page: 100 }
+              { owner, repo, state: 'all', per_page: 100 }
             );
+            const issues = allIssues.filter(i => i.state === 'open');
+
+            const notifiedMilestones = new Set();
+            for (const it of allIssues) {
+              if (it.pull_request) continue;
+              for (const l of it.labels || []) {
+                if (milestoneNames.has(l.name)) notifiedMilestones.add(l.name);
+              }
+            }
 
             const now = new Date();
+            const notifications = [];
+
             for (const issue of issues) {
               // 跳过 PR（issues API 会返回 PR）
               if (issue.pull_request) continue;
 
               const created = new Date(issue.created_at);
               const ageDays = Math.floor((now - created) / (1000 * 60 * 60 * 24));
+
+              // 命中年龄最大的满足档位，保证同一 issue 只有一个年龄标签
               let targetLabel = null;
-              if (ageDays >= 365) targetLabel = labels.day365;
-              else if (ageDays >= 180) targetLabel = labels.day180;
-              else if (ageDays >= 60) targetLabel = labels.day60;
+              for (let i = ageTiers.length - 1; i >= 0; i--) {
+                if (ageDays >= ageTiers[i].days) {
+                  targetLabel = ageTiers[i].name;
+                  break;
+                }
+              }
 
               const currentLabelNames = (issue.labels || []).map(l => l.name);
 
               // 要添加的 label
-              if (targetLabel) {
-                if (!currentLabelNames.includes(targetLabel)) {
-                  console.log(`Adding "${targetLabel}" to #${issue.number} (age ${ageDays}d)`);
-                  await github.rest.issues.addLabels({
+              if (targetLabel && !currentLabelNames.includes(targetLabel)) {
+                console.log(`Adding "${targetLabel}" to #${issue.number} (age ${ageDays}d)`);
+                await github.rest.issues.addLabels({
+                  owner,
+                  repo,
+                  issue_number: issue.number,
+                  labels: [targetLabel]
+                });
+
+                // 里程碑首次出现：在该 issue 下评论 @owner，触发 GitHub 原生通知
+                if (milestoneNames.has(targetLabel) && !notifiedMilestones.has(targetLabel)) {
+                  notifiedMilestones.add(targetLabel);
+                  const createdDate = created.toISOString().slice(0, 10);
+                  notifications.push(`#${issue.number} 《${issue.title}》首次打上「${targetLabel}」（创建于 ${createdDate}）`);
+                  console.log(`Milestone "${targetLabel}" first applied to #${issue.number}, notifying @${owner}`);
+                  await github.rest.issues.createComment({
                     owner,
                     repo,
                     issue_number: issue.number,
-                    labels: [targetLabel]
+                    body: `@${owner} 第一篇「${targetLabel}」的文章出现了：#${issue.number} 《${issue.title}》（创建于 ${createdDate}）。`
                   });
                 }
               }
 
               // 移除不应存在的年龄标签（保持只有一个年龄标签）
-              const unwanted = Object.values(labels).filter(l => l !== targetLabel && currentLabelNames.includes(l));
+              const unwanted = ageLabelNames.filter(l => l !== targetLabel && currentLabelNames.includes(l));
               for (const name of unwanted) {
                 console.log(`Removing "${name}" from #${issue.number}`);
                 try {
@@ -91,5 +133,11 @@ jobs:
                 }
               }
             }
+
+            // 里程碑事件写入 step summary，便于在 Actions 页面回溯
+            await core.summary
+              .addHeading('年龄标签')
+              .addList(notifications.length ? notifications : ['本次运行无新的里程碑标签'])
+              .write();
 
             console.log('Done.');
