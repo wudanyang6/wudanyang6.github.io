@@ -59,16 +59,33 @@ jobs:
       - run: hugo --source site --destination public
 
       - name: Commit traffic history
+        env:
+          # push 被拒后重放合并时 fetch_traffic.py 需要 token（GITHUB_TOKEN 对 traffic API 恒 403）
+          GH_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add traffic/
-          if git diff --cached --quiet; then
-            echo "no traffic change to commit"
-          else
+
+          push_traffic() {
+            git add traffic/
+            if git diff --cached --quiet; then
+              echo "no traffic change to commit"
+              return 0
+            fi
             git commit -m "chore: update traffic history [skip ci]"
             git push
-          fi
+          }
+
+          push_traffic || {
+            # push 被拒：checkout 之后远端被前移——手动 push，或被 cancel 的旧 run
+            # 的 push 已落库（cancel-in-progress 拦不住正在执行的 push）。
+            # 丢掉基于旧 main 的提交，在最新 main 上重放合并：
+            # days 按日期去重、paths/referrers 整体覆盖，重跑幂等，无数据丢失
+            git fetch origin main
+            git reset --hard FETCH_HEAD
+            python3 .github/scripts/fetch_traffic.py
+            push_traffic
+          }
 
       - uses: actions/upload-pages-artifact@v3
         with:
