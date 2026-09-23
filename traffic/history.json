@@ -114,19 +114,24 @@
       "date": "2026-09-21",
       "views": 24,
       "uniques": 2
+    },
+    {
+      "date": "2026-09-22",
+      "views": 30,
+      "uniques": 3
     }
   ],
   "paths": [
     {
+      "path": "/wudanyang6/wudanyang6.github.io",
+      "title": "Overview",
+      "count": 20,
+      "uniques": 2
+    },
+    {
       "path": "/wudanyang6/wiki/issues",
       "title": "/issues",
       "count": 19,
-      "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io",
-      "title": "Overview",
-      "count": 15,
       "uniques": 1
     },
     {
@@ -136,16 +141,28 @@
       "uniques": 1
     },
     {
+      "path": "/wudanyang6/wudanyang6.github.io/issues",
+      "title": "/issues",
+      "count": 12,
+      "uniques": 4
+    },
+    {
       "path": "/wudanyang6/wiki/issues/3",
       "title": "/issues/3",
       "count": 10,
       "uniques": 7
     },
     {
-      "path": "/wudanyang6/wudanyang6.github.io/issues",
-      "title": "/issues",
-      "count": 8,
-      "uniques": 3
+      "path": "/wudanyang6/wudanyang6.github.io/pulse",
+      "title": "/pulse",
+      "count": 9,
+      "uniques": 2
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/issues/new",
+      "title": "/issues/new",
+      "count": 9,
+      "uniques": 1
     },
     {
       "path": "/wudanyang6/wiki/issues/new",
@@ -154,9 +171,9 @@
       "uniques": 1
     },
     {
-      "path": "/wudanyang6/wudanyang6.github.io/issues/new",
-      "title": "/issues/new",
-      "count": 6,
+      "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
+      "title": "/graphs/traffic",
+      "count": 7,
       "uniques": 1
     },
     {
@@ -164,25 +181,13 @@
       "title": "/actions/workflows/site.yml",
       "count": 5,
       "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wiki/pulse",
-      "title": "/pulse",
-      "count": 5,
-      "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
-      "title": "/graphs/traffic",
-      "count": 5,
-      "uniques": 1
     }
   ],
   "referrers": [
     {
       "referrer": "github.com",
-      "count": 31,
-      "uniques": 13
+      "count": 32,
+      "uniques": 14
     },
     {
       "referrer": "wudanyang6.github.io",
@@ -190,5 +195,5 @@
       "uniques": 1
     }
   ],
-  "updated": "2026-09-22T13:50:06.475875+00:00"
+  "updated": "2026-09-23T07:49:21.010976+00:00"
 }
