@@ -149,6 +149,11 @@
       "date": "2026-09-28",
       "views": 10,
       "uniques": 5
+    },
+    {
+      "date": "2026-09-29",
+      "views": 0,
+      "uniques": 0
     }
   ],
   "paths": [
@@ -177,12 +182,6 @@
       "uniques": 2
     },
     {
-      "path": "/wudanyang6/wiki",
-      "title": "Overview",
-      "count": 9,
-      "uniques": 1
-    },
-    {
       "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
       "title": "/graphs/traffic",
       "count": 9,
@@ -195,14 +194,14 @@
       "uniques": 1
     },
     {
-      "path": "/wudanyang6/wiki/issues",
-      "title": "/issues",
-      "count": 7,
+      "path": "/wudanyang6/wiki",
+      "title": "Overview",
+      "count": 8,
       "uniques": 1
     },
     {
-      "path": "/wudanyang6/wiki/issues/new",
-      "title": "/issues/new",
+      "path": "/wudanyang6/wiki/issues",
+      "title": "/issues",
       "count": 5,
       "uniques": 1
     },
@@ -211,6 +210,12 @@
       "title": "/issues/3",
       "count": 4,
       "uniques": 3
+    },
+    {
+      "path": "/wudanyang6/wiki/actions/workflows/site.yml",
+      "title": "/actions/workflows/site.yml",
+      "count": 4,
+      "uniques": 1
     }
   ],
   "referrers": [
@@ -221,9 +226,9 @@
     },
     {
       "referrer": "wudanyang6.github.io",
-      "count": 7,
+      "count": 6,
       "uniques": 2
     }
   ],
-  "updated": "2026-09-30T06:01:25.611769+00:00"
+  "updated": "2026-09-30T08:40:34.834196+00:00"
 }
