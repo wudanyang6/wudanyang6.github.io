@@ -124,44 +124,69 @@
       "date": "2026-09-23",
       "views": 4,
       "uniques": 2
+    },
+    {
+      "date": "2026-09-24",
+      "views": 7,
+      "uniques": 5
+    },
+    {
+      "date": "2026-09-25",
+      "views": 4,
+      "uniques": 2
+    },
+    {
+      "date": "2026-09-26",
+      "views": 3,
+      "uniques": 3
+    },
+    {
+      "date": "2026-09-27",
+      "views": 1,
+      "uniques": 1
+    },
+    {
+      "date": "2026-09-28",
+      "views": 10,
+      "uniques": 5
     }
   ],
   "paths": [
     {
       "path": "/wudanyang6/wudanyang6.github.io",
       "title": "Overview",
-      "count": 21,
-      "uniques": 2
-    },
-    {
-      "path": "/wudanyang6/wiki/issues",
-      "title": "/issues",
-      "count": 17,
-      "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wiki",
-      "title": "Overview",
-      "count": 14,
-      "uniques": 1
+      "count": 23,
+      "uniques": 3
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues",
       "title": "/issues",
-      "count": 12,
+      "count": 14,
       "uniques": 4
     },
     {
-      "path": "/wudanyang6/wiki/issues/3",
+      "path": "/wudanyang6/wudanyang6.github.io/issues/3",
       "title": "/issues/3",
-      "count": 10,
-      "uniques": 7
+      "count": 13,
+      "uniques": 11
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/pulse",
       "title": "/pulse",
-      "count": 9,
+      "count": 11,
       "uniques": 2
+    },
+    {
+      "path": "/wudanyang6/wiki",
+      "title": "Overview",
+      "count": 9,
+      "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
+      "title": "/graphs/traffic",
+      "count": 9,
+      "uniques": 1
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/new",
@@ -170,35 +195,35 @@
       "uniques": 1
     },
     {
+      "path": "/wudanyang6/wiki/issues",
+      "title": "/issues",
+      "count": 7,
+      "uniques": 1
+    },
+    {
       "path": "/wudanyang6/wiki/issues/new",
       "title": "/issues/new",
-      "count": 7,
-      "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
-      "title": "/graphs/traffic",
-      "count": 7,
-      "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wiki/actions/workflows/site.yml",
-      "title": "/actions/workflows/site.yml",
       "count": 5,
       "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wiki/issues/3",
+      "title": "/issues/3",
+      "count": 4,
+      "uniques": 3
     }
   ],
   "referrers": [
     {
       "referrer": "github.com",
-      "count": 33,
-      "uniques": 14
+      "count": 32,
+      "uniques": 19
     },
     {
       "referrer": "wudanyang6.github.io",
-      "count": 14,
+      "count": 7,
       "uniques": 2
     }
   ],
-  "updated": "2026-09-29T08:39:43.195438+00:00"
+  "updated": "2026-09-30T01:37:51.003784+00:00"
 }
