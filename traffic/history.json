@@ -159,6 +159,11 @@
       "date": "2026-09-30",
       "views": 20,
       "uniques": 1
+    },
+    {
+      "date": "2026-10-01",
+      "views": 0,
+      "uniques": 0
     }
   ],
   "paths": [
@@ -211,23 +216,23 @@
       "uniques": 1
     },
     {
-      "path": "/wudanyang6/wiki/actions/workflows/site.yml",
-      "title": "/actions/workflows/site.yml",
+      "path": "/wudanyang6/wudanyang6.github.io/actions",
+      "title": "/actions",
       "count": 4,
       "uniques": 1
     },
     {
-      "path": "/wudanyang6/wudanyang6.github.io/actions",
-      "title": "/actions",
-      "count": 4,
+      "path": "/wudanyang6/wiki/actions/workflows/site.yml",
+      "title": "/actions/workflows/site.yml",
+      "count": 3,
       "uniques": 1
     }
   ],
   "referrers": [
     {
       "referrer": "github.com",
-      "count": 31,
-      "uniques": 18
+      "count": 29,
+      "uniques": 17
     },
     {
       "referrer": "wudanyang6.github.io",
@@ -235,5 +240,5 @@
       "uniques": 2
     }
   ],
-  "updated": "2026-10-01T14:35:29.460175+00:00"
+  "updated": "2026-10-02T08:37:54.805042+00:00"
 }
