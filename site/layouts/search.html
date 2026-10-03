@@ -1,0 +1,117 @@
+{{ define "main" }}
+<article class="card search-panel">
+  <h1>{{ .Title }}</h1>
+  <input id="search-input" class="search-input" type="search" placeholder="搜索标题、标签、摘要…"
+         aria-label="搜索文章" autocomplete="off" autofocus />
+  <p class="search-hint" id="search-hint">输入关键词，空格分隔多个词（需全部命中）；按 / 可随时聚焦搜索框</p>
+  <ul class="search-results" id="search-results"></ul>
+</article>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+(() => {
+  const input = document.getElementById('search-input');
+  const list = document.getElementById('search-results');
+  const hint = document.getElementById('search-hint');
+  if (!input || !list || !hint) return;
+
+  const IDLE_HINT = hint.textContent;
+  const INDEX_URL = '{{ "search-index.json" | relURL }}';
+
+  // 索引按需加载：首次真正搜索才请求，首屏不为它付出成本
+  let indexPromise = null;
+  const loadIndex = () => indexPromise || (indexPromise = fetch(INDEX_URL).then(r => r.json()));
+
+  const escHtml = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  // 单次遍历完成高亮：实体（&amp; 等）作为备选分支先被消费，词条不会匹配进实体内部
+  const highlight = (text, terms) => {
+    const escaped = escHtml(text);
+    if (!terms.length) return escaped;
+    const re = new RegExp(`&[a-z]+;|(${terms.map(escRe).join('|')})`, 'gi');
+    return escaped.replace(re, (m, hit) => (hit ? `<mark>${m}</mark>` : m));
+  };
+
+  // 全部词条都要命中（AND）；标题 4 分 > 标签 3 分 > 摘要 1 分
+  const scoreOf = (item, terms) => {
+    const title = item.title.toLowerCase();
+    const summary = (item.summary || '').toLowerCase();
+    const tags = (item.tags || []).map(t => t.toLowerCase());
+    let total = 0;
+    for (const t of terms) {
+      let s = 0;
+      if (title.includes(t)) s = 4;
+      else if (tags.some(tag => tag.includes(t))) s = 3;
+      else if (summary.includes(t)) s = 1;
+      if (!s) return 0;
+      total += s;
+    }
+    return total;
+  };
+
+  const render = (items, terms) => {
+    if (!items.length) {
+      list.innerHTML = '';
+      hint.textContent = '没有匹配的文章。';
+      return;
+    }
+    hint.textContent = `找到 ${items.length} 篇`;
+    list.innerHTML = items.map(it => `
+      <li class="search-item">
+        <a class="search-title" href="${escHtml(it.url)}">${highlight(it.title, terms)}</a>
+        <p class="post-meta">
+          <span>${escHtml(it.date)}</span>
+          ${(it.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('')}
+        </p>
+        <p class="search-summary">${highlight(it.summary || '', terms)}</p>
+      </li>`).join('');
+  };
+
+  const run = () => {
+    const q = input.value.trim();
+    // 搜索词写进 URL，结果可分享/刷新不丢
+    const url = q ? `?q=${encodeURIComponent(q)}` : location.pathname;
+    history.replaceState(null, '', url);
+    if (!q) {
+      list.innerHTML = '';
+      hint.textContent = IDLE_HINT;
+      return;
+    }
+    const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+    loadIndex().then(data => {
+      const hits = data
+        .map(it => ({ it, s: scoreOf(it, terms) }))
+        .filter(x => x.s > 0)
+        .sort((a, b) => b.s - a.s || (a.it.date < b.it.date ? 1 : -1))
+        .map(x => x.it);
+      render(hits, terms);
+    }).catch(() => {
+      hint.textContent = '搜索索引加载失败，请刷新重试。';
+    });
+  };
+
+  let timer;
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = setTimeout(run, 120);
+  });
+
+  // 「/」聚焦搜索框（不在输入状态时）
+  document.addEventListener('keydown', e => {
+    if (e.key === '/' && !e.metaKey && !e.ctrlKey && !e.altKey && document.activeElement !== input) {
+      e.preventDefault();
+      input.focus();
+    }
+  });
+
+  // 支持 /search/?q=xxx 直达
+  const q0 = new URLSearchParams(location.search).get('q');
+  if (q0) {
+    input.value = q0;
+    run();
+  }
+})();
+</script>
+{{ end }}

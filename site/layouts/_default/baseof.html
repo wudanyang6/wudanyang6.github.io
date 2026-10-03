@@ -7,8 +7,7 @@
 <meta name="theme-color" content="#0b1020" />
 {{ partial "theme-init.html" . }}
 {{- if .Params.externalURL }}
-{{- /* 跳转页：meta refresh 必须排在样式表之前，跳转不被 CSS 请求拖慢 */}}
-<meta http-equiv="refresh" content="0; url={{ .Params.externalURL }}" />
+{{- /* 站内兜底页：canonical 指向正文所在的 GitHub issue，但不做自动跳转 */}}
 <link rel="canonical" href="{{ .Params.externalURL }}" />
 <meta name="robots" content="noindex" />
 {{- end }}
@@ -26,6 +25,7 @@
     <nav class="site-nav" aria-label="站点导航">
       <a href="{{ "about/" | relURL }}">关于</a>
       <a href="{{ "tags/" | relURL }}">标签</a>
+      <a href="{{ "search/" | relURL }}">搜索</a>
       <a href="{{ "feed.xml" | relURL }}">RSS</a>
       <a href="{{ "traffic.html" | relURL }}">访问统计</a>
     </nav>

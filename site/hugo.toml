@@ -19,6 +19,15 @@ tag = "tags"
 [pagination]
 pagerSize = 10
 
+# 搜索索引：/search/ 页客户端过滤用，纯 JSON 无外部依赖
+[outputFormats.SearchIndex]
+mediaType = "application/json"
+baseName = "search-index"
+isPlainText = true
+
+[outputs]
+home = ["HTML", "RSS", "SearchIndex"]
+
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]

@@ -2,9 +2,10 @@
 """把 open issues 转成 Hugo 站点内容，并提供访问统计数据。
 
 产物：
-  site/content/posts/<n>.md      每篇文章的 noindex 跳转页（frontmatter:
+  site/content/posts/<n>.md      每篇文章的 noindex 预览页（frontmatter:
                                  title/date/tags/issue/externalURL/summary），
-                                 站内列表条目均直链 issue，此页仅兜底旧 URL
+                                 站内列表条目均直链 issue，此页仅兜底旧 URL，
+                                 展示摘要与跳转入口，不做自动跳转
   site/layouts/partials/verification.html
                                  Search Console 验证 meta（由 env 控制内容）
   site/data/traffic.json         访问统计数据，页面本体是仓库里的

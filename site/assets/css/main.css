@@ -3,7 +3,7 @@
    设计令牌与基础壳在 head-css.html 内联层定义（首屏即刻正确配色），
    这里只引用令牌，不重复定义值：改配色只改 head-css.html 一处。
    节序：重置 → 布局壳 → header/footer → hero/统计 → 卡片列表 → 分页 → tag →
-        表格 → 图表 → 来源条 → prose → 跳转卡片 → 动效 → 响应式
+        表格 → 图表 → 来源条 → prose → 预览卡片 → 搜索 → 动效 → 响应式
    ========================================================================== */
 
 /* ---- 重置 ---- */
@@ -694,35 +694,29 @@ a.tag:hover {
   border: 1px solid var(--border);
 }
 
-/* ---- 跳转卡片（single.html） ---- */
+/* ---- 预览卡片（single.html：站内兜底页，不自动跳转） ---- */
 
-.redirect-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: .75rem;
-  padding: 2rem 1.75rem;
-  text-align: center;
+.preview-card {
+  padding: 1.75rem 1.6rem;
   animation: rise .5s var(--ease) both;
 }
 
-.redirect-card h1 {
-  margin: 0;
-  font-size: 1.35rem;
+.preview-card h1 {
+  margin: 0 0 .5rem;
+  font-size: 1.5rem;
+  line-height: 1.35;
 }
 
-.redirect-note {
-  margin: 0;
-  color: var(--muted);
+/* 这里是正文的唯一站内预览，摘要不做列表页那样的两行截断 */
+.preview-card .post-summary {
+  display: block;
+  overflow: visible;
 }
 
-.spinner {
-  width: 44px;
-  height: 44px;
-  border: 3px solid var(--border);
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
+.preview-note {
+  margin: 1.25rem 0 0;
+  color: var(--faint);
+  font-size: .85rem;
 }
 
 .btn {
@@ -759,6 +753,90 @@ a.tag:hover {
   color: var(--muted);
 }
 
+/* ---- 搜索页 ---- */
+
+.search-panel {
+  padding: 1.5rem 1.6rem;
+  animation: rise .5s var(--ease) both;
+}
+
+.search-input {
+  width: 100%;
+  padding: .7rem .95rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  background: var(--surface-2);
+  color: var(--text);
+  font: inherit;
+  transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+
+.search-input::placeholder {
+  color: var(--faint);
+}
+
+/* 输入框聚焦用描边 + 光晕替代全局 outline，避免双层焦点框 */
+.search-input:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 20px -6px var(--accent);
+}
+
+.search-hint {
+  margin: .8rem 0 0;
+  color: var(--faint);
+  font-size: .85rem;
+}
+
+.search-results {
+  display: grid;
+  gap: .9rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.search-item {
+  padding: .9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  background: var(--surface-2);
+}
+
+.search-title {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 650;
+  transition: color var(--dur) var(--ease);
+}
+
+.search-title:hover {
+  color: var(--accent);
+}
+
+.search-item .post-meta {
+  margin: .4rem 0 0;
+}
+
+.search-summary {
+  margin: .45rem 0 0;
+  color: var(--muted);
+  font-size: .9rem;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 命中词高亮：默认 mark 是黄底黑字，改为强调色文字融入主题 */
+mark {
+  background: transparent;
+  color: var(--accent);
+  font-weight: 650;
+}
+
 /* ---- 动效 ---- */
 
 @keyframes rise {
@@ -787,12 +865,6 @@ a.tag:hover {
   }
   to {
     transform: scaleX(1);
-  }
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
   }
 }
 
@@ -863,8 +935,12 @@ a.tag:hover {
     padding: 1.15rem 1rem;
   }
 
-  .redirect-card {
-    padding: 1.5rem 1.1rem;
+  .preview-card {
+    padding: 1.4rem 1.1rem;
+  }
+
+  .search-panel {
+    padding: 1.15rem 1rem;
   }
 
   .chart {

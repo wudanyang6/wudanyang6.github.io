@@ -1,14 +1,13 @@
 {{ define "main" }}
-<article class="card redirect-card">
-  <div class="spinner" aria-hidden="true"></div>
+<article class="card preview-card">
   <h1>{{ .Title }}</h1>
-  <p class="redirect-note">正文与评论在 GitHub，正在跳转…</p>
-  <p><a class="btn" href="{{ .Params.externalURL }}" rel="noopener">前往 GitHub 阅读 →</a></p>
   <p class="post-meta">
     <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
     {{ with .Params.issue }}<span class="issue-badge">#{{ . }}</span>{{ end }}
     {{ range .GetTerms "tags" }}<a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
   </p>
   {{ with .Summary }}<p class="post-summary">{{ . }}</p>{{ end }}
+  <p class="preview-note">正文与评论都在 GitHub issue 上。</p>
+  <p><a class="btn" href="{{ .Params.externalURL }}" rel="noopener">前往 GitHub 阅读 →</a></p>
 </article>
 {{ end }}

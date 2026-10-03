@@ -1,0 +1,16 @@
+{{- /* 搜索索引：/search/ 页的客户端过滤数据源。
+       只含列表页展示所需字段，摘要用 frontmatter 里的纯文本（非渲染后的 HTML）。 */ -}}
+{{- $posts := where .Site.RegularPages "Section" "posts" -}}
+{{- if not $posts }}{{ $posts = .Site.RegularPages }}{{ end -}}
+{{- $items := slice -}}
+{{- range $posts.ByDate.Reverse -}}
+  {{- $tags := slice -}}
+  {{- range .GetTerms "tags" }}{{ $tags = $tags | append .LinkTitle }}{{ end -}}
+  {{- $items = $items | append (dict
+      "title" .Title
+      "url" .Params.externalURL
+      "date" (.Date.Format "2006-01-02")
+      "tags" $tags
+      "summary" (.Params.summary | default "")) -}}
+{{- end -}}
+{{- $items | jsonify -}}

@@ -3,6 +3,7 @@
 site/content/*
 !site/content/traffic.md
 !site/content/about.md
+!site/content/search.md
 site/public/
 site/resources/
 site/data/

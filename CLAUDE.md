@@ -29,10 +29,10 @@ hugo --source site --destination public
 触发：issue 事件（opened/edited/closed/reopened/labeled/unlabeled）+ 每日 cron 2:23 + 手动。
 
 1. `fetch_traffic.py`：调 GitHub Traffic API，按天 views/uniques 去重合并成长期趋势；失败不阻塞建站
-2. `generate_content.py`：`gh issue list --state open --limit 500`，每篇写一个 headless content `site/content/posts/<n>.md`（frontmatter：title/date/tags/issue/externalURL/summary），同时产出 `site/data/traffic.json` 和 `partials/verification.html`（内容由 `GOOGLE_SITE_VERIFICATION` 控制）
+2. `generate_content.py`：`gh issue list --state open --limit 500`，每篇写一个 noindex 预览页 `site/content/posts/<n>.md`（frontmatter：title/date/tags/issue/externalURL/summary），同时产出 `site/data/traffic.json` 和 `partials/verification.html`（内容由 `GOOGLE_SITE_VERIFICATION` 控制）。预览页只展示摘要与跳转入口，**不自动跳转**（列表条目直链 issue，此页兜底旧 URL）
 3. Hugo 构建 → 提交 `traffic/` 历史（`[skip ci]`；push 被拒时 `reset --hard` 到最新 main 后重跑 fetch 重放合并，幂等）→ 部署 Pages
 
-**`site/content/posts/*` 是生成产物且已 gitignore，不要手改**；全量重建语义意味着关闭 issue 的文件自然清除。随仓库走的例外只有 `site/content/traffic.md` 与 `about.md`（只提供路由与元信息，页面主体分别由 `site/layouts/traffic.html`、`site/layouts/about.html` 渲染）。
+**`site/content/posts/*` 是生成产物且已 gitignore，不要手改**；全量重建语义意味着关闭 issue 的文件自然清除。随仓库走的例外只有 `site/content/` 下的 `traffic.md`、`about.md`、`search.md`（只提供路由与元信息，页面主体由各自的 `site/layouts/*.html` 渲染）。
 
 ### Hugo 站点约定（site/hugo.toml + site/layouts/ + site/assets/）
 
@@ -42,6 +42,7 @@ hugo --source site --destination public
 - **零外部资源**（读者在大陆）：禁 Google Fonts / CDN，字体只用系统栈，CSS 禁外部 `url()`
 - 双主题：深色为 `:root` 默认，浅色 `[data-theme="light"]`；浅色值在 head-css 写了两份（显式切换 + 无 JS 跟随系统），**改动必须同步**；切换脚本内联在 `partials/theme-init.html`（防 FOUC）与 `theme-toggle.html`
 - 复用点：文章列表 `partials/post-list.html`、分页 `partials/pagination.html`（首页与 taxonomy 共用，每页篇数在 `hugo.toml [pagination] pagerSize`）、图表 `partials/traffic-chart.html`（div 柱，不用 SVG——天数可变，flex 自适应）
+- 搜索：`layouts/search.html` 原生 JS 客户端过滤（零依赖、无外部请求），数据来自 home 的 `SearchIndex` 输出格式 → `search-index.json`（字段见 `layouts/index.searchindex.json`）；支持多词 AND 与 `?q=` 直达
 - RSS 输出 `feed.xml`（保持既有订阅地址，别改 baseName）
 - goldmark typographer 关闭：RSS 是 XML，引号转 `&ldquo;` 等未定义实体会破坏良构——改 markup 配置前想清楚
 - `unsafe = true`：正文允许内嵌 HTML
