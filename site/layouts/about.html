@@ -1,4 +1,6 @@
 {{ define "main" }}
-<h2>{{ .Title }}</h2>
-{{ .Content }}
+<article class="card prose">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</article>
 {{ end }}

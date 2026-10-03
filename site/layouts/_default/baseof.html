@@ -4,36 +4,40 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
-{{ partial "verification.html" . }}
-{{ if .Params.externalURL }}
+<meta name="theme-color" content="#0b1020" />
+{{ partial "theme-init.html" . }}
+{{- if .Params.externalURL }}
+{{- /* 跳转页：meta refresh 必须排在样式表之前，跳转不被 CSS 请求拖慢 */}}
 <meta http-equiv="refresh" content="0; url={{ .Params.externalURL }}" />
 <link rel="canonical" href="{{ .Params.externalURL }}" />
 <meta name="robots" content="noindex" />
-{{ end }}
-<style>
-:root { color-scheme: light dark; }
-body { font-family: -apple-system, "Segoe UI", Roboto, "PingFang SC", sans-serif;
-       max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; }
-a { color: inherit; }
-h1 a { text-decoration: none; }
-.meta { color: gray; font-size: 0.9rem; }
-.tag { background: rgba(127,127,127,0.15);
-       border-radius: 1em; padding: 0.1em 0.7em; font-size: 0.85rem;
-       text-decoration: none; display: inline-block; margin: 0.2em; }
-footer { margin-top: 3rem; color: gray; font-size: 0.85rem; }
-</style>
+{{- end }}
+{{- /* 生成产物：新克隆可能缺失，缺了也不能让构建失败 */}}
+{{- if templates.Exists "partials/verification.html" }}{{ partial "verification.html" . }}{{ end }}
+{{ partial "head-css.html" . }}
+<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}" />
 {{ block "extra_head" . }}{{ end }}
 </head>
 <body>
-<header>
-<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-<p class="meta">{{ .Site.Params.description }} ·
-  <a href="{{ "about/" | relURL }}">关于</a> ·
-  <a href="{{ "tags/" | relURL }}">标签</a> ·
-  <a href="{{ "feed.xml" | relURL }}">RSS</a> ·
-  <a href="{{ "traffic.html" | relURL }}">访问统计</a></p>
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <nav class="site-nav" aria-label="站点导航">
+      <a href="{{ "about/" | relURL }}">关于</a>
+      <a href="{{ "tags/" | relURL }}">标签</a>
+      <a href="{{ "feed.xml" | relURL }}">RSS</a>
+      <a href="{{ "traffic.html" | relURL }}">访问统计</a>
+    </nav>
+    {{ partial "theme-toggle.html" . }}
+  </div>
 </header>
+<main id="main" class="wrap">
 {{ block "main" . }}{{ end }}
-<footer>由 <a href="https://github.com/{{ .Site.Params.repo }}">issues</a> 自动生成，正文与评论均在 GitHub</footer>
+</main>
+<footer class="site-footer">
+  <div class="wrap">由 <a href="https://github.com/{{ .Site.Params.repo }}">issues</a> 自动生成，正文与评论均在 GitHub</div>
+</footer>
+{{ block "scripts" . }}{{ end }}
 </body>
 </html>

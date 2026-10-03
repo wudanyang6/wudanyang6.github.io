@@ -1,0 +1,19 @@
+{{- /* 入参：dict "pages" <pages>。首页与 taxonomy 页共用，列表逻辑只在这里维护一处 */ -}}
+{{- $pages := .pages -}}
+<div class="post-list">
+  {{- range $i, $p := $pages }}
+  <article class="card post-card" style="--d: {{ mul (cond (lt $i 8) $i 8) 45 }}ms">
+    <h2 class="post-title">
+      <a href="{{ with $p.Params.externalURL }}{{ . }}{{ else }}{{ $p.RelPermalink }}{{ end }}"{{ if $p.Params.externalURL }} rel="noopener"{{ end }}>{{ $p.Title }}</a>
+    </h2>
+    <p class="post-meta">
+      <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "2006-01-02" }}</time>
+      {{ with $p.Params.issue }}<span class="issue-badge">#{{ . }}</span>{{ end }}
+      {{ range $p.GetTerms "tags" }}<a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+    </p>
+    {{ with $p.Summary }}<p class="post-summary">{{ . }}</p>{{ end }}
+  </article>
+  {{- else }}
+  <p class="empty">（还没有文章）</p>
+  {{- end }}
+</div>

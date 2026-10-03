@@ -1,11 +1,4 @@
 {{ define "main" }}
-<h2># {{ .Data.Term }}</h2>
-<ul>
-{{ range .Pages.ByDate.Reverse }}
-<li>
-<a href="{{ .Params.externalURL }}" rel="noopener">{{ .Title }}</a>
-<span class="meta">{{ .Date.Format "2006-01-02" }}</span>
-</li>
-{{ end }}
-</ul>
+<h1># {{ .Data.Term }}</h1>
+{{ partial "post-list.html" (dict "pages" .Pages.ByDate.Reverse) }}
 {{ end }}

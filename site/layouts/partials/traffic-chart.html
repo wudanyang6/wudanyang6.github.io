@@ -1,0 +1,24 @@
+{{- /* 入参：dict "days" <slice of {date,views,uniques}>（调用方已切好窗口）。
+       div 柱而非 SVG：天数可变，flex 天然自适应，不引入定宽 viewBox 的宽高比问题 */ -}}
+{{- $days := .days -}}
+{{- with $days }}
+  {{- $n := len . }}
+  {{- $peak := 1 }}{{ range . }}{{ if gt (int .views) $peak }}{{ $peak = int .views }}{{ end }}{{ end }}
+  <div class="chart" role="img" aria-label="每日浏览趋势，共 {{ $n }} 天">
+    {{- range $i, $d := . }}
+    {{- $h := div (mul (int $d.views) 100) $peak }}
+    {{- if lt $h 2 }}{{ $h = 2 }}{{ end }}
+    <div class="bar" style="height:{{ $h }}%; --d: {{ mul $i 35 }}ms" data-tip="{{ $d.date }} · {{ int $d.views }} 浏览 · {{ int $d.uniques }} 访客"></div>
+    {{- end }}
+  </div>
+  <div class="chart-axis" aria-hidden="true">
+    {{- range $i, $d := . }}
+    {{- $label := "" }}
+    {{- /* 每 7 天一个日期刻度；末位不标，避免居中的标签溢出右边界 */}}
+    {{- if and (eq (mod $i 7) 0) (lt $i (sub $n 1)) }}{{ $label = substr $d.date 5 }}{{ end }}
+    <span class="tick">{{ $label }}</span>
+    {{- end }}
+  </div>
+{{- else }}
+  <p class="empty">暂无每日数据</p>
+{{- end }}

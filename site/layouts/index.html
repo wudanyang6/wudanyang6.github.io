@@ -1,12 +1,60 @@
 {{ define "main" }}
-<ul>
-{{ range .Site.RegularPages.ByDate.Reverse }}
-<li>
-<a href="{{ .Params.externalURL }}" rel="noopener">{{ .Title }}</a>
-<span class="meta">{{ .Date.Format "2006-01-02" }}</span>
-</li>
-{{ else }}
-<li class="meta">（还没有文章）</li>
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ if not $posts }}{{ $posts = .Site.RegularPages }}{{ end }}
+{{ $posts = $posts.ByDate.Reverse }}
+
+<section class="hero">
+  <h1 class="hero-title">{{ .Site.Title }}</h1>
+  <p class="hero-desc">{{ .Site.Params.description }}</p>
+  <div class="stats">
+    <div class="stat">
+      <span class="stat-num" data-count="{{ len $posts }}">{{ len $posts }}</span>
+      <span class="stat-label">文章</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-count="{{ len .Site.Taxonomies.tags }}">{{ len .Site.Taxonomies.tags }}</span>
+      <span class="stat-label">标签</span>
+    </div>
+    {{ if $posts }}{{ with index $posts 0 }}
+    <div class="stat">
+      <span class="stat-num stat-date">{{ .Date.Format "2006-01-02" }}</span>
+      <span class="stat-label">最近更新</span>
+    </div>
+    {{ end }}{{ end }}
+  </div>
+</section>
+
+{{ partial "post-list.html" (dict "pages" $posts) }}
 {{ end }}
-</ul>
+
+{{ define "scripts" }}
+<script>
+(() => {
+  const nums = document.querySelectorAll('.stat-num[data-count]');
+  if (!nums.length) return;
+  // 减少动态效果或不支持 IntersectionObserver 时保留 HTML 里的终值，不做动画
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+  const run = el => {
+    const target = Number(el.dataset.count) || 0;
+    if (!target) return;
+    const t0 = performance.now();
+    const step = now => {
+      const p = Math.min(1, (now - t0) / 900);
+      el.textContent = Math.round(easeOut(p) * target);
+      if (p < 1) requestAnimationFrame(step);
+    };
+    el.textContent = '0';
+    requestAnimationFrame(step);
+  };
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      run(e.target);
+      obs.unobserve(e.target);
+    });
+  }, { threshold: .4 });
+  nums.forEach(el => io.observe(el));
+})();
+</script>
 {{ end }}

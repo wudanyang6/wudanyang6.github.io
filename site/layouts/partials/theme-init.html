@@ -1,0 +1,22 @@
+{{- /* 首屏防闪烁：必须在 <head> 里同步执行（先于样式表）。
+       读取顺序：localStorage 显式选择 → 系统偏好。 */ -}}
+<script>
+(() => {
+  const root = document.documentElement;
+  const KEY = 'theme';
+  let t = null;
+  try {
+    t = localStorage.getItem(KEY);
+  } catch (e) {
+    /* 隐私模式 / 禁用存储：忽略，走系统偏好 */
+  }
+  if (t !== 'light' && t !== 'dark') t = null;
+  const explicit = !!t;
+  if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  // 必须在 try 之外执行：即使 localStorage 抛错，主题属性也要落上（同时标记 JS 已运行）
+  root.setAttribute('data-theme', t);
+  if (explicit) root.setAttribute('data-explicit', '1');
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute('content', t === 'light' ? '#f5f7fc' : '#0b1020');
+})();
+</script>
