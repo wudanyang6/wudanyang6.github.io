@@ -2,7 +2,7 @@
    main.css —— 组件样式层
    设计令牌与基础壳在 head-css.html 内联层定义（首屏即刻正确配色），
    这里只引用令牌，不重复定义值：改配色只改 head-css.html 一处。
-   节序：重置 → 布局壳 → header/footer → hero/统计 → 卡片列表 → tag →
+   节序：重置 → 布局壳 → header/footer → hero/统计 → 卡片列表 → 分页 → tag →
         表格 → 图表 → 来源条 → prose → 跳转卡片 → 动效 → 响应式
    ========================================================================== */
 
@@ -179,7 +179,8 @@ main {
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .brand,
   .hero-title,
-  .stat-num {
+  .stat-num,
+  .page-num.is-current {
     background-image: linear-gradient(120deg, var(--accent), var(--accent-2));
     -webkit-background-clip: text;
     background-clip: text;
@@ -314,6 +315,62 @@ main {
   line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* ---- 分页 ---- */
+
+/* 极简文字流：无边框无底色，当前页靠渐变文字与字重区分 */
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .3rem 1.2rem;
+  margin-top: 1.75rem;
+  font-size: .9rem;
+  animation: rise .5s var(--ease) both;
+}
+
+.page-nums {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .3rem .9rem;
+}
+
+.page-btn,
+.page-num {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  transition: color var(--dur) var(--ease);
+}
+
+.page-btn:hover,
+.page-num:hover {
+  color: var(--accent);
+}
+
+/* 当前页基线：强调色加粗；支持 background-clip 时由上方「渐变文字」小节升级为青紫渐变 */
+.page-num.is-current {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* 禁用态是不可点的 span：pointer-events 顺带屏蔽 hover 反馈 */
+.page-btn.is-disabled {
+  color: var(--faint);
+  opacity: .55;
+  pointer-events: none;
+}
+
+.page-gap {
+  color: var(--faint);
+}
+
+.page-meta {
+  margin-left: auto;
+  color: var(--faint);
+  font-size: .82rem;
+  font-variant-numeric: tabular-nums;
 }
 
 /* ---- tag ---- */
@@ -817,5 +874,11 @@ a.tag:hover {
   /* 小屏无 hover，隐藏 tooltip 以免横向溢出 */
   .bar::after {
     display: none;
+  }
+
+  /* 页码统计换行到整行，不与按钮挤在一行 */
+  .page-meta {
+    margin-left: 0;
+    width: 100%;
   }
 }

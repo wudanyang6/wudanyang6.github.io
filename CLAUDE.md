@@ -41,7 +41,7 @@ hugo --source site --destination public
 - CI 是**非 extended Hugo**：禁 SCSS / `resources.ToCSS`，只能纯 CSS（`minify`/`fingerprint` 是纯 Go 实现，可用）
 - **零外部资源**（读者在大陆）：禁 Google Fonts / CDN，字体只用系统栈，CSS 禁外部 `url()`
 - 双主题：深色为 `:root` 默认，浅色 `[data-theme="light"]`；浅色值在 head-css 写了两份（显式切换 + 无 JS 跟随系统），**改动必须同步**；切换脚本内联在 `partials/theme-init.html`（防 FOUC）与 `theme-toggle.html`
-- 复用点：文章列表 `partials/post-list.html`（首页与 taxonomy 共用）、图表 `partials/traffic-chart.html`（div 柱，不用 SVG——天数可变，flex 自适应）
+- 复用点：文章列表 `partials/post-list.html`、分页 `partials/pagination.html`（首页与 taxonomy 共用，每页篇数在 `hugo.toml [pagination] pagerSize`）、图表 `partials/traffic-chart.html`（div 柱，不用 SVG——天数可变，flex 自适应）
 - RSS 输出 `feed.xml`（保持既有订阅地址，别改 baseName）
 - goldmark typographer 关闭：RSS 是 XML，引号转 `&ldquo;` 等未定义实体会破坏良构——改 markup 配置前想清楚
 - `unsafe = true`：正文允许内嵌 HTML

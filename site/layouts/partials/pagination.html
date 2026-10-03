@@ -1,0 +1,41 @@
+{{- /* 入参：dict "paginator" <paginator>。首页与 taxonomy 页共用。
+       窗口策略：始终显示首尾各 2 页 + 当前页 ±1，跳过的区间以 … 占位。
+       单页（TotalPages <= 1）时整块不渲染。 */ -}}
+{{- $p := .paginator -}}
+{{- if gt $p.TotalPages 1 }}
+<nav class="pagination" aria-label="分页导航">
+  {{- with $p.Prev }}
+  <a class="page-btn" href="{{ .URL }}" rel="prev">← 上一页</a>
+  {{- else }}
+  <span class="page-btn is-disabled">← 上一页</span>
+  {{- end }}
+
+  <span class="page-nums">
+    {{- $cur := $p.PageNumber -}}
+    {{- $total := $p.TotalPages -}}
+    {{- $prev := 0 -}}
+    {{- range $p.Pagers -}}
+      {{- $n := .PageNumber -}}
+      {{- $show := or (le $n 2) (ge $n (sub $total 1)) (and (ge $n (sub $cur 1)) (le $n (add $cur 1))) -}}
+      {{- if $show -}}
+        {{- /* 与上一个已显示页码之间跳过的区间用 … 表示 */ -}}
+        {{- if gt (sub $n $prev) 1 }}<span class="page-gap" aria-hidden="true">…</span>{{ end -}}
+        {{- if eq $n $cur -}}
+        <span class="page-num is-current" aria-current="page">{{ $n }}</span>
+        {{- else -}}
+        <a class="page-num" href="{{ .URL }}">{{ $n }}</a>
+        {{- end -}}
+        {{- $prev = $n -}}
+      {{- end -}}
+    {{- end }}
+  </span>
+
+  {{- with $p.Next }}
+  <a class="page-btn" href="{{ .URL }}" rel="next">下一页 →</a>
+  {{- else }}
+  <span class="page-btn is-disabled">下一页 →</span>
+  {{- end }}
+
+  <span class="page-meta">第 {{ $p.PageNumber }} / {{ $p.TotalPages }} 页</span>
+</nav>
+{{- end }}

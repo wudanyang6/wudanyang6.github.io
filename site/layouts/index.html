@@ -2,6 +2,7 @@
 {{ $posts := where .Site.RegularPages "Section" "posts" }}
 {{ if not $posts }}{{ $posts = .Site.RegularPages }}{{ end }}
 {{ $posts = $posts.ByDate.Reverse }}
+{{ $paginator := .Paginate $posts }}
 
 <section class="hero">
   <h1 class="hero-title">{{ .Site.Title }}</h1>
@@ -24,7 +25,8 @@
   </div>
 </section>
 
-{{ partial "post-list.html" (dict "pages" $posts) }}
+{{ partial "post-list.html" (dict "pages" $paginator.Pages) }}
+{{ partial "pagination.html" (dict "paginator" $paginator) }}
 {{ end }}
 
 {{ define "scripts" }}

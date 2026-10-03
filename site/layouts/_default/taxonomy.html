@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ $paginator := .Paginate .Pages.ByDate.Reverse }}
 <h1># {{ .Data.Term }}</h1>
-{{ partial "post-list.html" (dict "pages" .Pages.ByDate.Reverse) }}
+{{ partial "post-list.html" (dict "pages" $paginator.Pages) }}
+{{ partial "pagination.html" (dict "paginator" $paginator) }}
 {{ end }}
