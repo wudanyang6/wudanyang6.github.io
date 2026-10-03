@@ -1,8 +1,15 @@
 name: Build Site
 
 on:
+  # labeler 用 GITHUB_TOKEN 打标签，防递归规则使其不触发 labeled 事件，
+  # 所以 opened/edited/reopened 不直接建站——改为等 labeler 跑完（workflow_run），
+  # 否则最新一篇会在标签写回之前上线。这里只留 labeler 不处理的路径。
   issues:
-    types: [opened, edited, closed, reopened, labeled, unlabeled]
+    types: [closed, labeled, unlabeled]
+  # labeler 无论成功/失败/取消，完成即触发建站，保证新文章不会漏上线
+  workflow_run:
+    workflows: ["Issue Labeler"]
+    types: [completed]
   schedule:
     - cron: '23 2 * * *'
   workflow_dispatch:
