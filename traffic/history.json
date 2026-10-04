@@ -169,6 +169,11 @@
       "date": "2026-10-02",
       "views": 1,
       "uniques": 1
+    },
+    {
+      "date": "2026-10-03",
+      "views": 31,
+      "uniques": 1
     }
   ],
   "paths": [
@@ -181,14 +186,14 @@
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues",
       "title": "/issues",
-      "count": 20,
-      "uniques": 4
+      "count": 19,
+      "uniques": 2
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/3",
       "title": "/issues/3",
-      "count": 14,
-      "uniques": 12
+      "count": 16,
+      "uniques": 13
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/pulse",
@@ -199,7 +204,7 @@
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/new",
       "title": "/issues/new",
-      "count": 13,
+      "count": 11,
       "uniques": 1
     },
     {
@@ -209,41 +214,41 @@
       "uniques": 1
     },
     {
-      "path": "/wudanyang6/wiki",
-      "title": "Overview",
-      "count": 7,
-      "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wiki/issues",
-      "title": "/issues",
-      "count": 4,
-      "uniques": 1
-    },
-    {
       "path": "/wudanyang6/wudanyang6.github.io/actions",
       "title": "/actions",
       "count": 4,
       "uniques": 1
     },
     {
-      "path": "/wudanyang6/wiki/actions/workflows/site.yml",
-      "title": "/actions/workflows/site.yml",
+      "path": "/wudanyang6/wudanyang6.github.io/issues/31",
+      "title": "/issues/31",
       "count": 3,
       "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/labels",
+      "title": "/labels",
+      "count": 3,
+      "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/issues/17",
+      "title": "/issues/17",
+      "count": 2,
+      "uniques": 2
     }
   ],
   "referrers": [
     {
       "referrer": "github.com",
-      "count": 28,
-      "uniques": 17
+      "count": 23,
+      "uniques": 15
     },
     {
       "referrer": "wudanyang6.github.io",
-      "count": 6,
+      "count": 8,
       "uniques": 2
     }
   ],
-  "updated": "2026-10-03T14:37:01.257274+00:00"
+  "updated": "2026-10-04T08:31:05.391781+00:00"
 }
