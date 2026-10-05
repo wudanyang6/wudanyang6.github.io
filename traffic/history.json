@@ -174,20 +174,25 @@
       "date": "2026-10-03",
       "views": 31,
       "uniques": 1
+    },
+    {
+      "date": "2026-10-04",
+      "views": 4,
+      "uniques": 1
     }
   ],
   "paths": [
     {
-      "path": "/wudanyang6/wudanyang6.github.io",
-      "title": "Overview",
-      "count": 23,
-      "uniques": 3
-    },
-    {
       "path": "/wudanyang6/wudanyang6.github.io/issues",
       "title": "/issues",
-      "count": 19,
+      "count": 20,
       "uniques": 2
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io",
+      "title": "Overview",
+      "count": 18,
+      "uniques": 3
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/3",
@@ -196,33 +201,33 @@
       "uniques": 13
     },
     {
-      "path": "/wudanyang6/wudanyang6.github.io/pulse",
-      "title": "/pulse",
-      "count": 13,
-      "uniques": 2
-    },
-    {
       "path": "/wudanyang6/wudanyang6.github.io/issues/new",
       "title": "/issues/new",
       "count": 11,
       "uniques": 1
     },
     {
+      "path": "/wudanyang6/wudanyang6.github.io/pulse",
+      "title": "/pulse",
+      "count": 10,
+      "uniques": 2
+    },
+    {
       "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
       "title": "/graphs/traffic",
-      "count": 10,
+      "count": 7,
       "uniques": 1
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/actions",
       "title": "/actions",
-      "count": 4,
+      "count": 5,
       "uniques": 1
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/31",
       "title": "/issues/31",
-      "count": 3,
+      "count": 4,
       "uniques": 1
     },
     {
@@ -241,14 +246,14 @@
   "referrers": [
     {
       "referrer": "github.com",
-      "count": 23,
-      "uniques": 15
+      "count": 21,
+      "uniques": 14
     },
     {
       "referrer": "wudanyang6.github.io",
-      "count": 8,
+      "count": 10,
       "uniques": 2
     }
   ],
-  "updated": "2026-10-04T08:31:05.391781+00:00"
+  "updated": "2026-10-05T09:12:33.602910+00:00"
 }
