@@ -91,11 +91,18 @@ body {
 html:not([data-theme]) .theme-toggle {
   display: none;
 }
-:root[data-theme="light"] .i-sun {
+/* 三态图标：auto 兜底默认（含 data-mode 缺失的情况），其余按 mode 显示 */
+.theme-toggle svg {
   display: none;
 }
-:root:not([data-theme="light"]) .i-moon {
-  display: none;
+:root:not([data-mode="light"]):not([data-mode="dark"]) .i-auto {
+  display: block;
+}
+:root[data-mode="light"] .i-sun {
+  display: block;
+}
+:root[data-mode="dark"] .i-moon {
+  display: block;
 }
 </style>
 {{- /* 全量组件样式：minify/fingerprint 均为纯 Go 实现，非 extended Hugo 亦可用 */ -}}

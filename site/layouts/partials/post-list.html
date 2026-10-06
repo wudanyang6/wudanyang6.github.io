@@ -9,7 +9,7 @@
     <p class="post-meta">
       <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "2006-01-02" }}</time>
       {{ with $p.Params.issue }}<span class="issue-badge">#{{ . }}</span>{{ end }}
-      {{ range $p.GetTerms "tags" }}<a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+      {{ range $p.GetTerms "tags" }}<a class="tag" href="{{ .RelPermalink }}">{{ .Data.Term }}</a>{{ end }}
     </p>
     {{ with $p.Summary }}<p class="post-summary">{{ . }}</p>{{ end }}
   </article>

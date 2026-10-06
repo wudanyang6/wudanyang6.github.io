@@ -1,0 +1,37 @@
+{{- /* SEO：描述、canonical、Open Graph / Twitter 卡片、首页 JSON-LD。
+       预览页（externalURL）正文在 GitHub：canonical 指过去 + noindex，避免薄内容重复收录。
+       描述优先级：页面 description → 页面 summary（预览页的纯文本摘要）→ 站点描述。 */ -}}
+{{- $title := .Title -}}
+{{- if .IsHome }}{{ $title = .Site.Title }}{{ end -}}
+{{- $desc := .Params.description | default .Params.summary | default .Site.Params.description -}}
+{{- $ogImage := "og.png" | absURL -}}
+<meta name="description" content="{{ $desc }}" />
+{{- if .Params.externalURL }}
+<link rel="canonical" href="{{ .Params.externalURL }}" />
+<meta name="robots" content="noindex" />
+{{- else }}
+<link rel="canonical" href="{{ .Permalink }}" />
+{{- end }}
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $desc }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:image" content="{{ $ogImage }}" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
+<meta name="twitter:image" content="{{ $ogImage }}" />
+{{- if .IsHome }}
+{{- /* 站点级结构化数据；SearchAction 对应站内的 /search/ 页 */ -}}
+{{- $ld := dict "@context" "https://schema.org" "@type" "WebSite"
+      "name" .Site.Title
+      "url" .Site.BaseURL
+      "description" .Site.Params.description
+      "potentialAction" (dict "@type" "SearchAction"
+        "target" (printf "%s?q={search_term_string}" ("search/" | absURL))
+        "query-input" "required name=search_term_string") }}
+{{- /* jsonify 后必须 safeJS：否则 <script> 上下文会把它当 JS 字符串再转义一遍 */ -}}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+{{- end }}

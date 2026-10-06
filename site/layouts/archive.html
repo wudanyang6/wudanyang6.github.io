@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ if not $posts }}{{ $posts = .Site.RegularPages }}{{ end }}
+{{ $posts = $posts.ByDate.Reverse }}
+<article class="card archive-panel">
+  <h1>{{ .Title }}</h1>
+  <p class="page-meta">共 {{ len $posts }} 篇，按月份归档</p>
+  {{ range $posts.GroupByDate "2006-01" }}
+  <section class="archive-year">
+    <h2 class="archive-year-label">{{ .Key }}<span class="archive-year-count">{{ len .Pages }} 篇</span></h2>
+    <ul class="archive-list">
+      {{ range .Pages }}
+      <li class="archive-item">
+        <time class="archive-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02" }}</time>
+        <a class="archive-title" href="{{ with .Params.externalURL }}{{ . }}{{ else }}{{ .RelPermalink }}{{ end }}"{{ if .Params.externalURL }} rel="noopener"{{ end }}>{{ .Title }}</a>
+        <span class="archive-tags">
+          {{- range $i, $t := .GetTerms "tags" }}{{ if $i }}<span class="sep">·</span>{{ end }}<a href="{{ $t.RelPermalink }}">{{ $t.Data.Term }}</a>{{ end -}}
+        </span>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+</article>
+{{ end }}

@@ -6,11 +6,7 @@
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
 <meta name="theme-color" content="#0b1020" />
 {{ partial "theme-init.html" . }}
-{{- if .Params.externalURL }}
-{{- /* 站内兜底页：canonical 指向正文所在的 GitHub issue，但不做自动跳转 */}}
-<link rel="canonical" href="{{ .Params.externalURL }}" />
-<meta name="robots" content="noindex" />
-{{- end }}
+{{ partial "seo.html" . }}
 {{- /* 生成产物：新克隆可能缺失，缺了也不能让构建失败 */}}
 {{- if templates.Exists "partials/verification.html" }}{{ partial "verification.html" . }}{{ end }}
 {{ partial "head-css.html" . }}
@@ -25,6 +21,7 @@
     <nav class="site-nav" aria-label="站点导航">
       <a href="{{ "about/" | relURL }}">关于</a>
       <a href="{{ "tags/" | relURL }}">标签</a>
+      <a href="{{ "archive/" | relURL }}">归档</a>
       <a href="{{ "search/" | relURL }}">搜索</a>
       <a href="{{ "feed.xml" | relURL }}">RSS</a>
       <a href="{{ "traffic.html" | relURL }}">访问统计</a>

@@ -1,0 +1,16 @@
+{{- /* 自定义 sitemap：排除带 externalURL 的预览页——它们是 noindex，
+       列进 sitemap 等于让搜索引擎抓取并被告知"别收录"，自相矛盾。
+       其余页面（首页/归档/标签/关于/搜索/统计）照常收录。 */ -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{- range .Pages }}
+  {{- if not .Params.externalURL }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- if not .Lastmod.IsZero }}
+    <lastmod>{{ safeHTML (.Lastmod.Format "2006-01-02T15:04:05-07:00") }}</lastmod>
+    {{- end }}
+  </url>
+  {{- end }}
+  {{- end }}
+</urlset>

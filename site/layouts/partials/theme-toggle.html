@@ -1,4 +1,8 @@
-<button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换深浅色主题" aria-pressed="false">
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换主题" title="主题：跟随系统">
+  <svg class="i-auto" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <circle cx="12" cy="12" r="9" />
+    <path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor" stroke="none" />
+  </svg>
   <svg class="i-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
     <circle cx="12" cy="12" r="4.2" />
     <path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3 17 7M7 17l-1.7 1.7" />
@@ -12,22 +16,37 @@
   const btn = document.getElementById('theme-toggle');
   if (!btn) return;
   const root = document.documentElement;
-  const KEY = 'theme';
-  const isLight = () => root.getAttribute('data-theme') === 'light';
-  const syncPressed = () => btn.setAttribute('aria-pressed', String(isLight()));
-  syncPressed();
+  const KEY = 'theme-mode';
+  const MODES = ['auto', 'light', 'dark'];
+  const LABELS = { auto: '跟随系统', light: '浅色', dark: '深色' };
+  const mq = matchMedia('(prefers-color-scheme: light)');
+  const meta = document.querySelector('meta[name="theme-color"]');
+  const modeOf = () => root.getAttribute('data-mode') || 'auto';
+
+  const paint = mode => {
+    const theme = mode === 'auto' ? (mq.matches ? 'light' : 'dark') : mode;
+    root.setAttribute('data-mode', mode);
+    root.setAttribute('data-theme', theme);
+    if (meta) meta.setAttribute('content', theme === 'light' ? '#f5f7fc' : '#0b1020');
+    btn.setAttribute('title', '主题：' + LABELS[mode]);
+    btn.setAttribute('aria-label', '主题：' + LABELS[mode] + '，点击切换');
+  };
+
+  paint(modeOf());
+
   btn.addEventListener('click', () => {
-    const next = isLight() ? 'dark' : 'light';
-    root.setAttribute('data-theme', next);
-    root.setAttribute('data-explicit', '1');
+    const next = MODES[(MODES.indexOf(modeOf()) + 1) % MODES.length];
     try {
       localStorage.setItem(KEY, next);
     } catch (e) {
       /* 存储不可用：本次会话内切换仍然生效 */
     }
-    const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', next === 'light' ? '#f5f7fc' : '#0b1020');
-    syncPressed();
+    paint(next);
+  });
+
+  // 跟随系统模式下，系统主题切换实时生效
+  mq.addEventListener('change', () => {
+    if (modeOf() === 'auto') paint('auto');
   });
 })();
 </script>

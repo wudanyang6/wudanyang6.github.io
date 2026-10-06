@@ -4,7 +4,5 @@
 title: 访问统计
 url: traffic.html  # 保持既有地址，避免外链失效
 layout: traffic
-build:
-  list: false  # 统计页不进首页文章列表与 RSS
-  render: true
+# 别加 build.list: false——那会让本页从 sitemap 消失；不进列表/RSS 由模板按 section 过滤保证
 ---

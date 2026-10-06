@@ -3,7 +3,7 @@
    设计令牌与基础壳在 head-css.html 内联层定义（首屏即刻正确配色），
    这里只引用令牌，不重复定义值：改配色只改 head-css.html 一处。
    节序：重置 → 布局壳 → header/footer → hero/统计 → 卡片列表 → 分页 → tag →
-        表格 → 图表 → 来源条 → prose → 预览卡片 → 搜索 → 动效 → 响应式
+        表格 → 图表 → 来源条 → prose → 预览卡片 → 搜索 → 归档 → 动效 → 响应式
    ========================================================================== */
 
 /* ---- 重置 ---- */
@@ -139,10 +139,6 @@ main {
   color: var(--text);
   border-color: var(--accent);
   transform: translateY(-1px);
-}
-
-.theme-toggle svg {
-  display: block;
 }
 
 .site-footer {
@@ -837,6 +833,91 @@ mark {
   font-weight: 650;
 }
 
+/* ---- 归档页 ---- */
+
+.archive-panel {
+  padding: 1.5rem 1.6rem;
+  animation: rise .5s var(--ease) both;
+}
+
+.archive-year {
+  margin-top: 1.75rem;
+}
+
+.archive-year:first-of-type {
+  margin-top: .75rem;
+}
+
+.archive-year-label {
+  display: flex;
+  align-items: baseline;
+  gap: .6rem;
+  margin: 0 0 .35rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.archive-year-count {
+  color: var(--faint);
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.archive-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* grid 而非 flex：flex 会把整项换行，长标题时日期被挤到独立一行 */
+.archive-item {
+  display: grid;
+  grid-template-columns: 1.8rem 1fr auto;
+  align-items: baseline;
+  gap: .1rem .7rem;
+  padding: .45rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.archive-item:last-child {
+  border-bottom: 0;
+}
+
+.archive-date {
+  min-width: 1.8rem;
+  color: var(--faint);
+  font-size: .84rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.archive-title {
+  color: var(--text);
+  transition: color var(--dur) var(--ease);
+}
+
+.archive-title:hover {
+  color: var(--accent);
+}
+
+/* 标签推到行尾并弱化：归档页的主角是标题 */
+.archive-tags {
+  color: var(--faint);
+  font-size: .8rem;
+  text-align: right;
+}
+
+.archive-tags a {
+  color: var(--faint);
+  transition: color var(--dur) var(--ease);
+}
+
+.archive-tags a:hover {
+  color: var(--accent);
+}
+
+.archive-tags .sep {
+  margin: 0 .3rem;
+}
+
 /* ---- 动效 ---- */
 
 @keyframes rise {
@@ -941,6 +1022,20 @@ mark {
 
   .search-panel {
     padding: 1.15rem 1rem;
+  }
+
+  .archive-panel {
+    padding: 1.15rem 1rem;
+  }
+
+  /* 窄屏标签落到标题下方，避免挤压标题列 */
+  .archive-item {
+    grid-template-columns: 1.8rem 1fr;
+  }
+
+  .archive-tags {
+    grid-column: 2;
+    text-align: left;
   }
 
   .chart {

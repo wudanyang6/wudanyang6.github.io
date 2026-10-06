@@ -1,5 +1,6 @@
-{{- $pages := .Pages -}}
-{{- if not $pages -}}{{- $pages = .Site.RegularPages -}}{{- end -}}
+{{- /* 只收 posts：关于/归档/搜索/统计也在 .Pages 里，但不该进订阅源 */ -}}
+{{- $pages := where .Pages "Section" "posts" -}}
+{{- if not $pages -}}{{- $pages = where .Site.RegularPages "Section" "posts" -}}{{- end -}}
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel>

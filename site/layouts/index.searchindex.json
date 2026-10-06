@@ -5,7 +5,7 @@
 {{- $items := slice -}}
 {{- range $posts.ByDate.Reverse -}}
   {{- $tags := slice -}}
-  {{- range .GetTerms "tags" }}{{ $tags = $tags | append .LinkTitle }}{{ end -}}
+  {{- range .GetTerms "tags" }}{{ $tags = $tags | append .Data.Term }}{{ end -}}
   {{- $items = $items | append (dict
       "title" .Title
       "url" .Params.externalURL

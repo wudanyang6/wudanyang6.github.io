@@ -3,6 +3,7 @@ languageCode = "zh-CN"
 title = "wudanyang"
 description = "Personal notes on engineering and everyday life"
 disableKinds = ["section"]  # 站内无文章页，/posts/ section 列表页无意义
+enableRobotsTXT = true      # 用 layouts/robots.txt 模板，带上 sitemap 声明
 
 [params]
 description = "Personal notes on engineering and everyday life"
