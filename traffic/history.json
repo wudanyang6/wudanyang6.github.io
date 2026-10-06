@@ -179,6 +179,11 @@
       "date": "2026-10-04",
       "views": 4,
       "uniques": 1
+    },
+    {
+      "date": "2026-10-05",
+      "views": 7,
+      "uniques": 3
     }
   ],
   "paths": [
@@ -189,22 +194,16 @@
       "uniques": 2
     },
     {
-      "path": "/wudanyang6/wudanyang6.github.io",
-      "title": "Overview",
-      "count": 18,
-      "uniques": 3
-    },
-    {
       "path": "/wudanyang6/wudanyang6.github.io/issues/3",
       "title": "/issues/3",
-      "count": 16,
+      "count": 15,
       "uniques": 13
     },
     {
-      "path": "/wudanyang6/wudanyang6.github.io/issues/new",
-      "title": "/issues/new",
-      "count": 11,
-      "uniques": 1
+      "path": "/wudanyang6/wudanyang6.github.io",
+      "title": "Overview",
+      "count": 12,
+      "uniques": 3
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/pulse",
@@ -213,21 +212,21 @@
       "uniques": 2
     },
     {
+      "path": "/wudanyang6/wudanyang6.github.io/issues/new",
+      "title": "/issues/new",
+      "count": 9,
+      "uniques": 1
+    },
+    {
       "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
       "title": "/graphs/traffic",
-      "count": 7,
+      "count": 8,
       "uniques": 1
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/actions",
       "title": "/actions",
-      "count": 5,
-      "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/issues/31",
-      "title": "/issues/31",
-      "count": 4,
+      "count": 3,
       "uniques": 1
     },
     {
@@ -241,13 +240,19 @@
       "title": "/issues/17",
       "count": 2,
       "uniques": 2
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/issues/30",
+      "title": "/issues/30",
+      "count": 2,
+      "uniques": 2
     }
   ],
   "referrers": [
     {
       "referrer": "github.com",
       "count": 21,
-      "uniques": 14
+      "uniques": 13
     },
     {
       "referrer": "wudanyang6.github.io",
@@ -255,5 +260,5 @@
       "uniques": 2
     }
   ],
-  "updated": "2026-10-05T09:12:33.602910+00:00"
+  "updated": "2026-10-06T09:04:51.789808+00:00"
 }
