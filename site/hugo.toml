@@ -16,9 +16,9 @@ baseName = "feed"
 [taxonomies]
 tag = "tags"
 
-# 列表分页：首页与 tag 词条页每页 10 篇
+# 列表分页：首页与 tag 词条页每页 25 篇
 [pagination]
-pagerSize = 10
+pagerSize = 25
 
 # 搜索索引：/search/ 页客户端过滤用，纯 JSON 无外部依赖
 [outputFormats.SearchIndex]
