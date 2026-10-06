@@ -87,8 +87,9 @@ body {
   margin: 0 auto;
   padding: 0 1.25rem;
 }
-/* 无 JS（theme-init 未执行 → 无 data-theme）时隐藏切换按钮 */
-html:not([data-theme]) .theme-toggle {
+/* 无 JS（theme-init 未执行 → 无 data-theme）时隐藏这些依赖 JS 的控件 */
+html:not([data-theme]) .theme-toggle,
+html:not([data-theme]) .btn-random {
   display: none;
 }
 /* 三态图标：auto 兜底默认（含 data-mode 缺失的情况），其余按 mode 显示 */

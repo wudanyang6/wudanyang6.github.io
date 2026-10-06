@@ -3,7 +3,7 @@
    设计令牌与基础壳在 head-css.html 内联层定义（首屏即刻正确配色），
    这里只引用令牌，不重复定义值：改配色只改 head-css.html 一处。
    节序：重置 → 布局壳 → header/footer → hero/统计 → 卡片列表 → 分页 → tag →
-        表格 → 图表 → 来源条 → prose → 预览卡片 → 搜索 → 归档 → 动效 → 响应式
+        表格 → 图表 → 来源条 → prose → 预览卡片 → 搜索 → 归档 → 随机按钮 → 动效 → 响应式
    ========================================================================== */
 
 /* ---- 重置 ---- */
@@ -918,6 +918,128 @@ mark {
   margin: 0 .3rem;
 }
 
+/* ---- 相关文章页 ---- */
+
+.related-panel {
+  padding: 1.5rem 1.6rem;
+  animation: rise .5s var(--ease) both;
+}
+
+.related-index {
+  margin-top: 1.25rem;
+}
+
+.related-group {
+  padding: .9rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.related-group:last-child {
+  border-bottom: 0;
+}
+
+.related-source {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .3rem .7rem;
+  margin: 0 0 .45rem;
+  font-size: 1.02rem;
+}
+
+.related-source-link {
+  color: var(--text);
+  font-weight: 650;
+  transition: color var(--dur) var(--ease);
+}
+
+.related-source-link:hover {
+  color: var(--accent);
+}
+
+.related-date {
+  color: var(--faint);
+  font-size: .8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.related-list {
+  display: grid;
+  gap: .3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.related-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .25rem .5rem;
+  font-size: .92rem;
+}
+
+.related-list a {
+  color: var(--muted);
+  transition: color var(--dur) var(--ease);
+}
+
+.related-list a:hover {
+  color: var(--accent);
+}
+
+.related-shared {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+}
+
+/* 交集标签比正文里的标签更小，避免抢标题 */
+.related-shared .tag {
+  padding: .02rem .45rem;
+  font-size: .72rem;
+}
+
+.related-none {
+  margin: 0;
+  color: var(--faint);
+  font-size: .85rem;
+}
+
+/* ---- 随机文章按钮（header 内，与主题切换并排） ---- */
+
+.btn-random {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.1rem;
+  padding: 0 .7rem;
+  /* 透明边框占位：浅色主题换成描边时盒子尺寸不变 */
+  border: 1px solid transparent;
+  border-radius: var(--radius-s);
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  color: #061018;
+  font: inherit;
+  font-size: .85rem;
+  font-weight: 650;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease),
+              color var(--dur) var(--ease);
+}
+
+.btn-random:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px -8px var(--accent);
+}
+
+/* 浅色下实心渐变偏重，改为淡底 + 强调色文字 */
+:root[data-theme="light"] .btn-random {
+  background: rgba(8, 145, 178, .12);
+  border-color: rgba(8, 145, 178, .30);
+  color: var(--accent);
+}
+
 /* ---- 动效 ---- */
 
 @keyframes rise {
@@ -962,7 +1084,8 @@ mark {
   .post-card:hover,
   .tile:hover,
   .btn:hover,
-  .theme-toggle:hover {
+  .theme-toggle:hover,
+  .btn-random:hover {
     transform: none;
   }
 }
@@ -986,10 +1109,14 @@ mark {
     width: 100%;
     margin-left: 0;
     justify-content: space-between;
+    /* 项目变多时整体换行，而不是各自被挤成逐字折行 */
+    flex-wrap: wrap;
+    gap: .1rem .45rem;
   }
 
   .site-nav a {
     padding: .3rem .45rem;
+    white-space: nowrap;
   }
 
   .hero {
@@ -1025,6 +1152,10 @@ mark {
   }
 
   .archive-panel {
+    padding: 1.15rem 1rem;
+  }
+
+  .related-panel {
     padding: 1.15rem 1rem;
   }
 

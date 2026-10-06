@@ -1,0 +1,20 @@
+<button id="random-post" class="btn-random" type="button"
+        title="随机打开一篇的 GitHub 原文" aria-label="随机打开一篇的 GitHub 原文">🎲 随机</button>
+<script>
+(() => {
+  const btn = document.getElementById('random-post');
+  if (!btn) return;
+  // 复用搜索索引（已含全部文章与 GitHub 原文地址），点击时才拉取
+  btn.addEventListener('click', async () => {
+    try {
+      const res = await fetch('{{ "search-index.json" | relURL }}');
+      const posts = await res.json();
+      if (!posts.length) return;
+      const pick = posts[Math.floor(Math.random() * posts.length)];
+      if (pick.url) location.href = pick.url;
+    } catch (e) {
+      /* 索引拉取失败：留在原地，不弹错打断阅读 */
+    }
+  });
+})();
+</script>

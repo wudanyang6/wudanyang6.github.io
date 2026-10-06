@@ -46,12 +46,14 @@ hugo --source site --destination public
 - 复用点：文章列表 `partials/post-list.html`、分页 `partials/pagination.html`（首页与 taxonomy 共用，每页篇数在 `hugo.toml [pagination] pagerSize`）、图表 `partials/traffic-chart.html`（div 柱，不用 SVG——天数可变，flex 自适应）
 - 搜索：`layouts/search.html` 原生 JS 客户端过滤（零依赖、无外部请求），数据来自 home 的 `SearchIndex` 输出格式 → `search-index.json`（字段见 `layouts/index.searchindex.json`）；支持多词 AND 与 `?q=` 直达
 - 归档：`layouts/archive.html` 用 `GroupByDate "2006-01"` 按月分组（新月份自动成组），行内只显示「日」；**刻意不分页**——归档页的价值就是完整纵览，别按首页的做法给它加分页
+- 随机一篇：header 里的按钮（`partials/random-button.html`），点击时才拉 `search-index.json` 随机取一条跳 GitHub 原文——复用搜索索引，不额外产出数据文件；浅色主题下用淡底而非实心渐变（header 里实心太重）
 - RSS 输出 `feed.xml`（保持既有订阅地址，别改 baseName）
 - goldmark typographer 关闭：RSS 是 XML，引号转 `&ldquo;` 等未定义实体会破坏良构——改 markup 配置前想清楚
 - `unsafe = true`：正文允许内嵌 HTML
 - `disableKinds = ["section"]`：无 section 列表页；统计文章数用 `where .Site.RegularPages "Section" "posts"`，别用 `.Pages`/`.Site.Sections`
 - 静态页（关于/归档/搜索/统计）**不要加 `build.list: false`**——那会让页面从 `.Site.Pages` 消失、连带从 sitemap 消失；不进首页列表与 RSS 改由模板按 `where ... "Section" "posts"` 过滤保证（`rss.xml` 同样按 section 过滤，改它时保持这个过滤）
 - SEO：`partials/seo.html` 统一产出 description / canonical / Open Graph / Twitter 卡片 / 首页 JSON-LD（`jsonify` 后必须 `safeJS`，否则 `<script>` 上下文会二次转义）；预览页 canonical 指 GitHub + noindex；`layouts/sitemap.xml` 排除预览页，`robots.txt` 由 `enableRobotsTXT` 启用；分享图 `site/static/og.png`（1200×630）
+- 安全头：GitHub Pages **不支持自定义 HTTP 响应头**，`partials/security.html` 只能给 meta 形式的 CSP 与 Referrer-Policy；HSTS / X-Frame-Options / X-Content-Type-Options / Permissions-Policy / X-XSS-Protection 没有 meta 形式，要下发必须前置 CDN（如 Cloudflare）。CSP 含 `'unsafe-inline'`（站内有内联 critical CSS、防闪烁脚本与动态 `style="--d:…"` 属性），且**仅在非 `hugo server` 时输出**——开发服务器注入的 livereload 脚本跨源会撞 CSP
 
 ### Issue 自动化（.github/workflows/）
 

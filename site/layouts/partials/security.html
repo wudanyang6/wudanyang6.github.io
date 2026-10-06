@@ -1,0 +1,14 @@
+{{- /* 安全头：GitHub Pages 不支持自定义 HTTP 响应头，只能用 meta 近似。
+       可行：CSP、Referrer-Policy 有 meta 形式。
+       不可行：HSTS / X-Frame-Options / X-Content-Type-Options / Permissions-Policy /
+       X-XSS-Protection —— 这些没有 meta 形式，只有前置 CDN（如 Cloudflare）能下发。
+
+       CSP 允许 'unsafe-inline'：站内依赖内联 critical CSS 与首屏防闪烁脚本，
+       且模板里有 style="--d: 45ms" 这类动态内联属性，哈希无法覆盖属性形式。
+       即便如此，CSP 仍挡住外部脚本/样式加载、object/embed、base 劫持与表单外发。
+
+       开发服务器会注入 livereload 脚本（跨源）会撞 CSP，故仅生产输出。 */ -}}
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+{{- if not hugo.IsServer }}
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'" />
+{{- end }}

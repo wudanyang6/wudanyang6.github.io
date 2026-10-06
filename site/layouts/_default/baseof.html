@@ -6,6 +6,7 @@
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
 <meta name="theme-color" content="#0b1020" />
 {{ partial "theme-init.html" . }}
+{{ partial "security.html" . }}
 {{ partial "seo.html" . }}
 {{- /* 生成产物：新克隆可能缺失，缺了也不能让构建失败 */}}
 {{- if templates.Exists "partials/verification.html" }}{{ partial "verification.html" . }}{{ end }}
@@ -26,6 +27,7 @@
       <a href="{{ "feed.xml" | relURL }}">RSS</a>
       <a href="{{ "traffic.html" | relURL }}">访问统计</a>
     </nav>
+    {{ partial "random-button.html" . }}
     {{ partial "theme-toggle.html" . }}
   </div>
 </header>
