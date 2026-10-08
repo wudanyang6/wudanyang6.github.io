@@ -189,6 +189,11 @@
       "date": "2026-10-06",
       "views": 23,
       "uniques": 1
+    },
+    {
+      "date": "2026-10-07",
+      "views": 0,
+      "uniques": 0
     }
   ],
   "paths": [
@@ -207,7 +212,7 @@
     {
       "path": "/wudanyang6/wudanyang6.github.io",
       "title": "Overview",
-      "count": 9,
+      "count": 8,
       "uniques": 2
     },
     {
@@ -256,14 +261,14 @@
   "referrers": [
     {
       "referrer": "github.com",
-      "count": 22,
+      "count": 21,
       "uniques": 12
     },
     {
       "referrer": "wudanyang6.github.io",
-      "count": 15,
-      "uniques": 2
+      "count": 14,
+      "uniques": 1
     }
   ],
-  "updated": "2026-10-07T08:48:10.460544+00:00"
+  "updated": "2026-10-08T09:06:46.646921+00:00"
 }
