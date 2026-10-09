@@ -194,6 +194,11 @@
       "date": "2026-10-07",
       "views": 0,
       "uniques": 0
+    },
+    {
+      "date": "2026-10-08",
+      "views": 5,
+      "uniques": 3
     }
   ],
   "paths": [
@@ -206,13 +211,13 @@
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/3",
       "title": "/issues/3",
-      "count": 15,
-      "uniques": 13
+      "count": 16,
+      "uniques": 14
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io",
       "title": "Overview",
-      "count": 8,
+      "count": 9,
       "uniques": 2
     },
     {
@@ -230,14 +235,8 @@
     {
       "path": "/wudanyang6/wudanyang6.github.io/pulse",
       "title": "/pulse",
-      "count": 6,
+      "count": 5,
       "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/issues/30",
-      "title": "/issues/30",
-      "count": 3,
-      "uniques": 2
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/actions",
@@ -256,13 +255,19 @@
       "title": "/labels",
       "count": 3,
       "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/issues/17",
+      "title": "/issues/17",
+      "count": 2,
+      "uniques": 2
     }
   ],
   "referrers": [
     {
       "referrer": "github.com",
-      "count": 21,
-      "uniques": 12
+      "count": 22,
+      "uniques": 13
     },
     {
       "referrer": "wudanyang6.github.io",
@@ -270,5 +275,5 @@
       "uniques": 1
     }
   ],
-  "updated": "2026-10-08T09:06:46.646921+00:00"
+  "updated": "2026-10-09T09:13:07.052521+00:00"
 }
