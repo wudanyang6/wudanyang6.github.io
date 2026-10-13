@@ -214,31 +214,30 @@
       "date": "2026-10-11",
       "views": 3,
       "uniques": 2
+    },
+    {
+      "date": "2026-10-12",
+      "views": 4,
+      "uniques": 3
     }
   ],
   "paths": [
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues",
       "title": "/issues",
-      "count": 20,
+      "count": 19,
       "uniques": 1
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/3",
       "title": "/issues/3",
-      "count": 16,
-      "uniques": 14
+      "count": 14,
+      "uniques": 12
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io",
       "title": "Overview",
-      "count": 12,
-      "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
-      "title": "/graphs/traffic",
-      "count": 8,
+      "count": 11,
       "uniques": 1
     },
     {
@@ -248,10 +247,22 @@
       "uniques": 1
     },
     {
-      "path": "/wudanyang6/wudanyang6.github.io/pulse",
-      "title": "/pulse",
+      "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
+      "title": "/graphs/traffic",
       "count": 7,
       "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/pulse",
+      "title": "/pulse",
+      "count": 6,
+      "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/issues/45",
+      "title": "/issues/45",
+      "count": 4,
+      "uniques": 2
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/actions",
@@ -270,25 +281,19 @@
       "title": "/labels",
       "count": 3,
       "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/issues/40",
-      "title": "/issues/40",
-      "count": 2,
-      "uniques": 2
     }
   ],
   "referrers": [
     {
       "referrer": "github.com",
-      "count": 23,
-      "uniques": 12
+      "count": 21,
+      "uniques": 10
     },
     {
       "referrer": "wudanyang6.github.io",
-      "count": 14,
+      "count": 13,
       "uniques": 1
     }
   ],
-  "updated": "2026-10-12T16:00:48.720654+00:00"
+  "updated": "2026-10-13T09:32:03.646263+00:00"
 }
