@@ -72,7 +72,9 @@ echo "Done: added $added label(s) to issue #$issue_number"
 # 7. 审核结果：有问题时评论告知；评论带规范化标记，相同结论只评一次
 #    （issue 反复编辑触发多次运行，避免重复刷屏）
 #    判断依据是 problems 数量而非 status 字符串——模型对枚举值的输出不完全可靠
-review_json=$(jq -c '.review // empty' <<<"$content")
+review_json=$(jq -c '.review // empty' <<<"$content" 2>/dev/null || true)
+# 模型偶尔漏掉 review 字段：当作无问题处理，而不是让脚本崩在后续 jq 上
+[ -z "$review_json" ] && review_json='{"problems":[]}'
 problem_count=$(jq -r '.problems // [] | length' <<<"$review_json" 2>/dev/null || echo 0)
 if [ "${problem_count:-0}" -eq 0 ]; then
   echo "Review: pass, no comment needed"
@@ -96,15 +98,24 @@ category_cn() {
     political) echo "政治敏感" ;;
     porn) echo "涉黄" ;;
     gambling) echo "涉赌" ;;
+    factual-error) echo "事实错误" ;;
+    outdated) echo "信息过时" ;;
+    misleading) echo "可能误导" ;;
+    broken-example) echo "示例有误" ;;
     *) echo "$1" ;;
   esac
 }
 
-comment_file=$(mktemp)
-{
-  echo "⚠️ **内容审核发现以下问题**（自动审核，[Issue Labeler](https://github.com/wudanyang6/wudanyang6.github.io/actions/workflows/issue-labeler.yml)）"
-  echo ""
-  n=0
+# 两类问题语气不同：合规问题必须改，正确性问题只需核对。
+# 按「已知的正确性类目」反向切分，未知/缺失 category 落入合规段（保守）
+correctness_categories='["factual-error","outdated","misleading","broken-example"]'
+correctness_json=$(jq -c --argjson cats "$correctness_categories" \
+  '[.problems[]? | select(.category as $c | $cats | index($c))]' <<<"$review_json")
+compliance_json=$(jq -c --argjson cats "$correctness_categories" \
+  '[.problems[]? | select(.category as $c | $cats | index($c) | not)]' <<<"$review_json")
+
+render_problems() {
+  local n=0 category quote reason suggestion
   while IFS= read -r problem; do
     n=$((n + 1))
     category=$(jq -r '.category' <<<"$problem")
@@ -116,9 +127,25 @@ comment_file=$(mktemp)
     echo "   - 原因：$reason"
     echo "   - 建议：$suggestion"
     echo ""
-  done < <(jq -c '.problems[]?' <<<"$review_json")
+  done < <(jq -c '.[]?' <<<"$1")
+}
+
+comment_file=$(mktemp)
+{
+  echo "**自动 review 发现以下问题**（[Issue Labeler](https://github.com/wudanyang6/wudanyang6.github.io/actions/workflows/issue-labeler.yml)）"
+  echo ""
+  if [ "$(jq 'length' <<<"$compliance_json")" -gt 0 ]; then
+    echo "### 必须处理（合规）"
+    echo ""
+    render_problems "$compliance_json"
+  fi
+  if [ "$(jq 'length' <<<"$correctness_json")" -gt 0 ]; then
+    echo "### 建议核对（正确性）"
+    echo ""
+    render_problems "$correctness_json"
+  fi
   echo "<!-- $marker -->"
 } > "$comment_file"
 
 gh issue comment "$issue_number" --repo "$repo" --body-file "$comment_file"
-echo "Review: commented with $(jq '.problems | length' <<<"$review_json") problem(s)"
+echo "Review: commented with $(jq '.problems | length' <<<"$review_json") problem(s) (compliance: $(jq 'length' <<<"$compliance_json"), correctness: $(jq 'length' <<<"$correctness_json"))"

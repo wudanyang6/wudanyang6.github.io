@@ -57,8 +57,8 @@ hugo --source site --destination public
 
 ### Issue 自动化（.github/workflows/）
 
-- `issue-labeler.yml`：issue 创建/编辑时由 `label-issue.sh` 用 pi coding agent + DeepSeek（`deepseek-v4-flash`）做技术标签分类和内容审核
-    - 改分类/审核行为改 `label-prompt.md`、`review-prompt.md`；模型与供应商配置在 `.github/pi/models.json`（CI 拷到 `~/.pi/agent/models.json`，apiKey 只引用 `$DEEPSEEK_API_KEY`，密钥不落盘）
+- `issue-labeler.yml`：issue 创建/编辑时由 `label-issue.sh` 用 pi coding agent + DeepSeek（`deepseek-v4-flash`）做技术标签分类、合规审核与技术正确性 review
+    - 改分类/审核行为改 `label-prompt.md`、`review-prompt.md`；`review.problems` 是单一数组，靠 `category` 区分类别——正确性类目（factual-error/outdated/misleading/broken-example）由脚本里的 `correctness_categories` 反向切分，未知类目归入「必须处理」，新增类目改那一处即可；模型与供应商配置在 `.github/pi/models.json`（CI 拷到 `~/.pi/agent/models.json`，apiKey 只引用 `$DEEPSEEK_API_KEY`，密钥不落盘）
     - 脚本有三条注入防线，新写类似脚本必须沿用：
         - 用 `gh` 读 issue，不把 webhook payload 内插进 shell
         - `printf %s` 拼接正文，不做变量插值
