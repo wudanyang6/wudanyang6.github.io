@@ -279,6 +279,11 @@
       "date": "2026-10-24",
       "views": 1,
       "uniques": 1
+    },
+    {
+      "date": "2026-10-25",
+      "views": 6,
+      "uniques": 2
     }
   ],
   "paths": [
@@ -291,8 +296,14 @@
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/3",
       "title": "/issues/3",
-      "count": 13,
-      "uniques": 11
+      "count": 10,
+      "uniques": 9
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/pulse",
+      "title": "/pulse",
+      "count": 7,
+      "uniques": 1
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io//issues",
@@ -303,7 +314,7 @@
     {
       "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
       "title": "/graphs/traffic",
-      "count": 5,
+      "count": 6,
       "uniques": 1
     },
     {
@@ -313,10 +324,16 @@
       "uniques": 1
     },
     {
-      "path": "/wudanyang6/wudanyang6.github.io/pulse",
-      "title": "/pulse",
-      "count": 5,
-      "uniques": 1
+      "path": "/wudanyang6/wudanyang6.github.io/issues/50",
+      "title": "/issues/50",
+      "count": 3,
+      "uniques": 3
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/issues/1",
+      "title": "/issues/1",
+      "count": 3,
+      "uniques": 2
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/45",
@@ -325,20 +342,8 @@
       "uniques": 2
     },
     {
-      "path": "/wudanyang6/wudanyang6.github.io/issues/50",
-      "title": "/issues/50",
-      "count": 2,
-      "uniques": 2
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/issues/1",
-      "title": "/issues/1",
-      "count": 2,
-      "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/issues/26",
-      "title": "/issues/26",
+      "path": "/wudanyang6/wudanyang6.github.io",
+      "title": "Overview",
       "count": 2,
       "uniques": 1
     }
@@ -346,7 +351,7 @@
   "referrers": [
     {
       "referrer": "github.com",
-      "count": 16,
+      "count": 15,
       "uniques": 13
     },
     {
@@ -355,5 +360,5 @@
       "uniques": 1
     }
   ],
-  "updated": "2026-10-25T07:39:15.447535+00:00"
+  "updated": "2026-10-26T07:53:21.863672+00:00"
 }
