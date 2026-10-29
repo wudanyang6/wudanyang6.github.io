@@ -26,12 +26,12 @@ hugo --source site --destination public
 
 ### 内容流水线（.github/workflows/site.yml）
 
-触发：issue 事件（closed/labeled/unlabeled）+ **Issue Labeler 完成后**（workflow_run，含失败/取消）+ 每日 cron 2:23 + 手动。
+触发：issue 事件（closed/labeled/unlabeled）+ **Issue Labeler 完成后**（workflow_run，含失败/取消）+ push 到 main（模板/样式/脚本改动，traffic 的 `[skip ci]` 提交不自触发）+ 每日 cron 2:23 + 手动。
 
 **建站必须排在 labeler 之后**：labeler 用 `GITHUB_TOKEN` 打标签，GitHub 防递归规则使这些写操作不触发 `labeled` 事件，因此 opened/edited/reopened 不直接建站，改由 workflow_run 在 labeler 跑完后触发——否则最新一篇会在标签写回之前上线。改触发条件时保持这个顺序。
 
 1. `fetch_traffic.py`：调 GitHub Traffic API，按天 views/uniques 去重合并成长期趋势；失败不阻塞建站
-2. `generate_content.py`：`gh issue list --state open --limit 500`，每篇写一个 noindex 预览页 `site/content/posts/<n>.md`（frontmatter：title/date/tags/issue/externalURL/summary），同时产出 `site/data/traffic.json` 和 `partials/verification.html`（内容由 `GOOGLE_SITE_VERIFICATION` 控制）。预览页只展示摘要与跳转入口，**不自动跳转**（列表条目直链 issue，此页兜底旧 URL）
+2. `generate_content.py`：`gh issue list --state open --limit 500`，每篇写一个 noindex 预览页 `site/content/posts/<n>.md`（frontmatter：title/date/tags/issue/externalURL/summary），同时产出 `site/data/traffic.json` 和 `partials/verification.html`（内容由 `GOOGLE_SITE_VERIFICATION` 控制）。预览页只展示摘要与跳转入口，**不自动跳转**（列表条目标题仍直链 issue，卡片底部「预览」按钮进入此页，兼顾旧 URL 兜底）
 3. Hugo 构建 → 提交 `traffic/` 历史（`[skip ci]`；push 被拒时 `reset --hard` 到最新 main 后重跑 fetch 重放合并，幂等）→ 部署 Pages
 
 **`site/content/posts/*` 是生成产物且已 gitignore，不要手改**；全量重建语义意味着关闭 issue 的文件自然清除。随仓库走的例外只有 `site/content/` 下的 `traffic.md`、`about.md`、`search.md`、`archive.md`（只提供路由与元信息，页面主体由各自的 `site/layouts/*.html` 渲染）。

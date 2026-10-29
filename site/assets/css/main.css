@@ -313,6 +313,28 @@ main {
   overflow: hidden;
 }
 
+/* 卡片底部：站内预览入口（标题仍直链 issue） */
+.post-actions {
+  margin: .8rem 0 0;
+}
+
+.post-preview {
+  display: inline-block;
+  padding: .28rem .8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: .82rem;
+  font-weight: 600;
+  line-height: 1.5;
+  transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease);
+}
+
+.post-preview:hover {
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
+
 /* ---- 分页 ---- */
 
 /* 极简文字流：无边框无底色，当前页靠渐变文字与字重区分 */

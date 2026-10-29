@@ -4,8 +4,9 @@
 产物：
   site/content/posts/<n>.md      每篇文章的 noindex 预览页（frontmatter:
                                  title/date/tags/issue/externalURL/summary），
-                                 站内列表条目均直链 issue，此页仅兜底旧 URL，
-                                 展示摘要与跳转入口，不做自动跳转
+                                 站内列表条目标题直链 issue，卡片另有
+                                 「预览」按钮进入此页；此页展示摘要与
+                                 跳转入口，不做自动跳转
   site/layouts/partials/verification.html
                                  Search Console 验证 meta（由 env 控制内容）
   site/data/traffic.json         访问统计数据，页面本体是仓库里的

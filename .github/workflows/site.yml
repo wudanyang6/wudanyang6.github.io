@@ -1,6 +1,9 @@
 name: Build Site
 
 on:
+  # 模板/样式/脚本改动也要上线；traffic 的提交带 [skip ci]，不会自触发
+  push:
+    branches: [main]
   # labeler 用 GITHUB_TOKEN 打标签，防递归规则使其不触发 labeled 事件，
   # 所以 opened/edited/reopened 不直接建站——改为等 labeler 跑完（workflow_run），
   # 否则最新一篇会在标签写回之前上线。这里只留 labeler 不处理的路径。

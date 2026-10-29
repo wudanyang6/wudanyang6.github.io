@@ -12,6 +12,9 @@
       {{ range $p.GetTerms "tags" }}<a class="tag" href="{{ .RelPermalink }}">{{ .Data.Term }}</a>{{ end }}
     </p>
     {{ with $p.Summary }}<p class="post-summary">{{ . }}</p>{{ end }}
+    <p class="post-actions">
+      <a class="post-preview" href="{{ $p.RelPermalink }}" aria-label="预览《{{ $p.Title }}》">预览 →</a>
+    </p>
   </article>
   {{- else }}
   <p class="empty">（还没有文章）</p>
