@@ -6,8 +6,12 @@
     {{ with .Params.issue }}<span class="issue-badge">#{{ . }}</span>{{ end }}
     {{ range .GetTerms "tags" }}<a class="tag" href="{{ .RelPermalink }}">{{ .Data.Term }}</a>{{ end }}
   </p>
+  {{ with .Content }}
+  <div class="prose preview-content">{{ . }}</div>
+  {{ else }}
   {{ with .Summary }}<p class="post-summary">{{ . }}</p>{{ end }}
-  <p class="preview-note">正文与评论都在 GitHub issue 上。</p>
+  {{ end }}
+  <p class="preview-note">正文来自 GitHub issue，评论请前往原文。</p>
   <p><a class="btn" href="{{ .Params.externalURL }}" rel="noopener">前往 GitHub 阅读 →</a></p>
 </article>
 {{ end }}

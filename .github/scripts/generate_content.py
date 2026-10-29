@@ -5,8 +5,8 @@
   site/content/posts/<n>.md      每篇文章的 noindex 预览页（frontmatter:
                                  title/date/tags/issue/externalURL/summary），
                                  站内列表条目标题直链 issue，卡片另有
-                                 「预览」按钮进入此页；此页展示摘要与
-                                 跳转入口，不做自动跳转
+                                 「预览」按钮进入此页；此页展示完整
+                                 正文与跳转入口，不做自动跳转
   site/layouts/partials/verification.html
                                  Search Console 验证 meta（由 env 控制内容）
   site/data/traffic.json         访问统计数据，页面本体是仓库里的
@@ -65,6 +65,20 @@ def excerpt(body, limit=200):
     return text[:limit] + ("…" if len(text) > limit else "")
 
 
+def strip_leading_title(body):
+    """去掉正文开头的一级标题：预览页已单独渲染标题，避免重复。"""
+    lines = (body or "").splitlines()
+    for i, line in enumerate(lines):
+        if not line.strip():
+            continue
+        if line.startswith("# "):
+            del lines[i]
+            while i < len(lines) and not lines[i].strip():
+                del lines[i]
+        break
+    return "\n".join(lines)
+
+
 def write_content(issues):
     """每篇 issue 写一个 headless content 文件。"""
     posts = SITE / "content" / "posts"
@@ -84,7 +98,7 @@ def write_content(issues):
         }
         meta = yaml.safe_dump(front, allow_unicode=True, sort_keys=False)
         (posts / f"{i['number']}.md").write_text(
-            f"---\n{meta}---\n\n{i['body'] or ''}\n", encoding="utf-8"
+            f"---\n{meta}---\n\n{strip_leading_title(i['body'])}\n", encoding="utf-8"
         )
     print(f"content: {len(issues)} post(s) -> {posts}")
 

@@ -725,7 +725,13 @@ a.tag:hover {
   line-height: 1.35;
 }
 
-/* 这里是正文的唯一站内预览，摘要不做列表页那样的两行截断 */
+/* 正文完整渲染：复用 .prose 排版，去掉它自带的卡片内边距 */
+.preview-content {
+  padding: 0;
+  margin-top: 1rem;
+}
+
+/* 无正文时的兜底摘要不做列表页那样的两行截断 */
 .preview-card .post-summary {
   display: block;
   overflow: visible;
