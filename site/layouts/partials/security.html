@@ -10,5 +10,7 @@
        开发服务器会注入 livereload 脚本（跨源）会撞 CSP，故仅生产输出。 */ -}}
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 {{- if not hugo.IsServer }}
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'" />
+{{- /* 正文来自 issue，图片可能是 GitHub user-attachments（302 到 S3）或旧博客外链，
+       故 img-src 需放行这些主机；重定向后的地址也要在名单里，否则仍会被 CSP 拦。 */ -}}
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://github.com https://*.githubusercontent.com https://github-production-user-asset-6210df.s3.amazonaws.com https://wudanyang8327.github.io; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'" />
 {{- end }}

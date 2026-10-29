@@ -53,7 +53,7 @@ hugo --source site --destination public
 - `disableKinds = ["section"]`：无 section 列表页；统计文章数用 `where .Site.RegularPages "Section" "posts"`，别用 `.Pages`/`.Site.Sections`
 - 静态页（关于/归档/搜索/统计）**不要加 `build.list: false`**——那会让页面从 `.Site.Pages` 消失、连带从 sitemap 消失；不进首页列表与 RSS 改由模板按 `where ... "Section" "posts"` 过滤保证（`rss.xml` 同样按 section 过滤，改它时保持这个过滤）
 - SEO：`partials/seo.html` 统一产出 description / canonical / Open Graph / Twitter 卡片 / 首页 JSON-LD（`jsonify` 后必须 `safeJS`，否则 `<script>` 上下文会二次转义）；预览页 canonical 指 GitHub + noindex；`layouts/sitemap.xml` 排除预览页，`robots.txt` 由 `enableRobotsTXT` 启用；分享图 `site/static/og.png`（1200×630）
-- 安全头：GitHub Pages **不支持自定义 HTTP 响应头**，`partials/security.html` 只能给 meta 形式的 CSP 与 Referrer-Policy；HSTS / X-Frame-Options / X-Content-Type-Options / Permissions-Policy / X-XSS-Protection 没有 meta 形式，要下发必须前置 CDN（如 Cloudflare）。CSP 含 `'unsafe-inline'`（站内有内联 critical CSS、防闪烁脚本与动态 `style="--d:…"` 属性），且**仅在非 `hugo server` 时输出**——开发服务器注入的 livereload 脚本跨源会撞 CSP
+- 安全头：GitHub Pages **不支持自定义 HTTP 响应头**，`partials/security.html` 只能给 meta 形式的 CSP 与 Referrer-Policy；HSTS / X-Frame-Options / X-Content-Type-Options / Permissions-Policy / X-XSS-Protection 没有 meta 形式，要下发必须前置 CDN（如 Cloudflare）。CSP 含 `'unsafe-inline'`（站内有内联 critical CSS、防闪烁脚本与动态 `style="--d:…"` 属性），且**仅在非 `hugo server` 时输出**——开发服务器注入的 livereload 脚本跨源会撞 CSP。正文图片来自 issue（GitHub user-attachments 会 302 到 S3 与 `*.githubusercontent.com`），`img-src` 已放行这些主机和旧博客域名；新增图床时同步改 `security.html`
 
 ### Issue 自动化（.github/workflows/）
 
