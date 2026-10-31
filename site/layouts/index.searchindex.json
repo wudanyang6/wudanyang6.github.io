@@ -11,6 +11,7 @@
       "url" .Params.externalURL
       "date" (.Date.Format "2006-01-02")
       "tags" $tags
+      "cover" (.Params.cover | default "")
       "summary" (.Params.summary | default "")) -}}
 {{- end -}}
 {{- $items | jsonify -}}

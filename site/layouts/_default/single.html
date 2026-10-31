@@ -1,6 +1,12 @@
 {{ define "main" }}
 <article class="card preview-card">
-  <h1>{{ .Title }}</h1>
+  {{- with .Params.cover }}
+  <figure class="preview-cover"><img src="{{ . }}" alt="{{ $.Title }}" fetchpriority="high" decoding="async" /></figure>
+  {{- end }}
+  <h1 class="preview-title">
+    {{ .Title }}
+    {{ with .Params.externalURL }}<a class="title-gh" href="{{ . }}" rel="noopener" title="前往 GitHub 评论">💬 去评论</a>{{ end }}
+  </h1>
   <p class="post-meta">
     <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
     {{ with .Params.issue }}<span class="issue-badge">#{{ . }}</span>{{ end }}
@@ -12,6 +18,6 @@
   {{ with .Summary }}<p class="post-summary">{{ . }}</p>{{ end }}
   {{ end }}
   <p class="preview-note">正文来自 GitHub issue，评论请前往原文。</p>
-  <p><a class="btn" href="{{ .Params.externalURL }}" rel="noopener">前往 GitHub 阅读 →</a></p>
+  <p><a class="btn" href="{{ .Params.externalURL }}" rel="noopener">前往 GitHub 评论 →</a></p>
 </article>
 {{ end }}

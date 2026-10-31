@@ -22,6 +22,7 @@ content 每次全量重建，已关闭 issue 的旧文件自然清除。
 """
 import json
 import os
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -55,12 +56,45 @@ def parse_time(iso):
     return datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(timezone.utc)
 
 
+IMG_MD = re.compile(r"!\[[^\]]*\]\(\s*([^)\s]+)(?:\s+\"[^\"]*\")?\s*\)")
+IMG_HTML = re.compile(r"<img\b[^>]*?\bsrc=[\"']([^\"']+)[\"'][^>]*>", re.IGNORECASE)
+IMG_NO_LAZY = re.compile(r"<img\b(?![^>]*\bloading=)", re.IGNORECASE)
+
+
+def lazy_html_imgs(body):
+    """给正文里的 HTML <img> 补懒加载属性。
+
+    只补缺 loading= 的（负向前瞻），markdown 图片不走这里，
+    由 layouts 的 render-image.html render hook 统一加。
+    """
+    return IMG_NO_LAZY.sub('<img loading="lazy" decoding="async"', body or "")
+
+
+def extract_cover(body):
+    """按正文出现顺序取第一张图的 URL（markdown 与 HTML img 均可）。"""
+    if not body:
+        return None
+    candidates = []
+    m = IMG_MD.search(body)
+    if m:
+        candidates.append((m.start(), m.group(1)))
+    m = IMG_HTML.search(body)
+    if m:
+        candidates.append((m.start(), m.group(1)))
+    return min(candidates)[1] if candidates else None
+
+
 def excerpt(body, limit=200):
-    """正文纯文本摘要。"""
+    """正文纯文本摘要：先剥离图片语法，再做字符清理。
+
+    顺序不能反：先删字符会把 ![alt](url) 清成 !alturl 粘连，无法再剥离。
+    """
+    text = IMG_MD.sub("", body or "")
+    text = IMG_HTML.sub("", text)
     text = "".join(
-        line.strip() for line in (body or "").splitlines() if line.strip()
+        line.strip() for line in text.splitlines() if line.strip()
     )
-    for ch in "#*`>[]( #":
+    for ch in "#*`>[]( #)":
         text = text.replace(ch, "")
     return text[:limit] + ("…" if len(text) > limit else "")
 
@@ -94,11 +128,14 @@ def write_content(issues):
             "tags": [l["name"] for l in i["labels"]],
             "issue": i["number"],
             "externalURL": issue_url(i["number"]),
-            "summary": excerpt(i["body"]),
         }
+        cover = extract_cover(i["body"])
+        if cover:
+            front["cover"] = cover
+        front["summary"] = excerpt(i["body"])
         meta = yaml.safe_dump(front, allow_unicode=True, sort_keys=False)
         (posts / f"{i['number']}.md").write_text(
-            f"---\n{meta}---\n\n{strip_leading_title(i['body'])}\n", encoding="utf-8"
+            f"---\n{meta}---\n\n{lazy_html_imgs(strip_leading_title(i['body']))}\n", encoding="utf-8"
         )
     print(f"content: {len(issues)} post(s) -> {posts}")
 

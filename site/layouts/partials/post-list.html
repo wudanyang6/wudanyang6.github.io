@@ -3,18 +3,24 @@
 <div class="post-list">
   {{- range $i, $p := $pages }}
   <article class="card post-card" style="--d: {{ mul (cond (lt $i 8) $i 8) 45 }}ms">
-    <h2 class="post-title">
-      <a href="{{ with $p.Params.externalURL }}{{ . }}{{ else }}{{ $p.RelPermalink }}{{ end }}"{{ if $p.Params.externalURL }} rel="noopener"{{ end }}>{{ $p.Title }}</a>
-    </h2>
-    <p class="post-meta">
-      <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "2006-01-02" }}</time>
-      {{ with $p.Params.issue }}<span class="issue-badge">#{{ . }}</span>{{ end }}
-      {{ range $p.GetTerms "tags" }}<a class="tag" href="{{ .RelPermalink }}">{{ .Data.Term }}</a>{{ end }}
-    </p>
-    {{ with $p.Summary }}<p class="post-summary">{{ . }}</p>{{ end }}
-    <p class="post-actions">
-      <a class="post-preview" href="{{ $p.RelPermalink }}" aria-label="预览《{{ $p.Title }}》">预览 →</a>
-    </p>
+    <div class="post-card-body">
+      <div class="post-card-text">
+        <h2 class="post-title">
+          <a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+        </h2>
+        <p class="post-meta">
+          <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "2006-01-02" }}</time>
+          {{ with $p.Params.issue }}<span class="issue-badge">#{{ . }}</span>{{ end }}
+          {{ range $p.GetTerms "tags" }}<a class="tag" href="{{ .RelPermalink }}">{{ .Data.Term }}</a>{{ end }}
+        </p>
+        {{ with $p.Params.summary }}<p class="post-summary">{{ . }}</p>{{ end }}
+      </div>
+      {{- with $p.Params.cover }}
+      <a class="post-thumb" href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ . }}" alt="" loading="lazy" decoding="async" />
+      </a>
+      {{- end }}
+    </div>
   </article>
   {{- else }}
   <p class="empty">（还没有文章）</p>

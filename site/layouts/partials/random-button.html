@@ -1,20 +1,92 @@
 <button id="random-post" class="btn-random" type="button"
-        title="随机打开一篇的 GitHub 原文" aria-label="随机打开一篇的 GitHub 原文">🎲 随机</button>
+        title="手气不错：随机来一篇" aria-label="手气不错：随机来一篇">🎲 手气不错</button>
+<div id="random-dialog" class="random-dialog" hidden>
+  <div class="random-card card" role="dialog" aria-modal="true" aria-labelledby="random-title-link">
+    <button id="random-close" class="random-close" type="button" aria-label="关闭">✕</button>
+    <p class="random-head">🎲 手气不错，是这篇：</p>
+    <div id="random-body" class="random-body">
+      <a id="random-title-link" class="random-title" href="#" rel="noopener"></a>
+      <p id="random-meta" class="post-meta"></p>
+      <p id="random-summary" class="random-summary"></p>
+    </div>
+    <div class="random-actions">
+      <button id="random-cancel" class="btn-ghost" type="button">换一篇 🎲</button>
+      <button id="random-go" class="btn" type="button">前往 GitHub 阅读 →</button>
+    </div>
+  </div>
+  <button id="random-overlay" class="random-overlay" type="button" aria-label="关闭"></button>
+</div>
 <script>
 (() => {
   const btn = document.getElementById('random-post');
-  if (!btn) return;
-  // 复用搜索索引（已含全部文章与 GitHub 原文地址），点击时才拉取
-  btn.addEventListener('click', async () => {
+  const dialog = document.getElementById('random-dialog');
+  if (!btn || !dialog) return;
+  const link = document.getElementById('random-title-link');
+  const meta = document.getElementById('random-meta');
+  const summary = document.getElementById('random-summary');
+  const body = document.getElementById('random-body');
+  const overlay = document.getElementById('random-overlay');
+  const cancel = document.getElementById('random-cancel');
+  const go = document.getElementById('random-go');
+  const closeBtn = document.getElementById('random-close');
+  let posts = null;   // 索引只拉一次，换一篇不再请求
+  let current = null;
+
+  // 弹层必须搬到 body 下：留在 header 里会被其 backdrop-filter
+  // 劫持 fixed 定位基准（遮罩只剩 header 一条高度）
+  document.body.appendChild(dialog);
+
+  const close = () => { dialog.hidden = true; current = null; document.body.style.overflow = ''; };
+
+  // 换一篇时重播入场动画：先摘类、强制 reflow、再挂类
+  const rerollAnim = () => {
+    body.classList.remove('is-reroll');
+    void body.offsetWidth;
+    body.classList.add('is-reroll');
+  };
+
+  const pick = async () => {
     try {
-      const res = await fetch('{{ "search-index.json" | relURL }}');
-      const posts = await res.json();
+      if (!posts) {
+        const res = await fetch('{{ "search-index.json" | relURL }}');
+        posts = await res.json();
+      }
       if (!posts.length) return;
-      const pick = posts[Math.floor(Math.random() * posts.length)];
-      if (pick.url) location.href = pick.url;
+      const reopening = !dialog.hidden;
+      current = posts[Math.floor(Math.random() * posts.length)];
+      link.textContent = current.title || '(无标题)';
+      link.href = current.url || '#';
+      go.disabled = !current.url;
+      meta.innerHTML = '';
+      if (current.date) {
+        const d = document.createElement('span');
+        d.textContent = current.date;
+        meta.appendChild(d);
+      }
+      (current.tags || []).forEach(t => {
+        const s = document.createElement('span');
+        s.className = 'tag';
+        s.textContent = t;
+        meta.appendChild(s);
+      });
+      summary.textContent = current.summary || '';
+      if (reopening) rerollAnim();   // 换一篇：内容刷新后重播动画
+      dialog.hidden = false;
+      document.body.style.overflow = 'hidden';   // 遮罩下页面不再跟着滚
+      go.focus();
     } catch (e) {
       /* 索引拉取失败：留在原地，不弹错打断阅读 */
     }
+  };
+
+  btn.addEventListener('click', pick);
+  cancel.addEventListener('click', pick);   // 换一篇 = 再随机一次
+  go.addEventListener('click', () => { if (current && current.url) location.href = current.url; });
+  overlay.addEventListener('click', close);
+  closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', e => {
+    if (dialog.hidden) return;
+    if (e.key === 'Escape') close();
   });
 })();
 </script>

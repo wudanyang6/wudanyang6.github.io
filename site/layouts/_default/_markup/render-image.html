@@ -1,0 +1,2 @@
+{{- /* 正文 markdown 图片统一加懒加载：HTML <img> 由 generate_content.py 在生成侧补属性 */ -}}
+<img src="{{ .Destination | safeURL }}" alt="{{ .PlainText }}" loading="lazy" decoding="async"{{ with .Title }} title="{{ . }}"{{ end }} />

@@ -5,8 +5,10 @@
 {{ $paginator := .Paginate $posts }}
 
 <section class="hero">
-  <h1 class="hero-title">{{ .Site.Title }}</h1>
-  <p class="hero-desc">{{ .Site.Params.description }}</p>
+  <div class="hero-text">
+    <h1 class="hero-title">{{ .Site.Title }}</h1>
+    <p class="hero-desc">{{ .Site.Params.description }}</p>
+  </div>
   <div class="stats">
     <div class="stat">
       <span class="stat-num" data-count="{{ len $posts }}">{{ len $posts }}</span>

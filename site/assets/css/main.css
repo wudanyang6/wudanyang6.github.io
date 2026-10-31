@@ -187,8 +187,18 @@ main {
 /* ---- hero / 统计 ---- */
 
 .hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
   padding: 1.5rem 0 1.75rem;
   animation: rise .6s var(--ease) both;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
 }
 
 .hero-title {
@@ -200,7 +210,7 @@ main {
 }
 
 .hero-desc {
-  margin: 0 0 1.5rem;
+  margin: 0;
   color: var(--muted);
 }
 
@@ -221,10 +231,6 @@ main {
   font-weight: 700;
   line-height: 1.2;
   font-variant-numeric: tabular-nums;
-}
-
-.stat-date {
-  font-size: 1.05rem;
 }
 
 .stat-label {
@@ -273,6 +279,38 @@ main {
   box-shadow: var(--shadow), 0 0 26px -8px var(--accent);
 }
 
+/* 卡片主体：文字在左、头图缩略图在右 */
+.post-card-body {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.post-card-text {
+  flex: 1;
+  /* flex 子项默认 min-width:auto，缺了它两行截断会失效 */
+  min-width: 0;
+}
+
+.post-thumb {
+  flex: 0 0 9.5rem;
+  border-radius: var(--radius-s);
+  overflow: hidden;
+  background: var(--surface-2);
+}
+
+.post-thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform var(--dur) var(--ease);
+}
+
+.post-card:hover .post-thumb img {
+  transform: scale(1.04);
+}
+
 .post-title {
   margin: 0 0 .45rem;
   font-size: 1.08rem;
@@ -311,28 +349,6 @@ main {
   line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-/* 卡片底部：站内预览入口（标题仍直链 issue） */
-.post-actions {
-  margin: .8rem 0 0;
-}
-
-.post-preview {
-  display: inline-block;
-  padding: .28rem .8rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  color: var(--accent);
-  font-size: .82rem;
-  font-weight: 600;
-  line-height: 1.5;
-  transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease);
-}
-
-.post-preview:hover {
-  border-color: var(--accent);
-  background: var(--surface-2);
 }
 
 /* ---- 分页 ---- */
@@ -717,12 +733,52 @@ a.tag:hover {
 .preview-card {
   padding: 1.75rem 1.6rem;
   animation: rise .5s var(--ease) both;
+  /* 配合 .preview-cover 的负 margin 撑满卡片宽并裁出圆角 */
+  overflow: hidden;
+}
+
+/* 头图：负 margin 抵消卡片 padding，贴卡片顶部撑满整宽。
+   figure 自带外边距会破坏撑满观感，在 margin 里一并清掉 */
+.preview-cover {
+  margin: -1.75rem -1.6rem 1.25rem;
+}
+
+.preview-cover img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
 }
 
 .preview-card h1 {
   margin: 0 0 .5rem;
   font-size: 1.5rem;
   line-height: 1.35;
+}
+
+/* 标题尾部的 GitHub 评论入口：胶囊小按钮 */
+.preview-card .title-gh {
+  display: inline-block;
+  margin-left: .5rem;
+  padding: .22rem .7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  vertical-align: .25rem;
+  white-space: nowrap;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease),
+              transform var(--dur) var(--ease);
+}
+
+.preview-card .title-gh:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
 }
 
 /* 正文完整渲染：复用 .prose 排版，去掉它自带的卡片内边距 */
@@ -741,6 +797,29 @@ a.tag:hover {
   margin: 1.25rem 0 0;
   color: var(--faint);
   font-size: .85rem;
+}
+
+/* 预览页底部的评论按钮：弱化实心渐变，降为描边幽灵按钮，
+   尺寸与「手气不错」弹窗里的次要按钮一致，避免视觉过重 */
+.preview-card .btn {
+  display: inline-block;
+  padding: .32rem .95rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-size: .88rem;
+  font-weight: 600;
+  line-height: 1.6;
+  box-shadow: none;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.preview-card .btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: none;
+  box-shadow: none;
 }
 
 .btn {
@@ -775,6 +854,155 @@ a.tag:hover {
 .empty {
   padding: 1.5rem 0;
   color: var(--muted);
+}
+
+/* ---- 随机一篇：确认弹层 ---- */
+
+/* 遮罩铺满视口；卡片压在遮罩之上（DOM 里卡片在前，这里只抬 z-index）。
+   z-index 70/71 需压过 sticky header（50），否则遮罩罩不住导航 */
+.random-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  padding: 0;
+  border: 0;
+  background: rgba(2, 6, 23, .55);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  cursor: default;
+  animation: fade .25s var(--ease) both;
+}
+
+.random-dialog[hidden] {
+  display: none;
+}
+
+.random-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 71;
+  /* 遮罩之上再整体上浮一点，视觉重心更稳 */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(1rem, 12vh, 7rem) 1rem 1rem;
+  pointer-events: none;   /* 事件穿透到遮罩/页面，卡片单独恢复 */
+}
+
+.random-card {
+  pointer-events: auto;
+  /* 遮罩（70）是本容器的子元素，卡片须在其上才能点到按钮 */
+  position: relative;
+  z-index: 71;
+  width: min(34rem, 100%);
+  padding: 2rem 2.1rem 1.9rem;
+  animation: rise .35s var(--ease) both;
+}
+
+/* 关闭按钮：卡片右上角 */
+.random-close {
+  position: absolute;
+  top: .85rem;
+  right: .85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-s);
+  background: transparent;
+  color: var(--faint);
+  font-size: .95rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease),
+              transform var(--dur) var(--ease);
+}
+
+.random-close:hover {
+  color: var(--accent);
+  border-color: var(--border);
+  transform: rotate(90deg);
+}
+
+.random-head {
+  margin: 0 0 .6rem;
+  padding-right: 2.4rem;   /* 给右上角关闭按钮留位 */
+  color: var(--faint);
+  font-size: .88rem;
+}
+
+/* 换一篇时重播：JS 摘类 → reflow → 挂类 */
+.random-body.is-reroll {
+  animation: rise .35s var(--ease) both;
+}
+
+.random-title {
+  display: block;
+  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: 650;
+  line-height: 1.45;
+  transition: color var(--dur) var(--ease);
+}
+
+.random-title:hover {
+  color: var(--accent);
+}
+
+.random-card .post-meta {
+  margin: .5rem 0 0;
+}
+
+.random-summary {
+  margin: .6rem 0 0;
+  color: var(--muted);
+  font-size: .92rem;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.random-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: .6rem;
+  margin-top: 1.1rem;
+}
+
+.random-actions .btn {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.random-actions .btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* 次要按钮：描边胶囊，与 .btn 并排时弱化层级 */
+.btn-ghost {
+  display: inline-block;
+  padding: .6rem 1.05rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 /* ---- 搜索页 ---- */
@@ -827,6 +1055,18 @@ a.tag:hover {
   background: var(--surface-2);
 }
 
+/* 条目主体：文字在左、缩略图在右（与首页卡片同一套 post-thumb） */
+.search-item-body {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-item-text {
+  flex: 1;
+  min-width: 0;
+}
+
 .search-title {
   color: var(--text);
   font-size: 1rem;
@@ -866,6 +1106,13 @@ mark {
 .archive-panel {
   padding: 1.5rem 1.6rem;
   animation: rise .5s var(--ease) both;
+}
+
+/* 长列表视口外条目跳过渲染：contains-intrinsic-size 给预估高度
+   避免滚动条跳动，条目实际高度由内容决定 */
+.archive-item {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1.8rem;
 }
 
 .archive-year {
@@ -946,94 +1193,6 @@ mark {
   margin: 0 .3rem;
 }
 
-/* ---- 相关文章页 ---- */
-
-.related-panel {
-  padding: 1.5rem 1.6rem;
-  animation: rise .5s var(--ease) both;
-}
-
-.related-index {
-  margin-top: 1.25rem;
-}
-
-.related-group {
-  padding: .9rem 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.related-group:last-child {
-  border-bottom: 0;
-}
-
-.related-source {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: .3rem .7rem;
-  margin: 0 0 .45rem;
-  font-size: 1.02rem;
-}
-
-.related-source-link {
-  color: var(--text);
-  font-weight: 650;
-  transition: color var(--dur) var(--ease);
-}
-
-.related-source-link:hover {
-  color: var(--accent);
-}
-
-.related-date {
-  color: var(--faint);
-  font-size: .8rem;
-  font-variant-numeric: tabular-nums;
-}
-
-.related-list {
-  display: grid;
-  gap: .3rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.related-list li {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: .25rem .5rem;
-  font-size: .92rem;
-}
-
-.related-list a {
-  color: var(--muted);
-  transition: color var(--dur) var(--ease);
-}
-
-.related-list a:hover {
-  color: var(--accent);
-}
-
-.related-shared {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: .25rem;
-}
-
-/* 交集标签比正文里的标签更小，避免抢标题 */
-.related-shared .tag {
-  padding: .02rem .45rem;
-  font-size: .72rem;
-}
-
-.related-none {
-  margin: 0;
-  color: var(--faint);
-  font-size: .85rem;
-}
-
 /* ---- 随机文章按钮（header 内，与主题切换并排） ---- */
 
 .btn-random {
@@ -1078,6 +1237,15 @@ mark {
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -1149,6 +1317,9 @@ mark {
 
   .hero {
     padding-top: 1rem;
+    /* 窄屏：统计回到标题下方，避免挤压标题 */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .hero-title {
@@ -1167,6 +1338,14 @@ mark {
     padding: .95rem 1rem;
   }
 
+  .post-card-body {
+    gap: .8rem;
+  }
+
+  .post-thumb {
+    flex-basis: 7.5rem;
+  }
+
   .prose {
     padding: 1.15rem 1rem;
   }
@@ -1175,15 +1354,15 @@ mark {
     padding: 1.4rem 1.1rem;
   }
 
+  .preview-cover {
+    margin: -1.4rem -1.1rem 1.1rem;
+  }
+
   .search-panel {
     padding: 1.15rem 1rem;
   }
 
   .archive-panel {
-    padding: 1.15rem 1rem;
-  }
-
-  .related-panel {
     padding: 1.15rem 1rem;
   }
 

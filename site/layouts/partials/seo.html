@@ -5,6 +5,8 @@
 {{- if .IsHome }}{{ $title = .Site.Title }}{{ end -}}
 {{- $desc := .Params.description | default .Params.summary | default .Site.Params.description -}}
 {{- $ogImage := "og.png" | absURL -}}
+{{- /* 预览页有头图时 og:image / twitter:image 用提取的首图（绝对 URL，社交爬虫不受站内 CSP 限制） */ -}}
+{{- with .Params.cover }}{{ $ogImage = . }}{{ end -}}
 <meta name="description" content="{{ $desc }}" />
 {{- if .Params.externalURL }}
 <link rel="canonical" href="{{ .Params.externalURL }}" />

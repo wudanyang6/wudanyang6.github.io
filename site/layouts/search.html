@@ -60,12 +60,17 @@
     hint.textContent = `找到 ${items.length} 篇`;
     list.innerHTML = items.map(it => `
       <li class="search-item">
-        <a class="search-title" href="${escHtml(it.url)}">${highlight(it.title, terms)}</a>
-        <p class="post-meta">
-          <span>${escHtml(it.date)}</span>
-          ${(it.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('')}
-        </p>
-        <p class="search-summary">${highlight(it.summary || '', terms)}</p>
+        <div class="search-item-body">
+          <div class="search-item-text">
+            <a class="search-title" href="${escHtml(it.url)}">${highlight(it.title, terms)}</a>
+            <p class="post-meta">
+              <span>${escHtml(it.date)}</span>
+              ${(it.tags || []).map(t => `<span class="tag">${escHtml(t)}</span>`).join('')}
+            </p>
+            <p class="search-summary">${highlight(it.summary || '', terms)}</p>
+          </div>
+          ${it.cover ? `<a class="post-thumb" href="${escHtml(it.url)}" tabindex="-1" aria-hidden="true"><img src="${escHtml(it.cover)}" alt="" loading="lazy" decoding="async" /></a>` : ''}
+        </div>
       </li>`).join('');
   };
 
