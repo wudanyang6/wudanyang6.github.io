@@ -399,6 +399,11 @@
       "date": "2026-11-17",
       "views": 23,
       "uniques": 2
+    },
+    {
+      "date": "2026-11-18",
+      "views": 1,
+      "uniques": 1
     }
   ],
   "paths": [
@@ -417,8 +422,8 @@
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/3",
       "title": "/issues/3",
-      "count": 7,
-      "uniques": 5
+      "count": 6,
+      "uniques": 4
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
@@ -466,8 +471,8 @@
   "referrers": [
     {
       "referrer": "github.com",
-      "count": 20,
-      "uniques": 15
+      "count": 19,
+      "uniques": 14
     },
     {
       "referrer": "wudanyang6.github.io",
@@ -475,5 +480,5 @@
       "uniques": 1
     }
   ],
-  "updated": "2026-11-18T10:17:52.987292+00:00"
+  "updated": "2026-11-19T10:28:29.311537+00:00"
 }
