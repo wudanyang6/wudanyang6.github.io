@@ -409,43 +409,59 @@
       "date": "2026-11-19",
       "views": 3,
       "uniques": 3
+    },
+    {
+      "date": "2026-11-20",
+      "views": 4,
+      "uniques": 1
+    },
+    {
+      "date": "2026-11-21",
+      "views": 7,
+      "uniques": 2
     }
   ],
   "paths": [
     {
       "path": "/wudanyang6/wudanyang6.github.io/labels",
       "title": "/labels",
-      "count": 14,
+      "count": 13,
       "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/issues/3",
+      "title": "/issues/3",
+      "count": 10,
+      "uniques": 8
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/50",
       "title": "/issues/50",
       "count": 9,
-      "uniques": 8
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/issues/3",
-      "title": "/issues/3",
-      "count": 8,
-      "uniques": 6
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/issues",
-      "title": "/issues",
-      "count": 5,
-      "uniques": 1
+      "uniques": 7
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io",
       "title": "Overview",
-      "count": 4,
+      "count": 5,
       "uniques": 2
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
       "title": "/graphs/traffic",
+      "count": 5,
+      "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/issues",
+      "title": "/issues",
       "count": 4,
+      "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/issues/new",
+      "title": "/issues/new",
+      "count": 3,
       "uniques": 1
     },
     {
@@ -455,14 +471,8 @@
       "uniques": 1
     },
     {
-      "path": "/wudanyang6/wudanyang6.github.io/issues/60",
-      "title": "/issues/60",
-      "count": 2,
-      "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/issues/new",
-      "title": "/issues/new",
+      "path": "/wudanyang6/wudanyang6.github.io/pulse",
+      "title": "/pulse",
       "count": 2,
       "uniques": 1
     },
@@ -476,9 +486,14 @@
   "referrers": [
     {
       "referrer": "github.com",
-      "count": 21,
-      "uniques": 16
+      "count": 22,
+      "uniques": 15
+    },
+    {
+      "referrer": "Bing",
+      "count": 1,
+      "uniques": 1
     }
   ],
-  "updated": "2026-11-21T09:56:11.812970+00:00"
+  "updated": "2026-11-22T09:53:52.806975+00:00"
 }
