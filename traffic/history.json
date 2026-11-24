@@ -424,6 +424,11 @@
       "date": "2026-11-22",
       "views": 9,
       "uniques": 2
+    },
+    {
+      "date": "2026-11-23",
+      "views": 6,
+      "uniques": 1
     }
   ],
   "paths": [
@@ -436,8 +441,8 @@
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/3",
       "title": "/issues/3",
-      "count": 12,
-      "uniques": 8
+      "count": 11,
+      "uniques": 7
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/50",
@@ -448,19 +453,25 @@
     {
       "path": "/wudanyang6/wudanyang6.github.io",
       "title": "Overview",
-      "count": 6,
+      "count": 7,
       "uniques": 2
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
-      "title": "/graphs/traffic",
-      "count": 6,
-      "uniques": 1
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues",
       "title": "/issues",
-      "count": 5,
+      "count": 6,
+      "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
+      "title": "/graphs/traffic",
+      "count": 4,
+      "uniques": 1
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/pulse",
+      "title": "/pulse",
+      "count": 4,
       "uniques": 1
     },
     {
@@ -470,21 +481,15 @@
       "uniques": 1
     },
     {
-      "path": "/wudanyang6/wudanyang6.github.io/pulse",
-      "title": "/pulse",
-      "count": 3,
-      "uniques": 1
+      "path": "/wudanyang6/wudanyang6.github.io/tree/main/.github/workflows",
+      "title": "/tree/main/.github/workflows",
+      "count": 2,
+      "uniques": 2
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io//issues",
       "title": "//issues",
       "count": 2,
-      "uniques": 1
-    },
-    {
-      "path": "/wudanyang6/wudanyang6.github.io/blob/main/.github/workflows/site.yml",
-      "title": "/blob/main/.github/workflows/site.yml",
-      "count": 1,
       "uniques": 1
     }
   ],
@@ -500,5 +505,5 @@
       "uniques": 1
     }
   ],
-  "updated": "2026-11-23T10:53:32.537116+00:00"
+  "updated": "2026-11-24T12:36:36.164301+00:00"
 }
