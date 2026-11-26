@@ -434,6 +434,11 @@
       "date": "2026-11-24",
       "views": 0,
       "uniques": 0
+    },
+    {
+      "date": "2026-11-25",
+      "views": 6,
+      "uniques": 2
     }
   ],
   "paths": [
@@ -446,8 +451,14 @@
     {
       "path": "/wudanyang6/wudanyang6.github.io/issues/3",
       "title": "/issues/3",
-      "count": 8,
+      "count": 9,
       "uniques": 6
+    },
+    {
+      "path": "/wudanyang6/wudanyang6.github.io/issues",
+      "title": "/issues",
+      "count": 8,
+      "uniques": 1
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io",
@@ -462,21 +473,15 @@
       "uniques": 4
     },
     {
-      "path": "/wudanyang6/wudanyang6.github.io/issues",
-      "title": "/issues",
-      "count": 6,
-      "uniques": 1
-    },
-    {
       "path": "/wudanyang6/wudanyang6.github.io/graphs/traffic",
       "title": "/graphs/traffic",
-      "count": 4,
+      "count": 5,
       "uniques": 1
     },
     {
       "path": "/wudanyang6/wudanyang6.github.io/pulse",
       "title": "/pulse",
-      "count": 4,
+      "count": 5,
       "uniques": 1
     },
     {
@@ -510,5 +515,5 @@
       "uniques": 1
     }
   ],
-  "updated": "2026-11-25T15:12:43.460057+00:00"
+  "updated": "2026-11-26T11:01:27.505979+00:00"
 }
